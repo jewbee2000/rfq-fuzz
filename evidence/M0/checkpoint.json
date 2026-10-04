@@ -1,0 +1,44 @@
+{
+  "schema_version": "m0.1",
+  "current_commit_at_recording": "b759125353486acaa4d18162a91fd817a7699df3",
+  "commit_basis": "T03 implementation and evidence acceptance commit; subsequent metadata commit only fills ledger/checkpoint records",
+  "current_head_command": "git rev-parse HEAD",
+  "environment": {
+    "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "dependency_record": "evidence/M0/environment.json",
+    "lock": "requirements-m0.lock",
+    "venv": ".venv",
+    "renderer": "pdftoppm version 26.07.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC"
+  },
+  "task": "M0 T00-T03 complete; stopped at user checkpoint",
+  "failing_command": null,
+  "retained_failures": "evidence/M0/failures.json",
+  "evidence": [
+    "evidence/M0/gate.md",
+    "evidence/M0/report/index.html",
+    "evidence/M0/bundle/public",
+    "evidence/M0/validation/oracle.json",
+    "evidence/M0/review-handoff/review-output",
+    "evidence/M0/category-adjudication.json",
+    "evidence/M0/final-tests.txt",
+    "evidence/M0/final-audit.json",
+    "evidence/M0/replay-result.json"
+  ],
+  "unresolved_assumptions": [
+    "bounded public differentiation hypothesis",
+    "shared CAD kernel common mode",
+    "curated raster validation and numeric-token matching generality",
+    "industrial/engineer-authored transfer",
+    "Linux and HTML browser rendering unverified"
+  ],
+  "next_dependency_ready_task": "T04",
+  "next_task_status": "not_started; user explicitly requested stop after M0",
+  "local_task_commits": {
+    "T00": "3d6e80b",
+    "T01": "947cb18",
+    "T02": "c038a99",
+    "T03": "b759125353486acaa4d18162a91fd817a7699df3"
+  },
+  "forbidden_actions_performed": false
+}
