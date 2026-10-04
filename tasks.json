@@ -171,11 +171,11 @@
       ],
       "scope": "Own separate final-artifact readers, analytic checks, mutation-isolation checks and quarantine; coordinate only through public schemas.",
       "acceptance": "Export corruption and collateral defects detected; all scored assertions have independently measured/visible evidence.",
-      "evidence": "evidence/M2/oracles.md",
-      "verification": "python -m pytest tests/artifact_validation",
-      "verification_is_proposed": true,
-      "status": "in_progress",
-      "completion_commit": null
+      "evidence": "evidence/M2/core-final-acceptance.md",
+      "verification": ".venv/Scripts/python.exe -m pytest tests/artifact_validation -q (49passed); tools/validate_core.py (145valid); actual25sheets and7fullpages visually inspected",
+      "verification_is_proposed": false,
+      "status": "completed",
+      "completion_commit": "HEAD"
     },
     {
       "id": "T09",
@@ -240,7 +240,7 @@
       "evidence": "evidence/M4/challenge-report.md",
       "verification": "python -m pytest tests/metamorphic tests/artifact_validation tests/scoring",
       "verification_is_proposed": true,
-      "status": "not_started",
+      "status": "in_progress",
       "completion_commit": null
     },
     {
