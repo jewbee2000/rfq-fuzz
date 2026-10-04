@@ -215,10 +215,10 @@
       "scope": "One-to-one evidence matching, grouped root causes, per-track counts, unresolved findings and compatible-run comparison.",
       "acceptance": "Hand-calculated cases agree; wrong-location/duplicate findings fail correctly; oracle revisions invalidate comparisons.",
       "evidence": "evidence/M3/scoring.md",
-      "verification": "python -m pytest tests/scoring",
-      "verification_is_proposed": true,
-      "status": "in_progress",
-      "completion_commit": null
+      "verification": ".venv/Scripts/python.exe -m pytest tests/contracts tests/scoring tests/adapters -q (51 passed)",
+      "verification_is_proposed": false,
+      "status": "completed",
+      "completion_commit": "efbf3d31d5815d537230af5c9186cfc7d6485d9a"
     },
     {
       "id": "T11",
@@ -260,7 +260,7 @@
       "evidence": "evidence/M4/report-and-failures.md",
       "verification": "python -m pytest tests/reporting tests/adapters",
       "verification_is_proposed": true,
-      "status": "not_started",
+      "status": "in_progress",
       "completion_commit": null
     },
     {
