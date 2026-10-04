@@ -1,0 +1,780 @@
+{
+  "schema_version": "m0.1",
+  "case_id": "pk-7a1c",
+  "status": "pending_visual_attestation",
+  "failures": [],
+  "packet_sha256": "17fa0bb2e63e161bba519f80953fe87bca4cf5f3e623cf5273f738ad7d77ffc6",
+  "geometry": {
+    "reader": "OCP.STEPControl_Reader",
+    "units": [
+      "millimetre"
+    ],
+    "brep_valid": true,
+    "solid_count": 1,
+    "bbox_mm": [
+      -40.0,
+      -25.0,
+      -4.0,
+      40.0,
+      25.0,
+      4.0
+    ],
+    "envelope_mm": [
+      80.0,
+      50.0,
+      8.0
+    ],
+    "volume_mm3": 31095.22131576612,
+    "analytic_volume_mm3": 31095.22131576614,
+    "volume_error_mm3": -1.8189894035458565e-11,
+    "plane_count": 6,
+    "cylinders": [
+      {
+        "radius_mm": 3.0,
+        "diameter_mm": 6.0,
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "center_xy_mm": [
+          -25.0,
+          -15.0
+        ],
+        "z_bounds_mm": [
+          -4.0,
+          4.0
+        ],
+        "depth_mm": 8.0,
+        "surface_area_mm2": 150.79644737232,
+        "u_span_rad": 6.28318530718
+      },
+      {
+        "radius_mm": 3.0,
+        "diameter_mm": 6.0,
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "center_xy_mm": [
+          -25.0,
+          15.0
+        ],
+        "z_bounds_mm": [
+          -4.0,
+          4.0
+        ],
+        "depth_mm": 8.0,
+        "surface_area_mm2": 150.79644737232,
+        "u_span_rad": 6.28318530718
+      },
+      {
+        "radius_mm": 3.0,
+        "diameter_mm": 6.0,
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "center_xy_mm": [
+          25.0,
+          -15.0
+        ],
+        "z_bounds_mm": [
+          -4.0,
+          4.0
+        ],
+        "depth_mm": 8.0,
+        "surface_area_mm2": 150.79644737232,
+        "u_span_rad": 6.28318530718
+      },
+      {
+        "radius_mm": 3.0,
+        "diameter_mm": 6.0,
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "center_xy_mm": [
+          25.0,
+          15.0
+        ],
+        "z_bounds_mm": [
+          -4.0,
+          4.0
+        ],
+        "depth_mm": 8.0,
+        "surface_area_mm2": 150.79644737232,
+        "u_span_rad": 6.28318530718
+      }
+    ],
+    "length_tolerance_mm": 1e-06,
+    "volume_tolerance_mm3": 1e-05
+  },
+  "drawing": {
+    "parser": "pypdf.PdfReader",
+    "renderer": "PDFium (independent of shipped Poppler PNG)",
+    "render_dpi": 200,
+    "page_size_pt": [
+      841.8898,
+      595.2756
+    ],
+    "raster_size_px": [
+      2339,
+      1654
+    ],
+    "text": "NOTES\n1  ALL DIMENSIONS IN mm\n2  H1 = ALL FOUR Z THROUGH BORES\n3  MODEL STAGE: FINISHED\n4  DRAWING STAGE: FINISHED\n5  FINISH: NONE\n6  VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE\n7  H1: DRAWING AND MODEL APPLY AT SAME STAGE\nISO VIEW (NTS)\n4×\nø\n6.8 ±0.05\nTHRU\n80\n8\n50\nSCALE 1:2\nMounting plate\nMP-001\n6061-T6\nmm\nA4\nA\n2026-10-04\nSEE CALLOUT\nRFQ author / draftwright",
+    "tokens": [
+      {
+        "text": "NOTES",
+        "origin_pt": [
+          584.6031,
+          554.0315
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          583.8031000000001,
+          552.1606338600001,
+          783.6046746200001,
+          562.96063385
+        ],
+        "position_association": "note-table row interior; search-label X does not locate centered visible glyphs",
+        "raster_box_px": [
+          1621,
+          89,
+          2178,
+          120
+        ],
+        "ink_pixels": 553,
+        "ink_fraction": 0.03202640875658771,
+        "crop": "label-00.png"
+      },
+      {
+        "text": "1  ALL DIMENSIONS IN mm",
+        "origin_pt": [
+          584.6031,
+          534.189
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          583.8031000000001,
+          532.31813386,
+          783.6046746200001,
+          543.1181338499999
+        ],
+        "position_association": "note-table row interior; search-label X does not locate centered visible glyphs",
+        "raster_box_px": [
+          1621,
+          144,
+          2178,
+          175
+        ],
+        "ink_pixels": 1987,
+        "ink_fraction": 0.1150749985521515,
+        "crop": "label-01.png"
+      },
+      {
+        "text": "2  H1 = ALL FOUR Z THROUGH BORES",
+        "origin_pt": [
+          584.6031,
+          514.3465
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          583.8031000000001,
+          512.47563386,
+          783.6046746200001,
+          523.27563385
+        ],
+        "position_association": "note-table row interior; search-label X does not locate centered visible glyphs",
+        "raster_box_px": [
+          1621,
+          200,
+          2178,
+          231
+        ],
+        "ink_pixels": 2615,
+        "ink_fraction": 0.151444952800139,
+        "crop": "label-02.png"
+      },
+      {
+        "text": "3  MODEL STAGE: FINISHED",
+        "origin_pt": [
+          584.6031,
+          494.5039
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          583.8031000000001,
+          492.63303386,
+          783.6046746200001,
+          503.43303385
+        ],
+        "position_association": "note-table row interior; search-label X does not locate centered visible glyphs",
+        "raster_box_px": [
+          1621,
+          255,
+          2178,
+          286
+        ],
+        "ink_pixels": 2243,
+        "ink_fraction": 0.1299009671627961,
+        "crop": "label-03.png"
+      },
+      {
+        "text": "4  DRAWING STAGE: FINISHED",
+        "origin_pt": [
+          584.6031,
+          474.6614
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          583.8031000000001,
+          472.79053386000004,
+          783.6046746200001,
+          483.59053385000004
+        ],
+        "position_association": "note-table row interior; search-label X does not locate centered visible glyphs",
+        "raster_box_px": [
+          1621,
+          310,
+          2178,
+          341
+        ],
+        "ink_pixels": 2583,
+        "ink_fraction": 0.14959170672380842,
+        "crop": "label-04.png"
+      },
+      {
+        "text": "5  FINISH: NONE",
+        "origin_pt": [
+          584.6031,
+          454.8189
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          583.8031000000001,
+          452.94803386,
+          783.6046746200001,
+          463.74803385
+        ],
+        "position_association": "note-table row interior; search-label X does not locate centered visible glyphs",
+        "raster_box_px": [
+          1621,
+          365,
+          2178,
+          396
+        ],
+        "ink_pixels": 1401,
+        "ink_fraction": 0.08113742977934789,
+        "crop": "label-05.png"
+      },
+      {
+        "text": "6  VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE",
+        "origin_pt": [
+          584.6031,
+          434.9764
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          583.8031000000001,
+          433.10553386000004,
+          783.6046746200001,
+          443.90553385000004
+        ],
+        "position_association": "note-table row interior; search-label X does not locate centered visible glyphs",
+        "raster_box_px": [
+          1621,
+          420,
+          2178,
+          451
+        ],
+        "ink_pixels": 3595,
+        "ink_fraction": 0.2082006138877628,
+        "crop": "label-06.png"
+      },
+      {
+        "text": "7  H1: DRAWING AND MODEL APPLY AT SAME STAGE",
+        "origin_pt": [
+          584.6031,
+          415.1339
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          583.8031000000001,
+          413.26303386,
+          783.6046746200001,
+          424.06303385
+        ],
+        "position_association": "note-table row interior; search-label X does not locate centered visible glyphs",
+        "raster_box_px": [
+          1621,
+          475,
+          2178,
+          506
+        ],
+        "ink_pixels": 3448,
+        "ink_fraction": 0.19968726472461923,
+        "crop": "label-07.png"
+      },
+      {
+        "text": "ISO VIEW (NTS)",
+        "origin_pt": [
+          409.1967,
+          356.467
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          408.3967,
+          354.59613386,
+          472.64551884,
+          365.39613385
+        ],
+        "raster_box_px": [
+          1134,
+          638,
+          1314,
+          669
+        ],
+        "ink_pixels": 1182,
+        "ink_fraction": 0.2118279569892473,
+        "crop": "label-08.png"
+      },
+      {
+        "text": "4×",
+        "origin_pt": [
+          259.869,
+          307.2047
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          259.069,
+          305.33383386,
+          271.61388188,
+          316.13383385000003
+        ],
+        "raster_box_px": [
+          719,
+          775,
+          755,
+          806
+        ],
+        "ink_pixels": 183,
+        "ink_fraction": 0.1639784946236559,
+        "crop": "label-09.png"
+      },
+      {
+        "text": "ø",
+        "origin_pt": [
+          274.5638,
+          307.2047
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          273.7638,
+          305.33383386,
+          281.03624094,
+          316.13383385000003
+        ],
+        "raster_box_px": [
+          760,
+          775,
+          781,
+          806
+        ],
+        "ink_pixels": 184,
+        "ink_fraction": 0.282642089093702,
+        "crop": "label-10.png"
+      },
+      {
+        "text": "6.8 ±0.05",
+        "origin_pt": [
+          285.1937,
+          307.2047
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          284.39369999999997,
+          305.33383386,
+          325.17165272,
+          316.13383385000003
+        ],
+        "raster_box_px": [
+          790,
+          775,
+          904,
+          806
+        ],
+        "ink_pixels": 628,
+        "ink_fraction": 0.17770232031692135,
+        "crop": "label-11.png"
+      },
+      {
+        "text": "THRU",
+        "origin_pt": [
+          333.8277,
+          307.2047
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          333.0277,
+          305.33383386,
+          356.11746375999996,
+          316.13383385000003
+        ],
+        "raster_box_px": [
+          925,
+          775,
+          990,
+          806
+        ],
+        "ink_pixels": 432,
+        "ink_fraction": 0.2143920595533499,
+        "crop": "label-12.png"
+      },
+      {
+        "text": "80",
+        "origin_pt": [
+          192.4044,
+          264.685
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          191.6044,
+          262.81413386,
+          204.14928188000002,
+          273.61413385000003
+        ],
+        "raster_box_px": [
+          532,
+          893,
+          568,
+          924
+        ],
+        "ink_pixels": 273,
+        "ink_fraction": 0.2446236559139785,
+        "crop": "label-13.png"
+      },
+      {
+        "text": "8",
+        "origin_pt": [
+          285.7351,
+          231.3071
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          276.80596614999996,
+          230.50709999999998,
+          287.60596613999996,
+          237.77954094
+        ],
+        "raster_box_px": [
+          769,
+          993,
+          800,
+          1014
+        ],
+        "ink_pixels": 140,
+        "ink_fraction": 0.21505376344086022,
+        "crop": "label-14.png"
+      },
+      {
+        "text": "50",
+        "origin_pt": [
+          396.9978,
+          196.6535
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          396.1978,
+          194.78263386,
+          408.74268187999996,
+          205.58263385
+        ],
+        "raster_box_px": [
+          1100,
+          1082,
+          1136,
+          1113
+        ],
+        "ink_pixels": 249,
+        "ink_fraction": 0.22311827956989247,
+        "crop": "label-15.png"
+      },
+      {
+        "text": "SCALE 1:2",
+        "origin_pt": [
+          716.4652,
+          130.2746
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          715.6652,
+          128.40373386,
+          756.44315272,
+          139.20373385
+        ],
+        "raster_box_px": [
+          1988,
+          1267,
+          2102,
+          1298
+        ],
+        "ink_pixels": 698,
+        "ink_fraction": 0.1975099037917374,
+        "crop": "label-16.png"
+      },
+      {
+        "text": "Mounting plate",
+        "origin_pt": [
+          563.7756,
+          85.49291
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          562.9756000000001,
+          83.62204385999999,
+          630.11575742,
+          94.42204385
+        ],
+        "raster_box_px": [
+          1564,
+          1391,
+          1751,
+          1422
+        ],
+        "ink_pixels": 1200,
+        "ink_fraction": 0.20700362256339486,
+        "crop": "label-17.png"
+      },
+      {
+        "text": "MP-001",
+        "origin_pt": [
+          745.8321,
+          85.49291
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          745.0321,
+          83.62204385999999,
+          775.77540706,
+          94.42204385
+        ],
+        "raster_box_px": [
+          2069,
+          1391,
+          2156,
+          1422
+        ],
+        "ink_pixels": 621,
+        "ink_fraction": 0.23025583982202447,
+        "crop": "label-18.png"
+      },
+      {
+        "text": "6061-T6",
+        "origin_pt": [
+          514.8737,
+          62.81575
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          514.0737,
+          60.944883860000004,
+          550.089448,
+          71.74488385000001
+        ],
+        "raster_box_px": [
+          1428,
+          1454,
+          1529,
+          1485
+        ],
+        "ink_pixels": 628,
+        "ink_fraction": 0.20057489619929736,
+        "crop": "label-19.png"
+      },
+      {
+        "text": "mm",
+        "origin_pt": [
+          732.583,
+          62.81575
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          731.783,
+          60.944883860000004,
+          744.32788188,
+          71.74488385000001
+        ],
+        "raster_box_px": [
+          2033,
+          1454,
+          2068,
+          1485
+        ],
+        "ink_pixels": 230,
+        "ink_fraction": 0.2119815668202765,
+        "crop": "label-20.png"
+      },
+      {
+        "text": "A4",
+        "origin_pt": [
+          785.5413,
+          62.81575
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          784.7413,
+          60.944883860000004,
+          797.28618188,
+          71.74488385000001
+        ],
+        "raster_box_px": [
+          2180,
+          1454,
+          2216,
+          1485
+        ],
+        "ink_pixels": 215,
+        "ink_fraction": 0.19265232974910393,
+        "crop": "label-21.png"
+      },
+      {
+        "text": "A",
+        "origin_pt": [
+          777.6326,
+          40.13858
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          776.8326000000001,
+          38.26771386,
+          784.10504094,
+          49.06771385
+        ],
+        "raster_box_px": [
+          2158,
+          1517,
+          2179,
+          1548
+        ],
+        "ink_pixels": 112,
+        "ink_fraction": 0.17204301075268819,
+        "crop": "label-22.png"
+      },
+      {
+        "text": "2026-10-04",
+        "origin_pt": [
+          717.8457,
+          40.13858
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          717.0457,
+          38.26771386,
+          768.87877082,
+          49.06771385
+        ],
+        "raster_box_px": [
+          1992,
+          1517,
+          2137,
+          1548
+        ],
+        "ink_pixels": 895,
+        "ink_fraction": 0.19911012235817574,
+        "crop": "label-23.png"
+      },
+      {
+        "text": "SEE CALLOUT",
+        "origin_pt": [
+          625.3228,
+          62.81575
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          624.5228000000001,
+          60.944883860000004,
+          681.6283117600001,
+          71.74488385000001
+        ],
+        "raster_box_px": [
+          1735,
+          1454,
+          1894,
+          1485
+        ],
+        "ink_pixels": 1021,
+        "ink_fraction": 0.2071414079935078,
+        "crop": "label-24.png"
+      },
+      {
+        "text": "RFQ author / draftwright",
+        "origin_pt": [
+          488.0438,
+          40.13858
+        ],
+        "font_size_pt": 8.503937,
+        "box_pt": [
+          487.24379999999996,
+          38.26771386,
+          604.21702824,
+          49.06771385
+        ],
+        "raster_box_px": [
+          1353,
+          1517,
+          1679,
+          1548
+        ],
+        "ink_pixels": 1884,
+        "ink_fraction": 0.18642390659014446,
+        "crop": "label-25.png"
+      }
+    ],
+    "callout": {
+      "search_text": "4× ø 6.8 ±0.05 THRU",
+      "count": 4,
+      "diameter_mm": 6.8,
+      "symmetric_tolerance_mm": 0.05,
+      "through": true,
+      "box_pt": [
+        259.069,
+        305.33383386,
+        356.11746375999996,
+        316.13383385000003
+      ],
+      "crop": "callout.png",
+      "symbol_decode": "Unicode text extracted; raster visual attestation also required"
+    },
+    "png_pdf_agreement": {
+      "method": "binary ink <160 with 2-pixel dilation for renderer antialiasing",
+      "unmatched_ink_ratio": 0.0,
+      "limit": 0.015,
+      "pdf_ink_pixels": 76636,
+      "png_ink_pixels": 70338
+    },
+    "visual_attestation_required": true
+  },
+  "manufacturing": {
+    "model_stage": "finished",
+    "drawing_stage": "finished",
+    "transition": null,
+    "material": "6061-T6",
+    "finish": "none"
+  },
+  "visual_attestation": null,
+  "evidence": {
+    "inspection": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\evidence\\M0\\final-tests\\test_without_visual_attestatio0\\unattested\\inspection.json",
+    "rerender": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\evidence\\M0\\final-tests\\test_without_visual_attestatio0\\unattested\\rerender.png",
+    "callout": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\evidence\\M0\\final-tests\\test_without_visual_attestatio0\\unattested\\callout.png"
+  },
+  "limits": [
+    "finite synthetic M0 geometry only",
+    "shared OCCT kernel common-mode risk",
+    "raster ink checks are not OCR; visual attestation remains required",
+    "no process feasibility conclusion"
+  ]
+}

@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "project": "RFQFuzz",
   "research_date": "2026-10-04",
-  "status": "plan_only",
+  "status": "m0_feasibility_passed_release_requirements_planned",
   "source_of_truth": true,
   "requirements": [
     {

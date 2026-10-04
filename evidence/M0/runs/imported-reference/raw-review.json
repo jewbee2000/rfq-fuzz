@@ -1,0 +1,98 @@
+{
+  "schema_version": "m0.1",
+  "reviewer": {
+    "name": "RFQFuzz reference",
+    "version": "m0-template-1",
+    "configuration": "Public-only STEP reimport/build123d and pypdf template parser. PNG interpretation unsupported; drawing visibility established only by prior independent corpus validation.",
+    "provenance": "Local hand-coded protocol reference, not a general reviewer or oracle"
+  },
+  "results": [
+    {
+      "case_id": "pk-4d90",
+      "packet_sha256": "e92576eab2c7012132c85507a8f373de395a7ec6544d7b863bb795d1f1317812",
+      "status": "completed",
+      "reviewed_modalities": [
+        "step",
+        "pdf",
+        "context"
+      ],
+      "reviewed_obligations": [
+        "bore_group_consistency"
+      ],
+      "findings": [],
+      "assertions": [
+        {
+          "obligation": "bore_group_consistency",
+          "feature_id": "H1",
+          "category": "diameter_consistency",
+          "conclusion": "supported_clear",
+          "drawing_evidence": "drawing.pdf page1 H1: 4x diameter 6.8 +/-0.05 mm THRU",
+          "geometry_evidence": "part.step: 4 cylindrical bore walls; diameters [6.0, 6.0, 6.0, 6.0] mm",
+          "context_evidence": "model_stage=intermediate; drawing_stage=finished; transition={'operation': 'ream', 'feature_id': 'H1', 'from_stage': 'intermediate', 'to_stage': 'finished', 'target': 'drawing bore callout'}",
+          "rationale": "Declared later reaming explains the larger final bore; process feasibility is outside scope."
+        }
+      ],
+      "cnc_advisory": "unsupported",
+      "runtime_seconds": 0.29080640000029234,
+      "raw_output_reference": "public-read.json"
+    },
+    {
+      "case_id": "pk-7a1c",
+      "packet_sha256": "17fa0bb2e63e161bba519f80953fe87bca4cf5f3e623cf5273f738ad7d77ffc6",
+      "status": "completed",
+      "reviewed_modalities": [
+        "step",
+        "pdf",
+        "context"
+      ],
+      "reviewed_obligations": [
+        "bore_group_consistency"
+      ],
+      "findings": [
+        {
+          "obligation": "bore_group_consistency",
+          "feature_id": "H1",
+          "category": "diameter_consistency",
+          "conclusion": "contradiction",
+          "drawing_evidence": "drawing.pdf page1 H1: 4x diameter 6.8 +/-0.05 mm THRU",
+          "geometry_evidence": "part.step: 4 cylindrical bore walls; diameters [6.0, 6.0, 6.0, 6.0] mm",
+          "context_evidence": "model_stage=finished; drawing_stage=finished; transition=None",
+          "rationale": "At the same stage, the drawing interval must contain the STEP nominal bore."
+        }
+      ],
+      "assertions": [],
+      "cnc_advisory": "unsupported",
+      "runtime_seconds": 0.28301490000012564,
+      "raw_output_reference": "public-read.json"
+    },
+    {
+      "case_id": "pk-b8e2",
+      "packet_sha256": "74f329f490ae060c8e42a8613242e38b2cc54e5b8618b54c5ae373cc5651aef2",
+      "status": "completed",
+      "reviewed_modalities": [
+        "step",
+        "pdf",
+        "context"
+      ],
+      "reviewed_obligations": [
+        "bore_group_consistency"
+      ],
+      "findings": [],
+      "assertions": [
+        {
+          "obligation": "bore_group_consistency",
+          "feature_id": "H1",
+          "category": "diameter_consistency",
+          "conclusion": "supported_clear",
+          "drawing_evidence": "drawing.pdf page1 H1: 4x diameter 6 +/-0.05 mm THRU",
+          "geometry_evidence": "part.step: 4 cylindrical bore walls; diameters [6.0, 6.0, 6.0, 6.0] mm",
+          "context_evidence": "model_stage=finished; drawing_stage=finished; transition=None",
+          "rationale": "At the same stage, the drawing interval must contain the STEP nominal bore."
+        }
+      ],
+      "cnc_advisory": "unsupported",
+      "runtime_seconds": 0.33784880000166595,
+      "raw_output_reference": "public-read.json"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "manifest": {
+    "schema_version": "m0.1",
+    "suite_sha256": "208019a0e40362252a15a3d92cf82c1e7ec9b265d6214810a434916f9e614ec7",
+    "oracle_sha256": "8641c870b854c8681688450dfd661dde23b3faf6d6d81c87547a71d2e82b4399",
+    "profile_sha256": "d3fc42a275d615db24b10fb4d8f308655ecd133bb4be606f4809cc51fbdd5278",
+    "adapter_version": "manual-m0.1",
+    "environment_sha256": "2ed4ba814fd35567a3f08e5a4695cfed650f71834d7c045b5ae5e838d443ddd2",
+    "limits": "three synthetic presentations, one H1 obligation each; CNC advisories unsupported"
+  },
+  "reviewer": {
+    "name": "Codex standalone RFQ reviewer",
+    "version": "Exact served model version unavailable",
+    "configuration": "Independent manual review of the standalone public packages; own OCP STEP measurement script, pypdf extraction, PDFium renders, visual PNG/PDF inspection; no project validator or reference checker",
+    "provenance": "Codex agent session identified generically as based on GPT-6; no exact served model version available. Same-machine procedural isolation. Read PROMPT.txt, review-result.schema.json, each public packet and supplied artifact, and reviewer-created evidence only. Python 3.12.2; cadquery-ocp 7.8.1.1.post1; pypdf 6.9.1; pypdfium2 5.14.0; Pillow 12.3.0. No external sources, hosted adapter, additional paid API, or implementation/answer records used. Runtime not measured."
+  },
+  "score": {
+    "track": "package_consistency",
+    "counts": {
+      "defects": 1,
+      "detected": 1,
+      "clean": 2,
+      "false_alerts": 0,
+      "explicit_false_clears": 0,
+      "silent_misses": 0,
+      "correct_clear": 2,
+      "missing_information": 0,
+      "execution_failures": 0,
+      "unsupported": 0,
+      "covered": 3
+    },
+    "rows": [
+      {
+        "case_id": "pk-4d90",
+        "expected": "supported_clear",
+        "status": "completed",
+        "actual": [
+          "supported_clear"
+        ],
+        "outcome": "correct_clear",
+        "unadjudicated": [],
+        "reviewed_modalities": [
+          "step",
+          "pdf",
+          "png",
+          "context"
+        ]
+      },
+      {
+        "case_id": "pk-7a1c",
+        "expected": "contradiction",
+        "status": "completed",
+        "actual": [
+          "contradiction"
+        ],
+        "outcome": "detected",
+        "unadjudicated": [],
+        "reviewed_modalities": [
+          "step",
+          "pdf",
+          "png",
+          "context"
+        ]
+      },
+      {
+        "case_id": "pk-b8e2",
+        "expected": "supported_clear",
+        "status": "completed",
+        "actual": [
+          "supported_clear"
+        ],
+        "outcome": "correct_clear",
+        "unadjudicated": [],
+        "reviewed_modalities": [
+          "step",
+          "pdf",
+          "png",
+          "context"
+        ]
+      }
+    ],
+    "unadjudicated": [],
+    "precision_finalized": false,
+    "precision_note": "No precision claim: M0 scores one named finite obligation per case; unmatched findings require adjudication.",
+    "cnc_advisory": {
+      "status": "unsupported",
+      "scored_obligations": 0
+    }
+  },
+  "raw_sha256": "c63bdb8e487e7b02d402a4bfa1b0f08305bfec5a4be077d5c277e1a9689a19d0",
+  "raw_source": "evidence/M0/review-handoff/review-output/review.json",
+  "adjudication": {
+    "schema_version": "m0.1",
+    "adjudicator": "coordinator manual adapter",
+    "raw_sha256": "c63bdb8e487e7b02d402a4bfa1b0f08305bfec5a4be077d5c277e1a9689a19d0",
+    "oracle_sha256": "8641c870b854c8681688450dfd661dde23b3faf6d6d81c87547a71d2e82b4399",
+    "decisions": [
+      {
+        "case_id": "pk-4d90",
+        "finding_sha256": "35d4b96a16a20e3f012cc582a8c44659f5d62d871bfaf9da4d390b5677c83c01",
+        "original_category": "explicit_stage_transition",
+        "mapped_category": "diameter_consistency",
+        "reason": "Coordinator inspected the original STEP/drawing/stage evidence and scoped H1 obligation. Free category name denotes the same finite bore diameter/stage consistency obligation; only category vocabulary is normalized. Conclusion, feature, obligation, witnesses and oracle are unchanged. The initial unadjudicated import is retained."
+      },
+      {
+        "case_id": "pk-7a1c",
+        "finding_sha256": "6d878945d45f0812104e456e30c6b1edcc30775c5e685192280e20da7f3ccda0",
+        "original_category": "same_stage_bore_diameter",
+        "mapped_category": "diameter_consistency",
+        "reason": "Coordinator inspected the original STEP/drawing/stage evidence and scoped H1 obligation. Free category name denotes the same finite bore diameter/stage consistency obligation; only category vocabulary is normalized. Conclusion, feature, obligation, witnesses and oracle are unchanged. The initial unadjudicated import is retained."
+      },
+      {
+        "case_id": "pk-b8e2",
+        "finding_sha256": "03cc925964f89c1ed1b33201a775d107f92897b3a6b1a9b7c16a3468c5e1d8dc",
+        "original_category": "same_stage_bore_diameter",
+        "mapped_category": "diameter_consistency",
+        "reason": "Coordinator inspected the original STEP/drawing/stage evidence and scoped H1 obligation. Free category name denotes the same finite bore diameter/stage consistency obligation; only category vocabulary is normalized. Conclusion, feature, obligation, witnesses and oracle are unchanged. The initial unadjudicated import is retained."
+      }
+    ],
+    "limits": "M0 free-category vocabulary adjudication only; not a change in engineering acceptance or answer key."
+  }
+}

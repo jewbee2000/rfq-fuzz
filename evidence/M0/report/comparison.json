@@ -1,0 +1,91 @@
+{
+  "schema_version": "m0.1",
+  "injected_changes": [
+    {
+      "case_id": "pk-4d90",
+      "before": "correct_clear",
+      "after": "false_alert"
+    },
+    {
+      "case_id": "pk-7a1c",
+      "before": "detected",
+      "after": "explicit_false_clear"
+    }
+  ],
+  "external_changes": [],
+  "runs": [
+    {
+      "reviewer": {
+        "name": "RFQFuzz reference",
+        "version": "m0-template-1",
+        "configuration": "Public-only STEP reimport/build123d and pypdf template parser. PNG interpretation unsupported; drawing visibility established only by prior independent corpus validation.",
+        "provenance": "Local hand-coded protocol reference, not a general reviewer or oracle"
+      },
+      "counts": {
+        "defects": 1,
+        "detected": 1,
+        "clean": 2,
+        "false_alerts": 0,
+        "explicit_false_clears": 0,
+        "silent_misses": 0,
+        "correct_clear": 2,
+        "missing_information": 0,
+        "execution_failures": 0,
+        "unsupported": 0,
+        "covered": 3
+      }
+    },
+    {
+      "reviewer": {
+        "name": "RFQFuzz reference — DELIBERATELY INJECTED REGRESSION",
+        "version": "m0-template-injected-2",
+        "configuration": "Injected: clear same-stage contradiction; ignore declared ream transition and flag later-stage target. Not a naturally observed external failure.",
+        "provenance": "Local hand-coded protocol reference, not a general reviewer or oracle"
+      },
+      "counts": {
+        "defects": 1,
+        "detected": 0,
+        "clean": 2,
+        "false_alerts": 1,
+        "explicit_false_clears": 1,
+        "silent_misses": 0,
+        "correct_clear": 1,
+        "missing_information": 0,
+        "execution_failures": 0,
+        "unsupported": 0,
+        "covered": 3
+      }
+    },
+    {
+      "reviewer": {
+        "name": "Codex standalone RFQ reviewer",
+        "version": "Exact served model version unavailable",
+        "configuration": "Independent manual review of the standalone public packages; own OCP STEP measurement script, pypdf extraction, PDFium renders, visual PNG/PDF inspection; no project validator or reference checker",
+        "provenance": "Codex agent session identified generically as based on GPT-6; no exact served model version available. Same-machine procedural isolation. Read PROMPT.txt, review-result.schema.json, each public packet and supplied artifact, and reviewer-created evidence only. Python 3.12.2; cadquery-ocp 7.8.1.1.post1; pypdf 6.9.1; pypdfium2 5.14.0; Pillow 12.3.0. No external sources, hosted adapter, additional paid API, or implementation/answer records used. Runtime not measured."
+      },
+      "counts": {
+        "defects": 1,
+        "detected": 1,
+        "clean": 2,
+        "false_alerts": 0,
+        "explicit_false_clears": 0,
+        "silent_misses": 0,
+        "correct_clear": 2,
+        "missing_information": 0,
+        "execution_failures": 0,
+        "unsupported": 0,
+        "covered": 3
+      }
+    }
+  ],
+  "manifest": {
+    "schema_version": "m0.1",
+    "suite_sha256": "208019a0e40362252a15a3d92cf82c1e7ec9b265d6214810a434916f9e614ec7",
+    "oracle_sha256": "8641c870b854c8681688450dfd661dde23b3faf6d6d81c87547a71d2e82b4399",
+    "profile_sha256": "d3fc42a275d615db24b10fb4d8f308655ecd133bb4be606f4809cc51fbdd5278",
+    "adapter_version": "manual-m0.1",
+    "environment_sha256": "2ed4ba814fd35567a3f08e5a4695cfed650f71834d7c045b5ae5e838d443ddd2",
+    "limits": "three synthetic presentations, one H1 obligation each; CNC advisories unsupported"
+  },
+  "scope": "one synthetic ancestry; CNC advisory unsupported; no industrial claim"
+}

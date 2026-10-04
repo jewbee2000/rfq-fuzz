@@ -1,0 +1,14 @@
+{
+  "schema_compliant": true,
+  "schema_method": "Local stdlib recursive checker implements every validation keyword used by the supplied schema; no project validator imported",
+  "one_result_per_public_case": true,
+  "actual_packet_hashes_match_response": true,
+  "public_bytes_match_initial_measurement_hashes": true,
+  "all_required_modalities_and_only_named_obligation": true,
+  "evidence_references_exist": true,
+  "case_ids": [
+    "pk-4d90",
+    "pk-7a1c",
+    "pk-b8e2"
+  ]
+}

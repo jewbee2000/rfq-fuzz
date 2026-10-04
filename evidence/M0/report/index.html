@@ -1,0 +1,606 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>RFQFuzz M0 evidence comparison</title>
+<style>body{margin:0;background:#f5f6f8;color:#172332;font:16px/1.5 system-ui,sans-serif}main{max-width:1380px;margin:auto;padding:32px}h1{font-size:34px;margin:0}h2{font-size:23px}small{display:block}table{border-collapse:collapse;width:100%;background:white}th,td{text-align:left;vertical-align:top;padding:16px;border:1px solid #cdd5df}a{color:#0e537e}article,section{background:white;padding:24px;margin:24px 0;border:1px solid #d5dde5;border-radius:6px}.banner{background:#fff0d0;border-left:6px solid #a65900;padding:18px}.explicit_false_clear,.false_alert{background:#fff0df}.detected,.correct_clear{background:#eaf4ef}.crop{max-width:100%;image-rendering:auto;border:1px solid #ddd;padding:12px}.drawing{max-width:100%}pre{overflow:auto;background:#f0f3f6;padding:18px;font-size:13px}</style>
+<main><h1>RFQFuzz · M0 evidence comparison</h1><p>Three presentations of one synthetic plate. One named bore-group obligation per case. This benchmark does not certify manufacture or general industrial competence.</p>
+<p class="banner"><b>DELIBERATELY INJECTED REVIEWER REGRESSIONS</b><br>The second column of reviewer results intentionally clears a contradiction and ignores the declared reaming stage. These are reference-code perturbations, not naturally discovered failures of the independent reviewer. Its original observations are retained separately.</p>
+<h2>What changed</h2><p>Reference → deliberately injected reference:</p><ul><li><a href="#case-pk-4d90">pk-4d90</a>: correct_clear → false_alert</li><li><a href="#case-pk-7a1c">pk-7a1c</a>: detected → explicit_false_clear</li></ul><p>Reference → independent reviewer: [] (no changed decisions when empty).</p>
+<table><tr><th>Case / source evidence</th><th>Validated expectation</th><th>RFQFuzz reference<small>m0-template-1</small></th><th>RFQFuzz reference — DELIBERATELY INJECTED REGRESSION<small>m0-template-injected-2</small></th><th>Codex standalone RFQ reviewer<small>Exact served model version unavailable</small></th></tr><tr><th><a href="#case-pk-4d90">pk-4d90</a></th><td>supported_clear</td><td class="correct_clear"><b>correct_clear</b><br>[&#x27;supported_clear&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td><td class="false_alert"><b>false_alert</b><br>[&#x27;contradiction&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td><td class="correct_clear"><b>correct_clear</b><br>[&#x27;supported_clear&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;png&#x27;, &#x27;context&#x27;]</small></td></tr><tr><th><a href="#case-pk-7a1c">pk-7a1c</a></th><td>contradiction</td><td class="detected"><b>detected</b><br>[&#x27;contradiction&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td><td class="explicit_false_clear"><b>explicit_false_clear</b><br>[&#x27;supported_clear&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td><td class="detected"><b>detected</b><br>[&#x27;contradiction&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;png&#x27;, &#x27;context&#x27;]</small></td></tr><tr><th><a href="#case-pk-b8e2">pk-b8e2</a></th><td>supported_clear</td><td class="correct_clear"><b>correct_clear</b><br>[&#x27;supported_clear&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td><td class="correct_clear"><b>correct_clear</b><br>[&#x27;supported_clear&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td><td class="correct_clear"><b>correct_clear</b><br>[&#x27;supported_clear&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;png&#x27;, &#x27;context&#x27;]</small></td></tr></table>
+<h2>Separate tracks and denominators</h2><p>Package consistency is the only scored track. CNC advisory/profile review is <b>unsupported, 0 scored obligations</b>. Frozen fixture invalidity: 0/3. Initial authoring attempt: 3/3 excluded as a group for ambiguous view-stage context; not hidden in the final denominator. Corruption controls are intentionally invalid and unscored. No finalized precision, composite score, significance claim or independent industrial transfer evidence.</p><p>The public response schema allows free category names. The external findings use different names for the same H1 obligation. <a href="../category-adjudication.json">Evidence-bound manual mappings</a> normalize those names without changing conclusions, witnesses or oracle. <a href="../runs/imported-independent/run.json">Initial unadjudicated import</a> is retained as a harness limitation; it is not an observed reviewer miss.</p><article><h3>RFQFuzz reference</h3><p>Public-only STEP reimport/build123d and pypdf template parser. PNG interpretation unsupported; drawing visibility established only by prior independent corpus validation.</p><p>Detected 1/1; false alerts 0/2; explicit false clears 0/1; correct named clears 2/2; coverage 3/3; missing information 0; failures 0; unsupported 0; unadjudicated 0.</p><p><a href="../runs/imported-reference/run.json">Imported run manifest and score</a> · <a href="../runs/imported-reference/raw-review.json">Preserved raw review</a></p></article><article><h3>RFQFuzz reference — DELIBERATELY INJECTED REGRESSION</h3><p>Injected: clear same-stage contradiction; ignore declared ream transition and flag later-stage target. Not a naturally observed external failure.</p><p>Detected 0/1; false alerts 1/2; explicit false clears 1/1; correct named clears 1/2; coverage 3/3; missing information 0; failures 0; unsupported 0; unadjudicated 0.</p><p><a href="../runs/imported-injected/run.json">Imported run manifest and score</a> · <a href="../runs/imported-injected/raw-review.json">Preserved raw review</a></p></article><article><h3>Codex standalone RFQ reviewer</h3><p>Independent manual review of the standalone public packages; own OCP STEP measurement script, pypdf extraction, PDFium renders, visual PNG/PDF inspection; no project validator or reference checker</p><p>Detected 1/1; false alerts 0/2; explicit false clears 0/1; correct named clears 2/2; coverage 3/3; missing information 0; failures 0; unsupported 0; unadjudicated 0.</p><p><a href="../runs/imported-independent-adjudicated/run.json">Imported run manifest and score</a> · <a href="../runs/imported-independent-adjudicated/raw-review.json">Preserved raw review</a></p></article>
+<h2>Inspect the exact evidence</h2><section id="case-pk-4d90"><h2>pk-4d90 — supported_clear</h2><img class="crop" src="../validation/pk-4d90/callout.png" alt="Verified H1 bore callout"><p>Exported STEP: four Ø6 mm bores, depth 8 mm; volume 31095.22131576612 mm³. Visible callout Ø6.8 ±0.05 mm THRU. Contract: {&#x27;model_stage&#x27;: &#x27;intermediate&#x27;, &#x27;drawing_stage&#x27;: &#x27;finished&#x27;, &#x27;transition&#x27;: {&#x27;operation&#x27;: &#x27;ream&#x27;, &#x27;feature_id&#x27;: &#x27;H1&#x27;, &#x27;from_stage&#x27;: &#x27;intermediate&#x27;, &#x27;to_stage&#x27;: &#x27;finished&#x27;, &#x27;target&#x27;: &#x27;drawing bore callout&#x27;}, &#x27;material&#x27;: &#x27;6061-T6&#x27;, &#x27;finish&#x27;: &#x27;none&#x27;}.</p><p>Private rule O01, m0.1: compare same-stage drawing interval with reimported nominal; honor explicitly declared intermediate-to-finished reaming. Project-selected release contract, 2026-10-04. Supported clear applies only to H1 package consistency.</p><p><a href="../bundle/public/pk-4d90/drawing.pdf">PDF page1</a> · <a href="../bundle/public/pk-4d90/drawing.png">Full rendered drawing</a> · <a href="../bundle/public/pk-4d90/part.step">Actual STEP</a> · <a href="../bundle/public/pk-4d90/packet.json">Public contract</a> · <a href="../validation/pk-4d90/inspection.json">Independent measurement/region evidence</a></p><details><summary>View full drawing and geometric witnesses</summary><img class="drawing" src="../bundle/public/pk-4d90/drawing.png" alt="Complete supplied drawing"><pre>{
+  &quot;reader&quot;: &quot;OCP.STEPControl_Reader&quot;,
+  &quot;units&quot;: [
+    &quot;millimetre&quot;
+  ],
+  &quot;brep_valid&quot;: true,
+  &quot;solid_count&quot;: 1,
+  &quot;bbox_mm&quot;: [
+    -40.0,
+    -25.0,
+    -4.0,
+    40.0,
+    25.0,
+    4.0
+  ],
+  &quot;envelope_mm&quot;: [
+    80.0,
+    50.0,
+    8.0
+  ],
+  &quot;volume_mm3&quot;: 31095.22131576612,
+  &quot;analytic_volume_mm3&quot;: 31095.22131576614,
+  &quot;volume_error_mm3&quot;: -1.8189894035458565e-11,
+  &quot;plane_count&quot;: 6,
+  &quot;cylinders&quot;: [
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    }
+  ],
+  &quot;length_tolerance_mm&quot;: 1e-06,
+  &quot;volume_tolerance_mm3&quot;: 1e-05
+}</pre></details><details><summary>Original reviewer findings, assertions and witnesses</summary><h3>RFQFuzz reference</h3><pre>[
+  {
+    &quot;case_id&quot;: &quot;pk-4d90&quot;,
+    &quot;packet_sha256&quot;: &quot;e92576eab2c7012132c85507a8f373de395a7ec6544d7b863bb795d1f1317812&quot;,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;reviewed_modalities&quot;: [
+      &quot;step&quot;,
+      &quot;pdf&quot;,
+      &quot;context&quot;
+    ],
+    &quot;reviewed_obligations&quot;: [
+      &quot;bore_group_consistency&quot;
+    ],
+    &quot;findings&quot;: [],
+    &quot;assertions&quot;: [
+      {
+        &quot;obligation&quot;: &quot;bore_group_consistency&quot;,
+        &quot;feature_id&quot;: &quot;H1&quot;,
+        &quot;category&quot;: &quot;diameter_consistency&quot;,
+        &quot;conclusion&quot;: &quot;supported_clear&quot;,
+        &quot;drawing_evidence&quot;: &quot;drawing.pdf page1 H1: 4x diameter 6.8 +/-0.05 mm THRU&quot;,
+        &quot;geometry_evidence&quot;: &quot;part.step: 4 cylindrical bore walls; diameters [6.0, 6.0, 6.0, 6.0] mm&quot;,
+        &quot;context_evidence&quot;: &quot;model_stage=intermediate; drawing_stage=finished; transition={&#x27;operation&#x27;: &#x27;ream&#x27;, &#x27;feature_id&#x27;: &#x27;H1&#x27;, &#x27;from_stage&#x27;: &#x27;intermediate&#x27;, &#x27;to_stage&#x27;: &#x27;finished&#x27;, &#x27;target&#x27;: &#x27;drawing bore callout&#x27;}&quot;,
+        &quot;rationale&quot;: &quot;Declared later reaming explains the larger final bore; process feasibility is outside scope.&quot;
+      }
+    ],
+    &quot;cnc_advisory&quot;: &quot;unsupported&quot;,
+    &quot;runtime_seconds&quot;: 0.29080640000029234,
+    &quot;raw_output_reference&quot;: &quot;public-read.json&quot;
+  }
+]</pre><h3>RFQFuzz reference — DELIBERATELY INJECTED REGRESSION</h3><pre>[
+  {
+    &quot;case_id&quot;: &quot;pk-4d90&quot;,
+    &quot;packet_sha256&quot;: &quot;e92576eab2c7012132c85507a8f373de395a7ec6544d7b863bb795d1f1317812&quot;,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;reviewed_modalities&quot;: [
+      &quot;step&quot;,
+      &quot;pdf&quot;,
+      &quot;context&quot;
+    ],
+    &quot;reviewed_obligations&quot;: [
+      &quot;bore_group_consistency&quot;
+    ],
+    &quot;findings&quot;: [
+      {
+        &quot;obligation&quot;: &quot;bore_group_consistency&quot;,
+        &quot;feature_id&quot;: &quot;H1&quot;,
+        &quot;category&quot;: &quot;diameter_consistency&quot;,
+        &quot;conclusion&quot;: &quot;contradiction&quot;,
+        &quot;drawing_evidence&quot;: &quot;drawing.pdf page1 H1: 4x diameter 6.8 +/-0.05 mm THRU&quot;,
+        &quot;geometry_evidence&quot;: &quot;part.step: 4 cylindrical bore walls; diameters [6.0, 6.0, 6.0, 6.0] mm&quot;,
+        &quot;context_evidence&quot;: &quot;model_stage=intermediate; drawing_stage=finished; transition={&#x27;operation&#x27;: &#x27;ream&#x27;, &#x27;feature_id&#x27;: &#x27;H1&#x27;, &#x27;from_stage&#x27;: &#x27;intermediate&#x27;, &#x27;to_stage&#x27;: &#x27;finished&#x27;, &#x27;target&#x27;: &#x27;drawing bore callout&#x27;}&quot;,
+        &quot;rationale&quot;: &quot;DELIBERATE INJECTION: ignore the explicit later reaming operation.&quot;
+      }
+    ],
+    &quot;assertions&quot;: [],
+    &quot;cnc_advisory&quot;: &quot;unsupported&quot;,
+    &quot;runtime_seconds&quot;: 0.29080640000029234,
+    &quot;raw_output_reference&quot;: &quot;public-read.json&quot;
+  }
+]</pre><h3>Codex standalone RFQ reviewer</h3><pre>[
+  {
+    &quot;case_id&quot;: &quot;pk-4d90&quot;,
+    &quot;packet_sha256&quot;: &quot;e92576eab2c7012132c85507a8f373de395a7ec6544d7b863bb795d1f1317812&quot;,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;reviewed_modalities&quot;: [
+      &quot;step&quot;,
+      &quot;pdf&quot;,
+      &quot;png&quot;,
+      &quot;context&quot;
+    ],
+    &quot;reviewed_obligations&quot;: [
+      &quot;bore_group_consistency&quot;
+    ],
+    &quot;findings&quot;: [],
+    &quot;assertions&quot;: [
+      {
+        &quot;obligation&quot;: &quot;bore_group_consistency&quot;,
+        &quot;feature_id&quot;: &quot;H1&quot;,
+        &quot;category&quot;: &quot;explicit_stage_transition&quot;,
+        &quot;conclusion&quot;: &quot;supported_clear&quot;,
+        &quot;drawing_evidence&quot;: &quot;Actual PDF page 1, its reviewer-generated PDFium render, and supplied drawing.png visibly show the grouped &#x27;4× Ø6.8 ±0.05 THRU&#x27; callout; notes &#x27;H1 = ALL FOUR Z THROUGH BORES&#x27;, &#x27;MODEL STAGE: INTERMEDIATE&#x27;, &#x27;DRAWING STAGE: FINISHED&#x27;, &#x27;VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE&#x27;, and &#x27;H1: REAM AFTER MODEL STAGE TO DRAWING SIZE&#x27;. Extracted PDF text uses ø for the visible diameter symbol. Drawing is MP-001 revision A, units mm.&quot;,
+        &quot;geometry_evidence&quot;: &quot;Independent reload of actual part.step produced &#x27;valid_shape&#x27;: true and &#x27;solid_count&#x27;: 1 in review-output/measurements.json. Four cylindrical faces each have &#x27;radius_mm&#x27;: 3.0 and &#x27;diameter_mm&#x27;: 6.0, Z axes at XY (-25,-15), (-25,15), (25,-15), (25,15), and circular boundaries on both Z=-4 and Z=4 planar faces. The bore axes classify OUT at Z=-3.9,0,3.9 while (0,0,0) classifies IN. Thus all four public H1 bores are nominal Ø6 mm and through the 8 mm plate.&quot;,
+        &quot;context_evidence&quot;: &quot;packet.json says &#x27;model_stage&#x27;: &#x27;intermediate&#x27;, &#x27;drawing_stage&#x27;: &#x27;finished&#x27;, and transition &#x27;operation&#x27;: &#x27;ream&#x27;, &#x27;feature_id&#x27;: &#x27;H1&#x27;, &#x27;from_stage&#x27;: &#x27;intermediate&#x27;, &#x27;to_stage&#x27;: &#x27;finished&#x27;, &#x27;target&#x27;: &#x27;drawing bore callout&#x27;. Its consistency rule is &#x27;same-stage drawing intervals must contain STEP nominal; explicit later-stage operation governs its target stage&#x27;. The H1 association covers all four bores; units are mm; model/drawing A/A is permitted; finish is none. Scope is &#x27;Finite H1 package consistency only; CNC advisories and process feasibility unsupported&#x27;.&quot;,
+        &quot;rationale&quot;: &quot;The finished-stage grouped callout specifies [6.75,6.85] mm for every H1 bore. The supplied STEP is explicitly intermediate-stage Ø6 mm, and the visible H1 reaming note and public transition assign the larger size to the later finished stage. The nominal is below the later target and material removal enlarges the bore, so these stage-specific dimensions do not contradict the stated finite consistency contract. supported_clear is limited to bore_group_consistency; feasibility of this reaming allowance, tooling, achieved tolerance and general manufacturability remain unsupported.&quot;
+      }
+    ],
+    &quot;cnc_advisory&quot;: &quot;unsupported&quot;,
+    &quot;runtime_seconds&quot;: null,
+    &quot;raw_output_reference&quot;: &quot;review-output/observations.md#pk-4d90&quot;
+  }
+]</pre></details></section><section id="case-pk-7a1c"><h2>pk-7a1c — contradiction</h2><img class="crop" src="../validation/pk-7a1c/callout.png" alt="Verified H1 bore callout"><p>Exported STEP: four Ø6 mm bores, depth 8 mm; volume 31095.22131576612 mm³. Visible callout Ø6.8 ±0.05 mm THRU. Contract: {&#x27;model_stage&#x27;: &#x27;finished&#x27;, &#x27;drawing_stage&#x27;: &#x27;finished&#x27;, &#x27;transition&#x27;: None, &#x27;material&#x27;: &#x27;6061-T6&#x27;, &#x27;finish&#x27;: &#x27;none&#x27;}.</p><p>Private rule O01, m0.1: compare same-stage drawing interval with reimported nominal; honor explicitly declared intermediate-to-finished reaming. Project-selected release contract, 2026-10-04. Supported clear applies only to H1 package consistency.</p><p><a href="../bundle/public/pk-7a1c/drawing.pdf">PDF page1</a> · <a href="../bundle/public/pk-7a1c/drawing.png">Full rendered drawing</a> · <a href="../bundle/public/pk-7a1c/part.step">Actual STEP</a> · <a href="../bundle/public/pk-7a1c/packet.json">Public contract</a> · <a href="../validation/pk-7a1c/inspection.json">Independent measurement/region evidence</a></p><details><summary>View full drawing and geometric witnesses</summary><img class="drawing" src="../bundle/public/pk-7a1c/drawing.png" alt="Complete supplied drawing"><pre>{
+  &quot;reader&quot;: &quot;OCP.STEPControl_Reader&quot;,
+  &quot;units&quot;: [
+    &quot;millimetre&quot;
+  ],
+  &quot;brep_valid&quot;: true,
+  &quot;solid_count&quot;: 1,
+  &quot;bbox_mm&quot;: [
+    -40.0,
+    -25.0,
+    -4.0,
+    40.0,
+    25.0,
+    4.0
+  ],
+  &quot;envelope_mm&quot;: [
+    80.0,
+    50.0,
+    8.0
+  ],
+  &quot;volume_mm3&quot;: 31095.22131576612,
+  &quot;analytic_volume_mm3&quot;: 31095.22131576614,
+  &quot;volume_error_mm3&quot;: -1.8189894035458565e-11,
+  &quot;plane_count&quot;: 6,
+  &quot;cylinders&quot;: [
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    }
+  ],
+  &quot;length_tolerance_mm&quot;: 1e-06,
+  &quot;volume_tolerance_mm3&quot;: 1e-05
+}</pre></details><details><summary>Original reviewer findings, assertions and witnesses</summary><h3>RFQFuzz reference</h3><pre>[
+  {
+    &quot;case_id&quot;: &quot;pk-7a1c&quot;,
+    &quot;packet_sha256&quot;: &quot;17fa0bb2e63e161bba519f80953fe87bca4cf5f3e623cf5273f738ad7d77ffc6&quot;,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;reviewed_modalities&quot;: [
+      &quot;step&quot;,
+      &quot;pdf&quot;,
+      &quot;context&quot;
+    ],
+    &quot;reviewed_obligations&quot;: [
+      &quot;bore_group_consistency&quot;
+    ],
+    &quot;findings&quot;: [
+      {
+        &quot;obligation&quot;: &quot;bore_group_consistency&quot;,
+        &quot;feature_id&quot;: &quot;H1&quot;,
+        &quot;category&quot;: &quot;diameter_consistency&quot;,
+        &quot;conclusion&quot;: &quot;contradiction&quot;,
+        &quot;drawing_evidence&quot;: &quot;drawing.pdf page1 H1: 4x diameter 6.8 +/-0.05 mm THRU&quot;,
+        &quot;geometry_evidence&quot;: &quot;part.step: 4 cylindrical bore walls; diameters [6.0, 6.0, 6.0, 6.0] mm&quot;,
+        &quot;context_evidence&quot;: &quot;model_stage=finished; drawing_stage=finished; transition=None&quot;,
+        &quot;rationale&quot;: &quot;At the same stage, the drawing interval must contain the STEP nominal bore.&quot;
+      }
+    ],
+    &quot;assertions&quot;: [],
+    &quot;cnc_advisory&quot;: &quot;unsupported&quot;,
+    &quot;runtime_seconds&quot;: 0.28301490000012564,
+    &quot;raw_output_reference&quot;: &quot;public-read.json&quot;
+  }
+]</pre><h3>RFQFuzz reference — DELIBERATELY INJECTED REGRESSION</h3><pre>[
+  {
+    &quot;case_id&quot;: &quot;pk-7a1c&quot;,
+    &quot;packet_sha256&quot;: &quot;17fa0bb2e63e161bba519f80953fe87bca4cf5f3e623cf5273f738ad7d77ffc6&quot;,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;reviewed_modalities&quot;: [
+      &quot;step&quot;,
+      &quot;pdf&quot;,
+      &quot;context&quot;
+    ],
+    &quot;reviewed_obligations&quot;: [
+      &quot;bore_group_consistency&quot;
+    ],
+    &quot;findings&quot;: [],
+    &quot;assertions&quot;: [
+      {
+        &quot;obligation&quot;: &quot;bore_group_consistency&quot;,
+        &quot;feature_id&quot;: &quot;H1&quot;,
+        &quot;category&quot;: &quot;diameter_consistency&quot;,
+        &quot;conclusion&quot;: &quot;supported_clear&quot;,
+        &quot;drawing_evidence&quot;: &quot;drawing.pdf page1 H1: 4x diameter 6.8 +/-0.05 mm THRU&quot;,
+        &quot;geometry_evidence&quot;: &quot;part.step: 4 cylindrical bore walls; diameters [6.0, 6.0, 6.0, 6.0] mm&quot;,
+        &quot;context_evidence&quot;: &quot;model_stage=finished; drawing_stage=finished; transition=None&quot;,
+        &quot;rationale&quot;: &quot;DELIBERATE INJECTION: ignore same-stage nominal mismatch.&quot;
+      }
+    ],
+    &quot;cnc_advisory&quot;: &quot;unsupported&quot;,
+    &quot;runtime_seconds&quot;: 0.28301490000012564,
+    &quot;raw_output_reference&quot;: &quot;public-read.json&quot;
+  }
+]</pre><h3>Codex standalone RFQ reviewer</h3><pre>[
+  {
+    &quot;case_id&quot;: &quot;pk-7a1c&quot;,
+    &quot;packet_sha256&quot;: &quot;17fa0bb2e63e161bba519f80953fe87bca4cf5f3e623cf5273f738ad7d77ffc6&quot;,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;reviewed_modalities&quot;: [
+      &quot;step&quot;,
+      &quot;pdf&quot;,
+      &quot;png&quot;,
+      &quot;context&quot;
+    ],
+    &quot;reviewed_obligations&quot;: [
+      &quot;bore_group_consistency&quot;
+    ],
+    &quot;findings&quot;: [
+      {
+        &quot;obligation&quot;: &quot;bore_group_consistency&quot;,
+        &quot;feature_id&quot;: &quot;H1&quot;,
+        &quot;category&quot;: &quot;same_stage_bore_diameter&quot;,
+        &quot;conclusion&quot;: &quot;contradiction&quot;,
+        &quot;drawing_evidence&quot;: &quot;Actual PDF page 1, its reviewer-generated PDFium render, and supplied drawing.png visibly show the grouped &#x27;4× Ø6.8 ±0.05 THRU&#x27; callout; notes &#x27;H1 = ALL FOUR Z THROUGH BORES&#x27;, &#x27;MODEL STAGE: FINISHED&#x27;, &#x27;DRAWING STAGE: FINISHED&#x27;, and &#x27;H1: DRAWING AND MODEL APPLY AT SAME STAGE&#x27;. Extracted PDF text uses ø for the visible diameter symbol. Drawing is MP-001 revision A, units mm.&quot;,
+        &quot;geometry_evidence&quot;: &quot;Independent reload of actual part.step produced &#x27;valid_shape&#x27;: true and &#x27;solid_count&#x27;: 1 in review-output/measurements.json. All four cylindrical faces have &#x27;radius_mm&#x27;: 3.0 and &#x27;diameter_mm&#x27;: 6.0; their Z axes match public H1 XY centers (-25,-15), (-25,15), (25,-15), (25,15). Circular boundaries on both Z=-4 and Z=4 planar faces establish through bores across the 8 mm thickness; axis samples are OUT inside the thickness and the plate center is IN.&quot;,
+        &quot;context_evidence&quot;: &quot;packet.json says both &#x27;model_stage&#x27;: &#x27;finished&#x27; and &#x27;drawing_stage&#x27;: &#x27;finished&#x27;, &#x27;transition&#x27;: null, and &#x27;same-stage drawing intervals must contain STEP nominal; explicit later-stage operation governs its target stage&#x27;. H1 is associated with all four plan-view bores and the grouped 4x callout. Model/drawing A/A is a permitted pair, both units are mm, finish is none, and the finite profile explicitly leaves CNC advisories/process feasibility unsupported.&quot;,
+        &quot;rationale&quot;: &quot;For the same finished stage, the grouped diameter interval is [6.75,6.85] mm, but each of the four STEP nominal bore diameters is 6.00 mm. Each lies 0.75 mm below the lower limit. The grouped annotation applies to the whole H1 group and no later-stage transition is authorized, so bore_group_consistency is contradicted for all four members. This identifies a package inconsistency, not a general manufacturing judgment.&quot;
+      }
+    ],
+    &quot;assertions&quot;: [],
+    &quot;cnc_advisory&quot;: &quot;unsupported&quot;,
+    &quot;runtime_seconds&quot;: null,
+    &quot;raw_output_reference&quot;: &quot;review-output/observations.md#pk-7a1c&quot;
+  }
+]</pre></details></section><section id="case-pk-b8e2"><h2>pk-b8e2 — supported_clear</h2><img class="crop" src="../validation/pk-b8e2/callout.png" alt="Verified H1 bore callout"><p>Exported STEP: four Ø6 mm bores, depth 8 mm; volume 31095.22131576612 mm³. Visible callout Ø6 ±0.05 mm THRU. Contract: {&#x27;model_stage&#x27;: &#x27;finished&#x27;, &#x27;drawing_stage&#x27;: &#x27;finished&#x27;, &#x27;transition&#x27;: None, &#x27;material&#x27;: &#x27;6061-T6&#x27;, &#x27;finish&#x27;: &#x27;none&#x27;}.</p><p>Private rule O01, m0.1: compare same-stage drawing interval with reimported nominal; honor explicitly declared intermediate-to-finished reaming. Project-selected release contract, 2026-10-04. Supported clear applies only to H1 package consistency.</p><p><a href="../bundle/public/pk-b8e2/drawing.pdf">PDF page1</a> · <a href="../bundle/public/pk-b8e2/drawing.png">Full rendered drawing</a> · <a href="../bundle/public/pk-b8e2/part.step">Actual STEP</a> · <a href="../bundle/public/pk-b8e2/packet.json">Public contract</a> · <a href="../validation/pk-b8e2/inspection.json">Independent measurement/region evidence</a></p><details><summary>View full drawing and geometric witnesses</summary><img class="drawing" src="../bundle/public/pk-b8e2/drawing.png" alt="Complete supplied drawing"><pre>{
+  &quot;reader&quot;: &quot;OCP.STEPControl_Reader&quot;,
+  &quot;units&quot;: [
+    &quot;millimetre&quot;
+  ],
+  &quot;brep_valid&quot;: true,
+  &quot;solid_count&quot;: 1,
+  &quot;bbox_mm&quot;: [
+    -40.0,
+    -25.0,
+    -4.0,
+    40.0,
+    25.0,
+    4.0
+  ],
+  &quot;envelope_mm&quot;: [
+    80.0,
+    50.0,
+    8.0
+  ],
+  &quot;volume_mm3&quot;: 31095.22131576612,
+  &quot;analytic_volume_mm3&quot;: 31095.22131576614,
+  &quot;volume_error_mm3&quot;: -1.8189894035458565e-11,
+  &quot;plane_count&quot;: 6,
+  &quot;cylinders&quot;: [
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    }
+  ],
+  &quot;length_tolerance_mm&quot;: 1e-06,
+  &quot;volume_tolerance_mm3&quot;: 1e-05
+}</pre></details><details><summary>Original reviewer findings, assertions and witnesses</summary><h3>RFQFuzz reference</h3><pre>[
+  {
+    &quot;case_id&quot;: &quot;pk-b8e2&quot;,
+    &quot;packet_sha256&quot;: &quot;74f329f490ae060c8e42a8613242e38b2cc54e5b8618b54c5ae373cc5651aef2&quot;,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;reviewed_modalities&quot;: [
+      &quot;step&quot;,
+      &quot;pdf&quot;,
+      &quot;context&quot;
+    ],
+    &quot;reviewed_obligations&quot;: [
+      &quot;bore_group_consistency&quot;
+    ],
+    &quot;findings&quot;: [],
+    &quot;assertions&quot;: [
+      {
+        &quot;obligation&quot;: &quot;bore_group_consistency&quot;,
+        &quot;feature_id&quot;: &quot;H1&quot;,
+        &quot;category&quot;: &quot;diameter_consistency&quot;,
+        &quot;conclusion&quot;: &quot;supported_clear&quot;,
+        &quot;drawing_evidence&quot;: &quot;drawing.pdf page1 H1: 4x diameter 6 +/-0.05 mm THRU&quot;,
+        &quot;geometry_evidence&quot;: &quot;part.step: 4 cylindrical bore walls; diameters [6.0, 6.0, 6.0, 6.0] mm&quot;,
+        &quot;context_evidence&quot;: &quot;model_stage=finished; drawing_stage=finished; transition=None&quot;,
+        &quot;rationale&quot;: &quot;At the same stage, the drawing interval must contain the STEP nominal bore.&quot;
+      }
+    ],
+    &quot;cnc_advisory&quot;: &quot;unsupported&quot;,
+    &quot;runtime_seconds&quot;: 0.33784880000166595,
+    &quot;raw_output_reference&quot;: &quot;public-read.json&quot;
+  }
+]</pre><h3>RFQFuzz reference — DELIBERATELY INJECTED REGRESSION</h3><pre>[
+  {
+    &quot;case_id&quot;: &quot;pk-b8e2&quot;,
+    &quot;packet_sha256&quot;: &quot;74f329f490ae060c8e42a8613242e38b2cc54e5b8618b54c5ae373cc5651aef2&quot;,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;reviewed_modalities&quot;: [
+      &quot;step&quot;,
+      &quot;pdf&quot;,
+      &quot;context&quot;
+    ],
+    &quot;reviewed_obligations&quot;: [
+      &quot;bore_group_consistency&quot;
+    ],
+    &quot;findings&quot;: [],
+    &quot;assertions&quot;: [
+      {
+        &quot;obligation&quot;: &quot;bore_group_consistency&quot;,
+        &quot;feature_id&quot;: &quot;H1&quot;,
+        &quot;category&quot;: &quot;diameter_consistency&quot;,
+        &quot;conclusion&quot;: &quot;supported_clear&quot;,
+        &quot;drawing_evidence&quot;: &quot;drawing.pdf page1 H1: 4x diameter 6 +/-0.05 mm THRU&quot;,
+        &quot;geometry_evidence&quot;: &quot;part.step: 4 cylindrical bore walls; diameters [6.0, 6.0, 6.0, 6.0] mm&quot;,
+        &quot;context_evidence&quot;: &quot;model_stage=finished; drawing_stage=finished; transition=None&quot;,
+        &quot;rationale&quot;: &quot;At the same stage, the drawing interval must contain the STEP nominal bore.&quot;
+      }
+    ],
+    &quot;cnc_advisory&quot;: &quot;unsupported&quot;,
+    &quot;runtime_seconds&quot;: 0.33784880000166595,
+    &quot;raw_output_reference&quot;: &quot;public-read.json&quot;
+  }
+]</pre><h3>Codex standalone RFQ reviewer</h3><pre>[
+  {
+    &quot;case_id&quot;: &quot;pk-b8e2&quot;,
+    &quot;packet_sha256&quot;: &quot;74f329f490ae060c8e42a8613242e38b2cc54e5b8618b54c5ae373cc5651aef2&quot;,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;reviewed_modalities&quot;: [
+      &quot;step&quot;,
+      &quot;pdf&quot;,
+      &quot;png&quot;,
+      &quot;context&quot;
+    ],
+    &quot;reviewed_obligations&quot;: [
+      &quot;bore_group_consistency&quot;
+    ],
+    &quot;findings&quot;: [],
+    &quot;assertions&quot;: [
+      {
+        &quot;obligation&quot;: &quot;bore_group_consistency&quot;,
+        &quot;feature_id&quot;: &quot;H1&quot;,
+        &quot;category&quot;: &quot;same_stage_bore_diameter&quot;,
+        &quot;conclusion&quot;: &quot;supported_clear&quot;,
+        &quot;drawing_evidence&quot;: &quot;Actual PDF page 1, its reviewer-generated PDFium render, and supplied drawing.png visibly show the grouped &#x27;4× Ø6 ±0.05 THRU&#x27; callout; notes &#x27;H1 = ALL FOUR Z THROUGH BORES&#x27;, &#x27;MODEL STAGE: FINISHED&#x27;, &#x27;DRAWING STAGE: FINISHED&#x27;, and &#x27;H1: DRAWING AND MODEL APPLY AT SAME STAGE&#x27;. Extracted PDF text uses ø for the visible diameter symbol. Drawing is MP-001 revision A, units mm.&quot;,
+        &quot;geometry_evidence&quot;: &quot;Independent reload of actual part.step produced &#x27;valid_shape&#x27;: true and &#x27;solid_count&#x27;: 1 in review-output/measurements.json. All four cylindrical faces have &#x27;radius_mm&#x27;: 3.0 and &#x27;diameter_mm&#x27;: 6.0; their Z axes match public H1 XY centers (-25,-15), (-25,15), (25,-15), (25,15). Circular boundaries on both Z=-4 and Z=4 planar faces establish through bores across the 8 mm thickness; axis samples are OUT inside the thickness and the plate center is IN.&quot;,
+        &quot;context_evidence&quot;: &quot;packet.json says both &#x27;model_stage&#x27;: &#x27;finished&#x27; and &#x27;drawing_stage&#x27;: &#x27;finished&#x27;, &#x27;transition&#x27;: null, and &#x27;same-stage drawing intervals must contain STEP nominal; explicit later-stage operation governs its target stage&#x27;. H1 is associated with all four plan-view bores and the grouped 4x callout. Model/drawing A/A is a permitted pair, both units are mm, finish is none, and the profile scope is &#x27;Finite H1 package consistency only; CNC advisories and process feasibility unsupported&#x27;.&quot;,
+        &quot;rationale&quot;: &quot;The same-stage grouped diameter interval is [5.95,6.05] mm. Each of the four actual STEP nominal diameters is 6.00 mm and is within that interval; the group quantity, Z orientation and through condition also agree. This supports clear only for the named bore_group_consistency obligation. It does not establish as-manufactured accuracy, tooling/workholding adequacy or general CNC manufacturability.&quot;
+      }
+    ],
+    &quot;cnc_advisory&quot;: &quot;unsupported&quot;,
+    &quot;runtime_seconds&quot;: null,
+    &quot;raw_output_reference&quot;: &quot;review-output/observations.md#pk-b8e2&quot;
+  }
+]</pre></details></section>
+<h2>Limits and replay</h2><p>Generator/validator share OCCT. Raster ink does not prove text semantics; hash-bound visual inspection is required. Same-machine reviewer blinding is procedural. The reference parses this known PDF template and does not visually interpret PNG. Windows Python3.12 was exercised; Linux and a separately authored drawing remain unverified.</p><p><a href="../gate.md">M0 gate</a> · <a href="../artifact-proof.md">Artifact acceptance</a> · <a href="../review-handoff/PROMPT.txt">Exact neutral reviewer prompt</a> · <a href="../review-handoff/review-output/observations.md">Independent raw observations</a> · <a href="../validation/oracle.json">Private validated oracle</a></p></main></html>

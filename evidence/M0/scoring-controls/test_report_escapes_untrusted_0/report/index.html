@@ -1,0 +1,333 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>RFQFuzz M0 evidence comparison</title>
+<style>body{margin:0;background:#f5f6f8;color:#172332;font:16px/1.5 system-ui,sans-serif}main{max-width:1380px;margin:auto;padding:32px}h1{font-size:34px;margin:0}h2{font-size:23px}small{display:block}table{border-collapse:collapse;width:100%;background:white}th,td{text-align:left;vertical-align:top;padding:16px;border:1px solid #cdd5df}a{color:#0e537e}article,section{background:white;padding:24px;margin:24px 0;border:1px solid #d5dde5;border-radius:6px}.banner{background:#fff0d0;border-left:6px solid #a65900;padding:18px}.explicit_false_clear,.false_alert{background:#fff0df}.detected,.correct_clear{background:#eaf4ef}.crop{max-width:100%;image-rendering:auto;border:1px solid #ddd;padding:12px}.drawing{max-width:100%}pre{overflow:auto;background:#f0f3f6;padding:18px;font-size:13px}</style>
+<main><h1>RFQFuzz · M0 evidence comparison</h1><p>Three presentations of one synthetic plate. One named bore-group obligation per case. This benchmark does not certify manufacture or general industrial competence.</p>
+<p class="banner"><b>DELIBERATELY INJECTED REVIEWER REGRESSIONS</b><br>The second column of reviewer results intentionally clears a contradiction and ignores the declared reaming stage. These are reference-code perturbations, not naturally discovered failures of the independent reviewer. Its original observations are retained separately.</p>
+<h2>What changed</h2><p>Reference → injected reference: [{&#x27;case_id&#x27;: &#x27;pk-4d90&#x27;, &#x27;before&#x27;: &#x27;correct_clear&#x27;, &#x27;after&#x27;: &#x27;false_alert&#x27;}, {&#x27;case_id&#x27;: &#x27;pk-7a1c&#x27;, &#x27;before&#x27;: &#x27;detected&#x27;, &#x27;after&#x27;: &#x27;explicit_false_clear&#x27;}]. Reference → independent reviewer: [].</p>
+<table><tr><th>Case / source evidence</th><th>Validated expectation</th><th>&lt;script&gt;alert(1)&lt;/script&gt;<small>m0-template-1</small></th><th>&lt;script&gt;alert(1)&lt;/script&gt;<small>m0-template-injected-2</small></th></tr><tr><th><a href="#case-pk-4d90">pk-4d90</a></th><td>supported_clear</td><td class="correct_clear"><b>correct_clear</b><br>[&#x27;supported_clear&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td><td class="false_alert"><b>false_alert</b><br>[&#x27;contradiction&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td></tr><tr><th><a href="#case-pk-7a1c">pk-7a1c</a></th><td>contradiction</td><td class="detected"><b>detected</b><br>[&#x27;contradiction&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td><td class="explicit_false_clear"><b>explicit_false_clear</b><br>[&#x27;supported_clear&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td></tr><tr><th><a href="#case-pk-b8e2">pk-b8e2</a></th><td>supported_clear</td><td class="correct_clear"><b>correct_clear</b><br>[&#x27;supported_clear&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td><td class="correct_clear"><b>correct_clear</b><br>[&#x27;supported_clear&#x27;]<br><small>Status: completed; modalities: [&#x27;step&#x27;, &#x27;pdf&#x27;, &#x27;context&#x27;]</small></td></tr></table>
+<h2>Separate tracks and denominators</h2><p>Package consistency is the only scored track. CNC advisory/profile review is <b>unsupported, 0 scored obligations</b>. Frozen fixture invalidity: 0/3. Initial authoring attempt: 3/3 excluded as a group for ambiguous view-stage context; not hidden in the final denominator. Corruption controls are intentionally invalid and unscored. No finalized precision, composite score, significance claim or independent industrial transfer evidence.</p><article><h3>&lt;script&gt;alert(1)&lt;/script&gt;</h3><p>Public-only STEP reimport/build123d and pypdf template parser. PNG interpretation unsupported; drawing visibility established only by prior independent corpus validation.</p><p>Detected 1/1; false alerts 0/2; explicit false clears 0/1; correct named clears 2/2; coverage 3/3; missing information 0; failures 0; unsupported 0; unadjudicated 0.</p><p><a href="../imported-reference/run.json">Imported run manifest and score</a> · <a href="../imported-reference/raw-review.json">Preserved raw review</a></p></article><article><h3>&lt;script&gt;alert(1)&lt;/script&gt;</h3><p>Injected: clear same-stage contradiction; ignore declared ream transition and flag later-stage target. Not a naturally observed external failure.</p><p>Detected 0/1; false alerts 1/2; explicit false clears 1/1; correct named clears 1/2; coverage 3/3; missing information 0; failures 0; unsupported 0; unadjudicated 0.</p><p><a href="../imported-injected/run.json">Imported run manifest and score</a> · <a href="../imported-injected/raw-review.json">Preserved raw review</a></p></article>
+<h2>Inspect the exact evidence</h2><section id="case-pk-4d90"><h2>pk-4d90 — supported_clear</h2><img class="crop" src="../../../validation/pk-4d90/callout.png" alt="Verified H1 bore callout"><p>Exported STEP: four Ø6 mm bores, depth8 mm; volume 31095.22131576612 mm³. Visible callout Ø6.8 ±0.05 mm THRU. Contract: {&#x27;model_stage&#x27;: &#x27;intermediate&#x27;, &#x27;drawing_stage&#x27;: &#x27;finished&#x27;, &#x27;transition&#x27;: {&#x27;operation&#x27;: &#x27;ream&#x27;, &#x27;feature_id&#x27;: &#x27;H1&#x27;, &#x27;from_stage&#x27;: &#x27;intermediate&#x27;, &#x27;to_stage&#x27;: &#x27;finished&#x27;, &#x27;target&#x27;: &#x27;drawing bore callout&#x27;}, &#x27;material&#x27;: &#x27;6061-T6&#x27;, &#x27;finish&#x27;: &#x27;none&#x27;}.</p><p>Private rule O01, m0.1: compare same-stage drawing interval with reimported nominal; honor explicitly declared intermediate-to-finished reaming. Project-selected release contract, 2026-10-04. Supported clear applies only to H1 package consistency.</p><p><a href="../../../bundle/public/pk-4d90/drawing.pdf">PDF page1</a> · <a href="../../../bundle/public/pk-4d90/drawing.png">Full rendered drawing</a> · <a href="../../../bundle/public/pk-4d90/part.step">Actual STEP</a> · <a href="../../../bundle/public/pk-4d90/packet.json">Public contract</a> · <a href="../../../validation/pk-4d90/inspection.json">Independent measurement/region evidence</a></p><details><summary>View full drawing and geometric witnesses</summary><img class="drawing" src="../../../bundle/public/pk-4d90/drawing.png" alt="Complete supplied drawing"><pre>{
+  &quot;reader&quot;: &quot;OCP.STEPControl_Reader&quot;,
+  &quot;units&quot;: [
+    &quot;millimetre&quot;
+  ],
+  &quot;brep_valid&quot;: true,
+  &quot;solid_count&quot;: 1,
+  &quot;bbox_mm&quot;: [
+    -40.0,
+    -25.0,
+    -4.0,
+    40.0,
+    25.0,
+    4.0
+  ],
+  &quot;envelope_mm&quot;: [
+    80.0,
+    50.0,
+    8.0
+  ],
+  &quot;volume_mm3&quot;: 31095.22131576612,
+  &quot;analytic_volume_mm3&quot;: 31095.22131576614,
+  &quot;volume_error_mm3&quot;: -1.8189894035458565e-11,
+  &quot;plane_count&quot;: 6,
+  &quot;cylinders&quot;: [
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    }
+  ],
+  &quot;length_tolerance_mm&quot;: 1e-06,
+  &quot;volume_tolerance_mm3&quot;: 1e-05
+}</pre></details></section><section id="case-pk-7a1c"><h2>pk-7a1c — contradiction</h2><img class="crop" src="../../../validation/pk-7a1c/callout.png" alt="Verified H1 bore callout"><p>Exported STEP: four Ø6 mm bores, depth8 mm; volume 31095.22131576612 mm³. Visible callout Ø6.8 ±0.05 mm THRU. Contract: {&#x27;model_stage&#x27;: &#x27;finished&#x27;, &#x27;drawing_stage&#x27;: &#x27;finished&#x27;, &#x27;transition&#x27;: None, &#x27;material&#x27;: &#x27;6061-T6&#x27;, &#x27;finish&#x27;: &#x27;none&#x27;}.</p><p>Private rule O01, m0.1: compare same-stage drawing interval with reimported nominal; honor explicitly declared intermediate-to-finished reaming. Project-selected release contract, 2026-10-04. Supported clear applies only to H1 package consistency.</p><p><a href="../../../bundle/public/pk-7a1c/drawing.pdf">PDF page1</a> · <a href="../../../bundle/public/pk-7a1c/drawing.png">Full rendered drawing</a> · <a href="../../../bundle/public/pk-7a1c/part.step">Actual STEP</a> · <a href="../../../bundle/public/pk-7a1c/packet.json">Public contract</a> · <a href="../../../validation/pk-7a1c/inspection.json">Independent measurement/region evidence</a></p><details><summary>View full drawing and geometric witnesses</summary><img class="drawing" src="../../../bundle/public/pk-7a1c/drawing.png" alt="Complete supplied drawing"><pre>{
+  &quot;reader&quot;: &quot;OCP.STEPControl_Reader&quot;,
+  &quot;units&quot;: [
+    &quot;millimetre&quot;
+  ],
+  &quot;brep_valid&quot;: true,
+  &quot;solid_count&quot;: 1,
+  &quot;bbox_mm&quot;: [
+    -40.0,
+    -25.0,
+    -4.0,
+    40.0,
+    25.0,
+    4.0
+  ],
+  &quot;envelope_mm&quot;: [
+    80.0,
+    50.0,
+    8.0
+  ],
+  &quot;volume_mm3&quot;: 31095.22131576612,
+  &quot;analytic_volume_mm3&quot;: 31095.22131576614,
+  &quot;volume_error_mm3&quot;: -1.8189894035458565e-11,
+  &quot;plane_count&quot;: 6,
+  &quot;cylinders&quot;: [
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    }
+  ],
+  &quot;length_tolerance_mm&quot;: 1e-06,
+  &quot;volume_tolerance_mm3&quot;: 1e-05
+}</pre></details></section><section id="case-pk-b8e2"><h2>pk-b8e2 — supported_clear</h2><img class="crop" src="../../../validation/pk-b8e2/callout.png" alt="Verified H1 bore callout"><p>Exported STEP: four Ø6 mm bores, depth8 mm; volume 31095.22131576612 mm³. Visible callout Ø6 ±0.05 mm THRU. Contract: {&#x27;model_stage&#x27;: &#x27;finished&#x27;, &#x27;drawing_stage&#x27;: &#x27;finished&#x27;, &#x27;transition&#x27;: None, &#x27;material&#x27;: &#x27;6061-T6&#x27;, &#x27;finish&#x27;: &#x27;none&#x27;}.</p><p>Private rule O01, m0.1: compare same-stage drawing interval with reimported nominal; honor explicitly declared intermediate-to-finished reaming. Project-selected release contract, 2026-10-04. Supported clear applies only to H1 package consistency.</p><p><a href="../../../bundle/public/pk-b8e2/drawing.pdf">PDF page1</a> · <a href="../../../bundle/public/pk-b8e2/drawing.png">Full rendered drawing</a> · <a href="../../../bundle/public/pk-b8e2/part.step">Actual STEP</a> · <a href="../../../bundle/public/pk-b8e2/packet.json">Public contract</a> · <a href="../../../validation/pk-b8e2/inspection.json">Independent measurement/region evidence</a></p><details><summary>View full drawing and geometric witnesses</summary><img class="drawing" src="../../../bundle/public/pk-b8e2/drawing.png" alt="Complete supplied drawing"><pre>{
+  &quot;reader&quot;: &quot;OCP.STEPControl_Reader&quot;,
+  &quot;units&quot;: [
+    &quot;millimetre&quot;
+  ],
+  &quot;brep_valid&quot;: true,
+  &quot;solid_count&quot;: 1,
+  &quot;bbox_mm&quot;: [
+    -40.0,
+    -25.0,
+    -4.0,
+    40.0,
+    25.0,
+    4.0
+  ],
+  &quot;envelope_mm&quot;: [
+    80.0,
+    50.0,
+    8.0
+  ],
+  &quot;volume_mm3&quot;: 31095.22131576612,
+  &quot;analytic_volume_mm3&quot;: 31095.22131576614,
+  &quot;volume_error_mm3&quot;: -1.8189894035458565e-11,
+  &quot;plane_count&quot;: 6,
+  &quot;cylinders&quot;: [
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        -25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        -15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    },
+    {
+      &quot;radius_mm&quot;: 3.0,
+      &quot;diameter_mm&quot;: 6.0,
+      &quot;axis&quot;: [
+        0.0,
+        0.0,
+        1.0
+      ],
+      &quot;center_xy_mm&quot;: [
+        25.0,
+        15.0
+      ],
+      &quot;z_bounds_mm&quot;: [
+        -4.0,
+        4.0
+      ],
+      &quot;depth_mm&quot;: 8.0,
+      &quot;surface_area_mm2&quot;: 150.79644737232,
+      &quot;u_span_rad&quot;: 6.28318530718
+    }
+  ],
+  &quot;length_tolerance_mm&quot;: 1e-06,
+  &quot;volume_tolerance_mm3&quot;: 1e-05
+}</pre></details></section>
+<h2>Limits and replay</h2><p>Generator/validator share OCCT. Raster ink does not prove text semantics; hash-bound visual inspection is required. Same-machine reviewer blinding is procedural. The reference parses this known PDF template and does not visually interpret PNG. Windows Python3.12 was exercised; Linux and a separately authored drawing remain unverified.</p><p><a href="../gate.md">M0 gate</a> · <a href="../artifact-proof.md">Artifact acceptance</a> · <a href="../review-handoff/PROMPT.txt">Exact neutral reviewer prompt</a> · <a href="../review-handoff/review-output/observations.md">Independent raw observations</a> · <a href="../validation/oracle.json">Private validated oracle</a></p></main></html>

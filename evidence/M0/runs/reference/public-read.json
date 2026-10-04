@@ -1,0 +1,38 @@
+[
+  {
+    "case_id": "pk-4d90",
+    "packet_sha256": "e92576eab2c7012132c85507a8f373de395a7ec6544d7b863bb795d1f1317812",
+    "extracted_pdf_text": "NOTES\n1  ALL DIMENSIONS IN mm\n2  H1 = ALL FOUR Z THROUGH BORES\n3  MODEL STAGE: INTERMEDIATE\n4  DRAWING STAGE: FINISHED\n5  FINISH: NONE\n6  VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE\n7  H1: REAM AFTER MODEL STAGE TO DRAWING SIZE\nISO VIEW (NTS)\n4×\nø\n6.8 ±0.05\nTHRU\n80\n8\n50\nSCALE 1:2\nMounting plate\nMP-001\n6061-T6\nmm\nA4\nA\n2026-10-04\nSEE CALLOUT\nRFQ author / draftwright",
+    "measured_diameters_mm": [
+      6.0,
+      6.0,
+      6.0,
+      6.0
+    ],
+    "geometry_volume_mm3": 31095.22131576612
+  },
+  {
+    "case_id": "pk-7a1c",
+    "packet_sha256": "17fa0bb2e63e161bba519f80953fe87bca4cf5f3e623cf5273f738ad7d77ffc6",
+    "extracted_pdf_text": "NOTES\n1  ALL DIMENSIONS IN mm\n2  H1 = ALL FOUR Z THROUGH BORES\n3  MODEL STAGE: FINISHED\n4  DRAWING STAGE: FINISHED\n5  FINISH: NONE\n6  VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE\n7  H1: DRAWING AND MODEL APPLY AT SAME STAGE\nISO VIEW (NTS)\n4×\nø\n6.8 ±0.05\nTHRU\n80\n8\n50\nSCALE 1:2\nMounting plate\nMP-001\n6061-T6\nmm\nA4\nA\n2026-10-04\nSEE CALLOUT\nRFQ author / draftwright",
+    "measured_diameters_mm": [
+      6.0,
+      6.0,
+      6.0,
+      6.0
+    ],
+    "geometry_volume_mm3": 31095.22131576612
+  },
+  {
+    "case_id": "pk-b8e2",
+    "packet_sha256": "74f329f490ae060c8e42a8613242e38b2cc54e5b8618b54c5ae373cc5651aef2",
+    "extracted_pdf_text": "NOTES\n1  ALL DIMENSIONS IN mm\n2  H1 = ALL FOUR Z THROUGH BORES\n3  MODEL STAGE: FINISHED\n4  DRAWING STAGE: FINISHED\n5  FINISH: NONE\n6  VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE\n7  H1: DRAWING AND MODEL APPLY AT SAME STAGE\nISO VIEW (NTS)\n4×\nø\n6 ±0.05\nTHRU\n80\n8\n50\nSCALE 1:2\nMounting plate\nMP-001\n6061-T6\nmm\nA4\nA\n2026-10-04\nSEE CALLOUT\nRFQ author / draftwright",
+    "measured_diameters_mm": [
+      6.0,
+      6.0,
+      6.0,
+      6.0
+    ],
+    "geometry_volume_mm3": 31095.22131576612
+  }
+]

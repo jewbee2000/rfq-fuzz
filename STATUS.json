@@ -1,9 +1,9 @@
 {
   "project": "RFQFuzz",
   "date": "2026-10-04",
-  "phase": "planning_complete",
-  "implementation_started": false,
-  "application_tests_run": false,
+  "phase": "M0_checkpoint",
+  "implementation_started": true,
+  "application_tests_run": true,
   "remote_created": false,
   "pushed": false,
   "published": false,
@@ -11,5 +11,19 @@
     "original_checker": "no_go_existing_tools",
     "narrowed_regression_tool": "conditional_go_M0_required"
   },
-  "next_task": "T00"
+  "next_task": "T04 (not started; user stop after M0)",
+  "m0_decision": "pass_bounded_synthetic_feasibility",
+  "implemented_scope": "T00-T03 only: one plate/O01/H1; no CNC advisory certification",
+  "test_results": {
+    "integrated_passed": 33,
+    "upstream_warnings": 4,
+    "post_link_focused_passed": 18
+  },
+  "remaining_limits": [
+    "Linux unverified",
+    "HTML browser rendering unverified due file URL policy",
+    "shared OCCT kernel",
+    "curated visual attestation and token matching",
+    "no physical or industrial transfer evidence"
+  ]
 }

@@ -2,7 +2,11 @@
 
 A proposed open-source test bench for CNC drawing-review tools. Create controlled mistakes in matched STEP models, drawings and manufacturing instructions; test a reviewer; inspect what it missed, invented or incorrectly declared acceptable.
 
-**Status: researched implementation plan, 4 October 2026. No application has been implemented or benchmark results produced.** This repository is local. Nothing has been pushed or published.
+**Status: M0 feasibility prototype passed, 4 October 2026; stopped at the requested checkpoint.** T00–T03 are complete. The repository is local; nothing has been pushed or published. This is a synthetic regression toolkit, not a production manufacturability certifier.
+
+Inspect the [M0 gate and reproduction commands](evidence/M0/gate.md), [offline comparison report](evidence/M0/report/index.html), [actual public STEP/PDF/PNG packets](evidence/M0/bundle/public), and [independent review observations](evidence/M0/review-handoff/review-output/observations.md). The report's two reviewer regressions are deliberately injected into the reference path; the independent review's original decisions are retained separately. Browser HTML preview was blocked by local-file policy; source links/content were audited, but browser rendering is unverified.
+
+The implemented spike handles one plate ancestry and the O01/H1 bore-group obligation: exported artifacts, independent validator with retained corruption controls, neutral public export, public-only reference review, structured manual import/adjudication and source-linked comparison. [Pinned Python 3.12 setup](docs/SETUP_M0.md) and [dependency licenses](docs/LICENSES.md) are retained. Other part families/operators, general adapters/scoring, advisory rules, Linux release checks and independent industrial transfer remain planned.
 
 The original upload-and-check idea is a **no-go**: existing products already combine CNC DFM with drawing checks. The qualified alternative is a reusable regression tool for the people adopting or developing those reviewers. A bounded search found no publicly runnable equivalent to the combined workflow proposed here. This is an opportunity hypothesis, not proof of universal novelty or customer demand.
 
@@ -38,4 +42,4 @@ The decisive first milestone is one independently validated challenge bundle eva
 | Controlled defects, repairs, valid lookalikes and missing evidence | Five-axis process planning, CAM, molding or stamping |
 | Reviewer adapters, replay and version comparisons | A new production DFM reviewer |
 
-These are proposed features. See the requirements for the exact release boundary and evidence required before making claims about usefulness.
+This table is the planned first-release boundary; it is not a claim that M1–M5 are implemented. See the requirements and M0 gate for actual completed scope.

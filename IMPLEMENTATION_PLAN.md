@@ -1,6 +1,6 @@
 # Implementation plan
 
-This is a plan for a useful, bounded engineering test tool. All milestone outputs below are future work. The primary unknown is whether controlled exported artifacts and independent oracles can remain trustworthy while the tool produces useful reviewer regressions.
+This is a plan for a useful, bounded engineering test tool. M0 is complete as of 2026-10-04; see [the retained gate](evidence/M0/gate.md). M1–M5 outputs below remain future work. The first finite case supports exported-artifact validation and public-only review; broader oracle generality and industrial transfer remain unknown.
 
 ## Feasibility assessment
 

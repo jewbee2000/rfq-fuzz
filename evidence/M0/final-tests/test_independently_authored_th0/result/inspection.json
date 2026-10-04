@@ -1,0 +1,9 @@
+{
+  "schema_version": "m0.1",
+  "case_id": "pk-7a1c",
+  "status": "invalid_fixture",
+  "failures": [
+    "ValueError: unexpected topology: cylinders=3, planes=6, other=[]"
+  ],
+  "packet_sha256": "3bca5cdad02f10113a340c24d1d6216e8a93522dde3d83d2aaca207fb7cab533"
+}

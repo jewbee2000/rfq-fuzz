@@ -1,0 +1,22 @@
+{
+  "schema_version": "m0.1",
+  "reviewer_agent": "blind_review",
+  "dispatch": "collaboration.spawn_agent with fork_turns=none; existing Codex access; no desktop API or additional paid API",
+  "implementation_history_inherited": false,
+  "source_commit_at_dispatch": "c038a99",
+  "public_packet_folder": "evidence/M0/review-handoff/public",
+  "prompt_sha256": "b3737140cf26b317566c91c78d330049cf466446430a6203cf7e0d7165af7d81",
+  "schema_sha256": "be77856f5366d816f007740448ce1e33fc66e098f6de0f1a86b0366fd09372ba",
+  "raw_sha256": "c63bdb8e487e7b02d402a4bfa1b0f08305bfec5a4be077d5c277e1a9689a19d0",
+  "raw_evidence": "evidence/M0/review-handoff/review-output",
+  "isolation": "procedural same-machine and prompt restrictions, not secure sandbox",
+  "exact_model_version": "unavailable",
+  "runtime_seconds": null,
+  "reviewer_method": "own direct OCP STEP reader; visual inspection of supplied PNGs and independently rendered actual PDFs; public manufacturing context",
+  "limitations": [
+    "shared CAD kernel",
+    "one synthetic ancestry",
+    "no physical or industrial review",
+    "no natural external reviewer regression observed"
+  ]
+}

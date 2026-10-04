@@ -1,0 +1,80 @@
+{
+  "schema_version": "m0.1",
+  "reviewer": {
+    "name": "Codex standalone RFQ reviewer",
+    "version": "Exact served model version unavailable",
+    "configuration": "Independent manual review of the standalone public packages; own OCP STEP measurement script, pypdf extraction, PDFium renders, visual PNG/PDF inspection; no project validator or reference checker",
+    "provenance": "Codex agent session identified generically as based on GPT-6; no exact served model version available. Same-machine procedural isolation. Read PROMPT.txt, review-result.schema.json, each public packet and supplied artifact, and reviewer-created evidence only. Python 3.12.2; cadquery-ocp 7.8.1.1.post1; pypdf 6.9.1; pypdfium2 5.14.0; Pillow 12.3.0. No external sources, hosted adapter, additional paid API, or implementation/answer records used. Runtime not measured."
+  },
+  "results": [
+    {
+      "case_id": "pk-4d90",
+      "packet_sha256": "e92576eab2c7012132c85507a8f373de395a7ec6544d7b863bb795d1f1317812",
+      "status": "completed",
+      "reviewed_modalities": ["step", "pdf", "png", "context"],
+      "reviewed_obligations": ["bore_group_consistency"],
+      "findings": [],
+      "assertions": [
+        {
+          "obligation": "bore_group_consistency",
+          "feature_id": "H1",
+          "category": "explicit_stage_transition",
+          "conclusion": "supported_clear",
+          "drawing_evidence": "Actual PDF page 1, its reviewer-generated PDFium render, and supplied drawing.png visibly show the grouped '4× Ø6.8 ±0.05 THRU' callout; notes 'H1 = ALL FOUR Z THROUGH BORES', 'MODEL STAGE: INTERMEDIATE', 'DRAWING STAGE: FINISHED', 'VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE', and 'H1: REAM AFTER MODEL STAGE TO DRAWING SIZE'. Extracted PDF text uses ø for the visible diameter symbol. Drawing is MP-001 revision A, units mm.",
+          "geometry_evidence": "Independent reload of actual part.step produced 'valid_shape': true and 'solid_count': 1 in review-output/measurements.json. Four cylindrical faces each have 'radius_mm': 3.0 and 'diameter_mm': 6.0, Z axes at XY (-25,-15), (-25,15), (25,-15), (25,15), and circular boundaries on both Z=-4 and Z=4 planar faces. The bore axes classify OUT at Z=-3.9,0,3.9 while (0,0,0) classifies IN. Thus all four public H1 bores are nominal Ø6 mm and through the 8 mm plate.",
+          "context_evidence": "packet.json says 'model_stage': 'intermediate', 'drawing_stage': 'finished', and transition 'operation': 'ream', 'feature_id': 'H1', 'from_stage': 'intermediate', 'to_stage': 'finished', 'target': 'drawing bore callout'. Its consistency rule is 'same-stage drawing intervals must contain STEP nominal; explicit later-stage operation governs its target stage'. The H1 association covers all four bores; units are mm; model/drawing A/A is permitted; finish is none. Scope is 'Finite H1 package consistency only; CNC advisories and process feasibility unsupported'.",
+          "rationale": "The finished-stage grouped callout specifies [6.75,6.85] mm for every H1 bore. The supplied STEP is explicitly intermediate-stage Ø6 mm, and the visible H1 reaming note and public transition assign the larger size to the later finished stage. The nominal is below the later target and material removal enlarges the bore, so these stage-specific dimensions do not contradict the stated finite consistency contract. supported_clear is limited to bore_group_consistency; feasibility of this reaming allowance, tooling, achieved tolerance and general manufacturability remain unsupported."
+        }
+      ],
+      "cnc_advisory": "unsupported",
+      "runtime_seconds": null,
+      "raw_output_reference": "review-output/observations.md#pk-4d90"
+    },
+    {
+      "case_id": "pk-7a1c",
+      "packet_sha256": "17fa0bb2e63e161bba519f80953fe87bca4cf5f3e623cf5273f738ad7d77ffc6",
+      "status": "completed",
+      "reviewed_modalities": ["step", "pdf", "png", "context"],
+      "reviewed_obligations": ["bore_group_consistency"],
+      "findings": [
+        {
+          "obligation": "bore_group_consistency",
+          "feature_id": "H1",
+          "category": "same_stage_bore_diameter",
+          "conclusion": "contradiction",
+          "drawing_evidence": "Actual PDF page 1, its reviewer-generated PDFium render, and supplied drawing.png visibly show the grouped '4× Ø6.8 ±0.05 THRU' callout; notes 'H1 = ALL FOUR Z THROUGH BORES', 'MODEL STAGE: FINISHED', 'DRAWING STAGE: FINISHED', and 'H1: DRAWING AND MODEL APPLY AT SAME STAGE'. Extracted PDF text uses ø for the visible diameter symbol. Drawing is MP-001 revision A, units mm.",
+          "geometry_evidence": "Independent reload of actual part.step produced 'valid_shape': true and 'solid_count': 1 in review-output/measurements.json. All four cylindrical faces have 'radius_mm': 3.0 and 'diameter_mm': 6.0; their Z axes match public H1 XY centers (-25,-15), (-25,15), (25,-15), (25,15). Circular boundaries on both Z=-4 and Z=4 planar faces establish through bores across the 8 mm thickness; axis samples are OUT inside the thickness and the plate center is IN.",
+          "context_evidence": "packet.json says both 'model_stage': 'finished' and 'drawing_stage': 'finished', 'transition': null, and 'same-stage drawing intervals must contain STEP nominal; explicit later-stage operation governs its target stage'. H1 is associated with all four plan-view bores and the grouped 4x callout. Model/drawing A/A is a permitted pair, both units are mm, finish is none, and the finite profile explicitly leaves CNC advisories/process feasibility unsupported.",
+          "rationale": "For the same finished stage, the grouped diameter interval is [6.75,6.85] mm, but each of the four STEP nominal bore diameters is 6.00 mm. Each lies 0.75 mm below the lower limit. The grouped annotation applies to the whole H1 group and no later-stage transition is authorized, so bore_group_consistency is contradicted for all four members. This identifies a package inconsistency, not a general manufacturing judgment."
+        }
+      ],
+      "assertions": [],
+      "cnc_advisory": "unsupported",
+      "runtime_seconds": null,
+      "raw_output_reference": "review-output/observations.md#pk-7a1c"
+    },
+    {
+      "case_id": "pk-b8e2",
+      "packet_sha256": "74f329f490ae060c8e42a8613242e38b2cc54e5b8618b54c5ae373cc5651aef2",
+      "status": "completed",
+      "reviewed_modalities": ["step", "pdf", "png", "context"],
+      "reviewed_obligations": ["bore_group_consistency"],
+      "findings": [],
+      "assertions": [
+        {
+          "obligation": "bore_group_consistency",
+          "feature_id": "H1",
+          "category": "same_stage_bore_diameter",
+          "conclusion": "supported_clear",
+          "drawing_evidence": "Actual PDF page 1, its reviewer-generated PDFium render, and supplied drawing.png visibly show the grouped '4× Ø6 ±0.05 THRU' callout; notes 'H1 = ALL FOUR Z THROUGH BORES', 'MODEL STAGE: FINISHED', 'DRAWING STAGE: FINISHED', and 'H1: DRAWING AND MODEL APPLY AT SAME STAGE'. Extracted PDF text uses ø for the visible diameter symbol. Drawing is MP-001 revision A, units mm.",
+          "geometry_evidence": "Independent reload of actual part.step produced 'valid_shape': true and 'solid_count': 1 in review-output/measurements.json. All four cylindrical faces have 'radius_mm': 3.0 and 'diameter_mm': 6.0; their Z axes match public H1 XY centers (-25,-15), (-25,15), (25,-15), (25,15). Circular boundaries on both Z=-4 and Z=4 planar faces establish through bores across the 8 mm thickness; axis samples are OUT inside the thickness and the plate center is IN.",
+          "context_evidence": "packet.json says both 'model_stage': 'finished' and 'drawing_stage': 'finished', 'transition': null, and 'same-stage drawing intervals must contain STEP nominal; explicit later-stage operation governs its target stage'. H1 is associated with all four plan-view bores and the grouped 4x callout. Model/drawing A/A is a permitted pair, both units are mm, finish is none, and the profile scope is 'Finite H1 package consistency only; CNC advisories and process feasibility unsupported'.",
+          "rationale": "The same-stage grouped diameter interval is [5.95,6.05] mm. Each of the four actual STEP nominal diameters is 6.00 mm and is within that interval; the group quantity, Z orientation and through condition also agree. This supports clear only for the named bore_group_consistency obligation. It does not establish as-manufactured accuracy, tooling/workholding adequacy or general CNC manufacturability."
+        }
+      ],
+      "cnc_advisory": "unsupported",
+      "runtime_seconds": null,
+      "raw_output_reference": "review-output/observations.md#pk-b8e2"
+    }
+  ]
+}

@@ -16,6 +16,30 @@
       "cause": "Views derive from intermediate model while numeric callout governs final stage; ambiguity could be interpreted as collateral error",
       "resolution": "Quarantine initial exports; add visible view-stage note and public authority field to every case, regenerate and revalidate",
       "conceptual_attempt": 1
+    },
+    {
+      "task": "T03",
+      "command": "import-results independent review before adjudication",
+      "result": "Three findings unadjudicated: category vocabulary allowed by schema but not supported by initial matcher",
+      "cause": "Harness category vocabulary mismatch, not an observed reviewer decision failure",
+      "resolution": "Retain pre-adjudication import; apply raw/oracle/finding-hash-bound manual category mappings, unchanged conclusions and witnesses",
+      "conceptual_attempt": 1
+    },
+    {
+      "task": "T03",
+      "command": "pytest tests/m0/test_scoring.py --basetemp work/scoring-final -q",
+      "result": "13 passed,2 fixture-setup errors: work parent directory did not exist",
+      "cause": "pytest basetemp parent was absent",
+      "resolution": "Use a fresh path under existing evidence/M0; preserve failed log T03-scoring-final.txt",
+      "conceptual_attempt": 1
+    },
+    {
+      "task": "T03",
+      "command": "Browser createBrowserTab(iab, file:///.../evidence/M0/report/index.html)",
+      "result": "Browser URL policy rejected file protocol; only http/https allowed",
+      "cause": "Local browser preview is blocked by runtime security policy",
+      "resolution": "No workaround attempted. Offline HTML, source-link/content audit and original media artifacts retained; report browser rendering explicitly unverified.",
+      "conceptual_attempt": 1
     }
   ]
 }

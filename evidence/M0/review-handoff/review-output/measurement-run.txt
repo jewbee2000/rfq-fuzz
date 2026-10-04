@@ -1,0 +1,1877 @@
+{
+  "provenance": {
+    "python": "3.12.2",
+    "python_executable": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+    "packages": {
+      "cadquery-ocp": "7.8.1.1.post1",
+      "build123d": "0.10.0",
+      "pypdf": "6.9.1",
+      "pypdfium2": "5.14.0",
+      "Pillow": "12.3.0"
+    },
+    "script": "review-output/measure.py",
+    "method": "STEPControl_Reader reload; kernel validity/topology, analytical cylinder surfaces and circle boundaries, solid point classifications; pypdf text extraction; PDFium rendering and visual inspection"
+  },
+  "cases": [
+    {
+      "case_id": "pk-4d90",
+      "actual_file_sha256": {
+        "packet.json": "e92576eab2c7012132c85507a8f373de395a7ec6544d7b863bb795d1f1317812",
+        "part.step": "b439aa4be158cbb10535ec81482a99872678d912d9f3b93c76eba389a99d965c",
+        "drawing.pdf": "f674ec31804f46d83560a764b062b5f49723861755bb8b458e9d8e08c82a54c6",
+        "drawing.png": "8e9876fb7d25163b550166ae2481df2f01a8233b8cd73b73914ce6b23163d327"
+      },
+      "declared_artifact_hashes_match": true,
+      "step_measurements": {
+        "read_status": "IFSelect_ReturnStatus.IFSelect_RetDone",
+        "transferred_root_count": 1,
+        "valid_shape": true,
+        "solid_count": 1,
+        "face_count": 10,
+        "bounding_box_mm_with_kernel_tolerance": [
+          -40.0000001,
+          -25.0000001,
+          -4.0000001,
+          40.0000001,
+          25.0000001,
+          4.0000001
+        ],
+        "volume_mm3": 31095.22131576612,
+        "cylindrical_faces": [
+          {
+            "face_index": 7,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              -25.0,
+              -15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 8,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              25.0,
+              -15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 9,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              -25.0,
+              15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 10,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              25.0,
+              15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          }
+        ],
+        "planar_faces": [
+          {
+            "face_index": 1,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          },
+          {
+            "face_index": 2,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          },
+          {
+            "face_index": 3,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              4.0
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 4,
+            "location_mm": [
+              -40.0,
+              25.0,
+              -4.0
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          },
+          {
+            "face_index": 5,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 6,
+            "location_mm": [
+              40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          }
+        ],
+        "point_classifications": [
+          {
+            "point_mm": [
+              -25,
+              -15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              -15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              -15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              -15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              -15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              -15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              0,
+              0,
+              4
+            ],
+            "state": "TopAbs_State.TopAbs_ON"
+          }
+        ]
+      },
+      "pdf_text": "NOTES\n1  ALL DIMENSIONS IN mm\n2  H1 = ALL FOUR Z THROUGH BORES\n3  MODEL STAGE: INTERMEDIATE\n4  DRAWING STAGE: FINISHED\n5  FINISH: NONE\n6  VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE\n7  H1: REAM AFTER MODEL STAGE TO DRAWING SIZE\nISO VIEW (NTS)\n4\u00d7\n\u00f8\n6.8 \u00b10.05\nTHRU\n80\n8\n50\nSCALE 1:2\nMounting plate\nMP-001\n6061-T6\nmm\nA4\nA\n2026-10-04\nSEE CALLOUT\nRFQ author / draftwright",
+      "pdf_render": [
+        {
+          "page": 1,
+          "page_size_points": [
+            841.8897705078125,
+            595.2755737304688
+          ],
+          "render_size_pixels": [
+            1684,
+            1191
+          ],
+          "render_path": "review-output\\pk-4d90-pdf-page-1.png"
+        }
+      ],
+      "supplied_png": {
+        "size_pixels": [
+          2339,
+          1654
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "case_id": "pk-7a1c",
+      "actual_file_sha256": {
+        "packet.json": "17fa0bb2e63e161bba519f80953fe87bca4cf5f3e623cf5273f738ad7d77ffc6",
+        "part.step": "b439aa4be158cbb10535ec81482a99872678d912d9f3b93c76eba389a99d965c",
+        "drawing.pdf": "9824fdbadcc65eafb9d83b0f82ce4961bc2bedcaf6a4d6b84c16669db53a331e",
+        "drawing.png": "2032fa6fc91c8383d9ad9bb74c14a20cc200ed6958e1a7eaf35a9ec07bb71735"
+      },
+      "declared_artifact_hashes_match": true,
+      "step_measurements": {
+        "read_status": "IFSelect_ReturnStatus.IFSelect_RetDone",
+        "transferred_root_count": 1,
+        "valid_shape": true,
+        "solid_count": 1,
+        "face_count": 10,
+        "bounding_box_mm_with_kernel_tolerance": [
+          -40.0000001,
+          -25.0000001,
+          -4.0000001,
+          40.0000001,
+          25.0000001,
+          4.0000001
+        ],
+        "volume_mm3": 31095.22131576612,
+        "cylindrical_faces": [
+          {
+            "face_index": 7,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              -25.0,
+              -15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 8,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              25.0,
+              -15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 9,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              -25.0,
+              15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 10,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              25.0,
+              15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          }
+        ],
+        "planar_faces": [
+          {
+            "face_index": 1,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          },
+          {
+            "face_index": 2,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          },
+          {
+            "face_index": 3,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              4.0
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 4,
+            "location_mm": [
+              -40.0,
+              25.0,
+              -4.0
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          },
+          {
+            "face_index": 5,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 6,
+            "location_mm": [
+              40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          }
+        ],
+        "point_classifications": [
+          {
+            "point_mm": [
+              -25,
+              -15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              -15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              -15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              -15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              -15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              -15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              0,
+              0,
+              4
+            ],
+            "state": "TopAbs_State.TopAbs_ON"
+          }
+        ]
+      },
+      "pdf_text": "NOTES\n1  ALL DIMENSIONS IN mm\n2  H1 = ALL FOUR Z THROUGH BORES\n3  MODEL STAGE: FINISHED\n4  DRAWING STAGE: FINISHED\n5  FINISH: NONE\n6  VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE\n7  H1: DRAWING AND MODEL APPLY AT SAME STAGE\nISO VIEW (NTS)\n4\u00d7\n\u00f8\n6.8 \u00b10.05\nTHRU\n80\n8\n50\nSCALE 1:2\nMounting plate\nMP-001\n6061-T6\nmm\nA4\nA\n2026-10-04\nSEE CALLOUT\nRFQ author / draftwright",
+      "pdf_render": [
+        {
+          "page": 1,
+          "page_size_points": [
+            841.8897705078125,
+            595.2755737304688
+          ],
+          "render_size_pixels": [
+            1684,
+            1191
+          ],
+          "render_path": "review-output\\pk-7a1c-pdf-page-1.png"
+        }
+      ],
+      "supplied_png": {
+        "size_pixels": [
+          2339,
+          1654
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "case_id": "pk-b8e2",
+      "actual_file_sha256": {
+        "packet.json": "74f329f490ae060c8e42a8613242e38b2cc54e5b8618b54c5ae373cc5651aef2",
+        "part.step": "b439aa4be158cbb10535ec81482a99872678d912d9f3b93c76eba389a99d965c",
+        "drawing.pdf": "70fcfb8a2e7ad230689d50bf85401c243ab5d2a0fc2c526335af2c8bf6215a0f",
+        "drawing.png": "fc83943fe2f28b45c0a632ba95dc0fa9a5e62cc8187e7ba50b90f7bd29404c79"
+      },
+      "declared_artifact_hashes_match": true,
+      "step_measurements": {
+        "read_status": "IFSelect_ReturnStatus.IFSelect_RetDone",
+        "transferred_root_count": 1,
+        "valid_shape": true,
+        "solid_count": 1,
+        "face_count": 10,
+        "bounding_box_mm_with_kernel_tolerance": [
+          -40.0000001,
+          -25.0000001,
+          -4.0000001,
+          40.0000001,
+          25.0000001,
+          4.0000001
+        ],
+        "volume_mm3": 31095.22131576612,
+        "cylindrical_faces": [
+          {
+            "face_index": 7,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              -25.0,
+              -15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 8,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              25.0,
+              -15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 9,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              -25.0,
+              15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 10,
+            "radius_mm": 3.0,
+            "diameter_mm": 6.0,
+            "axis_location_mm": [
+              25.0,
+              15.0,
+              -6.0
+            ],
+            "axis_direction": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "u_interval_rad": [
+              0.0,
+              6.28318530718
+            ],
+            "v_interval_mm": [
+              2.0,
+              10.0
+            ],
+            "face_orientation": "TopAbs_Orientation.TopAbs_REVERSED",
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          }
+        ],
+        "planar_faces": [
+          {
+            "face_index": 1,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          },
+          {
+            "face_index": 2,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          },
+          {
+            "face_index": 3,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              4.0
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 4,
+            "location_mm": [
+              -40.0,
+              25.0,
+              -4.0
+            ],
+            "normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          },
+          {
+            "face_index": 5,
+            "location_mm": [
+              -40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "circular_boundaries": [
+              {
+                "center_mm": [
+                  -25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  -15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  -25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              },
+              {
+                "center_mm": [
+                  25.0,
+                  15.0,
+                  -4.0
+                ],
+                "radius_mm": 3.0,
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "parameter_interval": [
+                  0.0,
+                  6.283185307179586
+                ]
+              }
+            ]
+          },
+          {
+            "face_index": 6,
+            "location_mm": [
+              40.0,
+              -25.0,
+              -4.0
+            ],
+            "normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "circular_boundaries": []
+          }
+        ],
+        "point_classifications": [
+          {
+            "point_mm": [
+              -25,
+              -15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              -15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              -15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              -25,
+              15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              -15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              -15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              -15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              15,
+              0.1
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              15,
+              4.0
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              25,
+              15,
+              7.9
+            ],
+            "state": "TopAbs_State.TopAbs_OUT"
+          },
+          {
+            "point_mm": [
+              0,
+              0,
+              4
+            ],
+            "state": "TopAbs_State.TopAbs_ON"
+          }
+        ]
+      },
+      "pdf_text": "NOTES\n1  ALL DIMENSIONS IN mm\n2  H1 = ALL FOUR Z THROUGH BORES\n3  MODEL STAGE: FINISHED\n4  DRAWING STAGE: FINISHED\n5  FINISH: NONE\n6  VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE\n7  H1: DRAWING AND MODEL APPLY AT SAME STAGE\nISO VIEW (NTS)\n4\u00d7\n\u00f8\n6 \u00b10.05\nTHRU\n80\n8\n50\nSCALE 1:2\nMounting plate\nMP-001\n6061-T6\nmm\nA4\nA\n2026-10-04\nSEE CALLOUT\nRFQ author / draftwright",
+      "pdf_render": [
+        {
+          "page": 1,
+          "page_size_points": [
+            841.8897705078125,
+            595.2755737304688
+          ],
+          "render_size_pixels": [
+            1684,
+            1191
+          ],
+          "render_path": "review-output\\pk-b8e2-pdf-page-1.png"
+        }
+      ],
+      "supplied_png": {
+        "size_pixels": [
+          2339,
+          1654
+        ],
+        "mode": "RGB"
+      }
+    }
+  ]
+}

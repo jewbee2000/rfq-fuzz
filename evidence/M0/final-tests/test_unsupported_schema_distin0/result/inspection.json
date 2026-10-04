@@ -1,0 +1,8 @@
+{
+  "schema_version": "m0.1",
+  "case_id": "pk-7a1c",
+  "status": "unsupported",
+  "failures": [
+    "unsupported PacketSpec version"
+  ]
+}

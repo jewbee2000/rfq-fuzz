@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Provisional M0 review response",
+  "type": "object",
+  "required": ["schema_version", "reviewer", "results"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "m0.1"},
+    "reviewer": {
+      "type": "object",
+      "required": ["name", "version", "configuration", "provenance"],
+      "properties": {
+        "name": {"type": "string"}, "version": {"type": "string"},
+        "configuration": {"type": "string"}, "provenance": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["case_id", "packet_sha256", "status", "reviewed_modalities", "reviewed_obligations", "findings", "assertions", "cnc_advisory", "runtime_seconds", "raw_output_reference"],
+        "additionalProperties": false,
+        "properties": {
+          "case_id": {"type": "string"},
+          "packet_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "status": {"enum": ["completed", "partial", "unsupported", "timeout", "error"]},
+          "reviewed_modalities": {"type": "array", "uniqueItems": true, "items": {"enum": ["step", "pdf", "png", "context"]}},
+          "reviewed_obligations": {"type": "array", "items": {"type": "string"}},
+          "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+          "assertions": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+          "cnc_advisory": {"const": "unsupported"},
+          "runtime_seconds": {"type": ["number", "null"], "minimum": 0},
+          "raw_output_reference": {"type": "string"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "finding": {
+      "type": "object",
+      "required": ["obligation", "feature_id", "category", "conclusion", "drawing_evidence", "geometry_evidence", "context_evidence", "rationale"],
+      "additionalProperties": false,
+      "properties": {
+        "obligation": {"type": "string"}, "feature_id": {"type": "string"},
+        "category": {"type": "string"},
+        "conclusion": {"enum": ["contradiction", "profile_exclusion", "advisory", "missing_information", "supported_clear", "unsupported"]},
+        "drawing_evidence": {"type": "string"}, "geometry_evidence": {"type": "string"},
+        "context_evidence": {"type": "string"}, "rationale": {"type": "string"}
+      }
+    }
+  }
+}

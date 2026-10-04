@@ -1,0 +1,143 @@
+{
+  "status": "passed",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "tools/m0.py",
+        "validate",
+        "--out",
+        "work\\replay\\validation"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "tools/m0.py",
+        "reference",
+        "--out",
+        "work\\replay\\reference"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "tools/inject_m0.py",
+        "work\\replay\\reference\\review.json",
+        "--out",
+        "work\\replay\\injected\\review.json"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "tools/m0.py",
+        "import-results",
+        "work\\replay\\reference\\review.json",
+        "--out",
+        "work\\replay\\imported-reference"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "tools/m0.py",
+        "import-results",
+        "work\\replay\\injected\\review.json",
+        "--out",
+        "work\\replay\\imported-injected"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "tools/m0.py",
+        "import-results",
+        "evidence/M0/review-handoff/review-output/review.json",
+        "--adjudication",
+        "evidence/M0/category-adjudication.json",
+        "--out",
+        "work\\replay\\imported-independent"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "tools/m0.py",
+        "report",
+        "work\\replay\\imported-reference\\run.json",
+        "work\\replay\\imported-injected\\run.json",
+        "work\\replay\\imported-independent\\run.json",
+        "--out",
+        "work\\replay\\report"
+      ],
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "counts": {
+    "imported-reference": {
+      "defects": 1,
+      "detected": 1,
+      "clean": 2,
+      "false_alerts": 0,
+      "explicit_false_clears": 0,
+      "silent_misses": 0,
+      "correct_clear": 2,
+      "missing_information": 0,
+      "execution_failures": 0,
+      "unsupported": 0,
+      "covered": 3
+    },
+    "imported-injected": {
+      "defects": 1,
+      "detected": 0,
+      "clean": 2,
+      "false_alerts": 1,
+      "explicit_false_clears": 1,
+      "silent_misses": 0,
+      "correct_clear": 1,
+      "missing_information": 0,
+      "execution_failures": 0,
+      "unsupported": 0,
+      "covered": 3
+    },
+    "imported-independent": {
+      "defects": 1,
+      "detected": 1,
+      "clean": 2,
+      "false_alerts": 0,
+      "explicit_false_clears": 0,
+      "silent_misses": 0,
+      "correct_clear": 2,
+      "missing_information": 0,
+      "execution_failures": 0,
+      "unsupported": 0,
+      "covered": 3
+    }
+  },
+  "report_links_checked": 34,
+  "limits": "offline replay of frozen suite and actual saved reviewer response; not a second independent live review or another platform; browser rendering not tested"
+}

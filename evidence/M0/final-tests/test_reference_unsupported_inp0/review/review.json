@@ -1,0 +1,23 @@
+{
+  "schema_version": "m0.1",
+  "reviewer": {
+    "name": "RFQFuzz reference",
+    "version": "m0-template-1",
+    "configuration": "Public-only STEP reimport/build123d and pypdf template parser. PNG interpretation unsupported; drawing visibility established only by prior independent corpus validation.",
+    "provenance": "Local hand-coded protocol reference, not a general reviewer or oracle"
+  },
+  "results": [
+    {
+      "case_id": "pk-b8e2",
+      "packet_sha256": "3e58226b6dac954c12e4751235dd2e92d774113dd17664cdca991b51880716a6",
+      "status": "unsupported",
+      "reviewed_modalities": [],
+      "reviewed_obligations": [],
+      "findings": [],
+      "assertions": [],
+      "cnc_advisory": "unsupported",
+      "runtime_seconds": 0.00548970000090776,
+      "raw_output_reference": "public-read.json"
+    }
+  ]
+}

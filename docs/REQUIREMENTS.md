@@ -1,6 +1,6 @@
 # Requirements
 
-Generated from [requirements.json](../requirements.json), the requirements source of truth. All entries are planned; none is implemented. Must items define the first-release contract. Should items improve transfer/usability but may be deferred with a recorded reason. Could items are later extensions. Won't items are explicit exclusions, not unfinished Must items.
+Generated from [requirements.json](../requirements.json), the requirements source of truth. All release-level entries remain planned: M0 completed only the bounded T00–T03 feasibility subset, recorded in [the gate](../evidence/M0/gate.md). Must items define the first-release contract. Should items improve transfer/usability but may be deferred with a recorded reason. Could items are later extensions. Won't items are explicit exclusions, not unfinished Must items.
 
 Sources and engineering reasoning are in [Research](RESEARCH_AND_GO_NO_GO.md) and [Architecture and rules](ARCHITECTURE_AND_RULES.md). Acceptance criteria below are proposed checks, not test results.
 

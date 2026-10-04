@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "commands": 8,
+  "counts": {
+    "imported-reference": {
+      "defects": 1,
+      "detected": 1,
+      "clean": 2,
+      "false_alerts": 0,
+      "explicit_false_clears": 0,
+      "silent_misses": 0,
+      "correct_clear": 2,
+      "missing_information": 0,
+      "execution_failures": 0,
+      "unsupported": 0,
+      "covered": 3
+    },
+    "imported-injected": {
+      "defects": 1,
+      "detected": 0,
+      "clean": 2,
+      "false_alerts": 1,
+      "explicit_false_clears": 1,
+      "silent_misses": 0,
+      "correct_clear": 1,
+      "missing_information": 0,
+      "execution_failures": 0,
+      "unsupported": 0,
+      "covered": 3
+    },
+    "imported-independent": {
+      "defects": 1,
+      "detected": 1,
+      "clean": 2,
+      "false_alerts": 0,
+      "explicit_false_clears": 0,
+      "silent_misses": 0,
+      "correct_clear": 2,
+      "missing_information": 0,
+      "execution_failures": 0,
+      "unsupported": 0,
+      "covered": 3
+    }
+  },
+  "links": 34
+}

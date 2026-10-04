@@ -56,7 +56,7 @@
       "verification": ".venv/Scripts/python.exe tools/m0.py validate; .venv/Scripts/python.exe -m pytest tests/m0/test_validation.py tests/m0/test_public.py --basetemp evidence/M0/negative-tests -q (15 passed); shipped PNG and independent PDFium crop inspection",
       "verification_is_proposed": false,
       "status": "completed",
-      "completion_commit": null
+      "completion_commit": "c038a99"
     },
     {
       "id": "T03",
@@ -72,9 +72,9 @@
       "scope": "Export the neutral public bundle; collect reference and genuine external review paths. The external path must examine the O01 drawing, STEP and manufacturing-stage evidence. Demonstrate a changed result; an injected regression is allowed only with explicit labeling and separately retained external observations.",
       "acceptance": "Raw responses and artifact-localized report; explicit pass/revise/stop for M0. No expansion without pass.",
       "evidence": "evidence/M0/gate.md",
-      "verification": "External review walkthrough and manual contract audit",
-      "verification_is_proposed": true,
-      "status": "not_started",
+      "verification": "Isolated reviewer fork_turns=none actual STEP/PDF/PNG/context inspection; reference and raw/adjudicated imports; report; pytest tests/m0 --basetemp evidence/M0/final-tests -q (33 passed,4 upstream warnings); relevant report checks18 passed; tools/replay_m0.py (8 commands); tools/audit_m0.py (34 links)",
+      "verification_is_proposed": false,
+      "status": "completed",
       "completion_commit": null
     },
     {
