@@ -20,7 +20,7 @@ Read-only audit of coordinator checkout `src/rfqfuzz/v1/{cli,api,adapters,refere
 | Reference CLI obscured failed rows with successful command status | Actual rehashed corrupt PDF created `status=error` review row while CLI returned exit 0 and no failure summary | Coordinator added aggregate execution states and failure exit. Same artifact now returns exit 2 and explicit error count; raw/native errors remain retained. |
 | Numeric prefix accepted as grounded evidence | Actual count mismatch has STEP `H1 count=4` and PDF `H1 COUNT = 3`; altered claims `H1 count=40` and `H1 COUNT = 30` still matched and scored `detected` under source hash `d0dcd14b0b66693253dc8751fffba35acf5a4f8b022a9a76f46ecb67737c6ad4` | Coordinator commit `4c98b5f` uses complete canonical normalized equality. Independent rerun rejects both false claims, records a silent miss and retains the unmatched finding as unadjudicated, while accepting original quotes. **Resolved.** |
 
-The numeric prefix issue is a concrete R11 evidence-credit defect, even though the chosen conclusion remains a real contradiction. Unsupported numeric claims must not count as an independently grounded finding. Existing positive replay/tests alone did not detect it.
+The numeric prefix issue is a concrete R13 evidence-credit defect (challenged under R17), even though the chosen conclusion remains a real contradiction. Unsupported numeric claims must not count as an independently grounded finding. Existing positive replay/tests alone did not detect it. Requirement ID corrected by the coordinator at the independent reviewer's request; raw probes and their results are unchanged.
 
 ## Consumer behavior otherwise supported by the review
 

@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "project": "RFQFuzz",
   "research_date": "2026-10-04",
-  "status": "m0_feasibility_passed_release_requirements_planned",
+  "status": "M1-M5_consumer_acceptance_active",
   "source_of_truth": true,
   "requirements": [
     {
@@ -16,7 +16,12 @@
       "tasks": [
         "T13"
       ],
-      "status": "planned"
+      "status": "in_progress",
+      "completion_evidence": [
+        "docs/DEMO.md",
+        "evidence/M5/consumer.md"
+      ],
+      "acceptance_commands": []
     },
     {
       "id": "R02",
@@ -29,7 +34,15 @@
       "tasks": [
         "T04"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M1/contracts.md",
+        "evidence/M4/core-public-export-audit.json",
+        "docs/REVIEWER_PROTOCOL.md"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/contracts tests/m0 -q (64 passed)"
+      ]
     },
     {
       "id": "R03",
@@ -42,7 +55,14 @@
       "tasks": [
         "T06"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M2/generators.md",
+        "evidence/M2/generation-integration.txt"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/geometry tests/generation -q (24 passed)"
+      ]
     },
     {
       "id": "R04",
@@ -56,7 +76,15 @@
         "T06",
         "T08"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M2/core-final-acceptance.md",
+        "evidence/M4/visual-review/attestation.json"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/geometry tests/generation -q (24 passed)",
+        ".venv/Scripts/python.exe -m pytest tests/artifact_validation -q (49passed); tools/validate_core.py (145valid); actual25sheets and7fullpages visually inspected"
+      ]
     },
     {
       "id": "R05",
@@ -70,7 +98,15 @@
         "T07",
         "T08"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M2/mutations.md",
+        "evidence/M4/core-validated/oracle.json"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/mutations -q (14 passed); tests/mutations/retain_suite.py and append_sparse_control.py export/reopen145",
+        ".venv/Scripts/python.exe -m pytest tests/artifact_validation -q (49passed); tools/validate_core.py (145valid); actual25sheets and7fullpages visually inspected"
+      ]
     },
     {
       "id": "R06",
@@ -85,7 +121,16 @@
         "T07",
         "T08"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M1/profiles.md",
+        "evidence/M4/corpus-summary.json"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/contracts tests/profiles -q (96 passed)",
+        ".venv/Scripts/python.exe -m pytest tests/mutations -q (14 passed); tests/mutations/retain_suite.py and append_sparse_control.py export/reopen145",
+        ".venv/Scripts/python.exe -m pytest tests/artifact_validation -q (49passed); tools/validate_core.py (145valid); actual25sheets and7fullpages visually inspected"
+      ]
     },
     {
       "id": "R07",
@@ -99,7 +144,16 @@
         "T07",
         "T11"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M4/challenge-report.md",
+        "evidence/M4/baselines",
+        "evidence/M2/core-suite/public/pk-61e732a788ae"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/mutations -q (14 passed); tests/mutations/retain_suite.py and append_sparse_control.py export/reopen145",
+        "pytest tests/metamorphic (12passed); tools/challenge_evaluator.py (6source mutants killed); tools/validate_core.py (145valid); tools/score_core.py; audit_public (145passed)"
+      ]
     },
     {
       "id": "R08",
@@ -112,7 +166,14 @@
       "tasks": [
         "T08"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M2/oracles.md",
+        "evidence/M2/core-final-acceptance.md"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/artifact_validation -q (49passed); tools/validate_core.py (145valid); actual25sheets and7fullpages visually inspected"
+      ]
     },
     {
       "id": "R09",
@@ -125,7 +186,14 @@
       "tasks": [
         "T05"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M1/profiles.md",
+        "src/rfqfuzz/v1/profiles.py"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/contracts tests/profiles -q (96 passed)"
+      ]
     },
     {
       "id": "R10",
@@ -139,7 +207,15 @@
         "T04",
         "T10"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M1/contracts.md",
+        "evidence/M3/scoring.md"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/contracts tests/m0 -q (64 passed)",
+        ".venv/Scripts/python.exe -m pytest tests/contracts tests/scoring tests/adapters -q (51 passed)"
+      ]
     },
     {
       "id": "R11",
@@ -153,7 +229,16 @@
         "T03",
         "T09"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M0/gate.md",
+        "evidence/M3/adapters.md",
+        "evidence/M5/external-v1/summary.json"
+      ],
+      "acceptance_commands": [
+        "Isolated reviewer fork_turns=none actual STEP/PDF/PNG/context inspection; reference and raw/adjudicated imports; report; pytest tests/m0 --basetemp evidence/M0/final-tests -q (33 passed,4 upstream warnings); relevant report checks18 passed; tools/replay_m0.py (8 commands); tools/audit_m0.py (34 links)",
+        ".venv/Scripts/python.exe -m pytest tests/adapters -q (5 passed)"
+      ]
     },
     {
       "id": "R12",
@@ -168,7 +253,17 @@
         "T10",
         "T12"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M3/adapters.md",
+        "evidence/M4/report-and-failures.md",
+        "evidence/M5/independent-fixes.md"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/adapters -q (5 passed)",
+        ".venv/Scripts/python.exe -m pytest tests/contracts tests/scoring tests/adapters -q (51 passed)",
+        ".venv/Scripts/python.exe -m pytest tests/reporting tests/adapters --basetemp evidence/M4/report-test-data -q (7 passed); tools/render_report.cjs via installed Edge (no errors/network/overflow)"
+      ]
     },
     {
       "id": "R13",
@@ -181,7 +276,14 @@
       "tasks": [
         "T10"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M3/scoring.md",
+        "evidence/M5/independent-final-review/numeric-prefix-results-fixed.json"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/contracts tests/scoring tests/adapters -q (51 passed)"
+      ]
     },
     {
       "id": "R14",
@@ -194,7 +296,15 @@
       "tasks": [
         "T10"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M4/corpus-summary.json",
+        "evidence/M4/core-comparison.json",
+        "evidence/M5/external-v1/summary.json"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/contracts tests/scoring tests/adapters -q (51 passed)"
+      ]
     },
     {
       "id": "R15",
@@ -209,7 +319,16 @@
         "T10",
         "T13"
       ],
-      "status": "planned"
+      "status": "in_progress",
+      "completion_evidence": [
+        "evidence/M5/consumer.md",
+        "evidence/M5/independent-fixes.md",
+        "evidence/M5/coordinator-demo-v2/report/index.html"
+      ],
+      "acceptance_commands": [
+        "Isolated reviewer fork_turns=none actual STEP/PDF/PNG/context inspection; reference and raw/adjudicated imports; report; pytest tests/m0 --basetemp evidence/M0/final-tests -q (33 passed,4 upstream warnings); relevant report checks18 passed; tools/replay_m0.py (8 commands); tools/audit_m0.py (34 links)",
+        ".venv/Scripts/python.exe -m pytest tests/contracts tests/scoring tests/adapters -q (51 passed)"
+      ]
     },
     {
       "id": "R16",
@@ -222,7 +341,15 @@
       "tasks": [
         "T11"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M4/challenge-report.md",
+        "examples/v1-demo/replay-manifest.json",
+        "evidence/M5-archive-audit.txt"
+      ],
+      "acceptance_commands": [
+        "pytest tests/metamorphic (12passed); tools/challenge_evaluator.py (6source mutants killed); tools/validate_core.py (145valid); tools/score_core.py; audit_public (145passed)"
+      ]
     },
     {
       "id": "R17",
@@ -235,7 +362,15 @@
       "tasks": [
         "T11"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M4/challenge-report.md",
+        "evidence/M4/challenge-tests",
+        "evidence/M5/independent-final-review/final-consumer-review.md"
+      ],
+      "acceptance_commands": [
+        "pytest tests/metamorphic (12passed); tools/challenge_evaluator.py (6source mutants killed); tools/validate_core.py (145valid); tools/score_core.py; audit_public (145passed)"
+      ]
     },
     {
       "id": "R18",
@@ -248,7 +383,15 @@
       "tasks": [
         "T12"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M4/report-and-failures.md",
+        "evidence/M5/consumer.md",
+        "evidence/M5-report-audit-final-tests.txt"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/reporting tests/adapters --basetemp evidence/M4/report-test-data -q (7 passed); tools/render_report.cjs via installed Edge (no errors/network/overflow)"
+      ]
     },
     {
       "id": "R19",
@@ -262,7 +405,16 @@
         "T09",
         "T12"
       ],
-      "status": "planned"
+      "status": "verified",
+      "completion_evidence": [
+        "evidence/M4/adapter-size-followup.md",
+        "evidence/M4/report-and-failures.md",
+        "docs/REVIEWER_PROTOCOL.md"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pytest tests/adapters -q (5 passed)",
+        ".venv/Scripts/python.exe -m pytest tests/reporting tests/adapters --basetemp evidence/M4/report-test-data -q (7 passed); tools/render_report.cjs via installed Edge (no errors/network/overflow)"
+      ]
     },
     {
       "id": "R20",
@@ -276,7 +428,14 @@
         "T13",
         "T14"
       ],
-      "status": "planned"
+      "status": "in_progress",
+      "completion_evidence": [
+        "evidence/M5/consumer.md",
+        "docs/BLOG_DRAFT.md",
+        "docs/LICENSES.md",
+        "docs/SHOULD_DEFERRALS.md"
+      ],
+      "acceptance_commands": []
     },
     {
       "id": "R21",
@@ -290,7 +449,16 @@
         "T00",
         "T14"
       ],
-      "status": "planned"
+      "status": "in_progress",
+      "completion_evidence": [
+        "tasks.json",
+        "docs/MILESTONE_ASSESSMENTS.md",
+        "docs/CURRENT_HANDOFF.md",
+        "evidence/M5/release-review.md"
+      ],
+      "acceptance_commands": [
+        "Read-only primary-source recheck and repository contract inspection (2026-10-04)"
+      ]
     },
     {
       "id": "R22",
@@ -304,7 +472,16 @@
         "T01",
         "T13"
       ],
-      "status": "planned"
+      "status": "in_progress",
+      "completion_evidence": [
+        "docs/DEMO.md",
+        "requirements-v1.lock",
+        "evidence/M5/consumer.md",
+        "evidence/M5/environment-windows-coordinator.json"
+      ],
+      "acceptance_commands": [
+        ".venv/Scripts/python.exe -m pip check; .venv/Scripts/python.exe tools/smoke.py; .venv/Scripts/python.exe tools/record_environment.py; actual PNG visual inspection"
+      ]
     },
     {
       "id": "S01",
@@ -317,7 +494,10 @@
       "tasks": [
         "T13"
       ],
-      "status": "planned"
+      "status": "partial_with_deferred_scope",
+      "completion_evidence": [
+        "docs/SHOULD_DEFERRALS.md"
+      ]
     },
     {
       "id": "S02",
@@ -328,7 +508,10 @@
       "acceptance": "Independent arithmetic/geometry checks and valid REF/alternate-process controls establish each case; uncertain process assumptions prevent scoring.",
       "milestone": "post-v1",
       "tasks": [],
-      "status": "planned"
+      "status": "deferred",
+      "completion_evidence": [
+        "docs/SHOULD_DEFERRALS.md"
+      ]
     },
     {
       "id": "S03",
@@ -341,7 +524,10 @@
       "tasks": [
         "T13"
       ],
-      "status": "planned"
+      "status": "partial_with_deferred_scope",
+      "completion_evidence": [
+        "docs/SHOULD_DEFERRALS.md"
+      ]
     },
     {
       "id": "S04",
@@ -352,7 +538,10 @@
       "acceptance": "A consumer locates the affected face and annotation without interpreting internal IDs; static report remains usable without the viewer.",
       "milestone": "post-v1",
       "tasks": [],
-      "status": "planned"
+      "status": "deferred",
+      "completion_evidence": [
+        "docs/SHOULD_DEFERRALS.md"
+      ]
     },
     {
       "id": "S05",
@@ -365,7 +554,10 @@
       "tasks": [
         "T11"
       ],
-      "status": "planned"
+      "status": "deferred",
+      "completion_evidence": [
+        "docs/SHOULD_DEFERRALS.md"
+      ]
     },
     {
       "id": "S06",
@@ -376,7 +568,10 @@
       "acceptance": "Record model/prompt/cost where available; replay needs no API key; missing credentials and exceeded budget fail clearly.",
       "milestone": "post-v1",
       "tasks": [],
-      "status": "planned"
+      "status": "deferred",
+      "completion_evidence": [
+        "docs/SHOULD_DEFERRALS.md"
+      ]
     },
     {
       "id": "S07",
@@ -389,7 +584,10 @@
       "tasks": [
         "T13"
       ],
-      "status": "planned"
+      "status": "partial_with_deferred_scope",
+      "completion_evidence": [
+        "docs/SHOULD_DEFERRALS.md"
+      ]
     },
     {
       "id": "C01",
@@ -400,7 +598,7 @@
       "acceptance": "Every shrink is revalidated and retains the same expected obligation; minimization never changes the conclusion without recording it.",
       "milestone": "later",
       "tasks": [],
-      "status": "planned"
+      "status": "deferred"
     },
     {
       "id": "C02",
@@ -411,7 +609,7 @@
       "acceptance": "Explicitly supported entities round-trip with evidence; absent or unsupported PMI is unknown, not a parser success claim.",
       "milestone": "later",
       "tasks": [],
-      "status": "planned"
+      "status": "deferred"
     },
     {
       "id": "C03",
@@ -422,7 +620,7 @@
       "acceptance": "Independent geometric witness supports a named-profile exclusion; other machines/tools are not ruled out globally.",
       "milestone": "later",
       "tasks": [],
-      "status": "planned"
+      "status": "deferred"
     },
     {
       "id": "C04",
@@ -433,7 +631,7 @@
       "acceptance": "Raw text and proposed mapping are retained; disputed mappings remain unadjudicated; deterministic structured path stays available.",
       "milestone": "later",
       "tasks": [],
-      "status": "planned"
+      "status": "deferred"
     },
     {
       "id": "W01",
@@ -444,7 +642,7 @@
       "acceptance": "Docs/UI explicitly describe testing reviewers; no global machinable badge or certification claim.",
       "milestone": "v1",
       "tasks": [],
-      "status": "planned"
+      "status": "respected"
     },
     {
       "id": "W02",
@@ -455,7 +653,7 @@
       "acceptance": "Document-only review has explicit modality limits; model-dependent obligations require STEP and correspondence.",
       "milestone": "v1",
       "tasks": [],
-      "status": "planned"
+      "status": "respected"
     },
     {
       "id": "W03",
@@ -466,7 +664,7 @@
       "acceptance": "Unsupported native files explain the PDF/STEP export route; no bundled proprietary keys or libraries.",
       "milestone": "v1",
       "tasks": [],
-      "status": "planned"
+      "status": "respected"
     },
     {
       "id": "W04",
@@ -477,7 +675,7 @@
       "acceptance": "Only named finite obligations are scored; no proprietary standard tables copied into the project.",
       "milestone": "v1",
       "tasks": [],
-      "status": "planned"
+      "status": "respected"
     },
     {
       "id": "W05",
@@ -488,7 +686,7 @@
       "acceptance": "No report suggests process simulation or physical manufacture was performed.",
       "milestone": "v1",
       "tasks": [],
-      "status": "planned"
+      "status": "respected"
     },
     {
       "id": "W06",
@@ -499,7 +697,7 @@
       "acceptance": "CNC track boundaries remain explicit; architecture extensibility is not advertised as implemented support.",
       "milestone": "v1",
       "tasks": [],
-      "status": "planned"
+      "status": "respected"
     },
     {
       "id": "W07",
@@ -510,7 +708,7 @@
       "acceptance": "External cases are manually registered and independently reviewed; unsupported mutations refuse clearly.",
       "milestone": "v1",
       "tasks": [],
-      "status": "planned"
+      "status": "respected"
     },
     {
       "id": "W08",
@@ -521,7 +719,7 @@
       "acceptance": "Use only explicit sourced/profile assumptions; missing applicability yields unknown.",
       "milestone": "v1",
       "tasks": [],
-      "status": "planned"
+      "status": "respected"
     },
     {
       "id": "W09",
@@ -532,7 +730,7 @@
       "acceptance": "The core runs locally; Beads stays optional development tooling.",
       "milestone": "v1",
       "tasks": [],
-      "status": "planned"
+      "status": "respected"
     },
     {
       "id": "W10",
@@ -543,7 +741,7 @@
       "acceptance": "All artifacts and article drafts stay local; reported results cite actual retained evidence.",
       "milestone": "current",
       "tasks": [],
-      "status": "planned"
+      "status": "respected"
     }
   ]
 }

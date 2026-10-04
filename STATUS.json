@@ -15,10 +15,11 @@
   "m0_decision": "pass_bounded_synthetic_feasibility",
   "implemented_scope": "T00-T12 completed; T13 consumer source55b288a implemented, final Linux offline acceptance active",
   "test_results": {
-    "integrated_passed_before_resource_limit_setting": 264,
     "upstream_warnings": 4,
     "final_validated_core_packets": 145,
-    "deliberate_evaluator_mutants_caught": 6
+    "deliberate_evaluator_mutants_caught": 6,
+    "integrated_passed": 270,
+    "final_test_log": "evidence/M5-final-release-tests.txt"
   },
   "remaining_limits": [
     "Linux final offline acceptance pending after retained TCG timeout",
@@ -29,5 +30,6 @@
     "no human engineer or physical industrial evidence"
   ],
   "current_task": "T13",
-  "task_state": "in_progress"
+  "task_state": "in_progress",
+  "requirements_verified_current": 17
 }

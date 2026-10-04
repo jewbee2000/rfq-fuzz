@@ -5,7 +5,7 @@ packages, validate the actual exported artifacts, import a review and inspect
 changed behavior. Package consistency and conditional CNC advisories are separate.
 
 **Status: M1–M4 implemented; final M5 consumer acceptance active, 4 October2026.**
-M0 remains a frozen regression.264integrated tests pass;145corepackets pass final
+M0 remains a frozen regression.270integrated tests pass;145corepackets pass final
 artifact validation;6/6deliberate evaluator mutants are caught. All145corecases
 are development-only. This is a synthetic regression toolkit; no part is approved
 for manufacture. Everything remains local and unpublished.

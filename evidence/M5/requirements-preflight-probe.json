@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "premature_finalization_exit": 1,
+  "reason": "task acceptance incomplete",
+  "output_files_unchanged": true,
+  "files": {
+    "requirements.json": "904701f9d7931d7f5be92420bbaaead4a6d5923626d56ca71075cf4767354387",
+    "docs\\REQUIREMENTS.md": "82e43d3d39de61d2b372047e260e361f51788c98b050e54fab32506ac59742f7",
+    "docs\\REQUIREMENTS_EVIDENCE.md": "2d23d294dee70d30bb7bec9c16a65f7a8b0377ab9e4e59349591c6fbc6d0b787"
+  }
+}

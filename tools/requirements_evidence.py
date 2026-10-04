@@ -32,18 +32,25 @@ proof={
 "R22":["docs/DEMO.md","requirements-v1.lock","evidence/M5/consumer.md","evidence/M5/environment-windows-coordinator.json"]}
 # Rule cards are retained in the implemented profile module and evidence notes.
 if not Path("docs/RULE_PROVENANCE.md").exists():proof["R09"][1]="src/rfqfuzz/v1/profiles.py"
-partial={"S01","S03","S05","S07"}
+partial={"S01","S03","S07"}
 final_log=Path("evidence/M5-final-release-tests.txt")
 if not final_log.exists():final_log=Path("evidence/M5-final-after-audit-tests.txt")
 match=re.search(r"(\d+) passed, (\d+) warnings",final_log.read_text())
 passed,warnings=map(int,match.groups()) if match else (0,0)
+missing=[path for paths in proof.values() for path in paths if not Path(path).exists()]
+for t in tasks.values():
+    if t["status"]=="completed":
+        assert t["completion_commit"] and t["completion_commit"]!="HEAD","completion commit must be immutable"
+        assert not t["verification_is_proposed"] and Path(t["evidence"]).is_file(),"completed task lacks actual acceptance evidence"
+        subprocess.run(["git","cat-file","-e",t["completion_commit"]+"^{commit}"],check=True)
 if a.final:
-    assert tasks["T13"]["status"]=="completed","independent consumer acceptance incomplete"
+    assert all(t["status"]=="completed" for t in tasks.values()),"task acceptance incomplete"
     assert final_log.name=="M5-final-release-tests.txt" and passed>=270,"final integrated checks missing"
+    assert not missing,missing
 for r in data["requirements"]:
     if r["priority"]=="must":
         ready=all(tasks[t]["status"]=="completed" for t in r["tasks"])
-        r["status"]="verified" if ready or a.final else "in_progress"
+        r["status"]="verified" if ready else "in_progress"
         r["completion_evidence"]=proof[r["id"]]
         r["acceptance_commands"]=[tasks[t]["verification"] for t in r["tasks"] if tasks[t]["verification_is_proposed"] is False]
     elif r["priority"]=="should":
@@ -68,10 +75,4 @@ for r in data["requirements"]:
     matrix.append(f"| {r['id']} {r['title']} | {r['status']}; {evidence} | {commands.replace('|','/')} | {commits} |")
 matrix += ["","Independent corrections at `4c98b5f` cover report-source binding/escaping, reference error status and exact numeric grounding. Source freeze `55b288a` adds explicitly bounded parser controls for the slower software-emulated Linux setup. These supplement initial task commits and are regression-tested; documentation commits follow.","","All Should requirements have explicit delivered/deferred portions in [SHOULD_DEFERRALS.md](SHOULD_DEFERRALS.md). No second CAD kernel, human engineer oracle, physical manufacture, broad layout invariance, hosted adapter or industrial benchmark result is claimed.",""]
 Path("docs/REQUIREMENTS_EVIDENCE.md").write_text("\n".join(matrix))
-missing=[path for paths in proof.values() for path in paths if not Path(path).exists()]
-for t in tasks.values():
-    if t["status"]=="completed":
-        assert t["completion_commit"]!="HEAD","completion commit must be immutable"
-        subprocess.run(["git","cat-file","-e",t["completion_commit"]+"^{commit}"],check=True)
-if a.final:assert not missing,missing
 print(json.dumps({"Must":22,"verified":sum(r["priority"]=="must" and r["status"]=="verified" for r in data["requirements"]),"missing_evidence":missing,"final":a.final}))
