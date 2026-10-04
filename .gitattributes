@@ -1,0 +1,5 @@
+# Hashes identify the actual reviewed bytes; Git must not transform evidence.
+evidence/** -text
+*.step -text
+*.pdf -text
+*.png -text
