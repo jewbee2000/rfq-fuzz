@@ -129,10 +129,10 @@
       "scope": "Reuse CAD/drafting backend for supported geometry; generate complete public artifacts and lineage.",
       "acceptance": "Reimport and visual evidence for each family and boundary parameter set.",
       "evidence": "evidence/M2/generators.md",
-      "verification": "python -m pytest tests/geometry tests/generation",
-      "verification_is_proposed": true,
-      "status": "in_progress",
-      "completion_commit": null
+      "verification": ".venv/Scripts/python.exe -m pytest tests/geometry tests/generation -q (24 passed)",
+      "verification_is_proposed": false,
+      "status": "completed",
+      "completion_commit": "1fd48036305bc729654738537e3aae4f166896f1"
     },
     {
       "id": "T07",
@@ -152,7 +152,7 @@
       "evidence": "evidence/M2/mutations.md",
       "verification": "python -m pytest tests/mutations",
       "verification_is_proposed": true,
-      "status": "not_started",
+      "status": "in_progress",
       "completion_commit": null
     },
     {
@@ -174,7 +174,7 @@
       "evidence": "evidence/M2/oracles.md",
       "verification": "python -m pytest tests/artifact_validation",
       "verification_is_proposed": true,
-      "status": "not_started",
+      "status": "in_progress",
       "completion_commit": null
     },
     {
