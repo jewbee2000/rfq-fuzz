@@ -49,8 +49,15 @@
   },
   "log_sha256": {
     "junit.xml": "f75bc87542b6473d2b77492b1e224440959f778d5f0f8080149f1fc503e32a9e",
+    "output-bound-before.txt": "e3f4391e108b9812bbef758ac988167268c5e14c0df3bffc2a187f54bfba8b5e",
+    "reference-units-before.txt": "a25805f47ec9471361b529a282f9a09e3da7f96f53d547798526765a5c9cc82c",
+    "tests.txt": "194f0590cb4caccbb872ada5268830c7414821ef479c051afb5922fc9a31e711"
+  },
+  "original_log_sha256": {
+    "junit.xml": "f75bc87542b6473d2b77492b1e224440959f778d5f0f8080149f1fc503e32a9e",
     "output-bound-before.txt": "08a57744781bc0172b01a3dec571e7e67281585d636e62685d92b9f42ac78660",
     "reference-units-before.txt": "32b098801938ad414d4794fad269891afc3b83964e74a8ef9aa087f7f1128fd8",
     "tests.txt": "83aaeb544c05d1d6fa10f93551508e696be853d919ea28c49f7fdc08d6abb740"
-  }
+  },
+  "transcript_normalization": "UTF-8/LF with trailing horizontal whitespace removed; original raw hashes retained separately"
 }

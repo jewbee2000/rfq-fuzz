@@ -30,7 +30,7 @@ expected = 'supported_clear'
         }}
 >       assert decisions(packet, geometry, drawing)[0]["conclusion"] == expected
 E       AssertionError: assert 'contradiction' == 'supported_clear'
-E         
+E
 E         - supported_clear
 E         + contradiction
 
@@ -64,7 +64,7 @@ default_unit = 'in', callout = '6.00 +/- 0.05 mm', expected = 'supported_clear'
         }}
 >       assert decisions(packet, geometry, drawing)[0]["conclusion"] == expected
 E       AssertionError: assert 'contradiction' == 'supported_clear'
-E         
+E
 E         - supported_clear
 E         + contradiction
 
@@ -99,7 +99,7 @@ default_unit = 'mm', callout = '6.00 mm', expected = 'supported_clear'
 >       assert decisions(packet, geometry, drawing)[0]["conclusion"] == expected
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-tests\consumer\test_reference_units.py:30: 
+tests\consumer\test_reference_units.py:30:
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 src\rfqfuzz\v1\reference.py:61: in decisions
     require(parts is not None,"reference cannot parse bore interval")

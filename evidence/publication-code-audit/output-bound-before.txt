@@ -11,7 +11,7 @@ stream = 'stdout'
     def test_output_limit_checked_after_fast_process_exit(public, tmp_path, monkeypatch, stream):
         class CompletedProcess:
             returncode = 0
-    
+
             def __init__(self, command, **kwargs):
                 self.stdin = io.BytesIO()
                 response = helper.review()
@@ -24,10 +24,10 @@ stream = 'stdout'
                     write_json(destination, response)
                     kwargs[stream].write(b"x" * 4_000_001)
                     kwargs[stream].flush()
-    
+
             def poll(self):
                 return 0
-    
+
         # Documents are already represented by the public fixture. Isolate the final
         # process-state boundary so the regression is independent of scheduler timing.
         monkeypatch.setattr(a, "audit_public", lambda root: {"status": "passed"})
@@ -35,7 +35,7 @@ stream = 'stdout'
         result = a.run_local(["configured-reviewer"], public, tmp_path / stream)
 >       assert result["status"] == "error"
 E       AssertionError: assert 'completed' == 'error'
-E         
+E
 E         - error
 E         + completed
 
@@ -51,7 +51,7 @@ stream = 'stderr'
     def test_output_limit_checked_after_fast_process_exit(public, tmp_path, monkeypatch, stream):
         class CompletedProcess:
             returncode = 0
-    
+
             def __init__(self, command, **kwargs):
                 self.stdin = io.BytesIO()
                 response = helper.review()
@@ -64,10 +64,10 @@ stream = 'stderr'
                     write_json(destination, response)
                     kwargs[stream].write(b"x" * 4_000_001)
                     kwargs[stream].flush()
-    
+
             def poll(self):
                 return 0
-    
+
         # Documents are already represented by the public fixture. Isolate the final
         # process-state boundary so the regression is independent of scheduler timing.
         monkeypatch.setattr(a, "audit_public", lambda root: {"status": "passed"})
@@ -75,7 +75,7 @@ stream = 'stderr'
         result = a.run_local(["configured-reviewer"], public, tmp_path / stream)
 >       assert result["status"] == "error"
 E       AssertionError: assert 'completed' == 'error'
-E         
+E
 E         - error
 E         + completed
 
@@ -91,7 +91,7 @@ stream = 'response'
     def test_output_limit_checked_after_fast_process_exit(public, tmp_path, monkeypatch, stream):
         class CompletedProcess:
             returncode = 0
-    
+
             def __init__(self, command, **kwargs):
                 self.stdin = io.BytesIO()
                 response = helper.review()
@@ -104,10 +104,10 @@ stream = 'response'
                     write_json(destination, response)
                     kwargs[stream].write(b"x" * 4_000_001)
                     kwargs[stream].flush()
-    
+
             def poll(self):
                 return 0
-    
+
         # Documents are already represented by the public fixture. Isolate the final
         # process-state boundary so the regression is independent of scheduler timing.
         monkeypatch.setattr(a, "audit_public", lambda root: {"status": "passed"})
@@ -116,7 +116,7 @@ stream = 'response'
         assert result["status"] == "error"
 >       assert result["reason"] == "adapter output size limit"
 E       AssertionError: assert 'missing/malf...imit exceeded' == 'adapter output size limit'
-E         
+E
 E         - adapter output size limit
 E         + missing/malformed adapter output: JSON size limit exceeded
 
