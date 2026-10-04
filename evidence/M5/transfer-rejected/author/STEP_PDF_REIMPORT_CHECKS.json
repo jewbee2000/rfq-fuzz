@@ -1,0 +1,103 @@
+{
+  "status": "author_export_checks_passed_not_independent_oracle",
+  "tolerance_mm": 1e-06,
+  "step_valid": true,
+  "roots": 1,
+  "solids": 1,
+  "planar_faces": 11,
+  "bbox_mm": [
+    -35.0,
+    -22.0,
+    -9.0,
+    35.0,
+    22.0,
+    9.0
+  ],
+  "volume_mm3": 38040.0,
+  "pocket_face_measurements": {
+    "pocket_floor": {
+      "bounds_mm": [
+        -25.5,
+        -15.0,
+        -1.0,
+        32.5,
+        15.0,
+        -1.0
+      ],
+      "area_mm2": 1740.0
+    },
+    "pocket_plus_x": {
+      "bounds_mm": [
+        32.5,
+        -15.0,
+        -1.0,
+        32.5,
+        15.0,
+        9.0
+      ],
+      "area_mm2": 299.99999999999994
+    },
+    "pocket_minus_x": {
+      "bounds_mm": [
+        -25.5,
+        -15.0,
+        -1.0,
+        -25.5,
+        15.0,
+        9.0
+      ],
+      "area_mm2": 299.99999999999994
+    },
+    "pocket_plus_y": {
+      "bounds_mm": [
+        -25.5,
+        15.0,
+        -1.0,
+        32.5,
+        15.0,
+        9.0
+      ],
+      "area_mm2": 579.9999999999999
+    },
+    "pocket_minus_y": {
+      "bounds_mm": [
+        -25.5,
+        -15.0,
+        -1.0,
+        32.5,
+        -15.0,
+        9.0
+      ],
+      "area_mm2": 579.9999999999999
+    }
+  },
+  "plus_x_wall_mm": 2.5,
+  "pocket_depth_mm": 10.0,
+  "step_products": [
+    "TRP-217 REV A"
+  ],
+  "step_units": "mm",
+  "pdf_pages": 1,
+  "pdf_vector_no_image_xobjects": true,
+  "required_pdf_text_present": [
+    "DRAWING ID = TRP-217",
+    "REV = A",
+    "UNITS = mm",
+    "MATERIAL = 6061-T6",
+    "MODEL STAGE = finished",
+    "DRAWING STAGE = finished",
+    "FINISH = none",
+    "TOLERANCE STAGE = after_finish",
+    "ENVELOPE = 70.00 x 44.00 x 18.00 mm",
+    "P1 WIDTH = 58.00 mm",
+    "P1 LENGTH = 30.00 mm",
+    "P1 DEPTH = 10.00 mm",
+    "W1 THICKNESS = 2.50 mm",
+    "SURFACE ROUGHNESS = 3.20 um",
+    "PLAN",
+    "XZ SECTION A-A",
+    "W1 (+X)"
+  ],
+  "artifact_hashes_match": true,
+  "visual_inspection": "Separate required retained note"
+}

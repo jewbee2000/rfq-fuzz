@@ -1,0 +1,41 @@
+
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\transfer-author-v2\pk-48bd731ca9e2\part.step(664 ents)  Write  Done
+Syntax Error: No display font for 'Symbol'
+Syntax Error: No display font for 'ArialNarrow'
+Syntax Error: No display font for 'ArialNarrow,Bold'
+Syntax Error: No display font for 'ArialNarrow,Italic'
+Syntax Error: No display font for 'ArialNarrow,BoldItalic'
+Syntax Error: No display font for 'ArialNarrow-Bold'
+Syntax Error: No display font for 'ArialNarrow-Italic'
+Syntax Error: No display font for 'ArialNarrow-BoldItalic'
+Syntax Error: No display font for 'HelveticaNarrow'
+Syntax Error: No display font for 'HelveticaNarrow,Bold'
+Syntax Error: No display font for 'HelveticaNarrow,Italic'
+Syntax Error: No display font for 'HelveticaNarrow,BoldItalic'
+Syntax Error: No display font for 'HelveticaNarrow-Bold'
+Syntax Error: No display font for 'HelveticaNarrow-Italic'
+Syntax Error: No display font for 'HelveticaNarrow-BoldItalic'
+Syntax Error: No display font for 'BookAntiqua'
+Syntax Error: No display font for 'BookAntiqua,Bold'
+Syntax Error: No display font for 'BookAntiqua,Italic'
+Syntax Error: No display font for 'BookAntiqua,BoldItalic'
+Syntax Error: No display font for 'BookAntiqua-Bold'
+Syntax Error: No display font for 'BookAntiqua-Italic'
+Syntax Error: No display font for 'BookAntiqua-BoldItalic'
+Syntax Error: No display font for 'ArialUnicode'
+{
+  "public_folder": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\transfer-author-v2\\pk-48bd731ca9e2",
+  "packet_sha256": "cbb14f0a6cf6140b7fbdd8581898e4059c9d717fe5694dcb28ea24796990c930",
+  "artifacts": {
+    "part.step": "51d3a7cb52ad45fd57eefa42d4d0b18ed0ec692a572b2adc0537b954cae69eb4",
+    "drawing.pdf": "9391c4690092bb9f4b1327f335ca3a277303a7c86dd65020b971ad3b5dcaf469",
+    "drawing.png": "c91e5e6315039d432b8feda6a301e1ea2172e0a2c69c3a8f15f0389eca976fb8"
+  }
+}

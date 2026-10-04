@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\tools\score_core.py", line 5, in <module>
+    from rfqfuzz.v1.contracts import load_json,read_packet,sha256,write_json
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\tools\rfqfuzz.py", line 5, in <module>
+    from rfqfuzz.v1.cli import main
+ModuleNotFoundError: No module named 'rfqfuzz.v1'; 'rfqfuzz' is not a package

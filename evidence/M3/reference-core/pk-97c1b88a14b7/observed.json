@@ -1,0 +1,573 @@
+{
+  "geometry": {
+    "reader": "OCP.STEPControl_Reader",
+    "units": [
+      "millimetre"
+    ],
+    "solid_count": 1,
+    "bbox_mm": [
+      -60.0,
+      -20.5,
+      -18.0,
+      60.0,
+      20.5,
+      18.0
+    ],
+    "envelope_mm": [
+      120.0,
+      41.0,
+      36.0
+    ],
+    "volume_mm3": 176024.43867709895,
+    "cylinders": [
+      {
+        "diameter_mm": 6.2,
+        "center_xy_mm": [
+          0.0,
+          0.0
+        ],
+        "z_bounds_mm": [
+          -6.8,
+          14.0
+        ]
+      },
+      {
+        "diameter_mm": 12.2,
+        "center_xy_mm": [
+          0.0,
+          0.0
+        ],
+        "z_bounds_mm": [
+          14.0,
+          18.0
+        ]
+      }
+    ],
+    "planes": [
+      {
+        "bbox_mm": [
+          -60.0,
+          -20.5,
+          -18.0,
+          -60.0,
+          20.5,
+          18.0
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "bbox_mm": [
+          -60.0,
+          -20.5,
+          -18.0,
+          60.0,
+          -20.5,
+          18.0
+        ],
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "bbox_mm": [
+          -60.0,
+          -20.5,
+          18.0,
+          60.0,
+          20.5,
+          18.0
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "bbox_mm": [
+          -60.0,
+          20.5,
+          -18.0,
+          60.0,
+          20.5,
+          18.0
+        ],
+        "normal": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "bbox_mm": [
+          -60.0,
+          -20.5,
+          -18.0,
+          60.0,
+          20.5,
+          -18.0
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "bbox_mm": [
+          60.0,
+          -20.5,
+          -18.0,
+          60.0,
+          20.5,
+          18.0
+        ],
+        "normal": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "bbox_mm": [
+          -6.1,
+          -6.1,
+          14.0,
+          6.1,
+          6.1,
+          14.0
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "bbox_mm": [
+          -3.1,
+          -3.1,
+          -6.8,
+          3.1,
+          3.1,
+          -6.8
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "length_tolerance_mm": 1e-06,
+    "volume_tolerance_mm3": 0.0001,
+    "bore_diameter_mm": 6.2,
+    "bore_depth_mm": 24.8,
+    "h1_count": 1,
+    "counterbore_diameter_mm": 12.2,
+    "counterbore_depth_mm": 4.0,
+    "analytic_volume_mm3": 176024.43867709895,
+    "volume_error_mm3": 0.0,
+    "product_identity": "PT-001 REV A"
+  },
+  "drawing": {
+    "parser": "pypdf.PdfReader",
+    "renderer": "PDFium independent of shipped Poppler PNG",
+    "render_dpi": 200,
+    "page_size_pt": [
+      842.0,
+      595.0
+    ],
+    "text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 120.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+    "tokens": [
+      {
+        "text": "PART DRAWING",
+        "origin_pt": [
+          35.0,
+          552.0
+        ],
+        "font_size_pt": 14.0
+      },
+      {
+        "text": "SCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.",
+        "origin_pt": [
+          35.0,
+          534.0
+        ],
+        "font_size_pt": 9.0
+      },
+      {
+        "text": "Views depict supplied STEP at model stage. Depths measured from top (+Z).",
+        "origin_pt": [
+          35.0,
+          518.0
+        ],
+        "font_size_pt": 9.0
+      },
+      {
+        "text": "DRAWING ID = PT-001",
+        "origin_pt": [
+          408.0,
+          486.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.7699890136719,
+          485.8900146484375,
+          511.4700012207031,
+          493.2799987792969
+        ],
+        "crop": "label-03.png"
+      },
+      {
+        "text": "DRAWING REV = A",
+        "origin_pt": [
+          408.0,
+          470.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.7699890136719,
+          469.8900146484375,
+          497.75,
+          477.2799987792969
+        ],
+        "crop": "label-04.png"
+      },
+      {
+        "text": "UNITS = mm",
+        "origin_pt": [
+          408.0,
+          454.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.7900085449219,
+          453.8900146484375,
+          465.41998291015625,
+          461.2799987792969
+        ],
+        "crop": "label-05.png"
+      },
+      {
+        "text": "MATERIAL = 6061-T6",
+        "origin_pt": [
+          408.0,
+          438.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.739990234375,
+          437.8900146484375,
+          506.19000244140625,
+          445.19000244140625
+        ],
+        "crop": "label-06.png"
+      },
+      {
+        "text": "MODEL STAGE = finished",
+        "origin_pt": [
+          408.0,
+          422.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.739990234375,
+          421.8900146484375,
+          525.3800048828125,
+          429.2900085449219
+        ],
+        "crop": "label-07.png"
+      },
+      {
+        "text": "DRAWING STAGE = finished",
+        "origin_pt": [
+          408.0,
+          406.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.7699890136719,
+          405.8900146484375,
+          538.1499633789062,
+          413.2799987792969
+        ],
+        "crop": "label-08.png"
+      },
+      {
+        "text": "FINISH = none",
+        "origin_pt": [
+          408.0,
+          390.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.82000732421875,
+          389.8900146484375,
+          474.010009765625,
+          397.2799987792969
+        ],
+        "crop": "label-09.png"
+      },
+      {
+        "text": "TOLERANCE STAGE = after_finish",
+        "origin_pt": [
+          408.0,
+          374.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.2300109863281,
+          372.0199890136719,
+          565.4299926757812,
+          381.2900085449219
+        ],
+        "crop": "label-10.png"
+      },
+      {
+        "text": "ENVELOPE = 120.00 x 41.00 x 36.00 mm",
+        "origin_pt": [
+          408.0,
+          358.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.7900085449219,
+          357.8800048828125,
+          593.8499755859375,
+          365.2900085449219
+        ],
+        "crop": "label-11.png"
+      },
+      {
+        "text": "SURFACE ROUGHNESS = 3.20 um",
+        "origin_pt": [
+          408.0,
+          342.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.45001220703125,
+          341.8800048828125,
+          569.8999633789062,
+          349.2900085449219
+        ],
+        "crop": "label-12.png"
+      },
+      {
+        "text": "H1 DIAMETER = 6.20 +/- 0.05 mm",
+        "origin_pt": [
+          408.0,
+          326.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.79998779296875,
+          325.8900146484375,
+          561.8599853515625,
+          333.2799987792969
+        ],
+        "crop": "label-13.png"
+      },
+      {
+        "text": "H1 COUNT = 1",
+        "origin_pt": [
+          408.0,
+          310.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.79998779296875,
+          309.8900146484375,
+          474.239990234375,
+          317.2900085449219
+        ],
+        "crop": "label-14.png"
+      },
+      {
+        "text": "H1 TYPE = BLIND",
+        "origin_pt": [
+          408.0,
+          294.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.79998779296875,
+          294.0,
+          490.0,
+          301.19000244140625
+        ],
+        "crop": "label-15.png"
+      },
+      {
+        "text": "H1 DEPTH = 24.80 mm",
+        "origin_pt": [
+          408.0,
+          278.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.79998779296875,
+          277.8900146484375,
+          512.6699829101562,
+          285.19000244140625
+        ],
+        "crop": "label-16.png"
+      },
+      {
+        "text": "C1 DIAMETER = 12.20 mm",
+        "origin_pt": [
+          408.0,
+          262.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.5,
+          261.8900146484375,
+          530.449951171875,
+          269.2799987792969
+        ],
+        "crop": "label-17.png"
+      },
+      {
+        "text": "C1 DEPTH = 4.00 mm",
+        "origin_pt": [
+          408.0,
+          246.0
+        ],
+        "font_size_pt": 10.0,
+        "box_pt": [
+          408.5,
+          245.88999938964844,
+          507.1099853515625,
+          253.27999877929688
+        ],
+        "crop": "label-18.png"
+      },
+      {
+        "text": "PLAN (+Z)",
+        "origin_pt": [
+          48.0,
+          492.0
+        ],
+        "font_size_pt": 11.0
+      },
+      {
+        "text": "C1 / H1",
+        "origin_pt": [
+          231.25,
+          413.0
+        ],
+        "font_size_pt": 10.0
+      },
+      {
+        "text": "A",
+        "origin_pt": [
+          40.0,
+          410.0
+        ],
+        "font_size_pt": 10.0
+      },
+      {
+        "text": "A",
+        "origin_pt": [
+          371.0,
+          410.0
+        ],
+        "font_size_pt": 10.0
+      },
+      {
+        "text": "SECTION A-A (X-Z)",
+        "origin_pt": [
+          48.0,
+          278.0
+        ],
+        "font_size_pt": 11.0
+      },
+      {
+        "text": "C1",
+        "origin_pt": [
+          231.25,
+          215.0
+        ],
+        "font_size_pt": 10.0
+      },
+      {
+        "text": "H1 blind floor",
+        "origin_pt": [
+          223.75,
+          179.0
+        ],
+        "font_size_pt": 10.0
+      },
+      {
+        "text": "Declared finite requirements and setup/profile are in packet.json.",
+        "origin_pt": [
+          408.0,
+          39.0
+        ],
+        "font_size_pt": 9.0
+      }
+    ],
+    "annotations": {
+      "DRAWING ID": [
+        "DRAWING ID = PT-001"
+      ],
+      "DRAWING REV": [
+        "DRAWING REV = A"
+      ],
+      "UNITS": [
+        "UNITS = mm"
+      ],
+      "MATERIAL": [
+        "MATERIAL = 6061-T6"
+      ],
+      "MODEL STAGE": [
+        "MODEL STAGE = finished"
+      ],
+      "DRAWING STAGE": [
+        "DRAWING STAGE = finished"
+      ],
+      "FINISH": [
+        "FINISH = none"
+      ],
+      "TOLERANCE STAGE": [
+        "TOLERANCE STAGE = after_finish"
+      ],
+      "ENVELOPE": [
+        "ENVELOPE = 120.00 x 41.00 x 36.00 mm"
+      ],
+      "SURFACE ROUGHNESS": [
+        "SURFACE ROUGHNESS = 3.20 um"
+      ],
+      "H1 DIAMETER": [
+        "H1 DIAMETER = 6.20 +/- 0.05 mm"
+      ],
+      "H1 COUNT": [
+        "H1 COUNT = 1"
+      ],
+      "H1 TYPE": [
+        "H1 TYPE = BLIND"
+      ],
+      "H1 DEPTH": [
+        "H1 DEPTH = 24.80 mm"
+      ],
+      "C1 DIAMETER": [
+        "C1 DIAMETER = 12.20 mm"
+      ],
+      "C1 DEPTH": [
+        "C1 DEPTH = 4.00 mm"
+      ]
+    },
+    "glyphs_checked": 509,
+    "glyph_visibility": "every non-whitespace PDFium tight character box has visible ink; visual attestation still required",
+    "png_pdf_unmatched_ink_ratio": 0.00022143489813994686,
+    "visual_attestation_required": true
+  }
+}

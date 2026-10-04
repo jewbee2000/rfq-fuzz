@@ -1,0 +1,13 @@
+Obtaining file:///C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: rfqfuzz
+  Building editable for rfqfuzz (pyproject.toml): started
+  Building editable for rfqfuzz (pyproject.toml): finished with status 'done'
+  Created wheel for rfqfuzz: filename=rfqfuzz-1.0.0-0.editable-py3-none-any.whl size=25805 sha256=e01dc36a9220cf9f7d6df232af392be1b3adfab6117557e0c96bf2e19359e501
+  Stored in directory: C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-d0mpc0db\wheels\91\29\ce\dbf47e5f2ce8a08af57a301370d49cc69351c1c741d4644501
+Successfully built rfqfuzz
+Installing collected packages: rfqfuzz
+Successfully installed rfqfuzz-1.0.0

@@ -1,0 +1,20 @@
+{
+  "case_id": "pk-48bd731ca9e2",
+  "inspection_kind": "author_visual_review_not_engineer_oracle",
+  "inspected": "Complete actual PDF page 1 of 1 via its Poppler-rendered PNG",
+  "pdf_sha256": "757c913c6aa53d7bebf7cdae9cee75514c375a853b216bf139565502cf91aa50",
+  "png_sha256": "5e41b6a8ea0717cc0bade4dcfa1651adcabc3d288ecc8029f0fdfbfaf73460bb",
+  "png_pixels": [2500, 1806],
+  "dpi": 200,
+  "visible_notes": [
+    "All eight canonical release/process notes are readable in the left rail",
+    "Envelope, P1 width/length/depth, W1 thickness and roughness register is readable",
+    "PLAN shows one rectangular top-open pocket, section trace A-A and external W1 (+X) wall leader",
+    "XZ SECTION A-A shows pocket depth, asymmetric side walls and solid 8.00 mm floor",
+    "Fixed XYZ setup and total-added stock/fixture allowances are visible",
+    "No clipped annotations, overlapping labels, missing glyphs, black squares or ambiguous feature associations seen",
+    "Footer expressly states agent-authored synthetic fixture and no human engineer review or physical manufacture"
+  ],
+  "passed": true,
+  "limitation": "One agent author inspected raster and checked PDF text. Independent coordinator validation and any engineer review remain separate."
+}

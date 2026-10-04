@@ -2,3 +2,21 @@
 pythonpath = ["src"]
 testpaths = ["tests"]
 addopts = "--import-mode=importlib"
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfqfuzz"
+version = "1.0.0"
+description = "Local finite CNC RFQ reviewer regression toolkit"
+requires-python = ">=3.12,<3.13"
+license = {file = "LICENSE"}
+dependencies = ["build123d==0.10.0", "reportlab==5.0.1", "pypdf==6.9.1", "pypdfium2==5.14.0", "pillow==12.3.0", "psutil==7.2.2"]
+
+[project.scripts]
+rfqfuzz = "rfqfuzz.v1.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "comparisons": [
+    {
+      "before_reviewer": {
+        "name": "RFQFuzz public-only template reference",
+        "version": "1.0",
+        "configuration": "Shares observed readers/OCCT with validator; own public rule logic; not independent reviewer performance"
+      },
+      "after_reviewer": {
+        "name": "DELIBERATELY INJECTED reference regression",
+        "version": "1.0-injected",
+        "configuration": "Deliberately injected one detected-to-silent-miss and one correct-clear-to-false-alert. Not a naturally discovered external failure."
+      },
+      "changes": [
+        {
+          "case_id": "pk-0236ce4290c1",
+          "obligation_id": "obj-material",
+          "track": "package_consistency",
+          "before": "detected",
+          "after": "silent_miss"
+        },
+        {
+          "case_id": "pk-0972292025ad",
+          "obligation_id": "obj-diameter",
+          "track": "package_consistency",
+          "before": "correct_clear",
+          "after": "false_alert"
+        }
+      ]
+    }
+  ],
+  "manifest": {
+    "schema_version": "1.0",
+    "suite_sha256": "4b17d859d8bb748e34ba8044de667d6da7dc59c815f6593b07159d3116751231",
+    "oracle_sha256": "e61a3d08ecef47d3c8807034c7647e6aceea2a4e96de83cffa5f0653518299e8",
+    "profile_sha256": "3562b2a7abff79b7d629369ab90a4c0ab7138333693445f5dbc786b780258dcd",
+    "adapter_version": "manual-1.0",
+    "seed": 42,
+    "environment": {
+      "python": "3.12.2",
+      "platform": "Windows-11-10.0.26300-SP0"
+    },
+    "raw_sha256": "6b0ad29e4ad7194d55f4ed3b1f8b7eec6afa977c6433cb66290c5009b396383b",
+    "limitations": [
+      "Finite synthetic obligations",
+      "Shared OCCT kernel",
+      "Conservative canonical source quotation matching"
+    ],
+    "failures": []
+  },
+  "scope": "Finite synthetic obligations; no industrial competence or manufacturing approval"
+}

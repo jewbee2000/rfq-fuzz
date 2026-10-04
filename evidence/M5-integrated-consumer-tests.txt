@@ -1,0 +1,55 @@
+..............................F                                          [100%]
+================================== FAILURES ===================================
+__________________________ test_consumer_frozen_demo __________________________
+
+tmp_path = WindowsPath('C:/Users/Walt/AppData/Local/Temp/pytest-of-Walt/pytest-71/test_consumer_frozen_demo0')
+
+    def test_consumer_frozen_demo(tmp_path):
+        from rfqfuzz.v1.api import demo
+        from rfqfuzz.v1.reporting import audit_report
+>       result=demo(ROOT/"examples/v1-demo",tmp_path/"demo")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\consumer\test_cli.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\rfqfuzz\v1\api.py:48: in demo
+    export(public,destination/"review-bundle")
+src\rfqfuzz\v1\api.py:12: in export
+    return export_review(public,destination)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\rfqfuzz\v1\adapters.py:78: in export_review
+    audit = audit_public(public_root)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+src\rfqfuzz\v1\adapters.py:60: in audit_public
+    require(not any(word in json.dumps(packet).lower() for word in BANNED), "private label in public context")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, reason = 'private label in public context'
+
+    def require(condition, reason):
+        if not condition:
+>           raise ValueError(reason)
+E           ValueError: private label in public context
+
+src\rfqfuzz\v1\contracts.py:25: ValueError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\build123d\objects_curve.py:1353
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1353: DeprecationWarning: The 'PointArcTangentLine' object is deprecated and will be removed in a future version.
+    class PointArcTangentLine(BaseEdgeObject):
+
+.venv\Lib\site-packages\build123d\objects_curve.py:1432
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1432: DeprecationWarning: The 'PointArcTangentArc' object is deprecated and will be removed in a future version.
+    class PointArcTangentArc(BaseEdgeObject):
+
+.venv\Lib\site-packages\build123d\objects_curve.py:1586
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1586: DeprecationWarning: The 'ArcArcTangentLine' object is deprecated and will be removed in a future version.
+    class ArcArcTangentLine(BaseEdgeObject):
+
+.venv\Lib\site-packages\build123d\objects_curve.py:1682
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1682: DeprecationWarning: The 'ArcArcTangentArc' object is deprecated and will be removed in a future version.
+    class ArcArcTangentArc(BaseEdgeObject):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/consumer/test_cli.py::test_consumer_frozen_demo - ValueError: pr...
+1 failed, 30 passed, 4 warnings in 37.81s

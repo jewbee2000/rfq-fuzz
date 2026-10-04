@@ -1,0 +1,55 @@
+{
+  "case_id": "pk-48bd731ca9e2",
+  "author_intent_only": true,
+  "independent_oracle": false,
+  "scope": "Agent-authored synthetic source/layout diagnostic; not industrial generalization, engineer review or manufacturing evidence",
+  "analytic_geometry": {
+    "body_bounds_mm": [
+      -35,
+      -22,
+      -9,
+      35,
+      22,
+      9
+    ],
+    "body_envelope_mm": [
+      70.0,
+      44.0,
+      18.0
+    ],
+    "pocket_bounds_mm": [
+      -25.5,
+      -15,
+      -1,
+      32.5,
+      15,
+      9
+    ],
+    "pocket_dimensions_mm": [
+      58.0,
+      30.0,
+      10.0
+    ],
+    "floor_mm": 8.0,
+    "plus_x_wall_mm": 2.5,
+    "minus_x_wall_mm": 9.5,
+    "y_wall_mm": 7.0,
+    "solid_volume_mm3": 38040.0,
+    "occupied_extent_mm": [
+      76.0,
+      50.0,
+      26.0
+    ]
+  },
+  "intended_conclusions": {
+    "obj-units": "supported_clear",
+    "obj-material": "supported_clear",
+    "obj-requirement": "supported_clear",
+    "obj-release": "supported_clear",
+    "cnc-wall": "supported_clear",
+    "cnc-envelope": "supported_clear",
+    "cnc-stage": "supported_clear"
+  },
+  "rationale": "Matching units/material/requirement/release; 2.50 mm W1 exceeds selected 0.80 mm metal advisory; occupied [76,50,26] fits selected [120,80,50]; explicit after_finish stage.",
+  "public_packet_sha256": "b972a5ca42817cf1089f0fdfe5f396fed3e3a88b9bc380c7bc98210c545f1a4b"
+}

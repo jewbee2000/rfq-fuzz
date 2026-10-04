@@ -124,7 +124,7 @@ def import_results(response_path, public_root, oracle_path, out, adjudication_pa
     record=import_response(response_path, public_root, out)
     if record["status"] != "imported": return record
     from .contracts import read_packet
-    oracle=load_json(oracle_path)
+    oracle=load_json(oracle_path,limit=32_000_000)
     response=record["response"]
     adjudication=None
     if adjudication_path:

@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "cases": 15,
+  "changes": [
+    {
+      "case_id": "pk-0236ce4290c1",
+      "obligation_id": "obj-material",
+      "track": "package_consistency",
+      "before": "detected",
+      "after": "silent_miss"
+    },
+    {
+      "case_id": "pk-0972292025ad",
+      "obligation_id": "obj-diameter",
+      "track": "package_consistency",
+      "before": "correct_clear",
+      "after": "false_alert"
+    }
+  ],
+  "report": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\evidence\\M5\\coordinator-demo-v2\\report\\index.html",
+  "tracks": {
+    "package_consistency": {
+      "applicable": 87,
+      "issues": 8,
+      "clean": 79,
+      "underdetermined": 0,
+      "detected": 7,
+      "false_alerts": 1,
+      "explicit_false_clears": 0,
+      "silent_misses": 1,
+      "correct_clear": 78,
+      "appropriate_abstentions": 0,
+      "abstentions": 0,
+      "covered": 87,
+      "execution_failures": 0,
+      "unsupported": 0,
+      "unasserted_clean": 0,
+      "reasoning_errors": 0,
+      "rates": {
+        "recall": {
+          "numerator": 7,
+          "denominator": 8
+        },
+        "named_clean_false_alert": {
+          "numerator": 1,
+          "denominator": 79
+        },
+        "explicit_false_clear": {
+          "numerator": 0,
+          "denominator": 8
+        },
+        "coverage": {
+          "numerator": 87,
+          "denominator": 87
+        },
+        "appropriate_abstention": {
+          "numerator": 0,
+          "denominator": 0
+        }
+      }
+    },
+    "cnc_advisory": {
+      "applicable": 34,
+      "issues": 3,
+      "clean": 25,
+      "underdetermined": 6,
+      "detected": 3,
+      "false_alerts": 0,
+      "explicit_false_clears": 0,
+      "silent_misses": 0,
+      "correct_clear": 25,
+      "appropriate_abstentions": 6,
+      "abstentions": 6,
+      "covered": 34,
+      "execution_failures": 0,
+      "unsupported": 0,
+      "unasserted_clean": 0,
+      "reasoning_errors": 0,
+      "rates": {
+        "recall": {
+          "numerator": 3,
+          "denominator": 3
+        },
+        "named_clean_false_alert": {
+          "numerator": 0,
+          "denominator": 25
+        },
+        "explicit_false_clear": {
+          "numerator": 0,
+          "denominator": 3
+        },
+        "coverage": {
+          "numerator": 34,
+          "denominator": 34
+        },
+        "appropriate_abstention": {
+          "numerator": 6,
+          "denominator": 6
+        }
+      }
+    }
+  },
+  "provenance": {
+    "reference": "Actual public-only template reference observation evidence/M3/reference-core; shares observed readers with validator",
+    "injected": "Explicitly injected missingcontradiction+falsealert, evidence/M3/reference-injected.json",
+    "source_response_sha256": {
+      "reference": "6b0ad29e4ad7194d55f4ed3b1f8b7eec6afa977c6433cb66290c5009b396383b",
+      "injected": "295a5d07f3c1d4d8ba1f71de27fad72b47b6fe16f6551f5d50fe9cee3da6321b"
+    }
+  },
+  "limitations": [
+    "Auditedbytes replay, notnewreviewermeasurement",
+    "No API/network needed after installation",
+    "Fresh regenerated artifacts require newvisualattestation",
+    "Allcases syntheticdevelopment, notmanufacturingapproval"
+  ]
+}

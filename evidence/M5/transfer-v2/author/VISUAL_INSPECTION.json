@@ -1,0 +1,19 @@
+{
+  "case_id": "pk-48bd731ca9e2",
+  "inspection_kind": "author_visual_review_not_engineer_oracle",
+  "inspected": "Complete revised actual PDF page 1 of 1 via its Poppler-rendered PNG",
+  "pdf_sha256": "9391c4690092bb9f4b1327f335ca3a277303a7c86dd65020b971ad3b5dcaf469",
+  "png_sha256": "c91e5e6315039d432b8feda6a301e1ea2172e0a2c69c3a8f15f0389eca976fb8",
+  "png_pixels": [2500, 1806],
+  "dpi": 200,
+  "visible_notes": [
+    "Full DRAWING REV = A key is visibly readable in the left release/process rail",
+    "All canonical release/process notes and dimension/roughness register remain readable",
+    "PLAN P1 pocket, W1 (+X) external leader and XZ SECTION A-A associations remain clear",
+    "No clipped annotations, overlapping labels, missing glyphs, black squares or ambiguous feature associations seen",
+    "Fixed XYZ total-added allowances remain visible and unchanged",
+    "Footer states agent-authored synthetic fixture; no human engineer review or physical manufacture"
+  ],
+  "passed": true,
+  "limitation": "Compatibility revision addresses finite importer vocabulary only. Original engineering content was not proven physically wrong. Independent coordinator rereview/revalidation remains required."
+}

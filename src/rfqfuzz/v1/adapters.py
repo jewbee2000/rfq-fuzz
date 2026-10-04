@@ -6,6 +6,7 @@ not a network/security sandbox. There is no hosted adapter in v1.
 from __future__ import annotations
 import json
 import os
+import re
 from pathlib import Path
 import shutil
 import subprocess
@@ -15,6 +16,7 @@ from .contracts import load_json, read_packet, validate_review, sha256, write_js
 
 FILES = {"packet.json", "part.step", "drawing.pdf", "drawing.png"}
 BANNED = ("defective", "repaired", "valid_alternative", "mutation", "oracle", "answer_key", "expected_conclusion")
+PRIVATE_LABEL = re.compile(r"(?<!\w)(?:" + "|".join(map(re.escape,BANNED)) + r")(?!\w)",re.IGNORECASE)
 
 def _document_audit(folder):
     from pypdf import PdfReader
@@ -30,7 +32,7 @@ def _document_audit(folder):
         require(image.width * image.height <= 20_000_000, "PNG pixel limit")
         metadata = repr(image.info)
     public_text = (str(pdf.metadata) + text + metadata + (folder / "part.step").read_text(errors="replace")).lower()
-    require(not any(word in public_text for word in BANNED), "mutation label in artifact text or metadata")
+    require(PRIVATE_LABEL.search(public_text) is None, "mutation label in artifact text or metadata")
     return {"pages": len(pdf.pages), "metadata": str(pdf.metadata)}
 
 def terminate_tree(process):
@@ -57,7 +59,7 @@ def audit_public(public_root, parser_timeout=20):
         require({p.name for p in folder.iterdir()} == FILES, "unexpected public sidecar")
         packet = read_packet(folder)
         require(packet["case_id"] == folder.name, "packet directory identity mismatch")
-        require(not any(word in json.dumps(packet).lower() for word in BANNED), "private label in public context")
+        require(PRIVATE_LABEL.search(json.dumps(packet)) is None, "private label in public context")
         env = os.environ.copy()
         env["PYTHONPATH"] = str(Path(__file__).resolve().parents[2]) + os.pathsep + env.get("PYTHONPATH", "")
         proc = subprocess.Popen([sys.executable, "-m", "rfqfuzz.v1.adapters", "--audit-one", str(folder)], stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env)
@@ -73,6 +75,7 @@ def audit_public(public_root, parser_timeout=20):
 
 def export_review(public_root, out):
     out = Path(out)
+    require(not out.resolve().is_relative_to(Path(public_root).resolve()), "export output cannot be inside public inputs")
     require(not out.exists(), "review export exists; preserve prior evidence")
     audit = audit_public(public_root)
     shutil.copytree(public_root, out / "public")

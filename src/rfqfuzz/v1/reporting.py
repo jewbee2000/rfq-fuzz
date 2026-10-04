@@ -13,7 +13,7 @@ def make_report(run_paths, oracle_path, public_root, out):
     runs=[load_json(p) for p in run_paths]
     require(bool(runs), "at least one run required")
     changes=[{"before_reviewer":runs[0]["reviewer"],"after_reviewer":run["reviewer"],"changes":compare(runs[0],run)} for run in runs[1:]]
-    oracle=load_json(oracle_path)
+    oracle=load_json(oracle_path,limit=32_000_000)
     out.mkdir(parents=True)
     esc=lambda value:escape(str(value),quote=True)
     link=lambda path:esc(Path(os.path.relpath(Path(path).resolve(),out.resolve())).as_posix())

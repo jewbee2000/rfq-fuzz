@@ -1,0 +1,46 @@
+RFQ GEOMETRY AND RELEASE SHEET
+Open pocket body | One solid | Dimensions govern at the named stage
+SHEET 1 / 1
+RELEASE + PROCESS
+DRAWING ID = TRP-217
+REV = A
+UNITS = mm
+MATERIAL = 6061-T6
+MODEL STAGE = finished
+DRAWING STAGE = finished
+FINISH = none
+TOLERANCE STAGE = after_finish
+DIMENSION REGISTER
+ENVELOPE = 70.00 x 44.00 x 18.00 mm
+P1 WIDTH = 58.00 mm
+P1 LENGTH = 30.00 mm
+P1 DEPTH = 10.00 mm
+W1 THICKNESS = 2.50 mm
+SURFACE ROUGHNESS = 3.20 um
+DECLARED SETUP
+Orientation = XYZ (fixed)
+Stock allowance = [2, 2, 2] mm
+Fixture allowance = [4, 4, 6] mm
+Allowances are TOTAL added extent.
+Profile = synthetic-standard 1.0.0
+PLAN - LOOKING FROM +Z
+P1
+TOP-OPEN RECTANGULAR POCKET
+58.00
+A
+A
+W1 (+X)
+2.50 mm
++X
++Y
+P1 centered at X=+3.50, Y=0.00 mm; open on +Z face.
+XZ SECTION A-A - THROUGH Y=0
+SOLID MATERIAL / 8.00 mm FLOOR
+P1 - REMOVED VOLUME
+P1 DEPTH
+10.00 mm
+70.00
+Body origin at envelope center. Model X/Y/Z extents: +/-35, +/-22, +/-9 mm.
+Drawing dimensions are in mm. Exact STEP geometry is the geometry authority.
+Agent-authored synthetic fixture; no human engineer review or physical manufacture is claimed.
+TRP-217 / A

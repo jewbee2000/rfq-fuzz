@@ -175,7 +175,7 @@
       "verification": ".venv/Scripts/python.exe -m pytest tests/artifact_validation -q (49passed); tools/validate_core.py (145valid); actual25sheets and7fullpages visually inspected",
       "verification_is_proposed": false,
       "status": "completed",
-      "completion_commit": "HEAD"
+      "completion_commit": "500e4a0"
     },
     {
       "id": "T09",

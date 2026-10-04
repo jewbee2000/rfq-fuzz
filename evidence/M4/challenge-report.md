@@ -89,3 +89,40 @@ detected and the regression obligations replay. The evidence supports this bound
 workflow, not general drawing-review or manufacturing-approval claims.
 
 No M0 edits, remote publication, hosted packet transfer or outside messages occurred.
+# Coordinator final corpus observations
+
+Final frozen-code validation and hash-bound visual audit accepted145/145core
+packets; zero final quarantines, timeouts or unsupported packets. The retained
+corruption tests still exercise invalid fixtures and exclude them from scoring.
+`evidence/M4/corpus-summary.json` records62plates,46boreblocks,37pocketblocks.
+All share one core layout and remain development-only;0core held-out cases.
+
+Actual public-template-reference observations were made from all145 public
+folders without private mutation/oracle inputs. They share observed artifact
+readers with validation and are not independent competence evidence. They match
+36/36packageissues,747/747named clean duties and9/9unknown duties; CNC duties
+are9issues (6advisories,3named exclusions),333clean and31unknown. The material
+authority correction contributes legitimate conditional uncertainty.
+
+`tools/score_core.py` retains full raw results, immutable imports, per-track
+scores and changed evidence. The deliberately injected run removes one material
+contradiction and falsely flags one legitimate diameter control. The report shows
+`detected -> silent_miss` and `correct_clear -> false_alert`; these are deliberate
+injections, not naturally discovered external reviewer failures.
+
+The diagnostic baselines deliberately use oracle witnesses to isolate conclusion
+policy: always-flag produces747/747package and333/333CNCclean alerts; it also
+misclassifies all9CNCissues as contradictions. Always-clear produces36/36package
+and9/9CNCexplicit false clears. Always-abstain has0/36 and0/9issue recall, despite
+appropriate abstention on9package and31CNCunknown duties. Full denominators and
+raw diagnostics are in `evidence/M4/baselines`. No composite score is reported.
+
+The first scoring-tool invocation hit a Python entry-file/package name collision;
+it is retained in `core-score-import-failure.txt`. Renaming the repository entry
+point to `tools/rfq_v1.py` corrected the tooling issue. Final scoring exited0 and
+the145case offline report source-link/escaping audit passed.
+
+M4 decision: proceed with a bounded consumer release. Mutation detection and
+synthetic reference agreement are useful infrastructure evidence. The next value
+test is an independent installation, report diagnosis and separately authored
+packet; industrial, broad-layout and human-oracle claims remain unsupported.

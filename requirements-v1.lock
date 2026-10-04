@@ -1,0 +1,4 @@
+# Preserve the frozen M0 pins; add observed Linux-only IPython dependencies.
+-r requirements-m0.lock
+pexpect==4.9.0; sys_platform != "win32"
+ptyprocess==0.7.0; sys_platform != "win32"

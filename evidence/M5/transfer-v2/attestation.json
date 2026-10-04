@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "case_id": "pk-48bd731ca9e2",
+      "pdf_sha256": "9391c4690092bb9f4b1327f335ca3a277303a7c86dd65020b971ad3b5dcaf469",
+      "png_sha256": "c91e5e6315039d432b8feda6a301e1ea2172e0a2c69c3a8f15f0389eca976fb8",
+      "legible_unclipped": true,
+      "view_associations_checked": true,
+      "reviewer": "Coordinator AI separately viewed complete2500x1806 exported PNG and independent STEP/PDF measurements; no human engineer claim",
+      "visible_annotation_lines": [
+        "DRAWING ID = TRP-217",
+        "DRAWING REV = A",
+        "UNITS = mm",
+        "MATERIAL = 6061-T6",
+        "MODEL STAGE = finished",
+        "DRAWING STAGE = finished",
+        "FINISH = none",
+        "TOLERANCE STAGE = after_finish",
+        "ENVELOPE = 70.00 x 44.00 x 18.00 mm",
+        "P1 WIDTH = 58.00 mm",
+        "P1 LENGTH = 30.00 mm",
+        "P1 DEPTH = 10.00 mm",
+        "W1 THICKNESS = 2.50 mm",
+        "SURFACE ROUGHNESS = 3.20 um",
+        "Orientation = XYZ (fixed)",
+        "Stock allowance = [2, 2, 2] mm",
+        "Fixture allowance = [4, 4, 6] mm",
+        "Profile = synthetic-standard 1.0.0"
+      ]
+    }
+  ]
+}

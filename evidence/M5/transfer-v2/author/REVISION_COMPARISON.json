@@ -1,0 +1,19 @@
+{
+  "original_retained_packet_sha256": "b972a5ca42817cf1089f0fdfe5f396fed3e3a88b9bc380c7bc98210c545f1a4b",
+  "revised_packet_sha256": "cbb14f0a6cf6140b7fbdd8581898e4059c9d717fe5694dcb28ea24796990c930",
+  "public_context_equal_except_artifact_hashes": true,
+  "pdf_text_changes": [
+    "--- first_actual_pdf\n",
+    "+++ compatibility_v2_actual_pdf\n",
+    "@@ -3,7 +3,7 @@\n",
+    " SHEET 1 / 1",
+    " RELEASE + PROCESS",
+    " DRAWING ID = TRP-217",
+    "-REV = A",
+    "+DRAWING REV = A",
+    " UNITS = mm",
+    " MATERIAL = 6061-T6",
+    " MODEL STAGE = finished"
+  ],
+  "final_visual_note_hashes_match": true
+}

@@ -1,0 +1,13 @@
+{
+  "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "dependencies": {
+    "build123d": "0.10.0",
+    "cadquery-ocp": "7.8.1.1.post1",
+    "reportlab": "5.0.1",
+    "pypdf": "6.9.1"
+  },
+  "poppler": "pdftoppm version 26.07.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+  "commit_at_start": "66a996bb9496021972bc381281fce76907762aaa"
+}

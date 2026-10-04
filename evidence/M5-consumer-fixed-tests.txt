@@ -1,0 +1,13 @@
+
+=================================== ERRORS ====================================
+____________ ERROR collecting tests/adapters/test_public_labels.py ____________
+ImportError while importing test module 'C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\tests\adapters\test_public_labels.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+tests\adapters\test_public_labels.py:2: in <module>
+    from rfqfuzz.v1.adapters import PRIVATE_LABEL,audit_public
+E   ImportError: cannot import name 'PRIVATE_LABEL' from 'rfqfuzz.v1.adapters' (C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\src\rfqfuzz\v1\adapters.py)
+=========================== short test summary info ===========================
+ERROR tests/adapters/test_public_labels.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.18s

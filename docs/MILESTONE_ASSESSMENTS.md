@@ -11,10 +11,12 @@ source does not establish a CNC inspection-stage default; the public default is
 explicitly project-owned. The next worthwhile test is whether actual exported
 families and controls support independently derived conclusions.
 
-M2: in progress. T06 integrated family/artifact checks pass 24 cases over stated
-bounds, with actual STEP reimports and schematic vector PDF/PNG examples. T07
-mutations and T08 independent validation remain active. No expanded fixture is
-scorable merely because the generator/export checks pass.
+M2: continue. T06's24 family/artifact tests and T08's49 independently integrated
+checks pass. Coordinator reviewed all145annotationregions and7completepages;
+final frozen-code reopening accepts145/145 with observed isolation and no final
+quarantine. Missing global material resolution propagates to CNC uncertainty.
+Actual artifact corruption is caught by retained controls. One OCCT kernel and
+one core layout remain explicit limits.
 
 M3: continue to corpus challenge. T09 public export/local-process lifecycle and
 T10 conservative evidence matching pass their integrated hand cases. Missing,
@@ -23,11 +25,11 @@ Genuine M0 external observations are preserved; expanded external review remains
 required at the consumer stage. T10 tests demonstrate report semantics, not a
 naturally discovered industrial reviewer failure.
 
-M4: in progress. T12 report/recovery checks pass and the actual offline probe
-renders in installed Edge without network requests or page errors. T11 requires
-validated corpus, explicit lineage/partition limits and deliberate evaluator
-faults before consumer acceptance. One shared drawing template must not be
-misrepresented as independent held-out layout diversity.
+M4: continue to consumer acceptance.12metamorphic tests and6/6deliberately broken
+production-source mutants are detected. Core counts, degenerate-policy failures
+and source-linked changed outcomes are retained. All145corecases are development;
+there is no core holdout. T12's actual local Edge probe passes. The final consumer
+must follow the two deliberately injected changes back to their evidence.
 
 M5: pending dependencies. Clean Windows/Linux environments are being prepared;
 consumer/demo claims require actual final commands and outputs. No human engineer
