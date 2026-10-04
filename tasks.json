@@ -15,9 +15,9 @@
       "scope": "Read closest prior art and freeze the specific reviewer-testing question; stop or propose contribution if an equivalent exists.",
       "acceptance": "Updated research decision with source/date, bounded novelty statement and first consumer question.",
       "evidence": "evidence/M0/decision.md",
-      "verification": "Document/source inspection",
-      "verification_is_proposed": true,
-      "status": "not_started",
+      "verification": "Read-only primary-source recheck and repository contract inspection (2026-10-04)",
+      "verification_is_proposed": false,
+      "status": "completed",
       "completion_commit": null
     },
     {
