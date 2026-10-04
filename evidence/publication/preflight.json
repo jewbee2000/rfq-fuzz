@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "reviewed_commit": "4505721bf34beeb3782288c4cc10626c93495905",
+  "reachable_commits": 47,
+  "unique_reachable_blobs_scanned": 2976,
+  "largest_history_blob_bytes": 15781073,
+  "credential_patterns": [
+    "private_key_header",
+    "github_token",
+    "aws_access_key_id",
+    "api_key_shape"
+  ],
+  "credential_pattern_hits": [],
+  "blobs_at_least_100MB": [],
+  "portable_demo_files": 65,
+  "manifest_assets_hash_checked": 64,
+  "git_autocrlf_true_false_inputs_identical": true,
+  "limitations": "Bounded credential pattern scan; not an exhaustive confidentiality audit. Synthetic provenance, licenses and consumer acceptance are retained separately. No product tests were rerun for this documentation-only publication follow-on."
+}
