@@ -10,11 +10,12 @@ def main():
     val = sub.add_parser("validate")
     val.add_argument("public", nargs="?", default="evidence/M0/bundle/public")
     val.add_argument("--out", default="evidence/M0/validation")
+    val.add_argument("--attestation", default="evidence/M0/visual-attestation.json")
     args = parser.parse_args()
     if args.command == "generate":
         from .generation import generate
         result = generate(args.out)
     elif args.command == "validate":
         from .validation import validate_suite
-        result = validate_suite(Path(args.public), Path(args.out))
+        result = validate_suite(Path(args.public), Path(args.out), Path(args.attestation))
     print(json.dumps(result, indent=2))
