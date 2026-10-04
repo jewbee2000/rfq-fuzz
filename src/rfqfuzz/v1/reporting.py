@@ -4,7 +4,7 @@ from html.parser import HTMLParser
 import json
 import os
 from pathlib import Path
-from .contracts import load_json, require, write_json
+from .contracts import load_json, require, write_json,sha256,digest,read_packet
 from .scoring import compare
 
 def make_report(run_paths, oracle_path, public_root, out):
@@ -12,6 +12,17 @@ def make_report(run_paths, oracle_path, public_root, out):
     require(not out.exists(), "report exists; preserve prior evidence")
     runs=[load_json(p) for p in run_paths]
     require(bool(runs), "at least one run required")
+    # Reports must display the exact scored artifacts/oracle, even for one run.
+    public_root=Path(public_root)
+    paths=sorted(public_root.glob("*/packet.json"))
+    require(bool(paths),"report public suite is empty")
+    packets=[read_packet(p.parent) for p in paths]
+    bindings={"oracle_sha256":sha256(oracle_path),"suite_sha256":digest([(p.parent.name,sha256(p)) for p in paths]),"profile_sha256":digest([packet["profile"] for packet in packets])}
+    for run,path in zip(runs,run_paths):
+        for key,value in bindings.items():
+            require(run["manifest"][key]==value,"report source binding mismatch: "+key)
+        raw=Path(path).parent/"raw-review.json"
+        require(raw.is_file() and sha256(raw)==run["manifest"]["raw_sha256"],"report source binding mismatch: raw_sha256")
     changes=[{"before_reviewer":runs[0]["reviewer"],"after_reviewer":run["reviewer"],"changes":compare(runs[0],run)} for run in runs[1:]]
     oracle=load_json(oracle_path,limit=32_000_000)
     out.mkdir(parents=True)
@@ -29,8 +40,8 @@ def make_report(run_paths, oracle_path, public_root, out):
     for run,path in zip(runs,run_paths):
         chunks.append(f'<article><h3>{esc(run["reviewer"]["name"])} · {esc(run["reviewer"]["version"])}</h3><p>{esc(run["reviewer"]["configuration"])}</p><table><tr><th>Track</th><th>Detection</th><th>Named clean alerts</th><th>Explicit false clears</th><th>Coverage</th><th>Appropriate abstention</th><th>Failures / unsupported</th></tr>')
         for track,n in run["score"]["tracks"].items():
-            ratio=lambda name:f'{n["rates"][name]["numerator"]}/{n["rates"][name]["denominator"]}'
-            chunks.append(f'<tr><th>{esc(track)}</th><td>{ratio("recall")}</td><td>{ratio("named_clean_false_alert")}</td><td>{ratio("explicit_false_clear")}</td><td>{ratio("coverage")}</td><td>{ratio("appropriate_abstention")}</td><td>{n["execution_failures"]} / {n["unsupported"]}</td></tr>')
+            ratio=lambda name:esc(f'{n["rates"][name]["numerator"]}/{n["rates"][name]["denominator"]}')
+            chunks.append(f'<tr><th>{esc(track)}</th><td>{ratio("recall")}</td><td>{ratio("named_clean_false_alert")}</td><td>{ratio("explicit_false_clear")}</td><td>{ratio("coverage")}</td><td>{ratio("appropriate_abstention")}</td><td>{esc(n["execution_failures"])} / {esc(n["unsupported"])}</td></tr>')
         chunks.append(f'</table><p>Unadjudicated findings: {len(run["score"]["unadjudicated"])}. Invalid fixtures: {esc(run["score"]["invalid_rate"])}. Precision finalized for finite matching: {esc(run["score"]["precision_finalized"])}. No composite score.</p><p><a href="{link(path)}">Run manifest and full counts</a> · <a href="{link(Path(path).parent/"raw-review.json")}">Original raw response</a></p></article>')
     chunks.append('<h2>Inspect expected and actual evidence</h2>')
     for case in oracle["cases"]:
@@ -38,7 +49,7 @@ def make_report(run_paths, oracle_path, public_root, out):
         folder=Path(public_root)/cid
         if case["status"]!="valid":
             chunks.append(f'<section><h3>{esc(cid)} · {esc(case["status"])}</h3><p>Excluded: {esc(case["reasons"])}</p></section>');continue
-        packet=load_json(folder/"packet.json")
+        packet=read_packet(folder)
         chunks.append(f'<section><h3>{esc(cid)} · {esc(packet["part_id"])}</h3><p><a href="{link(folder/"drawing.pdf")}">Actual PDF page</a> · <a href="{link(folder/"drawing.png")}">Supplied rendered PNG</a> · <a href="{link(folder/"part.step")}">Exported STEP</a> · <a href="{link(folder/"packet.json")}">Public engineering contract</a></p><details><summary>Drawing, reimported geometry and public premises</summary><img src="{link(folder/"drawing.png")}" alt="Supplied complete engineering drawing"><pre>{esc(json.dumps(case["measurements"],indent=2))}</pre><pre>{esc(json.dumps(packet["authority"],indent=2))}</pre><pre>{esc(json.dumps(packet["manufacturing"],indent=2))}</pre></details>')
         for expected in case["expectations"]:
             oid=expected["obligation_id"]
@@ -57,6 +68,7 @@ def make_report(run_paths, oracle_path, public_root, out):
     (out/"index.html").write_text("".join(chunks),encoding="utf-8")
     record={"schema_version":"1.0","comparisons":changes,"manifest":runs[0]["manifest"],"scope":"Finite synthetic obligations; no industrial competence or manufacturing approval"}
     write_json(out/"comparison.json",record)
+    write_json(out/"source-audit.json",audit_report(out/"index.html"))
     return record
 
 def audit_report(path):

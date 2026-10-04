@@ -1,0 +1,44 @@
+F..                                                                      [100%]
+================================== FAILURES ===================================
+_______________________ test_escaped_source_navigation ________________________
+
+tmp_path = WindowsPath('C:/Users/Walt/AppData/Local/Temp/pytest-of-Walt/pytest-73/test_escaped_source_navigation0')
+
+    def test_escaped_source_navigation(tmp_path):
+        r,o=h.setup();c=o["cases"][0];cid=c["case_id"]
+        folder=tmp_path/"public"/cid;shutil.copytree("evidence/M0/bundle/public/pk-b8e2",folder)
+        # Report presentation test only, not a new scored geometry fixture.
+        r["reviewer"]["configuration"]='<script>alert(1)</script>'
+        run={"reviewer":r["reviewer"],"manifest":{"suite_sha256":"a","oracle_sha256":"b","profile_sha256":"c"},"score":score(r,o)}
+        runs=[]
+        for name in ("a","b"):
+            target=tmp_path/name;write_json(target/"run.json",run);write_json(target/"raw-review.json",r);runs.append(target/"run.json")
+        oracle=tmp_path/"oracle.json";write_json(oracle,o)
+>       make_report(runs,oracle,folder.parent,tmp_path/"report")
+
+tests\reporting\test_offline.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\rfqfuzz\v1\reporting.py:19: in make_report
+    packets=[read_packet(p.parent) for p in paths]
+             ^^^^^^^^^^^^^^^^^^^^^
+src\rfqfuzz\v1\contracts.py:161: in read_packet
+    p = validate_packet(load_json(folder / "packet.json"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\rfqfuzz\v1\contracts.py:95: in validate_packet
+    fields(p, ("schema_version", "case_id", "part_id", "family", "units", "release_association", "authority", "manufacturing", "setup", "profile", "features", "requirements", "obligations", "artifacts", "render"), label="PacketSpec")
+src\rfqfuzz\v1\contracts.py:52: in fields
+    require(set(required) <= value.keys(), f"{label} missing: {sorted(set(required) - value.keys())}")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False
+reason = "PacketSpec missing: ['family', 'render', 'requirements']"
+
+    def require(condition, reason):
+        if not condition:
+>           raise ValueError(reason)
+E           ValueError: PacketSpec missing: ['family', 'render', 'requirements']
+
+src\rfqfuzz\v1\contracts.py:25: ValueError
+=========================== short test summary info ===========================
+FAILED tests/reporting/test_offline.py::test_escaped_source_navigation - Valu...
+1 failed, 2 passed in 0.28s

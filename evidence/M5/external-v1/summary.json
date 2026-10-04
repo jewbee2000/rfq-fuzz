@@ -1,0 +1,113 @@
+{
+  "tracks": {
+    "package_consistency": {
+      "applicable": 10,
+      "issues": 0,
+      "clean": 10,
+      "underdetermined": 0,
+      "detected": 0,
+      "false_alerts": 0,
+      "explicit_false_clears": 0,
+      "silent_misses": 0,
+      "correct_clear": 9,
+      "appropriate_abstentions": 0,
+      "abstentions": 0,
+      "covered": 10,
+      "execution_failures": 0,
+      "unsupported": 0,
+      "unasserted_clean": 1,
+      "reasoning_errors": 0,
+      "rates": {
+        "recall": {
+          "numerator": 0,
+          "denominator": 0
+        },
+        "named_clean_false_alert": {
+          "numerator": 0,
+          "denominator": 10
+        },
+        "explicit_false_clear": {
+          "numerator": 0,
+          "denominator": 0
+        },
+        "coverage": {
+          "numerator": 10,
+          "denominator": 10
+        },
+        "appropriate_abstention": {
+          "numerator": 0,
+          "denominator": 0
+        }
+      }
+    },
+    "cnc_advisory": {
+      "applicable": 5,
+      "issues": 1,
+      "clean": 4,
+      "underdetermined": 0,
+      "detected": 1,
+      "false_alerts": 0,
+      "explicit_false_clears": 0,
+      "silent_misses": 0,
+      "correct_clear": 4,
+      "appropriate_abstentions": 0,
+      "abstentions": 0,
+      "covered": 5,
+      "execution_failures": 0,
+      "unsupported": 0,
+      "unasserted_clean": 0,
+      "reasoning_errors": 0,
+      "rates": {
+        "recall": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "named_clean_false_alert": {
+          "numerator": 0,
+          "denominator": 4
+        },
+        "explicit_false_clear": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "coverage": {
+          "numerator": 5,
+          "denominator": 5
+        },
+        "appropriate_abstention": {
+          "numerator": 0,
+          "denominator": 0
+        }
+      }
+    }
+  },
+  "unadjudicated": [
+    {
+      "case_id": "pk-d13b84a82f87",
+      "finding": {
+        "obligation_id": "obj-units",
+        "category": "unit_consistency",
+        "conclusion": "supported_clear",
+        "feature_id": "document",
+        "rationale": "Actual STEP uses millimetres, the visible drawing says UNITS = mm, and both public units declarations are mm. Envelope and pocket numeric annotations agree with independent geometry within 1e-6 mm.",
+        "id": "independent-pk-d13b84a82f87-obj-units",
+        "evidence": [
+          {
+            "artifact": "packet.json",
+            "quote": "{\"units\":{\"drawing\":\"mm\",\"model\":\"mm\"}}"
+          },
+          {
+            "artifact": "drawing.pdf",
+            "quote": "UNITS = mm"
+          },
+          {
+            "artifact": "part.step",
+            "quote": "#668 = ( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) );"
+          }
+        ]
+      },
+      "status": "unadjudicated"
+    }
+  ],
+  "scope": "Exactly the2publiccases requested for genuineindependentobservation; full145suiteimport earlier is an integrationdiagnostic with unrequested coverage, not reviewer performance"
+}

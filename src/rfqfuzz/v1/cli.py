@@ -37,11 +37,15 @@ def main(argv=None):
             r=api.import_results(a.response,a.public,a.oracle,a.destination,a.adjudication)
             result={"status":"scored","tracks":r["score"]["tracks"]} if "score" in r else r
         elif a.action=="compare":
+            from .contracts import require
+            require(not Path(a.destination).exists(),"comparison output exists; preserve prior evidence")
             result=api.compare(load_json(a.before,limit=32_000_000),load_json(a.after,limit=32_000_000));write_json(a.destination,result)
         elif a.action=="report":result=api.report(a.runs,a.oracle,a.public,a.destination)
         elif a.action=="reference":
             from .reference import review_public
-            r=review_public(a.public,a.destination);result={"cases":len(r["results"]),"response":str(Path(a.destination)/"review.json"),"limitations":"Public-only template reference shares observed readers with validator; no independent competence claim"}
+            r=review_public(a.public,a.destination)
+            states={state:sum(row["status"]==state for row in r["results"]) for state in {row["status"] for row in r["results"]}}
+            result={"status":"completed" if set(states)=={"completed"} else "contains_failures","states":states,"cases":len(r["results"]),"response":str(Path(a.destination)/"review.json"),"limitations":"Public-only template reference shares observed readers with validator; no independent competence claim"}
         elif a.action=="run-local":
             from .adapters import run_local
             command=a.command[1:] if a.command[:1]==["--"] else a.command
@@ -51,7 +55,7 @@ def main(argv=None):
             result=resume_plan(a.public,a.attempts)
         else:result=api.demo(a.assets,a.destination)
         print(json.dumps(result,indent=2,default=str))
-        if isinstance(result,dict) and result.get("status") in {"error","timeout","contains_quarantine","unverified"}:return 2
+        if isinstance(result,dict) and result.get("status") in {"error","timeout","contains_quarantine","unverified","contains_failures"}:return 2
         return 0
     except (ValueError,KeyError,TypeError,OSError,RuntimeError) as error:
         print(json.dumps({"status":"error","reason":f"{type(error).__name__}: {error}"}),file=sys.stderr);return 2

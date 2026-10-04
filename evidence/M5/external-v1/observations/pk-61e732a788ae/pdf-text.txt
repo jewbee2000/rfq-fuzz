@@ -1,0 +1,23 @@
+PART DRAWING
+SCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.
+Views depict supplied STEP at model stage. Depths measured from top (+Z).
+DRAWING ID = PT-001
+DRAWING REV = A
+UNITS = mm
+MATERIAL = 6061-T6
+MODEL STAGE = finished
+DRAWING STAGE = finished
+FINISH = none
+TOLERANCE STAGE = after_finish
+SURFACE ROUGHNESS = 3.20 um
+PLAN (+Z)
+H1.1
+H1.2
+H1.3
+H1.4
+A
+A
+SECTION A-A (X-Z)
+H1 through all thickness; plan maps every group member.
+Section Y=0 does not intersect off-axis H1 pattern bores.
+Declared finite requirements and setup/profile are in packet.json.

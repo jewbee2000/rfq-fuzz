@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "record_type": "raw_public_only_reviewer_observation_before_demo_inputs",
+  "reviewer": "independent Codex consumer environment agent",
+  "date": "2026-10-04",
+  "read_scope": [
+    "evidence/M2/core-suite/public/pk-d13b84a82f87/packet.json",
+    "evidence/M2/core-suite/public/pk-d13b84a82f87/part.step",
+    "evidence/M2/core-suite/public/pk-d13b84a82f87/drawing.pdf",
+    "evidence/M2/core-suite/public/pk-d13b84a82f87/drawing.png",
+    "evidence/M2/core-suite/public/pk-61e732a788ae/packet.json",
+    "evidence/M2/core-suite/public/pk-61e732a788ae/part.step",
+    "evidence/M2/core-suite/public/pk-61e732a788ae/drawing.pdf",
+    "evidence/M2/core-suite/public/pk-61e732a788ae/drawing.png",
+    "docs/V1_CONTRACT.md",
+    "docs/REVIEWER_PROTOCOL.md",
+    "schemas/v1/ReviewResult.schema.json"
+  ],
+  "blinding": "No private mutations, oracle expectations, reference decisions/source, source validator conclusion logic or final demo comparison inputs were read for this observation. Initial requested pk-5245473091ed was absent; coordinator-authorized fallback pk-d13b84a82f87 was used. Shared local filesystem blinding is procedural, not a security boundary.",
+  "methods": "Own direct OCP STEPControl reader, BRep surface and volume/bounds inspection, actual STEP SI_UNIT/PRODUCT text, actual pypdf text extraction, independent Poppler re-render at 200 dpi, hash and pixel comparison, full-page visual inspection of both re-renders. No RFQFuzz validator/reference imports. OCP shares the OCCT kernel with generation.",
+  "cases": [
+    {
+      "case_id": "pk-d13b84a82f87",
+      "execution_state": "completed",
+      "modalities_reviewed": ["step", "pdf", "png", "context"],
+      "visible_inspection": "PLAN and SECTION A-A are readable, P1/W1 associations are visible, and the declarations/roughness note are visible without clipping. Independent PDF re-render is pixel-identical to the provided PNG (2339 x 1653). Drawing explicitly says schematic views and not to measure pixels; no dimensions were inferred from pixels.",
+      "geometry": "One solid, volume 30000 mm3, bounds X=-30..30, Y=-20..20, Z=-10..10 (box tolerance 1e-7 mm). P1 inner planes X=-20.6 and29.4, Y=-15 and15, floor Z=-2 and top Z=10 establish width50, length30, depth12 mm. W1 mapped +X inner plane is29.4, outer plane30, so its thickness is0.6 mm. Actual STEP length unit is SI_UNIT(.MILLI.,.METRE.) and PRODUCT text is PT-001 REV A.",
+      "conclusions": [
+        {"obligation_id":"obj-units","category":"unit_consistency","feature_id":"document","conclusion":"supported_clear","rationale":"Actual STEP uses millimetres, the visible drawing says UNITS = mm, and both public units declarations are mm. Envelope and pocket numeric annotations agree with independent geometry within 1e-6 mm."},
+        {"obligation_id":"obj-material","category":"material_consistency","feature_id":"document","conclusion":"supported_clear","rationale":"Visible MATERIAL = 6061-T6 agrees with the public manufacturing material under equal material precedence."},
+        {"obligation_id":"obj-requirement","category":"required_representation","feature_id":"document","conclusion":"supported_clear","rationale":"The publicly required SURFACE ROUGHNESS = 3.20 um note is present in actual PDF text and visibly legible in the re-render."},
+        {"obligation_id":"obj-release","category":"release_association","feature_id":"document","conclusion":"supported_clear","rationale":"Actual STEP PRODUCT identity PT-001 REV A agrees with visible DRAWING ID = PT-001 and DRAWING REV = A. Public model/drawing A/A is an explicitly permitted pair."},
+        {"obligation_id":"cnc-envelope","category":"setup_envelope","feature_id":"document","conclusion":"supported_clear","rationale":"Measured60x40x20 mm plus public zero stock/fixture allowances lies within the selected synthetic-standard-XYZ120x80x50 mm envelope for declared XYZ orientation. Clear is scoped to this finite named setup duty."},
+        {"obligation_id":"cnc-stage","category":"finish_stage","feature_id":"document","conclusion":"supported_clear","rationale":"The public explicit after_finish tolerance stage and visible TOLERANCE STAGE = after_finish agree; explicit stage overrides the public synthetic before_finish default. Both model/drawing are finished and finish is none. This resolves stage context only."},
+        {"obligation_id":"cnc-wall","category":"wall_thickness","feature_id":"W1","conclusion":"advisory","rationale":"Independent mapped +X wall thickness is0.6 mm, agreeing with visible W1 THICKNESS = 0.60 mm. The selected synthetic A01 metal recommendation is0.8 mm;0.6<0.8 triggers advisory for known6061-T6/metal. This is not manufacturing impossibility or a universal wall limit."}
+      ]
+    },
+    {
+      "case_id": "pk-61e732a788ae",
+      "execution_state": "completed",
+      "modalities_reviewed": ["step", "pdf", "png", "context"],
+      "visible_inspection": "PLAN visibly maps H1.1 through H1.4. SECTION A-A at Y=0 correctly does not intersect the off-axis pattern and explicitly states that limitation. The declarations/roughness note are readable without clipping. Independent PDF re-render is pixel-identical to provided PNG (2339 x 1653). Sparse numeric dimensioning was interpreted under the explicit public STEP dimension authority.",
+      "geometry": "One solid, volume31095.22131576612 mm3, bounds X=-40..40,Y=-25..25,Z=-4..4 (box tolerance1e-7 mm). Four Z cylinder faces with radius3 mm map exactly to public H1 XY centers(-25,-15),(-25,15),(25,-15),(25,15). Each cylinder spans the plate's full8 mm thickness. Actual STEP uses millimetres and PRODUCT text is PT-001 REV A.",
+      "conclusions": [
+        {"obligation_id":"obj-units","category":"unit_consistency","feature_id":"document","conclusion":"supported_clear","rationale":"Actual STEP uses millimetres, visible drawing says UNITS = mm, and both public unit declarations are mm. No conflicting numeric drawing dimensions are asserted."},
+        {"obligation_id":"obj-material","category":"material_consistency","feature_id":"document","conclusion":"supported_clear","rationale":"Visible MATERIAL = 6061-T6 agrees with the public manufacturing material under equal precedence."},
+        {"obligation_id":"obj-requirement","category":"required_representation","feature_id":"document","conclusion":"supported_clear","rationale":"The publicly required SURFACE ROUGHNESS = 3.20 um note is present and visibly legible."},
+        {"obligation_id":"obj-release","category":"release_association","feature_id":"document","conclusion":"supported_clear","rationale":"Actual STEP PT-001 REV A agrees with visible drawing PT-001 revision A and the public permitted A/A association."},
+        {"obligation_id":"cnc-envelope","category":"setup_envelope","feature_id":"document","conclusion":"supported_clear","rationale":"Measured80x50x8 mm plus explicit zero allowances lies within synthetic-standard-XYZ120x80x50 mm in XYZ orientation. This is only a named setup envelope conclusion."},
+        {"obligation_id":"cnc-stage","category":"finish_stage","feature_id":"document","conclusion":"supported_clear","rationale":"Public explicit after_finish and visible after_finish agree and override the synthetic default; model/drawing are finished and finish is none. No finish compatibility prediction is made."},
+        {"obligation_id":"obj-diameter","category":"diameter_consistency","feature_id":"H1","conclusion":"supported_clear","rationale":"The public contract expressly gives STEP dimension authority. Four independently measured H1 bores have6 mm diameter, and the drawing contains no contradictory diameter assertion. Missing repeated numeric CAD dimensions are allowed here, not a release defect."},
+        {"obligation_id":"obj-count","category":"count_consistency","feature_id":"H1","conclusion":"supported_clear","rationale":"Four measured bores correspond one-to-one with all four public mapped centers and visible H1.1-H1.4 plan labels. The Y=0 section explicitly explains why it shows no off-axis bores. No count contradiction is supported under STEP dimension authority."}
+      ]
+    }
+  ],
+  "coverage": "All15 declared finite obligations reviewed in their required modalities:7 pocket and8 plate;14 supported_clear assertions and1 scoped wall advisory. No finite obligation remains unknown or unsupported in these two simple one-solid inputs.",
+  "limits": "Two observed synthetic packets only; no industrial competence, manufactured-part evidence, functional GD&T approval, CAM/toolpath/workholding validation or full manufacturability certification. Same OCCT reader family remains common-mode risk. Reviewer transport formatting is pending public shape clarification; engineering conclusions are already saved before demo/comparison inputs."
+}

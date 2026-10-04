@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "comparisons": [],
+  "manifest": {
+    "schema_version": "1.0",
+    "suite_sha256": "ab15e2088237e71af230e71dc85c9387461b2c3ad69b78ac81d4942b2fe8eac6",
+    "oracle_sha256": "5014008f3c8155bfa7bc180620f3855a42bb957b17e2fbedfffb964607a9470b",
+    "profile_sha256": "1a71dedef4e03f1fc0eff64276db3518c9778f4203f456c5e2baabbcd2cd6c6b",
+    "adapter_version": "manual-1.0",
+    "seed": 42,
+    "environment": {
+      "python": "3.12.2",
+      "platform": "Windows-11-10.0.26300-SP0"
+    },
+    "raw_sha256": "72bd3e32fb83e3944357d6d1e9bff49908675872d465db3f58b5e1391065f34f",
+    "limitations": [
+      "Finite synthetic obligations",
+      "Shared OCCT kernel",
+      "Conservative canonical source quotation matching"
+    ],
+    "failures": []
+  },
+  "scope": "Finite synthetic obligations; no industrial competence or manufacturing approval"
+}

@@ -1,0 +1,26 @@
+PART DRAWING
+SCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.
+Views depict supplied STEP at model stage. Depths measured from top (+Z).
+DRAWING ID = PT-001
+DRAWING REV = A
+UNITS = mm
+MATERIAL = 6061-T6
+MODEL STAGE = finished
+DRAWING STAGE = finished
+FINISH = none
+TOLERANCE STAGE = after_finish
+ENVELOPE = 60.00 x 40.00 x 20.00 mm
+SURFACE ROUGHNESS = 3.20 um
+P1 WIDTH = 50.00 mm
+P1 LENGTH = 30.00 mm
+P1 DEPTH = 12.00 mm
+W1 THICKNESS = 0.60 mm
+PLAN (+Z)
+P1
+W1 +X
+A
+A
+SECTION A-A (X-Z)
+P1 open pocket
+W1
+Declared finite requirements and setup/profile are in packet.json.
