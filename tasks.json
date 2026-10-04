@@ -192,10 +192,10 @@
       "scope": "Public-only export, structured import and bounded process protocol; explicit coverage, errors, timeouts and raw-result retention.",
       "acceptance": "External/manual integration; malformed/partial/error results remain observable; no implicit hosted upload.",
       "evidence": "evidence/M3/adapters.md",
-      "verification": "python -m pytest tests/adapters",
-      "verification_is_proposed": true,
-      "status": "in_progress",
-      "completion_commit": null
+      "verification": ".venv/Scripts/python.exe -m pytest tests/adapters -q (5 passed)",
+      "verification_is_proposed": false,
+      "status": "completed",
+      "completion_commit": "4e17f8ede4542f23901ed141d2ef76079e8daec5"
     },
     {
       "id": "T10",
@@ -217,7 +217,7 @@
       "evidence": "evidence/M3/scoring.md",
       "verification": "python -m pytest tests/scoring",
       "verification_is_proposed": true,
-      "status": "not_started",
+      "status": "in_progress",
       "completion_commit": null
     },
     {
