@@ -1,0 +1,13 @@
+
+=================================== ERRORS ====================================
+__________________ ERROR collecting tests/scoring/test_v1.py __________________
+import file mismatch:
+imported module 'test_v1' has this __file__ attribute:
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\tests\contracts\test_v1.py
+which is not the same as the test file we want to collect:
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\tests\scoring\test_v1.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+=========================== short test summary info ===========================
+ERROR tests/scoring/test_v1.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.15s

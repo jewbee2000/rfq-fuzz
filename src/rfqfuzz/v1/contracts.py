@@ -181,6 +181,8 @@ def validate_oracle(o):
     require(o["status"] in VALIDATION_STATES, "invalid fixture state")
     if o["status"] != "valid":
         require(not o["expectations"] and bool(o["reasons"]), "invalid fixtures must not be scorable")
+    require(len({e.get("obligation_id") for e in o["expectations"]}) == len(o["expectations"]), "duplicate expected obligation")
+    require(len({(e.get("track"), e.get("root_cause")) for e in o["expectations"]}) == len(o["expectations"]), "group each expected root cause once")
     for e in o["expectations"]:
         fields(e, ("obligation_id", "track", "category", "feature_id", "conclusion", "rule_id", "evidence", "root_cause", "operator"), label="expected obligation")
         require(e["conclusion"] in CONCLUSIONS and e["track"] in TRACKS, "invalid expected semantics")
