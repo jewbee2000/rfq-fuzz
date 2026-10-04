@@ -18,7 +18,7 @@
       "verification": "Read-only primary-source recheck and repository contract inspection (2026-10-04)",
       "verification_is_proposed": false,
       "status": "completed",
-      "completion_commit": null
+      "completion_commit": "3d6e80b"
     },
     {
       "id": "T01",
@@ -33,9 +33,9 @@
       "scope": "Create isolated Python environment; prove CAD/drawing imports; select compatible dependencies and license direction.",
       "acceptance": "A basic STEP/PDF/PNG exports on the initial host and can be inspected; lockfile and license record exist.",
       "evidence": "evidence/M0/environment.md",
-      "verification": "Dependency smoke check and rendered artifact inspection",
-      "verification_is_proposed": true,
-      "status": "not_started",
+      "verification": ".venv/Scripts/python.exe -m pip check; .venv/Scripts/python.exe tools/smoke.py; .venv/Scripts/python.exe tools/record_environment.py; actual PNG visual inspection",
+      "verification_is_proposed": false,
+      "status": "completed",
       "completion_commit": null
     },
     {

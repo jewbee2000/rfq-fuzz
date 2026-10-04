@@ -14,6 +14,8 @@ Decision: **conditional GO for the first feasibility challenge only**. The origi
 
 Source inspection was read-only; no product was trialed, repository executed, or vendor contacted. A separate research worker challenged the differentiation. The researched distinction remains the combination of controlled artifact mutations, independent final-artifact measurements, public engineering premises, valid alternatives, and localized reviewer-version comparison. Do not claim invention of seeded defects, paired CAD/drawings, or DFM review.
 
+The recheck also found [FreeCAD Automation](https://github.com/dooosp/freecad-automation/tree/659405b3e36d01d21027f0c75db3f7e36ded159b) and [CAD Guardian evaluation kit](https://github.com/tsmithcode/cadguardian-inventor-automation-proof/tree/77f6e35d3633b9d8e41ff18e08fdb6c6221c9741). Their inspected contracts provide CAD/drawing/readiness artifacts, clean/blocker fixtures or revision comparisons, but did not establish the independent reviewer-version regression loop proposed here. These increase the overlap boundary; neither was executed.
+
 ## Frozen consumer question and acceptance boundary
 
 Can a reviewer detect a four-bore drawing/STEP diameter disagreement for the same manufacturing stage, then correctly clear a corrected twin and a legitimate later-stage diameter requirement? Can a report explain a deliberately injected missed contradiction and false alert by linking to the visible bore callout, exported cylinder measurements, and stage contract?

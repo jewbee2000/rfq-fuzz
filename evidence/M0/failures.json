@@ -1,0 +1,13 @@
+{
+  "schema_version": "m0.1",
+  "failures": [
+    {
+      "task": "T01",
+      "command": ".venv/Scripts/python.exe tools/smoke.py",
+      "result": "TypeError: make_drawing() got an unexpected keyword argument 'formats'",
+      "cause": "Smoke prototype used Drawing.export's formats argument on the convenience function.",
+      "resolution": "Use build_drawing(...).export(..., formats=('pdf',)). No acceptance change.",
+      "conceptual_attempt": 1
+    }
+  ]
+}
