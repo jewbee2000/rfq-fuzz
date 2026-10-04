@@ -36,7 +36,7 @@
       "verification": ".venv/Scripts/python.exe -m pip check; .venv/Scripts/python.exe tools/smoke.py; .venv/Scripts/python.exe tools/record_environment.py; actual PNG visual inspection",
       "verification_is_proposed": false,
       "status": "completed",
-      "completion_commit": null
+      "completion_commit": "947cb18"
     },
     {
       "id": "T02",
@@ -55,7 +55,7 @@
       "evidence": "evidence/M0/artifact-proof.md",
       "verification": "Focused prototype geometry and export checks",
       "verification_is_proposed": true,
-      "status": "not_started",
+      "status": "in_progress",
       "completion_commit": null
     },
     {
