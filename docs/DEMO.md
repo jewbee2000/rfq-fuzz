@@ -44,7 +44,33 @@ in timestamps or rendering bytes; they require fresh actual visual review. Never
 reuse an old attestation on regenerated files. Without it, validation reports
 `unverified` and exits2; no case becomes a pass automatically.
 
+Native parser timeout defaults to60seconds per case; document export audit defaults
+to20seconds. Software-emulated Linux TCG exceeded the native bound in a retained
+attempt. Explicit setup overrides are bounded at300seconds and recorded in
+`demo-result.json` and native observations, for example:
+
+```sh
+rfqfuzz demo examples/v1-demo work/emulated-demo --parser-timeout 300 --audit-timeout 120
+```
+
+A longer bound changes resource scheduling only. Parser exit success, actual
+geometry/drawing checks and exact visual hashes remain mandatory; a timeout is
+never promoted to valid. Use defaults on native supported hardware unless actual
+setup evidence justifies an explicit bound.
+
 Every workflow step is also independently available:
+
+For one new case, create a suite folder and keep its opaque ID as the public
+directory name. `validate` accepts a suite/public tree rather than a single packet:
+
+```sh
+rfqfuzz generate-case work/one-suite/public/pk-0123456789ab --case-id pk-0123456789ab --family plate
+rfqfuzz validate work/one-suite work/one-observation
+```
+
+The second command reopens the files and remains unverified/exit2 until fresh
+hash-bound visual review. An exit2 alone is insufficient evidence: inspect the
+structured status and retained oracle/reasons. A malformed suite is an error.
 
 ```sh
 rfqfuzz generate work/new-suite --seed 42

@@ -29,6 +29,13 @@ def test_frozen_replay_rejects_changed_asset(tmp_path):
     with pytest.raises(ValueError,match="hash mismatch"):demo(assets,tmp_path/"out")
     assert not (tmp_path/"out").exists()
 
+@pytest.mark.parametrize("value",[0,-1,301,float("inf"),float("nan"),True])
+def test_demo_parser_bounds_reject_before_creating_outputs(tmp_path,value):
+    from rfqfuzz.v1.api import demo
+    with pytest.raises(ValueError,match="timeout outside"):
+        demo(ROOT/"examples/v1-demo",tmp_path/"demo",parser_timeout=value)
+    assert not (tmp_path/"demo").exists()
+
 def test_consumer_frozen_demo(tmp_path):
     from rfqfuzz.v1.api import demo
     from rfqfuzz.v1.reporting import audit_report

@@ -11,15 +11,15 @@ def parser():
     sub=p.add_subparsers(dest="action",required=True)
     q=sub.add_parser("generate");q.add_argument("destination");q.add_argument("--seed",type=int,default=42)
     q=sub.add_parser("generate-case");q.add_argument("destination");q.add_argument("--case-id",required=True);q.add_argument("--family",choices=["plate","bore_block","pocket_block"],required=True);q.add_argument("--parameters",help="JSON file with bounded family parameters")
-    q=sub.add_parser("validate");q.add_argument("suite");q.add_argument("destination");q.add_argument("--attestation")
-    q=sub.add_parser("export-review");q.add_argument("public");q.add_argument("destination")
+    q=sub.add_parser("validate");q.add_argument("suite");q.add_argument("destination");q.add_argument("--attestation");q.add_argument("--parser-timeout",type=float,default=60)
+    q=sub.add_parser("export-review");q.add_argument("public");q.add_argument("destination");q.add_argument("--parser-timeout",type=float,default=20)
     q=sub.add_parser("import-results");q.add_argument("response");q.add_argument("public");q.add_argument("oracle");q.add_argument("destination");q.add_argument("--adjudication")
     q=sub.add_parser("compare");q.add_argument("before");q.add_argument("after");q.add_argument("destination")
     q=sub.add_parser("report");q.add_argument("oracle");q.add_argument("public");q.add_argument("destination");q.add_argument("runs",nargs="+")
     q=sub.add_parser("reference");q.add_argument("public");q.add_argument("destination")
     q=sub.add_parser("run-local");q.add_argument("public");q.add_argument("destination");q.add_argument("--timeout",type=float,default=30);q.add_argument("command",nargs=argparse.REMAINDER)
     q=sub.add_parser("resume");q.add_argument("public");q.add_argument("attempts",nargs="*")
-    q=sub.add_parser("demo");q.add_argument("assets");q.add_argument("destination")
+    q=sub.add_parser("demo");q.add_argument("assets");q.add_argument("destination");q.add_argument("--parser-timeout",type=float,default=60);q.add_argument("--audit-timeout",type=float,default=20)
     return p
 
 def main(argv=None):
@@ -30,9 +30,9 @@ def main(argv=None):
             from .generation import generate_case
             result=generate_case(a.destination,a.case_id,a.family,load_json(a.parameters) if a.parameters else None)
         elif a.action=="validate":
-            r=api.validate(a.suite,a.destination,a.attestation)
+            r=api.validate(a.suite,a.destination,a.attestation,a.parser_timeout)
             result={"status":r["status"],"counts":r["counts"],"oracle":str(Path(a.destination)/"oracle.json")}
-        elif a.action=="export-review":result=api.export(a.public,a.destination)
+        elif a.action=="export-review":result=api.export(a.public,a.destination,a.parser_timeout)
         elif a.action=="import-results":
             r=api.import_results(a.response,a.public,a.oracle,a.destination,a.adjudication)
             result={"status":"scored","tracks":r["score"]["tracks"]} if "score" in r else r
@@ -53,7 +53,7 @@ def main(argv=None):
         elif a.action=="resume":
             from .lifecycle import resume_plan
             result=resume_plan(a.public,a.attempts)
-        else:result=api.demo(a.assets,a.destination)
+        else:result=api.demo(a.assets,a.destination,a.parser_timeout,a.audit_timeout)
         print(json.dumps(result,indent=2,default=str))
         if isinstance(result,dict) and result.get("status") in {"error","timeout","contains_quarantine","unverified","contains_failures"}:return 2
         return 0

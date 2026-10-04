@@ -503,11 +503,12 @@ def _native(folder, outdir):
 
 def inspect_case(folder, outdir, timeout=PARSER_TIMEOUT_SECONDS):
     """Retain observations; no expected answer is scorable before visual review."""
+    require(type(timeout) in (int,float) and 0 < timeout <= 300,"native parser timeout outside configured bounds (0,300]")
     folder, outdir = Path(folder).resolve(), Path(outdir).resolve()
     outdir.mkdir(parents=True, exist_ok=True)
     record = {"schema_version": VERSION, "oracle_version": "1.0-observed-1", "case_id": folder.name,
               "packet_sha256": "0" * 64, "status": "invalid_fixture", "reasons": [], "measurements": {}, "drawing": {}, "expectations": [],
-              "isolation": {"status": "not_checked", "common_mode_limit": "shared OCCT kernel", "visual_attestation_required": True}}
+              "isolation": {"status": "not_checked", "common_mode_limit": "shared OCCT kernel", "visual_attestation_required": True,"native_parser_timeout_seconds":timeout}}
     try:
         require(sorted(p.name for p in folder.iterdir()) == ["drawing.pdf", "drawing.png", "packet.json", "part.step"], "unexpected public sidecar/files")
         packet = read_packet(folder)
@@ -630,13 +631,13 @@ def _isolation(cases, mutations):
                     _quarantine(case, "objective mutation altered undeclared public authority/profile/setup/context")
 
 
-def validate_suite(suite_root, out, attestation=None):
+def validate_suite(suite_root, out, attestation=None, parser_timeout=PARSER_TIMEOUT_SECONDS):
     suite_root, out = Path(suite_root).resolve(), Path(out).resolve()
     public = suite_root / "public" if (suite_root / "public").is_dir() else suite_root
     require(not out.exists(), "validation output exists; preserve prior evidence")
     folders = sorted(p for p in public.iterdir() if p.is_dir())
     require(bool(folders) and len(folders) <= 256, "suite case count outside limits")
-    cases = [inspect_case(folder, out / folder.name) for folder in folders]
+    cases = [inspect_case(folder, out / folder.name,timeout=parser_timeout) for folder in folders]
     if attestation is not None:
         attestation = load_json(attestation) if isinstance(attestation, (str, Path)) else attestation
         for folder, case in zip(folders, cases):
