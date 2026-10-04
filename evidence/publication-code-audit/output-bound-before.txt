@@ -1,0 +1,128 @@
+FFF                                                                      [100%]
+================================== FAILURES ===================================
+__________ test_output_limit_checked_after_fast_process_exit[stdout] __________
+
+public = WindowsPath('C:/Users/Walt/AppData/Local/Temp/pytest-of-Walt/pytest-94/test_output_limit_checked_afte0/public')
+tmp_path = WindowsPath('C:/Users/Walt/AppData/Local/Temp/pytest-of-Walt/pytest-94/test_output_limit_checked_afte0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001C21B5E1070>
+stream = 'stdout'
+
+    @pytest.mark.parametrize("stream", ["stdout", "stderr", "response"])
+    def test_output_limit_checked_after_fast_process_exit(public, tmp_path, monkeypatch, stream):
+        class CompletedProcess:
+            returncode = 0
+    
+            def __init__(self, command, **kwargs):
+                self.stdin = io.BytesIO()
+                response = helper.review()
+                response["results"][0]["packet_sha256"] = sha256(next(public.glob("*/packet.json")))
+                destination = Path(kwargs["cwd"]) / "response.json"
+                if stream == "response":
+                    # Valid JSON with excessive whitespace must also respect the byte bound.
+                    destination.write_text(json.dumps(response) + " " * 4_000_001)
+                else:
+                    write_json(destination, response)
+                    kwargs[stream].write(b"x" * 4_000_001)
+                    kwargs[stream].flush()
+    
+            def poll(self):
+                return 0
+    
+        # Documents are already represented by the public fixture. Isolate the final
+        # process-state boundary so the regression is independent of scheduler timing.
+        monkeypatch.setattr(a, "audit_public", lambda root: {"status": "passed"})
+        monkeypatch.setattr(a.subprocess, "Popen", CompletedProcess)
+        result = a.run_local(["configured-reviewer"], public, tmp_path / stream)
+>       assert result["status"] == "error"
+E       AssertionError: assert 'completed' == 'error'
+E         
+E         - error
+E         + completed
+
+tests\adapters\test_lifecycle.py:86: AssertionError
+__________ test_output_limit_checked_after_fast_process_exit[stderr] __________
+
+public = WindowsPath('C:/Users/Walt/AppData/Local/Temp/pytest-of-Walt/pytest-94/test_output_limit_checked_afte1/public')
+tmp_path = WindowsPath('C:/Users/Walt/AppData/Local/Temp/pytest-of-Walt/pytest-94/test_output_limit_checked_afte1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001C21B5E25A0>
+stream = 'stderr'
+
+    @pytest.mark.parametrize("stream", ["stdout", "stderr", "response"])
+    def test_output_limit_checked_after_fast_process_exit(public, tmp_path, monkeypatch, stream):
+        class CompletedProcess:
+            returncode = 0
+    
+            def __init__(self, command, **kwargs):
+                self.stdin = io.BytesIO()
+                response = helper.review()
+                response["results"][0]["packet_sha256"] = sha256(next(public.glob("*/packet.json")))
+                destination = Path(kwargs["cwd"]) / "response.json"
+                if stream == "response":
+                    # Valid JSON with excessive whitespace must also respect the byte bound.
+                    destination.write_text(json.dumps(response) + " " * 4_000_001)
+                else:
+                    write_json(destination, response)
+                    kwargs[stream].write(b"x" * 4_000_001)
+                    kwargs[stream].flush()
+    
+            def poll(self):
+                return 0
+    
+        # Documents are already represented by the public fixture. Isolate the final
+        # process-state boundary so the regression is independent of scheduler timing.
+        monkeypatch.setattr(a, "audit_public", lambda root: {"status": "passed"})
+        monkeypatch.setattr(a.subprocess, "Popen", CompletedProcess)
+        result = a.run_local(["configured-reviewer"], public, tmp_path / stream)
+>       assert result["status"] == "error"
+E       AssertionError: assert 'completed' == 'error'
+E         
+E         - error
+E         + completed
+
+tests\adapters\test_lifecycle.py:86: AssertionError
+_________ test_output_limit_checked_after_fast_process_exit[response] _________
+
+public = WindowsPath('C:/Users/Walt/AppData/Local/Temp/pytest-of-Walt/pytest-94/test_output_limit_checked_afte2/public')
+tmp_path = WindowsPath('C:/Users/Walt/AppData/Local/Temp/pytest-of-Walt/pytest-94/test_output_limit_checked_afte2')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001C21B5E33B0>
+stream = 'response'
+
+    @pytest.mark.parametrize("stream", ["stdout", "stderr", "response"])
+    def test_output_limit_checked_after_fast_process_exit(public, tmp_path, monkeypatch, stream):
+        class CompletedProcess:
+            returncode = 0
+    
+            def __init__(self, command, **kwargs):
+                self.stdin = io.BytesIO()
+                response = helper.review()
+                response["results"][0]["packet_sha256"] = sha256(next(public.glob("*/packet.json")))
+                destination = Path(kwargs["cwd"]) / "response.json"
+                if stream == "response":
+                    # Valid JSON with excessive whitespace must also respect the byte bound.
+                    destination.write_text(json.dumps(response) + " " * 4_000_001)
+                else:
+                    write_json(destination, response)
+                    kwargs[stream].write(b"x" * 4_000_001)
+                    kwargs[stream].flush()
+    
+            def poll(self):
+                return 0
+    
+        # Documents are already represented by the public fixture. Isolate the final
+        # process-state boundary so the regression is independent of scheduler timing.
+        monkeypatch.setattr(a, "audit_public", lambda root: {"status": "passed"})
+        monkeypatch.setattr(a.subprocess, "Popen", CompletedProcess)
+        result = a.run_local(["configured-reviewer"], public, tmp_path / stream)
+        assert result["status"] == "error"
+>       assert result["reason"] == "adapter output size limit"
+E       AssertionError: assert 'missing/malf...imit exceeded' == 'adapter output size limit'
+E         
+E         - adapter output size limit
+E         + missing/malformed adapter output: JSON size limit exceeded
+
+tests\adapters\test_lifecycle.py:87: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/adapters/test_lifecycle.py::test_output_limit_checked_after_fast_process_exit[stdout]
+FAILED tests/adapters/test_lifecycle.py::test_output_limit_checked_after_fast_process_exit[stderr]
+FAILED tests/adapters/test_lifecycle.py::test_output_limit_checked_after_fast_process_exit[response]
+3 failed, 6 deselected in 0.25s

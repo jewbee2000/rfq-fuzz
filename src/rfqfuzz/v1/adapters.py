@@ -135,6 +135,10 @@ def run_local(command, public_root, out, timeout=30):
                 if any(path.stat().st_size>4_000_000 for path in (out/"stdout.bin",out/"stderr.bin",out/"response.json") if path.exists()):
                     terminate_tree(proc);reason="adapter output size limit";break
                 time.sleep(.02)
+            # A fast child can finish between polls. Its final files still have
+            # to meet the same bound before a successful response is accepted.
+            if reason is None and any(path.stat().st_size>4_000_000 for path in (out/"stdout.bin",out/"stderr.bin",out/"response.json") if path.exists()):
+                reason="adapter output size limit"
             state="timeout" if reason=="configured adapter timeout" else "error" if reason or proc.returncode else "completed"
         record = {"status":state,"command":command,"returncode":proc.returncode,"runtime_seconds":time.monotonic()-start,"reason":reason}
         if state == "completed":

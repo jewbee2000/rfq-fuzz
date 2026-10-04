@@ -1,0 +1,120 @@
+FF..F                                                                    [100%]
+================================== FAILURES ===================================
+_ test_local_bore_units_and_explicit_tolerance[mm-0.2362 +/- 0.0020 in-supported_clear] _
+
+default_unit = 'mm', callout = '0.2362 +/- 0.0020 in'
+expected = 'supported_clear'
+
+    @pytest.mark.parametrize("default_unit,callout,expected", [
+        ("mm", "0.2362 +/- 0.0020 in", "supported_clear"),
+        ("in", "6.00 +/- 0.05 mm", "supported_clear"),
+        ("mm", "0.2000 +/- 0.0010 in", "contradiction"),
+        ("in", "5.00 +/- 0.01 mm", "contradiction"),
+        ("mm", "6.00 mm", "supported_clear"),
+    ])
+    def test_local_bore_units_and_explicit_tolerance(default_unit, callout, expected):
+        packet = {
+            "units": {"model": "mm", "drawing": default_unit},
+            "authority": {"dimensions": "drawing", "material_precedence": "equal"},
+            "manufacturing": {
+                "material": "6061-T6", "model_stage": "finished",
+                "drawing_stage": "finished", "transition": None,
+            },
+            "obligations": [{"id": "bore", "category": "diameter_consistency", "feature_id": "H1"}],
+        }
+        geometry = {"bore_diameter_mm": 6.0, "h1_count": 1}
+        drawing = {"annotations": {
+            "UNITS": [f"UNITS = {default_unit}"],
+            "MATERIAL": ["MATERIAL = 6061-T6"],
+            "H1 DIAMETER": [f"H1 DIAMETER = {callout}"],
+        }}
+>       assert decisions(packet, geometry, drawing)[0]["conclusion"] == expected
+E       AssertionError: assert 'contradiction' == 'supported_clear'
+E         
+E         - supported_clear
+E         + contradiction
+
+tests\consumer\test_reference_units.py:30: AssertionError
+_ test_local_bore_units_and_explicit_tolerance[in-6.00 +/- 0.05 mm-supported_clear] _
+
+default_unit = 'in', callout = '6.00 +/- 0.05 mm', expected = 'supported_clear'
+
+    @pytest.mark.parametrize("default_unit,callout,expected", [
+        ("mm", "0.2362 +/- 0.0020 in", "supported_clear"),
+        ("in", "6.00 +/- 0.05 mm", "supported_clear"),
+        ("mm", "0.2000 +/- 0.0010 in", "contradiction"),
+        ("in", "5.00 +/- 0.01 mm", "contradiction"),
+        ("mm", "6.00 mm", "supported_clear"),
+    ])
+    def test_local_bore_units_and_explicit_tolerance(default_unit, callout, expected):
+        packet = {
+            "units": {"model": "mm", "drawing": default_unit},
+            "authority": {"dimensions": "drawing", "material_precedence": "equal"},
+            "manufacturing": {
+                "material": "6061-T6", "model_stage": "finished",
+                "drawing_stage": "finished", "transition": None,
+            },
+            "obligations": [{"id": "bore", "category": "diameter_consistency", "feature_id": "H1"}],
+        }
+        geometry = {"bore_diameter_mm": 6.0, "h1_count": 1}
+        drawing = {"annotations": {
+            "UNITS": [f"UNITS = {default_unit}"],
+            "MATERIAL": ["MATERIAL = 6061-T6"],
+            "H1 DIAMETER": [f"H1 DIAMETER = {callout}"],
+        }}
+>       assert decisions(packet, geometry, drawing)[0]["conclusion"] == expected
+E       AssertionError: assert 'contradiction' == 'supported_clear'
+E         
+E         - supported_clear
+E         + contradiction
+
+tests\consumer\test_reference_units.py:30: AssertionError
+__ test_local_bore_units_and_explicit_tolerance[mm-6.00 mm-supported_clear] ___
+
+default_unit = 'mm', callout = '6.00 mm', expected = 'supported_clear'
+
+    @pytest.mark.parametrize("default_unit,callout,expected", [
+        ("mm", "0.2362 +/- 0.0020 in", "supported_clear"),
+        ("in", "6.00 +/- 0.05 mm", "supported_clear"),
+        ("mm", "0.2000 +/- 0.0010 in", "contradiction"),
+        ("in", "5.00 +/- 0.01 mm", "contradiction"),
+        ("mm", "6.00 mm", "supported_clear"),
+    ])
+    def test_local_bore_units_and_explicit_tolerance(default_unit, callout, expected):
+        packet = {
+            "units": {"model": "mm", "drawing": default_unit},
+            "authority": {"dimensions": "drawing", "material_precedence": "equal"},
+            "manufacturing": {
+                "material": "6061-T6", "model_stage": "finished",
+                "drawing_stage": "finished", "transition": None,
+            },
+            "obligations": [{"id": "bore", "category": "diameter_consistency", "feature_id": "H1"}],
+        }
+        geometry = {"bore_diameter_mm": 6.0, "h1_count": 1}
+        drawing = {"annotations": {
+            "UNITS": [f"UNITS = {default_unit}"],
+            "MATERIAL": ["MATERIAL = 6061-T6"],
+            "H1 DIAMETER": [f"H1 DIAMETER = {callout}"],
+        }}
+>       assert decisions(packet, geometry, drawing)[0]["conclusion"] == expected
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\consumer\test_reference_units.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\rfqfuzz\v1\reference.py:61: in decisions
+    require(parts is not None,"reference cannot parse bore interval")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, reason = 'reference cannot parse bore interval'
+
+    def require(condition, reason):
+        if not condition:
+>           raise ValueError(reason)
+E           ValueError: reference cannot parse bore interval
+
+src\rfqfuzz\v1\contracts.py:25: ValueError
+=========================== short test summary info ===========================
+FAILED tests/consumer/test_reference_units.py::test_local_bore_units_and_explicit_tolerance[mm-0.2362 +/- 0.0020 in-supported_clear]
+FAILED tests/consumer/test_reference_units.py::test_local_bore_units_and_explicit_tolerance[in-6.00 +/- 0.05 mm-supported_clear]
+FAILED tests/consumer/test_reference_units.py::test_local_bore_units_and_explicit_tolerance[mm-6.00 mm-supported_clear]
+3 failed, 2 passed in 0.11s

@@ -1,0 +1,56 @@
+{
+  "stage": "post-experiment publication code audit",
+  "baseline_commit": "3bf066c",
+  "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml=../article-research/rfq-final-audit-junit.xml"
+  ],
+  "exit_code": 0,
+  "original_tests": 270,
+  "current_tests": 278,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 144.05,
+  "warnings": 4,
+  "demo_test_passed": true,
+  "demo_cases": 15,
+  "demo_injected_changes": 2,
+  "historical_oracle_or_artifacts_changed": false,
+  "targeted_command": [
+    "python",
+    "-m",
+    "pytest",
+    "tests/adapters/test_lifecycle.py",
+    "tests/consumer/test_reference_units.py",
+    "tests/consumer/test_reference_failure.py",
+    "tests/scoring/test_numeric_grounding.py",
+    "-q"
+  ],
+  "targeted_passed": 16,
+  "compile_command": [
+    "python",
+    "-m",
+    "compileall",
+    "-q",
+    "src"
+  ],
+  "compile_exit_code": 0,
+  "source_sha256": {
+    "src/rfqfuzz/v1/reference.py": "c20eca729a548bd9a531ab0487abc815eb279f11be48199608269aa8a416e8bd",
+    "src/rfqfuzz/v1/adapters.py": "2677cd6063f45039ca26db8fbead2a892215d821d5523fd7c8be2a66fcfe7cb6",
+    "tests/consumer/test_reference_units.py": "fc0825fa8bfdc8c46b256bd4a2e6c74967d781af8fd69a5cf7b0b6b6da0643f8",
+    "tests/adapters/test_lifecycle.py": "6aae085beeed95b72c6bddfc8ce3bf379676b0321ee19998b4281bb8bab8cc04"
+  },
+  "log_sha256": {
+    "junit.xml": "f75bc87542b6473d2b77492b1e224440959f778d5f0f8080149f1fc503e32a9e",
+    "output-bound-before.txt": "08a57744781bc0172b01a3dec571e7e67281585d636e62685d92b9f42ac78660",
+    "reference-units-before.txt": "32b098801938ad414d4794fad269891afc3b83964e74a8ef9aa087f7f1128fd8",
+    "tests.txt": "83aaeb544c05d1d6fa10f93551508e696be853d919ea28c49f7fdc08d6abb740"
+  }
+}

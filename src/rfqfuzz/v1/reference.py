@@ -57,9 +57,10 @@ def decisions(p,g,d):
             text=val(d,"H1 DIAMETER")
             if text:
                 evidence.append(ev("drawing.pdf",first(d,"H1 DIAMETER")))
-                parts=re.fullmatch(r"([0-9.]+) \+/- ([0-9.]+) (mm|in)( REF)?",text)
+                parts=re.fullmatch(r"([0-9]+(?:\.[0-9]+)?)(?: \+/- ([0-9]+(?:\.[0-9]+)?))? (mm|in)( REF)?",text)
                 require(parts is not None,"reference cannot parse bore interval")
-                nominal=float(parts[1])*scale;tolerance=float(parts[2])*scale
+                local_scale=25.4 if parts[3]=="in" else 1
+                nominal=float(parts[1])*local_scale;tolerance=float(parts[2] or 0)*local_scale
             if a["dimensions"]=="step" or text and parts[4]:pass
             elif not text:conclusion="missing_information"
             elif m["model_stage"]!=m["drawing_stage"]:

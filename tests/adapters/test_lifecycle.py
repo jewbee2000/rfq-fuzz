@@ -1,4 +1,5 @@
 import importlib.util
+import io
 import json
 from pathlib import Path
 import shutil
@@ -54,3 +55,33 @@ def test_oversized_import_and_process_output_retains_reason(public,tmp_path):
     assert record["status"]=="error" and 'size limit' in (tmp_path/"oversized/import.json").read_text()
     record=a.run_local([sys.executable,"-c","import sys,time;sys.stdout.write('x'*4_100_000);sys.stdout.flush();time.sleep(10)"],public,tmp_path/"output-limit")
     assert record["status"]=="error" and record["reason"]=="adapter output size limit"
+
+
+@pytest.mark.parametrize("stream", ["stdout", "stderr", "response"])
+def test_output_limit_checked_after_fast_process_exit(public, tmp_path, monkeypatch, stream):
+    class CompletedProcess:
+        returncode = 0
+
+        def __init__(self, command, **kwargs):
+            self.stdin = io.BytesIO()
+            response = helper.review()
+            response["results"][0]["packet_sha256"] = sha256(next(public.glob("*/packet.json")))
+            destination = Path(kwargs["cwd"]) / "response.json"
+            if stream == "response":
+                # Valid JSON with excessive whitespace must also respect the byte bound.
+                destination.write_text(json.dumps(response) + " " * 4_000_001)
+            else:
+                write_json(destination, response)
+                kwargs[stream].write(b"x" * 4_000_001)
+                kwargs[stream].flush()
+
+        def poll(self):
+            return 0
+
+    # Documents are already represented by the public fixture. Isolate the final
+    # process-state boundary so the regression is independent of scheduler timing.
+    monkeypatch.setattr(a, "audit_public", lambda root: {"status": "passed"})
+    monkeypatch.setattr(a.subprocess, "Popen", CompletedProcess)
+    result = a.run_local(["configured-reviewer"], public, tmp_path / stream)
+    assert result["status"] == "error"
+    assert result["reason"] == "adapter output size limit"
