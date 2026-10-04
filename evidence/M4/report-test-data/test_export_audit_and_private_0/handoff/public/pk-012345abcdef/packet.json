@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "case_id": "pk-012345abcdef",
+  "part_id": "P1",
+  "family": "plate",
+  "units": {
+    "model": "mm",
+    "drawing": "mm"
+  },
+  "release_association": {
+    "model_id": "P1",
+    "model_revision": "A",
+    "drawing_id": "P1",
+    "drawing_revision": "B",
+    "permitted_pairs": [
+      [
+        "A",
+        "B"
+      ]
+    ]
+  },
+  "authority": {
+    "geometry": "step",
+    "dimensions": "drawing",
+    "material_precedence": "equal",
+    "process": "Explicit public stage",
+    "release": "Approved pairs govern"
+  },
+  "manufacturing": {
+    "model_stage": "finished",
+    "drawing_stage": "finished",
+    "transition": null,
+    "material": "6061-T6",
+    "material_class": "metal",
+    "finish": "none",
+    "tolerance_stage": "after_finish"
+  },
+  "setup": {
+    "orientation": "XYZ",
+    "stock_allowance_mm": [
+      2,
+      2,
+      2
+    ],
+    "fixture_allowance_mm": [
+      0,
+      0,
+      5
+    ]
+  },
+  "profile": {
+    "schema_version": "1.0",
+    "id": "synthetic-standard",
+    "version": "1",
+    "synthetic": true,
+    "scope": "Finite synthetic setup",
+    "unsupported_operations": [
+      "CAM"
+    ],
+    "rules": [
+      {
+        "id": "A01",
+        "version": "1",
+        "source": "project release contract",
+        "retrieved": "2026-10-04",
+        "paraphrase": "Conditional synthetic policy",
+        "applicability": [
+          "metal"
+        ],
+        "units": "mm",
+        "threshold": 1,
+        "comparison": "less_than",
+        "severity": "advisory",
+        "precedence": "explicit requirement first",
+        "limits": "Not universal feasibility",
+        "synthetic_value": true
+      },
+      {
+        "id": "A02",
+        "version": "1",
+        "source": "project release contract",
+        "retrieved": "2026-10-04",
+        "paraphrase": "Conditional synthetic policy",
+        "applicability": [
+          "metal"
+        ],
+        "units": "mm",
+        "threshold": 1,
+        "comparison": "less_than",
+        "severity": "advisory",
+        "precedence": "explicit requirement first",
+        "limits": "Not universal feasibility",
+        "synthetic_value": true
+      },
+      {
+        "id": "A03",
+        "version": "1",
+        "source": "project release contract",
+        "retrieved": "2026-10-04",
+        "paraphrase": "Conditional synthetic policy",
+        "applicability": [
+          "metal"
+        ],
+        "units": "mm",
+        "threshold": 1,
+        "comparison": "less_than",
+        "severity": "profile_exclusion",
+        "precedence": "explicit requirement first",
+        "limits": "Not universal feasibility",
+        "synthetic_value": true
+      },
+      {
+        "id": "A04",
+        "version": "1",
+        "source": "project release contract",
+        "retrieved": "2026-10-04",
+        "paraphrase": "Conditional synthetic policy",
+        "applicability": [
+          "metal"
+        ],
+        "units": "mm",
+        "threshold": 1,
+        "comparison": "less_than",
+        "severity": "missing_information",
+        "precedence": "explicit requirement first",
+        "limits": "Not universal feasibility",
+        "synthetic_value": true
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "H1",
+      "type": "through_bore_group",
+      "drawing_association": "Plan H1 leader",
+      "centers_mm": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "C1",
+      "representation": "drawing",
+      "description": "INSPECT H1 after finish"
+    }
+  ],
+  "obligations": [
+    {
+      "id": "bore_consistency",
+      "track": "package_consistency",
+      "category": "diameter",
+      "feature_id": "H1",
+      "required_modalities": [
+        "step",
+        "pdf",
+        "context"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "part.step",
+      "sha256": "b439aa4be158cbb10535ec81482a99872678d912d9f3b93c76eba389a99d965c",
+      "media_type": "model/step"
+    },
+    {
+      "path": "drawing.pdf",
+      "sha256": "70fcfb8a2e7ad230689d50bf85401c243ab5d2a0fc2c526335af2c8bf6215a0f",
+      "media_type": "application/pdf"
+    },
+    {
+      "path": "drawing.png",
+      "sha256": "fc83943fe2f28b45c0a632ba95dc0fa9a5e62cc8187e7ba50b90f7bd29404c79",
+      "media_type": "image/png"
+    }
+  ],
+  "render": {
+    "renderer": "Poppler",
+    "dpi": 200
+  }
+}

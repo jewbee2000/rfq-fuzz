@@ -1,0 +1,137 @@
+{
+  "reviewer": {
+    "name": "independent",
+    "version": "1",
+    "configuration": "<script>alert(1)</script>"
+  },
+  "manifest": {
+    "suite_sha256": "a",
+    "oracle_sha256": "b",
+    "profile_sha256": "c"
+  },
+  "score": {
+    "tracks": {
+      "package_consistency": {
+        "applicable": 1,
+        "issues": 1,
+        "clean": 0,
+        "underdetermined": 0,
+        "detected": 1,
+        "false_alerts": 0,
+        "explicit_false_clears": 0,
+        "silent_misses": 0,
+        "correct_clear": 0,
+        "appropriate_abstentions": 0,
+        "abstentions": 0,
+        "covered": 1,
+        "execution_failures": 0,
+        "unsupported": 0,
+        "unasserted_clean": 0,
+        "reasoning_errors": 0,
+        "rates": {
+          "recall": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "named_clean_false_alert": {
+            "numerator": 0,
+            "denominator": 0
+          },
+          "explicit_false_clear": {
+            "numerator": 0,
+            "denominator": 1
+          },
+          "coverage": {
+            "numerator": 1,
+            "denominator": 1
+          },
+          "appropriate_abstention": {
+            "numerator": 0,
+            "denominator": 0
+          }
+        }
+      },
+      "cnc_advisory": {
+        "applicable": 0,
+        "issues": 0,
+        "clean": 0,
+        "underdetermined": 0,
+        "detected": 0,
+        "false_alerts": 0,
+        "explicit_false_clears": 0,
+        "silent_misses": 0,
+        "correct_clear": 0,
+        "appropriate_abstentions": 0,
+        "abstentions": 0,
+        "covered": 0,
+        "execution_failures": 0,
+        "unsupported": 0,
+        "unasserted_clean": 0,
+        "reasoning_errors": 0,
+        "rates": {
+          "recall": {
+            "numerator": 0,
+            "denominator": 0
+          },
+          "named_clean_false_alert": {
+            "numerator": 0,
+            "denominator": 0
+          },
+          "explicit_false_clear": {
+            "numerator": 0,
+            "denominator": 0
+          },
+          "coverage": {
+            "numerator": 0,
+            "denominator": 0
+          },
+          "appropriate_abstention": {
+            "numerator": 0,
+            "denominator": 0
+          }
+        }
+      }
+    },
+    "operators": {
+      "O01": {
+        "issues": 1,
+        "detected": 1
+      }
+    },
+    "rows": [
+      {
+        "case_id": "pk-012345abcdef",
+        "obligation_id": "bore_consistency",
+        "track": "package_consistency",
+        "operator": "O01",
+        "expected": "contradiction",
+        "actual": "contradiction",
+        "status": "completed",
+        "outcome": "detected",
+        "matched_finding": {
+          "id": "f1",
+          "obligation_id": "bore_consistency",
+          "category": "diameter",
+          "feature_id": "H1",
+          "conclusion": "contradiction",
+          "evidence": [
+            {
+              "artifact": "drawing.pdf",
+              "quote": "H1 6.00"
+            }
+          ],
+          "rationale": "Supported by public evidence"
+        }
+      }
+    ],
+    "invalid_fixtures": [],
+    "invalid_rate": {
+      "numerator": 0,
+      "denominator": 1
+    },
+    "unadjudicated": [],
+    "suppressed_duplicates": [],
+    "precision_finalized": true,
+    "precision_note": "Finite obligation matching only; no claim about all drawing content or industrial competence"
+  }
+}

@@ -258,10 +258,10 @@
       "scope": "Implement escaped source-linked HTML, bounded parsers and recoverable run state.",
       "acceptance": "A reader follows changed finding to exact evidence; unsafe text cannot execute; interruptions preserve results.",
       "evidence": "evidence/M4/report-and-failures.md",
-      "verification": "python -m pytest tests/reporting tests/adapters",
-      "verification_is_proposed": true,
-      "status": "in_progress",
-      "completion_commit": null
+      "verification": ".venv/Scripts/python.exe -m pytest tests/reporting tests/adapters --basetemp evidence/M4/report-test-data -q (7 passed); tools/render_report.cjs via installed Edge (no errors/network/overflow)",
+      "verification_is_proposed": false,
+      "status": "completed",
+      "completion_commit": "070788d6dc49c06675e87457a371da9b81acb808"
     },
     {
       "id": "T13",

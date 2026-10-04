@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>RFQFuzz review regression</title><style>body{margin:0;background:#f4f6f8;color:#203044;font:16px/1.5 system-ui,sans-serif}main{max-width:1200px;margin:auto;padding:30px}h1{font-size:36px}h2{margin-top:32px}section,article{background:white;border:1px solid #cbd4df;border-radius:8px;padding:24px;margin:24px 0}a{color:#125c87}table{border-collapse:collapse;width:100%}th,td{border:1px solid #cbd4df;padding:10px;text-align:left;vertical-align:top}pre{background:#eef2f6;padding:16px;overflow:auto;font-size:13px}img{max-width:100%;height:auto}.notice{background:#fff0d2;padding:20px;border-left:5px solid #b77219}.change{font-size:18px}.muted{color:#5b6876}summary{cursor:pointer;padding:10px}</style></head><body><main><h1>RFQFuzz · review regression</h1><p>Finite CNC RFQ obligations, independently checked exported artifacts and explicit review coverage.</p><p class="notice">This is a synthetic regression toolkit. It does not approve a part for manufacture or establish general industrial competence. Deliberately injected reviewer changes are labeled in their reviewer configuration; genuine external observations remain separate.</p><h2>What changed</h2><article><h3>independent → independent</h3><p>&lt;script&gt;alert(1)&lt;/script&gt;</p><ul></ul></article><h2>Separate tracks and denominators</h2><article><h3>independent · 1</h3><p>&lt;script&gt;alert(1)&lt;/script&gt;</p><table><tr><th>Track</th><th>Detection</th><th>Named clean alerts</th><th>Explicit false clears</th><th>Coverage</th><th>Appropriate abstention</th><th>Failures / unsupported</th></tr><tr><th>package_consistency</th><td>1/1</td><td>0/0</td><td>0/1</td><td>1/1</td><td>0/0</td><td>0 / 0</td></tr><tr><th>cnc_advisory</th><td>0/0</td><td>0/0</td><td>0/0</td><td>0/0</td><td>0/0</td><td>0 / 0</td></tr></table><p>Unadjudicated findings: 0. Invalid fixtures: {&#x27;numerator&#x27;: 0, &#x27;denominator&#x27;: 1}. Precision finalized for finite matching: True. No composite score.</p><p><a href="../a/run.json">Run manifest and full counts</a> · <a href="../a/raw-review.json">Original raw response</a></p></article><article><h3>independent · 1</h3><p>&lt;script&gt;alert(1)&lt;/script&gt;</p><table><tr><th>Track</th><th>Detection</th><th>Named clean alerts</th><th>Explicit false clears</th><th>Coverage</th><th>Appropriate abstention</th><th>Failures / unsupported</th></tr><tr><th>package_consistency</th><td>1/1</td><td>0/0</td><td>0/1</td><td>1/1</td><td>0/0</td><td>0 / 0</td></tr><tr><th>cnc_advisory</th><td>0/0</td><td>0/0</td><td>0/0</td><td>0/0</td><td>0/0</td><td>0 / 0</td></tr></table><p>Unadjudicated findings: 0. Invalid fixtures: {&#x27;numerator&#x27;: 0, &#x27;denominator&#x27;: 1}. Precision finalized for finite matching: True. No composite score.</p><p><a href="../b/run.json">Run manifest and full counts</a> · <a href="../b/raw-review.json">Original raw response</a></p></article><h2>Inspect expected and actual evidence</h2><section><h3>pk-012345abcdef · MP-001</h3><p><a href="../public/pk-012345abcdef/drawing.pdf">Actual PDF page</a> · <a href="../public/pk-012345abcdef/drawing.png">Supplied rendered PNG</a> · <a href="../public/pk-012345abcdef/part.step">Exported STEP</a> · <a href="../public/pk-012345abcdef/packet.json">Public engineering contract</a></p><details><summary>Drawing, reimported geometry and public premises</summary><img src="../public/pk-012345abcdef/drawing.png" alt="Supplied complete engineering drawing"><pre>{}</pre><pre>{
+  &quot;nominal_geometry&quot;: &quot;STEP at model_stage&quot;,
+  &quot;views&quot;: &quot;drawing geometry views depict supplied STEP at model_stage; numeric bore callout governs drawing_stage&quot;,
+  &quot;tolerances&quot;: &quot;visible drawing callouts at drawing_stage&quot;,
+  &quot;process&quot;: &quot;public manufacturing contract and visible drawing notes&quot;,
+  &quot;consistency&quot;: &quot;same-stage drawing intervals must contain STEP nominal; explicit later-stage operation governs its target stage&quot;
+}</pre><pre>{
+  &quot;model_stage&quot;: &quot;finished&quot;,
+  &quot;drawing_stage&quot;: &quot;finished&quot;,
+  &quot;transition&quot;: null,
+  &quot;material&quot;: &quot;6061-T6&quot;,
+  &quot;finish&quot;: &quot;none&quot;
+}</pre></details><article id="pk-012345abcdef-bore_consistency"><h4>bore_consistency · package_consistency</h4><p>Validated expected conclusion: <b>contradiction</b>; location H1. Root cause units.</p><pre>[
+  {
+    &quot;artifact&quot;: &quot;drawing.pdf&quot;,
+    &quot;quote&quot;: &quot;H1 6.00&quot;
+  }
+]</pre><p class="muted">Package rule: finite public authority/release contract, schema 1.0; project-selected obligation. This is not an industry standard completeness assessment.</p><p><b>independent</b>: detected · actual contradiction · execution completed</p><details><summary>Original grounded finding</summary><pre>{
+  &quot;case_id&quot;: &quot;pk-012345abcdef&quot;,
+  &quot;obligation_id&quot;: &quot;bore_consistency&quot;,
+  &quot;track&quot;: &quot;package_consistency&quot;,
+  &quot;operator&quot;: &quot;O01&quot;,
+  &quot;expected&quot;: &quot;contradiction&quot;,
+  &quot;actual&quot;: &quot;contradiction&quot;,
+  &quot;status&quot;: &quot;completed&quot;,
+  &quot;outcome&quot;: &quot;detected&quot;,
+  &quot;matched_finding&quot;: {
+    &quot;id&quot;: &quot;f1&quot;,
+    &quot;obligation_id&quot;: &quot;bore_consistency&quot;,
+    &quot;category&quot;: &quot;diameter&quot;,
+    &quot;feature_id&quot;: &quot;H1&quot;,
+    &quot;conclusion&quot;: &quot;contradiction&quot;,
+    &quot;evidence&quot;: [
+      {
+        &quot;artifact&quot;: &quot;drawing.pdf&quot;,
+        &quot;quote&quot;: &quot;H1 6.00&quot;
+      }
+    ],
+    &quot;rationale&quot;: &quot;Supported by public evidence&quot;
+  }
+}</pre></details><p><b>independent</b>: detected · actual contradiction · execution completed</p><details><summary>Original grounded finding</summary><pre>{
+  &quot;case_id&quot;: &quot;pk-012345abcdef&quot;,
+  &quot;obligation_id&quot;: &quot;bore_consistency&quot;,
+  &quot;track&quot;: &quot;package_consistency&quot;,
+  &quot;operator&quot;: &quot;O01&quot;,
+  &quot;expected&quot;: &quot;contradiction&quot;,
+  &quot;actual&quot;: &quot;contradiction&quot;,
+  &quot;status&quot;: &quot;completed&quot;,
+  &quot;outcome&quot;: &quot;detected&quot;,
+  &quot;matched_finding&quot;: {
+    &quot;id&quot;: &quot;f1&quot;,
+    &quot;obligation_id&quot;: &quot;bore_consistency&quot;,
+    &quot;category&quot;: &quot;diameter&quot;,
+    &quot;feature_id&quot;: &quot;H1&quot;,
+    &quot;conclusion&quot;: &quot;contradiction&quot;,
+    &quot;evidence&quot;: [
+      {
+        &quot;artifact&quot;: &quot;drawing.pdf&quot;,
+        &quot;quote&quot;: &quot;H1 6.00&quot;
+      }
+    ],
+    &quot;rationale&quot;: &quot;Supported by public evidence&quot;
+  }
+}</pre></details></article></section><h2>Limits and replay</h2><p>Same-user blinding is procedural. Independent modules share OCCT; analytic checks and corruption controls supplement it. Canonical quotation matching is conservative; free prose requires explicit adjudication. Only named finite obligations are scored. Expected answers and operators shown here are private evaluation outputs, never reviewer inputs.</p><p><a href="../oracle.json">Complete independent oracle and retained exclusions</a></p><pre>{
+  &quot;suite_sha256&quot;: &quot;a&quot;,
+  &quot;oracle_sha256&quot;: &quot;b&quot;,
+  &quot;profile_sha256&quot;: &quot;c&quot;
+}</pre></main></body></html>

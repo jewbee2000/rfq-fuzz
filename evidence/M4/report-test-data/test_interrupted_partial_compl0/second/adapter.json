@@ -1,0 +1,46 @@
+{
+  "status": "completed",
+  "response": {
+    "schema_version": "1.0",
+    "reviewer": {
+      "name": "independent",
+      "version": "1",
+      "configuration": "manual"
+    },
+    "results": [
+      {
+        "case_id": "pk-012345abcdef",
+        "packet_sha256": "3ca6f983227a574f4d0e9d1fc61a384c0c2537c9ff87478404c41e6b597a768a",
+        "status": "completed",
+        "reviewed_modalities": [
+          "pdf",
+          "step",
+          "context"
+        ],
+        "reviewed_obligations": [
+          "bore_consistency"
+        ],
+        "findings": [],
+        "assertions": [
+          {
+            "id": "f1",
+            "obligation_id": "bore_consistency",
+            "category": "diameter",
+            "feature_id": "H1",
+            "conclusion": "supported_clear",
+            "evidence": [
+              {
+                "artifact": "drawing.pdf",
+                "quote": "H1 6.00"
+              }
+            ],
+            "rationale": "Supported by public evidence"
+          }
+        ],
+        "runtime_seconds": null,
+        "raw_ref": null,
+        "reason": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "error",
+  "command": [
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+    "-c",
+    "print('hello')"
+  ],
+  "returncode": 0,
+  "runtime_seconds": 0.030999999995401595,
+  "reason": "missing/malformed adapter output: [WinError 2] The system cannot find the file specified: 'C:\\\\Users\\\\Walt\\\\Documents\\\\Codex\\\\2026-10-03\\\\g\\\\outputs\\\\projects\\\\rfq-fuzz\\\\evidence\\\\M4\\\\report-test-data\\\\test_malformed_process_and_pac0\\\\malformed\\\\response.json'"
+}

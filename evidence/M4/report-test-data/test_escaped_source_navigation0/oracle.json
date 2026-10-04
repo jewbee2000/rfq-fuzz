@@ -1,0 +1,35 @@
+{
+  "cases": [
+    {
+      "schema_version": "1.0",
+      "oracle_version": "1",
+      "case_id": "pk-012345abcdef",
+      "packet_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "status": "valid",
+      "reasons": [],
+      "measurements": {},
+      "drawing": {},
+      "expectations": [
+        {
+          "obligation_id": "bore_consistency",
+          "track": "package_consistency",
+          "category": "diameter",
+          "feature_id": "H1",
+          "conclusion": "contradiction",
+          "rule_id": null,
+          "evidence": [
+            {
+              "artifact": "drawing.pdf",
+              "quote": "H1 6.00"
+            }
+          ],
+          "root_cause": "units",
+          "operator": "O01"
+        }
+      ],
+      "isolation": {
+        "passed": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "comparisons": [
+    {
+      "before_reviewer": {
+        "name": "independent",
+        "version": "1",
+        "configuration": "<script>alert(1)</script>"
+      },
+      "after_reviewer": {
+        "name": "independent",
+        "version": "1",
+        "configuration": "<script>alert(1)</script>"
+      },
+      "changes": []
+    }
+  ],
+  "manifest": {
+    "suite_sha256": "a",
+    "oracle_sha256": "b",
+    "profile_sha256": "c"
+  },
+  "scope": "Finite synthetic obligations; no industrial competence or manufacturing approval"
+}
