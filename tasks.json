@@ -150,10 +150,10 @@
       "scope": "Implement six objective operators and conditional advisory/profile variants with prerequisites and invariants.",
       "acceptance": "Defect/repair/valid examples; missing context and negative controls; unsupported edits refuse.",
       "evidence": "evidence/M2/mutations.md",
-      "verification": "python -m pytest tests/mutations",
-      "verification_is_proposed": true,
-      "status": "in_progress",
-      "completion_commit": null
+      "verification": ".venv/Scripts/python.exe -m pytest tests/mutations -q (14 passed); tests/mutations/retain_suite.py and append_sparse_control.py export/reopen145",
+      "verification_is_proposed": false,
+      "status": "completed",
+      "completion_commit": "c255905"
     },
     {
       "id": "T08",
