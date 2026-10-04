@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case_id": "pk-0236ce4290c1",
+      "packet_sha256": "4f774087b830c30af74396b1027ff19390c4dfc3bf387579b685b753d1c0fc73",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    }
+  ],
+  "limitations": "Procedural blinding on the same machine; no adversarial sandbox"
+}

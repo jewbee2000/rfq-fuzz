@@ -1,0 +1,14 @@
+{
+  "source_sha256": "b4b59ccd84833e0c84487c84cc5a29cc3200126512cee22d9ca1b65b0d12a61c",
+  "status": "error",
+  "reason": "adapter output size limit",
+  "stdout_bytes": 5000001,
+  "configured_output_limit": 4000000,
+  "command": [
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+    "-c",
+    "import sys,json,os; q=json.loads(sys.stdin.read()); data=json.load(open(sys.argv[1],encoding='utf-8')); json.dump(data,open(q['response_path'],'w',encoding='utf-8')); os.write(1,b'x'*5000001); os._exit(0)",
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\final-review\\burst-response.json"
+  ],
+  "response_rows": 0
+}

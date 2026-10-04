@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+    "-m",
+    "rfqfuzz.v1",
+    "reference",
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\final-review\\corrupt-reference-public",
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\final-review\\corrupt-reference-output-fixed"
+  ],
+  "returncode": 2,
+  "stdout": "{\n  \"status\": \"contains_failures\",\n  \"states\": {\n    \"error\": 1\n  },\n  \"cases\": 1,\n  \"response\": \"C:\\\\Users\\\\Walt\\\\Documents\\\\Codex\\\\2026-10-03\\\\g\\\\outputs\\\\projects\\\\rfq-fuzz\\\\work\\\\final-review\\\\corrupt-reference-output-fixed\\\\review.json\",\n  \"limitations\": \"Public-only template reference shares observed readers with validator; no independent competence claim\"\n}\n",
+  "stderr": "",
+  "cli_sha256": "33abddcaa34fca125a1158befff89bac086193d255161248a21082e804557ced"
+}

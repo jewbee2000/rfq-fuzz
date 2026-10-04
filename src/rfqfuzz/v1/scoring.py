@@ -15,12 +15,13 @@ def normalized(text):
 def matches(item, expected):
     if any(item[k] != expected[k] for k in ("obligation_id", "category", "feature_id")):
         return False
-    # A quoted canonical source line or measured witness must actually appear;
-    # numbers alone are insufficient. This intentionally conservative structured
+    # Complete canonical source lines/witnesses must match exactly after benign
+    # case/whitespace normalization. Substrings allow 4 to receive credit for40.
+    # Numbers alone are insufficient. This intentionally conservative structured
     # path does not infer semantic equivalence from arbitrary free prose.
     for witness in expected["evidence"]:
         hits = [w for w in item["evidence"] if w["artifact"] == witness["artifact"]
-                and normalized(witness["quote"]) in normalized(w["quote"])
+                and normalized(witness["quote"]) == normalized(w["quote"])
                 and ("region" not in witness or w.get("region") == witness["region"])]
         if not hits:
             return False

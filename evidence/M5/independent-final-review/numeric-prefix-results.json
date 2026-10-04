@@ -1,0 +1,51 @@
+{
+  "scoring_sha256": "d0dcd14b0b66693253dc8751fffba35acf5a4f8b022a9a76f46ecb67737c6ad4",
+  "case_id": "pk-d0f406e22f58",
+  "obligation_id": "obj-count",
+  "changes": [
+    {
+      "artifact": "part.step",
+      "correct_quote": "H1 count=4",
+      "false_quote": "H1 count=40"
+    },
+    {
+      "artifact": "drawing.pdf",
+      "correct_quote": "H1 COUNT = 3",
+      "false_quote": "H1 COUNT = 30"
+    }
+  ],
+  "matches_original": true,
+  "matches_false_numeric_prefix": true,
+  "scored_row": {
+    "case_id": "pk-d0f406e22f58",
+    "obligation_id": "obj-count",
+    "track": "package_consistency",
+    "operator": "O02",
+    "expected": "contradiction",
+    "actual": "contradiction",
+    "status": "completed",
+    "outcome": "detected",
+    "matched_finding": {
+      "id": "obj-count",
+      "obligation_id": "obj-count",
+      "category": "count_consistency",
+      "feature_id": "H1",
+      "conclusion": "contradiction",
+      "evidence": [
+        {
+          "artifact": "part.step",
+          "quote": "H1 count=40"
+        },
+        {
+          "artifact": "packet.json",
+          "quote": "{\"authority.dimensions\":\"drawing\",\"features\":[{\"centers_mm\":[[-25.0,-15.0,0.0],[-25.0,15.0,0.0],[25.0,-15.0,0.0],[25.0,15.0,0.0]],\"drawing_association\":\"PLAN: all numbered H1 Z bores; H1 grouped diameter/count annotations\",\"id\":\"H1\",\"type\":\"through_bore_group\"}]}"
+        },
+        {
+          "artifact": "drawing.pdf",
+          "quote": "H1 COUNT = 30"
+        }
+      ],
+      "rationale": "Finite public-authority rule applied to observed final artifacts; template reference only, no general manufacturing conclusion."
+    }
+  }
+}

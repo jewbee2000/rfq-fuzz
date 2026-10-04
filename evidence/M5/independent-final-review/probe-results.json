@@ -1,0 +1,40 @@
+{
+  "source_sha256": {
+    "src/rfqfuzz/v1/reporting.py": "dee94eb2d7a38118325806b319b09085b335b9055c6bb46247456011e779f599",
+    "src/rfqfuzz/v1/cli.py": "cfe39d32f7ff5455960bc68e93d254d1bb96d650ce00cd57521ea25a1e73122e",
+    "src/rfqfuzz/v1/reference.py": "54c310a70131d241286644d7b57ab424c3be1ab6a25f5a8b83334c3f99d7430f"
+  },
+  "revised_oracle": {
+    "rejected": true,
+    "reason": "report source binding mismatch: oracle_sha256",
+    "output_created": false
+  },
+  "malformed_rate_html": {
+    "report_written": true,
+    "literal_script_written": false,
+    "audit": {
+      "status": "passed",
+      "local_links": 78,
+      "unsafe_elements": 0
+    }
+  },
+  "reference_error_summary": {
+    "command": [
+      "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+      "-m",
+      "rfqfuzz.v1",
+      "reference",
+      "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\final-review\\corrupt-reference-public",
+      "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\final-review\\corrupt-reference-output"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"cases\": 1,\n  \"response\": \"C:\\\\Users\\\\Walt\\\\Documents\\\\Codex\\\\2026-10-03\\\\g\\\\outputs\\\\projects\\\\rfq-fuzz\\\\work\\\\final-review\\\\corrupt-reference-output\\\\review.json\",\n  \"limitations\": \"Public-only template reference shares observed readers with validator; no independent competence claim\"\n}\n",
+    "stderr": "",
+    "statuses": [
+      "error"
+    ],
+    "reasons": [
+      "reference artifact reader failed"
+    ]
+  }
+}

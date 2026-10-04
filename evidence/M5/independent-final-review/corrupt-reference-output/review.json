@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "reviewer": {
+    "name": "RFQFuzz public-only template reference",
+    "version": "1.0",
+    "configuration": "Shares observed readers/OCCT with validator; own public rule logic; not independent reviewer performance"
+  },
+  "results": [
+    {
+      "case_id": "pk-0236ce4290c1",
+      "packet_sha256": "8c9187b3ed197743ff7248a77c466065d3fe588cb44880cf0619a49a3ddb5e60",
+      "status": "error",
+      "reviewed_modalities": [],
+      "reviewed_obligations": [],
+      "findings": [],
+      "assertions": [],
+      "runtime_seconds": 1.2809999999954016,
+      "raw_ref": null,
+      "reason": "reference artifact reader failed"
+    }
+  ]
+}

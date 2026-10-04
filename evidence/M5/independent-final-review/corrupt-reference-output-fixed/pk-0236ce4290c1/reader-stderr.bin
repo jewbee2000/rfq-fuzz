@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\src\rfqfuzz\v1\reference.py", line 158, in <module>
+    write_json(target/"observed.json",{"geometry":measure_step(folder/"part.step",p["family"],p["features"]),"drawing":inspect_drawing(folder/"drawing.pdf",folder/"drawing.png",target/"drawing")})
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\src\rfqfuzz\v1\validation.py", line 189, in inspect_drawing
+    reader = PdfReader(pdf_path, strict=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\pypdf\_reader.py", line 149, in __init__
+    self._initialize_stream(stream)
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\pypdf\_reader.py", line 171, in _initialize_stream
+    self.read(stream)
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\pypdf\_reader.py", line 644, in read
+    self._find_eof_marker(stream)
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\pypdf\_reader.py", line 748, in _find_eof_marker
+    raise PdfReadError("EOF marker not found")
+pypdf.errors.PdfReadError: EOF marker not found

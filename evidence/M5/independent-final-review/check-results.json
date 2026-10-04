@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/adapters",
+    "tests/consumer",
+    "tests/reporting",
+    "-q"
+  ],
+  "returncode": 0,
+  "source_sha256": {
+    "src/rfqfuzz/v1/cli.py": "33abddcaa34fca125a1158befff89bac086193d255161248a21082e804557ced",
+    "src/rfqfuzz/v1/api.py": "0e28bc3d87df55271d412b76a109a64ae1ecdfb6175c26f412fc109fd05d0d04",
+    "src/rfqfuzz/v1/adapters.py": "b4b59ccd84833e0c84487c84cc5a29cc3200126512cee22d9ca1b65b0d12a61c",
+    "src/rfqfuzz/v1/reference.py": "54c310a70131d241286644d7b57ab424c3be1ab6a25f5a8b83334c3f99d7430f",
+    "src/rfqfuzz/v1/reporting.py": "dee94eb2d7a38118325806b319b09085b335b9055c6bb46247456011e779f599",
+    "docs/DEMO.md": "a97907859c3984cfce07e92f48e273cc92b1d2938dbfcfc6e39526171b33af9c",
+    "docs/REVIEWER_PROTOCOL.md": "7cf019c806f8a305667c9694ddc674a71635d7fb2dc45d7cb39e4c57a5315fa1"
+  }
+}

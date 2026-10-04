@@ -1,0 +1,12 @@
+{
+  "case_id": "pk-0236ce4290c1",
+  "packet_sha256": "8c9187b3ed197743ff7248a77c466065d3fe588cb44880cf0619a49a3ddb5e60",
+  "status": "error",
+  "reviewed_modalities": [],
+  "reviewed_obligations": [],
+  "findings": [],
+  "assertions": [],
+  "runtime_seconds": 1.312999999994645,
+  "raw_ref": null,
+  "reason": "reference artifact reader failed"
+}

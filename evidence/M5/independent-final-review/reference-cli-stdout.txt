@@ -1,0 +1,5 @@
+{
+  "cases": 1,
+  "response": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\final-review\\corrupt-reference-output\\review.json",
+  "limitations": "Public-only template reference shares observed readers with validator; no independent competence claim"
+}
