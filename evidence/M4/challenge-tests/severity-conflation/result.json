@@ -1,0 +1,22 @@
+{
+  "id": "severity-conflation",
+  "category": "severity",
+  "source_file": "src/rfqfuzz/v1/validation.py",
+  "original_source_sha256": "30cca0859515dfd816c7d2e11e49be5b09f9141b723eeb517aee72fbba99b966",
+  "mutated_source_sha256": "716ac20e1a620fae22c846a5083f1df2b52028199ace3a9f571ffccfa9049a04",
+  "patch_sha256": "a33137c368e22a87ae234a73f2af29f71c0f5e6e5dc6913541bb8e66e03ade1b",
+  "test": "tests/metamorphic/test_evaluator_challenge.py::test_thin_wall_advisory_keeps_its_conclusion_class",
+  "command": [
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/metamorphic/test_evaluator_challenge.py::test_thin_wall_advisory_keeps_its_conclusion_class",
+    "-q",
+    "--basetemp",
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\severity-conflation\\artifacts"
+  ],
+  "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\work\\evaluator-mutants\\challenge-tests\\severity-conflation",
+  "returncode": 1,
+  "status": "killed",
+  "mechanism": "actual production-source replacement in an isolated ignored work copy; fixed acceptance test unchanged"
+}

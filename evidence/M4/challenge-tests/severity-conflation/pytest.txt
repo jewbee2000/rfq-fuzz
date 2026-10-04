@@ -1,0 +1,36 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+_____________ test_thin_wall_advisory_keeps_its_conclusion_class ______________
+
+tmp_path = WindowsPath('C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/.workers/challenge-v1/evidence/M4/challenge-tests/severity-conflation/artifacts/test_thin_wall_advisory_keeps_0')
+
+    def test_thin_wall_advisory_keeps_its_conclusion_class(tmp_path):
+        _, observed = observe(tmp_path, "pocket_block", parameters={"wall": .6})
+>       assert conclusion(observed, "cnc-wall") == "advisory"
+E       AssertionError: assert 'profile_exclusion' == 'advisory'
+E         
+E         - advisory
+E         + profile_exclusion
+
+tests\metamorphic\test_evaluator_challenge.py:41: AssertionError
+============================== warnings summary ===============================
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1353
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1353: DeprecationWarning: The 'PointArcTangentLine' object is deprecated and will be removed in a future version.
+    class PointArcTangentLine(BaseEdgeObject):
+
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1432
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1432: DeprecationWarning: The 'PointArcTangentArc' object is deprecated and will be removed in a future version.
+    class PointArcTangentArc(BaseEdgeObject):
+
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1586
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1586: DeprecationWarning: The 'ArcArcTangentLine' object is deprecated and will be removed in a future version.
+    class ArcArcTangentLine(BaseEdgeObject):
+
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1682
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1682: DeprecationWarning: The 'ArcArcTangentArc' object is deprecated and will be removed in a future version.
+    class ArcArcTangentArc(BaseEdgeObject):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/metamorphic/test_evaluator_challenge.py::test_thin_wall_advisory_keeps_its_conclusion_class
+1 failed, 4 warnings in 4.67s

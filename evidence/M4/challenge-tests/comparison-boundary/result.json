@@ -1,0 +1,22 @@
+{
+  "id": "comparison-boundary",
+  "category": "comparison boundary",
+  "source_file": "src/rfqfuzz/v1/validation.py",
+  "original_source_sha256": "30cca0859515dfd816c7d2e11e49be5b09f9141b723eeb517aee72fbba99b966",
+  "mutated_source_sha256": "5750b8244fb3682c510009c75120b209da9a6ec7901546696eab465fa951bac8",
+  "patch_sha256": "090456d231b8e20a41391762b5d829abf1fcd860bb0f8b8a4d8ccc37daa86844",
+  "test": "tests/metamorphic/test_evaluator_challenge.py::test_wall_boundary_uses_strict_public_comparator",
+  "command": [
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/metamorphic/test_evaluator_challenge.py::test_wall_boundary_uses_strict_public_comparator",
+    "-q",
+    "--basetemp",
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\comparison-boundary\\artifacts"
+  ],
+  "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\work\\evaluator-mutants\\challenge-tests\\comparison-boundary",
+  "returncode": 1,
+  "status": "killed",
+  "mechanism": "actual production-source replacement in an isolated ignored work copy; fixed acceptance test unchanged"
+}

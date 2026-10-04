@@ -1,0 +1,11 @@
+--- a/src/rfqfuzz/v1/validation.py
++++ b/src/rfqfuzz/v1/validation.py
+@@ -327,7 +327,7 @@
+     if materials[m["material"]] != m["material_class"]:
+         return "unsupported"
+     if rule_id == "A01":
+-        return "advisory" if geometry["wall_mm"] < threshold[m["material_class"]] else "supported_clear"
++        return "advisory" if geometry["wall_mm"] <= threshold[m["material_class"]] else "supported_clear"
+     if rule_id == "A02":
+         return "advisory" if geometry["bore_depth_mm"] / geometry["bore_diameter_mm"] > threshold[m["material_class"]] else "supported_clear"
+     if rule_id == "A03":

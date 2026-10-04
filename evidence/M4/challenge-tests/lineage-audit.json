@@ -1,0 +1,209 @@
+{
+  "status": "passed",
+  "case_count": 145,
+  "failures": [],
+  "groups": {
+    "ancestry": {
+      "source-a01-00": [
+        "development"
+      ],
+      "source-a01-01": [
+        "development"
+      ],
+      "source-a01-02": [
+        "development"
+      ],
+      "source-a02-00": [
+        "development"
+      ],
+      "source-a02-01": [
+        "development"
+      ],
+      "source-a02-02": [
+        "development"
+      ],
+      "source-a03-00": [
+        "development"
+      ],
+      "source-a03-01": [
+        "development"
+      ],
+      "source-a03-02": [
+        "development"
+      ],
+      "source-a04-00": [
+        "development"
+      ],
+      "source-a04-01": [
+        "development"
+      ],
+      "source-a04-02": [
+        "development"
+      ],
+      "source-o01-00": [
+        "development"
+      ],
+      "source-o01-01": [
+        "development"
+      ],
+      "source-o01-02": [
+        "development"
+      ],
+      "source-o01-03": [
+        "development"
+      ],
+      "source-o01-04": [
+        "development"
+      ],
+      "source-o01-05": [
+        "development"
+      ],
+      "source-o02-00": [
+        "development"
+      ],
+      "source-o02-01": [
+        "development"
+      ],
+      "source-o02-02": [
+        "development"
+      ],
+      "source-o02-03": [
+        "development"
+      ],
+      "source-o02-04": [
+        "development"
+      ],
+      "source-o02-05": [
+        "development"
+      ],
+      "source-o03-00": [
+        "development"
+      ],
+      "source-o03-01": [
+        "development"
+      ],
+      "source-o03-02": [
+        "development"
+      ],
+      "source-o03-03": [
+        "development"
+      ],
+      "source-o03-04": [
+        "development"
+      ],
+      "source-o03-05": [
+        "development"
+      ],
+      "source-o04-00": [
+        "development"
+      ],
+      "source-o04-01": [
+        "development"
+      ],
+      "source-o04-02": [
+        "development"
+      ],
+      "source-o04-03": [
+        "development"
+      ],
+      "source-o04-04": [
+        "development"
+      ],
+      "source-o04-05": [
+        "development"
+      ],
+      "source-o05-00": [
+        "development"
+      ],
+      "source-o05-01": [
+        "development"
+      ],
+      "source-o05-02": [
+        "development"
+      ],
+      "source-o05-03": [
+        "development"
+      ],
+      "source-o05-04": [
+        "development"
+      ],
+      "source-o05-05": [
+        "development"
+      ],
+      "source-o06-00": [
+        "development"
+      ],
+      "source-o06-01": [
+        "development"
+      ],
+      "source-o06-02": [
+        "development"
+      ],
+      "source-o06-03": [
+        "development"
+      ],
+      "source-o06-04": [
+        "development"
+      ],
+      "source-o06-05": [
+        "development"
+      ],
+      "source-sparse-00": [
+        "development"
+      ],
+      "source-uncertain-00": [
+        "development"
+      ],
+      "source-uncertain-01": [
+        "development"
+      ],
+      "source-uncertain-02": [
+        "development"
+      ],
+      "source-uncertain-03": [
+        "development"
+      ],
+      "source-uncertain-04": [
+        "development"
+      ],
+      "source-uncertain-05": [
+        "development"
+      ],
+      "source-uncertain-06": [
+        "development"
+      ],
+      "source-uncertain-07": [
+        "development"
+      ],
+      "source-uncertain-08": [
+        "development"
+      ],
+      "source-uncertain-09": [
+        "development"
+      ],
+      "source-uncertain-10": [
+        "development"
+      ],
+      "source-uncertain-11": [
+        "development"
+      ]
+    },
+    "source_family": {
+      "bore_block": [
+        "development"
+      ],
+      "plate": [
+        "development"
+      ],
+      "pocket_block": [
+        "development"
+      ]
+    },
+    "layout_ancestry": {
+      "bounded-vector-a4-v1": [
+        "development"
+      ]
+    }
+  },
+  "limitation": "A single development partition proves no cross-partition leakage; it provides no held-out transfer result"
+}

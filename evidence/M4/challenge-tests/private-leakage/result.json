@@ -1,0 +1,22 @@
+{
+  "id": "private-leakage",
+  "category": "leakage",
+  "source_file": "src/rfqfuzz/v1/contracts.py",
+  "original_source_sha256": "94791471b3ea9335b506bb70fbaed47a504479db305744feb4f31ad8d1f5f6b7",
+  "mutated_source_sha256": "617b66c9c852b16cefe3adf1e52148e948b238ff26f29ffea4362827b05f1041",
+  "patch_sha256": "a8c7e84ddd371249944d6699aa104ab7af2aa2f3207a6248fa796fd88c64256e",
+  "test": "tests/metamorphic/test_evaluator_challenge.py::test_nested_private_answer_key_is_rejected",
+  "command": [
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/metamorphic/test_evaluator_challenge.py::test_nested_private_answer_key_is_rejected",
+    "-q",
+    "--basetemp",
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\private-leakage\\artifacts"
+  ],
+  "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\work\\evaluator-mutants\\challenge-tests\\private-leakage",
+  "returncode": 1,
+  "status": "killed",
+  "mechanism": "actual production-source replacement in an isolated ignored work copy; fixed acceptance test unchanged"
+}

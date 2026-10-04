@@ -1,0 +1,148 @@
+{
+  "base_commit": "bd93538847dcae3ff141db56bec153533a54bae1",
+  "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+  "baseline": "passed",
+  "results": [
+    {
+      "id": "unit-conversion",
+      "category": "unit conversion",
+      "source_file": "src/rfqfuzz/v1/validation.py",
+      "original_source_sha256": "30cca0859515dfd816c7d2e11e49be5b09f9141b723eeb517aee72fbba99b966",
+      "mutated_source_sha256": "e376fcf9ba193805209509cee473780a00caee2dd2c4742d7d9d2dec08b08391",
+      "patch_sha256": "20ae72380421a294e3ec072f9ff6e47e356090791edda7d642b220b75a43c7f1",
+      "test": "tests/metamorphic/test_evaluator_challenge.py::test_equivalent_inches_preserve_package_conclusions",
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/metamorphic/test_evaluator_challenge.py::test_equivalent_inches_preserve_package_conclusions",
+        "-q",
+        "--basetemp",
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\unit-conversion\\artifacts"
+      ],
+      "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\work\\evaluator-mutants\\challenge-tests\\unit-conversion",
+      "returncode": 1,
+      "status": "killed",
+      "mechanism": "actual production-source replacement in an isolated ignored work copy; fixed acceptance test unchanged"
+    },
+    {
+      "id": "comparison-boundary",
+      "category": "comparison boundary",
+      "source_file": "src/rfqfuzz/v1/validation.py",
+      "original_source_sha256": "30cca0859515dfd816c7d2e11e49be5b09f9141b723eeb517aee72fbba99b966",
+      "mutated_source_sha256": "5750b8244fb3682c510009c75120b209da9a6ec7901546696eab465fa951bac8",
+      "patch_sha256": "090456d231b8e20a41391762b5d829abf1fcd860bb0f8b8a4d8ccc37daa86844",
+      "test": "tests/metamorphic/test_evaluator_challenge.py::test_wall_boundary_uses_strict_public_comparator",
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/metamorphic/test_evaluator_challenge.py::test_wall_boundary_uses_strict_public_comparator",
+        "-q",
+        "--basetemp",
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\comparison-boundary\\artifacts"
+      ],
+      "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\work\\evaluator-mutants\\challenge-tests\\comparison-boundary",
+      "returncode": 1,
+      "status": "killed",
+      "mechanism": "actual production-source replacement in an isolated ignored work copy; fixed acceptance test unchanged"
+    },
+    {
+      "id": "severity-conflation",
+      "category": "severity",
+      "source_file": "src/rfqfuzz/v1/validation.py",
+      "original_source_sha256": "30cca0859515dfd816c7d2e11e49be5b09f9141b723eeb517aee72fbba99b966",
+      "mutated_source_sha256": "716ac20e1a620fae22c846a5083f1df2b52028199ace3a9f571ffccfa9049a04",
+      "patch_sha256": "a33137c368e22a87ae234a73f2af29f71c0f5e6e5dc6913541bb8e66e03ade1b",
+      "test": "tests/metamorphic/test_evaluator_challenge.py::test_thin_wall_advisory_keeps_its_conclusion_class",
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/metamorphic/test_evaluator_challenge.py::test_thin_wall_advisory_keeps_its_conclusion_class",
+        "-q",
+        "--basetemp",
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\severity-conflation\\artifacts"
+      ],
+      "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\work\\evaluator-mutants\\challenge-tests\\severity-conflation",
+      "returncode": 1,
+      "status": "killed",
+      "mechanism": "actual production-source replacement in an isolated ignored work copy; fixed acceptance test unchanged"
+    },
+    {
+      "id": "duplicate-credit",
+      "category": "deduplication",
+      "source_file": "src/rfqfuzz/v1/scoring.py",
+      "original_source_sha256": "9a8db704d210771061838a3056e3b2dfe3263abc347b59ec0cd88432f5de63cf",
+      "mutated_source_sha256": "e15688ed49ca1dadb93fc0563a8b345f4c892aa48e5b28dbcd8cf95ea1d81085",
+      "patch_sha256": "1a26937bb2a63dff83d88c853193039352c1cd1cfbbc362106339b726bceb195",
+      "test": "tests/metamorphic/test_evaluator_challenge.py::test_duplicate_root_findings_cannot_multiply_detection",
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/metamorphic/test_evaluator_challenge.py::test_duplicate_root_findings_cannot_multiply_detection",
+        "-q",
+        "--basetemp",
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\duplicate-credit\\artifacts"
+      ],
+      "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\work\\evaluator-mutants\\challenge-tests\\duplicate-credit",
+      "returncode": 1,
+      "status": "killed",
+      "mechanism": "actual production-source replacement in an isolated ignored work copy; fixed acceptance test unchanged"
+    },
+    {
+      "id": "private-leakage",
+      "category": "leakage",
+      "source_file": "src/rfqfuzz/v1/contracts.py",
+      "original_source_sha256": "94791471b3ea9335b506bb70fbaed47a504479db305744feb4f31ad8d1f5f6b7",
+      "mutated_source_sha256": "617b66c9c852b16cefe3adf1e52148e948b238ff26f29ffea4362827b05f1041",
+      "patch_sha256": "a8c7e84ddd371249944d6699aa104ab7af2aa2f3207a6248fa796fd88c64256e",
+      "test": "tests/metamorphic/test_evaluator_challenge.py::test_nested_private_answer_key_is_rejected",
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/metamorphic/test_evaluator_challenge.py::test_nested_private_answer_key_is_rejected",
+        "-q",
+        "--basetemp",
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\private-leakage\\artifacts"
+      ],
+      "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\work\\evaluator-mutants\\challenge-tests\\private-leakage",
+      "returncode": 1,
+      "status": "killed",
+      "mechanism": "actual production-source replacement in an isolated ignored work copy; fixed acceptance test unchanged"
+    },
+    {
+      "id": "unknown-as-clear",
+      "category": "unknown handling",
+      "source_file": "src/rfqfuzz/v1/validation.py",
+      "original_source_sha256": "30cca0859515dfd816c7d2e11e49be5b09f9141b723eeb517aee72fbba99b966",
+      "mutated_source_sha256": "8825212758d269aa9be324a40f42df789b769a064ba184289ba3df0d719e46c0",
+      "patch_sha256": "ce6aeb652d7bfa69cf47cc34deb3ff6531ae00fd904e91ae458fa0fd11d5a50e",
+      "test": "tests/metamorphic/test_evaluator_challenge.py::test_unresolved_finish_stage_cannot_become_clear",
+      "command": [
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/metamorphic/test_evaluator_challenge.py::test_unresolved_finish_stage_cannot_become_clear",
+        "-q",
+        "--basetemp",
+        "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\unknown-as-clear\\artifacts"
+      ],
+      "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\work\\evaluator-mutants\\challenge-tests\\unknown-as-clear",
+      "returncode": 1,
+      "status": "killed",
+      "mechanism": "actual production-source replacement in an isolated ignored work copy; fixed acceptance test unchanged"
+    }
+  ],
+  "killed": 6,
+  "total": 6,
+  "status": "passed",
+  "limitations": [
+    "Six relevant finite conceptual mutants, not exhaustive mutation coverage",
+    "Synthetic authored obligations",
+    "No industrial-competence inference",
+    "No hosted reviewer or network needed"
+  ]
+}

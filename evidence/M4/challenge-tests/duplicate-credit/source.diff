@@ -1,0 +1,11 @@
+--- a/src/rfqfuzz/v1/scoring.py
++++ b/src/rfqfuzz/v1/scoring.py
+@@ -76,7 +76,7 @@
+                     row.update(actual=got,matched_finding=item)
+                     if got == want:
+                         if got in ISSUES:
+-                            row["outcome"]="detected";n["detected"]+=1;op["detected"]+=1
++                            row["outcome"]="detected";n["detected"]+=len(hits);op["detected"]+=len(hits)
+                         elif got == "supported_clear":
+                             row["outcome"]="correct_clear";n["correct_clear"]+=1
+                         elif got == "missing_information":

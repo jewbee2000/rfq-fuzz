@@ -1,0 +1,11 @@
+--- a/src/rfqfuzz/v1/contracts.py
++++ b/src/rfqfuzz/v1/contracts.py
+@@ -70,7 +70,7 @@
+     if isinstance(value, dict):
+         require(not (value.keys() & PRIVATE_KEYS), "private answer or mutation metadata in public packet")
+         for item in value.values():
+-            private_scan(item)
++            pass  # DELIBERATE MUTANT: stop scanning nested private keys
+     elif isinstance(value, list):
+         for item in value:
+             private_scan(item)

@@ -1,0 +1,13 @@
+{
+  "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1",
+  "command": [
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/metamorphic/test_evaluator_challenge.py",
+    "-q",
+    "--basetemp",
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\baseline-artifacts"
+  ],
+  "returncode": 0
+}

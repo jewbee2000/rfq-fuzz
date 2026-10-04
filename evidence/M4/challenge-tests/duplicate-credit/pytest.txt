@@ -1,0 +1,33 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+___________ test_duplicate_root_findings_cannot_multiply_detection ____________
+
+    def test_duplicate_root_findings_cannot_multiply_detection():
+        response, oracle = duplicate_control()
+        result = score(response, oracle)
+        counts = result["tracks"]["package_consistency"]
+>       assert counts["detected"] == counts["issues"] == 1
+E       assert 3 == 1
+
+tests\metamorphic\test_evaluator_challenge.py:67: AssertionError
+============================== warnings summary ===============================
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1353
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1353: DeprecationWarning: The 'PointArcTangentLine' object is deprecated and will be removed in a future version.
+    class PointArcTangentLine(BaseEdgeObject):
+
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1432
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1432: DeprecationWarning: The 'PointArcTangentArc' object is deprecated and will be removed in a future version.
+    class PointArcTangentArc(BaseEdgeObject):
+
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1586
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1586: DeprecationWarning: The 'ArcArcTangentLine' object is deprecated and will be removed in a future version.
+    class ArcArcTangentLine(BaseEdgeObject):
+
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1682
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1682: DeprecationWarning: The 'ArcArcTangentArc' object is deprecated and will be removed in a future version.
+    class ArcArcTangentArc(BaseEdgeObject):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/metamorphic/test_evaluator_challenge.py::test_duplicate_root_findings_cannot_multiply_detection
+1 failed, 4 warnings in 3.45s

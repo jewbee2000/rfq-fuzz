@@ -1,0 +1,11 @@
+--- a/src/rfqfuzz/v1/validation.py
++++ b/src/rfqfuzz/v1/validation.py
+@@ -338,7 +338,7 @@
+         return "profile_exclusion" if any(a > b for a, b in zip(occupied, threshold["envelope_mm"])) else "supported_clear"
+     if not m["finish"].strip() or m["finish"].casefold() in {"unknown", "unspecified", "tbd"}:
+         return "missing_information"
+-    return "supported_clear" if m["tolerance_stage"] is not None or threshold.get("default_tolerance_stage") is not None else "missing_information"
++    return "supported_clear" if m["tolerance_stage"] is not None or threshold.get("default_tolerance_stage") is not None else "supported_clear"
+ 
+ 
+ def derive_expectations(packet, geometry, drawing):

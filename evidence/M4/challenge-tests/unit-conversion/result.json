@@ -1,0 +1,22 @@
+{
+  "id": "unit-conversion",
+  "category": "unit conversion",
+  "source_file": "src/rfqfuzz/v1/validation.py",
+  "original_source_sha256": "30cca0859515dfd816c7d2e11e49be5b09f9141b723eeb517aee72fbba99b966",
+  "mutated_source_sha256": "e376fcf9ba193805209509cee473780a00caee2dd2c4742d7d9d2dec08b08391",
+  "patch_sha256": "20ae72380421a294e3ec072f9ff6e47e356090791edda7d642b220b75a43c7f1",
+  "test": "tests/metamorphic/test_evaluator_challenge.py::test_equivalent_inches_preserve_package_conclusions",
+  "command": [
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/metamorphic/test_evaluator_challenge.py::test_equivalent_inches_preserve_package_conclusions",
+    "-q",
+    "--basetemp",
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\unit-conversion\\artifacts"
+  ],
+  "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\work\\evaluator-mutants\\challenge-tests\\unit-conversion",
+  "returncode": 1,
+  "status": "killed",
+  "mechanism": "actual production-source replacement in an isolated ignored work copy; fixed acceptance test unchanged"
+}

@@ -1,0 +1,38 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+_____________ test_equivalent_inches_preserve_package_conclusions _____________
+
+tmp_path = WindowsPath('C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/.workers/challenge-v1/evidence/M4/challenge-tests/unit-conversion/artifacts/test_equivalent_inches_preserv0')
+
+    def test_equivalent_inches_preserve_package_conclusions(tmp_path):
+        _, observed = observe(tmp_path, drawing_overrides={"drawing_units": "in"})
+        assert observed["measurements"]["bore_diameter_mm"] == 6
+        assert conclusion(observed, "obj-units") == "supported_clear"
+>       assert conclusion(observed, "obj-diameter") == "supported_clear"
+E       AssertionError: assert 'contradiction' == 'supported_clear'
+E         
+E         - supported_clear
+E         + contradiction
+
+tests\metamorphic\test_evaluator_challenge.py:29: AssertionError
+============================== warnings summary ===============================
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1353
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1353: DeprecationWarning: The 'PointArcTangentLine' object is deprecated and will be removed in a future version.
+    class PointArcTangentLine(BaseEdgeObject):
+
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1432
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1432: DeprecationWarning: The 'PointArcTangentArc' object is deprecated and will be removed in a future version.
+    class PointArcTangentArc(BaseEdgeObject):
+
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1586
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1586: DeprecationWarning: The 'ArcArcTangentLine' object is deprecated and will be removed in a future version.
+    class ArcArcTangentLine(BaseEdgeObject):
+
+..\..\..\..\..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1682
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1682: DeprecationWarning: The 'ArcArcTangentArc' object is deprecated and will be removed in a future version.
+    class ArcArcTangentArc(BaseEdgeObject):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/metamorphic/test_evaluator_challenge.py::test_equivalent_inches_preserve_package_conclusions
+1 failed, 4 warnings in 5.08s

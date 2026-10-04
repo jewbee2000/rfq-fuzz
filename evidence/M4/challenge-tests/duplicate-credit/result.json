@@ -1,0 +1,22 @@
+{
+  "id": "duplicate-credit",
+  "category": "deduplication",
+  "source_file": "src/rfqfuzz/v1/scoring.py",
+  "original_source_sha256": "9a8db704d210771061838a3056e3b2dfe3263abc347b59ec0cd88432f5de63cf",
+  "mutated_source_sha256": "e15688ed49ca1dadb93fc0563a8b345f4c892aa48e5b28dbcd8cf95ea1d81085",
+  "patch_sha256": "1a26937bb2a63dff83d88c853193039352c1cd1cfbbc362106339b726bceb195",
+  "test": "tests/metamorphic/test_evaluator_challenge.py::test_duplicate_root_findings_cannot_multiply_detection",
+  "command": [
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/metamorphic/test_evaluator_challenge.py::test_duplicate_root_findings_cannot_multiply_detection",
+    "-q",
+    "--basetemp",
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\evidence\\M4\\challenge-tests\\duplicate-credit\\artifacts"
+  ],
+  "cwd": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\.workers\\challenge-v1\\work\\evaluator-mutants\\challenge-tests\\duplicate-credit",
+  "returncode": 1,
+  "status": "killed",
+  "mechanism": "actual production-source replacement in an isolated ignored work copy; fixed acceptance test unchanged"
+}
