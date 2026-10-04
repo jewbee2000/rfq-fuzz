@@ -1,6 +1,6 @@
 # Dependency and license decisions
 
-Date: 2026-10-04. The RFQFuzz prototype uses **AGPL-3.0-only** for original program source, compatible with the selected Draftwright dependency. The root LICENSE retains the complete AGPL text. Generated synthetic fixture content is authored in this repository; no proprietary customer drawings or standards tables are included. No release/distribution has been performed.
+Date: 2026-10-04. The RFQFuzz prototype uses **AGPL-3.0-only** for original program source, compatible with the selected Draftwright dependency. The root LICENSE retains the complete AGPL text. Generated synthetic fixture content is authored in this repository; no proprietary customer drawings or standards tables are included. The user subsequently authorized public GitHub source distribution with the retained notices and history. No packaged release or blog publication has been performed.
 
 | Component | Pinned version | Upstream license / notice source |
 |---|---|---|

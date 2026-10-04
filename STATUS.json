@@ -28,8 +28,17 @@
     "145 development core cases; 0 core holdout",
     "no human engineer or physical industrial evidence"
   ],
-  "current_task": "T14",
-  "task_state": "completed",
+  "current_task": "public_GitHub_publication_follow_on",
+  "task_state": "in_progress",
+  "publication": {
+    "authorization": "User authorized GitHub push and selected public repository on 2026-10-04",
+    "repository_url": "https://github.com/jewbee2000/rfq-fuzz",
+    "visibility": "public",
+    "blog_posted": false,
+    "article_draft_in_source_repository": true,
+    "owner_checklist": "docs/NEXT_STEPS.md",
+    "milestone_graph": "T00-T14 remain completed; no follow-on milestone started"
+  },
   "requirements_verified_current": 22,
   "source_freeze": {
     "implementation": "55b288a8df0d1b3ced607c8d97d23847b2f122ba",

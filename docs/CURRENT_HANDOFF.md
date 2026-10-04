@@ -1,4 +1,15 @@
-# Local completion handoff
+# Current handoff
+
+Publication follow-on, 2026-10-04: the user authorized pushing this project and
+selected a public GitHub repository. Target:
+`https://github.com/jewbee2000/rfq-fuzz`; source, retained evidence, full history
+and the labeled article draft are included. The article is not posted to the blog.
+Current task: public source publication and an actionable owner checklist.
+State: preparing history/credential and document checks; no active failing command.
+The completed M0–M5 task graph is unchanged. Proposed follow-on dependencies and
+owner inputs are in [NEXT_STEPS.md](NEXT_STEPS.md).
+
+## Completed milestone handoff (before GitHub publication)
 
 2026-10-04, America/Los_Angeles. Current completed evidence commit:
 `d76b4c29eb0f3620aec6e62a3bfd84b69642bded` (T14 content), following T13 evidence
@@ -40,4 +51,4 @@ Next dependency-ready task: none in the completed authorized M0–M5 graph.
 Assessment: bounded local regression scope remains worthwhile. Further engineering
 claims need separately governed engineer-owned packets and oracle review; no
 additional milestone is started. All changes remain local: no push, PR, deployment,
-publication, outside message or manufacturing order.
+publication, outside message or manufacturing order at that milestone handoff.

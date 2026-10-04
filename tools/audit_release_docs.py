@@ -9,6 +9,8 @@ from urllib.parse import unquote, urlsplit
 parser = argparse.ArgumentParser()
 parser.add_argument("--pending-finalization", action="store_true",
                     help="check final content before coordinator closes T14 metadata")
+parser.add_argument("--output", type=Path,
+                    help="retain a new audit without overwriting milestone acceptance")
 arguments = parser.parse_args()
 root = Path(__file__).resolve().parents[1]
 requirements = json.loads((root / "requirements.json").read_text())
@@ -35,7 +37,8 @@ for requirement in must:
 
 documents = ["README.md", "docs/DEMO.md", "docs/REQUIREMENTS.md",
              "docs/REQUIREMENTS_EVIDENCE.md", "docs/SHOULD_DEFERRALS.md",
-             "docs/BLOG_DRAFT.md", "docs/BLOG_EVIDENCE.md"]
+             "docs/BLOG_DRAFT.md", "docs/BLOG_EVIDENCE.md",
+             "docs/NEXT_STEPS.md", "docs/CURRENT_HANDOFF.md"]
 links = []
 for relative in documents:
     file = root / relative
@@ -67,5 +70,9 @@ result = {"status": "content_passed_pending_finalization" if arguments.pending_f
           "documents": documents,
           "limitations": "File/traceability audit; actual visual and consumer acceptance are retained separately."}
 destination = "document-content-audit.json" if arguments.pending_finalization else "document-audit.json"
-(root / "evidence/M5" / destination).write_text(json.dumps(result, indent=2) + "\n")
+output = arguments.output or root / "evidence/M5" / destination
+if not output.is_absolute():
+    output = root / output
+output.parent.mkdir(parents=True, exist_ok=True)
+output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
 print(json.dumps(result, indent=2))

@@ -4,7 +4,7 @@ Implement the researched scope in this repository. The project is a CNC RFQ revi
 
 ## Authority and scope
 
-- The user's instructions take precedence. Local commits are allowed. Do not push, create a remote repository, open a PR, deploy, publish, send messages to outsiders or submit a manufacturing order.
+- The user's instructions take precedence. Local commits are allowed. On 2026-10-04 the user authorized creation and push of the public GitHub repository `jewbee2000/rfq-fuzz`, including the retained source, history, evidence and labeled article draft. This supersedes the earlier local-only restriction for this repository. Do not post the article to the user's blog, deploy, open a PR, send messages to outsiders or submit a manufacturing order without further authorization.
 - Finish M0 and document its go/no-go decision before expanding beyond the first fixture. Revisit scope if an equivalent public project or a fundamental oracle limitation is found.
 - `requirements.json` is the requirements source of truth. `docs/REQUIREMENTS.md` is its generated readable view. `tasks.json` is the initial dependency graph and fallback execution ledger. See docs/AGENT_WORKFLOW.md before adopting Beads.
 - Never call a seeded-defect benchmark proof of general industrial competence. No synthetic fixture is evidence of an actual manufactured part.

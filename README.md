@@ -8,7 +8,9 @@ changed behavior. Package consistency and conditional CNC advisories are separat
 M0 remains a frozen regression.270integrated Windows tests pass;145corepackets pass final
 artifact validation;6/6deliberate evaluator mutants are caught. All145corecases
 are development-only. This is a synthetic regression toolkit; no part is approved
-for manufacture. Everything remains local and unpublished.
+for manufacture. Source publication to the public
+[`jewbee2000/rfq-fuzz`](https://github.com/jewbee2000/rfq-fuzz) repository is authorized;
+the article draft has not been posted to the blog.
 
 Independent Windows/Linux consumers pass the complete offline demo, three fresh
 family checks and source-linked diagnosis. Linux software emulation uses the
@@ -18,7 +20,8 @@ Must acceptance and local commit; all seven Should scopes are documented.
 
 Start with the [reproducible15case demo](docs/DEMO.md),
 [offline comparison report](evidence/M5/coordinator-bounded-demo/report/index.html),
-[Should deferrals](docs/SHOULD_DEFERRALS.md) and [unpublished draft](docs/BLOG_DRAFT.md).
+[Should deferrals](docs/SHOULD_DEFERRALS.md), [article draft](docs/BLOG_DRAFT.md)
+and [next steps and owner checklist](docs/NEXT_STEPS.md).
 The report's two changes are deliberately injected into retained public-template
 reference observations. Genuine [M5 external observations](evidence/M5/external-v1)
 and the original [M0 external review](evidence/M0/review-handoff/review-output)
