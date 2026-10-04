@@ -1,0 +1,24 @@
+{
+  "status": "task_helpers_stopped",
+  "started_utc": "2026-10-04T23:27:53.1856337Z",
+  "completed_utc": "2026-10-04T23:27:57.5202750Z",
+  "ownership_checks": "Exact workspace paths, guest name, own disk/control port, server command and launcher-child relation checked immediately before mutation.",
+  "qemu": {
+    "pid": 31332,
+    "command": "QMP system_powerdown",
+    "qmp_exit": 0,
+    "graceful_exit_within_30_seconds": true,
+    "process_present_after": false
+  },
+  "transfer_server": {
+    "launcher_pid": 35500,
+    "listener_pid": 4948,
+    "command": "Stop-Process on verified task-owned listener child; launcher only if still present",
+    "launcher_stopped_explicitly": false,
+    "launcher_present_after": false,
+    "listener_present_after": false
+  },
+  "remaining_task_port_listeners": [],
+  "unaffected_scope": "No unrelated processes, host settings, Docker/WSL services, or other VMs were changed.",
+  "retention": "Ignored guest/tool files remain local; no keys, seed content, guest disks, or executable binaries are retained in evidence."
+}

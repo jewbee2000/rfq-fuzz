@@ -202,7 +202,7 @@ Provide clean-install examples, an actual external-review walkthrough, known lim
 
 **Acceptance:** Independent consumer repeats the workflow; report and raw results are retained. Broad industry-usefulness claims require separately authored and engineer-reviewed evidence; otherwise label synthetic limitations.
 
-**Delivery/status:** M5; T13, T14; in_progress.
+**Delivery/status:** M5; T13, T14; verified.
 
 ### R21 — Traceable agent implementation
 
@@ -212,7 +212,7 @@ Tie tasks to requirements, prerequisites, acceptance commands, retained evidence
 
 **Acceptance:** Every Must ID has completion evidence; task graph has no cycles; milestone decisions and unresolved assumptions are recorded; no publication/push occurs.
 
-**Delivery/status:** M5; T00, T14; in_progress.
+**Delivery/status:** M5; T00, T14; verified.
 
 ### R22 — Reproducible supported environments
 

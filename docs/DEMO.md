@@ -24,8 +24,10 @@ python3.12 -m venv .venv
 
 Generation additionally requires Poppler `pdftoppm` on PATH (Windows verified
 26.07; Linux24.02). Windows testing reused the existing Poppler executable rather
-than a blank-OS installer. On Ubuntu, install
-`python3.12-venv poppler-utils libgl1 libglib2.0-0` before the isolated environment.
+than a blank-OS installer. The tested minimal Ubuntu setup installs
+`python3.12-venv poppler-utils libgl1 libglu1-mesa libxrender1 libxext6 libsm6 libglib2.0-0 fonts-dejavu-core`
+before the isolated environment. Exact setup commands are retained with the
+consumer evidence.
 Installation needs package downloads or a prepared wheel cache; the complete
 consumer replay needs no internet, API key, paid model, GPU or proprietary CAD.
 The installed `rfqfuzz` entry point works outside the repository when paths are

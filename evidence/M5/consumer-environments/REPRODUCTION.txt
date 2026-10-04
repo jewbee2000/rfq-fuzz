@@ -76,7 +76,7 @@ Installed CLI generate-case DEST_SUITE/public/pk-780fa2354eea --case-id pk-780fa
 Installed CLI generate-case DEST_SUITE/public/pk-c02891e82f64 --case-id pk-c02891e82f64 --family bore_block
 Installed CLI generate-case DEST_SUITE/public/pk-d66a90fd926a --case-id pk-d66a90fd926a --family pocket_block
 Installed CLI validate DEST_SUITE DEST_OBSERVATIONS
-Linux additionally used --parser-timeout300.0; Windows used default60.
+Linux additionally used --parser-timeout 300.0; Windows used default 60.
 Both returned statusunverified/3,exit2,emptyexpectations—noterrororpass.
 Exact per-OS argv/elapsed/exit records: windows/families/workflow/commands.json
 and linux/families/workflow/commands.json. Failed descriptiveID and individual
@@ -92,8 +92,8 @@ passed onboth. Same-OS PDF/PNG pixels are identical; cross-Poppler byte identity
 not claimed. visual-inspection.json records full-raster views. Shared OCCT is a limit.
 
 CHECK COPIED REPORTS (observed at original paths, exportedLinuxprefix explicit)
-python scripts/check_consumer_report.py windows/demo WINDOWS_CHECK.json --archive ORIGINAL_PORTABLE_ARCHIVE --archive-sha256 f048a54abef6ced29676c0270dbef968719662ea1013038e82b048d74a0e75b0 --declared-commit348c5f1ea5a6e99bc0acdb4f0d0af52f3a8146e0 --linux-prefix ORIGINAL_WINDOWS_DEMO_PREFIX_WITH_FORWARD_SLASHES
-python scripts/check_consumer_report.py linux/demo LINUX_CHECK.json --archive ORIGINAL_LINUX_ARCHIVE --archive-sha256 e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931 --declared-commit55b288a8df0d1b3ced607c8d97d23847b2f122ba --linux-prefix /home/consumer/linux-bounded-workflow/demo
+python scripts/check_consumer_report.py windows/demo WINDOWS_CHECK.json --archive ORIGINAL_PORTABLE_ARCHIVE --archive-sha256 f048a54abef6ced29676c0270dbef968719662ea1013038e82b048d74a0e75b0 --declared-commit 348c5f1ea5a6e99bc0acdb4f0d0af52f3a8146e0 --linux-prefix ORIGINAL_WINDOWS_DEMO_PREFIX_WITH_FORWARD_SLASHES
+python scripts/check_consumer_report.py linux/demo LINUX_CHECK.json --archive ORIGINAL_LINUX_ARCHIVE --archive-sha256 e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931 --declared-commit 55b288a8df0d1b3ced607c8d97d23847b2f122ba --linux-prefix /home/consumer/linux-bounded-workflow/demo
 Copied reports use original producer paths in metadata; explicit prefix mapping
 does not rewrite any actual report bytes. Relative local links remain valid.
 Reports:121rows/run,242embeddedrows,80localfilelinks+2anchors,source/rawbindings,

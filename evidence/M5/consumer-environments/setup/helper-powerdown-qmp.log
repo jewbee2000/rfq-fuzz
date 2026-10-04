@@ -1,0 +1,7 @@
+UTC 2026-10-04T23:27:53.264976+00:00
+greeting {"QMP": {"version": {"qemu": {"micro": 0, "minor": 1, "major": 11}, "package": "v11.1.0-12130-ge470268ff4"}, "capabilities": ["oob"]}}
+request {"execute": "qmp_capabilities"}
+response {"return": {}}
+request {"execute": "system_powerdown", "arguments": {}}
+response {"timestamp": {"seconds": 1791156473, "microseconds": 265981}, "event": "POWERDOWN"}
+response {"return": {}}

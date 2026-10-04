@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "Must_verified": 22,
+  "Must_evidence_checked": 22,
+  "completed_tasks": 15,
+  "pending_tasks": [],
+  "local_links_checked": 144,
+  "blog_prose_words": 1102,
+  "actual_embedded_figures": 3,
+  "documents": [
+    "README.md",
+    "docs/DEMO.md",
+    "docs/REQUIREMENTS.md",
+    "docs/REQUIREMENTS_EVIDENCE.md",
+    "docs/SHOULD_DEFERRALS.md",
+    "docs/BLOG_DRAFT.md",
+    "docs/BLOG_EVIDENCE.md"
+  ],
+  "limitations": "File/traceability audit; actual visual and consumer acceptance are retained separately."
+}

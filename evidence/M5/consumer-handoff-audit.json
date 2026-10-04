@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "retained_manifest_files_checked": 1694,
+  "retained_manifest_files_checked": 1699,
   "platforms": {
     "windows": {
       "valid_replay_cases": 15,

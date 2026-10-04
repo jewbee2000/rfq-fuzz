@@ -35,11 +35,12 @@ M5: bounded local go. Independent Windows/Linux15case workflows pass, with two
 injected changes independently traced to actual material/dimension evidence.
 Three fresh families on each OS pass own-reader/analytic/PDF checks and visual
 inspection while remaining correctly unverified without attestation. Retained
-1694file handoff and source bindings pass coordinator audit. Software TCG's first
+1699file final handoff and source bindings pass coordinator audit. Software TCG's first
 60second timeout remains a failure; explicit300/120second named-setup bounds pass.
 Git-normalized packet bytes were independently caught and fixed without changing
 audited inputs. Final integrated Windows tests270pass with4upstream warnings.
-The remaining T14 work closes traceability/doc metadata. The next worthwhile
+T14 closes traceability/doc metadata:22/22Must verified,15tasks completed,
+144local document links checked and1102word/3figure draft audited. The next worthwhile
 experiment would require governed engineer-authored cases and independent oracle
 review; no new milestone starts. No human or physical manufacturing evidence is
 available or implied.

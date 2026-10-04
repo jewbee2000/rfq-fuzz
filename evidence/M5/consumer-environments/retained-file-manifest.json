@@ -751,6 +751,11 @@
       "sha256": "f5fd9f8c2366057002364619ef1319322535aa1e0aa401b145b04ba932b45694"
     },
     {
+      "path": "helper-shutdown.json",
+      "bytes": 1089,
+      "sha256": "c7e489dea6cd7084c2cafb567fabeabaa58dacac1a722eee4efc623253354e92"
+    },
+    {
       "path": "linux/bounded-probe/command.log",
       "bytes": 143,
       "sha256": "87eae2aeb7f59f25bb7442d5e83c068fb3a3ec47354029bbc1031486800edd2f"
@@ -4626,6 +4631,16 @@
       "sha256": "12fcfdfd329365c2d37569c79b8ac926a40c415a8fd11de9c2cebd26fbefd422"
     },
     {
+      "path": "REPRODUCTION.txt",
+      "bytes": 8672,
+      "sha256": "41a6fdf160c1eb09e70546dfc822473a0283b5b97107b30091546641736c3644"
+    },
+    {
+      "path": "scripts/archive_equivalence_checker.py",
+      "bytes": 2423,
+      "sha256": "d40bc40b9aa01116e358fb13677d632d0edd31cd4f3c79f9eda2cdd132641a0b"
+    },
+    {
       "path": "scripts/boot-qemu.ps1",
       "bytes": 3089,
       "sha256": "866d36b082d6dd8e2572c668f5c7d9c370579779147ba8606facff8b6d8dce23"
@@ -4716,6 +4731,11 @@
       "sha256": "3512e40e7c4f590472f725c8784d40e037b9408fe8fbfad65ba0e126535116a9"
     },
     {
+      "path": "scripts/shutdown_helpers.ps1",
+      "bytes": 4708,
+      "sha256": "9048f46307dc57670ff8fabdad33c17f98b3de1707e1bad9d889bbf00455480e"
+    },
+    {
       "path": "scripts/source_archive_provenance.py",
       "bytes": 2850,
       "sha256": "68da5d4586d588417f5fa9ebda40d84bc406183471b81773fbf5e860c01775ea"
@@ -4724,6 +4744,11 @@
       "path": "scripts/verify-windows-python-offline.ps1",
       "bytes": 2636,
       "sha256": "a4a32272f49a68bb35795f6565727bfb04001882433bebf40ff605085598976e"
+    },
+    {
+      "path": "setup/helper-powerdown-qmp.log",
+      "bytes": 427,
+      "sha256": "e65db7677ffb791bc1252d0ba4a47c6ba0e4944af891ba344ff3bd06971cb5b4"
     },
     {
       "path": "setup/licenses/QEMU-COPYING",

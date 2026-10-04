@@ -302,10 +302,10 @@
       "scope": "Review every Must acceptance, record Should deferrals, finalize license/provenance/docs and write evidence-grounded first-person draft.",
       "acceptance": "Complete requirements/evidence matrix, reproducible demo and local unpublished article; no unsupported achievements.",
       "evidence": "evidence/M5/release-review.md",
-      "verification": "Requirements/evidence audit and documentation walkthrough",
-      "verification_is_proposed": true,
-      "status": "in_progress",
-      "completion_commit": null
+      "verification": ".venv/Scripts/python.exe tools/audit_release_docs.py --pending-finalization (22Must evidence,144local links,1102words,3actual figures); independent claim/Should/generator read-only audit; tools/check_ledger.py; tools/requirements_evidence.py; strict final generator/document audit retained after ledger closure",
+      "verification_is_proposed": false,
+      "status": "completed",
+      "completion_commit": "d76b4c29eb0f3620aec6e62a3bfd84b69642bded"
     }
   ]
 }

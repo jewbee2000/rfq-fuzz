@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "project": "RFQFuzz",
   "research_date": "2026-10-04",
-  "status": "M1-M5_consumer_acceptance_active",
+  "status": "M1-M5_verified_bounded_synthetic_release",
   "source_of_truth": true,
   "requirements": [
     {
@@ -431,7 +431,7 @@
         "T13",
         "T14"
       ],
-      "status": "in_progress",
+      "status": "verified",
       "completion_evidence": [
         "evidence/M5/consumer.md",
         "docs/BLOG_DRAFT.md",
@@ -439,7 +439,8 @@
         "docs/SHOULD_DEFERRALS.md"
       ],
       "acceptance_commands": [
-        "Independent Windows installed rfqfuzz demo (60/20s); Linux consumer_workflow.py (300/120s); own check_family_semantics.py and check_consumer_report.py; check_diagnosis_meaning.py; source_archive_provenance.py and archive equivalence; tools/audit_consumer_handoff.py (1694files, both15case demos and3fresh families pass)"
+        "Independent Windows installed rfqfuzz demo (60/20s); Linux consumer_workflow.py (300/120s); own check_family_semantics.py and check_consumer_report.py; check_diagnosis_meaning.py; source_archive_provenance.py and archive equivalence; tools/audit_consumer_handoff.py (1694files, both15case demos and3fresh families pass)",
+        ".venv/Scripts/python.exe tools/audit_release_docs.py --pending-finalization (22Must evidence,144local links,1102words,3actual figures); independent claim/Should/generator read-only audit; tools/check_ledger.py; tools/requirements_evidence.py; strict final generator/document audit retained after ledger closure"
       ]
     },
     {
@@ -454,7 +455,7 @@
         "T00",
         "T14"
       ],
-      "status": "in_progress",
+      "status": "verified",
       "completion_evidence": [
         "tasks.json",
         "docs/MILESTONE_ASSESSMENTS.md",
@@ -462,7 +463,8 @@
         "evidence/M5/release-review.md"
       ],
       "acceptance_commands": [
-        "Read-only primary-source recheck and repository contract inspection (2026-10-04)"
+        "Read-only primary-source recheck and repository contract inspection (2026-10-04)",
+        ".venv/Scripts/python.exe tools/audit_release_docs.py --pending-finalization (22Must evidence,144local links,1102words,3actual figures); independent claim/Should/generator read-only audit; tools/check_ledger.py; tools/requirements_evidence.py; strict final generator/document audit retained after ledger closure"
       ]
     },
     {

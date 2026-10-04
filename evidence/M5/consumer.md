@@ -59,10 +59,16 @@ broken old Git objects. Portable selected-source
 archive SHA256 is `f048a54abef6ced29676c0270dbef968719662ea1013038e82b048d74a0e75b0`.
 Root's additional Git audit verifies both text policies and all64manifest hashes.
 
-The coordinator separately audited every1694retained manifest file and the
+The coordinator separately audited every1699final retained manifest file and the
 copied oracle/raw/report digests, score counts and actual visual hashes:
 [consumer-handoff-audit.json](consumer-handoff-audit.json). Exact execution and
 setup records are indexed by the independent [handoff README](consumer-environments/README.md).
+
+Task-owned QEMU and transfer-server processes are stopped; their ports have no
+listeners. Actual ownership checks, graceful powerdown and stop state are in
+[helper-shutdown.json](consumer-environments/helper-shutdown.json). Guest/tool
+files stay ignored locally; secrets, VM images and provisioning binaries are
+excluded from retained evidence. Reproduction commands/checker source are retained.
 
 Each setup also generated plate, bore and pocket families. Fresh validation
 without attestation reports three unverified cases, exit2, with empty expected

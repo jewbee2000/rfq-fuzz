@@ -1,7 +1,7 @@
 {
   "project": "RFQFuzz",
   "date": "2026-10-04",
-  "phase": "M1-M5_execution",
+  "phase": "M1-M5_complete_bounded_synthetic_scope",
   "implementation_started": true,
   "application_tests_run": true,
   "remote_created": false,
@@ -13,7 +13,7 @@
   },
   "next_task": [],
   "m0_decision": "pass_bounded_synthetic_feasibility",
-  "implemented_scope": "T00-T12 completed; T13 final Linux offline acceptance active; audited portable Git bytes preserved at348c5f1",
+  "implemented_scope": "T00-T14 completed; all22Must verified; M0 preserved",
   "test_results": {
     "upstream_warnings": 4,
     "final_validated_core_packets": 145,
@@ -22,7 +22,6 @@
     "final_test_log": "evidence/M5-final-release-tests.txt"
   },
   "remaining_limits": [
-    "Linux final offline acceptance pending after retained TCG timeout",
     "shared OCCT kernel",
     "finite annotation/alias grammar",
     "exact canonical matching; 1 genuine external finding unadjudicated",
@@ -30,10 +29,21 @@
     "no human engineer or physical industrial evidence"
   ],
   "current_task": "T14",
-  "task_state": "in_progress",
-  "requirements_verified_current": 17,
+  "task_state": "completed",
+  "requirements_verified_current": 22,
   "source_freeze": {
     "implementation": "55b288a8df0d1b3ced607c8d97d23847b2f122ba",
     "portable_git_bytes": "348c5f1ea5a6e99bc0acdb4f0d0af52f3a8146e0"
-  }
+  },
+  "consumer_acceptance": {
+    "windows": "passed; native/audit60/20seconds",
+    "linux": "passed; named QEMU TCG setup300/120seconds",
+    "copied_evidence_manifest_files_audited": 1699
+  },
+  "milestone_decision": "bounded_local_go; no industrial/manufacturing competence claim",
+  "task_content_commits": {
+    "T13": "7f72883523776a66c710683bb0d493d4602798ec",
+    "T14": "d76b4c29eb0f3620aec6e62a3bfd84b69642bded"
+  },
+  "verification_helpers": "task-owned QEMU and transfer server stopped; no task-port listeners"
 }

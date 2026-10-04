@@ -9,15 +9,15 @@
   "canonical_archive_sha256": "f048a54abef6ced29676c0270dbef968719662ea1013038e82b048d74a0e75b0",
   "linux_tested_implementation_commit": "55b288a8df0d1b3ced607c8d97d23847b2f122ba",
   "linux_archive_sha256": "e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931",
-  "source_equivalence": "65demo files exact,23Pythonmodules exact archive bytes and equal normalized content/AST; only additional.gitattributes",
+  "source_equivalence": "65 demo files exact; 23 Python modules have exact archive bytes and equal normalized content/AST; only additional .gitattributes.",
   "observed_checks": {
-    "Windows": "15valid/twochanges; ownthreefamilysemantics/reportinspectionpass; freshvalidation3unverified",
-    "Linux": "15valid/twochanges; ownthreefamilysemantics/reportinspectionpass; freshvalidation3unverified"
+    "Windows": "15 valid cases and two changes; own three-family semantics and report inspection passed; fresh validation returned three unverified cases.",
+    "Linux": "15 valid cases and two changes; own three-family semantics and report inspection passed; fresh validation returned three unverified cases."
   },
-  "retained_files": 1694,
-  "retained_bytes": 82619996,
+  "retained_files": 1699,
+  "retained_bytes": 82637315,
   "excluded": "SSH keys/seed/credentials, guest disks, provisioning executables; source/status files unchanged by verifier",
-  "helper_shutdown": "pending after evidence handoff; separate helper-shutdown.json will record actual stop state",
+  "helper_shutdown": "Task-owned QEMU exited gracefully after QMP system_powerdown; transfer server child and launcher exited; localhost ports 22222, 28080 and 28444 have no listeners. Actual record: helper-shutdown.json.",
   "limits": [
     "Named setups only; no blank Windows Poppler installer test",
     "QEMU software-emulation resource bounds, not speed guarantee",
@@ -26,5 +26,6 @@
     "No browser report visual QA",
     "No manufacturing or general industrial competence claim"
   ],
-  "coordinator_action": "Audit/cite a local evidence commit and update project requirement/task state; verifier does not write the ledger."
+  "coordinator_action": "Coordinator accepted T13 evidence in local commit 7f72883; final cleanup metadata is ready for the coordinator's local commit. Verifier does not write project ledgers.",
+  "cleanup_completed_utc": "2026-10-04T23:27:57.5202750Z"
 }
