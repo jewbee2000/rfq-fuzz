@@ -1,0 +1,109 @@
+EEEEEEE                                                                  [100%]
+=================================== ERRORS ====================================
+______________ ERROR at setup of test_escaped_source_navigation _______________
+
+self = WindowsPath('C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/evidence/M4/report-test-data')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\evidence\\M4\\report-test-data'
+
+C:\Users\Walt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+___________ ERROR at setup of test_export_audit_and_private_sidecar ___________
+
+self = WindowsPath('C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/evidence/M4/report-test-data')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\evidence\\M4\\report-test-data'
+
+C:\Users\Walt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+________ ERROR at setup of test_manual_partial_and_malformed_retained _________
+
+self = WindowsPath('C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/evidence/M4/report-test-data')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\evidence\\M4\\report-test-data'
+
+C:\Users\Walt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+_____________ ERROR at setup of test_timeout_and_descendant_kill ______________
+
+self = WindowsPath('C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/evidence/M4/report-test-data')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\evidence\\M4\\report-test-data'
+
+C:\Users\Walt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_malformed_process_and_packet_text_never_executed ___
+
+self = WindowsPath('C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/evidence/M4/report-test-data')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\evidence\\M4\\report-test-data'
+
+C:\Users\Walt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+________________ ERROR at setup of test_signatures_and_hashes _________________
+
+self = WindowsPath('C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/evidence/M4/report-test-data')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\evidence\\M4\\report-test-data'
+
+C:\Users\Walt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+_________ ERROR at setup of test_interrupted_partial_complete_resume __________
+
+self = WindowsPath('C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/evidence/M4/report-test-data')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\evidence\\M4\\report-test-data'
+
+C:\Users\Walt\AppData\Local\Programs\Python\Python312\Lib\pathlib.py:1311: FileNotFoundError
+=========================== short test summary info ===========================
+ERROR tests/reporting/test_offline.py::test_escaped_source_navigation - FileN...
+ERROR tests/adapters/test_lifecycle.py::test_export_audit_and_private_sidecar
+ERROR tests/adapters/test_lifecycle.py::test_manual_partial_and_malformed_retained
+ERROR tests/adapters/test_lifecycle.py::test_timeout_and_descendant_kill - Fi...
+ERROR tests/adapters/test_lifecycle.py::test_malformed_process_and_packet_text_never_executed
+ERROR tests/adapters/test_lifecycle.py::test_signatures_and_hashes - FileNotF...
+ERROR tests/adapters/test_resume.py::test_interrupted_partial_complete_resume
+7 errors in 0.26s
