@@ -4,21 +4,27 @@ A local regression toolkit for CNC RFQ reviewers. Create controlled STEP/drawing
 packages, validate the actual exported artifacts, import a review and inspect
 changed behavior. Package consistency and conditional CNC advisories are separate.
 
-**Status: M1–M5 accepted for the bounded local scope, 4 October2026.**
-M0 remains a frozen regression.270integrated Windows tests pass;145corepackets pass final
-artifact validation;6/6deliberate evaluator mutants are caught. All145corecases
+**Status: M1–M5 accepted for the bounded local scope, 4 October 2026.**
+M0 remains a frozen regression. The original release passed 270 integrated Windows tests;
+145 core packets passed final artifact validation, and 6/6 deliberate evaluator mutants
+were caught. All 145 core cases
 are development-only. This is a synthetic regression toolkit; no part is approved
 for manufacture. Source and retained evidence are available in the public
 [`jewbee2000/rfq-fuzz`](https://github.com/jewbee2000/rfq-fuzz) repository;
-the article draft has not been posted to the blog.
+the original project article draft is retained in `docs/BLOG_DRAFT.md`.
+
+A subsequent [publication code audit](evidence/publication-code-audit/README.md)
+fixed local dimension-unit interpretation and a process output-limit race. The
+current full suite passes **278 tests**, including the 15-case offline demo.
+The original 270-test result and its artifacts remain separate historical evidence.
 
 Independent Windows/Linux consumers pass the complete offline demo, three fresh
 family checks and source-linked diagnosis. Linux software emulation uses the
-documented explicit300/120second resource bounds; the earlier timeout is retained.
+documented explicit 300/120 second resource bounds; the earlier timeout is retained.
 The [requirements evidence matrix](docs/REQUIREMENTS_EVIDENCE.md) records each
 Must acceptance and local commit; all seven Should scopes are documented.
 
-Start with the [reproducible15case demo](docs/DEMO.md),
+Start with the [reproducible 15-case demo](docs/DEMO.md),
 [offline comparison report](evidence/M5/coordinator-bounded-demo/report/index.html),
 [Should deferrals](docs/SHOULD_DEFERRALS.md), [article draft](docs/BLOG_DRAFT.md)
 and [next steps and owner checklist](docs/NEXT_STEPS.md).

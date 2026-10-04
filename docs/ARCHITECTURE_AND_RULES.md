@@ -1,6 +1,11 @@
 # Architecture and engineering rules
 
-All interfaces, thresholds and fixture counts in this document are **proposed design choices**, unless explicitly attributed to a source. There is no implemented API yet.
+This document preserves the original design proposal and its engineering rationale.
+The implemented API and finite support boundary are recorded in
+[V1_CONTRACT.md](V1_CONTRACT.md), [DEMO.md](DEMO.md), and the
+[requirements evidence matrix](REQUIREMENTS_EVIDENCE.md). Proposed interfaces,
+thresholds, and fixture counts below are historical design choices unless those
+implementation records explicitly verify them.
 
 ## The user workflow
 
@@ -32,7 +37,10 @@ flowchart LR
 
 Initial families are (A) a plate with a scoped through-hole pattern, (B) a block with blind bores/counterbores, and (C) a block with an open rectangular pocket and a controlled wall. One valid solid, planar faces and cylindrical bores; fixed, declared setups. Include sections wherever required to make the visible drawing unambiguous. Exclude interacting bores, complex blends, modeled helical threads, freeform surfaces and inaccessible enclosed cavities in v1.
 
-Use OCCT through a tested Python binding, with build123d/Draftwright as the initial generator candidate. Reuse a drawing engine instead of building automatic dimension placement. Draftwright is AGPL-3.0; record a compatible release-license decision. Candidate package compatibility must be tested and pinned at M0, not assumed from these names.
+The initial candidate was OCCT with build123d/Draftwright. M0 retained that drawing
+path; v1 uses build123d with a finite ReportLab layout. See [LICENSES.md](LICENSES.md)
+and the pinned requirements for actual dependencies and licensing. The original
+proposal to reuse automatic drawing placement is not a claim of general v1 drafting.
 
 The independent geometry validator reopens the exported STEP in a separate process/module and measures relevant faces. It must not read in-memory generator objects or private expected values. Analytic volume, hole count, envelope and dimension calculations on these simple families provide a second check. The same underlying CAD kernel is still a shared dependency; disclose this common-mode limit. A second kernel is not required for v1.
 
@@ -76,7 +84,7 @@ Manufacturability is not a universal binary property. Tooling, orientation, work
 | A01 Wall thickness | [Xometry CNC tips](https://www.xometry.com/resources/machining/10-tips-improve-cad-cnc-design/) recommends about 0.794 mm for metal and 1.5 mm for plastic. [Protolabs milling guidelines](https://www.protolabs.com/services/cnc-machining/cnc-milling/design-guidelines/) discusses thin-feature advisories around 0.51 mm. | Source-specific recommendation, not a physical limit. A 0.60 mm test wall under one named advisory profile should produce a risk advisory, not “unmachinable.” Use boundary and alternate-profile controls. |
 | A02 Hole depth/diameter | [Protolabs Network guide](https://www.hubs.com/knowledge-base/how-design-parts-cnc-machining/) distinguishes recommended 4D, typical 10D and feasible 40D hole depths. | L/D above a recommended threshold is an advisory. Do not turn the largest published value into a universal maximum. Scope drill depth and geometry clearly. |
 | A03 Setup envelope | [Protolabs milling guidelines](https://www.protolabs.com/services/cnc-machining/cnc-milling/design-guidelines/) publishes service- and material-dependent capacities. | Use an explicitly synthetic, versioned machine/setup profile initially. Check stock plus fixture allowance in the declared orientation. Failure means outside that setup, not impossible on another machine/orientation. |
-| A04 Finish and tolerance stage | [Xometry manufacturing standards](https://www.xometry.com/manufacturing-standards/) defines service defaults including tolerance stage. [Its post-processing discussion](https://xometry.pro/en-eu/articles/impact-post-processing-dimensional-accuracy/) describes dimensional effects. | Test whether stage is established by explicit requirements or chosen defaults. Missing stage is unknown only if no precedence resolves it. No universal coating-thickness compensation or invented material/finish compatibility chart. |
+| A04 Finish and tolerance stage | [Xometry manufacturing standards](https://www.xometry.com/manufacturing-standards/) and [its post-processing discussion](https://xometry.pro/en-eu/articles/impact-post-processing-dimensional-accuracy/) informed the question of dimensional effects; they do not establish the implemented CNC inspection-stage default. The v1 default is explicitly project-selected and synthetic. | Test whether stage is established by explicit requirements or the declared project profile. Missing stage is unknown only if no precedence resolves it. No universal coating-thickness compensation or invented material/finish compatibility chart. |
 | A05 Drawing obligations | [Protolabs Network drawing guide](https://www.hubs.com/knowledge-base/how-prepare-technical-drawing-cnc-machining/) explains that CAD can provide geometry while drawings communicate critical features and special requirements. | A sparse drawing can be valid. Check only declared obligations, not an arbitrary demand for every model dimension. |
 
 Every rule card stores an ID/version, publisher/URL/date, short paraphrase, exact profile threshold and units, applicability, evidence required, comparator and boundary semantics, severity, precedence and limits. Mark project-chosen values as synthetic. Material affects profile applicability; it does not justify extrapolating a complete cutting-parameter database.

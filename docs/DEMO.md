@@ -1,7 +1,7 @@
 # Local v1 consumer demo
 
-Python3.12 is the tested interpreter family. Independent Windows11/Python3.12.2
-and Ubuntu24.04.5/Python3.12.3 consumers pass the complete workflow; the Linux
+Python 3.12 is the tested interpreter family. Independent Windows 11 / Python 3.12.2
+and Ubuntu 24.04.5 / Python 3.12.3 consumers pass the complete workflow; the Linux
 software-emulated setup uses the explicit bounds documented below. Actual
 commands, failures and source/archive checks are in
 [consumer acceptance](../evidence/M5/consumer.md). Install in an isolated environment:
@@ -23,7 +23,7 @@ python3.12 -m venv .venv
 ```
 
 Generation additionally requires Poppler `pdftoppm` on PATH (Windows verified
-26.07; Linux24.02). Windows testing reused the existing Poppler executable rather
+26.07; Linux 24.02). Windows testing reused the existing Poppler executable rather
 than a blank-OS installer. The tested minimal Ubuntu setup installs
 `python3.12-venv poppler-utils libgl1 libglu1-mesa libxrender1 libxext6 libsm6 libglib2.0-0 fonts-dejavu-core`
 before the isolated environment. Exact setup commands are retained with the
@@ -33,7 +33,7 @@ consumer replay needs no internet, API key, paid model, GPU or proprietary CAD.
 The installed `rfqfuzz` entry point works outside the repository when paths are
 absolute. `tools/rfq_v1.py` is an optional repository-local entry point.
 
-Open `work/my-demo/report/index.html`. The15case replay reopens the exact audited
+Open `work/my-demo/report/index.html`. The 15-case replay reopens the exact audited
 STEP/PDF/PNG bytes, validates their hash-bound visual attestations, exports a
 public-only bundle, imports two retained raw responses and compares separate
 package-consistency/CNC-advisory tracks. It writes `demo-result.json`, immutable
@@ -49,11 +49,11 @@ Genuine external observations are retained separately at M0 and M5.
 The replay manifest hashes every supplied input. Regenerated exports may differ
 in timestamps or rendering bytes; they require fresh actual visual review. Never
 reuse an old attestation on regenerated files. Without it, validation reports
-`unverified` and exits2; no case becomes a pass automatically.
+`unverified` and exits with code 2; no case becomes a pass automatically.
 
-Native parser timeout defaults to60seconds per case; document export audit defaults
-to20seconds. Software-emulated Linux TCG exceeded the native bound in a retained
-attempt. Explicit setup overrides are bounded at300seconds and recorded in
+Native parser timeout defaults to 60 seconds per case; document export audit defaults
+to 20 seconds. Software-emulated Linux TCG exceeded the native bound in a retained
+attempt. Explicit setup overrides are bounded at 300 seconds and recorded in
 `demo-result.json` and native observations, for example:
 
 ```sh
@@ -75,8 +75,8 @@ rfqfuzz generate-case work/one-suite/public/pk-0123456789ab --case-id pk-0123456
 rfqfuzz validate work/one-suite work/one-observation
 ```
 
-The second command reopens the files and remains unverified/exit2 until fresh
-hash-bound visual review. An exit2 alone is insufficient evidence: inspect the
+The second command reopens the files and remains unverified (exit code 2) until fresh
+hash-bound visual review. An exit code 2 alone is insufficient evidence: inspect the
 structured status and retained oracle/reasons. A malformed suite is an error.
 
 ```sh
