@@ -1,0 +1,46 @@
+{
+  "status": "observations_passed",
+  "failures": [],
+  "evidence": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\linux-bounded-report-inspection.json",
+  "evidence_sha256": "f16b519b21525ad8b25f5ab4a7d2a9329a358b16b0e796c83f84775e43bee529",
+  "checker_sha256": "f1a3119fa081a6f7918585a6d38ec32835e1e6fac7d218378c284a5183e112de",
+  "changes": [
+    {
+      "case_id": "pk-0236ce4290c1",
+      "obligation_id": "obj-material",
+      "track": "package_consistency",
+      "before": "detected",
+      "after": "silent_miss"
+    },
+    {
+      "case_id": "pk-0972292025ad",
+      "obligation_id": "obj-diameter",
+      "track": "package_consistency",
+      "before": "correct_clear",
+      "after": "false_alert"
+    }
+  ],
+  "counts": {
+    "cases": 15,
+    "before_rows": 121,
+    "after_rows": 121,
+    "html_embedded_rows": 242,
+    "local_file_links": 80,
+    "fragment_links": 2,
+    "public_export_files": 63
+  },
+  "report_path_mapping": {
+    "observed_ok": true,
+    "detail": {
+      "recorded_report_path": "/home/consumer/linux-bounded-workflow/demo/report/index.html",
+      "inspected_report_path": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\linux-bounded-workflow\\demo\\report\\index.html",
+      "resolved_recorded_path": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\linux-bounded-workflow\\demo\\report\\index.html",
+      "supported_export_mapping": {
+        "recorded_prefix": "/home/consumer/linux-bounded-workflow/demo",
+        "local_prefix": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\linux-bounded-workflow\\demo"
+      },
+      "mapping_applied": true,
+      "observed_path_limitation": "The recorded Linux absolute path is checked through its explicit export-prefix mapping to this local copy. The original Linux path is not accessed or established as reachable from this checker."
+    }
+  }
+}

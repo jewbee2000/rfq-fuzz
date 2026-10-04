@@ -4,7 +4,7 @@ Generated from [requirements.json](../requirements.json), the source of truth. S
 
 ## Must
 
-### R01 — Local review-regression workflow
+### R01 â€” Local review-regression workflow
 
 Provide a local CLI and Python API for generate, validate, export, import, compare and report; separate package-consistency from CNC advisory results.
 
@@ -14,7 +14,7 @@ Provide a local CLI and Python API for generate, validate, export, import, compa
 
 **Delivery/status:** M5; T13; in_progress.
 
-### R02 — Sufficient public context and private answers
+### R02 â€” Sufficient public context and private answers
 
 Version PacketSpec, CapabilityProfile, MutationSpec, OracleRecord, ReviewResult and RunManifest. Every premise needed by a reviewer is public; answer keys and defect labels are private.
 
@@ -24,7 +24,7 @@ Version PacketSpec, CapabilityProfile, MutationSpec, OracleRecord, ReviewResult 
 
 **Delivery/status:** M1; T04; verified.
 
-### R03 — Bounded realistic part families
+### R03 â€” Bounded realistic part families
 
 Support one-solid plate/hole-pattern, blind-bore/counterbore block and open-pocket block families with explicit feature groups and setups.
 
@@ -34,7 +34,7 @@ Support one-solid plate/hole-pattern, blind-bore/counterbore block and open-pock
 
 **Delivery/status:** M2; T06; verified.
 
-### R04 — Actual STEP, PDF and PNG artifacts
+### R04 â€” Actual STEP, PDF and PNG artifacts
 
 Produce ordinary STEP and visible vector PDF, with PNG rendered from that PDF. Record units, hash, view/feature associations and rendering provenance.
 
@@ -44,7 +44,7 @@ Produce ordinary STEP and visible vector PDF, with PNG rendered from that PDF. R
 
 **Delivery/status:** M2; T06, T08; verified.
 
-### R05 — Six objective fault operators
+### R05 â€” Six objective fault operators
 
 Implement O01 diameter/model mismatch, O02 scoped count mismatch, O03 units mismatch, O04 incompatible global material declarations, O05 removal of a declared requirement and O06 release-association mismatch.
 
@@ -54,7 +54,7 @@ Implement O01 diameter/model mismatch, O02 scoped count mismatch, O03 units mism
 
 **Delivery/status:** M2; T07, T08; verified.
 
-### R06 — Conditional manufacturing track
+### R06 â€” Conditional manufacturing track
 
 Implement A01 wall advisory, A02 hole depth/diameter advisory, A03 named setup envelope exclusion and A04 finish/tolerance-stage context; include material-dependent applicability.
 
@@ -64,7 +64,7 @@ Implement A01 wall advisory, A02 hole depth/diameter advisory, A03 named setup e
 
 **Delivery/status:** M2; T05, T07, T08; verified.
 
-### R07 — Repairs, valid lookalikes and uncertainty controls
+### R07 â€” Repairs, valid lookalikes and uncertainty controls
 
 Pair objective defects with repaired twins and legitimate alternatives; include underdetermined cases and sparse CAD-authoritative drawings.
 
@@ -74,7 +74,7 @@ Pair objective defects with repaired twins and legitimate alternatives; include 
 
 **Delivery/status:** M4; T07, T11; verified.
 
-### R08 — Independent oracle and fixture quarantine
+### R08 â€” Independent oracle and fixture quarantine
 
 Validate re-imported STEP measurements, actual visible drawing content and mutation isolation using code separated from generation; quarantine uncertainty and collateral defects.
 
@@ -84,7 +84,7 @@ Validate re-imported STEP measurements, actual visible drawing content and mutat
 
 **Delivery/status:** M2; T08; verified.
 
-### R09 — Versioned rule provenance
+### R09 â€” Versioned rule provenance
 
 Store source/date, short paraphrase, applicability, units, threshold, comparison, severity, precedence and limits for each rule. Label synthetic profiles and project-selected values.
 
@@ -94,7 +94,7 @@ Store source/date, short paraphrase, applicability, units, threshold, comparison
 
 **Delivery/status:** M1; T05; verified.
 
-### R10 — Explicit conclusion semantics
+### R10 â€” Explicit conclusion semantics
 
 Distinguish contradiction, profile_exclusion, advisory, missing_information, supported_clear and unsupported; separate fixture invalidity and execution errors.
 
@@ -104,7 +104,7 @@ Distinguish contradiction, profile_exclusion, advisory, missing_information, sup
 
 **Delivery/status:** M1; T04, T10; verified.
 
-### R11 — Vendor-neutral review interface
+### R11 â€” Vendor-neutral review interface
 
 Support ordinary public bundle export, structured-result import and a bounded local-process adapter. Demonstrate one genuine external reviewer as well as the reference path.
 
@@ -114,7 +114,7 @@ Support ordinary public bundle export, structured-result import and a bounded lo
 
 **Delivery/status:** M3; T03, T09; verified.
 
-### R12 — Coverage and failed-run accounting
+### R12 â€” Coverage and failed-run accounting
 
 Record explicit completion, partial, unsupported, timeout and error states plus reviewed modalities/obligations; preserve raw outputs.
 
@@ -124,7 +124,7 @@ Record explicit completion, partial, unsupported, timeout and error states plus 
 
 **Delivery/status:** M3; T09, T10, T12; verified.
 
-### R13 — Evidence-aware matching and adjudication
+### R13 â€” Evidence-aware matching and adjudication
 
 Match category/conclusion/location or feature evidence one-to-one; deduplicate root-cause findings; keep unmatched findings unadjudicated until reviewed.
 
@@ -134,7 +134,7 @@ Match category/conclusion/location or feature evidence one-to-one; deduplicate r
 
 **Delivery/status:** M3; T10; verified.
 
-### R14 — Honest per-track metrics
+### R14 â€” Honest per-track metrics
 
 Report operator recall, named-clean-obligation false-alert rate, explicit false-clear rate, abstention, coverage, invalid/error rates and counts; no composite intelligence score.
 
@@ -144,7 +144,7 @@ Report operator recall, named-clean-obligation false-alert rate, explicit false-
 
 **Delivery/status:** M3; T10; verified.
 
-### R15 — Actionable version regression
+### R15 â€” Actionable version regression
 
 Compare runs on identical suite/oracle/profile versions and show changed findings with artifact evidence; reject incompatible comparisons by default.
 
@@ -154,7 +154,7 @@ Compare runs on identical suite/oracle/profile versions and show changed finding
 
 **Delivery/status:** M5; T03, T10, T13; in_progress.
 
-### R16 — Replay and leakage-resistant partitions
+### R16 â€” Replay and leakage-resistant partitions
 
 Record versions, hashes, seeds, environment and raw results; split by source family/layout/ancestry; keep all twins in one partition.
 
@@ -164,7 +164,7 @@ Record versions, hashes, seeds, environment and raw results; split by source fam
 
 **Delivery/status:** M4; T11; verified.
 
-### R17 — Challenge the validator and scorer
+### R17 â€” Challenge the validator and scorer
 
 Use independent review, analytic examples and deliberate evaluator faults in unit conversion, comparison, severity, deduplication, leakage and unknown handling.
 
@@ -174,7 +174,7 @@ Use independent review, analytic examples and deliberate evaluator faults in uni
 
 **Delivery/status:** M4; T11; verified.
 
-### R18 — Inspectible offline report
+### R18 â€” Inspectible offline report
 
 Create escaped local HTML containing source crop/page, geometric evidence where relevant, expected/actual conclusion, rule provenance and regression context.
 
@@ -184,7 +184,7 @@ Create escaped local HTML containing source crop/page, geometric evidence where 
 
 **Delivery/status:** M4; T12; verified.
 
-### R19 — Bounded and explicit data handling
+### R19 â€” Bounded and explicit data handling
 
 Validate schemas, file signatures, paths, size/pages/solids and process timeouts; do not execute packet text or send data to hosted services by default.
 
@@ -194,7 +194,7 @@ Validate schemas, file signatures, paths, size/pages/solids and process timeouts
 
 **Delivery/status:** M4; T09, T12; verified.
 
-### R20 — Consumer evidence and truthful release claims
+### R20 â€” Consumer evidence and truthful release claims
 
 Provide clean-install examples, an actual external-review walkthrough, known limits, source/dependency/license inventory and a factual unpublished blog draft.
 
@@ -204,7 +204,7 @@ Provide clean-install examples, an actual external-review walkthrough, known lim
 
 **Delivery/status:** M5; T13, T14; in_progress.
 
-### R21 — Traceable agent implementation
+### R21 â€” Traceable agent implementation
 
 Tie tasks to requirements, prerequisites, acceptance commands, retained evidence and local commits. Separate generator, validator and evaluator ownership where useful.
 
@@ -214,7 +214,7 @@ Tie tasks to requirements, prerequisites, acceptance commands, retained evidence
 
 **Delivery/status:** M5; T00, T14; in_progress.
 
-### R22 — Reproducible supported environments
+### R22 â€” Reproducible supported environments
 
 Pin a compatible CAD/drawing stack; test the documented installation and core workflow on Windows and Linux; isolate project dependencies.
 
@@ -226,7 +226,7 @@ Pin a compatible CAD/drawing stack; test the documented installation and core wo
 
 ## Should
 
-### S01 — Engineer-authored external cases
+### S01 â€” Engineer-authored external cases
 
 Allow a user to register owned STEP/PDF packets with explicit feature mappings, finite obligations and manually reviewed expected answers.
 
@@ -236,7 +236,7 @@ Allow a user to register owned STEP/PDF packets with explicit feature mappings, 
 
 **Delivery/status:** M5; T13; partial_with_deferred_scope.
 
-### S02 — Elementary tolerance and thread-depth operators
+### S02 â€” Elementary tolerance and thread-depth operators
 
 Add contradictory numeric intervals/dimension chains and simple blind-bore engagement conflicts only with explicit modeling assumptions.
 
@@ -246,7 +246,7 @@ Add contradictory numeric intervals/dimension chains and simple blind-bore engag
 
 **Delivery/status:** post-v1; no initial task; deferred.
 
-### S03 — External interoperability fixtures
+### S03 â€” External interoperability fixtures
 
 Use a small licensed NIST or separately authored STEP/PMI set for importer robustness, not as unquestioned good-drawing ground truth.
 
@@ -256,7 +256,7 @@ Use a small licensed NIST or separately authored STEP/PMI set for importer robus
 
 **Delivery/status:** M5; T13; partial_with_deferred_scope.
 
-### S04 — Interactive evidence navigation
+### S04 â€” Interactive evidence navigation
 
 Add a local 3D highlight and linked page/feature navigation to the static report.
 
@@ -266,7 +266,7 @@ Add a local 3D highlight and linked page/feature navigation to the static report
 
 **Delivery/status:** post-v1; no initial task; deferred.
 
-### S05 — Broader presentation metamorphisms
+### S05 â€” Broader presentation metamorphisms
 
 Vary font/layout/view order and PNG resolution within known legibility bounds; preserve meaning.
 
@@ -276,7 +276,7 @@ Vary font/layout/view order and PNG resolution within known legibility bounds; p
 
 **Delivery/status:** M4; T11; deferred.
 
-### S06 — Optional hosted reviewer integration
+### S06 â€” Optional hosted reviewer integration
 
 Add a live model API adapter only after offline/manual integration works, with explicit opt-in data transfer and budget.
 
@@ -286,7 +286,7 @@ Add a live model API adapter only after offline/manual integration works, with e
 
 **Delivery/status:** post-v1; no initial task; deferred.
 
-### S07 — Additional independent oracle signal
+### S07 â€” Additional independent oracle signal
 
 Cross-check a representative subset with another CAD reader or separately authored geometry and human review.
 
@@ -298,7 +298,7 @@ Cross-check a representative subset with another CAD reader or separately author
 
 ## Could
 
-### C01 — Failure minimization
+### C01 â€” Failure minimization
 
 Shrink a failing packet/parameter set while preserving the independently validated failure.
 
@@ -308,7 +308,7 @@ Shrink a failing packet/parameter set while preserving the independently validat
 
 **Delivery/status:** later; no initial task; deferred.
 
-### C02 — Semantic AP242 PMI
+### C02 â€” Semantic AP242 PMI
 
 Consume supported semantic PMI where present; never assume STEP includes material/tolerance intent.
 
@@ -318,7 +318,7 @@ Consume supported semantic PMI where present; never assume STEP includes materia
 
 **Delivery/status:** later; no initial task; deferred.
 
-### C03 — Fixed-tool accessibility challenges
+### C03 â€” Fixed-tool accessibility challenges
 
 Add simple reach/radius cases under a fully declared tool catalog, setup and alternate-process boundary.
 
@@ -328,7 +328,7 @@ Add simple reach/radius cases under a fully declared tool catalog, setup and alt
 
 **Delivery/status:** later; no initial task; deferred.
 
-### C04 — Reviewer-output normalization assistance
+### C04 â€” Reviewer-output normalization assistance
 
 Use an optional model to propose mappings from free prose to Finding records, subject to review or calibrated validation.
 
@@ -340,7 +340,7 @@ Use an optional model to propose mappings from free prose to Finding records, su
 
 ## Won't
 
-### W01 — A new general DFM approval application
+### W01 â€” A new general DFM approval application
 
 Do not offer arbitrary upload-and-certify behavior or imply that a passing benchmark approves a part for manufacture.
 
@@ -350,7 +350,7 @@ Do not offer arbitrary upload-and-certify behavior or imply that a passing bench
 
 **Delivery/status:** v1; no initial task; respected.
 
-### W02 — Arbitrary 2D-to-3D reconstruction
+### W02 â€” Arbitrary 2D-to-3D reconstruction
 
 Do not infer complete geometry from arbitrary PDF/PNG or measure manufacturing dimensions from drawing pixels.
 
@@ -360,7 +360,7 @@ Do not infer complete geometry from arbitrary PDF/PNG or measure manufacturing d
 
 **Delivery/status:** v1; no initial task; respected.
 
-### W03 — Native proprietary CAD drawing support
+### W03 â€” Native proprietary CAD drawing support
 
 Do not parse .slddrw or require SolidWorks/Document Manager in the open-source core.
 
@@ -370,7 +370,7 @@ Do not parse .slddrw or require SolidWorks/Document Manager in the open-source c
 
 **Delivery/status:** v1; no initial task; respected.
 
-### W04 — Complete GD&T or functional approval
+### W04 â€” Complete GD&T or functional approval
 
 Do not certify ASME/ISO compliance, complete dimensioning, tolerance stack-ups or inferred design intent.
 
@@ -380,7 +380,7 @@ Do not certify ASME/ISO compliance, complete dimensioning, tolerance stack-ups o
 
 **Delivery/status:** v1; no initial task; respected.
 
-### W05 — General CAM and manufacturing simulation
+### W05 â€” General CAM and manufacturing simulation
 
 Exclude five-axis/turning process planning, fixture synthesis, cutting-force/tool-life simulation, cycle time and price.
 
@@ -390,7 +390,7 @@ Exclude five-axis/turning process planning, fixture synthesis, cutting-force/too
 
 **Delivery/status:** v1; no initial task; respected.
 
-### W06 — Other manufacturing processes
+### W06 â€” Other manufacturing processes
 
 Exclude injection molding, die casting, stamping and sheet-metal bending.
 
@@ -400,7 +400,7 @@ Exclude injection molding, die casting, stamping and sheet-metal bending.
 
 **Delivery/status:** v1; no initial task; respected.
 
-### W07 — Arbitrary imported artifact mutation
+### W07 â€” Arbitrary imported artifact mutation
 
 Do not automatically edit unrestricted customer PDFs or arbitrary STEP topology.
 
@@ -410,7 +410,7 @@ Do not automatically edit unrestricted customer PDFs or arbitrary STEP topology.
 
 **Delivery/status:** v1; no initial task; respected.
 
-### W08 — Universal material/finish predictions
+### W08 â€” Universal material/finish predictions
 
 Do not generate a general compatibility database, coating compensation or machining parameter recommendations.
 
@@ -420,7 +420,7 @@ Do not generate a general compatibility database, coating compensation or machin
 
 **Delivery/status:** v1; no initial task; respected.
 
-### W09 — Hosted service or full Gas Town deployment
+### W09 â€” Hosted service or full Gas Town deployment
 
 Exclude accounts, billing, multi-tenant uploads, orchestration services and a large autonomous agent fleet.
 
@@ -430,7 +430,7 @@ Exclude accounts, billing, multi-tenant uploads, orchestration services and a la
 
 **Delivery/status:** v1; no initial task; respected.
 
-### W10 — Unapproved publication or invented experience
+### W10 â€” Unapproved publication or invented experience
 
 Do not push, deploy, send supplier orders, publish blog content or claim personal shop-floor experience/results not evidenced.
 

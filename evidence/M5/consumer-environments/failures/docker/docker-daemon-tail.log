@@ -1,0 +1,45 @@
+time="2025-04-10T09:17:08.082329478Z" level=info msg="Loading containers: done."
+time="2025-04-10T09:17:08.097063764Z" level=warning msg="WARNING: No blkio throttle.read_bps_device support"
+time="2025-04-10T09:17:08.097136036Z" level=warning msg="WARNING: No blkio throttle.write_bps_device support"
+time="2025-04-10T09:17:08.097149124Z" level=warning msg="WARNING: No blkio throttle.read_iops_device support"
+time="2025-04-10T09:17:08.097156438Z" level=warning msg="WARNING: No blkio throttle.write_iops_device support"
+time="2025-04-10T09:17:08.097163074Z" level=warning msg="WARNING: DOCKER_INSECURE_NO_IPTABLES_RAW is set"
+time="2025-04-10T09:17:08.097170361Z" level=warning msg="WARNING: daemon is not using the default seccomp profile"
+time="2025-04-10T09:17:08.097197923Z" level=info msg="Docker daemon" commit=6430e49 containerd-snapshotter=true storage-driver=overlayfs version=28.0.4
+time="2025-04-10T09:17:08.098407219Z" level=info msg="Initializing buildkit"
+time="2025-04-10T09:17:08.099238531Z" level=warning msg="CDI setup error /var/run/cdi: failed to monitor for changes: no such file or directory"
+time="2025-04-10T09:17:08.207543983Z" level=info msg="Completed buildkit initialization"
+time="2025-04-10T09:17:08.214861583Z" level=info msg="Daemon has completed initialization"
+time="2025-04-10T09:17:08.214958888Z" level=info msg="API listen on /var/run/docker.raw.sock"
+time="2025-04-10T09:22:21.485441868Z" level=info msg="ignoring event" container=c2f2f751c141dbf5d0bd94ab59a5086af995d493fd81739588aed997dd276e20 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+time="2025-04-10T09:23:17.000992803Z" level=info msg="ignoring event" container=bb7c01810569fced8a106688b77c3c0cb3ba2fcfe2f7c144c49d136260067b20 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+-------------------------------------------------------------------------------->8
+time="2025-06-26T01:48:12.854406568Z" level=info msg="Starting up"
+time="2025-06-26T01:48:12.862199782Z" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+time="2025-06-26T01:48:12.962594591Z" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+time="2025-06-26T01:48:12.977046043Z" level=info msg="Starting daemon with containerd snapshotter integration enabled"
+time="2025-06-26T01:48:12.977112410Z" level=info msg="Loading containers: start."
+time="2025-06-26T01:48:12.983833857Z" level=warning msg="failed to determine if container is already mounted" container=bb7c01810569fced8a106688b77c3c0cb3ba2fcfe2f7c144c49d136260067b20
+time="2025-06-26T01:48:13.712903495Z" level=info msg="Loading containers: done."
+time="2025-06-26T01:48:13.734720643Z" level=warning msg="WARNING: DOCKER_INSECURE_NO_IPTABLES_RAW is set"
+time="2025-06-26T01:48:13.734796218Z" level=warning msg="WARNING: daemon is not using the default seccomp profile"
+time="2025-06-26T01:48:13.734834274Z" level=info msg="Docker daemon" commit=6430e49 containerd-snapshotter=true storage-driver=overlayfs version=28.0.4
+time="2025-06-26T01:48:13.737962403Z" level=info msg="Initializing buildkit"
+time="2025-06-26T01:48:13.743687799Z" level=warning msg="CDI setup error /var/run/cdi: failed to monitor for changes: no such file or directory"
+time="2025-06-26T01:48:13.843103039Z" level=info msg="Completed buildkit initialization"
+time="2025-06-26T01:48:13.850044001Z" level=info msg="Daemon has completed initialization"
+time="2025-06-26T01:48:13.850128960Z" level=info msg="API listen on /var/run/docker.raw.sock"
+-------------------------------------------------------------------------------->8
+time="2026-10-04T21:18:55.781706437Z" level=info msg="Starting up"
+time="2026-10-04T21:18:55.782339472Z" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+time="2026-10-04T21:18:55.809618340Z" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+time="2026-10-04T21:18:55.835929691Z" level=info msg="Loading containers: start."
+time="2026-10-04T21:18:55.992812319Z" level=info msg="Loading containers: done."
+time="2026-10-04T21:18:56.002188499Z" level=warning msg="WARNING: DOCKER_INSECURE_NO_IPTABLES_RAW is set"
+time="2026-10-04T21:18:56.002220284Z" level=warning msg="WARNING: daemon is not using the default seccomp profile"
+time="2026-10-04T21:18:56.002236104Z" level=info msg="Docker daemon" commit=6430e49 containerd-snapshotter=false storage-driver=overlay2 version=28.0.4
+time="2026-10-04T21:18:56.002970644Z" level=info msg="Initializing buildkit"
+time="2026-10-04T21:18:56.007684596Z" level=warning msg="CDI setup error /var/run/cdi: failed to monitor for changes: no such file or directory"
+time="2026-10-04T21:18:56.051685612Z" level=info msg="Completed buildkit initialization"
+time="2026-10-04T21:18:56.057811228Z" level=info msg="Daemon has completed initialization"
+time="2026-10-04T21:18:56.057887670Z" level=info msg="API listen on /var/run/docker.raw.sock"

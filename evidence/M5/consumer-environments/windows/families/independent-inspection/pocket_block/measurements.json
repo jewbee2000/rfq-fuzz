@@ -1,0 +1,305 @@
+{
+  "reader": "Own OCP STEPControl reader; shares OCCT with generator, no toolkit validator/reference imported",
+  "input_public_path": "work\\consumer-env\\windows-bounded-family-workflow\\generated-suite\\public\\pk-d66a90fd926a",
+  "case_id": "pk-d66a90fd926a",
+  "hashes": {
+    "packet.json": "ee2656c8401948797167bfe79275abd9b9b953458c1fd321c48f42eff311f34f",
+    "part.step": "71ce07df570168e989b0684c7a8fecf4abe23f84b80643e4ee1ead23c2b6721d",
+    "drawing.pdf": "652b2529c5cddabbec2abf1978bd0048204b7edabe744ba720fd27ce4b5d75b9",
+    "drawing.png": "986a9e5e51aeace133cc563ad10ede4d0184728ae54a53fa2f9cd5e57395deca"
+  },
+  "solids": 1,
+  "volume_mm3": 30000.0,
+  "shape_bounds_mm": [
+    -30.0000001,
+    -20.0000001,
+    -10.0000001,
+    30.0000001,
+    20.0000001,
+    10.0000001
+  ],
+  "faces": [
+    {
+      "surface_type": "GeomAbs_SurfaceType.GeomAbs_Plane",
+      "bounds_mm": [
+        -30.0000001,
+        -20.0000001,
+        -10.0000001,
+        -29.9999999,
+        20.0000001,
+        10.0000001
+      ],
+      "plane_location_mm": [
+        -30.0,
+        -20.0,
+        -10.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "surface_type": "GeomAbs_SurfaceType.GeomAbs_Plane",
+      "bounds_mm": [
+        -30.0000001,
+        -20.0000001,
+        -10.0000001,
+        30.0000001,
+        -19.9999999,
+        10.0000001
+      ],
+      "plane_location_mm": [
+        -30.0,
+        -20.0,
+        -10.0
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "surface_type": "GeomAbs_SurfaceType.GeomAbs_Plane",
+      "bounds_mm": [
+        -30.0000001,
+        -20.0000001,
+        9.9999999,
+        30.0000001,
+        20.0000001,
+        10.0000001
+      ],
+      "plane_location_mm": [
+        -30.0,
+        -20.0,
+        10.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "surface_type": "GeomAbs_SurfaceType.GeomAbs_Plane",
+      "bounds_mm": [
+        -30.0000001,
+        19.9999999,
+        -10.0000001,
+        30.0000001,
+        20.0000001,
+        10.0000001
+      ],
+      "plane_location_mm": [
+        -30.0,
+        20.0,
+        -10.0
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "surface_type": "GeomAbs_SurfaceType.GeomAbs_Plane",
+      "bounds_mm": [
+        -30.0000001,
+        -20.0000001,
+        -10.0000001,
+        30.0000001,
+        20.0000001,
+        -9.9999999
+      ],
+      "plane_location_mm": [
+        -30.0,
+        -20.0,
+        -10.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "surface_type": "GeomAbs_SurfaceType.GeomAbs_Plane",
+      "bounds_mm": [
+        29.9999999,
+        -20.0000001,
+        -10.0000001,
+        30.0000001,
+        20.0000001,
+        10.0000001
+      ],
+      "plane_location_mm": [
+        30.0,
+        -20.0,
+        -10.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "surface_type": "GeomAbs_SurfaceType.GeomAbs_Plane",
+      "bounds_mm": [
+        -25.0000001,
+        -15.0000001,
+        -2.0000001,
+        -24.9999999,
+        15.0000001,
+        10.0000001
+      ],
+      "plane_location_mm": [
+        -25.0,
+        -15.0,
+        -2.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "surface_type": "GeomAbs_SurfaceType.GeomAbs_Plane",
+      "bounds_mm": [
+        -25.0000001,
+        -15.0000001,
+        -2.0000001,
+        25.0000001,
+        -14.9999999,
+        10.0000001
+      ],
+      "plane_location_mm": [
+        -25.0,
+        -15.0,
+        -2.0
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "surface_type": "GeomAbs_SurfaceType.GeomAbs_Plane",
+      "bounds_mm": [
+        24.9999999,
+        -15.0000001,
+        -2.0000001,
+        25.0000001,
+        15.0000001,
+        10.0000001
+      ],
+      "plane_location_mm": [
+        25.0,
+        -15.0,
+        -2.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "surface_type": "GeomAbs_SurfaceType.GeomAbs_Plane",
+      "bounds_mm": [
+        -25.0000001,
+        14.9999999,
+        -2.0000001,
+        25.0000001,
+        15.0000001,
+        10.0000001
+      ],
+      "plane_location_mm": [
+        -25.0,
+        15.0,
+        -2.0
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "surface_type": "GeomAbs_SurfaceType.GeomAbs_Plane",
+      "bounds_mm": [
+        -25.0000001,
+        -15.0000001,
+        -2.0000001,
+        25.0000001,
+        15.0000001,
+        -1.9999999
+      ],
+      "plane_location_mm": [
+        -25.0,
+        -15.0,
+        -2.0
+      ],
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "step_header": [
+    "ISO-10303-21;",
+    "HEADER;",
+    "FILE_DESCRIPTION(('Open CASCADE Model'),'2;1');",
+    "FILE_NAME('Open CASCADE Shape Model','2026-10-04T15:42:56',('Author'),(",
+    "    'Open CASCADE'),'Open CASCADE STEP processor 7.8','build123d',",
+    "  'Unknown');",
+    "FILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));",
+    "ENDSEC;",
+    "DATA;",
+    "#1 = APPLICATION_PROTOCOL_DEFINITION('international standard',",
+    "  'automotive_design',2000,#2);",
+    "#2 = APPLICATION_CONTEXT(",
+    "  'core data for automotive mechanical design processes');",
+    "#3 = SHAPE_DEFINITION_REPRESENTATION(#4,#10);",
+    "#4 = PRODUCT_DEFINITION_SHAPE('','',#5);",
+    "#5 = PRODUCT_DEFINITION('design','',#6,#9);",
+    "#6 = PRODUCT_DEFINITION_FORMATION('','',#7);",
+    "#7 = PRODUCT('PT-001 REV A','PT-001 REV A','',(#8));",
+    "#8 = PRODUCT_CONTEXT('',#2,'mechanical');",
+    "#9 = PRODUCT_DEFINITION_CONTEXT('part definition',#2,'design');",
+    "#10 = ADVANCED_BREP_SHAPE_REPRESENTATION('',(#11,#15),#667);",
+    "#11 = AXIS2_PLACEMENT_3D('',#12,#13,#14);",
+    "#12 = CARTESIAN_POINT('',(0.,0.,0.));",
+    "#13 = DIRECTION('',(0.,0.,1.));",
+    "#14 = DIRECTION('',(1.,0.,-0.));",
+    "#15 = MANIFOLD_SOLID_BREP('',#16);",
+    "#16 = CLOSED_SHELL('',(#17,#137,#213,#376,#425,#452,#459,#535,#584,#633,",
+    "    #660));",
+    "#17 = ADVANCED_FACE('',(#18),#32,.F.);",
+    "#18 = FACE_BOUND('',#19,.F.);"
+  ],
+  "step_unit_lines": [
+    "#668 = ( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) );",
+    "#669 = ( NAMED_UNIT(*) PLANE_ANGLE_UNIT() SI_UNIT($,.RADIAN.) );",
+    "#670 = ( NAMED_UNIT(*) SI_UNIT($,.STERADIAN.) SOLID_ANGLE_UNIT() );"
+  ],
+  "pdf_pages": 1,
+  "pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 60.00 x 40.00 x 20.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 50.00 mm\nP1 LENGTH = 30.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+  "png_check": {
+    "provided_size": [
+      2339,
+      1653
+    ],
+    "rerendered_size": [
+      2339,
+      1653
+    ],
+    "pixel_delta_bounds": null
+  },
+  "measurement_tolerance_mm": 1e-06
+}

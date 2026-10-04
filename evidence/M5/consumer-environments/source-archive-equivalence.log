@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "tested_archive_sha256": "e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931",
+  "portable_archive_sha256": "f048a54abef6ced29676c0270dbef968719662ea1013038e82b048d74a0e75b0",
+  "tested_implementation_commit": "55b288a8df0d1b3ced607c8d97d23847b2f122ba",
+  "portable_commit": "348c5f1ea5a6e99bc0acdb4f0d0af52f3a8146e0",
+  "protected_demo_files_checked": 65,
+  "source_modules_checked": 23,
+  "additional_files": [
+    ".gitattributes"
+  ],
+  "failures": [],
+  "scope": "All audited inputs must be byte-identical; all source modules must have equal normalized bytes and AST. Normal text checkout line endings are the only accepted file difference."
+}

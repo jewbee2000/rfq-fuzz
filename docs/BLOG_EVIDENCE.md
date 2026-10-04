@@ -8,8 +8,9 @@ personal job incident, supplier conversation, shop experience or manufactured pa
 
 Worker base: `4c98b5f158c5b563ad256184303165e60231c088`, isolated
 `.workers/blog-v1` on `codex/m5-blog`. Evidence read on 2026-10-04 in the user's
-America/Los_Angeles date. Root consumer work continues; this source snapshot is
-explicitly incomplete for final independent platform/demo acceptance.
+America/Los_Angeles date. This historical worker snapshot preceded final consumer
+acceptance. Coordinator subsequently verified both actual platform workflows and
+updated the draft against [consumer evidence](../evidence/M5/consumer.md).
 
 | Draft claim | Retained source | Practical limitation |
 |---|---|---|
@@ -29,7 +30,7 @@ explicitly incomplete for final independent platform/demo acceptance.
 | All six selected evaluator mutants detected by unchanged acceptance tests | [Challenge report](../evidence/M4/challenge-report.md), [mutant summary](../evidence/M4/challenge-tests/summary.json) | Six selected relevant bugs, not exhaustive mutation coverage. Mutated tests must fail semantically, not by syntax/import errors. |
 | Genuine external two-packet observation covers15 duties,14 grounded/one unadjudicated | [Scoped external summary](../evidence/M5/external-v1/summary.json), [raw public-only observation](../evidence/M5/external-v1/observations/raw-observation.json) | Raw response has14clear+oneadvisory; scored result has13grounded clears+onegrounded advisory+oneunadjudicated clear. Do not use broader `external-v1-summary.json` denominators: that import included143 unrequested cases and is an integration diagnostic. |
 | Separately agent-authored transfer dimensions and label compatibility revision | [Transfer provenance](../evidence/M5/transfer-v2/author/PROVENANCE.md), [independent transfer oracle](../evidence/M5/transfer-v2/oracle.json), [visual attestation](../evidence/M5/transfer-v2/attestation.json) | New author/layout diagnostic, not human engineer authorship, another CAD kernel, physical manufacture or held-out reviewer accuracy. |
-| Local replay workflow and dependency credit | [Demo instructions](DEMO.md), [consumer preparation](../evidence/M5/consumer-preparation.md), [licenses](LICENSES.md) | Coordinator replay is recorded; independent clean Windows/Linux final consumer verification remains editorial pending in this worker snapshot. |
+| Independent Windows/Linux replay and dependency credit | [Demo instructions](DEMO.md), [consumer acceptance](../evidence/M5/consumer.md), [licenses](LICENSES.md) | Actual15case runs, source equivalence and three fresh families separately retained. Linux acceptance is the named software-emulated setup with explicit300/120second bounds; its earlier60second timeout is never a pass. No industrial/human oracle claim. |
 
 ## Actual figures
 
@@ -51,12 +52,11 @@ explicitly incomplete for final independent platform/demo acceptance.
    now the third embedded figure. This actual browser record supplements source
    inspection; no screenshot is inferred from an HTML audit alone.
 
-## Editorial completion gate
+## Final editorial scope
 
-Before calling this the final article draft, the coordinator should replace the
-opening consumer-pending sentence and later platform-pending sentence only after
-actual clean-consumer evidence passes, retaining exact environments/commands and
-diagnosed changes. The report screenshot is now actually inspected and embedded.
+Actual independent consumer evidence now passes on both recorded platforms. The
+coordinator replaced the pending sentences with exact setup/resource limitations
+and linked the diagnoses. The report screenshot is actually inspected and embedded.
 No repository URL, publication date, public demo URL or deployment is invented.
 The final article remains local/unpublished under the user's instructions.
 
@@ -83,9 +83,9 @@ acceptance will be recorded in `evidence/M5/document-audit.json`.
 This lightweight audit checks document integrity, not engineering or consumer
 workflow acceptance. The two actual image inspections are recorded above.
 
-Handoff: no failing draft acceptance command is intended; unresolved assumption
-is final independent consumer/browser evidence, explicitly pending. Next ready
-dependency is root's completed T13 acceptance, then final T14 evidence matrix and
-article claim update. Assessment: the retained development and external evidence
-supports this narrowly scoped account, while final consumer claims require the
-remaining actual runs.
+Handoff: final document acceptance is recorded in `evidence/M5/document-audit.json`;
+the task ledger records the local completion commit. Consumer/browser evidence is
+actual and separately retained. Remaining limits are the finite grammar/layout,
+shared kernel, development-only core, no human engineer/physical manufacture and
+one unadjudicated external units assertion. The retained evidence supports this
+narrow account, with no repository/public-demo URL or publication invented.

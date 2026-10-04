@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "retained_manifest_files_checked": 1694,
+  "platforms": {
+    "windows": {
+      "valid_replay_cases": 15,
+      "rows_per_response": 121,
+      "changed_duties": 2,
+      "fresh_families_semantically_checked": 3,
+      "fresh_unattested_cases": 3,
+      "report_inspection": "passed",
+      "recorded_resource_limits": {
+        "native_parser_seconds": 60,
+        "document_audit_seconds": 20
+      }
+    },
+    "linux": {
+      "valid_replay_cases": 15,
+      "rows_per_response": 121,
+      "changed_duties": 2,
+      "fresh_families_semantically_checked": 3,
+      "fresh_unattested_cases": 3,
+      "report_inspection": "passed",
+      "recorded_resource_limits": {
+        "native_parser_seconds": 300.0,
+        "document_audit_seconds": 120.0
+      }
+    }
+  },
+  "limitations": "Verifies handoff hashes/accounting and actual independent-check records; does not replace native readers or human engineering review."
+}

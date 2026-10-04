@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "comparisons": [
+    {
+      "before_reviewer": {
+        "name": "RFQFuzz public-only template reference",
+        "version": "1.0",
+        "configuration": "Shares observed readers/OCCT with validator; own public rule logic; not independent reviewer performance"
+      },
+      "after_reviewer": {
+        "name": "DELIBERATELY INJECTED reference regression",
+        "version": "1.0-injected",
+        "configuration": "Deliberately injected one detected-to-silent-miss and one correct-clear-to-false-alert. Not a naturally discovered external failure."
+      },
+      "changes": [
+        {
+          "case_id": "pk-0236ce4290c1",
+          "obligation_id": "obj-material",
+          "track": "package_consistency",
+          "before": "detected",
+          "after": "silent_miss"
+        },
+        {
+          "case_id": "pk-0972292025ad",
+          "obligation_id": "obj-diameter",
+          "track": "package_consistency",
+          "before": "correct_clear",
+          "after": "false_alert"
+        }
+      ]
+    }
+  ],
+  "manifest": {
+    "schema_version": "1.0",
+    "suite_sha256": "84eab6dfffb6ba41c94819f37bd7db90a3bb2b6994a0e93ca8fa323a509bb5d6",
+    "oracle_sha256": "1b89488a8222f622f24758b9b07edfd111e4d5e29fda3984d33765380128a05a",
+    "profile_sha256": "21b2dcbfad26a5deec251e481b6a550158581b3a0674833f2d017e60263fbbce",
+    "adapter_version": "manual-1.0",
+    "seed": 42,
+    "environment": {
+      "python": "3.12.3",
+      "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39"
+    },
+    "raw_sha256": "57475f6cf8e681109820d2e3407eb2bf3f265ce5cda415e538e083486df06b21",
+    "limitations": [
+      "Finite synthetic obligations",
+      "Shared OCCT kernel",
+      "Conservative canonical source quotation matching"
+    ],
+    "failures": []
+  },
+  "scope": "Finite synthetic obligations; no industrial competence or manufacturing approval"
+}

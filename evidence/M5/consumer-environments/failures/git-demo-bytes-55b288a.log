@@ -1,0 +1,7 @@
+{
+  "source_commit": "55b288a8df0d1b3ced607c8d97d23847b2f122ba",
+  "scope": "Git object bytes, independent of host checkout EOL settings; no source logic or private conclusions read",
+  "status": "failed",
+  "files_checked": 64,
+  "mismatch_count": 19
+}

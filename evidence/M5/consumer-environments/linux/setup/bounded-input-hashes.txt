@@ -1,0 +1,4 @@
+e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931  /home/consumer/frozen-consumer-bounded.tar.gz
+2c9b039252dea526fd9b935fd386cf1e4c13a77bc9d35ae62ac5e38e2c0c0d03  /home/consumer/frozen-bounded/requirements-build.lock
+9c7cb69a7f9c6604ee0f0f26a28224184a0296aab8bb4514d4109f0388c679f6  /home/consumer/frozen-bounded/requirements-m0.lock
+2485de15626634fd5c1c587981841923329fdf200a753935a2235903aacee5ad  /home/consumer/frozen-bounded/requirements-v1.lock

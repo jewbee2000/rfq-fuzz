@@ -1,0 +1,25 @@
+{
+  "result": "engineering_meanings_confirmed",
+  "source": "Own direct OCP measurements, actual PDF extraction, public context and immutable before/after raw claims; no private mutation/expected-answer/source conclusion logic",
+  "material": {
+    "case_id": "pk-0236ce4290c1",
+    "visible_drawing_material": "7075-T6",
+    "public_contract_material": "6061-T6",
+    "precedence": "equal",
+    "meaning": "The two material premises contradict; removal of its finding is a silent miss of a package obligation."
+  },
+  "diameter": {
+    "case_id": "pk-0972292025ad",
+    "measured_h1_diameter_mm": 6.2,
+    "actual_counterbore_diameter_mm": 12.2,
+    "visible_h1_annotation": "H1 DIAMETER = 6.20 +/- 0.05 mm",
+    "same_stage": "finished",
+    "transition": null,
+    "meaning": "Measured H1 diameter equals drawing nominal at the same stage, inside the stated tolerance; the injected contradiction is a false alert for that obligation. A separate release-association contradiction persists in both responses, so the whole packet is not claimed clear."
+  },
+  "limits": [
+    "Explicitly injected replay demonstrates example diagnosis infrastructure, not natural reviewer failure or industrial performance.",
+    "Direct geometry reader shares OCCT with generation.",
+    "Only the two changed obligations were independently traced here."
+  ]
+}

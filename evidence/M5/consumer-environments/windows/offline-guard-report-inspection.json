@@ -1,0 +1,669 @@
+{
+  "inspection_kind": "Independent consumer artifact inspection",
+  "status": "observations_passed",
+  "requirements": [
+    "R01",
+    "R02",
+    "R14",
+    "R15",
+    "R16",
+    "R18"
+  ],
+  "artifact_root": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\windows-frozen-bounded\\work\\windows-all-python-offline-demo",
+  "environment": {
+    "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+    "platform": "win32",
+    "source_logic_used": false,
+    "network_or_packet_transmission": false
+  },
+  "checks": {
+    "exactly_two_diagnosis_changes": {
+      "observed_ok": true,
+      "detail": {
+        "changes": [
+          {
+            "case_id": "pk-0236ce4290c1",
+            "obligation_id": "obj-material",
+            "track": "package_consistency",
+            "before": "detected",
+            "after": "silent_miss"
+          },
+          {
+            "case_id": "pk-0972292025ad",
+            "obligation_id": "obj-diameter",
+            "track": "package_consistency",
+            "before": "correct_clear",
+            "after": "false_alert"
+          }
+        ],
+        "before_rows": 121,
+        "after_rows": 121
+      }
+    },
+    "fifteen_case_denominator": {
+      "observed_ok": true,
+      "detail": {
+        "cases": 15,
+        "oracle_recorded_counts": {
+          "valid": 15
+        },
+        "oracle_case_status_counts": {
+          "valid": 15
+        },
+        "before_invalid_rate": {
+          "numerator": 0,
+          "denominator": 15
+        },
+        "after_invalid_rate": {
+          "numerator": 0,
+          "denominator": 15
+        },
+        "scope": "Observed artifact statuses, not geometry revalidation."
+      }
+    },
+    "retained_response_source_binding": {
+      "observed_ok": true,
+      "detail": [
+        {
+          "run": "before",
+          "raw_sha256": "57475f6cf8e681109820d2e3407eb2bf3f265ce5cda415e538e083486df06b21",
+          "raw_matches_import_and_run_hash": true,
+          "raw_matches_retained_input_bytes": true,
+          "import_response_matches_raw_object": true,
+          "packet_hash_mismatches": [],
+          "results": 15,
+          "result_statuses": {
+            "completed": 15
+          },
+          "oracle_sha256_matches_file": true
+        },
+        {
+          "run": "after",
+          "raw_sha256": "435d042b4e3500ef02ed125d51a88185553ed5c16fbd8c3526fb9aed94bae7c9",
+          "raw_matches_import_and_run_hash": true,
+          "raw_matches_retained_input_bytes": true,
+          "import_response_matches_raw_object": true,
+          "packet_hash_mismatches": [],
+          "results": 15,
+          "result_statuses": {
+            "completed": 15
+          },
+          "oracle_sha256_matches_file": true
+        }
+      ]
+    },
+    "shared_run_premise_bindings": {
+      "observed_ok": true,
+      "detail": {
+        "suite_sha256": "84eab6dfffb6ba41c94819f37bd7db90a3bb2b6994a0e93ca8fa323a509bb5d6",
+        "oracle_sha256": "35960f13e0624951ece733737ed35ff10f2b08e47b8747c57e5878646f20e9ad",
+        "profile_sha256": "21b2dcbfad26a5deec251e481b6a550158581b3a0674833f2d017e60263fbbce",
+        "seed": 42,
+        "adapter_version": "manual-1.0"
+      }
+    },
+    "recorded_report_path_binding": {
+      "observed_ok": true,
+      "detail": {
+        "recorded_report_path": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\windows-frozen-bounded\\work\\windows-all-python-offline-demo\\report\\index.html",
+        "inspected_report_path": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\windows-frozen-bounded\\work\\windows-all-python-offline-demo\\report\\index.html",
+        "resolved_recorded_path": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\windows-frozen-bounded\\work\\windows-all-python-offline-demo\\report\\index.html",
+        "supported_export_mapping": {
+          "recorded_prefix": "/home/consumer/linux-bounded-workflow/demo",
+          "local_prefix": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\windows-frozen-bounded\\work\\windows-all-python-offline-demo"
+        },
+        "mapping_applied": false,
+        "observed_path_limitation": "The recorded absolute report path resolves directly in this environment. Linux export-prefix mapping is supported but was not used."
+      }
+    },
+    "offline_html_links_and_inert_content": {
+      "observed_ok": true,
+      "detail": {
+        "local_file_links": 80,
+        "fragment_links": 2,
+        "unique_local_files": 65,
+        "missing_external_or_outside_demo_links": [],
+        "unsafe_elements_or_attributes": [],
+        "producer_audit": {
+          "status": "passed",
+          "local_links": 82,
+          "unsafe_elements": 0
+        }
+      }
+    },
+    "html_displayed_rows_bind_to_run_rows": {
+      "observed_ok": true,
+      "detail": {
+        "embedded_rows": 242,
+        "retained_run_rows": 242
+      }
+    },
+    "track_counts_visible_and_consistent": {
+      "observed_ok": true,
+      "detail": {
+        "before_tracks": {
+          "package_consistency": {
+            "applicable": 87,
+            "issues": 8,
+            "clean": 79,
+            "underdetermined": 0,
+            "detected": 8,
+            "false_alerts": 0,
+            "explicit_false_clears": 0,
+            "silent_misses": 0,
+            "correct_clear": 79,
+            "appropriate_abstentions": 0,
+            "abstentions": 0,
+            "covered": 87,
+            "execution_failures": 0,
+            "unsupported": 0,
+            "unasserted_clean": 0,
+            "reasoning_errors": 0,
+            "rates": {
+              "recall": {
+                "numerator": 8,
+                "denominator": 8
+              },
+              "named_clean_false_alert": {
+                "numerator": 0,
+                "denominator": 79
+              },
+              "explicit_false_clear": {
+                "numerator": 0,
+                "denominator": 8
+              },
+              "coverage": {
+                "numerator": 87,
+                "denominator": 87
+              },
+              "appropriate_abstention": {
+                "numerator": 0,
+                "denominator": 0
+              }
+            }
+          },
+          "cnc_advisory": {
+            "applicable": 34,
+            "issues": 3,
+            "clean": 25,
+            "underdetermined": 6,
+            "detected": 3,
+            "false_alerts": 0,
+            "explicit_false_clears": 0,
+            "silent_misses": 0,
+            "correct_clear": 25,
+            "appropriate_abstentions": 6,
+            "abstentions": 6,
+            "covered": 34,
+            "execution_failures": 0,
+            "unsupported": 0,
+            "unasserted_clean": 0,
+            "reasoning_errors": 0,
+            "rates": {
+              "recall": {
+                "numerator": 3,
+                "denominator": 3
+              },
+              "named_clean_false_alert": {
+                "numerator": 0,
+                "denominator": 25
+              },
+              "explicit_false_clear": {
+                "numerator": 0,
+                "denominator": 3
+              },
+              "coverage": {
+                "numerator": 34,
+                "denominator": 34
+              },
+              "appropriate_abstention": {
+                "numerator": 6,
+                "denominator": 6
+              }
+            }
+          }
+        },
+        "after_tracks": {
+          "package_consistency": {
+            "applicable": 87,
+            "issues": 8,
+            "clean": 79,
+            "underdetermined": 0,
+            "detected": 7,
+            "false_alerts": 1,
+            "explicit_false_clears": 0,
+            "silent_misses": 1,
+            "correct_clear": 78,
+            "appropriate_abstentions": 0,
+            "abstentions": 0,
+            "covered": 87,
+            "execution_failures": 0,
+            "unsupported": 0,
+            "unasserted_clean": 0,
+            "reasoning_errors": 0,
+            "rates": {
+              "recall": {
+                "numerator": 7,
+                "denominator": 8
+              },
+              "named_clean_false_alert": {
+                "numerator": 1,
+                "denominator": 79
+              },
+              "explicit_false_clear": {
+                "numerator": 0,
+                "denominator": 8
+              },
+              "coverage": {
+                "numerator": 87,
+                "denominator": 87
+              },
+              "appropriate_abstention": {
+                "numerator": 0,
+                "denominator": 0
+              }
+            }
+          },
+          "cnc_advisory": {
+            "applicable": 34,
+            "issues": 3,
+            "clean": 25,
+            "underdetermined": 6,
+            "detected": 3,
+            "false_alerts": 0,
+            "explicit_false_clears": 0,
+            "silent_misses": 0,
+            "correct_clear": 25,
+            "appropriate_abstentions": 6,
+            "abstentions": 6,
+            "covered": 34,
+            "execution_failures": 0,
+            "unsupported": 0,
+            "unasserted_clean": 0,
+            "reasoning_errors": 0,
+            "rates": {
+              "recall": {
+                "numerator": 3,
+                "denominator": 3
+              },
+              "named_clean_false_alert": {
+                "numerator": 0,
+                "denominator": 25
+              },
+              "explicit_false_clear": {
+                "numerator": 0,
+                "denominator": 3
+              },
+              "coverage": {
+                "numerator": 34,
+                "denominator": 34
+              },
+              "appropriate_abstention": {
+                "numerator": 6,
+                "denominator": 6
+              }
+            }
+          }
+        }
+      }
+    },
+    "public_export_privacy_observations": {
+      "observed_ok": true,
+      "detail": {
+        "total_files": 63,
+        "case_count": 15,
+        "files_per_case": 4,
+        "top_level_files": [
+          "INSTRUCTIONS.txt",
+          "REVIEWER_PROTOCOL.md",
+          "export-audit.json"
+        ],
+        "unexpected_files": [],
+        "forbidden_json_keys": [],
+        "bad_case_file_sets": [],
+        "public_input_byte_mismatches": [],
+        "private_marker_hits": [],
+        "pdf_and_png_metadata": [
+          {
+            "case_id": "pk-0236ce4290c1",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-0972292025ad",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-0d8f75aead6b",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-3f31a2dd3b69",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-4c78ba0418a8",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-61e732a788ae",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-9fac6cb15b90",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-ac6ae47c7b15",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-af95f3073f88",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-c6060a86b3df",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-d0f406e22f58",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-d13b84a82f87",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-d5d25caf0cee",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-ee19649c4ca9",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          },
+          {
+            "case_id": "pk-ef68097ce858",
+            "pdf_pages": 1,
+            "pdf_metadata": {
+              "/Author": "RFQ author",
+              "/CreationDate": "D:20000101000000+00'00'",
+              "/Creator": "RFQFuzz bounded vector drafting",
+              "/Keywords": "",
+              "/ModDate": "D:20000101000000+00'00'",
+              "/Producer": "ReportLab PDF Library - (opensource)",
+              "/Subject": "Authored schematic engineering drawing",
+              "/Title": "Part drawing",
+              "/Trapped": "/False"
+            },
+            "png_metadata_keys": [
+              "dpi"
+            ]
+          }
+        ],
+        "limits": "Finite key/token and exported-byte observations; not a proof of all semantic leakage or a security sandbox."
+      }
+    },
+    "supplied_frozen_archive_hash": {
+      "observed_ok": true,
+      "detail": {
+        "declared_source_commit": "55b288a8df0d1b3ced607c8d97d23847b2f122ba",
+        "expected_archive_sha256": "e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931",
+        "scope": "Declared commit supplied by coordinator; no source or archive internals inspected.",
+        "status": "observed",
+        "archive_argument_supplied": true,
+        "archive": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\frozen-consumer-bounded.tar.gz",
+        "actual_sha256": "e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931"
+      }
+    }
+  },
+  "failures": [],
+  "inspected_artifact_sha256": {
+    "demo-result.json": "3e2c8678500f4ee6dea43b63f326f99f54590043b9f8ab265f5a4d1f497166fa",
+    "before/run.json": "f9bd90d25d382bb150047aa636a9282595253d863642b3689301ad84d8e590bc",
+    "after/run.json": "debff7583a77df3e86f5560dcf5b6ed18f07bd108eb1195993cacfd618290d5e",
+    "before/raw-review.json": "57475f6cf8e681109820d2e3407eb2bf3f265ce5cda415e538e083486df06b21",
+    "after/raw-review.json": "435d042b4e3500ef02ed125d51a88185553ed5c16fbd8c3526fb9aed94bae7c9",
+    "before/import.json": "db0846123bd0584d54003b50a208076c88545b4762c2850863523a94ca6bc8c1",
+    "after/import.json": "0af5bab60decb23652a4138ed6b170a355171593a944f8caf0a2471b8f11d34b",
+    "report/index.html": "63c13bbad1af100ec977bd503022948b2b7a31d7b8c6780af693069f9f56ee9f",
+    "report/comparison.json": "4db9c37dda24ea0b0cccf847539b180920f50766b9d908e05a460535635295dd",
+    "report/source-audit.json": "0b750d52d74d6950c90df753cdc36d4a2cf64a7e4fe31e528f4fdf32e1210e3b",
+    "validation/oracle.json": "35960f13e0624951ece733737ed35ff10f2b08e47b8747c57e5878646f20e9ad",
+    "inputs/replay-manifest.json": "ff7d423038cce0bb0feecd0bf2ab3572f3d98a2ae81c1b19ce4bd2538d5fc100",
+    "review-bundle/export-audit.json": "61ca85ba0a5756dbd02a09db485ff15edf6af4f8c197761fce5939e8683f1866"
+  },
+  "checker_sha256": "f1a3119fa081a6f7918585a6d38ec32835e1e6fac7d218378c284a5183e112de",
+  "archive_observation": {
+    "declared_source_commit": "55b288a8df0d1b3ced607c8d97d23847b2f122ba",
+    "expected_archive_sha256": "e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931",
+    "scope": "Declared commit supplied by coordinator; no source or archive internals inspected.",
+    "status": "observed",
+    "archive_argument_supplied": true,
+    "archive": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\frozen-consumer-bounded.tar.gz",
+    "actual_sha256": "e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931"
+  },
+  "retained_evidence": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\windows-all-python-offline-report-inspection.json",
+  "invocation": [
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\windows-venv\\Scripts\\python.exe",
+    "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\check_consumer_report.py",
+    "work/consumer-env/windows-frozen-bounded/work/windows-all-python-offline-demo",
+    "work/consumer-env/windows-all-python-offline-report-inspection.json",
+    "--archive",
+    "work/consumer-env/frozen-consumer-bounded.tar.gz",
+    "--archive-sha256",
+    "e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931",
+    "--declared-commit",
+    "55b288a8df0d1b3ced607c8d97d23847b2f122ba",
+    "--linux-prefix",
+    "/home/consumer/linux-bounded-workflow/demo"
+  ],
+  "invocation_working_directory": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz",
+  "inspection_configuration": {
+    "declared_commit": "55b288a8df0d1b3ced607c8d97d23847b2f122ba",
+    "archive_sha256": "e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931",
+    "linux_prefix": "/home/consumer/linux-bounded-workflow/demo"
+  },
+  "limitations": [
+    "Artifact agreement is not independent geometry/oracle revalidation.",
+    "Retained demonstration replays audited reviewer bytes and explicitly injected changes; no new external reviewer measurement.",
+    "No visual browser-render assessment performed.",
+    "No industrial competence or manufacturing approval claim.",
+    "Recorded Linux paths are accessed only through the explicitly recorded export-prefix mapping; original Linux filesystem availability is unverified.",
+    "No source/status files edited; output is only the requested findings JSON."
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "actual": "5bcf9eed634e8575a37b74f445af41a2fe4106da512d0c30c368301d4c105037fdfab40a5287367a28a957624cddebbc8c07e16c88ab6634f554cdf3d16bf543",
+    "expected": "5bcf9eed634e8575a37b74f445af41a2fe4106da512d0c30c368301d4c105037fdfab40a5287367a28a957624cddebbc8c07e16c88ab6634f554cdf3d16bf543",
+    "source": "https://qemu.weilnetz.de/w64/qemu-w64-setup-20260811.exe",
+    "algorithm": "SHA512",
+    "verified": true,
+    "checksum_source": "https://qemu.weilnetz.de/w64/qemu-w64-setup-20260811.sha512",
+    "name": "qemu-w64-setup-20260811.exe"
+  },
+  {
+    "name": "ubuntu-24.04-minimal-cloudimg-amd64.img",
+    "source": "https://cloud-images.ubuntu.com/minimal/releases/noble/release-20261001/ubuntu-24.04-minimal-cloudimg-amd64.img",
+    "checksum_source": "https://cloud-images.ubuntu.com/minimal/releases/noble/release-20261001/SHA256SUMS",
+    "signature_verified": false,
+    "verified": true,
+    "algorithm": "SHA256",
+    "expected": "a8eb6570f87a941f3de2e000c046b9367f8ab1423756a94830d454fae8ad80ff",
+    "actual": "a8eb6570f87a941f3de2e000c046b9367f8ab1423756a94830d454fae8ad80ff"
+  }
+]

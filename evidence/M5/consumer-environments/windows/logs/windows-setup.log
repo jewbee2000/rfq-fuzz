@@ -1,0 +1,42 @@
+**********************
+PowerShell transcript start
+Start time: 20261004143612
+Username: WALTSTATION\Walt
+RunAs User: WALTSTATION\Walt
+Configuration Name: 
+Machine: WALTSTATION (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\Users\Walt\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.dll -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+& ./work/consumer-env/setup-windows.ps1
+Process ID: 15120
+PSVersion: 7.6.5
+PSEdition: Core
+GitCommitId: 7.6.5
+OS: Microsoft Windows 10.0.26300
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\consumer-env\windows-setup.log
+UTC start: 2026-10-04T21:36:12.9237787Z
+Repository: C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz
+Source revision: 67211b7c51eab281435922ea388b0da060555170
+Lock SHA256: 9C7CB69A7F9C6604EE0F0F26A28224184A0296AAB8BB4514D4109F0388C679F6
+COMMAND: py -3.12 -m venv work/consumer-env/windows-venv
+
+COMMAND: windows-venv/Scripts/python.exe -m pip install pip==26.2.1
+
+COMMAND: windows-venv/Scripts/python.exe -m pip install -r requirements-m0.lock --report windows-install-report.json
+
+COMMAND: windows-venv/Scripts/python.exe -m pip check
+
+COMMAND: windows-venv/Scripts/python.exe inspect_environment.py windows-environment.json
+
+COMMAND cwd=C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\consumer-env\windows-smoke: windows-venv/Scripts/python.exe C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\tools\smoke.py
+
+UTC finish: 2026-10-04T21:38:50.9639569Z
+**********************
+PowerShell transcript end
+End time: 20261004143850
+**********************

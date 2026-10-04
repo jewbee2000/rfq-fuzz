@@ -1,0 +1,11 @@
+Sun Oct  4 23:07:13 UTC 2026
+10.0.2.0/24 dev ens3 proto kernel scope link src 10.0.2.15 metric 100 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 1.1.1.1 port 80 after 9 ms: Couldn't connect to server
+External curl exit: 7
+No temporary reverse-transfer listener
+e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931  /home/consumer/frozen-consumer-bounded.tar.gz

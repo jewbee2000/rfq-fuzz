@@ -1,0 +1,123 @@
+2026-10-04T15:40:33,218 Using pip 26.2.1 from C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\consumer-env\windows-venv\Lib\site-packages\pip (python 3.12)
+2026-10-04T15:40:33,218 Non-user install because user site-packages disabled
+2026-10-04T15:40:33,452 Ignoring indexes: https://pypi.org/simple
+2026-10-04T15:40:33,453 Created temporary directory: C:\Users\Walt\AppData\Local\Temp\pip-build-tracker-nvy4_j9i
+2026-10-04T15:40:33,453 Initialized build tracking at C:\Users\Walt\AppData\Local\Temp\pip-build-tracker-nvy4_j9i
+2026-10-04T15:40:33,455 Created build tracker: C:\Users\Walt\AppData\Local\Temp\pip-build-tracker-nvy4_j9i
+2026-10-04T15:40:33,455 Entered build tracker: C:\Users\Walt\AppData\Local\Temp\pip-build-tracker-nvy4_j9i
+2026-10-04T15:40:33,456 Created temporary directory: C:\Users\Walt\AppData\Local\Temp\pip-install-9n_3k31n
+2026-10-04T15:40:33,457 Created temporary directory: C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9
+2026-10-04T15:40:33,476 Obtaining file:///C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/work/consumer-env/windows-frozen-bounded
+2026-10-04T15:40:33,478   Added file:///C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/work/consumer-env/windows-frozen-bounded to build tracker 'C:\\Users\\Walt\\AppData\\Local\\Temp\\pip-build-tracker-nvy4_j9i'
+2026-10-04T15:40:33,480   Checking if build backend supports build_editable: started
+2026-10-04T15:40:33,482   Running command Checking if build backend supports build_editable
+2026-10-04T15:40:33,748   Checking if build backend supports build_editable: finished with status 'done'
+2026-10-04T15:40:33,751   Created temporary directory: C:\Users\Walt\AppData\Local\Temp\pip-modern-metadata-zmz342a6
+2026-10-04T15:40:33,752   Preparing editable metadata (pyproject.toml): started
+2026-10-04T15:40:33,752   Running command Preparing editable metadata (pyproject.toml)
+2026-10-04T15:40:34,062   C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\consumer-env\windows-venv\Lib\site-packages\setuptools\config\_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+2026-10-04T15:40:34,063   !!
+
+2026-10-04T15:40:34,063           ********************************************************************************
+2026-10-04T15:40:34,063           Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+2026-10-04T15:40:34,063           This deprecation is overdue, please update your project and remove deprecated
+2026-10-04T15:40:34,064           calls to avoid build errors in the future.
+
+2026-10-04T15:40:34,064           See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+2026-10-04T15:40:34,064           ********************************************************************************
+
+2026-10-04T15:40:34,064   !!
+2026-10-04T15:40:34,065     corresp(dist, value, root_dir)
+2026-10-04T15:40:34,128   running dist_info
+2026-10-04T15:40:34,143   creating C:\Users\Walt\AppData\Local\Temp\pip-modern-metadata-zmz342a6\rfqfuzz.egg-info
+2026-10-04T15:40:34,143   writing C:\Users\Walt\AppData\Local\Temp\pip-modern-metadata-zmz342a6\rfqfuzz.egg-info\PKG-INFO
+2026-10-04T15:40:34,146   writing dependency_links to C:\Users\Walt\AppData\Local\Temp\pip-modern-metadata-zmz342a6\rfqfuzz.egg-info\dependency_links.txt
+2026-10-04T15:40:34,146   writing entry points to C:\Users\Walt\AppData\Local\Temp\pip-modern-metadata-zmz342a6\rfqfuzz.egg-info\entry_points.txt
+2026-10-04T15:40:34,147   writing requirements to C:\Users\Walt\AppData\Local\Temp\pip-modern-metadata-zmz342a6\rfqfuzz.egg-info\requires.txt
+2026-10-04T15:40:34,147   writing top-level names to C:\Users\Walt\AppData\Local\Temp\pip-modern-metadata-zmz342a6\rfqfuzz.egg-info\top_level.txt
+2026-10-04T15:40:34,147   writing manifest file 'C:\Users\Walt\AppData\Local\Temp\pip-modern-metadata-zmz342a6\rfqfuzz.egg-info\SOURCES.txt'
+2026-10-04T15:40:34,174   reading manifest file 'C:\Users\Walt\AppData\Local\Temp\pip-modern-metadata-zmz342a6\rfqfuzz.egg-info\SOURCES.txt'
+2026-10-04T15:40:34,175   adding license file 'LICENSE'
+2026-10-04T15:40:34,176   writing manifest file 'C:\Users\Walt\AppData\Local\Temp\pip-modern-metadata-zmz342a6\rfqfuzz.egg-info\SOURCES.txt'
+2026-10-04T15:40:34,177   creating 'C:\Users\Walt\AppData\Local\Temp\pip-modern-metadata-zmz342a6\rfqfuzz-1.0.0.dist-info'
+2026-10-04T15:40:34,225   Preparing editable metadata (pyproject.toml): finished with status 'done'
+2026-10-04T15:40:34,238   Source in .\. has version 1.0.0, which satisfies requirement rfqfuzz==1.0.0 from file:///C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/work/consumer-env/windows-frozen-bounded
+2026-10-04T15:40:34,238   Removed rfqfuzz==1.0.0 from file:///C:/Users/Walt/Documents/Codex/2026-10-03/g/outputs/projects/rfq-fuzz/work/consumer-env/windows-frozen-bounded from build tracker 'C:\\Users\\Walt\\AppData\\Local\\Temp\\pip-build-tracker-nvy4_j9i'
+2026-10-04T15:40:34,247 Created temporary directory: C:\Users\Walt\AppData\Local\Temp\pip-unpack-o_0aiwcg
+2026-10-04T15:40:34,247 Building wheels for collected packages: rfqfuzz
+2026-10-04T15:40:34,248   Destination directory: C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn
+2026-10-04T15:40:34,249   Building editable for rfqfuzz (pyproject.toml): started
+2026-10-04T15:40:34,250   Running command Building editable for rfqfuzz (pyproject.toml)
+2026-10-04T15:40:34,556   C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\consumer-env\windows-venv\Lib\site-packages\setuptools\config\_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+2026-10-04T15:40:34,556   !!
+
+2026-10-04T15:40:34,556           ********************************************************************************
+2026-10-04T15:40:34,556           Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+2026-10-04T15:40:34,557           This deprecation is overdue, please update your project and remove deprecated
+2026-10-04T15:40:34,557           calls to avoid build errors in the future.
+
+2026-10-04T15:40:34,557           See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+2026-10-04T15:40:34,558           ********************************************************************************
+
+2026-10-04T15:40:34,558   !!
+2026-10-04T15:40:34,558     corresp(dist, value, root_dir)
+2026-10-04T15:40:34,613   running editable_wheel
+2026-10-04T15:40:34,638   creating C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz.egg-info
+2026-10-04T15:40:34,638   writing C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz.egg-info\PKG-INFO
+2026-10-04T15:40:34,639   writing dependency_links to C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz.egg-info\dependency_links.txt
+2026-10-04T15:40:34,641   writing entry points to C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz.egg-info\entry_points.txt
+2026-10-04T15:40:34,641   writing requirements to C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz.egg-info\requires.txt
+2026-10-04T15:40:34,642   writing top-level names to C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz.egg-info\top_level.txt
+2026-10-04T15:40:34,642   writing manifest file 'C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz.egg-info\SOURCES.txt'
+2026-10-04T15:40:34,668   reading manifest file 'C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz.egg-info\SOURCES.txt'
+2026-10-04T15:40:34,669   adding license file 'LICENSE'
+2026-10-04T15:40:34,670   writing manifest file 'C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz.egg-info\SOURCES.txt'
+2026-10-04T15:40:34,671   creating 'C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz-1.0.0.dist-info'
+2026-10-04T15:40:34,692   creating C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz-1.0.0.dist-info\WHEEL
+2026-10-04T15:40:34,721   running build_py
+2026-10-04T15:40:34,721   running egg_info
+2026-10-04T15:40:34,729   creating C:\Users\Walt\AppData\Local\Temp\tmpz3pn9enu.build-temp\rfqfuzz.egg-info
+2026-10-04T15:40:34,730   writing C:\Users\Walt\AppData\Local\Temp\tmpz3pn9enu.build-temp\rfqfuzz.egg-info\PKG-INFO
+2026-10-04T15:40:34,732   writing dependency_links to C:\Users\Walt\AppData\Local\Temp\tmpz3pn9enu.build-temp\rfqfuzz.egg-info\dependency_links.txt
+2026-10-04T15:40:34,732   writing entry points to C:\Users\Walt\AppData\Local\Temp\tmpz3pn9enu.build-temp\rfqfuzz.egg-info\entry_points.txt
+2026-10-04T15:40:34,732   writing requirements to C:\Users\Walt\AppData\Local\Temp\tmpz3pn9enu.build-temp\rfqfuzz.egg-info\requires.txt
+2026-10-04T15:40:34,732   writing top-level names to C:\Users\Walt\AppData\Local\Temp\tmpz3pn9enu.build-temp\rfqfuzz.egg-info\top_level.txt
+2026-10-04T15:40:34,733   writing manifest file 'C:\Users\Walt\AppData\Local\Temp\tmpz3pn9enu.build-temp\rfqfuzz.egg-info\SOURCES.txt'
+2026-10-04T15:40:34,743   reading manifest file 'C:\Users\Walt\AppData\Local\Temp\tmpz3pn9enu.build-temp\rfqfuzz.egg-info\SOURCES.txt'
+2026-10-04T15:40:34,744   adding license file 'LICENSE'
+2026-10-04T15:40:34,745   writing manifest file 'C:\Users\Walt\AppData\Local\Temp\tmpz3pn9enu.build-temp\rfqfuzz.egg-info\SOURCES.txt'
+
+2026-10-04T15:40:34,748           Editable install will be performed using .pth file to extend `sys.path` with:
+2026-10-04T15:40:34,748           ['src']
+
+2026-10-04T15:40:34,748   Options like `package-data`, `include/exclude-package-data` or
+2026-10-04T15:40:34,748   `packages.find.exclude/include` may have no effect.
+
+2026-10-04T15:40:34,748   adding '__editable__.rfqfuzz-1.0.0.pth'
+2026-10-04T15:40:34,749   creating 'C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6\tmpqb6vzltn\.tmp-ddo0hk18\rfqfuzz-1.0.0-0.editable-py3-none-any.whl' and adding 'C:\Users\Walt\AppData\Local\Temp\tmp9y76f6njrfqfuzz-1.0.0-0.editable-py3-none-any.whl' to it
+2026-10-04T15:40:34,760   adding 'rfqfuzz-1.0.0.dist-info/licenses/LICENSE'
+2026-10-04T15:40:34,770   adding 'rfqfuzz-1.0.0.dist-info/METADATA'
+2026-10-04T15:40:34,771   adding 'rfqfuzz-1.0.0.dist-info/WHEEL'
+2026-10-04T15:40:34,772   adding 'rfqfuzz-1.0.0.dist-info/entry_points.txt'
+2026-10-04T15:40:34,772   adding 'rfqfuzz-1.0.0.dist-info/top_level.txt'
+2026-10-04T15:40:34,773   adding 'rfqfuzz-1.0.0.dist-info/RECORD'
+2026-10-04T15:40:34,802   Building editable for rfqfuzz (pyproject.toml): finished with status 'done'
+2026-10-04T15:40:34,816   Created wheel for rfqfuzz: filename=rfqfuzz-1.0.0-0.editable-py3-none-any.whl size=26023 sha256=892d3bfa55bc93fd976a77b41a37e929eed76f1f3a293f1f1f6e95c684191248
+2026-10-04T15:40:34,816   Stored in directory: C:\Users\Walt\AppData\Local\Temp\pip-ephem-wheel-cache-x_wplpr9\wheels\cd\59\37\a426c793a524538838fe28b8366436adec0d76c2b785ad05c6
+2026-10-04T15:40:34,824 Successfully built rfqfuzz
+2026-10-04T15:40:34,850 Installing collected packages: rfqfuzz
+2026-10-04T15:40:34,850   Attempting uninstall: rfqfuzz
+2026-10-04T15:40:34,853     Found existing installation: rfqfuzz 1.0.0
+2026-10-04T15:40:34,858     Uninstalling rfqfuzz-1.0.0:
+2026-10-04T15:40:35,205       Created temporary directory: C:\Users\Walt\AppData\Local\Temp\pip-uninstall-ks5t1g0t
+2026-10-04T15:40:35,206       Removing file or directory c:\users\walt\documents\codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\consumer-env\windows-venv\lib\site-packages\__editable__.rfqfuzz-1.0.0.pth
+2026-10-04T15:40:35,206       Created temporary directory: C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\consumer-env\windows-venv\Lib\site-packages\~fqfuzz-1.0.0.dist-info
+2026-10-04T15:40:35,208       Removing file or directory c:\users\walt\documents\codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\consumer-env\windows-venv\lib\site-packages\rfqfuzz-1.0.0.dist-info\
+2026-10-04T15:40:35,209       Created temporary directory: C:\Users\Walt\AppData\Local\Temp\pip-uninstall-sn9jrd7k
+2026-10-04T15:40:35,209       Removing file or directory c:\users\walt\documents\codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\consumer-env\windows-venv\scripts\rfqfuzz.exe
+2026-10-04T15:40:35,210       Successfully uninstalled rfqfuzz-1.0.0
+
+2026-10-04T15:40:35,300 Successfully installed rfqfuzz-1.0.0
+2026-10-04T15:40:35,301 Removed build tracker: 'C:\\Users\\Walt\\AppData\\Local\\Temp\\pip-build-tracker-nvy4_j9i'

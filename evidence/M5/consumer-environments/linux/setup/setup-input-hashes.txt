@@ -1,0 +1,4 @@
+2b72137e961cb64178c88914eda0d5cd08d9e973ab578c0a83effd28ad5565aa  /home/consumer/setup-inputs/inspect_environment.py
+9355d4cb6e4a107791df5bbaaa4256bf2723502c7750fba92d463951da04cebd  /home/consumer/setup-inputs/inspect_smoke.py
+9c7cb69a7f9c6604ee0f0f26a28224184a0296aab8bb4514d4109f0388c679f6  /home/consumer/setup-inputs/requirements-m0.lock
+a6e926656f2fbd7d511b308a2efe3c205f5b9725b9185099bd89447c17627249  /home/consumer/setup-inputs/smoke.py

@@ -1,0 +1,9 @@
+Offline UTC: Sun Oct  4 22:31:02 UTC 2026
+10.0.2.0/24 dev ens3 proto kernel scope link src 10.0.2.15 metric 100 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 1.1.1.1 port 80 after 29 ms: Couldn't connect to server
+External curl exit: 7

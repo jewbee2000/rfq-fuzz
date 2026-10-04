@@ -1,0 +1,7 @@
+{
+  "status": "unverified",
+  "counts": {
+    "unverified": 3
+  },
+  "oracle": "C:\\Users\\Walt\\Documents\\Codex\\2026-10-03\\g\\outputs\\projects\\rfq-fuzz\\work\\consumer-env\\windows-bounded-family-workflow\\generated-observations\\oracle.json"
+}

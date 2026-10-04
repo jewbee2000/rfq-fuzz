@@ -1,0 +1,37 @@
+**********************
+PowerShell transcript start
+Start time: 20261004152618
+Username: WALTSTATION\Walt
+RunAs User: WALTSTATION\Walt
+Configuration Name: 
+Machine: WALTSTATION (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\Users\Walt\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.dll -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+& work/consumer-env/install-frozen-windows.ps1
+Process ID: 31980
+PSVersion: 7.6.5
+PSEdition: Core
+GitCommitId: 7.6.5
+OS: Microsoft Windows 10.0.26300
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\consumer-env\windows-final-install.log
+Frozen source commit: 4c98b5f158c5b563ad256184303165e60231c088
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          815297D886C9E2BE3A784CD8544EFED1B904D750BC2B03CAEC864B09DB0BC3CC       C:\Users\Walt\Documents\Codex\2…
+COMMAND: python -m pip install -r requirements-v1.lock -r requirements-build.lock
+
+COMMAND: python -m pip install --no-deps --no-build-isolation -e .
+
+
+
+
+**********************
+PowerShell transcript end
+End time: 20261004152627
+**********************

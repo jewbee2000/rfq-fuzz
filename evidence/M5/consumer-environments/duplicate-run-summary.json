@@ -1,0 +1,15 @@
+{
+  "scope": "Only one complete final run per OS is retained. Earlier complete Windows runs remain ignored work artifacts.",
+  "retained_primary": {
+    "Windows": "Corrected Git348c5f1 installed entrypoint outside checkout, default60/20 bounds",
+    "Linux": "Windows-byte55b288a source,300/120 bounds; source and65auditedinputs independently identical to correctedGit348c5f1 distribution"
+  },
+  "additional_passed_runs": [
+    "Windows original4c98b5f canonical demo",
+    "Windows55b288a canonical/default replay",
+    "Windows55b288a top-level Python guard replay",
+    "Windows55b288a all31Pythoninterpreter guard replay; guard audit/log/report data retained"
+  ],
+  "failures_retained": "Docker setup failure; rejected descriptive case ID; individual packet validation error; Linux60second timeout; pre-fix Git byte hashes",
+  "no_extra_acceptance_claim": "Duplicate runs are supporting checks, not independent reviewer measurements."
+}

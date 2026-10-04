@@ -17,8 +17,12 @@ The commit's large apparent JSON diff is the preservation of literal CRLF bytes.
 Executed `.venv/Scripts/python.exe tools/audit_demo_git_archive.py`. The actual
 `git archive` of the commit contains65regular files: the manifest and64hashed
 assets. Every asset matches both its manifest hash and the audited working file.
-Exact commit/archive digest and zero mismatches are retained in
-`git-archive-input-audit.json`. Independent consumer source/archive equivalence
+Initial commit/archive digest and zero mismatches are retained in
+`git-archive-input-audit-348c5f1.json`. A follow-up at `b3f90a9` independently
+exports under both `core.autocrlf=false` and `true`: all65protected files are
+byte-identical under both policies and all64manifest hashes match.
+`git-archive-input-audit.json` records that follow-up. Product Python and demo
+inputs are unchanged between these commits. Independent consumer source/archive equivalence
 and actual platform acceptance are retained separately when complete.
 
 The earlier one-line `evidence/M5-archive-audit.txt` lacks a recorded commit/method

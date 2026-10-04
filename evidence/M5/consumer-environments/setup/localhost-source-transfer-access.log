@@ -1,0 +1,10 @@
+127.0.0.1 - - [04/Oct/2026 15:01:43] "GET /setup-linux-vm.sh HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 15:01:44] "GET /requirements-m0.lock HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 15:01:44] "GET /inspect_environment.py HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 15:01:44] "GET /inspect_smoke.py HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 15:01:44] "GET /smoke.py HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 15:26:24] "GET /install-frozen-linux.sh HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 15:26:24] "GET /frozen-consumer-final.tar.gz HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 15:28:59] "GET /consumer_workflow.py HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 15:28:59] "GET /measure_public_review.py HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 15:40:36] "GET /frozen-consumer-bounded.tar.gz HTTP/1.1" 200 -

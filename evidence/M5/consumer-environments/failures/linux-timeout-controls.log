@@ -1,0 +1,22 @@
+    643       1     642       02:36 /home/consumer/rfqfuzz-venv/bin/python /home/consumer/consumer_workflow.py /home/consumer/frozen-final /home/consumer/linux-final-workflow
+    644     643     642       02:35 /home/consumer/rfqfuzz-venv/bin/python -m rfqfuzz.v1 demo /home/consumer/frozen-final/examples/v1-demo /home/consumer/linux-final-workflow/demo
+    756     644     642       00:35 /home/consumer/rfqfuzz-venv/bin/python -m rfqfuzz.v1.validation --native /home/consumer/linux-final-workflow/demo/inputs/suite/public/pk-0d8f75aead6b /home/consumer/linux-final-workflow/demo/validation/pk-0d8f75aead6b
+    780     779     780       00:00 bash -c ps -eo pid,ppid,pgid,etime,args | grep -E "rfqfuzz.v1|consumer_workflow"; /home/consumer/rfqfuzz-venv/bin/python -m rfqfuzz.v1 validate --help; /home/consumer/rfqfuzz-venv/bin/python -m rfqfuzz.v1 demo --help
+    782     780     780       00:00 grep -E rfqfuzz.v1|consumer_workflow
+usage: rfqfuzz validate [-h] [--attestation ATTESTATION] suite destination
+
+positional arguments:
+  suite
+  destination
+
+options:
+  -h, --help            show this help message and exit
+  --attestation ATTESTATION
+usage: rfqfuzz demo [-h] assets destination
+
+positional arguments:
+  assets
+  destination
+
+options:
+  -h, --help   show this help message and exit

@@ -1,0 +1,7 @@
+{
+  "status": "unverified",
+  "counts": {
+    "unverified": 3
+  },
+  "oracle": "/home/consumer/linux-bounded-workflow/generated-observations/oracle.json"
+}

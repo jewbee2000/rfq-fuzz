@@ -1,0 +1,26 @@
+{
+  "step_reader": "OCP.STEPControl.STEPControl_Reader (shares OCCT kernel with generator)",
+  "step_solids": 1,
+  "measured_volume_mm3": 9373.805328941526,
+  "analytic_volume_mm3": 9373.805328941535,
+  "tolerance_mm3": 1e-06,
+  "pdf_pages": 1,
+  "pdf_text": "20\n\u00f8\n6\nTHRU\nISO VIEW (NTS)\n40\n15\n8\n30\nSCALE 2:1\nExport smoke\nSM-001\nmm\nA4\nA\nUNSPECIFIED\ndraftwright",
+  "png_size": [
+    1754,
+    1241
+  ],
+  "png_ink_bounds": [
+    179,
+    104,
+    1690,
+    1176
+  ],
+  "sha256": {
+    "part.step": "8f49fa656b7d0bbe43f54e96c4388f5e8cb7ab3f65d35b32560e4113f60e7698",
+    "drawing.pdf": "1af993b3fa303b96ac106779c4802d263513d45ddc8683ce2c5a7dcf81eaa718",
+    "drawing.png": "0de0be402f980f16c79ae1d66588d6c3d74629d49e50190a4d9354afd06aaecb"
+  },
+  "result": "smoke_semantics_confirmed",
+  "limits": "Readiness check only; not final RFQFuzz workflow acceptance. PNG visual inspection recorded separately."
+}

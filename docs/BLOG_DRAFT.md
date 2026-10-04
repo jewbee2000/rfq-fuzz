@@ -1,6 +1,6 @@
 # Testing the tool that checks the drawing
 
-*Local, unpublished draft. Independent consumer verification remains an editorial item before this draft is finalized.*
+*Local, unpublished draft grounded in retained synthetic artifacts and independent verification.*
 
 I started with an awkward question: when software tells me an engineering drawing looks good, what evidence would make that answer useful? A list of warnings is easy to produce. Knowing which warnings describe real contradictions, which describe conditional concerns, and which admit missing information takes more care.
 
@@ -32,7 +32,7 @@ An independent code audit then caught a less comfortable mistake: witness matchi
 
 The independent consumer also caught Git normalizing audited JSON line endings. A local replay had worked, but a Linux checkout would fail its hashes. Preserving the original bytes and checking an actual Git archive corrected that portability defect. [Archive evidence](../evidence/M5/portable-archive-fix.md)
 
-A genuine external v1 review by an independent Codex agent inspected two public packets: a thin-wall pocket and a sparse CAD-authoritative plate. It covered15duties. Fourteen decisions had grounded witnesses under the strict scorer; one units assertion remains unadjudicated because it omitted the required envelope witness. I preserve that distinction instead of counting it as either a correct answer or a reviewer error. Two packets provide a useful interface observation, not a benchmark ranking. [Scoped external result](../evidence/M5/external-v1/summary.json)
+A genuine external v1 review by an independent Codex agent inspected two public packets: a thin-wall pocket and a sparse CAD-authoritative plate. It covered 15 duties. Fourteen decisions had grounded witnesses under the strict scorer; one units assertion remains unadjudicated because it omitted the required envelope witness. I preserve that distinction instead of counting it as either a correct answer or a reviewer error. Two packets provide a useful interface observation, not a benchmark ranking. [Scoped external result](../evidence/M5/external-v1/summary.json)
 
 ![Separately agent-authored pocket drawing with a different layout, section and explicit setup allowances](../evidence/M5/transfer-v2/author/pk-48bd731ca9e2/drawing.png)
 
@@ -40,6 +40,8 @@ A genuine external v1 review by an independent Codex agent inspected two public 
 
 This separate packet exposed the importer's finite vocabulary: its first “REV” label was rejected, while “DRAWING REV” was accepted after revision. Both attempts remain. The new layout and independent measurements are useful diagnostics; they are agent-authored and still share OCCT. [Transfer provenance](../evidence/M5/transfer-v2/author/PROVENANCE.md)
 
-The [local demo](DEMO.md) replays retained inputs, validates exports, imports responses and produces an offline comparison report without an API key. build123d and OCCT supply core CAD geometry; Draftwright produced the preserved M0 drawing, while ReportLab supplies the bounded v1 vector layout. Their [licenses and contributions](LICENSES.md) belong in the account. Beads was not adopted. Clean consumer platform acceptance is still being finalized for this draft.
+The [local demo](DEMO.md) replays retained inputs, validates exports, imports responses and produces an offline comparison report without an API key. Independent Windows and Linux consumers reproduced both changes. Software-emulated Linux exceeded the default 60-second parser bound; that attempt remains a timeout. An explicit 300-second setup bound passed the same geometry, drawing and hash checks. [Consumer acceptance](../evidence/M5/consumer.md)
+
+build123d and OCCT supply core CAD geometry; Draftwright produced the preserved M0 drawing, while ReportLab supplies the bounded v1 vector layout. Their [licenses and contributions](LICENSES.md) belong in the account. Beads was not adopted.
 
 I have no manufactured part, shop-floor validation, engineer-authored oracle or evidence of demand to report. The next useful experiment is a separately governed engineer-authored packet with ambiguous correspondence resolved before scoring. It would test whether these concrete regression obligations survive outside the comfortable drawing vocabulary I built them in.

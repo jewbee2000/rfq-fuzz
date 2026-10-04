@@ -1,0 +1,1 @@
+Docker supported restart attempt was interrupted after exceeding 110 seconds; no settings changed. The following status probe found the desktop helper stopped and Linux pipe absent.

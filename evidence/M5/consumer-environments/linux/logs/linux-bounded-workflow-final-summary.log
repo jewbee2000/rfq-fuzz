@@ -1,0 +1,3 @@
+WORKFLOW_COMMANDS_READY
+{"status": "passed", "cases": 15, "changes": [{"case_id": "pk-0236ce4290c1", "obligation_id": "obj-material", "track": "package_consistency", "before": "detected", "after": "silent_miss"}, {"case_id": "pk-0972292025ad", "obligation_id": "obj-diameter", "track": "package_consistency", "before": "correct_clear", "after": "false_alert"}], "resource_limits": {"native_parser_seconds": 300.0, "document_audit_seconds": 120.0}}
+unverified {'unverified': 3}

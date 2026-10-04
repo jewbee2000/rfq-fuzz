@@ -1,0 +1,27 @@
+PART DRAWING
+SCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.
+Views depict supplied STEP at model stage. Depths measured from top (+Z).
+DRAWING ID = PT-001
+DRAWING REV = A
+UNITS = mm
+MATERIAL = 6061-T6
+MODEL STAGE = finished
+DRAWING STAGE = finished
+FINISH = none
+TOLERANCE STAGE = after_finish
+ENVELOPE = 60.00 x 40.00 x 35.00 mm
+SURFACE ROUGHNESS = 3.20 um
+H1 DIAMETER = 6.00 +/- 0.05 mm
+H1 COUNT = 1
+H1 TYPE = BLIND
+H1 DEPTH = 24.00 mm
+C1 DIAMETER = 12.00 mm
+C1 DEPTH = 4.00 mm
+PLAN (+Z)
+C1 / H1
+A
+A
+SECTION A-A (X-Z)
+C1
+H1 blind floor
+Declared finite requirements and setup/profile are in packet.json.

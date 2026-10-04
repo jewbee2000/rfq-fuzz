@@ -1,0 +1,952 @@
+{
+  "status": "passed",
+  "tested_archive_sha256": "e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931",
+  "portable_archive_sha256": "f048a54abef6ced29676c0270dbef968719662ea1013038e82b048d74a0e75b0",
+  "tested_implementation_commit": "55b288a8df0d1b3ced607c8d97d23847b2f122ba",
+  "portable_commit": "348c5f1ea5a6e99bc0acdb4f0d0af52f3a8146e0",
+  "protected_demo_files_checked": 65,
+  "source_modules_checked": 23,
+  "additional_files": [
+    ".gitattributes"
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "e0eedba615d5cd1b986afb6c5b3a4b1ae33713e7e9dc74d19daec5e3221f9d2e",
+      "portable_sha256": "e0eedba615d5cd1b986afb6c5b3a4b1ae33713e7e9dc74d19daec5e3221f9d2e"
+    },
+    {
+      "path": "docs/DEMO.md",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "7821cf87c99b81cf7d5007b28eebc5f7c27ca557cc7094aa36b5be4d0cc08124",
+      "portable_sha256": "7821cf87c99b81cf7d5007b28eebc5f7c27ca557cc7094aa36b5be4d0cc08124"
+    },
+    {
+      "path": "docs/REVIEWER_PROTOCOL.md",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "f5c2e89ddbdab51ef08a515bfebfcc2d3832dc8560d91aa54262482d2ccf1f18",
+      "portable_sha256": "f5c2e89ddbdab51ef08a515bfebfcc2d3832dc8560d91aa54262482d2ccf1f18"
+    },
+    {
+      "path": "examples/v1-demo/attestation.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "c96af3fcf4018a1abc3fc70c55da99f2aa6a5fb0befb2a91d891e35a47129a4c",
+      "portable_sha256": "c96af3fcf4018a1abc3fc70c55da99f2aa6a5fb0befb2a91d891e35a47129a4c"
+    },
+    {
+      "path": "examples/v1-demo/injected.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "435d042b4e3500ef02ed125d51a88185553ed5c16fbd8c3526fb9aed94bae7c9",
+      "portable_sha256": "435d042b4e3500ef02ed125d51a88185553ed5c16fbd8c3526fb9aed94bae7c9"
+    },
+    {
+      "path": "examples/v1-demo/reference.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "57475f6cf8e681109820d2e3407eb2bf3f265ce5cda415e538e083486df06b21",
+      "portable_sha256": "57475f6cf8e681109820d2e3407eb2bf3f265ce5cda415e538e083486df06b21"
+    },
+    {
+      "path": "examples/v1-demo/replay-manifest.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "ff7d423038cce0bb0feecd0bf2ab3572f3d98a2ae81c1b19ce4bd2538d5fc100",
+      "portable_sha256": "ff7d423038cce0bb0feecd0bf2ab3572f3d98a2ae81c1b19ce4bd2538d5fc100"
+    },
+    {
+      "path": "examples/v1-demo/suite/private/mutations.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "870f246e3a90760eb2980cf9d75f1ce57fc77793cc19f63b0ed9bb8977ce6bae",
+      "portable_sha256": "870f246e3a90760eb2980cf9d75f1ce57fc77793cc19f63b0ed9bb8977ce6bae"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0236ce4290c1/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "2e488bc2420fd60e2a65ebd4e7200be693182e348ca242ac4135fea090eab91b",
+      "portable_sha256": "2e488bc2420fd60e2a65ebd4e7200be693182e348ca242ac4135fea090eab91b"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0236ce4290c1/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "3abf225d3943dd24cd4570249dfdd6540160e77cc39e13c7c29d553ec3eea2fc",
+      "portable_sha256": "3abf225d3943dd24cd4570249dfdd6540160e77cc39e13c7c29d553ec3eea2fc"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0236ce4290c1/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "4f774087b830c30af74396b1027ff19390c4dfc3bf387579b685b753d1c0fc73",
+      "portable_sha256": "4f774087b830c30af74396b1027ff19390c4dfc3bf387579b685b753d1c0fc73"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0236ce4290c1/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "cf0bf1f287c09cb033c8894d148169ba62a40beff7d631a9e4b1b9a7ae55a9a4",
+      "portable_sha256": "cf0bf1f287c09cb033c8894d148169ba62a40beff7d631a9e4b1b9a7ae55a9a4"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0972292025ad/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "83a5c1ebc7b7284f6c3c0bde5fc89ec7b3e43e4e78a1fa6b6e665e967b1c35d2",
+      "portable_sha256": "83a5c1ebc7b7284f6c3c0bde5fc89ec7b3e43e4e78a1fa6b6e665e967b1c35d2"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0972292025ad/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "96af9b60ce167f80c34299f4dc9f6a303d7e013105af09b26308b4896e94c2f4",
+      "portable_sha256": "96af9b60ce167f80c34299f4dc9f6a303d7e013105af09b26308b4896e94c2f4"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0972292025ad/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "042e1342b22fd0fddaf5eb97a7ee1620adb79f22510932e6fc8305a3207204e7",
+      "portable_sha256": "042e1342b22fd0fddaf5eb97a7ee1620adb79f22510932e6fc8305a3207204e7"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0972292025ad/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "ecb5457a4adb2d3a7d1ea63662e9fc0a0fdafdd7fff92c9b020cee3c1c164bc8",
+      "portable_sha256": "ecb5457a4adb2d3a7d1ea63662e9fc0a0fdafdd7fff92c9b020cee3c1c164bc8"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0d8f75aead6b/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "92285c6f77fd3a2755a59c71f04a9b9ba29bd33d5de527ba4e652fdb6b239273",
+      "portable_sha256": "92285c6f77fd3a2755a59c71f04a9b9ba29bd33d5de527ba4e652fdb6b239273"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0d8f75aead6b/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "83b48215181a6d8bbbdabe10a876278285f79404083439ce35b2e672eba9bbc6",
+      "portable_sha256": "83b48215181a6d8bbbdabe10a876278285f79404083439ce35b2e672eba9bbc6"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0d8f75aead6b/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "ad4eafda23ac8b60a826b62f576b336acd5c5c9821492b40b60f7bb1adb01e88",
+      "portable_sha256": "ad4eafda23ac8b60a826b62f576b336acd5c5c9821492b40b60f7bb1adb01e88"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-0d8f75aead6b/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "cfe71141f8c065120c51dc8f004939e17507b5a6c3eaf547d8241b662f7d534c",
+      "portable_sha256": "cfe71141f8c065120c51dc8f004939e17507b5a6c3eaf547d8241b662f7d534c"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-3f31a2dd3b69/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "ba17b824f91f1a58b096170c62d0c81d32244ef34b632c36e3a8197cf882f309",
+      "portable_sha256": "ba17b824f91f1a58b096170c62d0c81d32244ef34b632c36e3a8197cf882f309"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-3f31a2dd3b69/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "32ff034cdbf29ec301096f0476ca2cf11fc1fbac5d8686b1d86b4b9a24923ef9",
+      "portable_sha256": "32ff034cdbf29ec301096f0476ca2cf11fc1fbac5d8686b1d86b4b9a24923ef9"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-3f31a2dd3b69/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "95afb4f3fdc21dbc07d33f01463122aa595866b0821e794ee6f82b46f1bd8e8e",
+      "portable_sha256": "95afb4f3fdc21dbc07d33f01463122aa595866b0821e794ee6f82b46f1bd8e8e"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-3f31a2dd3b69/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "e9a63385a98db6e2d1530bdaa8dd4cd996cc5d98f350b2d9f7071459a6776fe9",
+      "portable_sha256": "e9a63385a98db6e2d1530bdaa8dd4cd996cc5d98f350b2d9f7071459a6776fe9"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-4c78ba0418a8/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "75039955eccaee1cd5460b7aec76f63307da01b1c196d079caf17fa438e8e4e4",
+      "portable_sha256": "75039955eccaee1cd5460b7aec76f63307da01b1c196d079caf17fa438e8e4e4"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-4c78ba0418a8/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "64656d0dd960d7b54d68005dab52799f43789f63ea0039fe730887c7821c3d31",
+      "portable_sha256": "64656d0dd960d7b54d68005dab52799f43789f63ea0039fe730887c7821c3d31"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-4c78ba0418a8/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "fdda122679a5d106308f038a47ef751418711d53aad005b41226cdd10e3ae3f6",
+      "portable_sha256": "fdda122679a5d106308f038a47ef751418711d53aad005b41226cdd10e3ae3f6"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-4c78ba0418a8/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "c7d59407c3b4765318e015338d68deeb3d09bfc039f538bece41f5c0198e1043",
+      "portable_sha256": "c7d59407c3b4765318e015338d68deeb3d09bfc039f538bece41f5c0198e1043"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-61e732a788ae/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "be586552b5eba3e417e0248d0635d9af83fe918e7820074e462e8fe6edf15c01",
+      "portable_sha256": "be586552b5eba3e417e0248d0635d9af83fe918e7820074e462e8fe6edf15c01"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-61e732a788ae/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "1abbdc893f109d6aadd316fd6f4bb09d51c286eaf42254588f3c0a8cee108ace",
+      "portable_sha256": "1abbdc893f109d6aadd316fd6f4bb09d51c286eaf42254588f3c0a8cee108ace"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-61e732a788ae/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "6b541818ee4daccb3d79daef1f863d86da98fe029dc80baa5098335e29312067",
+      "portable_sha256": "6b541818ee4daccb3d79daef1f863d86da98fe029dc80baa5098335e29312067"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-61e732a788ae/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "377065dcef85d064fea710579a8a1d9467a594f7fc0ac5b31621de6363f1a359",
+      "portable_sha256": "377065dcef85d064fea710579a8a1d9467a594f7fc0ac5b31621de6363f1a359"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-9fac6cb15b90/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "3b82f45382dcf17e7298534d6f766496d9eeaaf434ecedc8bc5f9e664306cafd",
+      "portable_sha256": "3b82f45382dcf17e7298534d6f766496d9eeaaf434ecedc8bc5f9e664306cafd"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-9fac6cb15b90/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "1be1362866b81827e45a50e539d16fdeac0c611df68d094bdec292b2bc156086",
+      "portable_sha256": "1be1362866b81827e45a50e539d16fdeac0c611df68d094bdec292b2bc156086"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-9fac6cb15b90/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "d85eb11f1d3f3b76206fd060876dede40503a8d98ff12374563f013051c7dc2d",
+      "portable_sha256": "d85eb11f1d3f3b76206fd060876dede40503a8d98ff12374563f013051c7dc2d"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-9fac6cb15b90/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "6880ed6d1bece740492d4cdf9e029be9f8cf57a19c125f9c0c0fa6cd96c456ca",
+      "portable_sha256": "6880ed6d1bece740492d4cdf9e029be9f8cf57a19c125f9c0c0fa6cd96c456ca"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ac6ae47c7b15/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "0cb959e10adac860b8e5c26641af8e9b5d3f655e36c859fa43cdde3a3dce17d3",
+      "portable_sha256": "0cb959e10adac860b8e5c26641af8e9b5d3f655e36c859fa43cdde3a3dce17d3"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ac6ae47c7b15/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "bb4b0ebb14d6e24501fd1c87b1c84817893e29b48cb5d55e890541f9f8b5d95c",
+      "portable_sha256": "bb4b0ebb14d6e24501fd1c87b1c84817893e29b48cb5d55e890541f9f8b5d95c"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ac6ae47c7b15/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "1e8b63e703865fe71dd23cdfb0cd217c86385146cdee77de2d38803308048d3f",
+      "portable_sha256": "1e8b63e703865fe71dd23cdfb0cd217c86385146cdee77de2d38803308048d3f"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ac6ae47c7b15/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "e9a63385a98db6e2d1530bdaa8dd4cd996cc5d98f350b2d9f7071459a6776fe9",
+      "portable_sha256": "e9a63385a98db6e2d1530bdaa8dd4cd996cc5d98f350b2d9f7071459a6776fe9"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-af95f3073f88/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "79fe3c7845beb8c7f9785e20ea370895805f953f6c2d0381508e0fe1f710ab00",
+      "portable_sha256": "79fe3c7845beb8c7f9785e20ea370895805f953f6c2d0381508e0fe1f710ab00"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-af95f3073f88/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "7fb461279dafe9094cdae132e684bcaaa6041460af868189c6353cd362b51461",
+      "portable_sha256": "7fb461279dafe9094cdae132e684bcaaa6041460af868189c6353cd362b51461"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-af95f3073f88/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "4f33fa6d3e566dcb35f02350c0c1f9499dc1a86807a89d77b4caa18f09f6a85a",
+      "portable_sha256": "4f33fa6d3e566dcb35f02350c0c1f9499dc1a86807a89d77b4caa18f09f6a85a"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-af95f3073f88/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "2beaa634b63807c9598e435cd1b0c6b9aca92f15605df42e9b48977616528a1b",
+      "portable_sha256": "2beaa634b63807c9598e435cd1b0c6b9aca92f15605df42e9b48977616528a1b"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-c6060a86b3df/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "3709889ac43bc14b5216033a743582e53b2ec42136f8425655a1993aac647f3b",
+      "portable_sha256": "3709889ac43bc14b5216033a743582e53b2ec42136f8425655a1993aac647f3b"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-c6060a86b3df/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "fb5621ea07b8f675796c93ef3a08f134503162661954e02b3ba540e53d50acf8",
+      "portable_sha256": "fb5621ea07b8f675796c93ef3a08f134503162661954e02b3ba540e53d50acf8"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-c6060a86b3df/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "a060a9c3ced8361cb75fe94121739b720ce8437c1b1b682a03aaa237f94400e2",
+      "portable_sha256": "a060a9c3ced8361cb75fe94121739b720ce8437c1b1b682a03aaa237f94400e2"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-c6060a86b3df/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "e4ec7e694c420501093e6d0e46f8ebabb4c97d1be91d7c17add9742d84255244",
+      "portable_sha256": "e4ec7e694c420501093e6d0e46f8ebabb4c97d1be91d7c17add9742d84255244"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d0f406e22f58/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "71fba445103fde4019635d2d392b9c7002a0b31b258b1597fbe1effed654fed5",
+      "portable_sha256": "71fba445103fde4019635d2d392b9c7002a0b31b258b1597fbe1effed654fed5"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d0f406e22f58/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "96ca4ba744fdb000a7d48e7edc6539bd707e4d61cafb0d63bd75db27771994ac",
+      "portable_sha256": "96ca4ba744fdb000a7d48e7edc6539bd707e4d61cafb0d63bd75db27771994ac"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d0f406e22f58/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "f66470be7064137c2f312e89b91e4c5d647ffc470e959662a459641558c9a001",
+      "portable_sha256": "f66470be7064137c2f312e89b91e4c5d647ffc470e959662a459641558c9a001"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d0f406e22f58/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "7a4b1b092b5cfd624090876517b6d49dd126460da2f626334c4a9875f57e6751",
+      "portable_sha256": "7a4b1b092b5cfd624090876517b6d49dd126460da2f626334c4a9875f57e6751"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d13b84a82f87/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "85e527fe7d108343aa143dc1a64c49627ac28bce51ee3cd4f2543daa96eca0c9",
+      "portable_sha256": "85e527fe7d108343aa143dc1a64c49627ac28bce51ee3cd4f2543daa96eca0c9"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d13b84a82f87/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "e5706324d9525b9f81c24bf5ee5595b1ded7674b92ba7cc23864b6037d024329",
+      "portable_sha256": "e5706324d9525b9f81c24bf5ee5595b1ded7674b92ba7cc23864b6037d024329"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d13b84a82f87/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "f5f52045858ad760aba03f93b58d8abebdb7abc292a684a61b7c8745af597716",
+      "portable_sha256": "f5f52045858ad760aba03f93b58d8abebdb7abc292a684a61b7c8745af597716"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d13b84a82f87/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "f0578a7a04e6124ca4eae42efd36e8d294a87cf1c04c06c5aacaabc0217b2350",
+      "portable_sha256": "f0578a7a04e6124ca4eae42efd36e8d294a87cf1c04c06c5aacaabc0217b2350"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d5d25caf0cee/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "5e976f58a560d941a4415c39a30be05198bbd807a1ea1fa74990197d07749dfd",
+      "portable_sha256": "5e976f58a560d941a4415c39a30be05198bbd807a1ea1fa74990197d07749dfd"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d5d25caf0cee/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "0732b9429253caa7e9f5410f81676e5962d0307d0dd084ad2270977ee0eb4221",
+      "portable_sha256": "0732b9429253caa7e9f5410f81676e5962d0307d0dd084ad2270977ee0eb4221"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d5d25caf0cee/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "f45508352d9ccc34b8aff3e002c91dcc8b0be1202003e0d12d796e8379a6358a",
+      "portable_sha256": "f45508352d9ccc34b8aff3e002c91dcc8b0be1202003e0d12d796e8379a6358a"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-d5d25caf0cee/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "03ed74bd55e106146e301de4637fbab6849b39e53aaa4916dab5720ac88da878",
+      "portable_sha256": "03ed74bd55e106146e301de4637fbab6849b39e53aaa4916dab5720ac88da878"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ee19649c4ca9/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "f99af4fe4d49251e3ed65b2d43782ebfe5dcad479a2cd84c9b17e25eb7f7f42d",
+      "portable_sha256": "f99af4fe4d49251e3ed65b2d43782ebfe5dcad479a2cd84c9b17e25eb7f7f42d"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ee19649c4ca9/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "976dcf01616f3b6b22ffc284339e4449d4fddb6c78a6cb26a354ae4d48bfa402",
+      "portable_sha256": "976dcf01616f3b6b22ffc284339e4449d4fddb6c78a6cb26a354ae4d48bfa402"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ee19649c4ca9/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "0bda5051150272f3ae60d8cf5b733d1dbae5d6d3c7d4cb008a6c2cab0ecdbb70",
+      "portable_sha256": "0bda5051150272f3ae60d8cf5b733d1dbae5d6d3c7d4cb008a6c2cab0ecdbb70"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ee19649c4ca9/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "44e7eeab4820c3d5d596ae11a19b90d7cf50d51b9c371f736395ea487137ad0e",
+      "portable_sha256": "44e7eeab4820c3d5d596ae11a19b90d7cf50d51b9c371f736395ea487137ad0e"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ef68097ce858/drawing.pdf",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "3a31b6ae43a37f40781da6714880bb5227f4ea5069f1f33515ca15812966c94e",
+      "portable_sha256": "3a31b6ae43a37f40781da6714880bb5227f4ea5069f1f33515ca15812966c94e"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ef68097ce858/drawing.png",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "96a78aaf160d4de726b7ca2a5cfa4260451a4f82ce038a33980a3339b3a2b02d",
+      "portable_sha256": "96a78aaf160d4de726b7ca2a5cfa4260451a4f82ce038a33980a3339b3a2b02d"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ef68097ce858/packet.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "cca90b0066d142885255d8eab54d78228cab44f7f56222304ca5a57590aa2dd4",
+      "portable_sha256": "cca90b0066d142885255d8eab54d78228cab44f7f56222304ca5a57590aa2dd4"
+    },
+    {
+      "path": "examples/v1-demo/suite/public/pk-ef68097ce858/part.step",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": true,
+      "tested_sha256": "b96f18c3a30af4fd09cd477d89cdb3cdd3c1b85321dcabcf4b5ee628fb7c9773",
+      "portable_sha256": "b96f18c3a30af4fd09cd477d89cdb3cdd3c1b85321dcabcf4b5ee628fb7c9773"
+    },
+    {
+      "path": "pyproject.toml",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "060e3e0407a78c26bf6e4739c726bcf8ec6ea348e15782110f105ce00ef66f1f",
+      "portable_sha256": "060e3e0407a78c26bf6e4739c726bcf8ec6ea348e15782110f105ce00ef66f1f"
+    },
+    {
+      "path": "requirements-build.lock",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "2c9b039252dea526fd9b935fd386cf1e4c13a77bc9d35ae62ac5e38e2c0c0d03",
+      "portable_sha256": "2c9b039252dea526fd9b935fd386cf1e4c13a77bc9d35ae62ac5e38e2c0c0d03"
+    },
+    {
+      "path": "requirements-m0.lock",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "9c7cb69a7f9c6604ee0f0f26a28224184a0296aab8bb4514d4109f0388c679f6",
+      "portable_sha256": "9c7cb69a7f9c6604ee0f0f26a28224184a0296aab8bb4514d4109f0388c679f6"
+    },
+    {
+      "path": "requirements-v1.lock",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "2485de15626634fd5c1c587981841923329fdf200a753935a2235903aacee5ad",
+      "portable_sha256": "2485de15626634fd5c1c587981841923329fdf200a753935a2235903aacee5ad"
+    },
+    {
+      "path": "schemas/m0-review-result.schema.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "13de4e86cf4f1f0d44b5ec133e72cba44928577767d9bf239ff03cedfedd21ac",
+      "portable_sha256": "13de4e86cf4f1f0d44b5ec133e72cba44928577767d9bf239ff03cedfedd21ac"
+    },
+    {
+      "path": "schemas/v1/CapabilityProfile.schema.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "22dd7301c1ab0cde44f16602d9041394f21d3fbed3c4a518352ef1af4fb1acc7",
+      "portable_sha256": "22dd7301c1ab0cde44f16602d9041394f21d3fbed3c4a518352ef1af4fb1acc7"
+    },
+    {
+      "path": "schemas/v1/MutationSpec.schema.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "b8f08b2169d4c912e6261f6d9aea74a19b1f65899ea409dae90ba6d6ed18ab37",
+      "portable_sha256": "b8f08b2169d4c912e6261f6d9aea74a19b1f65899ea409dae90ba6d6ed18ab37"
+    },
+    {
+      "path": "schemas/v1/OracleRecord.schema.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "cbca32ace67e7df9fcf8e824931106c444576013f163cb3aff51fbdc64f896c4",
+      "portable_sha256": "cbca32ace67e7df9fcf8e824931106c444576013f163cb3aff51fbdc64f896c4"
+    },
+    {
+      "path": "schemas/v1/PacketSpec.schema.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "7d06ceabcc7a42cbde85dce0a9e4038cd3a89f5a72b573b69cd1ea43adea4e5c",
+      "portable_sha256": "7d06ceabcc7a42cbde85dce0a9e4038cd3a89f5a72b573b69cd1ea43adea4e5c"
+    },
+    {
+      "path": "schemas/v1/ReviewResult.schema.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "e01c9fca0a3aca47ab630bfa6a87a265eccfb8cb1504cf6d693a81b99b185f7b",
+      "portable_sha256": "e01c9fca0a3aca47ab630bfa6a87a265eccfb8cb1504cf6d693a81b99b185f7b"
+    },
+    {
+      "path": "schemas/v1/RunManifest.schema.json",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "e92bd3184f82fa6b6e7e9373014c67a31df360ca0b0014abe2d8bbf5509dd874",
+      "portable_sha256": "e92bd3184f82fa6b6e7e9373014c67a31df360ca0b0014abe2d8bbf5509dd874"
+    },
+    {
+      "path": "src/rfqfuzz/__init__.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "606410d425a8fe7cf2516d998f81ac779181dcba385ba9edf28f4fc796a31e44",
+      "portable_sha256": "606410d425a8fe7cf2516d998f81ac779181dcba385ba9edf28f4fc796a31e44"
+    },
+    {
+      "path": "src/rfqfuzz/cli.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "c7c3546d3be672a4c39ddaacea2f61d10630c52ba43a1b9ac5afc17c4d7d741a",
+      "portable_sha256": "c7c3546d3be672a4c39ddaacea2f61d10630c52ba43a1b9ac5afc17c4d7d741a"
+    },
+    {
+      "path": "src/rfqfuzz/contracts.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "718d4c68246ae1dc8e3c38cd5eb1bc79a33ad593e4e48584e1ab0a389e90d7da",
+      "portable_sha256": "718d4c68246ae1dc8e3c38cd5eb1bc79a33ad593e4e48584e1ab0a389e90d7da"
+    },
+    {
+      "path": "src/rfqfuzz/generation.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "e46a2718c90e469db36e1c74ffb03f7411f62900a756466551c3d2db27f4edcf",
+      "portable_sha256": "e46a2718c90e469db36e1c74ffb03f7411f62900a756466551c3d2db27f4edcf"
+    },
+    {
+      "path": "src/rfqfuzz/public_export.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "4b9792f32b9e9ef0e97a03c320612c8ff33838e6878ffd64969129c9e5cdb7a3",
+      "portable_sha256": "4b9792f32b9e9ef0e97a03c320612c8ff33838e6878ffd64969129c9e5cdb7a3"
+    },
+    {
+      "path": "src/rfqfuzz/reference.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "33376dcb28ed8aa93505244835b0e8ea76e36e804a0ca63da6e44325dbf49cd0",
+      "portable_sha256": "33376dcb28ed8aa93505244835b0e8ea76e36e804a0ca63da6e44325dbf49cd0"
+    },
+    {
+      "path": "src/rfqfuzz/reporting.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "c0be418838c06c046e10b0d641d8ada6383d2d51e83df9f133785c1bb23bc068",
+      "portable_sha256": "c0be418838c06c046e10b0d641d8ada6383d2d51e83df9f133785c1bb23bc068"
+    },
+    {
+      "path": "src/rfqfuzz/scoring.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "3df91a508ad41e46c21552e28bcbb37e164853556de96dccdd10383c53073bd6",
+      "portable_sha256": "3df91a508ad41e46c21552e28bcbb37e164853556de96dccdd10383c53073bd6"
+    },
+    {
+      "path": "src/rfqfuzz/v1/__init__.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "d8be538db911a7d238903c25899329f4074e49722fbea6a04a2b4ca99b2414dc",
+      "portable_sha256": "d8be538db911a7d238903c25899329f4074e49722fbea6a04a2b4ca99b2414dc"
+    },
+    {
+      "path": "src/rfqfuzz/v1/__main__.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "8134dc71036ab6fef7cb605ec59b400b2864890fc00526f9763c447e2937e295",
+      "portable_sha256": "8134dc71036ab6fef7cb605ec59b400b2864890fc00526f9763c447e2937e295"
+    },
+    {
+      "path": "src/rfqfuzz/v1/adapters.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "31b480baa3880646737b797f9f682ce60139281599daabb89ebfdc2349354714",
+      "portable_sha256": "31b480baa3880646737b797f9f682ce60139281599daabb89ebfdc2349354714"
+    },
+    {
+      "path": "src/rfqfuzz/v1/api.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "a9f0fb3b18283e5264f4b845b8620c645ea247f3ca2b7842aba45c97e6b7de74",
+      "portable_sha256": "a9f0fb3b18283e5264f4b845b8620c645ea247f3ca2b7842aba45c97e6b7de74"
+    },
+    {
+      "path": "src/rfqfuzz/v1/cli.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "02de2d43791c77443150cafdb9ca9d38d6ede3cfcac433f0f0db130b4de2def5",
+      "portable_sha256": "02de2d43791c77443150cafdb9ca9d38d6ede3cfcac433f0f0db130b4de2def5"
+    },
+    {
+      "path": "src/rfqfuzz/v1/contracts.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "94791471b3ea9335b506bb70fbaed47a504479db305744feb4f31ad8d1f5f6b7",
+      "portable_sha256": "94791471b3ea9335b506bb70fbaed47a504479db305744feb4f31ad8d1f5f6b7"
+    },
+    {
+      "path": "src/rfqfuzz/v1/generation.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "9e93ef237bb25a6a59ce87490bd74de0af1bb543c58d704e7ed124ede9850c60",
+      "portable_sha256": "9e93ef237bb25a6a59ce87490bd74de0af1bb543c58d704e7ed124ede9850c60"
+    },
+    {
+      "path": "src/rfqfuzz/v1/lifecycle.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "41961126984939547108b38b2f702fef5cd8f5556c9d3e25c53235ada1f01ec1",
+      "portable_sha256": "41961126984939547108b38b2f702fef5cd8f5556c9d3e25c53235ada1f01ec1"
+    },
+    {
+      "path": "src/rfqfuzz/v1/mutations.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "4d2b4e74b6c12a9f226be50141132afd2236300d36cdf4c0a02f9edbbedc3356",
+      "portable_sha256": "4d2b4e74b6c12a9f226be50141132afd2236300d36cdf4c0a02f9edbbedc3356"
+    },
+    {
+      "path": "src/rfqfuzz/v1/profiles.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "5852e1c29c86c26b7fed9d0eb26af6b8b6c56c40f27b02e095f3029e06ccc6a7",
+      "portable_sha256": "5852e1c29c86c26b7fed9d0eb26af6b8b6c56c40f27b02e095f3029e06ccc6a7"
+    },
+    {
+      "path": "src/rfqfuzz/v1/reference.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "0755fe61251356b00c2ed31a83ce5fb19de6147d3a3c5471aa88a22c7e6c7f4e",
+      "portable_sha256": "0755fe61251356b00c2ed31a83ce5fb19de6147d3a3c5471aa88a22c7e6c7f4e"
+    },
+    {
+      "path": "src/rfqfuzz/v1/reporting.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "d571e77dd7e5b37fed396ea0728c71d7b7000fdce22d20f3dd02ff82281d86c0",
+      "portable_sha256": "d571e77dd7e5b37fed396ea0728c71d7b7000fdce22d20f3dd02ff82281d86c0"
+    },
+    {
+      "path": "src/rfqfuzz/v1/reviewer_protocol.md",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "f5c2e89ddbdab51ef08a515bfebfcc2d3832dc8560d91aa54262482d2ccf1f18",
+      "portable_sha256": "f5c2e89ddbdab51ef08a515bfebfcc2d3832dc8560d91aa54262482d2ccf1f18"
+    },
+    {
+      "path": "src/rfqfuzz/v1/scoring.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "afbd80786223a2a7fd4bc8ddcfaef05b1470258728d0aa2b62bf1a556d68171a",
+      "portable_sha256": "afbd80786223a2a7fd4bc8ddcfaef05b1470258728d0aa2b62bf1a556d68171a"
+    },
+    {
+      "path": "src/rfqfuzz/v1/validation.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "0095391a795eb3771e6340221945c9a77be0fcea0f8dd19775bc77a9fa45730f",
+      "portable_sha256": "0095391a795eb3771e6340221945c9a77be0fcea0f8dd19775bc77a9fa45730f"
+    },
+    {
+      "path": "src/rfqfuzz/validation.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": true,
+      "protected_demo_bytes": false,
+      "tested_sha256": "86f78d8349d67d7231dcc1bd4f9062185ec095f4364050fb26629194b869636e",
+      "portable_sha256": "86f78d8349d67d7231dcc1bd4f9062185ec095f4364050fb26629194b869636e"
+    },
+    {
+      "path": "tools/smoke.py",
+      "exact_bytes": true,
+      "crlf_lf_normalized_equal": true,
+      "source_ast_equal": null,
+      "protected_demo_bytes": false,
+      "tested_sha256": "10b71a332b51e92d13f9b7a471f81dddedac6dde4148f95021bfc5573aa86998",
+      "portable_sha256": "10b71a332b51e92d13f9b7a471f81dddedac6dde4148f95021bfc5573aa86998"
+    }
+  ],
+  "failures": [],
+  "scope": "All audited inputs must be byte-identical; all source modules must have equal normalized bytes and AST. Normal text checkout line endings are the only accepted file difference."
+}

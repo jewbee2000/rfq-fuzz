@@ -1,0 +1,4 @@
+815297d886c9e2be3a784cd8544efed1b904d750bc2b03caec864b09db0bc3cc  /home/consumer/frozen-consumer-final.tar.gz
+2c9b039252dea526fd9b935fd386cf1e4c13a77bc9d35ae62ac5e38e2c0c0d03  /home/consumer/frozen-final/requirements-build.lock
+9c7cb69a7f9c6604ee0f0f26a28224184a0296aab8bb4514d4109f0388c679f6  /home/consumer/frozen-final/requirements-m0.lock
+2485de15626634fd5c1c587981841923329fdf200a753935a2235903aacee5ad  /home/consumer/frozen-final/requirements-v1.lock

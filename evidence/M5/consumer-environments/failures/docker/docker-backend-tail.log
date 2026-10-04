@@ -1,0 +1,97 @@
+
+[2026-10-04T21:34:33.493375600Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:34:34.182756600Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": context canceled
+[2026-10-04T21:34:34.183273200Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:34:35.184402700Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:34:35.184402700Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:34:35.185006600Z][com.docker.backend.exe.apiproxy] >> GET /v1.48/version
+[2026-10-04T21:34:38.186298200Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/v1.48/version": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:34:45.162174100Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:34:45.195097600Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:34:47.162342200Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": context canceled
+[2026-10-04T21:34:47.162870300Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:34:48.163449900Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:34:48.163449900Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:34:48.164611800Z][com.docker.backend.exe.apiproxy] >> GET /v1.48/info
+[2026-10-04T21:34:51.164593200Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/v1.48/info": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:34:56.211875800Z][com.docker.backend.exe.apiproxy] >> GET /images/json
+[2026-10-04T21:34:56.211875800Z][com.docker.backend.exe.apiproxy] >> GET /networks
+[2026-10-04T21:34:56.211875800Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:34:59.213684600Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:34:59.213684600Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/images/json": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:34:59.213684600Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/networks": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:34:59.475216500Z][com.docker.backend.exe.apiproxy] >> GET /images/json
+[2026-10-04T21:34:59.475216500Z][com.docker.backend.exe.apiproxy] >> GET /networks
+[2026-10-04T21:35:00.224933400Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:35:02.215390900Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:02.215390900Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/images/json": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:02.215390900Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/networks": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:02.470886600Z][com.docker.backend.exe.apiproxy] >> GET /images/json
+[2026-10-04T21:35:02.470886600Z][com.docker.backend.exe.apiproxy] >> GET /networks
+[2026-10-04T21:35:04.227638800Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:35:05.473621200Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:05.473621200Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/images/json": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:05.473621200Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/networks": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:09.483086800Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:35:12.483870700Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:20.492637700Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:35:23.493722800Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:24.060297900Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:35:26.060149500Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": context canceled
+[2026-10-04T21:35:26.060864200Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:35:27.061762700Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:27.062367100Z][com.docker.backend.exe.apiproxy] >> GET /v1.48/version
+[2026-10-04T21:35:30.063715000Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/v1.48/version": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:33.510707900Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:35:36.512604900Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:46.528126800Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:35:49.529540500Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:54.883859200Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:35:56.216568900Z][com.docker.backend.exe.apiproxy] >> GET /images/json
+[2026-10-04T21:35:56.216568900Z][com.docker.backend.exe.apiproxy] >> GET /networks
+[2026-10-04T21:35:56.216568900Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:35:56.883567200Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": context canceled
+[2026-10-04T21:35:56.883567200Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:35:57.885093900Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:57.885093900Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/images/json": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:57.885093900Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/networks": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:57.885093900Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:35:57.885747000Z][com.docker.backend.exe.apiproxy] >> GET /v1.48/version
+[2026-10-04T21:35:58.151582900Z][com.docker.backend.exe.apiproxy] >> GET /networks
+[2026-10-04T21:35:58.151582900Z][com.docker.backend.exe.apiproxy] >> GET /images/json
+[2026-10-04T21:35:58.895948100Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:36:00.887080700Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/images/json": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:00.887080700Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:00.887080700Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/v1.48/version": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:00.887080700Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/networks": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:01.074368200Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:36:01.140967200Z][com.docker.backend.exe.apiproxy] >> GET /images/json
+[2026-10-04T21:36:01.140967200Z][com.docker.backend.exe.apiproxy] >> GET /networks
+[2026-10-04T21:36:02.891779300Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:36:03.074703300Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": context canceled
+[2026-10-04T21:36:03.075253300Z][com.docker.backend.exe.apiproxy] >> GET /v1.47/version
+[2026-10-04T21:36:04.075721100Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:04.075721100Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/images/json": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:04.075721100Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/networks": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:04.075721100Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/v1.47/version": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:08.079136000Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:36:11.080383100Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:19.095694200Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:36:22.097011400Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:32.105713600Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:36:34.067608700Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:36:35.107274600Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:35.107274600Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:35.107828500Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:36:38.109279200Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:38.109861200Z][com.docker.backend.exe.apiproxy] >> GET /v1.48/version
+[2026-10-04T21:36:41.110858800Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/v1.48/version": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:41.340353700Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:36:43.340382200Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": context canceled
+[2026-10-04T21:36:43.340382200Z][com.docker.backend.exe.apiproxy] >> HEAD /_ping
+[2026-10-04T21:36:44.111576700Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/_ping": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:44.112295600Z][com.docker.backend.exe.apiproxy] >> GET /v1.48/info
+[2026-10-04T21:36:45.109619900Z][com.docker.backend.exe.apiproxy] >> GET /containers/json?all=true
+[2026-10-04T21:36:47.113678100Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/containers/json?all=true": connect tcp 192.168.65.7:2375: no route to host
+[2026-10-04T21:36:47.113678100Z][com.docker.backend.exe.apiproxy][W] Proxy error handling "/v1.48/info": connect tcp 192.168.65.7:2375: no route to host
+

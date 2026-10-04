@@ -1,0 +1,9 @@
+request returned 500 Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.48/version, check if the server supports the requested API version
+Client:
+ Version:           28.0.4
+ API version:       1.48
+ Go version:        go1.23.7
+ Git commit:        b8034c0
+ Built:             Tue Mar 25 15:07:48 2025
+ OS/Arch:           windows/amd64
+ Context:           default

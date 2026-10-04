@@ -6,7 +6,7 @@ import re
 import subprocess
 
 p=argparse.ArgumentParser();p.add_argument("--final",action="store_true");a=p.parse_args()
-source=Path("requirements.json");data=json.loads(source.read_text());ledger=json.loads(Path("tasks.json").read_text());tasks={t["id"]:t for t in ledger["tasks"]}
+source=Path("requirements.json");data=json.loads(source.read_text(encoding="utf-8"));ledger=json.loads(Path("tasks.json").read_text(encoding="utf-8"));tasks={t["id"]:t for t in ledger["tasks"]}
 proof={
 "R01":["docs/DEMO.md","evidence/M5/consumer.md"],
 "R02":["evidence/M1/contracts.md","evidence/M4/core-public-export-audit.json","docs/REVIEWER_PROTOCOL.md"],
@@ -35,7 +35,7 @@ if not Path("docs/RULE_PROVENANCE.md").exists():proof["R09"][1]="src/rfqfuzz/v1/
 partial={"S01","S03","S07"}
 final_log=Path("evidence/M5-final-release-tests.txt")
 if not final_log.exists():final_log=Path("evidence/M5-final-after-audit-tests.txt")
-match=re.search(r"^(\d+) passed, (\d+) warnings in [^\r\n]+$",final_log.read_text(),re.M)
+match=re.search(r"^(\d+) passed, (\d+) warnings in [^\r\n]+$",final_log.read_text(encoding="utf-8"),re.M)
 passed,warnings=map(int,match.groups()) if match else (0,0)
 missing=[path for paths in proof.values() for path in paths if not Path(path).exists()]
 for t in tasks.values():
@@ -58,14 +58,14 @@ for r in data["requirements"]:
         r["completion_evidence"]=["docs/SHOULD_DEFERRALS.md"]
     else:r["status"]="respected" if r["priority"]=="wont" else "deferred"
 data["status"]="M1-M5_verified_bounded_synthetic_release" if a.final else "M1-M5_consumer_acceptance_active"
-source.write_text(json.dumps(data,indent=2)+"\n")
+source.write_text(json.dumps(data,indent=2)+"\n",encoding="utf-8")
 readable=["# Requirements","","Generated from [requirements.json](../requirements.json), the source of truth. Status and acceptance evidence describe the bounded synthetic release; acceptance criteria remain the original contract. See [evidence matrix](REQUIREMENTS_EVIDENCE.md) and [Should deferrals](SHOULD_DEFERRALS.md).",""]
 for group,title in [("must","Must"),("should","Should"),("could","Could"),("wont","Won't")]:
     readable += ["## "+title,""]
     for r in data["requirements"]:
         if r["priority"]!=group:continue
         readable += [f"### {r['id']} — {r['title']}","",r["requirement"],"",f"**Rationale:** {r['rationale']}","",f"**Acceptance:** {r['acceptance']}","",f"**Delivery/status:** {r['milestone']}; {', '.join(r['tasks']) or 'no initial task'}; {r['status']}.",""]
-Path("docs/REQUIREMENTS.md").write_text("\n".join(readable))
+Path("docs/REQUIREMENTS.md").write_text("\n".join(readable),encoding="utf-8")
 matrix=["# Requirements evidence matrix","","The 22 Must requirements are evaluated for a finite local synthetic reviewer-regression toolkit. All core cases are development-only. Genuine external observations, template reference agreement and injected changes are separate evidence; none establishes general manufacturing competence.","",f"Final integrated acceptance: {passed} passed, {warnings} upstream warnings (`{final_log}`). Task ledger provides exact commands, requirement IDs, dependencies and local completion commits. M0 artifacts/hashes remain unchanged. No remote publication occurred.","","| ID | Status and acceptance evidence | Commands/tasks | Local implementation commits |","| --- | --- | --- | --- |"]
 for r in data["requirements"]:
     if r["priority"]!="must":continue
@@ -74,5 +74,5 @@ for r in data["requirements"]:
     commits="; ".join(f"{t}: `{tasks[t]['completion_commit'] or 'documentation acceptance active; see tasks.json'}`" for t in r["tasks"])
     matrix.append(f"| {r['id']} {r['title']} | {r['status']}; {evidence} | {commands.replace('|','/')} | {commits} |")
 matrix += ["","Independent corrections at `4c98b5f` cover report-source binding/escaping, reference error status and exact numeric grounding. Implementation freeze `55b288a` adds explicitly bounded parser controls for the slower software-emulated Linux setup. Portable Git-byte correction `348c5f1` preserves the same audited demo inputs without text normalization; product Python is unchanged. These supplement initial task commits and are independently checked; documentation commits follow.","","All Should requirements have explicit delivered/deferred portions in [SHOULD_DEFERRALS.md](SHOULD_DEFERRALS.md). No second CAD kernel, human engineer oracle, physical manufacture, broad layout invariance, hosted adapter or industrial benchmark result is claimed.",""]
-Path("docs/REQUIREMENTS_EVIDENCE.md").write_text("\n".join(matrix))
+Path("docs/REQUIREMENTS_EVIDENCE.md").write_text("\n".join(matrix),encoding="utf-8")
 print(json.dumps({"Must":22,"verified":sum(r["priority"]=="must" and r["status"]=="verified" for r in data["requirements"]),"missing_evidence":missing,"final":a.final}))

@@ -1,0 +1,10 @@
+{
+  "source_commit": "348c5f1ea5a6e99bc0acdb4f0d0af52f3a8146e0",
+  "archive_sha256": "f048a54abef6ced29676c0270dbef968719662ea1013038e82b048d74a0e75b0",
+  "archive_file_count": 105,
+  "exact_git_blobs": 65,
+  "text_crlf_checkout_conversions": 40,
+  "protected_input_files_exact": 65,
+  "git_blob_checks": "Protected inputs match exact Git blobs; ordinary text can differ only by core.autocrlf CRLF checkout conversion, with normalized blob identity verified. No source code executed or conclusion logic inspected.",
+  "scope": "Consumer distribution subset created by git archive on Windows core.autocrlf=true, not full repository archive."
+}

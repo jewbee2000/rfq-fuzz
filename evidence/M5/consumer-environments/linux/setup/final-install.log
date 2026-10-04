@@ -1,0 +1,125 @@
++ unset PYTHONPATH
++ cd /home/consumer
++ curl --fail --silent --show-error http://10.0.2.2:28080/frozen-consumer-final.tar.gz -o frozen-consumer-final.tar.gz
++ echo '815297d886c9e2be3a784cd8544efed1b904d750bc2b03caec864b09db0bc3cc  frozen-consumer-final.tar.gz'
++ sha256sum -c -
+frozen-consumer-final.tar.gz: OK
++ mkdir frozen-final
++ tar -xf frozen-consumer-final.tar.gz -C frozen-final
++ cd frozen-final
++ /home/consumer/rfqfuzz-venv/bin/python -m pip install -r requirements-v1.lock -r requirements-build.lock --report /home/consumer/setup-evidence/final-dependencies-report.json --log /home/consumer/setup-evidence/final-dependencies-pip.log
+Requirement already satisfied: annotated-doc==0.0.5 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 1)) (0.0.5)
+Requirement already satisfied: antlr4-python3-runtime==4.9.3 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 2)) (4.9.3)
+Requirement already satisfied: anytree==2.13.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 3)) (2.13.0)
+Requirement already satisfied: asttokens==3.0.2 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 4)) (3.0.2)
+Requirement already satisfied: build123d==0.10.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 5)) (0.10.0)
+Requirement already satisfied: build123d-drafting-helpers==0.15.5 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 6)) (0.15.5)
+Requirement already satisfied: cadquery-ocp==7.8.1.1.post1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 7)) (7.8.1.1.post1)
+Requirement already satisfied: cadquery-ocp-proxy==7.9.3.1.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 8)) (7.9.3.1.1)
+Requirement already satisfied: charset-normalizer==3.5.2 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 9)) (3.5.2)
+Requirement already satisfied: colorama==0.4.6 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 10)) (0.4.6)
+Requirement already satisfied: contourpy==1.4.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 11)) (1.4.0)
+Requirement already satisfied: cssselect2==0.10.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 12)) (0.10.1)
+Requirement already satisfied: cycler==0.12.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 13)) (0.12.1)
+Requirement already satisfied: draftwright==0.4.35 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 14)) (0.4.35)
+Requirement already satisfied: executing==2.2.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 15)) (2.2.1)
+Requirement already satisfied: ezdxf==1.4.4 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 16)) (1.4.4)
+Requirement already satisfied: fonttools==4.66.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 17)) (4.66.1)
+Requirement already satisfied: iniconfig==2.3.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 18)) (2.3.0)
+Requirement already satisfied: ipython==9.17.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 19)) (9.17.1)
+Requirement already satisfied: ipython_pygments_lexers==1.1.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 20)) (1.1.1)
+Requirement already satisfied: jedi==0.20.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 21)) (0.20.0)
+Requirement already satisfied: kiwisolver==1.5.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 22)) (1.5.1)
+Requirement already satisfied: lib3mf==2.5.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 23)) (2.5.0)
+Requirement already satisfied: lxml==6.1.3 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 24)) (6.1.3)
+Requirement already satisfied: markdown-it-py==4.2.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 25)) (4.2.0)
+Requirement already satisfied: matplotlib==3.11.2 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 26)) (3.11.2)
+Requirement already satisfied: matplotlib-inline==0.2.2 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 27)) (0.2.2)
+Requirement already satisfied: mdurl==0.1.2 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 28)) (0.1.2)
+Requirement already satisfied: mpmath==1.3.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 29)) (1.3.0)
+Requirement already satisfied: numpy==2.5.3 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 30)) (2.5.3)
+Requirement already satisfied: ocp_gordon==0.2.2 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 31)) (0.2.2)
+Requirement already satisfied: ocpsvg==0.5.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 32)) (0.5.0)
+Requirement already satisfied: packaging==26.3 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 33)) (26.3)
+Requirement already satisfied: parso==0.8.7 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 34)) (0.8.7)
+Requirement already satisfied: pillow==12.3.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 35)) (12.3.0)
+Requirement already satisfied: pluggy==1.6.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 36)) (1.6.0)
+Requirement already satisfied: prompt_toolkit==3.0.53 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 37)) (3.0.53)
+Requirement already satisfied: psutil==7.2.2 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 38)) (7.2.2)
+Requirement already satisfied: pure_eval==0.2.4 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 39)) (0.2.4)
+Requirement already satisfied: Pygments==2.21.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 40)) (2.21.0)
+Requirement already satisfied: pyparsing==3.3.3 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 41)) (3.3.3)
+Requirement already satisfied: pypdf==6.9.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 42)) (6.9.1)
+Requirement already satisfied: pypdfium2==5.14.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 43)) (5.14.0)
+Requirement already satisfied: pytest==9.0.2 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 44)) (9.0.2)
+Requirement already satisfied: python-dateutil==2.9.0.post0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 45)) (2.9.0.post0)
+Requirement already satisfied: quiddity==0.3.3 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 46)) (0.3.3)
+Requirement already satisfied: reportlab==5.0.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 47)) (5.0.1)
+Requirement already satisfied: rich==15.0.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 48)) (15.0.0)
+Requirement already satisfied: scipy==1.18.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 49)) (1.18.1)
+Requirement already satisfied: shellingham==1.5.4 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 50)) (1.5.4)
+Requirement already satisfied: six==1.17.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 51)) (1.17.0)
+Requirement already satisfied: stack-data==0.6.3 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 52)) (0.6.3)
+Requirement already satisfied: steputils==0.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 53)) (0.1)
+Requirement already satisfied: svgelements==1.9.6 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 54)) (1.9.6)
+Requirement already satisfied: svglib==2.2.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 55)) (2.2.0)
+Requirement already satisfied: svgpathtools==1.8.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 56)) (1.8.0)
+Requirement already satisfied: svgwrite==1.4.3 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 57)) (1.4.3)
+Requirement already satisfied: sympy==1.14.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 58)) (1.14.0)
+Requirement already satisfied: tinycss2==1.5.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 59)) (1.5.1)
+Requirement already satisfied: traitlets==5.16.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 60)) (5.16.1)
+Requirement already satisfied: trianglesolver==1.2 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 61)) (1.2)
+Requirement already satisfied: typer==0.27.2 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 62)) (0.27.2)
+Requirement already satisfied: typing_extensions==4.16.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 63)) (4.16.0)
+Requirement already satisfied: vtk==9.3.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 64)) (9.3.1)
+Requirement already satisfied: wcwidth==0.9.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 65)) (0.9.1)
+Requirement already satisfied: webcolors==24.8.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 66)) (24.8.0)
+Requirement already satisfied: webencodings==0.6.1 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r /home/consumer/frozen-final/requirements-m0.lock (line 67)) (0.6.1)
+Requirement already satisfied: pexpect==4.9.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r requirements-v1.lock (line 3)) (4.9.0)
+Requirement already satisfied: ptyprocess==0.7.0 in /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages (from -r requirements-v1.lock (line 4)) (0.7.0)
+Collecting setuptools==80.9.0 (from -r requirements-build.lock (line 1))
+  Downloading setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting wheel==0.45.1 (from -r requirements-build.lock (line 2))
+  Downloading wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+Downloading setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 11.5 MB/s  0:00:00
+Downloading wheel-0.45.1-py3-none-any.whl (72 kB)
+Installing collected packages: wheel, setuptools
+
+Successfully installed setuptools-80.9.0 wheel-0.45.1
++ /home/consumer/rfqfuzz-venv/bin/python -m pip install --no-deps --no-build-isolation -e . --report /home/consumer/setup-evidence/final-project-report.json --log /home/consumer/setup-evidence/final-project-pip.log
+Obtaining file:///home/consumer/frozen-final
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: rfqfuzz
+  Building editable for rfqfuzz (pyproject.toml): started
+  Building editable for rfqfuzz (pyproject.toml): finished with status 'done'
+  Created wheel for rfqfuzz: filename=rfqfuzz-1.0.0-0.editable-py3-none-any.whl size=25910 sha256=93742197cb88b7b63581393279e744eb9faa0a2c1c9acd242065af3c8ad31fa8
+  Stored in directory: /tmp/pip-ephem-wheel-cache-f4st096p/wheels/aa/f9/ec/cf9b11efed6894117364660713ae8fea0d71607d654f126210
+Successfully built rfqfuzz
+Installing collected packages: rfqfuzz
+Successfully installed rfqfuzz-1.0.0
++ /home/consumer/rfqfuzz-venv/bin/python -m pip check
+No broken requirements found.
++ cd /home/consumer
++ /home/consumer/rfqfuzz-venv/bin/python -m rfqfuzz.v1 --help
+usage: rfqfuzz [-h]
+               {generate,generate-case,validate,export-review,import-results,compare,report,reference,run-local,resume,demo}
+               ...
+
+Finite local RFQ reviewer regression; no manufacturing certification
+
+positional arguments:
+  {generate,generate-case,validate,export-review,import-results,compare,report,reference,run-local,resume,demo}
+
+options:
+  -h, --help            show this help message and exit
++ /home/consumer/rfqfuzz-venv/bin/python /home/consumer/setup-inputs/inspect_environment.py /home/consumer/setup-evidence/final-environment.json
+{"python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]", "executable": "/home/consumer/rfqfuzz-venv/bin/python", "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39", "machine": "x86_64", "prefix": "/home/consumer/rfqfuzz-venv", "base_prefix": "/usr", "poppler": {"executable": "/usr/bin/pdftoppm", "version": "pdftoppm version 24.02.0\nCopyright 2005-2024 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC"}}
+Imported 9 modules; recorded 73 distributions
++ sha256sum /home/consumer/frozen-consumer-final.tar.gz /home/consumer/frozen-final/requirements-build.lock /home/consumer/frozen-final/requirements-m0.lock /home/consumer/frozen-final/requirements-v1.lock
++ date -u +%Y-%m-%dT%H:%M:%SZ
+2026-10-04T22:28:01Z
++ touch /home/consumer/setup-evidence/FINAL_INSTALL_READY

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\work\consumer-env\source_archive_provenance.py", line 27, in <module>
+    assert blobs[entry.name]==sha,entry.name
+AssertionError: LICENSE

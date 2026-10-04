@@ -1,0 +1,123 @@
+2026-10-04T22:40:50,413 Using pip 26.2.1 from /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages/pip (python 3.12)
+2026-10-04T22:40:50,417 Non-user install because user site-packages disabled
+2026-10-04T22:40:50,986 Ignoring indexes: https://pypi.org/simple
+2026-10-04T22:40:50,991 Created temporary directory: /tmp/pip-build-tracker-g9xe2dbq
+2026-10-04T22:40:50,993 Initialized build tracking at /tmp/pip-build-tracker-g9xe2dbq
+2026-10-04T22:40:50,994 Created build tracker: /tmp/pip-build-tracker-g9xe2dbq
+2026-10-04T22:40:50,994 Entered build tracker: /tmp/pip-build-tracker-g9xe2dbq
+2026-10-04T22:40:50,996 Created temporary directory: /tmp/pip-install-vbwjzzhk
+2026-10-04T22:40:51,002 Created temporary directory: /tmp/pip-ephem-wheel-cache-lrb9fc_h
+2026-10-04T22:40:51,235 Obtaining file:///home/consumer/frozen-bounded
+2026-10-04T22:40:51,243   Added file:///home/consumer/frozen-bounded to build tracker '/tmp/pip-build-tracker-g9xe2dbq'
+2026-10-04T22:40:51,261   Checking if build backend supports build_editable: started
+2026-10-04T22:40:51,265   Running command Checking if build backend supports build_editable
+2026-10-04T22:40:53,210   Checking if build backend supports build_editable: finished with status 'done'
+2026-10-04T22:40:53,227   Created temporary directory: /tmp/pip-modern-metadata-n7mnsl7o
+2026-10-04T22:40:53,237   Preparing editable metadata (pyproject.toml): started
+2026-10-04T22:40:53,241   Running command Preparing editable metadata (pyproject.toml)
+2026-10-04T22:40:55,441   /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+2026-10-04T22:40:55,442   !!
+
+2026-10-04T22:40:55,444           ********************************************************************************
+2026-10-04T22:40:55,445           Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+2026-10-04T22:40:55,447           This deprecation is overdue, please update your project and remove deprecated
+2026-10-04T22:40:55,448           calls to avoid build errors in the future.
+
+2026-10-04T22:40:55,451           See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+2026-10-04T22:40:55,453           ********************************************************************************
+
+2026-10-04T22:40:55,456   !!
+2026-10-04T22:40:55,458     corresp(dist, value, root_dir)
+2026-10-04T22:40:55,915   running dist_info
+2026-10-04T22:40:56,085   creating /tmp/pip-modern-metadata-n7mnsl7o/rfqfuzz.egg-info
+2026-10-04T22:40:56,089   writing /tmp/pip-modern-metadata-n7mnsl7o/rfqfuzz.egg-info/PKG-INFO
+2026-10-04T22:40:56,096   writing dependency_links to /tmp/pip-modern-metadata-n7mnsl7o/rfqfuzz.egg-info/dependency_links.txt
+2026-10-04T22:40:56,100   writing entry points to /tmp/pip-modern-metadata-n7mnsl7o/rfqfuzz.egg-info/entry_points.txt
+2026-10-04T22:40:56,105   writing requirements to /tmp/pip-modern-metadata-n7mnsl7o/rfqfuzz.egg-info/requires.txt
+2026-10-04T22:40:56,107   writing top-level names to /tmp/pip-modern-metadata-n7mnsl7o/rfqfuzz.egg-info/top_level.txt
+2026-10-04T22:40:56,109   writing manifest file '/tmp/pip-modern-metadata-n7mnsl7o/rfqfuzz.egg-info/SOURCES.txt'
+2026-10-04T22:40:56,387   reading manifest file '/tmp/pip-modern-metadata-n7mnsl7o/rfqfuzz.egg-info/SOURCES.txt'
+2026-10-04T22:40:56,391   adding license file 'LICENSE'
+2026-10-04T22:40:56,404   writing manifest file '/tmp/pip-modern-metadata-n7mnsl7o/rfqfuzz.egg-info/SOURCES.txt'
+2026-10-04T22:40:56,408   creating '/tmp/pip-modern-metadata-n7mnsl7o/rfqfuzz-1.0.0.dist-info'
+2026-10-04T22:40:56,712   Preparing editable metadata (pyproject.toml): finished with status 'done'
+2026-10-04T22:40:56,748   Source in ./. has version 1.0.0, which satisfies requirement rfqfuzz==1.0.0 from file:///home/consumer/frozen-bounded
+2026-10-04T22:40:56,750   Removed rfqfuzz==1.0.0 from file:///home/consumer/frozen-bounded from build tracker '/tmp/pip-build-tracker-g9xe2dbq'
+2026-10-04T22:40:56,860 Created temporary directory: /tmp/pip-unpack-xuiwk24u
+2026-10-04T22:40:56,862 Building wheels for collected packages: rfqfuzz
+2026-10-04T22:40:56,872   Destination directory: /tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo
+2026-10-04T22:40:56,876   Building editable for rfqfuzz (pyproject.toml): started
+2026-10-04T22:40:56,879   Running command Building editable for rfqfuzz (pyproject.toml)
+2026-10-04T22:40:59,053   /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+2026-10-04T22:40:59,055   !!
+
+2026-10-04T22:40:59,057           ********************************************************************************
+2026-10-04T22:40:59,057           Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+2026-10-04T22:40:59,059           This deprecation is overdue, please update your project and remove deprecated
+2026-10-04T22:40:59,060           calls to avoid build errors in the future.
+
+2026-10-04T22:40:59,062           See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+2026-10-04T22:40:59,063           ********************************************************************************
+
+2026-10-04T22:40:59,065   !!
+2026-10-04T22:40:59,066     corresp(dist, value, root_dir)
+2026-10-04T22:40:59,440   running editable_wheel
+2026-10-04T22:40:59,707   creating /tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz.egg-info
+2026-10-04T22:40:59,709   writing /tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz.egg-info/PKG-INFO
+2026-10-04T22:40:59,717   writing dependency_links to /tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz.egg-info/dependency_links.txt
+2026-10-04T22:40:59,722   writing entry points to /tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz.egg-info/entry_points.txt
+2026-10-04T22:40:59,726   writing requirements to /tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz.egg-info/requires.txt
+2026-10-04T22:40:59,728   writing top-level names to /tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz.egg-info/top_level.txt
+2026-10-04T22:40:59,729   writing manifest file '/tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz.egg-info/SOURCES.txt'
+2026-10-04T22:41:00,026   reading manifest file '/tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz.egg-info/SOURCES.txt'
+2026-10-04T22:41:00,030   adding license file 'LICENSE'
+2026-10-04T22:41:00,040   writing manifest file '/tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz.egg-info/SOURCES.txt'
+2026-10-04T22:41:00,043   creating '/tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz-1.0.0.dist-info'
+2026-10-04T22:41:00,177   creating /tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz-1.0.0.dist-info/WHEEL
+2026-10-04T22:41:00,630   running build_py
+2026-10-04T22:41:00,632   running egg_info
+2026-10-04T22:41:00,736   creating /tmp/tmpf4g3jqzd.build-temp/rfqfuzz.egg-info
+2026-10-04T22:41:00,739   writing /tmp/tmpf4g3jqzd.build-temp/rfqfuzz.egg-info/PKG-INFO
+2026-10-04T22:41:00,747   writing dependency_links to /tmp/tmpf4g3jqzd.build-temp/rfqfuzz.egg-info/dependency_links.txt
+2026-10-04T22:41:00,749   writing entry points to /tmp/tmpf4g3jqzd.build-temp/rfqfuzz.egg-info/entry_points.txt
+2026-10-04T22:41:00,752   writing requirements to /tmp/tmpf4g3jqzd.build-temp/rfqfuzz.egg-info/requires.txt
+2026-10-04T22:41:00,755   writing top-level names to /tmp/tmpf4g3jqzd.build-temp/rfqfuzz.egg-info/top_level.txt
+2026-10-04T22:41:00,757   writing manifest file '/tmp/tmpf4g3jqzd.build-temp/rfqfuzz.egg-info/SOURCES.txt'
+2026-10-04T22:41:00,872   reading manifest file '/tmp/tmpf4g3jqzd.build-temp/rfqfuzz.egg-info/SOURCES.txt'
+2026-10-04T22:41:00,875   adding license file 'LICENSE'
+2026-10-04T22:41:00,881   writing manifest file '/tmp/tmpf4g3jqzd.build-temp/rfqfuzz.egg-info/SOURCES.txt'
+
+2026-10-04T22:41:00,901           Editable install will be performed using .pth file to extend `sys.path` with:
+2026-10-04T22:41:00,902           ['src']
+
+2026-10-04T22:41:00,903   Options like `package-data`, `include/exclude-package-data` or
+2026-10-04T22:41:00,904   `packages.find.exclude/include` may have no effect.
+
+2026-10-04T22:41:00,914   adding '__editable__.rfqfuzz-1.0.0.pth'
+2026-10-04T22:41:00,916   creating '/tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727/tmpw7m7s2jo/.tmp-up8pigcf/rfqfuzz-1.0.0-0.editable-py3-none-any.whl' and adding '/tmp/tmpgk_uh8f7rfqfuzz-1.0.0-0.editable-py3-none-any.whl' to it
+2026-10-04T22:41:00,929   adding 'rfqfuzz-1.0.0.dist-info/licenses/LICENSE'
+2026-10-04T22:41:00,938   adding 'rfqfuzz-1.0.0.dist-info/METADATA'
+2026-10-04T22:41:00,941   adding 'rfqfuzz-1.0.0.dist-info/WHEEL'
+2026-10-04T22:41:00,943   adding 'rfqfuzz-1.0.0.dist-info/entry_points.txt'
+2026-10-04T22:41:00,944   adding 'rfqfuzz-1.0.0.dist-info/top_level.txt'
+2026-10-04T22:41:00,948   adding 'rfqfuzz-1.0.0.dist-info/RECORD'
+2026-10-04T22:41:01,139   Building editable for rfqfuzz (pyproject.toml): finished with status 'done'
+2026-10-04T22:41:01,149   Created wheel for rfqfuzz: filename=rfqfuzz-1.0.0-0.editable-py3-none-any.whl size=25911 sha256=faf3fd2be116ba6a35575547c11c1a7084a12e36a3b6e26d7d2b6dd80fba5db6
+2026-10-04T22:41:01,152   Stored in directory: /tmp/pip-ephem-wheel-cache-lrb9fc_h/wheels/10/6e/1b/ac9e023a8c230011f17668c77c6ddd7e13e775b4f34380c727
+2026-10-04T22:41:01,261 Successfully built rfqfuzz
+2026-10-04T22:41:01,403 Installing collected packages: rfqfuzz
+2026-10-04T22:41:01,408   Attempting uninstall: rfqfuzz
+2026-10-04T22:41:01,434     Found existing installation: rfqfuzz 1.0.0
+2026-10-04T22:41:01,494     Uninstalling rfqfuzz-1.0.0:
+2026-10-04T22:41:05,141       Created temporary directory: /tmp/pip-uninstall-9cu2du14
+2026-10-04T22:41:05,143       Removing file or directory /home/consumer/rfqfuzz-venv/bin/rfqfuzz
+2026-10-04T22:41:05,145       Created temporary directory: /tmp/pip-uninstall-s384sgwf
+2026-10-04T22:41:05,147       Removing file or directory /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages/__editable__.rfqfuzz-1.0.0.pth
+2026-10-04T22:41:05,150       Created temporary directory: /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages/~fqfuzz-1.0.0.dist-info
+2026-10-04T22:41:05,153       Removing file or directory /home/consumer/rfqfuzz-venv/lib/python3.12/site-packages/rfqfuzz-1.0.0.dist-info/
+2026-10-04T22:41:05,154       Successfully uninstalled rfqfuzz-1.0.0
+
+2026-10-04T22:41:05,345 Successfully installed rfqfuzz-1.0.0
+2026-10-04T22:41:05,350 Removed build tracker: '/tmp/pip-build-tracker-g9xe2dbq'

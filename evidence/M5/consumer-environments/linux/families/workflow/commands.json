@@ -1,0 +1,97 @@
+[
+  {
+    "label": "demo",
+    "argv": [
+      "/home/consumer/rfqfuzz-venv/bin/python",
+      "-m",
+      "rfqfuzz.v1",
+      "demo",
+      "/home/consumer/frozen-bounded/examples/v1-demo",
+      "/home/consumer/linux-bounded-workflow/demo",
+      "--parser-timeout",
+      "300.0",
+      "--audit-timeout",
+      "120.0"
+    ],
+    "cwd": "/home/consumer/frozen-bounded",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "seconds": 610.3566737000001,
+    "log": "demo.log"
+  },
+  {
+    "label": "generate-plate",
+    "argv": [
+      "/home/consumer/rfqfuzz-venv/bin/python",
+      "-m",
+      "rfqfuzz.v1",
+      "generate-case",
+      "/home/consumer/linux-bounded-workflow/generated-suite/public/pk-780fa2354eea",
+      "--case-id",
+      "pk-780fa2354eea",
+      "--family",
+      "plate"
+    ],
+    "cwd": "/home/consumer/frozen-bounded",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "seconds": 55.77942929999995,
+    "log": "generate-plate.log"
+  },
+  {
+    "label": "generate-bore_block",
+    "argv": [
+      "/home/consumer/rfqfuzz-venv/bin/python",
+      "-m",
+      "rfqfuzz.v1",
+      "generate-case",
+      "/home/consumer/linux-bounded-workflow/generated-suite/public/pk-c02891e82f64",
+      "--case-id",
+      "pk-c02891e82f64",
+      "--family",
+      "bore_block"
+    ],
+    "cwd": "/home/consumer/frozen-bounded",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "seconds": 41.94359220000001,
+    "log": "generate-bore_block.log"
+  },
+  {
+    "label": "generate-pocket_block",
+    "argv": [
+      "/home/consumer/rfqfuzz-venv/bin/python",
+      "-m",
+      "rfqfuzz.v1",
+      "generate-case",
+      "/home/consumer/linux-bounded-workflow/generated-suite/public/pk-d66a90fd926a",
+      "--case-id",
+      "pk-d66a90fd926a",
+      "--family",
+      "pocket_block"
+    ],
+    "cwd": "/home/consumer/frozen-bounded",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "seconds": 44.7619638000001,
+    "log": "generate-pocket_block.log"
+  },
+  {
+    "label": "validate-generated-suite",
+    "argv": [
+      "/home/consumer/rfqfuzz-venv/bin/python",
+      "-m",
+      "rfqfuzz.v1",
+      "validate",
+      "/home/consumer/linux-bounded-workflow/generated-suite",
+      "/home/consumer/linux-bounded-workflow/generated-observations",
+      "--parser-timeout",
+      "300.0"
+    ],
+    "cwd": "/home/consumer/frozen-bounded",
+    "exit_code": 2,
+    "expected_exit": 2,
+    "seconds": 112.46245019999992,
+    "log": "validate-generated-suite.log"
+  }
+]

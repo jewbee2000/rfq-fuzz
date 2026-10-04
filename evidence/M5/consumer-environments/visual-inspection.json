@@ -1,0 +1,36 @@
+{
+  "observer": "consumer_env",
+  "utc": "2026-10-04T23:16:08.908658+00:00",
+  "scope": "Actual full generated rasters, not screenshots from source code or expected-answer images",
+  "platforms": {
+    "Windows": {
+      "plate": {
+        "sha256": "e09411600146c5aba9a7dd4bf78ceb6e5fb7504fddaa9e66102997aedb6d8e57",
+        "inspection": "Readable/unclipped numeric annotations and public context. Plan/section mapping checked: four plate bores/off-axis explanation; counterbore and blind floor; open pocket and +X wall. Agrees with own STEP readings."
+      },
+      "bore_block": {
+        "sha256": "776f43c90606f9edd4cc7c211460368f08e666d19eba1a9545a7b09c8d66a59e",
+        "inspection": "Readable/unclipped numeric annotations and public context. Plan/section mapping checked: four plate bores/off-axis explanation; counterbore and blind floor; open pocket and +X wall. Agrees with own STEP readings."
+      },
+      "pocket_block": {
+        "sha256": "986a9e5e51aeace133cc563ad10ede4d0184728ae54a53fa2f9cd5e57395deca",
+        "inspection": "Readable/unclipped numeric annotations and public context. Plan/section mapping checked: four plate bores/off-axis explanation; counterbore and blind floor; open pocket and +X wall. Agrees with own STEP readings."
+      }
+    },
+    "Linux": {
+      "plate": {
+        "sha256": "888f6367bbdedd0f4fdfaee72187f2299a5ddadc61c89020e4dabbfda715faf1",
+        "inspection": "Readable/unclipped numeric annotations and public context. Plan/section mapping checked: four plate bores/off-axis explanation; counterbore and blind floor; open pocket and +X wall. Agrees with own STEP readings."
+      },
+      "bore_block": {
+        "sha256": "94040222bb893ec67380b216ea6ef1eaeb43cb5d2394cbbc681bb9e33f4fcb26",
+        "inspection": "Readable/unclipped numeric annotations and public context. Plan/section mapping checked: four plate bores/off-axis explanation; counterbore and blind floor; open pocket and +X wall. Agrees with own STEP readings."
+      },
+      "pocket_block": {
+        "sha256": "5bb6f1ad3aed548def25a37bc13b47b6a26414a2ab4d2c3b4230cab207d9f4ee",
+        "inspection": "Readable/unclipped numeric annotations and public context. Plan/section mapping checked: four plate bores/off-axis explanation; counterbore and blind floor; open pocket and +X wall. Agrees with own STEP readings."
+      }
+    }
+  },
+  "limits": "Schematic numeric annotations govern; no pixel measurement used, no browser report visual QA."
+}

@@ -1,0 +1,108 @@
+{
+  "reader": "Own direct STEPControl, actual PDF text and fresh Poppler rerender; no toolkit conclusion logic",
+  "cases": [
+    {
+      "family": "plate",
+      "actual_export_dimensions_mm": [
+        80.0000002,
+        50.0000002,
+        8.0000002
+      ],
+      "actual_export_volume_mm3": 31095.22131576612,
+      "analytic_volume_mm3": 31095.22131576614,
+      "geometry": {
+        "through_hole_count": 4,
+        "diameter_mm": 6,
+        "through_depth_mm": 8,
+        "centers_xy_mm": [
+          [
+            -25,
+            -15
+          ],
+          [
+            -25,
+            15
+          ],
+          [
+            25,
+            -15
+          ],
+          [
+            25,
+            15
+          ]
+        ]
+      },
+      "visible_pdf_quotes": [
+        "ENVELOPE = 80.00 x 50.00 x 8.00 mm",
+        "H1 DIAMETER = 6.00 +/- 0.05 mm",
+        "H1 COUNT = 4",
+        "H1 TYPE = THROUGH"
+      ],
+      "pdf_png_pixels_identical": true,
+      "result": "semantics_confirmed"
+    },
+    {
+      "family": "bore_block",
+      "actual_export_dimensions_mm": [
+        60.0000002,
+        40.0000002,
+        35.0000002
+      ],
+      "actual_export_volume_mm3": 82982.1239802369,
+      "analytic_volume_mm3": 82982.12398023691,
+      "geometry": {
+        "blind_hole_total_depth_from_top_mm": 24,
+        "narrow_cylinder_depth_mm": 20,
+        "counterbore_depth_mm": 4,
+        "diameters_mm": [
+          6,
+          12
+        ],
+        "blind_floor_z_mm": -6.5,
+        "remaining_bottom_mm": 11
+      },
+      "visible_pdf_quotes": [
+        "ENVELOPE = 60.00 x 40.00 x 35.00 mm",
+        "H1 DIAMETER = 6.00 +/- 0.05 mm",
+        "H1 TYPE = BLIND",
+        "H1 DEPTH = 24.00 mm",
+        "C1 DIAMETER = 12.00 mm",
+        "C1 DEPTH = 4.00 mm"
+      ],
+      "pdf_png_pixels_identical": true,
+      "result": "semantics_confirmed"
+    },
+    {
+      "family": "pocket_block",
+      "actual_export_dimensions_mm": [
+        60.0000002,
+        40.0000002,
+        20.0000002
+      ],
+      "actual_export_volume_mm3": 30000.0,
+      "analytic_volume_mm3": 30000,
+      "geometry": {
+        "pocket_width_mm": 50,
+        "pocket_length_mm": 30,
+        "pocket_depth_mm": 12,
+        "floor_z_mm": -2,
+        "minimum_side_wall_mm": 5
+      },
+      "visible_pdf_quotes": [
+        "ENVELOPE = 60.00 x 40.00 x 20.00 mm",
+        "P1 WIDTH = 50.00 mm",
+        "P1 LENGTH = 30.00 mm",
+        "P1 DEPTH = 12.00 mm",
+        "W1 THICKNESS = 5.00 mm"
+      ],
+      "pdf_png_pixels_identical": true,
+      "result": "semantics_confirmed"
+    }
+  ],
+  "tolerance": {
+    "length_mm": 1e-06,
+    "volume_mm3": 1e-06
+  },
+  "limits": "Shares OCCT kernel with generator; named default synthetic fixtures only. Visual review recorded separately. Does not attest generated suite or certify manufacture."
+}

@@ -1,0 +1,7 @@
+{
+  "status": "unverified",
+  "counts": {
+    "unverified": 1
+  },
+  "oracle": "/home/consumer/linux-bounded-probe/observations/oracle.json"
+}

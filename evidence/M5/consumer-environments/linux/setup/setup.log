@@ -1,0 +1,712 @@
++ date -u +%Y-%m-%dT%H:%M:%SZ
+2026-10-04T22:01:43Z
++ cat /etc/os-release
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
++ uname -a
+Linux rfqfuzz-consumer 6.8.0-146-generic #146-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep  3 16:12:30 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
++ python3 --version
+Python 3.12.3
++ curl --fail --silent --show-error http://10.0.2.2:28080/requirements-m0.lock -o /home/consumer/setup-inputs/requirements-m0.lock
++ curl --fail --silent --show-error http://10.0.2.2:28080/inspect_environment.py -o /home/consumer/setup-inputs/inspect_environment.py
++ curl --fail --silent --show-error http://10.0.2.2:28080/inspect_smoke.py -o /home/consumer/setup-inputs/inspect_smoke.py
++ curl --fail --silent --show-error http://10.0.2.2:28080/smoke.py -o /home/consumer/setup-inputs/smoke.py
++ sha256sum /home/consumer/setup-inputs/inspect_environment.py /home/consumer/setup-inputs/inspect_smoke.py /home/consumer/setup-inputs/requirements-m0.lock /home/consumer/setup-inputs/smoke.py
++ sudo apt-get update
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:5 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1069 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [221 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1401 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1216 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [244 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main Translation-en [513 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1566 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [361 kB]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [40.3 kB]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [11.3 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [93.9 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble/restricted Translation-en [18.7 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1364 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [304 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1699 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [341 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1720 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [394 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [45.7 kB]
+Get:28 http://archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [13.1 kB]
+Get:29 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [40.6 kB]
+Get:30 http://archive.ubuntu.com/ubuntu noble-backports/main Translation-en [9172 B]
+Get:31 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [31.0 kB]
+Get:32 http://archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [18.6 kB]
+Get:33 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [748 B]
+Get:34 http://archive.ubuntu.com/ubuntu noble-backports/multiverse Translation-en [340 B]
+Fetched 34.8 MB in 47s (746 kB/s)
+Reading package lists...
++ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends python3.12-venv poppler-utils libgl1 libglu1-mesa libxrender1 libxext6 libsm6 libglib2.0-0 fonts-dejavu-core
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.9).
+libglib2.0-0t64 set to manually installed.
+The following additional packages will be installed:
+  fontconfig-config fonts-dejavu-mono libcairo2 libcurl3t64-gnutls libdeflate0
+  libdrm-amdgpu1 libdrm-intel1 libfontconfig1 libgbm1 libgl1-mesa-dri
+  libglvnd0 libglx-mesa0 libglx0 libice6 libicu74 libjbig0 libjpeg-turbo8
+  libjpeg8 liblcms2-2 liblerc4 libllvm20 libnspr4 libnss3 libopengl0
+  libopenjp2-7 libpciaccess0 libpixman-1-0 libpoppler134 libsensors-config
+  libsensors5 libsharpyuv0 libtiff6 libvulkan1 libwebp7 libx11-6 libx11-data
+  libx11-xcb1 libxau6 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0
+  libxcb-render0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxcb1 libxdmcp6
+  libxml2 libxshmfence1 libxxf86vm1 mesa-libgallium python3-pip-whl
+  python3-setuptools-whl x11-common
+Suggested packages:
+  liblcms2-utils lm-sensors
+Recommended packages:
+  poppler-data mesa-vulkan-drivers | vulkan-icd
+The following NEW packages will be installed:
+  fontconfig-config fonts-dejavu-core fonts-dejavu-mono libcairo2
+  libcurl3t64-gnutls libdeflate0 libdrm-amdgpu1 libdrm-intel1 libfontconfig1
+  libgbm1 libgl1 libgl1-mesa-dri libglu1-mesa libglvnd0 libglx-mesa0 libglx0
+  libice6 libicu74 libjbig0 libjpeg-turbo8 libjpeg8 liblcms2-2 liblerc4
+  libllvm20 libnspr4 libnss3 libopengl0 libopenjp2-7 libpciaccess0
+  libpixman-1-0 libpoppler134 libsensors-config libsensors5 libsharpyuv0
+  libsm6 libtiff6 libvulkan1 libwebp7 libx11-6 libx11-data libx11-xcb1 libxau6
+  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-render0
+  libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxcb1 libxdmcp6 libxext6 libxml2
+  libxrender1 libxshmfence1 libxxf86vm1 mesa-libgallium poppler-utils
+  python3-pip-whl python3-setuptools-whl python3.12-venv x11-common
+0 upgraded, 63 newly installed, 0 to remove and 0 not upgraded.
+Need to get 64.1 MB of archives.
+After this operation, 257 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libicu74 amd64 74.2-1ubuntu3.1 [10.9 MB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libxml2 amd64 2.9.14+dfsg-1.3ubuntu3.9 [765 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libsensors-config all 1:3.6.0-9build1 [5546 B]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libsensors5 amd64 1:3.6.0-9build1 [26.6 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libxau6 amd64 1:1.0.9-1build6 [7160 B]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 libxdmcp6 amd64 1:1.1.3-0ubuntu6 [10.3 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb1 amd64 1.15-1ubuntu2 [47.7 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 libx11-data all 2:1.8.7-1build1 [115 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 libx11-6 amd64 2:1.8.7-1build1 [650 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libxext6 amd64 2:1.3.4-1build2 [30.4 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 fonts-dejavu-mono all 2.37-8 [502 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 fonts-dejavu-core all 2.37-8 [835 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 fontconfig-config amd64 2.15.0-1.1ubuntu2 [37.3 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 libfontconfig1 amd64 2.15.0-1.1ubuntu2 [139 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble/main amd64 libpixman-1-0 amd64 0.42.2-1build1 [279 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-render0 amd64 1.15-1ubuntu2 [16.2 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-shm0 amd64 1.15-1ubuntu2 [5756 B]
+Get:18 http://archive.ubuntu.com/ubuntu noble/main amd64 libxrender1 amd64 1:0.9.10-1.1build1 [19.0 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble/main amd64 libcairo2 amd64 1.18.0-3build1 [566 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.15 [336 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdeflate0 amd64 1.19-1build1.1 [43.9 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm-amdgpu1 amd64 2.4.125-1ubuntu0.1~24.04.2 [21.4 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpciaccess0 amd64 0.17-3ubuntu0.24.04.3 [19.2 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm-intel1 amd64 2.4.125-1ubuntu0.1~24.04.2 [63.9 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libllvm20 amd64 1:20.1.2-0ubuntu1~24.04.3 [30.6 MB]
+Get:26 http://archive.ubuntu.com/ubuntu noble/main amd64 libx11-xcb1 amd64 2:1.8.7-1build1 [7800 B]
+Get:27 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-dri3-0 amd64 1.15-1ubuntu2 [7142 B]
+Get:28 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-present0 amd64 1.15-1ubuntu2 [5676 B]
+Get:29 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-randr0 amd64 1.15-1ubuntu2 [17.9 kB]
+Get:30 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-sync1 amd64 1.15-1ubuntu2 [9312 B]
+Get:31 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-xfixes0 amd64 1.15-1ubuntu2 [10.2 kB]
+Get:32 http://archive.ubuntu.com/ubuntu noble/main amd64 libxshmfence1 amd64 1.3-1build5 [4764 B]
+Get:33 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-libgallium amd64 25.2.8-0ubuntu0.24.04.4 [10.8 MB]
+Get:34 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 25.2.8-0ubuntu0.24.04.4 [34.2 kB]
+Get:35 http://archive.ubuntu.com/ubuntu noble/main amd64 libvulkan1 amd64 1.3.275.0-1build1 [142 kB]
+Get:36 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgl1-mesa-dri amd64 25.2.8-0ubuntu0.24.04.4 [38.0 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-glx0 amd64 1.15-1ubuntu2 [24.8 kB]
+Get:38 http://archive.ubuntu.com/ubuntu noble/main amd64 libxxf86vm1 amd64 1:1.1.4-1build4 [9282 B]
+Get:39 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libglx-mesa0 amd64 25.2.8-0ubuntu0.24.04.4 [110 kB]
+Get:40 http://archive.ubuntu.com/ubuntu noble/main amd64 x11-common all 1:7.7+23ubuntu3 [21.7 kB]
+Get:41 http://archive.ubuntu.com/ubuntu noble/main amd64 libice6 amd64 2:1.0.10-1build3 [41.4 kB]
+Get:42 http://archive.ubuntu.com/ubuntu noble/main amd64 libjpeg-turbo8 amd64 2.1.5-2ubuntu2 [150 kB]
+Get:43 http://archive.ubuntu.com/ubuntu noble/main amd64 libjpeg8 amd64 8c-2ubuntu11 [2148 B]
+Get:44 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 liblcms2-2 amd64 2.14-2ubuntu0.1 [161 kB]
+Get:45 http://archive.ubuntu.com/ubuntu noble/main amd64 liblerc4 amd64 4.0.0+ds-4ubuntu2 [179 kB]
+Get:46 http://archive.ubuntu.com/ubuntu noble/main amd64 libnspr4 amd64 2:4.35-1.1build1 [117 kB]
+Get:47 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnss3 amd64 2:3.98-1ubuntu0.2 [1445 kB]
+Get:48 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libopenjp2-7 amd64 2.5.0-2ubuntu0.5 [174 kB]
+Get:49 http://archive.ubuntu.com/ubuntu noble/main amd64 libjbig0 amd64 2.1-6.1ubuntu2 [29.7 kB]
+Get:50 http://archive.ubuntu.com/ubuntu noble/main amd64 libsharpyuv0 amd64 1.3.2-0.4build3 [15.8 kB]
+Get:51 http://archive.ubuntu.com/ubuntu noble/main amd64 libwebp7 amd64 1.3.2-0.4build3 [230 kB]
+Get:52 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libtiff6 amd64 4.5.1+git230720-4ubuntu2.5 [200 kB]
+Get:53 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpoppler134 amd64 24.02.0-1ubuntu9.9 [1118 kB]
+Get:54 http://archive.ubuntu.com/ubuntu noble/main amd64 libsm6 amd64 2:1.2.3-1build3 [15.7 kB]
+Get:55 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 poppler-utils amd64 24.02.0-1ubuntu9.9 [212 kB]
+Get:56 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-pip-whl all 24.0+dfsg-1ubuntu1.3 [1707 kB]
+Get:57 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-setuptools-whl all 68.1.2-2ubuntu1.2 [716 kB]
+Get:58 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3.12-venv amd64 3.12.3-1ubuntu0.17 [5684 B]
+Get:59 http://archive.ubuntu.com/ubuntu noble/main amd64 libglvnd0 amd64 1.7.0-1build1 [69.6 kB]
+Get:60 http://archive.ubuntu.com/ubuntu noble/main amd64 libglx0 amd64 1.7.0-1build1 [38.6 kB]
+Get:61 http://archive.ubuntu.com/ubuntu noble/main amd64 libgl1 amd64 1.7.0-1build1 [102 kB]
+Get:62 http://archive.ubuntu.com/ubuntu noble/main amd64 libopengl0 amd64 1.7.0-1build1 [32.8 kB]
+Get:63 http://archive.ubuntu.com/ubuntu noble/main amd64 libglu1-mesa amd64 9.0.2-1.1build1 [152 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 64.1 MB in 10s (6126 kB/s)
+Selecting previously unselected package libicu74:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15099 files and directories currently installed.)
+Preparing to unpack .../00-libicu74_74.2-1ubuntu3.1_amd64.deb ...
+Unpacking libicu74:amd64 (74.2-1ubuntu3.1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../01-libxml2_2.9.14+dfsg-1.3ubuntu3.9_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.9) ...
+Selecting previously unselected package libsensors-config.
+Preparing to unpack .../02-libsensors-config_1%3a3.6.0-9build1_all.deb ...
+Unpacking libsensors-config (1:3.6.0-9build1) ...
+Selecting previously unselected package libsensors5:amd64.
+Preparing to unpack .../03-libsensors5_1%3a3.6.0-9build1_amd64.deb ...
+Unpacking libsensors5:amd64 (1:3.6.0-9build1) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../04-libxau6_1%3a1.0.9-1build6_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.9-1build6) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../05-libxdmcp6_1%3a1.1.3-0ubuntu6_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.3-0ubuntu6) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../06-libxcb1_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb1:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../07-libx11-data_2%3a1.8.7-1build1_all.deb ...
+Unpacking libx11-data (2:1.8.7-1build1) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../08-libx11-6_2%3a1.8.7-1build1_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.8.7-1build1) ...
+Selecting previously unselected package libxext6:amd64.
+Preparing to unpack .../09-libxext6_2%3a1.3.4-1build2_amd64.deb ...
+Unpacking libxext6:amd64 (2:1.3.4-1build2) ...
+Selecting previously unselected package fonts-dejavu-mono.
+Preparing to unpack .../10-fonts-dejavu-mono_2.37-8_all.deb ...
+Unpacking fonts-dejavu-mono (2.37-8) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../11-fonts-dejavu-core_2.37-8_all.deb ...
+Unpacking fonts-dejavu-core (2.37-8) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../12-fontconfig-config_2.15.0-1.1ubuntu2_amd64.deb ...
+Unpacking fontconfig-config (2.15.0-1.1ubuntu2) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../13-libfontconfig1_2.15.0-1.1ubuntu2_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.15.0-1.1ubuntu2) ...
+Selecting previously unselected package libpixman-1-0:amd64.
+Preparing to unpack .../14-libpixman-1-0_0.42.2-1build1_amd64.deb ...
+Unpacking libpixman-1-0:amd64 (0.42.2-1build1) ...
+Selecting previously unselected package libxcb-render0:amd64.
+Preparing to unpack .../15-libxcb-render0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-render0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-shm0:amd64.
+Preparing to unpack .../16-libxcb-shm0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-shm0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxrender1:amd64.
+Preparing to unpack .../17-libxrender1_1%3a0.9.10-1.1build1_amd64.deb ...
+Unpacking libxrender1:amd64 (1:0.9.10-1.1build1) ...
+Selecting previously unselected package libcairo2:amd64.
+Preparing to unpack .../18-libcairo2_1.18.0-3build1_amd64.deb ...
+Unpacking libcairo2:amd64 (1.18.0-3build1) ...
+Selecting previously unselected package libcurl3t64-gnutls:amd64.
+Preparing to unpack .../19-libcurl3t64-gnutls_8.5.0-2ubuntu10.15_amd64.deb ...
+Unpacking libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.15) ...
+Selecting previously unselected package libdeflate0:amd64.
+Preparing to unpack .../20-libdeflate0_1.19-1build1.1_amd64.deb ...
+Unpacking libdeflate0:amd64 (1.19-1build1.1) ...
+Selecting previously unselected package libdrm-amdgpu1:amd64.
+Preparing to unpack .../21-libdrm-amdgpu1_2.4.125-1ubuntu0.1~24.04.2_amd64.deb ...
+Unpacking libdrm-amdgpu1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Selecting previously unselected package libpciaccess0:amd64.
+Preparing to unpack .../22-libpciaccess0_0.17-3ubuntu0.24.04.3_amd64.deb ...
+Unpacking libpciaccess0:amd64 (0.17-3ubuntu0.24.04.3) ...
+Selecting previously unselected package libdrm-intel1:amd64.
+Preparing to unpack .../23-libdrm-intel1_2.4.125-1ubuntu0.1~24.04.2_amd64.deb ...
+Unpacking libdrm-intel1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Selecting previously unselected package libllvm20:amd64.
+Preparing to unpack .../24-libllvm20_1%3a20.1.2-0ubuntu1~24.04.3_amd64.deb ...
+Unpacking libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.3) ...
+Selecting previously unselected package libx11-xcb1:amd64.
+Preparing to unpack .../25-libx11-xcb1_2%3a1.8.7-1build1_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.8.7-1build1) ...
+Selecting previously unselected package libxcb-dri3-0:amd64.
+Preparing to unpack .../26-libxcb-dri3-0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-dri3-0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-present0:amd64.
+Preparing to unpack .../27-libxcb-present0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-present0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-randr0:amd64.
+Preparing to unpack .../28-libxcb-randr0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-randr0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-sync1:amd64.
+Preparing to unpack .../29-libxcb-sync1_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-sync1:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-xfixes0:amd64.
+Preparing to unpack .../30-libxcb-xfixes0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-xfixes0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxshmfence1:amd64.
+Preparing to unpack .../31-libxshmfence1_1.3-1build5_amd64.deb ...
+Unpacking libxshmfence1:amd64 (1.3-1build5) ...
+Selecting previously unselected package mesa-libgallium:amd64.
+Preparing to unpack .../32-mesa-libgallium_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+Unpacking mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+Selecting previously unselected package libgbm1:amd64.
+Preparing to unpack .../33-libgbm1_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+Unpacking libgbm1:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+Selecting previously unselected package libvulkan1:amd64.
+Preparing to unpack .../34-libvulkan1_1.3.275.0-1build1_amd64.deb ...
+Unpacking libvulkan1:amd64 (1.3.275.0-1build1) ...
+Selecting previously unselected package libgl1-mesa-dri:amd64.
+Preparing to unpack .../35-libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+Unpacking libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+Selecting previously unselected package libxcb-glx0:amd64.
+Preparing to unpack .../36-libxcb-glx0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-glx0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxxf86vm1:amd64.
+Preparing to unpack .../37-libxxf86vm1_1%3a1.1.4-1build4_amd64.deb ...
+Unpacking libxxf86vm1:amd64 (1:1.1.4-1build4) ...
+Selecting previously unselected package libglx-mesa0:amd64.
+Preparing to unpack .../38-libglx-mesa0_25.2.8-0ubuntu0.24.04.4_amd64.deb ...
+Unpacking libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+Selecting previously unselected package x11-common.
+Preparing to unpack .../39-x11-common_1%3a7.7+23ubuntu3_all.deb ...
+Unpacking x11-common (1:7.7+23ubuntu3) ...
+Selecting previously unselected package libice6:amd64.
+Preparing to unpack .../40-libice6_2%3a1.0.10-1build3_amd64.deb ...
+Unpacking libice6:amd64 (2:1.0.10-1build3) ...
+Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../41-libjpeg-turbo8_2.1.5-2ubuntu2_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (2.1.5-2ubuntu2) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../42-libjpeg8_8c-2ubuntu11_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu11) ...
+Selecting previously unselected package liblcms2-2:amd64.
+Preparing to unpack .../43-liblcms2-2_2.14-2ubuntu0.1_amd64.deb ...
+Unpacking liblcms2-2:amd64 (2.14-2ubuntu0.1) ...
+Selecting previously unselected package liblerc4:amd64.
+Preparing to unpack .../44-liblerc4_4.0.0+ds-4ubuntu2_amd64.deb ...
+Unpacking liblerc4:amd64 (4.0.0+ds-4ubuntu2) ...
+Selecting previously unselected package libnspr4:amd64.
+Preparing to unpack .../45-libnspr4_2%3a4.35-1.1build1_amd64.deb ...
+Unpacking libnspr4:amd64 (2:4.35-1.1build1) ...
+Selecting previously unselected package libnss3:amd64.
+Preparing to unpack .../46-libnss3_2%3a3.98-1ubuntu0.2_amd64.deb ...
+Unpacking libnss3:amd64 (2:3.98-1ubuntu0.2) ...
+Selecting previously unselected package libopenjp2-7:amd64.
+Preparing to unpack .../47-libopenjp2-7_2.5.0-2ubuntu0.5_amd64.deb ...
+Unpacking libopenjp2-7:amd64 (2.5.0-2ubuntu0.5) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../48-libjbig0_2.1-6.1ubuntu2_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-6.1ubuntu2) ...
+Selecting previously unselected package libsharpyuv0:amd64.
+Preparing to unpack .../49-libsharpyuv0_1.3.2-0.4build3_amd64.deb ...
+Unpacking libsharpyuv0:amd64 (1.3.2-0.4build3) ...
+Selecting previously unselected package libwebp7:amd64.
+Preparing to unpack .../50-libwebp7_1.3.2-0.4build3_amd64.deb ...
+Unpacking libwebp7:amd64 (1.3.2-0.4build3) ...
+Selecting previously unselected package libtiff6:amd64.
+Preparing to unpack .../51-libtiff6_4.5.1+git230720-4ubuntu2.5_amd64.deb ...
+Unpacking libtiff6:amd64 (4.5.1+git230720-4ubuntu2.5) ...
+Selecting previously unselected package libpoppler134:amd64.
+Preparing to unpack .../52-libpoppler134_24.02.0-1ubuntu9.9_amd64.deb ...
+Unpacking libpoppler134:amd64 (24.02.0-1ubuntu9.9) ...
+Selecting previously unselected package libsm6:amd64.
+Preparing to unpack .../53-libsm6_2%3a1.2.3-1build3_amd64.deb ...
+Unpacking libsm6:amd64 (2:1.2.3-1build3) ...
+Selecting previously unselected package poppler-utils.
+Preparing to unpack .../54-poppler-utils_24.02.0-1ubuntu9.9_amd64.deb ...
+Unpacking poppler-utils (24.02.0-1ubuntu9.9) ...
+Selecting previously unselected package python3-pip-whl.
+Preparing to unpack .../55-python3-pip-whl_24.0+dfsg-1ubuntu1.3_all.deb ...
+Unpacking python3-pip-whl (24.0+dfsg-1ubuntu1.3) ...
+Selecting previously unselected package python3-setuptools-whl.
+Preparing to unpack .../56-python3-setuptools-whl_68.1.2-2ubuntu1.2_all.deb ...
+Unpacking python3-setuptools-whl (68.1.2-2ubuntu1.2) ...
+Selecting previously unselected package python3.12-venv.
+Preparing to unpack .../57-python3.12-venv_3.12.3-1ubuntu0.17_amd64.deb ...
+Unpacking python3.12-venv (3.12.3-1ubuntu0.17) ...
+Selecting previously unselected package libglvnd0:amd64.
+Preparing to unpack .../58-libglvnd0_1.7.0-1build1_amd64.deb ...
+Unpacking libglvnd0:amd64 (1.7.0-1build1) ...
+Selecting previously unselected package libglx0:amd64.
+Preparing to unpack .../59-libglx0_1.7.0-1build1_amd64.deb ...
+Unpacking libglx0:amd64 (1.7.0-1build1) ...
+Selecting previously unselected package libgl1:amd64.
+Preparing to unpack .../60-libgl1_1.7.0-1build1_amd64.deb ...
+Unpacking libgl1:amd64 (1.7.0-1build1) ...
+Selecting previously unselected package libopengl0:amd64.
+Preparing to unpack .../61-libopengl0_1.7.0-1build1_amd64.deb ...
+Unpacking libopengl0:amd64 (1.7.0-1build1) ...
+Selecting previously unselected package libglu1-mesa:amd64.
+Preparing to unpack .../62-libglu1-mesa_9.0.2-1.1build1_amd64.deb ...
+Unpacking libglu1-mesa:amd64 (9.0.2-1.1build1) ...
+Setting up liblcms2-2:amd64 (2.14-2ubuntu0.1) ...
+Setting up libpixman-1-0:amd64 (0.42.2-1build1) ...
+Setting up libsharpyuv0:amd64 (1.3.2-0.4build3) ...
+Setting up libpciaccess0:amd64 (0.17-3ubuntu0.24.04.3) ...
+Setting up libxau6:amd64 (1:1.0.9-1build6) ...
+Setting up libxdmcp6:amd64 (1:1.1.3-0ubuntu6) ...
+Setting up python3-setuptools-whl (68.1.2-2ubuntu1.2) ...
+Setting up libxcb1:amd64 (1.15-1ubuntu2) ...
+Setting up libxcb-xfixes0:amd64 (1.15-1ubuntu2) ...
+Setting up liblerc4:amd64 (4.0.0+ds-4ubuntu2) ...
+Setting up python3-pip-whl (24.0+dfsg-1ubuntu1.3) ...
+Setting up libxcb-render0:amd64 (1.15-1ubuntu2) ...
+Setting up libglvnd0:amd64 (1.7.0-1build1) ...
+Setting up libxcb-glx0:amd64 (1.15-1ubuntu2) ...
+Setting up libdrm-intel1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Setting up x11-common (1:7.7+23ubuntu3) ...
+Setting up libsensors-config (1:3.6.0-9build1) ...
+Setting up libdeflate0:amd64 (1.19-1build1.1) ...
+Setting up libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.15) ...
+Setting up libxcb-shm0:amd64 (1.15-1ubuntu2) ...
+Setting up libjbig0:amd64 (2.1-6.1ubuntu2) ...
+Setting up libopengl0:amd64 (1.7.0-1build1) ...
+Setting up libxcb-present0:amd64 (1.15-1ubuntu2) ...
+Setting up libx11-data (2:1.8.7-1build1) ...
+Setting up libnspr4:amd64 (2:4.35-1.1build1) ...
+Setting up libxcb-sync1:amd64 (1.15-1ubuntu2) ...
+Setting up fonts-dejavu-mono (2.37-8) ...
+Setting up fonts-dejavu-core (2.37-8) ...
+Setting up libsensors5:amd64 (1:3.6.0-9build1) ...
+Setting up libjpeg-turbo8:amd64 (2.1.5-2ubuntu2) ...
+Setting up libvulkan1:amd64 (1.3.275.0-1build1) ...
+Setting up libwebp7:amd64 (1.3.2-0.4build3) ...
+Setting up libicu74:amd64 (74.2-1ubuntu3.1) ...
+Setting up libxshmfence1:amd64 (1.3-1build5) ...
+Setting up libxcb-randr0:amd64 (1.15-1ubuntu2) ...
+Setting up libopenjp2-7:amd64 (2.5.0-2ubuntu0.5) ...
+Setting up libx11-6:amd64 (2:1.8.7-1build1) ...
+Setting up libglu1-mesa:amd64 (9.0.2-1.1build1) ...
+Setting up libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.9) ...
+Setting up libdrm-amdgpu1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu11) ...
+Setting up libxcb-dri3-0:amd64 (1.15-1ubuntu2) ...
+Setting up libx11-xcb1:amd64 (2:1.8.7-1build1) ...
+Setting up libice6:amd64 (2:1.0.10-1build3) ...
+Setting up libxrender1:amd64 (1:0.9.10-1.1build1) ...
+Setting up python3.12-venv (3.12.3-1ubuntu0.17) ...
+Setting up fontconfig-config (2.15.0-1.1ubuntu2) ...
+Setting up libxext6:amd64 (2:1.3.4-1build2) ...
+Setting up libnss3:amd64 (2:3.98-1ubuntu0.2) ...
+Setting up libxxf86vm1:amd64 (1:1.1.4-1build4) ...
+Setting up libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.3) ...
+Setting up libtiff6:amd64 (4.5.1+git230720-4ubuntu2.5) ...
+Setting up libfontconfig1:amd64 (2.15.0-1.1ubuntu2) ...
+Setting up libsm6:amd64 (2:1.2.3-1build3) ...
+Setting up mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+Setting up libgbm1:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+Setting up libpoppler134:amd64 (24.02.0-1ubuntu9.9) ...
+Setting up libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+Setting up libcairo2:amd64 (1.18.0-3build1) ...
+Setting up poppler-utils (24.02.0-1ubuntu9.9) ...
+Setting up libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.4) ...
+Setting up libglx0:amd64 (1.7.0-1build1) ...
+Setting up libgl1:amd64 (1.7.0-1build1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
++ dpkg-query -W
++ python3.12 -m venv /home/consumer/rfqfuzz-venv
++ /home/consumer/rfqfuzz-venv/bin/python -m pip install pip==26.2.1 --log /home/consumer/setup-evidence/pip-bootstrap.log
+Collecting pip==26.2.1
+  Downloading pip-26.2.1-py3-none-any.whl.metadata (4.6 kB)
+Downloading pip-26.2.1-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 4.7 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed pip-26.2.1
++ /home/consumer/rfqfuzz-venv/bin/python -m pip install -r /home/consumer/setup-inputs/requirements-m0.lock --report /home/consumer/setup-evidence/install-report.json --log /home/consumer/setup-evidence/pip-install.log
+Collecting annotated-doc==0.0.5 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 1))
+  Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Collecting antlr4-python3-runtime==4.9.3 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 2))
+  Downloading antlr4-python3-runtime-4.9.3.tar.gz (117 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting anytree==2.13.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 3))
+  Downloading anytree-2.13.0-py3-none-any.whl.metadata (8.0 kB)
+Collecting asttokens==3.0.2 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 4))
+  Downloading asttokens-3.0.2-py3-none-any.whl.metadata (5.7 kB)
+Collecting build123d==0.10.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 5))
+  Downloading build123d-0.10.0-py3-none-any.whl.metadata (6.7 kB)
+Collecting build123d-drafting-helpers==0.15.5 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 6))
+  Downloading build123d_drafting_helpers-0.15.5-py3-none-any.whl.metadata (33 kB)
+Collecting cadquery-ocp==7.8.1.1.post1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 7))
+  Downloading cadquery_ocp-7.8.1.1.post1-cp312-cp312-manylinux_2_31_x86_64.whl.metadata (707 bytes)
+Collecting cadquery-ocp-proxy==7.9.3.1.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 8))
+  Downloading cadquery_ocp_proxy-7.9.3.1.1-py3-none-any.whl.metadata (5.2 kB)
+Collecting charset-normalizer==3.5.2 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 9))
+  Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting colorama==0.4.6 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 10))
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting contourpy==1.4.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 11))
+  Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting cssselect2==0.10.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 12))
+  Downloading cssselect2-0.10.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting cycler==0.12.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 13))
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting draftwright==0.4.35 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 14))
+  Downloading draftwright-0.4.35-py3-none-any.whl.metadata (59 kB)
+Collecting executing==2.2.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 15))
+  Downloading executing-2.2.1-py2.py3-none-any.whl.metadata (8.9 kB)
+Collecting ezdxf==1.4.4 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 16))
+  Downloading ezdxf-1.4.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.9 kB)
+Collecting fonttools==4.66.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 17))
+  Downloading fonttools-4.66.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (130 kB)
+Collecting iniconfig==2.3.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 18))
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting ipython==9.17.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 19))
+  Downloading ipython-9.17.1-py3-none-any.whl.metadata (4.6 kB)
+Collecting ipython_pygments_lexers==1.1.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 20))
+  Downloading ipython_pygments_lexers-1.1.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting jedi==0.20.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 21))
+  Downloading jedi-0.20.0-py2.py3-none-any.whl.metadata (23 kB)
+Collecting kiwisolver==1.5.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 22))
+  Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting lib3mf==2.5.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 23))
+  Downloading lib3mf-2.5.0-py3-none-manylinux2014_x86_64.whl.metadata (6.2 kB)
+Collecting lxml==6.1.3 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 24))
+  Downloading lxml-6.1.3-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting markdown-it-py==4.2.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 25))
+  Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting matplotlib==3.11.2 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 26))
+  Downloading matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+Collecting matplotlib-inline==0.2.2 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 27))
+  Downloading matplotlib_inline-0.2.2-py3-none-any.whl.metadata (2.4 kB)
+Collecting mdurl==0.1.2 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 28))
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting mpmath==1.3.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 29))
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting numpy==2.5.3 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 30))
+  Downloading numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting ocp_gordon==0.2.2 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 31))
+  Downloading ocp_gordon-0.2.2-py3-none-any.whl.metadata (4.9 kB)
+Collecting ocpsvg==0.5.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 32))
+  Downloading ocpsvg-0.5.0-py3-none-any.whl.metadata (662 bytes)
+Collecting packaging==26.3 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 33))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting parso==0.8.7 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 34))
+  Downloading parso-0.8.7-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting pillow==12.3.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 35))
+  Downloading pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pluggy==1.6.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 36))
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting prompt_toolkit==3.0.53 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 37))
+  Downloading prompt_toolkit-3.0.53-py3-none-any.whl.metadata (6.4 kB)
+Collecting psutil==7.2.2 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 38))
+  Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Collecting pure_eval==0.2.4 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 39))
+  Downloading pure_eval-0.2.4-py3-none-any.whl.metadata (6.4 kB)
+Collecting Pygments==2.21.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 40))
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting pyparsing==3.3.3 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 41))
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting pypdf==6.9.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 42))
+  Downloading pypdf-6.9.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting pypdfium2==5.14.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 43))
+  Downloading pypdfium2-5.14.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting pytest==9.0.2 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 44))
+  Downloading pytest-9.0.2-py3-none-any.whl.metadata (7.6 kB)
+Collecting python-dateutil==2.9.0.post0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 45))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting quiddity==0.3.3 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 46))
+  Downloading quiddity-0.3.3-py3-none-any.whl.metadata (20 kB)
+Collecting reportlab==5.0.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 47))
+  Downloading reportlab-5.0.1-py3-none-any.whl.metadata (1.6 kB)
+Collecting rich==15.0.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 48))
+  Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting scipy==1.18.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 49))
+  Downloading scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting shellingham==1.5.4 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 50))
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting six==1.17.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 51))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting stack-data==0.6.3 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 52))
+  Downloading stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Collecting steputils==0.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 53))
+  Downloading steputils-0.1-py3-none-any.whl.metadata (3.4 kB)
+Collecting svgelements==1.9.6 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 54))
+  Downloading svgelements-1.9.6-py2.py3-none-any.whl.metadata (44 kB)
+Collecting svglib==2.2.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 55))
+  Downloading svglib-2.2.0-py3-none-any.whl.metadata (14 kB)
+Collecting svgpathtools==1.8.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 56))
+  Downloading svgpathtools-1.8.0-py2.py3-none-any.whl.metadata (22 kB)
+Collecting svgwrite==1.4.3 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 57))
+  Downloading svgwrite-1.4.3-py3-none-any.whl.metadata (8.8 kB)
+Collecting sympy==1.14.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 58))
+  Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting tinycss2==1.5.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 59))
+  Downloading tinycss2-1.5.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting traitlets==5.16.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 60))
+  Downloading traitlets-5.16.1-py3-none-any.whl.metadata (10 kB)
+Collecting trianglesolver==1.2 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 61))
+  Downloading trianglesolver-1.2-py3-none-any.whl.metadata (1.7 kB)
+Collecting typer==0.27.2 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 62))
+  Downloading typer-0.27.2-py3-none-any.whl.metadata (16 kB)
+Collecting typing_extensions==4.16.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 63))
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting vtk==9.3.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 64))
+  Downloading vtk-9.3.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.2 kB)
+Collecting wcwidth==0.9.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 65))
+  Downloading wcwidth-0.9.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+Collecting webcolors==24.8.0 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 66))
+  Downloading webcolors-24.8.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting webencodings==0.6.1 (from -r /home/consumer/setup-inputs/requirements-m0.lock (line 67))
+  Downloading webencodings-0.6.1-py3-none-any.whl.metadata (3.4 kB)
+Collecting pexpect>4.6 (from ipython==9.17.1->-r /home/consumer/setup-inputs/requirements-m0.lock (line 19))
+  Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting ptyprocess>=0.5 (from pexpect>4.6->ipython==9.17.1->-r /home/consumer/setup-inputs/requirements-m0.lock (line 19))
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Downloading anytree-2.13.0-py3-none-any.whl (45 kB)
+Downloading asttokens-3.0.2-py3-none-any.whl (28 kB)
+Downloading build123d-0.10.0-py3-none-any.whl (278 kB)
+Downloading cadquery_ocp-7.8.1.1.post1-cp312-cp312-manylinux_2_31_x86_64.whl (70.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.3/70.3 MB 6.6 MB/s  0:00:10
+Downloading ezdxf-1.4.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8/5.8 MB 7.8 MB/s  0:00:00
+Downloading ipython-9.17.1-py3-none-any.whl (639 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 639.0/639.0 kB 8.9 MB/s  0:00:00
+Downloading numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 6.8 MB/s  0:00:02
+Downloading ocpsvg-0.5.0-py3-none-any.whl (20 kB)
+Downloading prompt_toolkit-3.0.53-py3-none-any.whl (392 kB)
+Downloading svgelements-1.9.6-py2.py3-none-any.whl (137 kB)
+Downloading svgpathtools-1.8.0-py2.py3-none-any.whl (70 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading webcolors-24.8.0-py3-none-any.whl (15 kB)
+Downloading build123d_drafting_helpers-0.15.5-py3-none-any.whl (296 kB)
+Downloading cadquery_ocp_proxy-7.9.3.1.1-py3-none-any.whl (3.3 kB)
+Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (383 kB)
+Downloading cssselect2-0.10.1-py3-none-any.whl (15 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading draftwright-0.4.35-py3-none-any.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 14.0 MB/s  0:00:00
+Downloading ocp_gordon-0.2.2-py3-none-any.whl (54 kB)
+Downloading executing-2.2.1-py2.py3-none-any.whl (28 kB)
+Downloading fonttools-4.66.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 8.1 MB/s  0:00:00
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading ipython_pygments_lexers-1.1.1-py3-none-any.whl (8.1 kB)
+Downloading jedi-0.20.0-py2.py3-none-any.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 8.2 MB/s  0:00:00
+Downloading parso-0.8.7-py2.py3-none-any.whl (107 kB)
+Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 14.7 MB/s  0:00:00
+Downloading lib3mf-2.5.0-py3-none-manylinux2014_x86_64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 10.2 MB/s  0:00:00
+Downloading lxml-6.1.3-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 7.1 MB/s  0:00:00
+Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 7.3 MB/s  0:00:01
+Downloading matplotlib_inline-0.2.2-py3-none-any.whl (9.5 kB)
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 7.4 MB/s  0:00:00
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 7.7 MB/s  0:00:00
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Downloading pure_eval-0.2.4-py3-none-any.whl (11 kB)
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 13.0 MB/s  0:00:00
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading pypdf-6.9.1-py3-none-any.whl (333 kB)
+Downloading pypdfium2-5.14.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 9.1 MB/s  0:00:00
+Downloading pytest-9.0.2-py3-none-any.whl (374 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading quiddity-0.3.3-py3-none-any.whl (518 kB)
+Downloading reportlab-5.0.1-py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 15.3 MB/s  0:00:00
+Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+Downloading scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 6.6 MB/s  0:00:05
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+Downloading steputils-0.1-py3-none-any.whl (93 kB)
+Downloading svglib-2.2.0-py3-none-any.whl (49 kB)
+Downloading svgwrite-1.4.3-py3-none-any.whl (67 kB)
+Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 7.5 MB/s  0:00:00
+Downloading tinycss2-1.5.1-py3-none-any.whl (28 kB)
+Downloading traitlets-5.16.1-py3-none-any.whl (86 kB)
+Downloading trianglesolver-1.2-py3-none-any.whl (5.4 kB)
+Downloading typer-0.27.2-py3-none-any.whl (123 kB)
+Downloading vtk-9.3.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (92.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.2/92.2 MB 6.5 MB/s  0:00:14
+Downloading wcwidth-0.9.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (768 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 768.4/768.4 kB 9.2 MB/s  0:00:00
+Downloading webencodings-0.6.1-py3-none-any.whl (8.7 kB)
+Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Building wheels for collected packages: antlr4-python3-runtime
+  Building wheel for antlr4-python3-runtime (pyproject.toml): started
+  Building wheel for antlr4-python3-runtime (pyproject.toml): finished with status 'done'
+  Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.9.3-py3-none-any.whl size=144590 sha256=9d00632777e3978841399da36782180c6d1e934b7be764ab07c69655f3afa6b3
+  Stored in directory: /home/consumer/.cache/pip/wheels/1f/be/48/13754633f1d08d1fbfc60d5e80ae1e5d7329500477685286cd
+Successfully built antlr4-python3-runtime
+Installing collected packages: trianglesolver, svgelements, pure_eval, ptyprocess, mpmath, lib3mf, antlr4-python3-runtime, webencodings, webcolors, wcwidth, typing_extensions, traitlets, sympy, svgwrite, six, shellingham, pypdfium2, pypdf, pyparsing, Pygments, psutil, pluggy, pillow, pexpect, parso, packaging, numpy, mdurl, lxml, kiwisolver, iniconfig, fonttools, executing, cycler, colorama, charset-normalizer, cadquery-ocp-proxy, asttokens, anytree, annotated-doc, tinycss2, steputils, stack-data, scipy, reportlab, python-dateutil, pytest, prompt_toolkit, matplotlib-inline, markdown-it-py, jedi, ipython_pygments_lexers, ezdxf, contourpy, svgpathtools, rich, ocp_gordon, matplotlib, ipython, cssselect2, vtk, typer, svglib, cadquery-ocp, ocpsvg, build123d, quiddity, build123d-drafting-helpers, draftwright
+
+Successfully installed Pygments-2.21.0 annotated-doc-0.0.5 antlr4-python3-runtime-4.9.3 anytree-2.13.0 asttokens-3.0.2 build123d-0.10.0 build123d-drafting-helpers-0.15.5 cadquery-ocp-7.8.1.1.post1 cadquery-ocp-proxy-7.9.3.1.1 charset-normalizer-3.5.2 colorama-0.4.6 contourpy-1.4.0 cssselect2-0.10.1 cycler-0.12.1 draftwright-0.4.35 executing-2.2.1 ezdxf-1.4.4 fonttools-4.66.1 iniconfig-2.3.0 ipython-9.17.1 ipython_pygments_lexers-1.1.1 jedi-0.20.0 kiwisolver-1.5.1 lib3mf-2.5.0 lxml-6.1.3 markdown-it-py-4.2.0 matplotlib-3.11.2 matplotlib-inline-0.2.2 mdurl-0.1.2 mpmath-1.3.0 numpy-2.5.3 ocp_gordon-0.2.2 ocpsvg-0.5.0 packaging-26.3 parso-0.8.7 pexpect-4.9.0 pillow-12.3.0 pluggy-1.6.0 prompt_toolkit-3.0.53 psutil-7.2.2 ptyprocess-0.7.0 pure_eval-0.2.4 pyparsing-3.3.3 pypdf-6.9.1 pypdfium2-5.14.0 pytest-9.0.2 python-dateutil-2.9.0.post0 quiddity-0.3.3 reportlab-5.0.1 rich-15.0.0 scipy-1.18.1 shellingham-1.5.4 six-1.17.0 stack-data-0.6.3 steputils-0.1 svgelements-1.9.6 svglib-2.2.0 svgpathtools-1.8.0 svgwrite-1.4.3 sympy-1.14.0 tinycss2-1.5.1 traitlets-5.16.1 trianglesolver-1.2 typer-0.27.2 typing_extensions-4.16.0 vtk-9.3.1 wcwidth-0.9.1 webcolors-24.8.0 webencodings-0.6.1
++ /home/consumer/rfqfuzz-venv/bin/python -m pip check
+No broken requirements found.
++ /home/consumer/rfqfuzz-venv/bin/python /home/consumer/setup-inputs/inspect_environment.py /home/consumer/setup-evidence/environment.json
+{"python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]", "executable": "/home/consumer/rfqfuzz-venv/bin/python", "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39", "machine": "x86_64", "prefix": "/home/consumer/rfqfuzz-venv", "base_prefix": "/usr", "poppler": {"executable": "/usr/bin/pdftoppm", "version": "pdftoppm version 24.02.0\nCopyright 2005-2024 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC"}}
+Imported 9 modules; recorded 70 distributions
++ mkdir -p /home/consumer/linux-smoke
++ cd /home/consumer/linux-smoke
++ /home/consumer/rfqfuzz-venv/bin/python /home/consumer/setup-inputs/smoke.py
+{"solids": 1, "volume_mm3": 9373.805328941526, "pdf_pages": 1, "png_size": [1754, 1241], "render_command": "pdftoppm -singlefile -r 150 -png evidence/M0/smoke/drawing.pdf evidence/M0/smoke/drawing"}
++ /home/consumer/rfqfuzz-venv/bin/python /home/consumer/setup-inputs/inspect_smoke.py /home/consumer/linux-smoke/evidence/M0/smoke /home/consumer/setup-evidence/smoke-inspection.json
+{
+  "step_reader": "OCP.STEPControl.STEPControl_Reader (shares OCCT kernel with generator)",
+  "step_solids": 1,
+  "measured_volume_mm3": 9373.805328941526,
+  "analytic_volume_mm3": 9373.805328941535,
+  "tolerance_mm3": 1e-06,
+  "pdf_pages": 1,
+  "png_size": [
+    1754,
+    1241
+  ],
+  "png_ink_bounds": [
+    179,
+    104,
+    1690,
+    1176
+  ],
+  "sha256": {
+    "part.step": "ab4ab448f3446620133ee6211d12a013b898165a680427fa5fd539e6e428e676",
+    "drawing.pdf": "1af993b3fa303b96ac106779c4802d263513d45ddc8683ce2c5a7dcf81eaa718",
+    "drawing.png": "0de0be402f980f16c79ae1d66588d6c3d74629d49e50190a4d9354afd06aaecb"
+  },
+  "result": "smoke_semantics_confirmed",
+  "limits": "Readiness check only; not final RFQFuzz workflow acceptance. PNG visual inspection recorded separately."
+}
++ date -u +%Y-%m-%dT%H:%M:%SZ
+2026-10-04T22:19:46Z
++ touch /home/consumer/setup-evidence/SETUP_READY
++ echo RFQFUZZ_LINUX_VM_SETUP_READY
+RFQFUZZ_LINUX_VM_SETUP_READY
