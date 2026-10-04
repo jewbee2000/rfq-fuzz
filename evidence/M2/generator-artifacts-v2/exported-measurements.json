@@ -1,0 +1,237 @@
+{
+  "warning": "Generator evidence is not a scoring oracle; final visibility/isolation verified independently by T08",
+  "rows": [
+    {
+      "case_id": "pk-000000000001",
+      "family": "plate",
+      "solid_count": 1,
+      "valid_solid": true,
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_face_types": [
+        "CYLINDER",
+        "PLANE"
+      ],
+      "actual_pdf_pages": 1,
+      "actual_visible_text_to_inspect": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "artifacts": [
+        {
+          "path": "part.step",
+          "sha256": "ec37d8c9ab97ded592e679c8d372fe5fbc7346ca9d4b4cd07fdb94c80e2820df",
+          "media_type": "model/step"
+        },
+        {
+          "path": "drawing.pdf",
+          "sha256": "2e73ebcd580be6a8c38a129084bb4118618a524616066872df8d88203efbcf58",
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "drawing.png",
+          "sha256": "e09411600146c5aba9a7dd4bf78ceb6e5fb7504fddaa9e66102997aedb6d8e57",
+          "media_type": "image/png"
+        }
+      ],
+      "render": {
+        "renderer": "ReportLab 5.0.1 bounded vector template; Poppler pdftoppm; pdftoppm version 26.07.0",
+        "dpi": 200
+      }
+    },
+    {
+      "case_id": "pk-000000000002",
+      "family": "bore_block",
+      "solid_count": 1,
+      "valid_solid": true,
+      "actual_volume_mm3": 82982.1239802369,
+      "actual_envelope_mm": [
+        60.0,
+        40.0,
+        35.0
+      ],
+      "actual_face_types": [
+        "CYLINDER",
+        "PLANE"
+      ],
+      "actual_pdf_pages": 1,
+      "actual_visible_text_to_inspect": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 60.00 x 40.00 x 35.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.00 mm\nC1 DIAMETER = 12.00 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "artifacts": [
+        {
+          "path": "part.step",
+          "sha256": "cf1d490a44e841efc3a4725f3d1efe1ff1f3bbd497a0dc155ba04bae8ff411c4",
+          "media_type": "model/step"
+        },
+        {
+          "path": "drawing.pdf",
+          "sha256": "b43b32f86dc90f52c9de59506fd69de22abb8e492d910c01ce65fa6e784f87b4",
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "drawing.png",
+          "sha256": "776f43c90606f9edd4cc7c211460368f08e666d19eba1a9545a7b09c8d66a59e",
+          "media_type": "image/png"
+        }
+      ],
+      "render": {
+        "renderer": "ReportLab 5.0.1 bounded vector template; Poppler pdftoppm; pdftoppm version 26.07.0",
+        "dpi": 200
+      }
+    },
+    {
+      "case_id": "pk-000000000003",
+      "family": "pocket_block",
+      "solid_count": 1,
+      "valid_solid": true,
+      "actual_volume_mm3": 30000.0,
+      "actual_envelope_mm": [
+        60.0,
+        40.0,
+        20.0
+      ],
+      "actual_face_types": [
+        "PLANE"
+      ],
+      "actual_pdf_pages": 1,
+      "actual_visible_text_to_inspect": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 60.00 x 40.00 x 20.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 50.00 mm\nP1 LENGTH = 30.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "artifacts": [
+        {
+          "path": "part.step",
+          "sha256": "d20c0005a808384dad2e8e4d7d9e6908241de21e88f208be0db25f3488f14a12",
+          "media_type": "model/step"
+        },
+        {
+          "path": "drawing.pdf",
+          "sha256": "652b2529c5cddabbec2abf1978bd0048204b7edabe744ba720fd27ce4b5d75b9",
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "drawing.png",
+          "sha256": "986a9e5e51aeace133cc563ad10ede4d0184728ae54a53fa2f9cd5e57395deca",
+          "media_type": "image/png"
+        }
+      ],
+      "render": {
+        "renderer": "ReportLab 5.0.1 bounded vector template; Poppler pdftoppm; pdftoppm version 26.07.0",
+        "dpi": 200
+      }
+    },
+    {
+      "case_id": "pk-000000000004",
+      "family": "pocket_block",
+      "solid_count": 1,
+      "valid_solid": true,
+      "actual_volume_mm3": 30000.0,
+      "actual_envelope_mm": [
+        60.0,
+        40.0,
+        20.0
+      ],
+      "actual_face_types": [
+        "PLANE"
+      ],
+      "actual_pdf_pages": 1,
+      "actual_visible_text_to_inspect": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 60.00 x 40.00 x 20.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 50.00 mm\nP1 LENGTH = 30.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 0.60 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "artifacts": [
+        {
+          "path": "part.step",
+          "sha256": "e722c578ab07b0f0cf193de658fbd9df628c4a990a439046bf02e6b8952251ea",
+          "media_type": "model/step"
+        },
+        {
+          "path": "drawing.pdf",
+          "sha256": "85e527fe7d108343aa143dc1a64c49627ac28bce51ee3cd4f2543daa96eca0c9",
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "drawing.png",
+          "sha256": "e5706324d9525b9f81c24bf5ee5595b1ded7674b92ba7cc23864b6037d024329",
+          "media_type": "image/png"
+        }
+      ],
+      "render": {
+        "renderer": "ReportLab 5.0.1 bounded vector template; Poppler pdftoppm; pdftoppm version 26.07.0",
+        "dpi": 200
+      }
+    },
+    {
+      "case_id": "pk-000000000005",
+      "family": "plate",
+      "solid_count": 1,
+      "valid_solid": true,
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_face_types": [
+        "CYLINDER",
+        "PLANE"
+      ],
+      "actual_pdf_pages": 1,
+      "actual_visible_text_to_inspect": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 2\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nOTHER\nOTHER\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "artifacts": [
+        {
+          "path": "part.step",
+          "sha256": "e85ae520f4261aacf47b4aeaff887ff049e8052f2c2f2992a4b48d784c3e3594",
+          "media_type": "model/step"
+        },
+        {
+          "path": "drawing.pdf",
+          "sha256": "632e7171867dea97e5e6586f6b56161c0a1a4b2f6245e960450629a56d7ff0d5",
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "drawing.png",
+          "sha256": "318cc38c1e1ecc2dfd9d97d706281da5f237ce64539df7f75765ec95c8b5d1b1",
+          "media_type": "image/png"
+        }
+      ],
+      "render": {
+        "renderer": "ReportLab 5.0.1 bounded vector template; Poppler pdftoppm; pdftoppm version 26.07.0",
+        "dpi": 200
+      }
+    },
+    {
+      "case_id": "pk-000000000006",
+      "family": "plate",
+      "solid_count": 1,
+      "valid_solid": true,
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_face_types": [
+        "CYLINDER",
+        "PLANE"
+      ],
+      "actual_pdf_pages": 1,
+      "actual_visible_text_to_inspect": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 3.1496 x 1.9685 x 0.3150 in\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 0.2362 +/- 0.0020 in\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "artifacts": [
+        {
+          "path": "part.step",
+          "sha256": "e85ae520f4261aacf47b4aeaff887ff049e8052f2c2f2992a4b48d784c3e3594",
+          "media_type": "model/step"
+        },
+        {
+          "path": "drawing.pdf",
+          "sha256": "0cb959e10adac860b8e5c26641af8e9b5d3f655e36c859fa43cdde3a3dce17d3",
+          "media_type": "application/pdf"
+        },
+        {
+          "path": "drawing.png",
+          "sha256": "bb4b0ebb14d6e24501fd1c87b1c84817893e29b48cb5d55e890541f9f8b5d95c",
+          "media_type": "image/png"
+        }
+      ],
+      "render": {
+        "renderer": "ReportLab 5.0.1 bounded vector template; Poppler pdftoppm; pdftoppm version 26.07.0",
+        "dpi": 200
+      }
+    }
+  ]
+}
