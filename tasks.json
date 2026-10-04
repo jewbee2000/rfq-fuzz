@@ -110,10 +110,10 @@
       "scope": "Create rule cards and synthetic/profile-specific thresholds, material applicability, finish stage and setup envelope semantics.",
       "acceptance": "Boundary/counterfactual examples and versioned provenance; no universal machinability claims.",
       "evidence": "evidence/M1/profiles.md",
-      "verification": "python -m pytest tests/contracts tests/profiles",
-      "verification_is_proposed": true,
-      "status": "in_progress",
-      "completion_commit": null
+      "verification": ".venv/Scripts/python.exe -m pytest tests/contracts tests/profiles -q (96 passed)",
+      "verification_is_proposed": false,
+      "status": "completed",
+      "completion_commit": "1a817d9ee15007a25f419b585b59a6ac2e635246"
     },
     {
       "id": "T06",
