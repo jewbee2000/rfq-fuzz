@@ -91,10 +91,10 @@
       "scope": "Define schemas, authority/precedence, explicit coverage/status and migrations; commit fixtures before parallel workers.",
       "acceptance": "Positive/negative contract cases; no hidden premises or unknown-to-pass conversion.",
       "evidence": "evidence/M1/contracts.md",
-      "verification": "python -m pytest tests/contracts",
-      "verification_is_proposed": true,
-      "status": "not_started",
-      "completion_commit": null
+      "verification": ".venv/Scripts/python.exe -m pytest tests/contracts tests/m0 -q (64 passed)",
+      "verification_is_proposed": false,
+      "status": "completed",
+      "completion_commit": "3ca31ed969883d2d1cab122bea52f7bc58faa007"
     },
     {
       "id": "T05",
@@ -112,7 +112,7 @@
       "evidence": "evidence/M1/profiles.md",
       "verification": "python -m pytest tests/contracts tests/profiles",
       "verification_is_proposed": true,
-      "status": "not_started",
+      "status": "in_progress",
       "completion_commit": null
     },
     {
@@ -131,7 +131,7 @@
       "evidence": "evidence/M2/generators.md",
       "verification": "python -m pytest tests/geometry tests/generation",
       "verification_is_proposed": true,
-      "status": "not_started",
+      "status": "in_progress",
       "completion_commit": null
     },
     {
