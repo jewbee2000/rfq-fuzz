@@ -1,0 +1,99 @@
+{
+  "schema_version": "m0.1",
+  "case_id": "pk-4d90",
+  "part_id": "MP-001",
+  "release_association": {
+    "model_id": "MP-001",
+    "model_revision": "A",
+    "drawing_id": "MP-001",
+    "drawing_revision": "A",
+    "permitted_pairs": [
+      [
+        "A",
+        "A"
+      ]
+    ]
+  },
+  "units": {
+    "model": "mm",
+    "drawing": "mm"
+  },
+  "authority": {
+    "nominal_geometry": "STEP at model_stage",
+    "tolerances": "visible drawing callouts at drawing_stage",
+    "process": "public manufacturing contract and visible drawing notes",
+    "consistency": "same-stage drawing intervals must contain STEP nominal; explicit later-stage operation governs its target stage"
+  },
+  "manufacturing": {
+    "model_stage": "intermediate",
+    "drawing_stage": "finished",
+    "transition": {
+      "operation": "ream",
+      "feature_id": "H1",
+      "from_stage": "intermediate",
+      "to_stage": "finished",
+      "target": "drawing bore callout"
+    },
+    "material": "6061-T6",
+    "finish": "none"
+  },
+  "profile": {
+    "id": "m0-package-consistency",
+    "version": "m0.1",
+    "synthetic": true,
+    "scope": "Finite H1 package consistency only; CNC advisories and process feasibility unsupported",
+    "rule_provenance": "project-selected release contract, 2026-10-04; no universal manufacturing threshold"
+  },
+  "setup": {
+    "orientation": "bores parallel to Z; XY plate; no workholding/tooling determination"
+  },
+  "features": [
+    {
+      "id": "H1",
+      "type": "through_bore_group",
+      "drawing_association": "all four bores in plan view and the grouped 4x callout",
+      "centers_mm": [
+        [
+          -25,
+          -15,
+          0
+        ],
+        [
+          -25,
+          15,
+          0
+        ],
+        [
+          25,
+          -15,
+          0
+        ],
+        [
+          25,
+          15,
+          0
+        ]
+      ]
+    }
+  ],
+  "obligations": [
+    "bore_group_consistency"
+  ],
+  "artifacts": [
+    {
+      "path": "part.step",
+      "sha256": "361bd0699078e5d59581926c288bcf82a5f1b202ccf2fd7c73ae11f8a81ac848",
+      "media_type": "model/step"
+    },
+    {
+      "path": "drawing.pdf",
+      "sha256": "ab70bba735e1cf5753e49642dfc00a71dd585d90a38dd79293738920d78d7d68",
+      "media_type": "application/pdf"
+    },
+    {
+      "path": "drawing.png",
+      "sha256": "912613a21573563a9df3604df91ebb19dddbe7c7c9f00c592e9c753c57c2b7c6",
+      "media_type": "image/png"
+    }
+  ]
+}

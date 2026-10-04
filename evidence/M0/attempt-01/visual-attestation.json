@@ -1,0 +1,74 @@
+{
+  "schema_version": "m0.1",
+  "role": "coordinator visual inspector",
+  "method": "Viewed all three actual Poppler-rendered shipped drawing PNGs with the image tool; final images rendered from each exported PDF. This is a curated visual check, not OCR or a general drawing oracle.",
+  "cases": [
+    {
+      "case_id": "pk-7a1c",
+      "visible_count": 4,
+      "visible_diameter_symbol": true,
+      "visible_nominal_mm": 6.8,
+      "visible_plus_minus_symbol": true,
+      "visible_tolerance_mm": 0.05,
+      "visible_thru": true,
+      "model_stage": "finished",
+      "drawing_stage": "finished",
+      "visible_context": "DRAWING AND MODEL APPLY AT SAME STAGE",
+      "envelope_labels_mm": [
+        80,
+        50,
+        8
+      ],
+      "association": "group callout leader points to lower-left bore; note H1 names all four Z through-bores",
+      "legible_unclipped": true,
+      "pdf_sha256": "4c5f2014b015677e724f2f86fc0578a346b6a68178317267915be7313ad1f9bd",
+      "png_sha256": "93cddbf5c282085972dda612cb2a15014e6ca0fcdaae85b35004fbc9f4175e74"
+    },
+    {
+      "case_id": "pk-b8e2",
+      "visible_count": 4,
+      "visible_diameter_symbol": true,
+      "visible_nominal_mm": 6.0,
+      "visible_plus_minus_symbol": true,
+      "visible_tolerance_mm": 0.05,
+      "visible_thru": true,
+      "model_stage": "finished",
+      "drawing_stage": "finished",
+      "visible_context": "DRAWING AND MODEL APPLY AT SAME STAGE",
+      "envelope_labels_mm": [
+        80,
+        50,
+        8
+      ],
+      "association": "group callout leader points to lower-left bore; note H1 names all four Z through-bores",
+      "legible_unclipped": true,
+      "pdf_sha256": "0a9e6bb15e583f581888b0c877c71cfa6ecd8d44df7d19a2fb39f56fb6c79e43",
+      "png_sha256": "cda3dce412687112ebef48bebcff8ac0fe03e13bb47602ae373beb127d92e02c"
+    },
+    {
+      "case_id": "pk-4d90",
+      "visible_count": 4,
+      "visible_diameter_symbol": true,
+      "visible_nominal_mm": 6.8,
+      "visible_plus_minus_symbol": true,
+      "visible_tolerance_mm": 0.05,
+      "visible_thru": true,
+      "model_stage": "intermediate",
+      "drawing_stage": "finished",
+      "visible_context": "REAM AFTER MODEL STAGE TO DRAWING SIZE",
+      "envelope_labels_mm": [
+        80,
+        50,
+        8
+      ],
+      "association": "group callout leader points to lower-left bore; note H1 names all four Z through-bores",
+      "legible_unclipped": true,
+      "pdf_sha256": "ab70bba735e1cf5753e49642dfc00a71dd585d90a38dd79293738920d78d7d68",
+      "png_sha256": "912613a21573563a9df3604df91ebb19dddbe7c7c9f00c592e9c753c57c2b7c6"
+    }
+  ],
+  "limitations": [
+    "Draftwright search text does not decode the diameter/multiplication/plus-minus glyphs. These symbols are established here by inspecting the raster, not inferred from replacement glyphs.",
+    "Adaptive layout reflows notes/isometric view on the corrected drawing. Engineering labels, association and stage meaning remain readable; layout coordinates and raster pixel scale are not dimensional authorities."
+  ]
+}

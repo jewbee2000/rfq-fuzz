@@ -1,0 +1,60 @@
+{
+  "schema_version": "m0.1",
+  "mutations": [
+    {
+      "case_id": "pk-7a1c",
+      "variant": "defective",
+      "operator": "O01",
+      "version": "m0.1",
+      "seed": 42,
+      "allowed_delta": "bore annotation numeric value only",
+      "forbidden": [
+        "STEP geometry",
+        "units",
+        "material",
+        "identity",
+        "envelope",
+        "hole count/centers",
+        "unrelated notes"
+      ],
+      "intended_drawing_nominal_mm": 6.8
+    },
+    {
+      "case_id": "pk-b8e2",
+      "variant": "repaired",
+      "operator": "O01",
+      "version": "m0.1",
+      "seed": 42,
+      "allowed_delta": "bore annotation numeric value only",
+      "forbidden": [
+        "STEP geometry",
+        "units",
+        "material",
+        "identity",
+        "envelope",
+        "hole count/centers",
+        "unrelated notes"
+      ],
+      "intended_drawing_nominal_mm": 6.0
+    },
+    {
+      "case_id": "pk-4d90",
+      "variant": "valid_alternative",
+      "operator": "O01",
+      "version": "m0.1",
+      "seed": 42,
+      "allowed_delta": "model stage, explicit ream transition and visible stage notes",
+      "forbidden": [
+        "STEP geometry",
+        "units",
+        "material",
+        "identity",
+        "envelope",
+        "hole count/centers",
+        "unrelated notes"
+      ],
+      "intended_drawing_nominal_mm": 6.8
+    }
+  ],
+  "warning": "Generator intent is not ground truth"
+}

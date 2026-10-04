@@ -8,6 +8,14 @@
       "cause": "Smoke prototype used Drawing.export's formats argument on the convenience function.",
       "resolution": "Use build_drawing(...).export(..., formats=('pdf',)). No acceptance change.",
       "conceptual_attempt": 1
+    },
+    {
+      "task": "T02",
+      "command": "Visual review of evidence/M0/attempt-01/public/*/drawing.png",
+      "result": "Initial valid-stage drawing did not explicitly state the stage represented by geometry views",
+      "cause": "Views derive from intermediate model while numeric callout governs final stage; ambiguity could be interpreted as collateral error",
+      "resolution": "Quarantine initial exports; add visible view-stage note and public authority field to every case, regenerate and revalidate",
+      "conceptual_attempt": 1
     }
   ]
 }

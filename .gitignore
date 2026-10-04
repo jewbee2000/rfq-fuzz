@@ -6,4 +6,5 @@ __pycache__/
 work/
 .workers/
 tmp/
+work-install.json
 

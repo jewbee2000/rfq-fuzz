@@ -1,0 +1,80 @@
+{
+  "schema_version": "m0.1",
+  "role": "coordinator visual inspector",
+  "method": "Viewed all three final actual Poppler-rendered PNGs with image tool after adding explicit view-stage note. Callout numerals and diameter/plus-minus/count/thru symbols are readable; notes/identity/envelope labels visible and unclipped. Curated visual evidence, not OCR.",
+  "cases": [
+    {
+      "case_id": "pk-7a1c",
+      "visible_count": 4,
+      "visible_diameter_symbol": true,
+      "visible_nominal_mm": 6.8,
+      "visible_plus_minus_symbol": true,
+      "visible_tolerance_mm": 0.05,
+      "visible_thru": true,
+      "model_stage": "finished",
+      "drawing_stage": "finished",
+      "visible_context": "DRAWING AND MODEL APPLY AT SAME STAGE",
+      "envelope_labels_mm": [
+        80,
+        50,
+        8
+      ],
+      "association": "group leader points to lower-right bore; visible H1 note scopes all four bores",
+      "legible_unclipped": true,
+      "pdf_sha256": "9824fdbadcc65eafb9d83b0f82ce4961bc2bedcaf6a4d6b84c16669db53a331e",
+      "png_sha256": "2032fa6fc91c8383d9ad9bb74c14a20cc200ed6958e1a7eaf35a9ec07bb71735",
+      "visible_view_stage_note": "VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE",
+      "drawing_scale": "1:2"
+    },
+    {
+      "case_id": "pk-b8e2",
+      "visible_count": 4,
+      "visible_diameter_symbol": true,
+      "visible_nominal_mm": 6.0,
+      "visible_plus_minus_symbol": true,
+      "visible_tolerance_mm": 0.05,
+      "visible_thru": true,
+      "model_stage": "finished",
+      "drawing_stage": "finished",
+      "visible_context": "DRAWING AND MODEL APPLY AT SAME STAGE",
+      "envelope_labels_mm": [
+        80,
+        50,
+        8
+      ],
+      "association": "group leader points to lower-right bore; visible H1 note scopes all four bores",
+      "legible_unclipped": true,
+      "pdf_sha256": "70fcfb8a2e7ad230689d50bf85401c243ab5d2a0fc2c526335af2c8bf6215a0f",
+      "png_sha256": "fc83943fe2f28b45c0a632ba95dc0fa9a5e62cc8187e7ba50b90f7bd29404c79",
+      "visible_view_stage_note": "VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE",
+      "drawing_scale": "1:2"
+    },
+    {
+      "case_id": "pk-4d90",
+      "visible_count": 4,
+      "visible_diameter_symbol": true,
+      "visible_nominal_mm": 6.8,
+      "visible_plus_minus_symbol": true,
+      "visible_tolerance_mm": 0.05,
+      "visible_thru": true,
+      "model_stage": "intermediate",
+      "drawing_stage": "finished",
+      "visible_context": "REAM AFTER MODEL STAGE TO DRAWING SIZE",
+      "envelope_labels_mm": [
+        80,
+        50,
+        8
+      ],
+      "association": "group leader points to lower-right bore; visible H1 note scopes all four bores",
+      "legible_unclipped": true,
+      "pdf_sha256": "f674ec31804f46d83560a764b062b5f49723861755bb8b458e9d8e08c82a54c6",
+      "png_sha256": "8e9876fb7d25163b550166ae2481df2f01a8233b8cd73b73914ce6b23163d327",
+      "visible_view_stage_note": "VIEWS SHOW SUPPLIED MODEL AT MODEL STAGE",
+      "drawing_scale": "1:2"
+    }
+  ],
+  "limitations": [
+    "Draftwright search text does not decode the diameter/multiplication/plus-minus glyphs. These symbols are established here by inspecting the raster, not inferred from replacement glyphs.",
+    "Automatic nonsemantic layout reflow: all final drawings use scale 1:2; repaired callout has different text width. Labels remain visible and associated; pixel scale is not a dimensional authority."
+  ]
+}
