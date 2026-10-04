@@ -194,7 +194,7 @@
       "evidence": "evidence/M3/adapters.md",
       "verification": "python -m pytest tests/adapters",
       "verification_is_proposed": true,
-      "status": "not_started",
+      "status": "in_progress",
       "completion_commit": null
     },
     {

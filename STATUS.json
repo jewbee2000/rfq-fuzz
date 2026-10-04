@@ -11,9 +11,7 @@
     "original_checker": "no_go_existing_tools",
     "narrowed_regression_tool": "conditional_go_M0_required"
   },
-  "next_task": [
-    "T09"
-  ],
+  "next_task": [],
   "m0_decision": "pass_bounded_synthetic_feasibility",
   "implemented_scope": "T00-T03 only: one plate/O01/H1; no CNC advisory certification",
   "test_results": {
@@ -28,6 +26,6 @@
     "curated visual attestation and token matching",
     "no physical or industrial transfer evidence"
   ],
-  "current_task": "T06",
+  "current_task": "T09",
   "task_state": "in_progress"
 }
