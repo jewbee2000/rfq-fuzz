@@ -1,6 +1,7 @@
 """One bounded synthetic challenge, generation owns intent only (AGPL-3.0-only)."""
 from pathlib import Path
 import subprocess
+import shutil
 from build123d import Box, Cylinder, Pos, export_step
 from draftwright import Sheet
 from .contracts import VERSION, OBLIGATION, sha256, write_json
@@ -20,10 +21,13 @@ def generate(out):
     part = Box(80, 50, 8)
     for xyz in CENTERS:
         part -= Pos(*xyz) * Cylinder(3, 12)
+    model_path = out / "private" / "source.step"
+    model_path.parent.mkdir(parents=True)
+    export_step(part, model_path)
     for case_id, nominal, model_stage, drawing_stage, variant in CASES:
         dest = out / "public" / case_id
         dest.mkdir(parents=True)
-        export_step(part, dest / "part.step")
+        shutil.copyfile(model_path, dest / "part.step")
         sheet = Sheet(part, title="Mounting plate", number="MP-001", revision="A", date="2026-10-04",
                       material="6061-T6", tolerance="SEE CALLOUT", drawn_by="RFQ author", page="A4", scale=1)
         env = sheet.envelope()

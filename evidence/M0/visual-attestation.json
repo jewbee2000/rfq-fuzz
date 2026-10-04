@@ -74,7 +74,7 @@
     }
   ],
   "limitations": [
-    "Draftwright search text does not decode the diameter/multiplication/plus-minus glyphs. These symbols are established here by inspecting the raster, not inferred from replacement glyphs.",
+    "Draftwright embeds invisible searchable text, so decoded Unicode does not prove visibility. Python confirms multiplication U+00D7, diameter U+00F8 and plus-minus U+00B1; earlier shell replacement glyphs were console encoding, not PDF decode failure. These glyphs were also visually inspected.",
     "Automatic nonsemantic layout reflow: all final drawings use scale 1:2; repaired callout has different text width. Labels remain visible and associated; pixel scale is not a dimensional authority."
   ]
 }

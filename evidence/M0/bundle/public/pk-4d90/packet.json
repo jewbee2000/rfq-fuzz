@@ -83,7 +83,7 @@
   "artifacts": [
     {
       "path": "part.step",
-      "sha256": "7f8dafc882cf0dd30fcb818649a4dd2f298a9f35d441d6738e1599f00024b0f2",
+      "sha256": "b439aa4be158cbb10535ec81482a99872678d912d9f3b93c76eba389a99d965c",
       "media_type": "model/step"
     },
     {

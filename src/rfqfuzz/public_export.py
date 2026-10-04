@@ -3,6 +3,7 @@ from pathlib import Path
 import json
 import shutil
 from pypdf import PdfReader
+from PIL import Image
 from .contracts import read_packet, sha256, write_json
 
 FORBIDDEN = ("defective", "repaired", "valid_alternative", "mutation", "oracle", "expected_conclusion", "answer_key", "o01")
@@ -16,7 +17,10 @@ def audit_public(public_root):
         if set(f.name for f in folder.iterdir()) != {"packet.json", "part.step", "drawing.pdf", "drawing.png"}:
             raise ValueError("unexpected public sidecar")
         reader = PdfReader(folder / "drawing.pdf")
-        inspectable = json.dumps(p, ensure_ascii=False) + str(reader.metadata) + '\n'.join(x.extract_text() for x in reader.pages)
+        inspectable = (json.dumps(p, ensure_ascii=False) + str(reader.metadata)
+                       + '\n'.join(x.extract_text() for x in reader.pages)
+                       + (folder / "part.step").read_text(encoding="utf-8", errors="replace")
+                       + repr(Image.open(folder / "drawing.png").info))
         for word in FORBIDDEN:
             if word in inspectable.lower() or word in folder.name.lower():
                 raise ValueError(f"private label in public packet: {word}")
