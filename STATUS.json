@@ -4,9 +4,10 @@
   "phase": "M1-M5_complete_bounded_synthetic_scope",
   "implementation_started": true,
   "application_tests_run": true,
-  "remote_created": false,
-  "pushed": false,
-  "published": false,
+  "remote_created": true,
+  "pushed": true,
+  "published": true,
+  "publication_kind": "public_GitHub_source_only",
   "decision": {
     "original_checker": "no_go_existing_tools",
     "narrowed_regression_tool": "conditional_go_M0_required"
@@ -29,13 +30,15 @@
     "no human engineer or physical industrial evidence"
   ],
   "current_task": "public_GitHub_publication_follow_on",
-  "task_state": "in_progress",
+  "task_state": "completed",
   "publication": {
     "authorization": "User authorized GitHub push and selected public repository on 2026-10-04",
     "repository_url": "https://github.com/jewbee2000/rfq-fuzz",
     "visibility": "public",
     "blog_posted": false,
     "article_draft_in_source_repository": true,
+    "initial_verified_push_commit": "2d8feebd8e00b43f54f7b683f82c3aa72bfc2e81",
+    "verification_evidence": "evidence/publication/initial-push-verification.json",
     "owner_checklist": "docs/NEXT_STEPS.md",
     "milestone_graph": "T00-T14 remain completed; no follow-on milestone started"
   },

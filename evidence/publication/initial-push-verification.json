@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-04T23:42:56.923812+00:00",
+  "repository_url": "https://github.com/jewbee2000/rfq-fuzz",
+  "public_unauthenticated_API_read": true,
+  "private": false,
+  "default_branch": "main",
+  "local_commit": "2d8feebd8e00b43f54f7b683f82c3aa72bfc2e81",
+  "remote_main_commit": "2d8feebd8e00b43f54f7b683f82c3aa72bfc2e81",
+  "public_API_main_commit": "2d8feebd8e00b43f54f7b683f82c3aa72bfc2e81",
+  "checks": [
+    "git ls-remote origin refs/heads/main equals local HEAD",
+    "unauthenticated public repository metadata",
+    "unauthenticated GitHub main commit equals local HEAD"
+  ],
+  "blog_deployment_performed": false,
+  "scope": "Initial public source push; the subsequent handoff metadata commit is separately pushed and checked."
+}

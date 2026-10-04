@@ -8,8 +8,8 @@ changed behavior. Package consistency and conditional CNC advisories are separat
 M0 remains a frozen regression.270integrated Windows tests pass;145corepackets pass final
 artifact validation;6/6deliberate evaluator mutants are caught. All145corecases
 are development-only. This is a synthetic regression toolkit; no part is approved
-for manufacture. Source publication to the public
-[`jewbee2000/rfq-fuzz`](https://github.com/jewbee2000/rfq-fuzz) repository is authorized;
+for manufacture. Source and retained evidence are available in the public
+[`jewbee2000/rfq-fuzz`](https://github.com/jewbee2000/rfq-fuzz) repository;
 the article draft has not been posted to the blog.
 
 Independent Windows/Linux consumers pass the complete offline demo, three fresh
