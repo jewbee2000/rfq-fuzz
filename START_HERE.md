@@ -1,12 +1,20 @@
 # Implement RFQFuzz
 
+The initial kickoff below is historical. For the implemented local workflow,
+start with [DEMO.md](docs/DEMO.md), requirements.json, tasks.json and
+[CURRENT_HANDOFF.md](docs/CURRENT_HANDOFF.md). The M0 gate passed before expansion;
+later work is explicitly authorized by the user's M1–M5 instruction.
+
 Open this folder as a local project in Codex. Start one implementation chat with the prompt below. Do not launch several implementation chats before the shared contracts and first fixture are working.
 
 > Implement RFQFuzz from the repository plan. Read AGENTS.md, README.md, docs/RESEARCH_AND_GO_NO_GO.md, requirements.json, docs/ARCHITECTURE_AND_RULES.md and IMPLEMENTATION_PLAN.md. Begin with tasks T00 through T03 and the M0 feasibility gate. Recheck the closest competing repositories, select and pin a working CAD/drawing stack, create one defective/corrected/valid challenge bundle, independently validate its exported STEP and visible drawing, and exercise an external reviewer through the public packet interface. Produce an actionable regression report and record the gate decision in evidence/M0/. Do not expand the corpus or build a UI until this gate passes. Continue through ready tasks when the evidence supports the plan. Keep unknowns and unsupported cases explicit. Commit locally; do not push, create remote repositories, deploy, contact others, or publish website content. Use independent reviewers and isolated workers when they improve verification. If a core assumption fails, record the evidence and revise or stop that part of the plan instead of manufacturing a successful result.
 
 ## Setup
 
-The first agent can handle environment creation, dependency resolution, lockfiles and local tests. Proposed baseline: Python 3.12, Git, a separate virtual environment, an OCCT-backed CAD library and a drawing/PDF renderer. The exact compatible versions are an M0 deliverable; they have not been installed or validated for this project. A working stack on Windows and Linux is a release requirement. Investigate WSL only if a native dependency actually blocks the Windows path.
+Python3.12 and isolated locked environments are implemented. Exact versions,
+actual platform commands and environment records are linked from DEMO.md and
+M5 acceptance. The original setup proposal is preserved below as context; a
+working Windows/Linux core workflow remains the release gate.
 
 No SolidWorks license, CNC machine, GPU, cloud database or new paid API account is required for the core. Existing Codex access can supply an independent reviewer session: export only the public packet plus review instructions, then import its structured response. This is a manual adapter workflow until an actual automation interface is implemented. Do not assume the desktop app exposes an API.
 

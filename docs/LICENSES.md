@@ -1,4 +1,4 @@
-# Dependency and license decision (M0)
+# Dependency and license decisions
 
 Date: 2026-10-04. The RFQFuzz prototype uses **AGPL-3.0-only** for original program source, compatible with the selected Draftwright dependency. The root LICENSE retains the complete AGPL text. Generated synthetic fixture content is authored in this repository; no proprietary customer drawings or standards tables are included. No release/distribution has been performed.
 
@@ -18,4 +18,29 @@ Date: 2026-10-04. The RFQFuzz prototype uses **AGPL-3.0-only** for original prog
 | Poppler (external executable) | See environment.json | GPL-2.0-or-later; supplied by host runtime, not vendored in this repository |
 
 The complete installed dependency inventory, including transitive packages, metadata and notice locations, is `evidence/M0/environment.json`. The source-download hashes are `evidence/M0/install-report.json`. Notices from the principal stack are retained under `docs/licenses/`; future packaging must preserve bundled third-party notices (including fonts, PDFium and OCCT), not rely on this short table as a redistribution checklist. Missing/ambiguous metadata is retained, not assigned an invented license. No proprietary fit/tolerance tables are reproduced or used by the M0 finite consistency check.
+
+## V1 local consumer
+
+V1 original source remains AGPL-3.0-only. It reuses build123d/OCCT for controlled
+geometry, ReportLab for bounded vector drawings, Poppler for exported PNGs and
+pypdf/PDFium for separately checked drawing content. Draftwright remains pinned
+for the unchanged M0 regression and smoke; v1 does not claim a general drafting
+engine. The installable package includes the public reviewer protocol.
+
+requirements-v1.lock preserves the67M0pins and adds observed Linux-only
+pexpect4.9.0/ptyprocess0.7.0. requirements-build.lock pins setuptools80.9.0 and
+wheel0.45.1. Actual platform package/license metadata, download provenance and
+runtime records are retained with M5 consumer evidence; coordinator inventory is
+`evidence/M5/environment-windows-coordinator.json`. Runtime installations retain
+their wheel-provided notices. No proprietary standards tables are reproduced.
+
+Separately authored synthetic transfer assets retain author provenance and
+AGPL-compatible license at `evidence/M5/transfer-v2/author`. Their independent
+source/measurement check is evidence about finite interoperability, not manufacture.
+
+Portable QEMU/Ubuntu were verification infrastructure under ignored work folders;
+neither guest image nor executable is distributed with RFQFuzz. Their actual
+source URLs, published checksums, licenses and setup failures are retained in M5
+environment evidence. No installer was executed globally. Guest SSH credentials
+and disk images remain excluded from retained release evidence.
 

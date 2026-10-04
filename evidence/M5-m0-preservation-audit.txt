@@ -1,0 +1,10 @@
+{
+  "public_inputs_unchanged": true,
+  "root_handoff_bytes_identical": true,
+  "public_leakage_audit": "passed",
+  "report_local_links_checked": 34,
+  "report_missing_links": [],
+  "report_script_elements": 0,
+  "remote_assets": 0,
+  "browser_rendering": "unverified: browser policy rejected local-file URL; no workaround attempted"
+}

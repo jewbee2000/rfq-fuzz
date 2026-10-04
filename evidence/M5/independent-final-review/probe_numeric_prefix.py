@@ -25,7 +25,7 @@ for witness in item['evidence']:
 packets={p.name:read_packet(p) for p in (DEMO/'inputs/suite/public').iterdir()}
 scored=score(response,oracle,packets)
 outcome=next(r for r in scored['rows'] if r['case_id']==case['case_id'] and r['obligation_id']==expected['obligation_id'])
-record={'scoring_sha256':sha256(ROOT/'src/rfqfuzz/v1/scoring.py'),'case_id':case['case_id'],'obligation_id':expected['obligation_id'],'changes':changed,'matches_original':matches(before,expected),'matches_false_numeric_prefix':matches(item,expected),'scored_row':outcome}
+record={'scoring_sha256':sha256(ROOT/'src/rfqfuzz/v1/scoring.py'),'case_id':case['case_id'],'obligation_id':expected['obligation_id'],'changes':changed,'matches_original':matches(before,expected),'matches_false_numeric_prefix':matches(item,expected),'scored_row':outcome,'target_unadjudicated':[u for u in scored['unadjudicated'] if u['case_id']==case['case_id'] and u['finding']['obligation_id']==expected['obligation_id']]}
 write_json(OUT/f'numeric-prefix-review{tag}.json',response)
 write_json(OUT/f'numeric-prefix-results{tag}.json',record)
 print(json.dumps(record,indent=2))

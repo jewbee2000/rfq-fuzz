@@ -1,0 +1,141 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case_id": "pk-0236ce4290c1",
+      "packet_sha256": "4f774087b830c30af74396b1027ff19390c4dfc3bf387579b685b753d1c0fc73",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-0972292025ad",
+      "packet_sha256": "042e1342b22fd0fddaf5eb97a7ee1620adb79f22510932e6fc8305a3207204e7",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-0d8f75aead6b",
+      "packet_sha256": "ad4eafda23ac8b60a826b62f576b336acd5c5c9821492b40b60f7bb1adb01e88",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-3f31a2dd3b69",
+      "packet_sha256": "95afb4f3fdc21dbc07d33f01463122aa595866b0821e794ee6f82b46f1bd8e8e",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-4c78ba0418a8",
+      "packet_sha256": "fdda122679a5d106308f038a47ef751418711d53aad005b41226cdd10e3ae3f6",
+      "profile_sha256": "7a7ea735480584bea176b2aaf67f1e8e50a73abcf77e8382d7d506270094b4de",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-61e732a788ae",
+      "packet_sha256": "6b541818ee4daccb3d79daef1f863d86da98fe029dc80baa5098335e29312067",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-9fac6cb15b90",
+      "packet_sha256": "d85eb11f1d3f3b76206fd060876dede40503a8d98ff12374563f013051c7dc2d",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-ac6ae47c7b15",
+      "packet_sha256": "1e8b63e703865fe71dd23cdfb0cd217c86385146cdee77de2d38803308048d3f",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-af95f3073f88",
+      "packet_sha256": "4f33fa6d3e566dcb35f02350c0c1f9499dc1a86807a89d77b4caa18f09f6a85a",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-c6060a86b3df",
+      "packet_sha256": "a060a9c3ced8361cb75fe94121739b720ce8437c1b1b682a03aaa237f94400e2",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-d0f406e22f58",
+      "packet_sha256": "f66470be7064137c2f312e89b91e4c5d647ffc470e959662a459641558c9a001",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-d13b84a82f87",
+      "packet_sha256": "f5f52045858ad760aba03f93b58d8abebdb7abc292a684a61b7c8745af597716",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-d5d25caf0cee",
+      "packet_sha256": "f45508352d9ccc34b8aff3e002c91dcc8b0be1202003e0d12d796e8379a6358a",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-ee19649c4ca9",
+      "packet_sha256": "0bda5051150272f3ae60d8cf5b733d1dbae5d6d3c7d4cb008a6c2cab0ecdbb70",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    },
+    {
+      "case_id": "pk-ef68097ce858",
+      "packet_sha256": "cca90b0066d142885255d8eab54d78228cab44f7f56222304ca5a57590aa2dd4",
+      "profile_sha256": "656b690680dac79513e53970a58ff7013d54039796922dbb1319dc3a9460cab0",
+      "document_audit": {
+        "pages": 1,
+        "metadata": "{'/Author': 'RFQ author', '/CreationDate': \"D:20000101000000+00'00'\", '/Creator': 'RFQFuzz bounded vector drafting', '/Keywords': '', '/ModDate': \"D:20000101000000+00'00'\", '/Producer': 'ReportLab PDF Library - (opensource)', '/Subject': 'Authored schematic engineering drawing', '/Title': 'Part drawing', '/Trapped': '/False'}"
+      }
+    }
+  ],
+  "limitations": "Procedural blinding on the same machine; no adversarial sandbox"
+}

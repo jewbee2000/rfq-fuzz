@@ -13,18 +13,20 @@
   },
   "next_task": [],
   "m0_decision": "pass_bounded_synthetic_feasibility",
-  "implemented_scope": "T00-T03 only: one plate/O01/H1; no CNC advisory certification",
+  "implemented_scope": "T00-T12 completed; T13 consumer source55b288a implemented, final Linux offline acceptance active",
   "test_results": {
-    "integrated_passed": 33,
+    "integrated_passed_before_resource_limit_setting": 264,
     "upstream_warnings": 4,
-    "post_link_focused_passed": 18
+    "final_validated_core_packets": 145,
+    "deliberate_evaluator_mutants_caught": 6
   },
   "remaining_limits": [
-    "Linux unverified",
-    "HTML browser rendering unverified due file URL policy",
+    "Linux final offline acceptance pending after retained TCG timeout",
     "shared OCCT kernel",
-    "curated visual attestation and token matching",
-    "no physical or industrial transfer evidence"
+    "finite annotation/alias grammar",
+    "exact canonical matching; 1 genuine external finding unadjudicated",
+    "145 development core cases; 0 core holdout",
+    "no human engineer or physical industrial evidence"
   ],
   "current_task": "T13",
   "task_state": "in_progress"

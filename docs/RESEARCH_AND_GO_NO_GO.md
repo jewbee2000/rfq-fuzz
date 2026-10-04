@@ -4,7 +4,12 @@ Research date: 4 October 2026. Sources are primary vendor documentation, reposit
 
 ## Decision
 
-M0 follow-up, 2026-10-04: [bounded source recheck](../evidence/M0/decision.md) retained the conditional differentiation hypothesis; [the first feasibility gate passed](../evidence/M0/gate.md) for one synthetic plate only. No broader product demand, novelty, industrial competence or release readiness was established. The current user instruction stops after M0.
+M0 follow-up,2026-10-04: [bounded source recheck](../evidence/M0/decision.md) retained
+the conditional differentiation hypothesis; [the first feasibility gate passed](../evidence/M0/gate.md).
+The subsequent user instruction authorizes M1–M5. [Milestone assessments](MILESTONE_ASSESSMENTS.md)
+record continuation based on actual evidence. The general production checker
+remains a no-go; no broader demand, universal novelty or industrial competence
+claim follows from the finite synthetic implementation.
 
 **Do not build the proposed general upload-and-review product.** Existing tools already advertise PDF drawing checking, missing callouts, dimensional/GD&T checks and CNC DFM. Open-source geometry analysis also exists. A new upload form, LLM prompt or supplier-profile database is not a defensible gap by itself.
 

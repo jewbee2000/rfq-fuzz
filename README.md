@@ -1,12 +1,31 @@
 # RFQFuzz
 
-A proposed open-source test bench for CNC drawing-review tools. Create controlled mistakes in matched STEP models, drawings and manufacturing instructions; test a reviewer; inspect what it missed, invented or incorrectly declared acceptable.
+A local regression toolkit for CNC RFQ reviewers. Create controlled STEP/drawing
+packages, validate the actual exported artifacts, import a review and inspect
+changed behavior. Package consistency and conditional CNC advisories are separate.
 
-**Status: M0 feasibility prototype passed, 4 October 2026; stopped at the requested checkpoint.** T00–T03 are complete. The repository is local; nothing has been pushed or published. This is a synthetic regression toolkit, not a production manufacturability certifier.
+**Status: M1–M4 implemented; final M5 consumer acceptance active, 4 October2026.**
+M0 remains a frozen regression.264integrated tests pass;145corepackets pass final
+artifact validation;6/6deliberate evaluator mutants are caught. All145corecases
+are development-only. This is a synthetic regression toolkit; no part is approved
+for manufacture. Everything remains local and unpublished.
 
-Inspect the [M0 gate and reproduction commands](evidence/M0/gate.md), [offline comparison report](evidence/M0/report/index.html), [actual public STEP/PDF/PNG packets](evidence/M0/bundle/public), and [independent review observations](evidence/M0/review-handoff/review-output/observations.md). The report's two reviewer regressions are deliberately injected into the reference path; the independent review's original decisions are retained separately. Browser HTML preview was blocked by local-file policy; source links/content were audited, but browser rendering is unverified.
+Start with the [reproducible15case demo](docs/DEMO.md),
+[offline comparison report](evidence/M5/coordinator-demo-v2/report/index.html),
+[Should deferrals](docs/SHOULD_DEFERRALS.md) and [unpublished draft](docs/BLOG_DRAFT.md).
+The report's two changes are deliberately injected into retained public-template
+reference observations. Genuine [M5 external observations](evidence/M5/external-v1)
+and the original [M0 external review](evidence/M0/review-handoff/review-output)
+remain separate. Actual v1 browser rendering and changed-evidence navigation pass
+without page errors, remote requests or horizontal overflow.
 
-The implemented spike handles one plate ancestry and the O01/H1 bore-group obligation: exported artifacts, independent validator with retained corruption controls, neutral public export, public-only reference review, structured manual import/adjudication and source-linked comparison. [Pinned Python 3.12 setup](docs/SETUP_M0.md) and [dependency licenses](docs/LICENSES.md) are retained. Other part families/operators, general adapters/scoring, advisory rules, Linux release checks and independent industrial transfer remain planned.
+V1 supports three bounded families, six objective operators, four conditional
+profile rules, uncertainty/valid controls, local/manual adapters, immutable raw
+imports, per-track scoring and source-linked HTML. Read [artifact acceptance](evidence/M2/core-final-acceptance.md),
+[challenge evidence](evidence/M4/challenge-report.md) and [licenses](docs/LICENSES.md).
+The original [M0 gate](evidence/M0/gate.md), artifacts and reproduction remain
+unchanged. Exact witness matching is intentionally conservative; human engineer,
+second-kernel and physical/industrial evidence are unavailable.
 
 The original upload-and-check idea is a **no-go**: existing products already combine CNC DFM with drawing checks. The qualified alternative is a reusable regression tool for the people adopting or developing those reviewers. A bounded search found no publicly runnable equivalent to the combined workflow proposed here. This is an opportunity hypothesis, not proof of universal novelty or customer demand.
 
@@ -30,7 +49,7 @@ The initial tool tests **RFQ package consistency**, with a separately reported *
 
 The decisive first milestone is one independently validated challenge bundle evaluated through an external review interface. If it cannot produce an actionable regression report, stop before building a larger corpus or UI.
 
-## Planned scope
+## Implemented boundary
 
 | In the first release | Deferred or excluded |
 |---|---|
@@ -42,4 +61,6 @@ The decisive first milestone is one independently validated challenge bundle eva
 | Controlled defects, repairs, valid lookalikes and missing evidence | Five-axis process planning, CAM, molding or stamping |
 | Reviewer adapters, replay and version comparisons | A new production DFM reviewer |
 
-This table is the planned first-release boundary; it is not a claim that M1–M5 are implemented. See the requirements and M0 gate for actual completed scope.
+See the requirements source/evidence matrix for acceptance and the Should record
+for deferred portions. Extensibility is not implemented support for arbitrary
+drawings, general tolerancing or manufacturing processes.

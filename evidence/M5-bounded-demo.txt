@@ -1,0 +1,1 @@
+passed {'native_parser_seconds': 60, 'document_audit_seconds': 20}

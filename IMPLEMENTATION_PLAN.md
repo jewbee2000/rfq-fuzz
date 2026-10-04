@@ -1,6 +1,9 @@
 # Implementation plan
 
-This is a plan for a useful, bounded engineering test tool. M0 is complete as of 2026-10-04; see [the retained gate](evidence/M0/gate.md). M1–M5 outputs below remain future work. The first finite case supports exported-artifact validation and public-only review; broader oracle generality and industrial transfer remain unknown.
+This records the dependency plan for the bounded toolkit. M0's gate is retained;
+M1–M5 execution is recorded in tasks.json and [milestone assessments](docs/MILESTONE_ASSESSMENTS.md).
+Use those actual acceptance records rather than prospective commands below.
+Broader oracle generality and industrial transfer remain unknown.
 
 ## Feasibility assessment
 
