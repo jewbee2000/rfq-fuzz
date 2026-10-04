@@ -345,7 +345,7 @@
       "completion_evidence": [
         "evidence/M4/challenge-report.md",
         "examples/v1-demo/replay-manifest.json",
-        "evidence/M5-archive-audit.txt"
+        "evidence/M5/git-archive-input-audit.json"
       ],
       "acceptance_commands": [
         "pytest tests/metamorphic (12passed); tools/challenge_evaluator.py (6source mutants killed); tools/validate_core.py (145valid); tools/score_core.py; audit_public (145passed)"

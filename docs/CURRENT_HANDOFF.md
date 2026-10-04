@@ -1,6 +1,7 @@
 # Active implementation handoff
 
-2026-10-04, America/Los_Angeles. Consumer source freeze commit `55b288a`; use
+2026-10-04, America/Los_Angeles. Implementation freeze `55b288a`, portable Git-byte
+fix `348c5f1` preserving audited demo inputs; use
 `git rev-parse HEAD` for latest metadata/source commit. Coordinator owns tasks.json
 and STATUS.json; Beads was not adopted. All work remains local.
 
@@ -13,7 +14,9 @@ smoke; final offline consumer acceptance is active. The first single-CPU TCG rep
 exceeded the 60 second native bound and remains timeout. Explicit bounded resource
 controls (maximum 300 seconds) now support a named slower setup; reader checks and
 visual/hash requirements are unchanged. No host installation or privileged
-settings changed. Final Linux workflow is not yet claimed.
+settings changed. Final Linux workflow is not yet claimed. Its intermediate
+inspections remain unverified until all cases finish and the final attestation
+loop runs. No intermediate status has been counted as accepted.
 
 Completed: T04 contracts `3ca31ed`, T05 profiles integrated `1a817d9`, T06 bounded
 families integrated `1fd4803`, T09 adapters `4e17f8e`, T10 scoring `efbf3d3`, T12
@@ -26,7 +29,10 @@ template response and clearly injected regressions are retained. Independent
 read-only final review corrected report binding/escaping, CLI failure status and
 numeric-prefix grounding; all fixes separately rechecked. Current failure command:
 none; intentional corruption/mutant failures remain evidence. Final integration
-and two-platform consumer runs are active.
+and two-platform consumer runs are active. Final integrated tests:270passed,
+4upstream warnings. Independent consumer found Git-normalized demo JSON; original
+audited bytes are now preserved in Git, and actual Git archive audit checks64hashes.
+Independent source equivalence and final platform results remain active.
 
 Active: independent consumer worker owns ignored work/consumer-env; separately
 authored transfer-v2 is independently validated, original importer rejection

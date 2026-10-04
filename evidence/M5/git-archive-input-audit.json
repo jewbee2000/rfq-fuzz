@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "method": "git archive --format=tar COMMIT examples/v1-demo",
+  "commit": "348c5f1ea5a6e99bc0acdb4f0d0af52f3a8146e0",
+  "archive_sha256": "242546e1301c27dd6197fdb28c459c170b6a8f499eadc869eb44a42aa94555af",
+  "manifest_assets": 64,
+  "archived_regular_files": 65,
+  "hash_mismatches": [],
+  "working_copy_byte_mismatches": [],
+  "limitation": "Portable input-byte check; consumer workflows and native checks are separate evidence."
+}

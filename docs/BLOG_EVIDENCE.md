@@ -25,6 +25,7 @@ explicitly incomplete for final independent platform/demo acceptance.
 | Unresolved material authority corrected conditional CNC uncertainty | [Core final acceptance](../evidence/M2/core-final-acceptance.md), [challenge report](../evidence/M4/challenge-report.md) | Superseded diagnostic remains; final counts use corrected frozen code. |
 | Harmless permutation label rejected and corrected | [Consumer preparation](../evidence/M5/consumer-preparation.md) | Whole-word label checks retain recursive forbidden-key rejection. Earlier actual failures retained. |
 | Count40 matched count4; exact witnesses now required; reports bind to raw/oracle/public inputs | [Independent fix record](../evidence/M5/independent-fixes.md), [numeric probe](../evidence/M5/independent-final-review/numeric-prefix-results.json), [review probes](../evidence/M5/independent-final-review/check-results.json) | Diagnostic deliberately corrupted inputs; no genuine external conclusion was changed. |
+| Git normalization broke replay hashes; actual archived audited bytes now match | [Portable byte correction](../evidence/M5/portable-archive-fix.md), [actual Git archive audit](../evidence/M5/git-archive-input-audit.json) | Byte portability is distinct from the complete consumer/native workflow. Earlier insufficient one-line audit is retained and superseded. |
 | All six selected evaluator mutants detected by unchanged acceptance tests | [Challenge report](../evidence/M4/challenge-report.md), [mutant summary](../evidence/M4/challenge-tests/summary.json) | Six selected relevant bugs, not exhaustive mutation coverage. Mutated tests must fail semantically, not by syntax/import errors. |
 | Genuine external two-packet observation covers15 duties,14 grounded/one unadjudicated | [Scoped external summary](../evidence/M5/external-v1/summary.json), [raw public-only observation](../evidence/M5/external-v1/observations/raw-observation.json) | Raw response has14clear+oneadvisory; scored result has13grounded clears+onegrounded advisory+oneunadjudicated clear. Do not use broader `external-v1-summary.json` denominators: that import included143 unrequested cases and is an integration diagnostic. |
 | Separately agent-authored transfer dimensions and label compatibility revision | [Transfer provenance](../evidence/M5/transfer-v2/author/PROVENANCE.md), [independent transfer oracle](../evidence/M5/transfer-v2/oracle.json), [visual attestation](../evidence/M5/transfer-v2/attestation.json) | New author/layout diagnostic, not human engineer authorship, another CAD kernel, physical manufacture or held-out reviewer accuracy. |
@@ -41,20 +42,21 @@ explicitly incomplete for final independent platform/demo acceptance.
    was visually reopened at2500x1806 source dimensions. Plan/section,2.5 mm W1,
    pocket/body dimensions and allowance context are legible and match caption.
    Its own visible footer says agent-authored synthetic/no human engineer review.
-3. **Pending; not embedded:** coordinator will generate and inspect
-   `evidence/M5/browser/report-changed-evidence.png` from the actual local report.
-   The article has an HTML editorial comment where it may be inserted. A local
-   report source audit alone is insufficient to claim an actual screenshot or
-   browser acceptance. Two existing legible figures already meet the brief's
-   two-to-three figure range.
+3. [Actual report screenshot](../evidence/M5/browser/report-changed-evidence.png)
+   was generated from the retained offline report in installed Edge and visually
+   inspected by the coordinator at1360x900. The material evidence, source links,
+   governing equal authority and injected silent miss are readable. The separate
+   [browser audit](../evidence/M5/browser/browser-audit.json) records two changed
+   anchors, no page errors, no remote requests and no horizontal overflow. It is
+   now the third embedded figure. This actual browser record supplements source
+   inspection; no screenshot is inferred from an HTML audit alone.
 
 ## Editorial completion gate
 
 Before calling this the final article draft, the coordinator should replace the
 opening consumer-pending sentence and later platform-pending sentence only after
 actual clean-consumer evidence passes, retaining exact environments/commands and
-diagnosed changes. Add the report screenshot only after it exists and is visually
-checked. Remove the optional pending comment when deciding whether to include it.
+diagnosed changes. The report screenshot is now actually inspected and embedded.
 No repository URL, publication date, public demo URL or deployment is invented.
 The final article remains local/unpublished under the user's instructions.
 
@@ -72,6 +74,12 @@ target and exactly two embedded figures. First saved-draft result:1019prosewords
 correction uses “decisions” for the grounded external finding/assertion total;
 the final rerun measured1020prosewords,52/52targets and2actual figures. Staged
 `git diff --cached --check` passed before the local draft commit.
+Coordinator subsequently added the actual third figure and clarified the external
+reviewer's Codex-agent provenance. Independent read-only recheck measured1039prose
+words and found all53combined draft/audit local targets. The historical two-figure
+worker counts above remain the original subtask observations; final content/ledger
+acceptance will be recorded in `evidence/M5/document-audit.json`.
+
 This lightweight audit checks document integrity, not engineering or consumer
 workflow acceptance. The two actual image inspections are recorded above.
 

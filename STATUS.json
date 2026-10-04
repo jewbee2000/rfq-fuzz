@@ -13,7 +13,7 @@
   },
   "next_task": [],
   "m0_decision": "pass_bounded_synthetic_feasibility",
-  "implemented_scope": "T00-T12 completed; T13 consumer source55b288a implemented, final Linux offline acceptance active",
+  "implemented_scope": "T00-T12 completed; T13 final Linux offline acceptance active; audited portable Git bytes preserved at348c5f1",
   "test_results": {
     "upstream_warnings": 4,
     "final_validated_core_packets": 145,
@@ -31,5 +31,9 @@
   ],
   "current_task": "T13",
   "task_state": "in_progress",
-  "requirements_verified_current": 17
+  "requirements_verified_current": 17,
+  "source_freeze": {
+    "implementation": "55b288a8df0d1b3ced607c8d97d23847b2f122ba",
+    "portable_git_bytes": "348c5f1ea5a6e99bc0acdb4f0d0af52f3a8146e0"
+  }
 }
