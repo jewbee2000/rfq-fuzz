@@ -23,7 +23,7 @@ proof={
 "R13":["evidence/M3/scoring.md","evidence/M5/independent-final-review/numeric-prefix-results-fixed.json"],
 "R14":["evidence/M4/corpus-summary.json","evidence/M4/core-comparison.json","evidence/M5/external-v1/summary.json"],
 "R15":["evidence/M5/consumer.md","evidence/M5/independent-fixes.md","evidence/M5/coordinator-demo-v2/report/index.html"],
-"R16":["evidence/M4/challenge-report.md","examples/v1-demo/replay-manifest.json","evidence/M5-archive-audit.txt"],
+"R16":["evidence/M4/challenge-report.md","examples/v1-demo/replay-manifest.json","evidence/M5/git-archive-input-audit.json"],
 "R17":["evidence/M4/challenge-report.md","evidence/M4/challenge-tests","evidence/M5/independent-final-review/final-consumer-review.md"],
 "R18":["evidence/M4/report-and-failures.md","evidence/M5/consumer.md","evidence/M5-report-audit-final-tests.txt"],
 "R19":["evidence/M4/adapter-size-followup.md","evidence/M4/report-and-failures.md","docs/REVIEWER_PROTOCOL.md"],
@@ -35,7 +35,7 @@ if not Path("docs/RULE_PROVENANCE.md").exists():proof["R09"][1]="src/rfqfuzz/v1/
 partial={"S01","S03","S07"}
 final_log=Path("evidence/M5-final-release-tests.txt")
 if not final_log.exists():final_log=Path("evidence/M5-final-after-audit-tests.txt")
-match=re.search(r"(\d+) passed, (\d+) warnings",final_log.read_text())
+match=re.search(r"^(\d+) passed, (\d+) warnings in [^\r\n]+$",final_log.read_text(),re.M)
 passed,warnings=map(int,match.groups()) if match else (0,0)
 missing=[path for paths in proof.values() for path in paths if not Path(path).exists()]
 for t in tasks.values():
