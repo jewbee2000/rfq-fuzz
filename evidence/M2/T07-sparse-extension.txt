@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.workers\generation-v1\tests\mutations\append_sparse_control.py", line 49, in <module>
+    main(sys.argv[1])
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.workers\generation-v1\tests\mutations\append_sparse_control.py", line 17, in main
+    require(old_specs == specs[:-1], "extension only applies to the retained original 144-case configuration")
+  File "C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.workers\generation-v1\src\rfqfuzz\v1\contracts.py", line 25, in require
+    raise ValueError(reason)
+ValueError: extension only applies to the retained original 144-case configuration

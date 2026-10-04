@@ -1,0 +1,6028 @@
+{
+  "schema_version": "1.0",
+  "warning": "Generator intent is not ground truth",
+  "mutations": [
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-c6060a86b3df",
+      "operator": "O01",
+      "variant": "defective",
+      "ancestry": "source-o01-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "h1_diameter": 6.8
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-bec188ae1e18",
+      "operator": "O01",
+      "variant": "repaired",
+      "ancestry": "source-o01-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-af95f3073f88",
+      "operator": "O01",
+      "variant": "valid_alternative",
+      "ancestry": "source-o01-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "h1_diameter": 6.8
+        },
+        "context_overrides": {
+          "manufacturing": {
+            "model_stage": "intermediate",
+            "transition": {
+              "operation": "ream",
+              "feature_id": "H1",
+              "from_stage": "intermediate",
+              "to_stage": "finished",
+              "target": "drawing H1 diameter callout"
+            }
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-b3d5d6dda112",
+      "operator": "O01",
+      "variant": "defective",
+      "ancestry": "source-o01-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.0
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-c7d12f6408b7",
+      "operator": "O01",
+      "variant": "repaired",
+      "ancestry": "source-o01-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-1d773b5ea500",
+      "operator": "O01",
+      "variant": "valid_alternative",
+      "ancestry": "source-o01-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.0,
+          "diameter_ref": true
+        },
+        "context_overrides": {
+          "authority": {
+            "dimensions": "step"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-5898be5268b6",
+      "operator": "O01",
+      "variant": "defective",
+      "ancestry": "source-o01-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 84.0,
+          "length": 52.0,
+          "height": 8.8,
+          "diameter": 6.4
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.2
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ea41974dcf01",
+      "operator": "O01",
+      "variant": "repaired",
+      "ancestry": "source-o01-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 84.0,
+          "length": 52.0,
+          "height": 8.8,
+          "diameter": 6.4
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-cb187801db59",
+      "operator": "O01",
+      "variant": "valid_alternative",
+      "ancestry": "source-o01-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 84.0,
+          "length": 52.0,
+          "height": 8.8,
+          "diameter": 6.4
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.2
+        },
+        "context_overrides": {
+          "manufacturing": {
+            "model_stage": "intermediate",
+            "transition": {
+              "operation": "ream",
+              "feature_id": "H1",
+              "from_stage": "intermediate",
+              "to_stage": "finished",
+              "target": "drawing H1 diameter callout"
+            }
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-f854eec0583a",
+      "operator": "O01",
+      "variant": "defective",
+      "ancestry": "source-o01-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 66.0,
+          "length": 43.0,
+          "height": 38.0,
+          "diameter": 6.6,
+          "depth": 26.4,
+          "counterbore_diameter": 12.6,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.3999999999999995
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-fb1be88ded7a",
+      "operator": "O01",
+      "variant": "repaired",
+      "ancestry": "source-o01-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 66.0,
+          "length": 43.0,
+          "height": 38.0,
+          "diameter": 6.6,
+          "depth": 26.4,
+          "counterbore_diameter": 12.6,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-57480d67f660",
+      "operator": "O01",
+      "variant": "valid_alternative",
+      "ancestry": "source-o01-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 66.0,
+          "length": 43.0,
+          "height": 38.0,
+          "diameter": 6.6,
+          "depth": 26.4,
+          "counterbore_diameter": 12.6,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.3999999999999995,
+          "diameter_ref": true
+        },
+        "context_overrides": {
+          "authority": {
+            "dimensions": "step"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-788b984b4ab1",
+      "operator": "O01",
+      "variant": "defective",
+      "ancestry": "source-o01-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 88.0,
+          "length": 54.0,
+          "height": 9.6,
+          "diameter": 6.8
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.6
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-09babc7eb3cd",
+      "operator": "O01",
+      "variant": "repaired",
+      "ancestry": "source-o01-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 88.0,
+          "length": 54.0,
+          "height": 9.6,
+          "diameter": 6.8
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-106263ec24a1",
+      "operator": "O01",
+      "variant": "valid_alternative",
+      "ancestry": "source-o01-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 88.0,
+          "length": 54.0,
+          "height": 9.6,
+          "diameter": 6.8
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.6
+        },
+        "context_overrides": {
+          "manufacturing": {
+            "model_stage": "intermediate",
+            "transition": {
+              "operation": "ream",
+              "feature_id": "H1",
+              "from_stage": "intermediate",
+              "to_stage": "finished",
+              "target": "drawing H1 diameter callout"
+            }
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-77fb4f423c27",
+      "operator": "O01",
+      "variant": "defective",
+      "ancestry": "source-o01-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 40.0,
+          "diameter": 7.0,
+          "depth": 28.0,
+          "counterbore_diameter": 13.0,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.8
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-09f186da04ba",
+      "operator": "O01",
+      "variant": "repaired",
+      "ancestry": "source-o01-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 40.0,
+          "diameter": 7.0,
+          "depth": 28.0,
+          "counterbore_diameter": 13.0,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-f2cbd97790cd",
+      "operator": "O01",
+      "variant": "valid_alternative",
+      "ancestry": "source-o01-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 40.0,
+          "diameter": 7.0,
+          "depth": 28.0,
+          "counterbore_diameter": 13.0,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.8,
+          "diameter_ref": true
+        },
+        "context_overrides": {
+          "authority": {
+            "dimensions": "step"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-d0f406e22f58",
+      "operator": "O02",
+      "variant": "defective",
+      "ancestry": "source-o02-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "h1_count": 3
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-0e9db02e3be4",
+      "operator": "O02",
+      "variant": "repaired",
+      "ancestry": "source-o02-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-3c5e473b2cce",
+      "operator": "O02",
+      "variant": "valid_alternative",
+      "ancestry": "source-o02-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "h1_count": 2,
+          "h1_group_members": [
+            0,
+            1
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-527938eb836d",
+      "operator": "O02",
+      "variant": "defective",
+      "ancestry": "source-o02-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 82.0,
+          "length": 51.0,
+          "height": 8.4,
+          "diameter": 6.2
+        },
+        "drawing_overrides": {
+          "h1_count": 3
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-bbe64c53f7e1",
+      "operator": "O02",
+      "variant": "repaired",
+      "ancestry": "source-o02-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 82.0,
+          "length": 51.0,
+          "height": 8.4,
+          "diameter": 6.2
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-8ad7b09936d6",
+      "operator": "O02",
+      "variant": "valid_alternative",
+      "ancestry": "source-o02-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 82.0,
+          "length": 51.0,
+          "height": 8.4,
+          "diameter": 6.2
+        },
+        "drawing_overrides": {
+          "h1_count": 2,
+          "h1_group_members": [
+            0,
+            1
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-a84517c2ef3f",
+      "operator": "O02",
+      "variant": "defective",
+      "ancestry": "source-o02-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 84.0,
+          "length": 52.0,
+          "height": 8.8,
+          "diameter": 6.4
+        },
+        "drawing_overrides": {
+          "h1_count": 3
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-90789c1286e4",
+      "operator": "O02",
+      "variant": "repaired",
+      "ancestry": "source-o02-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 84.0,
+          "length": 52.0,
+          "height": 8.8,
+          "diameter": 6.4
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-1f0c863c5d78",
+      "operator": "O02",
+      "variant": "valid_alternative",
+      "ancestry": "source-o02-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 84.0,
+          "length": 52.0,
+          "height": 8.8,
+          "diameter": 6.4
+        },
+        "drawing_overrides": {
+          "h1_count": 2,
+          "h1_group_members": [
+            0,
+            1
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-115cdff17114",
+      "operator": "O02",
+      "variant": "defective",
+      "ancestry": "source-o02-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {
+          "h1_count": 3
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-784a7dc2ed7b",
+      "operator": "O02",
+      "variant": "repaired",
+      "ancestry": "source-o02-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-7972b6374a82",
+      "operator": "O02",
+      "variant": "valid_alternative",
+      "ancestry": "source-o02-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {
+          "h1_count": 2,
+          "h1_group_members": [
+            0,
+            1
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-d7880855745b",
+      "operator": "O02",
+      "variant": "defective",
+      "ancestry": "source-o02-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 88.0,
+          "length": 54.0,
+          "height": 9.6,
+          "diameter": 6.8
+        },
+        "drawing_overrides": {
+          "h1_count": 3
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ffbdcd9fa949",
+      "operator": "O02",
+      "variant": "repaired",
+      "ancestry": "source-o02-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 88.0,
+          "length": 54.0,
+          "height": 9.6,
+          "diameter": 6.8
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-f90b53dc07f2",
+      "operator": "O02",
+      "variant": "valid_alternative",
+      "ancestry": "source-o02-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 88.0,
+          "length": 54.0,
+          "height": 9.6,
+          "diameter": 6.8
+        },
+        "drawing_overrides": {
+          "h1_count": 2,
+          "h1_group_members": [
+            0,
+            1
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-9cb6dc5b7fdb",
+      "operator": "O02",
+      "variant": "defective",
+      "ancestry": "source-o02-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 90.0,
+          "length": 55.0,
+          "height": 10.0,
+          "diameter": 7.0
+        },
+        "drawing_overrides": {
+          "h1_count": 3
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-4ea0c6c9b775",
+      "operator": "O02",
+      "variant": "repaired",
+      "ancestry": "source-o02-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 90.0,
+          "length": 55.0,
+          "height": 10.0,
+          "diameter": 7.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ebce73bd13ab",
+      "operator": "O02",
+      "variant": "valid_alternative",
+      "ancestry": "source-o02-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Plate H1 group has four actual members",
+        "Scope is publicly mapped"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 COUNT",
+        "drawing.plan.H1 versus OTHER labels",
+        "context.features.H1 centers and scope"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Diameter, units, material, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 90.0,
+          "length": 55.0,
+          "height": 10.0,
+          "diameter": 7.0
+        },
+        "drawing_overrides": {
+          "h1_count": 2,
+          "h1_group_members": [
+            0,
+            1
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-3f31a2dd3b69",
+      "operator": "O03",
+      "variant": "defective",
+      "ancestry": "source-o03-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": false
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ddbfe734644a",
+      "operator": "O03",
+      "variant": "repaired",
+      "ancestry": "source-o03-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ac6ae47c7b15",
+      "operator": "O03",
+      "variant": "valid_alternative",
+      "ancestry": "source-o03-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": true
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-1c753dd96115",
+      "operator": "O03",
+      "variant": "defective",
+      "ancestry": "source-o03-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": false
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-bdab113da0ae",
+      "operator": "O03",
+      "variant": "repaired",
+      "ancestry": "source-o03-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-20397ad039d2",
+      "operator": "O03",
+      "variant": "valid_alternative",
+      "ancestry": "source-o03-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": true
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-22b02cb073db",
+      "operator": "O03",
+      "variant": "defective",
+      "ancestry": "source-o03-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": false
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ae17e03ed1be",
+      "operator": "O03",
+      "variant": "repaired",
+      "ancestry": "source-o03-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-3517bc37e061",
+      "operator": "O03",
+      "variant": "valid_alternative",
+      "ancestry": "source-o03-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": true
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-e0e3e08aa374",
+      "operator": "O03",
+      "variant": "defective",
+      "ancestry": "source-o03-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": false
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-a2e749c572d1",
+      "operator": "O03",
+      "variant": "repaired",
+      "ancestry": "source-o03-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-1e64a7273a13",
+      "operator": "O03",
+      "variant": "valid_alternative",
+      "ancestry": "source-o03-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": true
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-1a4f0a9ed56d",
+      "operator": "O03",
+      "variant": "defective",
+      "ancestry": "source-o03-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": false
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-2eaf55c4b3d6",
+      "operator": "O03",
+      "variant": "repaired",
+      "ancestry": "source-o03-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ef5ed9ba1962",
+      "operator": "O03",
+      "variant": "valid_alternative",
+      "ancestry": "source-o03-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": true
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-b3be66f098be",
+      "operator": "O03",
+      "variant": "defective",
+      "ancestry": "source-o03-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": false
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-46dc7b74bdfd",
+      "operator": "O03",
+      "variant": "repaired",
+      "ancestry": "source-o03-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-561dce67a79e",
+      "operator": "O03",
+      "variant": "valid_alternative",
+      "ancestry": "source-o03-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Supported globally governed dimensions",
+        "STEP unit declaration is millimetres"
+      ],
+      "allowed_deltas": [
+        "drawing.UNITS",
+        "drawing.governed numeric dimensions",
+        "context.units.drawing"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "One dimensional root cause",
+        "Material, stages, RQ1, release and count unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_units": "in",
+          "convert_dimensions": true
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-9fac6cb15b90",
+      "operator": "O04",
+      "variant": "defective",
+      "ancestry": "source-o04-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "drawing_material": "7075-T6"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-922f4212c09e",
+      "operator": "O04",
+      "variant": "repaired",
+      "ancestry": "source-o04-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-8c7083803d37",
+      "operator": "O04",
+      "variant": "valid_alternative",
+      "ancestry": "source-o04-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "drawing_material": "AL6061-T6"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-6b55e385fcd6",
+      "operator": "O04",
+      "variant": "defective",
+      "ancestry": "source-o04-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_material": "7075-T6"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-4e11d082b740",
+      "operator": "O04",
+      "variant": "repaired",
+      "ancestry": "source-o04-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-34a1f03c9a26",
+      "operator": "O04",
+      "variant": "valid_alternative",
+      "ancestry": "source-o04-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_material": "7075-T6"
+        },
+        "context_overrides": {
+          "authority": {
+            "material_precedence": "contract"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-64f3961291b8",
+      "operator": "O04",
+      "variant": "defective",
+      "ancestry": "source-o04-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_material": "7075-T6"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-8bc96bea8daf",
+      "operator": "O04",
+      "variant": "repaired",
+      "ancestry": "source-o04-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-0e6ba646af6e",
+      "operator": "O04",
+      "variant": "valid_alternative",
+      "ancestry": "source-o04-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_material": "AL6061-T6"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-f9d022297329",
+      "operator": "O04",
+      "variant": "defective",
+      "ancestry": "source-o04-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {
+          "drawing_material": "7075-T6"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-886fe8751913",
+      "operator": "O04",
+      "variant": "repaired",
+      "ancestry": "source-o04-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-17fcef5cb8a9",
+      "operator": "O04",
+      "variant": "valid_alternative",
+      "ancestry": "source-o04-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {
+          "drawing_material": "7075-T6"
+        },
+        "context_overrides": {
+          "authority": {
+            "material_precedence": "contract"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-0236ce4290c1",
+      "operator": "O04",
+      "variant": "defective",
+      "ancestry": "source-o04-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_material": "7075-T6"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-f361f64ba6e8",
+      "operator": "O04",
+      "variant": "repaired",
+      "ancestry": "source-o04-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-f1d2eb842ded",
+      "operator": "O04",
+      "variant": "valid_alternative",
+      "ancestry": "source-o04-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_material": "AL6061-T6"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-8ee6ac3009c1",
+      "operator": "O04",
+      "variant": "defective",
+      "ancestry": "source-o04-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_material": "7075-T6"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-864009ed1e08",
+      "operator": "O04",
+      "variant": "repaired",
+      "ancestry": "source-o04-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-e0dcab3a0313",
+      "operator": "O04",
+      "variant": "valid_alternative",
+      "ancestry": "source-o04-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Two global material declarations",
+        "Public material-precedence policy"
+      ],
+      "allowed_deltas": [
+        "drawing.MATERIAL",
+        "context.authority.material_precedence"
+      ],
+      "invariants": [
+        "STEP geometry and dimensional callouts unchanged",
+        "Units, stages, RQ1 and release unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_material": "7075-T6"
+        },
+        "context_overrides": {
+          "authority": {
+            "material_precedence": "contract"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-0d8f75aead6b",
+      "operator": "O05",
+      "variant": "defective",
+      "ancestry": "source-o05-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-fcd0a8c46a24",
+      "operator": "O05",
+      "variant": "repaired",
+      "ancestry": "source-o05-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-d40f399b9d16",
+      "operator": "O05",
+      "variant": "valid_alternative",
+      "ancestry": "source-o05-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ]
+        },
+        "context_overrides": {
+          "requirements": []
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-98bfd7c650f7",
+      "operator": "O05",
+      "variant": "defective",
+      "ancestry": "source-o05-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-719d0d062f4d",
+      "operator": "O05",
+      "variant": "repaired",
+      "ancestry": "source-o05-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-1c883f887ddb",
+      "operator": "O05",
+      "variant": "valid_alternative",
+      "ancestry": "source-o05-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ],
+          "extra_notes": [
+            "SURFACE FINISH = Ra 3.20 um"
+          ]
+        },
+        "context_overrides": {
+          "requirements": [
+            {
+              "id": "RQ1",
+              "representation": "drawing",
+              "description": "A visible SURFACE ROUGHNESS = 3.20 um or SURFACE FINISH = Ra 3.20 um note is required for release. STEP alone does not represent it."
+            }
+          ]
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-56e3110bf351",
+      "operator": "O05",
+      "variant": "defective",
+      "ancestry": "source-o05-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-47cd8d4bc03a",
+      "operator": "O05",
+      "variant": "repaired",
+      "ancestry": "source-o05-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-505e2ff5277c",
+      "operator": "O05",
+      "variant": "valid_alternative",
+      "ancestry": "source-o05-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ]
+        },
+        "context_overrides": {
+          "requirements": []
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-1f9b85f21b73",
+      "operator": "O05",
+      "variant": "defective",
+      "ancestry": "source-o05-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-4b73213e187d",
+      "operator": "O05",
+      "variant": "repaired",
+      "ancestry": "source-o05-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-84616073cbca",
+      "operator": "O05",
+      "variant": "valid_alternative",
+      "ancestry": "source-o05-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ],
+          "extra_notes": [
+            "SURFACE FINISH = Ra 3.20 um"
+          ]
+        },
+        "context_overrides": {
+          "requirements": [
+            {
+              "id": "RQ1",
+              "representation": "drawing",
+              "description": "A visible SURFACE ROUGHNESS = 3.20 um or SURFACE FINISH = Ra 3.20 um note is required for release. STEP alone does not represent it."
+            }
+          ]
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-b6a6a258d0ac",
+      "operator": "O05",
+      "variant": "defective",
+      "ancestry": "source-o05-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-5ae86f2432b6",
+      "operator": "O05",
+      "variant": "repaired",
+      "ancestry": "source-o05-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-18197752f580",
+      "operator": "O05",
+      "variant": "valid_alternative",
+      "ancestry": "source-o05-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ]
+        },
+        "context_overrides": {
+          "requirements": []
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-cd309cbd4421",
+      "operator": "O05",
+      "variant": "defective",
+      "ancestry": "source-o05-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-c2c6971361e9",
+      "operator": "O05",
+      "variant": "repaired",
+      "ancestry": "source-o05-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-f81cd70ad839",
+      "operator": "O05",
+      "variant": "valid_alternative",
+      "ancestry": "source-o05-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "omit": [
+            "SURFACE ROUGHNESS"
+          ],
+          "extra_notes": [
+            "SURFACE FINISH = Ra 3.20 um"
+          ]
+        },
+        "context_overrides": {
+          "requirements": [
+            {
+              "id": "RQ1",
+              "representation": "drawing",
+              "description": "A visible SURFACE ROUGHNESS = 3.20 um or SURFACE FINISH = Ra 3.20 um note is required for release. STEP alone does not represent it."
+            }
+          ]
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ee19649c4ca9",
+      "operator": "O06",
+      "variant": "defective",
+      "ancestry": "source-o06-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-f3e4177952b0",
+      "operator": "O06",
+      "variant": "repaired",
+      "ancestry": "source-o06-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-55e3e96a424c",
+      "operator": "O06",
+      "variant": "valid_alternative",
+      "ancestry": "source-o06-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {
+          "release_association": {
+            "drawing_revision": "B",
+            "permitted_pairs": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-0972292025ad",
+      "operator": "O06",
+      "variant": "defective",
+      "ancestry": "source-o06-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-868d38c05325",
+      "operator": "O06",
+      "variant": "repaired",
+      "ancestry": "source-o06-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-26ef967289f9",
+      "operator": "O06",
+      "variant": "valid_alternative",
+      "ancestry": "source-o06-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {
+          "release_association": {
+            "drawing_revision": "B",
+            "permitted_pairs": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-9a9e0af034c1",
+      "operator": "O06",
+      "variant": "defective",
+      "ancestry": "source-o06-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-a65549446201",
+      "operator": "O06",
+      "variant": "repaired",
+      "ancestry": "source-o06-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-02ab6586f8d9",
+      "operator": "O06",
+      "variant": "valid_alternative",
+      "ancestry": "source-o06-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {
+          "release_association": {
+            "drawing_revision": "B",
+            "permitted_pairs": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-aaed92d9afce",
+      "operator": "O06",
+      "variant": "defective",
+      "ancestry": "source-o06-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-37a1f4cc4a80",
+      "operator": "O06",
+      "variant": "repaired",
+      "ancestry": "source-o06-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-29a505b379ef",
+      "operator": "O06",
+      "variant": "valid_alternative",
+      "ancestry": "source-o06-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 86.0,
+          "length": 53.0,
+          "height": 9.2,
+          "diameter": 6.6
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {
+          "release_association": {
+            "drawing_revision": "B",
+            "permitted_pairs": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-b2457e8286c4",
+      "operator": "O06",
+      "variant": "defective",
+      "ancestry": "source-o06-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-966dbc9a8fb7",
+      "operator": "O06",
+      "variant": "repaired",
+      "ancestry": "source-o06-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-1f4bf724cc1e",
+      "operator": "O06",
+      "variant": "valid_alternative",
+      "ancestry": "source-o06-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 68.0,
+          "length": 44.0,
+          "height": 39.0,
+          "diameter": 6.8,
+          "depth": 27.2,
+          "counterbore_diameter": 12.8,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {
+          "release_association": {
+            "drawing_revision": "B",
+            "permitted_pairs": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-682a90cf745d",
+      "operator": "O06",
+      "variant": "defective",
+      "ancestry": "source-o06-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-0f02bb09f4bb",
+      "operator": "O06",
+      "variant": "repaired",
+      "ancestry": "source-o06-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-8c37e0ec701d",
+      "operator": "O06",
+      "variant": "valid_alternative",
+      "ancestry": "source-o06-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Visible drawing identity",
+        "STEP product model identity",
+        "Public permitted release pairs"
+      ],
+      "allowed_deltas": [
+        "drawing.DRAWING REV",
+        "context.release_association.drawing_revision",
+        "context.release_association.permitted_pairs"
+      ],
+      "invariants": [
+        "STEP geometry/model identity unchanged",
+        "Dimensions, units, material, stages, RQ1 and profile unchanged"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 70.0,
+          "length": 45.0,
+          "height": 25.0,
+          "pocket_width": 60.0,
+          "pocket_length": 35.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {
+          "drawing_revision": "B"
+        },
+        "context_overrides": {
+          "release_association": {
+            "drawing_revision": "B",
+            "permitted_pairs": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-d13b84a82f87",
+      "operator": "A01",
+      "variant": "defective",
+      "ancestry": "source-a01-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Top-open rectangular pocket",
+        "W1 is mapped +X wall",
+        "Material-dependent named profile"
+      ],
+      "allowed_deltas": [
+        "geometry.W1 wall",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Other topology remains one planar solid",
+        "Drawing must faithfully represent changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 60.0,
+          "length": 40.0,
+          "height": 20.0,
+          "pocket_width": 50.0,
+          "pocket_length": 30.0,
+          "pocket_depth": 12.0,
+          "wall": 0.6
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ef68097ce858",
+      "operator": "A02",
+      "variant": "defective",
+      "ancestry": "source-a02-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Central blind bore with visible top-origin depth",
+        "Named advisory depth/diameter policy"
+      ],
+      "allowed_deltas": [
+        "geometry.H1 depth",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Blind floor remains",
+        "Drawing faithfully represents changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 60.0,
+          "length": 40.0,
+          "height": 35.0,
+          "diameter": 6.0,
+          "depth": 26.0,
+          "counterbore_diameter": 12.0,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-d5d25caf0cee",
+      "operator": "A03",
+      "variant": "defective",
+      "ancestry": "source-a03-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit XYZ setup",
+        "Public stock and fixture allowances",
+        "Named finite envelope"
+      ],
+      "allowed_deltas": [
+        "geometry.envelope",
+        "context.setup allowances",
+        "context.profile"
+      ],
+      "invariants": [
+        "Supported one-solid topology",
+        "Drawing faithfully represents changed geometry",
+        "No universal machinability assertion"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 125.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-4c78ba0418a8",
+      "operator": "A04",
+      "variant": "underdetermined",
+      "ancestry": "source-a04-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Public finish and tolerance-stage context",
+        "Public profile default and precedence"
+      ],
+      "allowed_deltas": [
+        "context.manufacturing.finish and tolerance_stage",
+        "drawing.FINISH and TOLERANCE STAGE",
+        "context.profile"
+      ],
+      "invariants": [
+        "Geometry and package obligations remain clear",
+        "Missing stage without default is uncertainty"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "finish": "anodize",
+            "tolerance_stage": null
+          }
+        },
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-8f7e5ab5b5ff",
+      "operator": "A01",
+      "variant": "profile_alternative",
+      "ancestry": "source-a01-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Top-open rectangular pocket",
+        "W1 is mapped +X wall",
+        "Material-dependent named profile"
+      ],
+      "allowed_deltas": [
+        "geometry.W1 wall",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Other topology remains one planar solid",
+        "Drawing must faithfully represent changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 60.0,
+          "length": 40.0,
+          "height": 20.0,
+          "pocket_width": 50.0,
+          "pocket_length": 30.0,
+          "pocket_depth": 12.0,
+          "wall": 0.6
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-09f019302412",
+      "operator": "A02",
+      "variant": "boundary",
+      "ancestry": "source-a02-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Central blind bore with visible top-origin depth",
+        "Named advisory depth/diameter policy"
+      ],
+      "allowed_deltas": [
+        "geometry.H1 depth",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Blind floor remains",
+        "Drawing faithfully represents changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 60.0,
+          "length": 40.0,
+          "height": 35.0,
+          "diameter": 6.0,
+          "depth": 24.0,
+          "counterbore_diameter": 12.0,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-38992521a191",
+      "operator": "A03",
+      "variant": "profile_alternative",
+      "ancestry": "source-a03-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit XYZ setup",
+        "Public stock and fixture allowances",
+        "Named finite envelope"
+      ],
+      "allowed_deltas": [
+        "geometry.envelope",
+        "context.setup allowances",
+        "context.profile"
+      ],
+      "invariants": [
+        "Supported one-solid topology",
+        "Drawing faithfully represents changed geometry",
+        "No universal machinability assertion"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 125.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-6eecb8aeb730",
+      "operator": "A04",
+      "variant": "repaired",
+      "ancestry": "source-a04-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Public finish and tolerance-stage context",
+        "Public profile default and precedence"
+      ],
+      "allowed_deltas": [
+        "context.manufacturing.finish and tolerance_stage",
+        "drawing.FINISH and TOLERANCE STAGE",
+        "context.profile"
+      ],
+      "invariants": [
+        "Geometry and package obligations remain clear",
+        "Missing stage without default is uncertainty"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "finish": "anodize",
+            "tolerance_stage": null
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-64d3cfddad77",
+      "operator": "A01",
+      "variant": "defective",
+      "ancestry": "source-a01-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Top-open rectangular pocket",
+        "W1 is mapped +X wall",
+        "Material-dependent named profile"
+      ],
+      "allowed_deltas": [
+        "geometry.W1 wall",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Other topology remains one planar solid",
+        "Drawing must faithfully represent changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 21.0,
+          "pocket_width": 52.0,
+          "pocket_length": 31.0,
+          "pocket_depth": 12.0,
+          "wall": 1.2
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "material": "ABS",
+            "material_class": "plastic"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-6081bdd3ae19",
+      "operator": "A02",
+      "variant": "defective",
+      "ancestry": "source-a02-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Central blind bore with visible top-origin depth",
+        "Named advisory depth/diameter policy"
+      ],
+      "allowed_deltas": [
+        "geometry.H1 depth",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Blind floor remains",
+        "Drawing faithfully represents changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.0,
+          "depth": 30.0,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "material": "ABS",
+            "material_class": "plastic"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-97c1b88a14b7",
+      "operator": "A03",
+      "variant": "defective",
+      "ancestry": "source-a03-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit XYZ setup",
+        "Public stock and fixture allowances",
+        "Named finite envelope"
+      ],
+      "allowed_deltas": [
+        "geometry.envelope",
+        "context.setup allowances",
+        "context.profile"
+      ],
+      "invariants": [
+        "Supported one-solid topology",
+        "Drawing faithfully represents changed geometry",
+        "No universal machinability assertion"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 120.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "setup": {
+            "stock_allowance_mm": [
+              2.0,
+              0.0,
+              0.0
+            ],
+            "fixture_allowance_mm": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-1e797e37160f",
+      "operator": "A04",
+      "variant": "underdetermined",
+      "ancestry": "source-a04-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Public finish and tolerance-stage context",
+        "Public profile default and precedence"
+      ],
+      "allowed_deltas": [
+        "context.manufacturing.finish and tolerance_stage",
+        "drawing.FINISH and TOLERANCE STAGE",
+        "context.profile"
+      ],
+      "invariants": [
+        "Geometry and package obligations remain clear",
+        "Missing stage without default is uncertainty"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "finish": "paint",
+            "tolerance_stage": null
+          }
+        },
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-fa3eb88bee25",
+      "operator": "A01",
+      "variant": "profile_alternative",
+      "ancestry": "source-a01-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Top-open rectangular pocket",
+        "W1 is mapped +X wall",
+        "Material-dependent named profile"
+      ],
+      "allowed_deltas": [
+        "geometry.W1 wall",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Other topology remains one planar solid",
+        "Drawing must faithfully represent changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 21.0,
+          "pocket_width": 52.0,
+          "pocket_length": 31.0,
+          "pocket_depth": 12.0,
+          "wall": 1.2
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "material": "ABS",
+            "material_class": "plastic"
+          }
+        },
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-545b9d71e66d",
+      "operator": "A02",
+      "variant": "profile_alternative",
+      "ancestry": "source-a02-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Central blind bore with visible top-origin depth",
+        "Named advisory depth/diameter policy"
+      ],
+      "allowed_deltas": [
+        "geometry.H1 depth",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Blind floor remains",
+        "Drawing faithfully represents changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.0,
+          "depth": 30.0,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "material": "ABS",
+            "material_class": "plastic"
+          }
+        },
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ae86e2b10c71",
+      "operator": "A03",
+      "variant": "profile_alternative",
+      "ancestry": "source-a03-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit XYZ setup",
+        "Public stock and fixture allowances",
+        "Named finite envelope"
+      ],
+      "allowed_deltas": [
+        "geometry.envelope",
+        "context.setup allowances",
+        "context.profile"
+      ],
+      "invariants": [
+        "Supported one-solid topology",
+        "Drawing faithfully represents changed geometry",
+        "No universal machinability assertion"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 120.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "setup": {
+            "stock_allowance_mm": [
+              2.0,
+              0.0,
+              0.0
+            ],
+            "fixture_allowance_mm": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-aa84ebbe430a",
+      "operator": "A04",
+      "variant": "repaired",
+      "ancestry": "source-a04-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Public finish and tolerance-stage context",
+        "Public profile default and precedence"
+      ],
+      "allowed_deltas": [
+        "context.manufacturing.finish and tolerance_stage",
+        "drawing.FINISH and TOLERANCE STAGE",
+        "context.profile"
+      ],
+      "invariants": [
+        "Geometry and package obligations remain clear",
+        "Missing stage without default is uncertainty"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "finish": "paint",
+            "tolerance_stage": null
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-e2178443f0a2",
+      "operator": "A01",
+      "variant": "defective",
+      "ancestry": "source-a01-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Top-open rectangular pocket",
+        "W1 is mapped +X wall",
+        "Material-dependent named profile"
+      ],
+      "allowed_deltas": [
+        "geometry.W1 wall",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Other topology remains one planar solid",
+        "Drawing must faithfully represent changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 0.79
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-da5f9b93e7b3",
+      "operator": "A02",
+      "variant": "defective",
+      "ancestry": "source-a02-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Central blind bore with visible top-origin depth",
+        "Named advisory depth/diameter policy"
+      ],
+      "allowed_deltas": [
+        "geometry.H1 depth",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Blind floor remains",
+        "Drawing faithfully represents changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 37.0,
+          "diameter": 6.0,
+          "depth": 30.0,
+          "counterbore_diameter": 12.4,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-32c8975b3fc7",
+      "operator": "A03",
+      "variant": "defective",
+      "ancestry": "source-a03-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit XYZ setup",
+        "Public stock and fixture allowances",
+        "Named finite envelope"
+      ],
+      "allowed_deltas": [
+        "geometry.envelope",
+        "context.setup allowances",
+        "context.profile"
+      ],
+      "invariants": [
+        "Supported one-solid topology",
+        "Drawing faithfully represents changed geometry",
+        "No universal machinability assertion"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 118.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 108.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "setup": {
+            "stock_allowance_mm": [
+              2.0,
+              0.0,
+              0.0
+            ],
+            "fixture_allowance_mm": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-e129f338e86c",
+      "operator": "A04",
+      "variant": "underdetermined",
+      "ancestry": "source-a04-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Public finish and tolerance-stage context",
+        "Public profile default and precedence"
+      ],
+      "allowed_deltas": [
+        "context.manufacturing.finish and tolerance_stage",
+        "drawing.FINISH and TOLERANCE STAGE",
+        "context.profile"
+      ],
+      "invariants": [
+        "Geometry and package obligations remain clear",
+        "Missing stage without default is uncertainty"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "finish": "anodize",
+            "tolerance_stage": null
+          }
+        },
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-f203882a9c83",
+      "operator": "A01",
+      "variant": "boundary",
+      "ancestry": "source-a01-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Top-open rectangular pocket",
+        "W1 is mapped +X wall",
+        "Material-dependent named profile"
+      ],
+      "allowed_deltas": [
+        "geometry.W1 wall",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Other topology remains one planar solid",
+        "Drawing must faithfully represent changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 0.8
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ea2b26186f34",
+      "operator": "A02",
+      "variant": "profile_alternative",
+      "ancestry": "source-a02-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Central blind bore with visible top-origin depth",
+        "Named advisory depth/diameter policy"
+      ],
+      "allowed_deltas": [
+        "geometry.H1 depth",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Blind floor remains",
+        "Drawing faithfully represents changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 37.0,
+          "diameter": 6.0,
+          "depth": 30.0,
+          "counterbore_diameter": 12.4,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {},
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-2822eec05cba",
+      "operator": "A03",
+      "variant": "profile_alternative",
+      "ancestry": "source-a03-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit XYZ setup",
+        "Public stock and fixture allowances",
+        "Named finite envelope"
+      ],
+      "allowed_deltas": [
+        "geometry.envelope",
+        "context.setup allowances",
+        "context.profile"
+      ],
+      "invariants": [
+        "Supported one-solid topology",
+        "Drawing faithfully represents changed geometry",
+        "No universal machinability assertion"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 118.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 108.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "setup": {
+            "stock_allowance_mm": [
+              2.0,
+              0.0,
+              0.0
+            ],
+            "fixture_allowance_mm": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-c07e0122782a",
+      "operator": "A04",
+      "variant": "repaired",
+      "ancestry": "source-a04-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Public finish and tolerance-stage context",
+        "Public profile default and precedence"
+      ],
+      "allowed_deltas": [
+        "context.manufacturing.finish and tolerance_stage",
+        "drawing.FINISH and TOLERANCE STAGE",
+        "context.profile"
+      ],
+      "invariants": [
+        "Geometry and package obligations remain clear",
+        "Missing stage without default is uncertainty"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "finish": "anodize",
+            "tolerance_stage": "after_finish"
+          }
+        },
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-a2ce7c810316",
+      "operator": "O01",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "omit": [
+            "H1 DIAMETER"
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-cad60dcf2668",
+      "operator": "O01",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-01",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "h1_diameter": 6.8
+        },
+        "context_overrides": {
+          "manufacturing": {
+            "model_stage": "intermediate",
+            "transition": null
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-99b92e1af889",
+      "operator": "A01",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-02",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Top-open rectangular pocket",
+        "W1 is mapped +X wall",
+        "Material-dependent named profile"
+      ],
+      "allowed_deltas": [
+        "geometry.W1 wall",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Other topology remains one planar solid",
+        "Drawing must faithfully represent changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 60.0,
+          "length": 40.0,
+          "height": 20.0,
+          "pocket_width": 50.0,
+          "pocket_length": 30.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "material": "Unspecified alloy",
+            "material_class": "unknown"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-1a1ac15b76d9",
+      "operator": "A04",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-03",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Public finish and tolerance-stage context",
+        "Public profile default and precedence"
+      ],
+      "allowed_deltas": [
+        "context.manufacturing.finish and tolerance_stage",
+        "drawing.FINISH and TOLERANCE STAGE",
+        "context.profile"
+      ],
+      "invariants": [
+        "Geometry and package obligations remain clear",
+        "Missing stage without default is uncertainty"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 60.0,
+          "length": 40.0,
+          "height": 35.0,
+          "diameter": 6.0,
+          "depth": 24.0,
+          "counterbore_diameter": 12.0,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "finish": "anodize",
+            "tolerance_stage": null
+          }
+        },
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-dc1db9b59138",
+      "operator": "O01",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-04",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 82.0,
+          "length": 51.0,
+          "height": 8.4,
+          "diameter": 6.2
+        },
+        "drawing_overrides": {
+          "omit": [
+            "H1 DIAMETER"
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-ea25ed5b4499",
+      "operator": "O01",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-05",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 82.0,
+          "length": 51.0,
+          "height": 8.4,
+          "diameter": 6.2
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.0
+        },
+        "context_overrides": {
+          "manufacturing": {
+            "model_stage": "intermediate",
+            "transition": null
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-a0908edab51b",
+      "operator": "A01",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-06",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Top-open rectangular pocket",
+        "W1 is mapped +X wall",
+        "Material-dependent named profile"
+      ],
+      "allowed_deltas": [
+        "geometry.W1 wall",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Other topology remains one planar solid",
+        "Drawing must faithfully represent changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 21.0,
+          "pocket_width": 52.0,
+          "pocket_length": 31.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "material": "Unspecified alloy",
+            "material_class": "unknown"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-d963a109d42e",
+      "operator": "A04",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-07",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Public finish and tolerance-stage context",
+        "Public profile default and precedence"
+      ],
+      "allowed_deltas": [
+        "context.manufacturing.finish and tolerance_stage",
+        "drawing.FINISH and TOLERANCE STAGE",
+        "context.profile"
+      ],
+      "invariants": [
+        "Geometry and package obligations remain clear",
+        "Missing stage without default is uncertainty"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 62.0,
+          "length": 41.0,
+          "height": 36.0,
+          "diameter": 6.2,
+          "depth": 24.8,
+          "counterbore_diameter": 12.2,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "finish": "anodize",
+            "tolerance_stage": null
+          }
+        },
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-575c59f95763",
+      "operator": "O01",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-08",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 84.0,
+          "length": 52.0,
+          "height": 8.8,
+          "diameter": 6.4
+        },
+        "drawing_overrides": {
+          "omit": [
+            "H1 DIAMETER"
+          ]
+        },
+        "context_overrides": {},
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-b50ac48e1e40",
+      "operator": "O01",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-09",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Explicit H1 bore mapping",
+        "Same-stage diameter unless public transition or REF control"
+      ],
+      "allowed_deltas": [
+        "drawing.H1 DIAMETER",
+        "context.authority.dimensions",
+        "context.manufacturing.model_stage",
+        "context.manufacturing.transition",
+        "drawing.TRANSITION"
+      ],
+      "invariants": [
+        "STEP geometry unchanged",
+        "Other annotations unchanged",
+        "Counts, units, material, release and RQ1 unchanged"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 84.0,
+          "length": 52.0,
+          "height": 8.8,
+          "diameter": 6.4
+        },
+        "drawing_overrides": {
+          "h1_diameter": 7.2
+        },
+        "context_overrides": {
+          "manufacturing": {
+            "model_stage": "intermediate",
+            "transition": null
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-561193c38afd",
+      "operator": "A01",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-10",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Top-open rectangular pocket",
+        "W1 is mapped +X wall",
+        "Material-dependent named profile"
+      ],
+      "allowed_deltas": [
+        "geometry.W1 wall",
+        "context.profile",
+        "context.manufacturing.material and material_class"
+      ],
+      "invariants": [
+        "Other topology remains one planar solid",
+        "Drawing must faithfully represent changed geometry",
+        "Package obligations remain clear"
+      ],
+      "source_parameters": {
+        "family": "pocket_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 22.0,
+          "pocket_width": 54.0,
+          "pocket_length": 32.0,
+          "pocket_depth": 12.0,
+          "wall": 5.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "material": "Unspecified alloy",
+            "material_class": "unknown"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-cb029c8ef46c",
+      "operator": "A04",
+      "variant": "underdetermined",
+      "ancestry": "source-uncertain-11",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "Public finish and tolerance-stage context",
+        "Public profile default and precedence"
+      ],
+      "allowed_deltas": [
+        "context.manufacturing.finish and tolerance_stage",
+        "drawing.FINISH and TOLERANCE STAGE",
+        "context.profile"
+      ],
+      "invariants": [
+        "Geometry and package obligations remain clear",
+        "Missing stage without default is uncertainty"
+      ],
+      "source_parameters": {
+        "family": "bore_block",
+        "parameters": {
+          "width": 64.0,
+          "length": 42.0,
+          "height": 37.0,
+          "diameter": 6.4,
+          "depth": 25.6,
+          "counterbore_diameter": 12.4,
+          "counterbore_depth": 4.0
+        },
+        "drawing_overrides": {},
+        "context_overrides": {
+          "manufacturing": {
+            "finish": "anodize",
+            "tolerance_stage": null
+          }
+        },
+        "profile_name": "relaxed",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "case_id": "pk-61e732a788ae",
+      "operator": "O05",
+      "variant": "valid_alternative",
+      "ancestry": "source-sparse-00",
+      "partition": "development",
+      "seed": 42,
+      "prerequisites": [
+        "RQ1 explicitly names required visible surface roughness",
+        "STEP alone cannot represent RQ1"
+      ],
+      "allowed_deltas": [
+        "drawing.SURFACE ROUGHNESS",
+        "drawing.SURFACE FINISH",
+        "context.requirements",
+        "valid_alternative_only.drawing model dimensions with public STEP authority"
+      ],
+      "invariants": [
+        "STEP unchanged",
+        "Units, material, stages, release and profile unchanged",
+        "Required drawing-only surface specification remains required when public RQ1 says so"
+      ],
+      "source_parameters": {
+        "family": "plate",
+        "parameters": {
+          "width": 80.0,
+          "length": 50.0,
+          "height": 8.0,
+          "diameter": 6.0
+        },
+        "drawing_overrides": {
+          "sparse": true
+        },
+        "context_overrides": {
+          "authority": {
+            "dimensions": "step"
+          }
+        },
+        "profile_name": "standard",
+        "layout_ancestry": "bounded-vector-a4-v1"
+      }
+    }
+  ]
+}

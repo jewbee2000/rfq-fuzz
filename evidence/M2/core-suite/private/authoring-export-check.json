@@ -1,0 +1,2788 @@
+{
+  "status": "generated_not_oracle_validated",
+  "summary": {
+    "schema_version": "1.0",
+    "suite_version": "core-1.0",
+    "seed": 42,
+    "public_cases": 145,
+    "configuration_sha256": "95a8a730ead48e8098c0e8821d5c05288048d5bdf58ea28a1f30bcb8b501d5dc",
+    "operator_counts": {
+      "A01": 9,
+      "A02": 6,
+      "A03": 6,
+      "A04": 9,
+      "O01": 24,
+      "O02": 18,
+      "O03": 18,
+      "O04": 18,
+      "O05": 19,
+      "O06": 18
+    },
+    "partition_counts": {
+      "development": 145
+    },
+    "limitations": [
+      "Synthetic authored finite obligations only",
+      "All diagrams share one bounded layout; no independent layout transfer claimed",
+      "Final fixtures must pass independent artifact/isolation validation"
+    ],
+    "output": "evidence\\M2\\core-suite"
+  },
+  "rows": [
+    {
+      "case_id": "pk-0236ce4290c1",
+      "packet_sha256": "4f774087b830c30af74396b1027ff19390c4dfc3bf387579b685b753d1c0fc73",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 7075-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 68.00 x 44.00 x 39.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 27.20 mm\nC1 DIAMETER = 12.80 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "cf0bf1f287c09cb033c8894d148169ba62a40beff7d631a9e4b1b9a7ae55a9a4",
+        "drawing.pdf": "2e488bc2420fd60e2a65ebd4e7200be693182e348ca242ac4135fea090eab91b",
+        "drawing.png": "3abf225d3943dd24cd4570249dfdd6540160e77cc39e13c7c29d553ec3eea2fc"
+      }
+    },
+    {
+      "case_id": "pk-02ab6586f8d9",
+      "packet_sha256": "cd516124e1a0c99c4cf635c926e066121d4c45de7cd6b16b40bed859a8b3bcb8",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "c4ef85c43f355a79d95c0c729077a37e07d565cca05e602128e0ed3502891475",
+        "drawing.pdf": "ca470a0d878edbba6448ded99aa6e06923147c213d7702f73e87af11701efab5",
+        "drawing.png": "9bc0068f558b109a8030be3abf6dd461ab7670ba24d9cda8d88f1f6670ab4cc4"
+      }
+    },
+    {
+      "case_id": "pk-0972292025ad",
+      "packet_sha256": "042e1342b22fd0fddaf5eb97a7ee1620adb79f22510932e6fc8305a3207204e7",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "ecb5457a4adb2d3a7d1ea63662e9fc0a0fdafdd7fff92c9b020cee3c1c164bc8",
+        "drawing.pdf": "83a5c1ebc7b7284f6c3c0bde5fc89ec7b3e43e4e78a1fa6b6e665e967b1c35d2",
+        "drawing.png": "96af9b60ce167f80c34299f4dc9f6a303d7e013105af09b26308b4896e94c2f4"
+      }
+    },
+    {
+      "case_id": "pk-09babc7eb3cd",
+      "packet_sha256": "47c1f377074324ed99b1b859b25432ec02e6e12ef8578aeec75448f841f2488d",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        88.0,
+        54.0,
+        9.6
+      ],
+      "actual_volume_mm3": 44224.63445470085,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 88.00 x 54.00 x 9.60 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "0e82908162a414a8b3c871dbd0c3bff6dc2371828c3e8a30247116c97a3f88fb",
+        "drawing.pdf": "83ac8e77e61bf46c44c354049e675ad48da1142d3411149d26eccbef9f4b7a23",
+        "drawing.png": "717f78176dc201a201b699288abeda9857dc68d82392ea1033f6563b4a8efe7e"
+      }
+    },
+    {
+      "case_id": "pk-09f019302412",
+      "packet_sha256": "d5e21e3f4e6dc093dde4e0e5ade2bba8a85f05d674508064be0907d62ef8aa81",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        60.0,
+        40.0,
+        35.0
+      ],
+      "actual_volume_mm3": 82982.1239802369,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 60.00 x 40.00 x 35.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.00 mm\nC1 DIAMETER = 12.00 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "ef44110d7cb6d60632babd4dfe77eee0e1c8c2f69cf2102c3099a6bc5bfbebc3",
+        "drawing.pdf": "b43b32f86dc90f52c9de59506fd69de22abb8e492d910c01ce65fa6e784f87b4",
+        "drawing.png": "776f43c90606f9edd4cc7c211460368f08e666d19eba1a9545a7b09c8d66a59e"
+      }
+    },
+    {
+      "case_id": "pk-09f186da04ba",
+      "packet_sha256": "49586eb06cc5c1b7a19617381d379f28529d600e49f3cb4b3ee65327cea104d8",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        40.0
+      ],
+      "actual_volume_mm3": 124545.44260138787,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 40.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.00 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 28.00 mm\nC1 DIAMETER = 13.00 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "80177cb8beb00f4b1923805939af0c930378237c3871037c8ced1340f9ff82ef",
+        "drawing.pdf": "5d1c621b83af8c885135ac4c64aec9dd3fabf263a8c9fff0148f2c986db2e0ac",
+        "drawing.png": "68fd31b11cf14b7e17cb5f0ed4fd3bec798e33d2fd691731168818733c0e0e2b"
+      }
+    },
+    {
+      "case_id": "pk-0d8f75aead6b",
+      "packet_sha256": "ad4eafda23ac8b60a826b62f576b336acd5c5c9821492b40b60f7bb1adb01e88",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "cfe71141f8c065120c51dc8f004939e17507b5a6c3eaf547d8241b662f7d534c",
+        "drawing.pdf": "92285c6f77fd3a2755a59c71f04a9b9ba29bd33d5de527ba4e652fdb6b239273",
+        "drawing.png": "83b48215181a6d8bbbdabe10a876278285f79404083439ce35b2e672eba9bbc6"
+      }
+    },
+    {
+      "case_id": "pk-0e6ba646af6e",
+      "packet_sha256": "aec87289ca809c8f5231f78f59f04483b85d11d27259434c999839e05020f0c0",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = AL6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "275d383bca55c586e6277b23f62b50d9d4c7489a44d5e5b4509bd27148d7f744",
+        "drawing.pdf": "6e40b0cf4362de36063488f7582a99daa5d8085ada3dcc0795d37917ec9bfeb2",
+        "drawing.png": "558ac6133d6e0c520a6d118cdec7d3ff0381d4d56afc82e06d7b31ec689feb92"
+      }
+    },
+    {
+      "case_id": "pk-0e9db02e3be4",
+      "packet_sha256": "2f7d406aef8c070982729890b89adc593c2b73d6dbab7cdb5c879c26e29c6ccf",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "7a4b1b092b5cfd624090876517b6d49dd126460da2f626334c4a9875f57e6751",
+        "drawing.pdf": "2e73ebcd580be6a8c38a129084bb4118618a524616066872df8d88203efbcf58",
+        "drawing.png": "e09411600146c5aba9a7dd4bf78ceb6e5fb7504fddaa9e66102997aedb6d8e57"
+      }
+    },
+    {
+      "case_id": "pk-0f02bb09f4bb",
+      "packet_sha256": "26b12d59c8f4053ac023b374780071b7796aab85cd4c045a72aa706604f50aa9",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 25.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 60.00 mm\nP1 LENGTH = 35.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "5d128c44f92633e5735a432c243fce4a6c401a3dd46d8948a76a3221cb512890",
+        "drawing.pdf": "8bc3d56633661e8d54ee087c08a53eb66bb48c527c52ecae86c45c7f66c8bb02",
+        "drawing.png": "a0dbcdd3c1f0ac55603204233817f67d35569d5e64e961ae9ae24db18b80fef1"
+      }
+    },
+    {
+      "case_id": "pk-106263ec24a1",
+      "packet_sha256": "af92b677a5485b5262b60d4ef336580156e2e9a91da14bc2198ce3832b38e548",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        88.0,
+        54.0,
+        9.6
+      ],
+      "actual_volume_mm3": 44224.63445470085,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = intermediate\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 88.00 x 54.00 x 9.60 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nTRANSITION = ream H1 to drawing stage\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "0e82908162a414a8b3c871dbd0c3bff6dc2371828c3e8a30247116c97a3f88fb",
+        "drawing.pdf": "51385e57d84d7d85be9e750806ffd5adb9fe49acc921ef829ad68dd39a93e1bd",
+        "drawing.png": "e4ad13c80d3259ae984e9a51a4fbfa72f7fafe066f9f74ed48d7f93876d52945"
+      }
+    },
+    {
+      "case_id": "pk-115cdff17114",
+      "packet_sha256": "20b67d420161b5ecad6b3a5cbd8002fc302a0b0cd9cd7fed75d3303cf7ae0774",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 3\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "f83b337df20a83e156c6f40aa2f21df4a2fcfe4072eaf714d67ff77e078b7151",
+        "drawing.pdf": "a0de25654e96e2cc1ffd284f821e72a972cc4f0a6d0d59289f569d27cdc3bbd9",
+        "drawing.png": "2f7e774f02c1a7ba413851aa928969fc804e16930e5c70adbfb65f8ea4c763f8"
+      }
+    },
+    {
+      "case_id": "pk-17fcef5cb8a9",
+      "packet_sha256": "cfcf92752736ef751f8202d3220f756f6e22c74413dc68c8f26ec3984eb4fedd",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 7075-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "55132690b28025c6602d7748e09fc00850aa51957b821f3fdb4420d151ce08da",
+        "drawing.pdf": "23a7fb42821ec2ab4be924a7f678b4f0be2f33c7b5a1ae03e2072d40218f296d",
+        "drawing.png": "85f240ac1f8d389fc5dc3b42c33eb3d874563e93f3831982537bfe52d8ec6608"
+      }
+    },
+    {
+      "case_id": "pk-18197752f580",
+      "packet_sha256": "f588d8ca1d372a7516fafc014a972a0c37e5644a5fb1962c215ffd6ef9e8fca4",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 68.00 x 44.00 x 39.00 mm\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 27.20 mm\nC1 DIAMETER = 12.80 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "c176a46cb0b65d142760d69588e6d2114c73856cedb3e37095617590465713e3",
+        "drawing.pdf": "97ae501747d0615cd7e33230256cb41457479ae7df25ae0c3ca91ec6ab5498f2",
+        "drawing.png": "4bc4a3a484958498aabd3f46af0733ab92944065c2b0e20fe2b870f4c8660e0a"
+      }
+    },
+    {
+      "case_id": "pk-1a1ac15b76d9",
+      "packet_sha256": "4c90073d5eb6993cc2a3e36c6a983d6bc51b846e15daecea921af86616abef08",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        60.0,
+        40.0,
+        35.0
+      ],
+      "actual_volume_mm3": 82982.1239802369,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = anodize\nTOLERANCE STAGE = UNSPECIFIED\nENVELOPE = 60.00 x 40.00 x 35.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.00 mm\nC1 DIAMETER = 12.00 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "8e35d7ec7eb4c73512b26dc321bd968ab953329c07b948822af555f905f7b929",
+        "drawing.pdf": "13688e7490ef186878b313ba778ea46467425398f57074b1f9cee8bbd3c88a3c",
+        "drawing.png": "230debec821f023d97313c3311bd5997175e04960c517b214f56820f32a02740"
+      }
+    },
+    {
+      "case_id": "pk-1a4f0a9ed56d",
+      "packet_sha256": "8a9397ff51f5f4024daeadab87aeff60a3cf8969b949b7cde6fcf52e86ff42c6",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 68.0000 x 44.0000 x 39.0000 in\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.8000 +/- 0.0500 in\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 27.2000 in\nC1 DIAMETER = 12.8000 in\nC1 DEPTH = 4.0000 in\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "2598a9c112990e96eca29f7ef84286d77e7cd6ded039c3c6ff17c63d79278d11",
+        "drawing.pdf": "3cc0ac7781e34ca8e8f566f1e8dbe0ef93b13d61766290f6dc143118861c02c2",
+        "drawing.png": "cb858b49bd9b2af0ac9329479a52b0610c8148b1aefc91493c10cb703dbaac3f"
+      }
+    },
+    {
+      "case_id": "pk-1c753dd96115",
+      "packet_sha256": "470eae4efe812b2143a47af4014867da09e1c44698df93132211908cd2ee7032",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.0000 x 41.0000 x 36.0000 in\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.2000 +/- 0.0500 in\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.8000 in\nC1 DIAMETER = 12.2000 in\nC1 DEPTH = 4.0000 in\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "b620f68d60aa39d72841c54bd0f0b83e62d9e972e7319d757e931d975c4f8957",
+        "drawing.pdf": "608adf2c7f2675fae3442f60d4618eceff3996c6cf82a1fd2a228ccb9bd3c4c1",
+        "drawing.png": "009f5bb17b442c771186044792cb7313df3e58bfd209c6794f88b4592aaff0bd"
+      }
+    },
+    {
+      "case_id": "pk-1c883f887ddb",
+      "packet_sha256": "7e39721d20c176dbf321b86fe2b729b3b821904ecdc106ab7570a2cff2205892",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nSURFACE FINISH = Ra 3.20 um\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "a7a87d35fd8b859bf7efa1eaea0265ef716b265e810f5314985a40e392ba385c",
+        "drawing.pdf": "390f71f1d0afc76e3283e0aab303a609f2460c198edd6a423be7b424f25df502",
+        "drawing.png": "e187d1e52d21cfb666b428312b8905d7e8a4b7dec6c6a6bf38f1cbfc4c734902"
+      }
+    },
+    {
+      "case_id": "pk-1d773b5ea500",
+      "packet_sha256": "ec950f44947b5a46a72546905f69ffe8a3e3e329a36c5a606f58c653125a0dab",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.00 +/- 0.05 mm REF\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "b50056a83cecd47ff627133dc6f09354d264ac0e207f1ceb475d5fe2302555c8",
+        "drawing.pdf": "b5b25a3b1d330aa1073d7e1eff0decae3cb77a06f5e67f4725fad6f76c9fb534",
+        "drawing.png": "7bb0eab730312aa5da7f1addec8ed6aa72a68b6499c209d0c6b5da4738c421a3"
+      }
+    },
+    {
+      "case_id": "pk-1e64a7273a13",
+      "packet_sha256": "0ef8077a3c854eb14d1ba54a318d54508a03fa378852b1937f157849e283cfc4",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 3.3858 x 2.0866 x 0.3622 in\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 0.2598 +/- 0.0020 in\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "7f826d800121a8fa3dbc2cb0e12687562627f958014eb843d19705aaa8d4e92f",
+        "drawing.pdf": "0c2fc66c04fc7296ed3be87c2d8b42f4b9b8c4fd9071fb8bb1c6e2ccd50d5e15",
+        "drawing.png": "3959621fa687541486db49468006c7d2c04e80c87f8bf1e9d1609609a8c4ec5d"
+      }
+    },
+    {
+      "case_id": "pk-1e797e37160f",
+      "packet_sha256": "21a38f4ba891e1f741ff5ecb7a518b5cafd1843ac0137961e2836fc80227b47d",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = paint\nTOLERANCE STAGE = UNSPECIFIED\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "ef3b10c96e24bb7410e642f6652c929bedcabab1975a348f5aa618a175e42e2f",
+        "drawing.pdf": "7605b98f21e5c754bb08ece366a5859266a206130878523f1a2e46e1b590c042",
+        "drawing.png": "e54278aa1d81124ba338e1281fcfbad516f8147444d608361dcc390cc4101ac0"
+      }
+    },
+    {
+      "case_id": "pk-1f0c863c5d78",
+      "packet_sha256": "03eb22cf87d3a48deb8db319a30097bf91ad7d368ebcc86553853285f804d091",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        84.0,
+        52.0,
+        8.8
+      ],
+      "actual_volume_mm3": 37306.01921119886,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 84.00 x 52.00 x 8.80 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.40 +/- 0.05 mm\nH1 COUNT = 2\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nOTHER\nOTHER\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "0e97b17cc7e8343b7f46078b688557e08a1877ab2f723ede05eab3cdd2ebb4b9",
+        "drawing.pdf": "9ebe49908a43f49c88275012f302d569a1c10db2c06b60e90bbbf658ea770456",
+        "drawing.png": "f48fb45110a14e5275900c398599f7c7ae80c255b63a20cddc023be9e35abf5e"
+      }
+    },
+    {
+      "case_id": "pk-1f4bf724cc1e",
+      "packet_sha256": "863f62a54785ba52e76dbd1b8b314ae9aa2556b38e5074cbaa6f869aaa211024",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 68.00 x 44.00 x 39.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 27.20 mm\nC1 DIAMETER = 12.80 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "0b212514e8ab02a1b4a199a7be0eb5b53dc030a3e81f6210ca24e0388bac7577",
+        "drawing.pdf": "945c0263e75918160f0aace473026b49823da9f8d5d9243b13f2b2defea12c0f",
+        "drawing.png": "d308c6750d2275937301389c8eec161d64d84e33814544a40cd79d65bac36a23"
+      }
+    },
+    {
+      "case_id": "pk-1f9b85f21b73",
+      "packet_sha256": "b09d1fd62fd8fc326d32540b4b224e669ec729ce82d998b78b93a76259d503d0",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "8f8e5ecb039f1a1dde0b55227ba7e20d52080ed1d4e4f458d5ab046083deff0e",
+        "drawing.pdf": "02f6a0b8a6a001d587a242d41cf5e7fd3d6121685772e228e8fc2378e223a01a",
+        "drawing.png": "4d21bd332b4464cacbd708a0e4f71c950943a7654f53403777bf00a22b84eb92"
+      }
+    },
+    {
+      "case_id": "pk-20397ad039d2",
+      "packet_sha256": "06e33ec04a16b4a9fc08bf03b4523cfffd0d4e8ff19363defec70dbdab90345b",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 2.4409 x 1.6142 x 1.4173 in\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 0.2441 +/- 0.0020 in\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 0.9764 in\nC1 DIAMETER = 0.4803 in\nC1 DEPTH = 0.1575 in\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "b620f68d60aa39d72841c54bd0f0b83e62d9e972e7319d757e931d975c4f8957",
+        "drawing.pdf": "3be382cfed7df83b33aa5c80dbe0ed4a16d4a97068b67695d0b23d2e4fd81732",
+        "drawing.png": "3e1066a8e4c6c792e6325101f7b4b8dfbc6f1d508e6a9f3e1d5965440c5e7a79"
+      }
+    },
+    {
+      "case_id": "pk-22b02cb073db",
+      "packet_sha256": "679e8605be24b3bfec8c5504a72615faccab25ed7fee1a5567b68b56af7b69a7",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.0000 x 42.0000 x 22.0000 in\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.0000 in\nP1 LENGTH = 32.0000 in\nP1 DEPTH = 12.0000 in\nW1 THICKNESS = 5.0000 in\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "1e3915dc429bd84bda40b9df7a3619a3edb8eb272902d349173815aeadb8c9b3",
+        "drawing.pdf": "71aaea0b327c3d2fa5f34434ffac850bdf0a1a0cf895cea983865c67084b370a",
+        "drawing.png": "dc6cbfb4549cf70ceda3603ba5212d6a9b8ff518d8b0ade68a433d987d555fa9"
+      }
+    },
+    {
+      "case_id": "pk-26ef967289f9",
+      "packet_sha256": "91a1e115186a2deb5aa2581da6ec6ee5938edc4ea2df73c03db80505131efd04",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "ecb5457a4adb2d3a7d1ea63662e9fc0a0fdafdd7fff92c9b020cee3c1c164bc8",
+        "drawing.pdf": "83a5c1ebc7b7284f6c3c0bde5fc89ec7b3e43e4e78a1fa6b6e665e967b1c35d2",
+        "drawing.png": "96af9b60ce167f80c34299f4dc9f6a303d7e013105af09b26308b4896e94c2f4"
+      }
+    },
+    {
+      "case_id": "pk-2822eec05cba",
+      "packet_sha256": "2e08ae98e3595b74362e5fc3834dd55f2ebcde9100ea7731025c7cce42a9a045",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        118.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 67560.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 118.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 108.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "1ace422b3d21b0936f4560180a1845c3b63dfab806aa0685528fb780e7b4ed59",
+        "drawing.pdf": "970ccd483f0c8ac2cc1a28f7e3e3b820728a6e4111c23ca93ee408b2ed7a88f5",
+        "drawing.png": "8a2cd1646dcab4424efa3b7344bfeccf8b080399f3441e1838692e13f305986d"
+      }
+    },
+    {
+      "case_id": "pk-29a505b379ef",
+      "packet_sha256": "3a389529df5d4c688d25e8d50e5bb4d206cf20800cc975a8018528eef15c175d",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "11f61fbc9e6edc81f6c4efaf6c9eb2b2a95d871c143777aa07411c706623ba77",
+        "drawing.pdf": "7a3e78910362c5d2264a37bb484accf963ae0fe80779998770ebc1128ec8e1fa",
+        "drawing.png": "128eb95c897cbdf3eb7d954efac0bfad2eca5baab3733299a33ec01a0f50ec59"
+      }
+    },
+    {
+      "case_id": "pk-2eaf55c4b3d6",
+      "packet_sha256": "7f60a86e23a7bd82a799c471fa182c53f73cd8b78e2b06278dd0df4a9721224d",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 68.00 x 44.00 x 39.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 27.20 mm\nC1 DIAMETER = 12.80 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "9d6d5450daee023f98ef035ca1385b1a068728042856b7c8a0bdbf71cbbd476a",
+        "drawing.pdf": "73a3cbf14ad10890f33b129df0b81557a46e1f75930d423dfe83e1320899c1e5",
+        "drawing.png": "b54310ba657f7cf9cd81afd633be46947b84936655f8839eb7a423bc93e48d01"
+      }
+    },
+    {
+      "case_id": "pk-32c8975b3fc7",
+      "packet_sha256": "2d478d5e73f8a90a673452c07067129d9b7555da8b5b1aafe235853e735dd445",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        118.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 67560.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 118.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 108.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "a255e92b76a2d0f5ec6ce2577d4433323c24a446b8ddd1b241971b796e03d0da",
+        "drawing.pdf": "970ccd483f0c8ac2cc1a28f7e3e3b820728a6e4111c23ca93ee408b2ed7a88f5",
+        "drawing.png": "8a2cd1646dcab4424efa3b7344bfeccf8b080399f3441e1838692e13f305986d"
+      }
+    },
+    {
+      "case_id": "pk-34a1f03c9a26",
+      "packet_sha256": "54140a51b6779ce8b62ae04a2e4eac0c31843c1856ec97b54f9c4105658b28fb",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 7075-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "a517828d8e415ed7963beb44e8f044e43c48bc88683b0fda98005098db233121",
+        "drawing.pdf": "754ee3a38d51a47c8884514fb2f5737d2400908f43393011c7855ce70f47b717",
+        "drawing.png": "0ff19782d0881a86470e429d259010f2f5ea5a4642f42eedddad9b2d9b3de6d0"
+      }
+    },
+    {
+      "case_id": "pk-3517bc37e061",
+      "packet_sha256": "7bd47c792a571d72e6f6e75ef7e2df08c0b408c838c522a5bb16374f8f57b26d",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 2.5197 x 1.6535 x 0.8661 in\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 2.1260 in\nP1 LENGTH = 1.2598 in\nP1 DEPTH = 0.4724 in\nW1 THICKNESS = 0.1969 in\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "c0b3433b069b9a927524e24857c323d45beed16d113431ab4f74fa447f3c7e5d",
+        "drawing.pdf": "7f1845597cb91fed611486d8e175f768c9ff4b36a1bec508dc3732c2e26d353a",
+        "drawing.png": "5f398b9494a802b7701857fa91c5024b8f50a4a80194e6e01afaeead0ce92890"
+      }
+    },
+    {
+      "case_id": "pk-37a1f4cc4a80",
+      "packet_sha256": "0dcabf2927dabccc5042196c3f429e8f5ab42ce050d6610dee7c3d38d0a568c9",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "579cbd8562f72bba7a3a4ff8165f4c10dfcb66f209ce47083da1eaba75e66dbe",
+        "drawing.pdf": "c36431b5fa62eacda73d846c5dfc66ba0f5361128d2d0937fd57ca3e00afd9d0",
+        "drawing.png": "e87d8cd8a3481dfb8ad37f013f44f830393d392bbd732f56e34de2c927402443"
+      }
+    },
+    {
+      "case_id": "pk-38992521a191",
+      "packet_sha256": "8c38c537999ed84a6d78f026d97b631ac4b874a0750a76f60bfb98da9921f4b7",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        125.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 49095.22131576611,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 125.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "74f60b37f58d18907537b90ed7cea4cd75c028b69cbf45e34a61e29a5801a4af",
+        "drawing.pdf": "5e976f58a560d941a4415c39a30be05198bbd807a1ea1fa74990197d07749dfd",
+        "drawing.png": "0732b9429253caa7e9f5410f81676e5962d0307d0dd084ad2270977ee0eb4221"
+      }
+    },
+    {
+      "case_id": "pk-3c5e473b2cce",
+      "packet_sha256": "20c0a925cea2e00a3680b39b4856dce70cdbf3eea9160e315c6758a6f9769692",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 2\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nOTHER\nOTHER\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "7a4b1b092b5cfd624090876517b6d49dd126460da2f626334c4a9875f57e6751",
+        "drawing.pdf": "632e7171867dea97e5e6586f6b56161c0a1a4b2f6245e960450629a56d7ff0d5",
+        "drawing.png": "318cc38c1e1ecc2dfd9d97d706281da5f237ce64539df7f75765ec95c8b5d1b1"
+      }
+    },
+    {
+      "case_id": "pk-3f31a2dd3b69",
+      "packet_sha256": "95afb4f3fdc21dbc07d33f01463122aa595866b0821e794ee6f82b46f1bd8e8e",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.0000 x 50.0000 x 8.0000 in\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.0000 +/- 0.0500 in\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "e9a63385a98db6e2d1530bdaa8dd4cd996cc5d98f350b2d9f7071459a6776fe9",
+        "drawing.pdf": "ba17b824f91f1a58b096170c62d0c81d32244ef34b632c36e3a8197cf882f309",
+        "drawing.png": "32ff034cdbf29ec301096f0476ca2cf11fc1fbac5d8686b1d86b4b9a24923ef9"
+      }
+    },
+    {
+      "case_id": "pk-46dc7b74bdfd",
+      "packet_sha256": "ef5f01e857c47c0064fbdc0b78f7e4f97972fdae278393ff5c087b7dc8e57cf8",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 25.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 60.00 mm\nP1 LENGTH = 35.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "820d57ccbd7096d33cf62a85ceebb257177e535bac7f2daeaa8f4f04ccd92a12",
+        "drawing.pdf": "8bc3d56633661e8d54ee087c08a53eb66bb48c527c52ecae86c45c7f66c8bb02",
+        "drawing.png": "a0dbcdd3c1f0ac55603204233817f67d35569d5e64e961ae9ae24db18b80fef1"
+      }
+    },
+    {
+      "case_id": "pk-47cd8d4bc03a",
+      "packet_sha256": "0eeac2419129cc57323d8578f824325940d3f8bfa940c9bff79f1cb0ed1e548a",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "9bfa1a7f47b9858e2669794b58ef9104add244d854c20e765fab10c0304f7cc2",
+        "drawing.pdf": "25a7674b36bf93f2cc8ec40315080774305fb01d9a5c3719d916e49ad13ff9f3",
+        "drawing.png": "e76023ddfd21c4b0c9d344c70a25b09e91a71274e2b699f3cd4cb6fd2c67ec83"
+      }
+    },
+    {
+      "case_id": "pk-4b73213e187d",
+      "packet_sha256": "84d6d14128768422d95a7c9d7f29cdaf3a3cb254a86e5fa83d22a8886c01fe60",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "8f8e5ecb039f1a1dde0b55227ba7e20d52080ed1d4e4f458d5ab046083deff0e",
+        "drawing.pdf": "c36431b5fa62eacda73d846c5dfc66ba0f5361128d2d0937fd57ca3e00afd9d0",
+        "drawing.png": "e87d8cd8a3481dfb8ad37f013f44f830393d392bbd732f56e34de2c927402443"
+      }
+    },
+    {
+      "case_id": "pk-4c78ba0418a8",
+      "packet_sha256": "fdda122679a5d106308f038a47ef751418711d53aad005b41226cdd10e3ae3f6",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = anodize\nTOLERANCE STAGE = UNSPECIFIED\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "c7d59407c3b4765318e015338d68deeb3d09bfc039f538bece41f5c0198e1043",
+        "drawing.pdf": "75039955eccaee1cd5460b7aec76f63307da01b1c196d079caf17fa438e8e4e4",
+        "drawing.png": "64656d0dd960d7b54d68005dab52799f43789f63ea0039fe730887c7821c3d31"
+      }
+    },
+    {
+      "case_id": "pk-4e11d082b740",
+      "packet_sha256": "17d0741c919b4c2b3a19ac9a9aaaaa2a3356896826f99b259747a479433f7912",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "a517828d8e415ed7963beb44e8f044e43c48bc88683b0fda98005098db233121",
+        "drawing.pdf": "d9ed4bfb9655ba57a84b095f0b028a1e54fb88caf6537b48387a7c558d349c3f",
+        "drawing.png": "aa1f814c7a63876e669b78752140e1deffa1c7c2bf0fa570bcc23a5bc8e93635"
+      }
+    },
+    {
+      "case_id": "pk-4ea0c6c9b775",
+      "packet_sha256": "836d138a7809b92fba8278efe0734c39557a7bf416e520f877e78eb8183efe7c",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        90.0,
+        55.0,
+        10.0
+      ],
+      "actual_volume_mm3": 47960.61959974097,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 90.00 x 55.00 x 10.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "1cb99f108ffb12fa096131f7f9f1ccfe0fdc0243c359534e58ecb58155994a0d",
+        "drawing.pdf": "afa0d1cfcd833776615d2c63e0a77e46d22a6e1b815dfe5444c37886c2fc95e6",
+        "drawing.png": "47896b5332ba162db5117d6ebe21e334a8fb5bcbbce71c28721f60605a3cc61c"
+      }
+    },
+    {
+      "case_id": "pk-505e2ff5277c",
+      "packet_sha256": "ce4b0d79288902940749efbda568838d1060953f67b735317989bd9992f88e3d",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "d305e537a18abe75d783177e262ed6bcb57eb46edbec0fb1c0c0b4adda9f2008",
+        "drawing.pdf": "6712f6e8e69a8da91e313d8e281883a90e0b7f072accebdf85b2a6aa15c1839c",
+        "drawing.png": "4b3e8254206270f4ea09f1ad36c9a6bc313bac90cf4964d55ac256792f6b4bda"
+      }
+    },
+    {
+      "case_id": "pk-527938eb836d",
+      "packet_sha256": "ac98c7da1d8d2da70871e8005b346a02a32ea83172f73c1e035c5c5e3aaf8869",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        82.0,
+        51.0,
+        8.4
+      ],
+      "actual_volume_mm3": 34114.39229852645,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 82.00 x 51.00 x 8.40 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 3\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "06a1e8cdae332ac8427e5cd6fc753b2379bbbb89f16eafba7ddba9e99c7b20e6",
+        "drawing.pdf": "f74309d020175d4db0b797f24eb3703885bd62da8423556ae6096efa4573a959",
+        "drawing.png": "a10c8a29cf5aa82d3344d10af15f422dba706209a0259791f2258fb187bf38b6"
+      }
+    },
+    {
+      "case_id": "pk-545b9d71e66d",
+      "packet_sha256": "cbefad2568f8fdad99337c81b355e5e03d524dffcfa04eb9e77a5ba4ab3afffd",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90309.27266849965,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = ABS\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 30.00 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "886ec5708887c7a16bf6517d78306915d656592eb09115ee6c63c69958f32193",
+        "drawing.pdf": "804476b98ad35141a914dd809abeda1c32612229fbfc51c654efde8ebc01adc4",
+        "drawing.png": "2b1e5ccba687b71c5a661af01db68ec54310d4d0944f5882421b911e6a128fd2"
+      }
+    },
+    {
+      "case_id": "pk-55e3e96a424c",
+      "packet_sha256": "45d44c0707a940a74b9fb84cfbdd62559030b231e93b966a9fe0b5ef966fa0d6",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "44e7eeab4820c3d5d596ae11a19b90d7cf50d51b9c371f736395ea487137ad0e",
+        "drawing.pdf": "f99af4fe4d49251e3ed65b2d43782ebfe5dcad479a2cd84c9b17e25eb7f7f42d",
+        "drawing.png": "976dcf01616f3b6b22ffc284339e4449d4fddb6c78a6cb26a354ae4d48bfa402"
+      }
+    },
+    {
+      "case_id": "pk-561193c38afd",
+      "packet_sha256": "cafb532d6394df6f30d09b93cf68743e06b6502bdedd03e809857ad4347b5523",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = Unspecified alloy\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "176322c973526cf4bbcddcb3dd1fd1d47570660b245ad1e0a887ee75550b7370",
+        "drawing.pdf": "8f014164b914663f46ad60637b2e64c5eb87eaa555c0e5efcb7e54bb542b5564",
+        "drawing.png": "67b5cc9c587ff28e22553be4d1d53fea92c26597df2c1e470e42fe270f509ab1"
+      }
+    },
+    {
+      "case_id": "pk-561dce67a79e",
+      "packet_sha256": "586e79dfaab6154b5c32ae0fe2a0813ff804cfda742282233242973c5b85cfc6",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 2.7559 x 1.7717 x 0.9843 in\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 2.3622 in\nP1 LENGTH = 1.3780 in\nP1 DEPTH = 0.4724 in\nW1 THICKNESS = 0.1969 in\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "820d57ccbd7096d33cf62a85ceebb257177e535bac7f2daeaa8f4f04ccd92a12",
+        "drawing.pdf": "6b3648606268af5cd3fa57c099cd240f7456b4289958c7d33985e28681e02fb9",
+        "drawing.png": "169d23c8748790987db795ac146bb791dd8cfed760713dfde69c8ae7eb33760c"
+      }
+    },
+    {
+      "case_id": "pk-56e3110bf351",
+      "packet_sha256": "a4f0ec6b054fee2c1f24128b5fdf8e5461b961eba6016c7754f25e87c76e882f",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "9bfa1a7f47b9858e2669794b58ef9104add244d854c20e765fab10c0304f7cc2",
+        "drawing.pdf": "6712f6e8e69a8da91e313d8e281883a90e0b7f072accebdf85b2a6aa15c1839c",
+        "drawing.png": "4b3e8254206270f4ea09f1ad36c9a6bc313bac90cf4964d55ac256792f6b4bda"
+      }
+    },
+    {
+      "case_id": "pk-57480d67f660",
+      "packet_sha256": "7a8351c4c0d0b026f7b0a7ea388e6c2e56b1541ec126fff8a91f23fa7adb7806",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        66.0,
+        43.0,
+        38.0
+      ],
+      "actual_volume_mm3": 106578.89320476998,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 66.00 x 43.00 x 38.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.40 +/- 0.05 mm REF\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 26.40 mm\nC1 DIAMETER = 12.60 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "08ee0784ad5c0cfff4bd21e4b3af8c6589400bd21c33d4189cff010ad802ee69",
+        "drawing.pdf": "9ce1d7dfa68da8646622e6a78134be5043f1d093a05f59a5da49ab6f5dc1dee4",
+        "drawing.png": "639618afa73b910c970dac4cb92ea4ee67bd705b38c3b58e1c76e94cd63a3707"
+      }
+    },
+    {
+      "case_id": "pk-575c59f95763",
+      "packet_sha256": "10081fbdce979aeed9fb5a0a6a7631be9b2056e6fc5fd6ea73ce81942d30d058",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        84.0,
+        52.0,
+        8.8
+      ],
+      "actual_volume_mm3": 37306.01921119886,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 84.00 x 52.00 x 8.80 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "23d390942f0490dc6654f2eea2d3fd6860ec764daeeb679f97659f8c1af9b5d8",
+        "drawing.pdf": "03c0beee4e6651affd1a665e2186732f970a036ad8620819c82c63e2ff1db742",
+        "drawing.png": "ea18fc1de60a3a3cebb65bbed444ab9de94520bc4cc3d52d0c7d0192ba8b6bcd"
+      }
+    },
+    {
+      "case_id": "pk-5898be5268b6",
+      "packet_sha256": "c587e9d457f5be88a4ffb6eb5ccc1eb2fe2b7b2788ce7cae94579ec9a7156f2c",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        84.0,
+        52.0,
+        8.8
+      ],
+      "actual_volume_mm3": 37306.01921119886,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 84.00 x 52.00 x 8.80 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.20 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "ab3bcac9ff3b920e74988b4fac42cdef926f0b4991ce03f4d35e3c7cf75d1982",
+        "drawing.pdf": "ed848ce3e5185838f899a5869ba2b507347cbc81bc2e65ca1cb2babff1690eb7",
+        "drawing.png": "42c0b210bc38eade8e3cdce4ec3c839a7d12e22b8a086fc3bca5814e96476854"
+      }
+    },
+    {
+      "case_id": "pk-5ae86f2432b6",
+      "packet_sha256": "607c7cccb339bff0b86e9838915f79856d61c4c2f42dd1c5ba1dcd6f57f8ac63",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 68.00 x 44.00 x 39.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 27.20 mm\nC1 DIAMETER = 12.80 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "c176a46cb0b65d142760d69588e6d2114c73856cedb3e37095617590465713e3",
+        "drawing.pdf": "73a3cbf14ad10890f33b129df0b81557a46e1f75930d423dfe83e1320899c1e5",
+        "drawing.png": "b54310ba657f7cf9cd81afd633be46947b84936655f8839eb7a423bc93e48d01"
+      }
+    },
+    {
+      "case_id": "pk-6081bdd3ae19",
+      "packet_sha256": "c17b5fa275c1db32bca9ffc22d71ba6804ffb36669a25c75db39bfeb49d312e2",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90309.27266849965,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = ABS\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 30.00 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "44cc33383774e27f3c221775904de546dd4284e8f69f992b3dbc087d7a5e98c3",
+        "drawing.pdf": "804476b98ad35141a914dd809abeda1c32612229fbfc51c654efde8ebc01adc4",
+        "drawing.png": "2b1e5ccba687b71c5a661af01db68ec54310d4d0944f5882421b911e6a128fd2"
+      }
+    },
+    {
+      "case_id": "pk-64d3cfddad77",
+      "packet_sha256": "92006d9137fbc7f551098867eccf2c75e8c5eccfb294948d7b0ef6b7c0c97e2c",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        21.0
+      ],
+      "actual_volume_mm3": 34037.99999999999,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = ABS\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 21.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 52.00 mm\nP1 LENGTH = 31.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 1.20 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "2a682fa5b0f0924eb62e9f8b66c1c990f13ee1148425308b0629e630e46d41a6",
+        "drawing.pdf": "cb966a24486cf2d886839a1d71b384a63b9c536ba95affb615b3a2940aa43067",
+        "drawing.png": "0887a213aa2e3eb77a101304122d42f288393dfb2b996173039732ad6d39883e"
+      }
+    },
+    {
+      "case_id": "pk-64f3961291b8",
+      "packet_sha256": "0a5a17eff4e93ab97458b31f630c3fbb488f48c742eae4819ad97b11c6d571e4",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 7075-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "275d383bca55c586e6277b23f62b50d9d4c7489a44d5e5b4509bd27148d7f744",
+        "drawing.pdf": "088118faf67b3777f1560a13aebb59b8c391d6a5707209af6a31e659085a08d0",
+        "drawing.png": "2351dc94aadb774394ab12b580a2499941ff62e95a66bd0a0955531ef5a3db2f"
+      }
+    },
+    {
+      "case_id": "pk-682a90cf745d",
+      "packet_sha256": "42cd86220c5856da7b8585b4eb399857503bda3d99a22fd06980997b540545f6",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 25.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 60.00 mm\nP1 LENGTH = 35.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "fae7a0aa3bf1bbdcadbf6f68fa5d4bbb44462b3d5089906745ebb5c969595bad",
+        "drawing.pdf": "ccb88aa12d9e1ca6b1311af2f9838799ffea7f39f9f83e42ffbe55da2d0bcb75",
+        "drawing.png": "15766f22db613512e78366fc29777819c99c3269c149ea5236d04af5b9c2d4a0"
+      }
+    },
+    {
+      "case_id": "pk-6b55e385fcd6",
+      "packet_sha256": "0e68fdbddcf8a2160ed4335088f3b165d52d8756e16c98def14a2b4d59510a0a",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 7075-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "cf5698dadb35a772e2ec5762e421dfe7dc2c4e4e233e470448b0e4116f44bcc9",
+        "drawing.pdf": "754ee3a38d51a47c8884514fb2f5737d2400908f43393011c7855ce70f47b717",
+        "drawing.png": "0ff19782d0881a86470e429d259010f2f5ea5a4642f42eedddad9b2d9b3de6d0"
+      }
+    },
+    {
+      "case_id": "pk-6eecb8aeb730",
+      "packet_sha256": "0dea0b2d849bbf52d500d2dbe7ae874442fceaf15496b1caac3643af401c9c8d",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = anodize\nTOLERANCE STAGE = UNSPECIFIED\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "e82d75493c4ea76b7fd211f4ecca9d07c04fd0d1dda94a16fb3cbddf34c33e65",
+        "drawing.pdf": "75039955eccaee1cd5460b7aec76f63307da01b1c196d079caf17fa438e8e4e4",
+        "drawing.png": "64656d0dd960d7b54d68005dab52799f43789f63ea0039fe730887c7821c3d31"
+      }
+    },
+    {
+      "case_id": "pk-719d0d062f4d",
+      "packet_sha256": "44db00a536aaa865b38c4883264d04dc54ff61007a9b184576164b888cd76dbc",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "a7a87d35fd8b859bf7efa1eaea0265ef716b265e810f5314985a40e392ba385c",
+        "drawing.pdf": "d9ed4bfb9655ba57a84b095f0b028a1e54fb88caf6537b48387a7c558d349c3f",
+        "drawing.png": "aa1f814c7a63876e669b78752140e1deffa1c7c2bf0fa570bcc23a5bc8e93635"
+      }
+    },
+    {
+      "case_id": "pk-77fb4f423c27",
+      "packet_sha256": "edabb32485f1db6c916a439fa3f8fe219374bca4e5102f7f3e567c2ace6c892e",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        40.0
+      ],
+      "actual_volume_mm3": 124545.44260138787,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 40.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.80 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 28.00 mm\nC1 DIAMETER = 13.00 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "80177cb8beb00f4b1923805939af0c930378237c3871037c8ced1340f9ff82ef",
+        "drawing.pdf": "48badd457e0e50f56b0986a319191490ab42065795ec64f404dbe6f23ac1c481",
+        "drawing.png": "69a3fb0ca96e2ec169af04c70328dd8fa9fa1522078dae0922dea05680c64712"
+      }
+    },
+    {
+      "case_id": "pk-784a7dc2ed7b",
+      "packet_sha256": "b7434e8b6a7d8bc9b73d5e712013606a9941536a29bc5b5b7150a950f208413f",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "f83b337df20a83e156c6f40aa2f21df4a2fcfe4072eaf714d67ff77e078b7151",
+        "drawing.pdf": "c36431b5fa62eacda73d846c5dfc66ba0f5361128d2d0937fd57ca3e00afd9d0",
+        "drawing.png": "e87d8cd8a3481dfb8ad37f013f44f830393d392bbd732f56e34de2c927402443"
+      }
+    },
+    {
+      "case_id": "pk-788b984b4ab1",
+      "packet_sha256": "2167d8949dc0b09361dbe055e38861b6fed6b1c89e240d2283f8fb0defa658f4",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        88.0,
+        54.0,
+        9.6
+      ],
+      "actual_volume_mm3": 44224.63445470085,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 88.00 x 54.00 x 9.60 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "5bb98823a7f92146ac5dcb5c4245edf33fcbbfc0a7abaed3f500e830abe4b6ab",
+        "drawing.pdf": "e0a904a3c99e2a8691a6eccef7f3db33e78cd890ea63ab46a3e8020243a86b2d",
+        "drawing.png": "6a4e9c64a1ccd77c061b134b9665e0bc634ce959a17dac054045a90a085a74c9"
+      }
+    },
+    {
+      "case_id": "pk-7972b6374a82",
+      "packet_sha256": "bc7c30f90c96cf633d87dc0a95c552075d232eafa2d8ee46664c77b0e41d7a48",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 2\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nOTHER\nOTHER\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "aeae684fd8ae09ccb2cf6797a5be5fa1a20b8e457a1b326eb2a4e4bd20db8be1",
+        "drawing.pdf": "c4ceb2c261cc8221ab47edd8033d0242787c9fffde34a89b40e5f8ef4b9d845a",
+        "drawing.png": "984c867d284ee662be311a1959aed8f6c94004ef3cd794ea84714b5b2ace1c44"
+      }
+    },
+    {
+      "case_id": "pk-84616073cbca",
+      "packet_sha256": "5b99f48452c8e4bc8f10bcc838e5fab8a036a23f305ee1beecdef8b12df7281a",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nSURFACE FINISH = Ra 3.20 um\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "53b99c75bfaf97ffc55185cf52e8ad5517cbfbdd40681668c75fc0d30c2fd3b9",
+        "drawing.pdf": "7901e0643da0d250e9880fa89f9a7e9f2928efb6def435b86204a9735cb74d84",
+        "drawing.png": "54ff61113bb8f62b172968ea79551c53863ed495ea0b30f7a9905249e4776a43"
+      }
+    },
+    {
+      "case_id": "pk-864009ed1e08",
+      "packet_sha256": "f74be7a7098dea50d832e9a55ef8a239b8ee5afefc66cc297377fd4e53fb59d5",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 25.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 60.00 mm\nP1 LENGTH = 35.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "09af22977c1109e4d496762536fcdd62fde3d45bce94face60086e866cc29e00",
+        "drawing.pdf": "8bc3d56633661e8d54ee087c08a53eb66bb48c527c52ecae86c45c7f66c8bb02",
+        "drawing.png": "a0dbcdd3c1f0ac55603204233817f67d35569d5e64e961ae9ae24db18b80fef1"
+      }
+    },
+    {
+      "case_id": "pk-868d38c05325",
+      "packet_sha256": "f46f0160249dc8c25af495eb614670c4f320b5dd39bf9583611e8bef167c149b",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "ecb5457a4adb2d3a7d1ea63662e9fc0a0fdafdd7fff92c9b020cee3c1c164bc8",
+        "drawing.pdf": "d9ed4bfb9655ba57a84b095f0b028a1e54fb88caf6537b48387a7c558d349c3f",
+        "drawing.png": "aa1f814c7a63876e669b78752140e1deffa1c7c2bf0fa570bcc23a5bc8e93635"
+      }
+    },
+    {
+      "case_id": "pk-886fe8751913",
+      "packet_sha256": "356168946987c7e42fcdc8ebfe84da2c8793c62c1adae8719cbaf54dac611ad2",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "cf5366dd21427a838bf1a266275c808240b9db1f91ea8f31a1ed813332feabee",
+        "drawing.pdf": "c36431b5fa62eacda73d846c5dfc66ba0f5361128d2d0937fd57ca3e00afd9d0",
+        "drawing.png": "e87d8cd8a3481dfb8ad37f013f44f830393d392bbd732f56e34de2c927402443"
+      }
+    },
+    {
+      "case_id": "pk-8ad7b09936d6",
+      "packet_sha256": "941f689919a1cfca419e6186e172ffe19c57b0239595047fbf76dbac2115402e",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        82.0,
+        51.0,
+        8.4
+      ],
+      "actual_volume_mm3": 34114.39229852645,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 82.00 x 51.00 x 8.40 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 2\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nOTHER\nOTHER\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "8379f47687f94e7ac6590e69fc80053fe5d39e86c7885ce7900ed3006f7a6913",
+        "drawing.pdf": "3ebce4328c0667cc6cf21c0f61cb00070e969d404841d8c75341b214805c910a",
+        "drawing.png": "d83d58b848a5a94070387a76d572fde34cf99fac04d9c060e1122ceb32deb8fe"
+      }
+    },
+    {
+      "case_id": "pk-8bc96bea8daf",
+      "packet_sha256": "5db223694b3bda178dd4e2c1145b8aac2a99aa43d97ea0b4444e85639d3939ca",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "275d383bca55c586e6277b23f62b50d9d4c7489a44d5e5b4509bd27148d7f744",
+        "drawing.pdf": "25a7674b36bf93f2cc8ec40315080774305fb01d9a5c3719d916e49ad13ff9f3",
+        "drawing.png": "e76023ddfd21c4b0c9d344c70a25b09e91a71274e2b699f3cd4cb6fd2c67ec83"
+      }
+    },
+    {
+      "case_id": "pk-8c37e0ec701d",
+      "packet_sha256": "b45bbc29dde06188dffc9c3f16d2d95bae02f087fcde064c03a04df4e0895574",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 25.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 60.00 mm\nP1 LENGTH = 35.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "5d128c44f92633e5735a432c243fce4a6c401a3dd46d8948a76a3221cb512890",
+        "drawing.pdf": "ccb88aa12d9e1ca6b1311af2f9838799ffea7f39f9f83e42ffbe55da2d0bcb75",
+        "drawing.png": "15766f22db613512e78366fc29777819c99c3269c149ea5236d04af5b9c2d4a0"
+      }
+    },
+    {
+      "case_id": "pk-8c7083803d37",
+      "packet_sha256": "44a65242eb1307a1d7b82940976b4753f97ed2914a7af65b87a3bdfc7784f8f4",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = AL6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "5d48f19cbe3e7c4c4a2577c0124f38b27d8d5cd1e5844942e8396a3c478d9706",
+        "drawing.pdf": "dce7898fbc8c20fb741dbc251966e28ce9e5ac59662b2a69e08e436020e7b7e9",
+        "drawing.png": "dd2c8d726024805dbc4eb592f734ec28636896fcf4432579d6c8f5594dad7127"
+      }
+    },
+    {
+      "case_id": "pk-8ee6ac3009c1",
+      "packet_sha256": "f2666f759f07aa1c90a31ad30d4fff6db11aa828538734e6bb3732f96d996ed1",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 7075-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 25.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 60.00 mm\nP1 LENGTH = 35.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "fcfb3cdeac458ca0f939e1bb566e6c0be1674498abf9641a2493584394471f43",
+        "drawing.pdf": "2613f748544f0f839a01dc340aa7dd40b1355ccd07a93c2d0f193d62e3cf6a75",
+        "drawing.png": "6802ce959d8c4309e14c7af3271e67f23b9e6dc019f9d6be0131bfb823e70640"
+      }
+    },
+    {
+      "case_id": "pk-8f7e5ab5b5ff",
+      "packet_sha256": "bd32cc120fcbe7c55b91cd1784d3cd051d7ca0b201f1125f64dc13dca6fe2a68",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        60.0,
+        40.0,
+        20.0
+      ],
+      "actual_volume_mm3": 30000.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 60.00 x 40.00 x 20.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 50.00 mm\nP1 LENGTH = 30.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 0.60 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "c3d10651b5d56de5a0449eb9b6b6844459fa8c3ab9f9f5628f80ff989f7a12d1",
+        "drawing.pdf": "85e527fe7d108343aa143dc1a64c49627ac28bce51ee3cd4f2543daa96eca0c9",
+        "drawing.png": "e5706324d9525b9f81c24bf5ee5595b1ded7674b92ba7cc23864b6037d024329"
+      }
+    },
+    {
+      "case_id": "pk-90789c1286e4",
+      "packet_sha256": "67e304b515773809677d4c089832b520bed6c31f505dee50d71ebb4137481088",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        84.0,
+        52.0,
+        8.8
+      ],
+      "actual_volume_mm3": 37306.01921119886,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 84.00 x 52.00 x 8.80 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.40 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "af3b90508b3f52a3dabcfb1972b92667412df137ad5b5a0445949757d7a26c6f",
+        "drawing.pdf": "50352b4d0496904aba206d38dcc28fa2f1c278440ab526e6f663e59283cf4b01",
+        "drawing.png": "ec9c59a6efabe5b6e179dab74a04388387114659c6126efc49cdbe3de5123d46"
+      }
+    },
+    {
+      "case_id": "pk-922f4212c09e",
+      "packet_sha256": "d90dcd456421a47282fe7b688b10919a2cfa3a8a3ee6875546d11ba818eaf8c6",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "6880ed6d1bece740492d4cdf9e029be9f8cf57a19c125f9c0c0fa6cd96c456ca",
+        "drawing.pdf": "2e73ebcd580be6a8c38a129084bb4118618a524616066872df8d88203efbcf58",
+        "drawing.png": "e09411600146c5aba9a7dd4bf78ceb6e5fb7504fddaa9e66102997aedb6d8e57"
+      }
+    },
+    {
+      "case_id": "pk-966dbc9a8fb7",
+      "packet_sha256": "2986d0195b24c25399bb5378517fc25de4492d622a27a0bdbc58072aa780483e",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 68.00 x 44.00 x 39.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 27.20 mm\nC1 DIAMETER = 12.80 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "0b212514e8ab02a1b4a199a7be0eb5b53dc030a3e81f6210ca24e0388bac7577",
+        "drawing.pdf": "73a3cbf14ad10890f33b129df0b81557a46e1f75930d423dfe83e1320899c1e5",
+        "drawing.png": "b54310ba657f7cf9cd81afd633be46947b84936655f8839eb7a423bc93e48d01"
+      }
+    },
+    {
+      "case_id": "pk-97c1b88a14b7",
+      "packet_sha256": "26fbac7b74a6eac16f1e5a8e2e894a17cf51c626fc6302d250598e70d277b6da",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        120.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 176024.43867709895,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 120.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "9c89ca3f9458c7ae82da5a6fe7482607503a383981f00176787c82034b2e9220",
+        "drawing.pdf": "64ff9721e882e79f575fc4b4a923ed071204db23f777eeb482215cbf1cf2609d",
+        "drawing.png": "50d70c4b058fbd0b2cb1de24282f65fc52a9d073df79e89cb36f0b3d0e456f61"
+      }
+    },
+    {
+      "case_id": "pk-98bfd7c650f7",
+      "packet_sha256": "9756dba11b4e63ad05146037c70a447a205fb058c89fbda888e7589e462436fc",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "a7a87d35fd8b859bf7efa1eaea0265ef716b265e810f5314985a40e392ba385c",
+        "drawing.pdf": "623d73051a961f945b0d791944f468c8a7174a2d4d8b866902950a8e548669d3",
+        "drawing.png": "ad156deef0f916ec54fe3c707399d719172b702d3905e5142b55de04c05183fc"
+      }
+    },
+    {
+      "case_id": "pk-99b92e1af889",
+      "packet_sha256": "4fa1f68103b9649ef2aa3b57b1f20072fa2699ee0a8db60c1404d1bea8805d50",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        60.0,
+        40.0,
+        20.0
+      ],
+      "actual_volume_mm3": 30000.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = Unspecified alloy\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 60.00 x 40.00 x 20.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 50.00 mm\nP1 LENGTH = 30.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "886eee2c9ac076515c453c7c7d852fc7f4dfb81c075018eae6842e08ae336e3c",
+        "drawing.pdf": "c957d5b58c1b7797b96c497ac51689c25196ff570db2da3011e63384716ba90b",
+        "drawing.png": "f435ad9b1b76236617336503c0e208f4d0838563147e654ef5508384c25b2635"
+      }
+    },
+    {
+      "case_id": "pk-9a9e0af034c1",
+      "packet_sha256": "448a0f644347c9548a24bd776a10b372e76afd6f9f59e2352ac3f6a3e05f5d60",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "2b95ebf5f2394919d3152be13d6a0c42ae89676c3f3ba59187c9dd030ca241ad",
+        "drawing.pdf": "ca470a0d878edbba6448ded99aa6e06923147c213d7702f73e87af11701efab5",
+        "drawing.png": "9bc0068f558b109a8030be3abf6dd461ab7670ba24d9cda8d88f1f6670ab4cc4"
+      }
+    },
+    {
+      "case_id": "pk-9cb6dc5b7fdb",
+      "packet_sha256": "5c61d8bb0c489049b5b251bdc68781fcfaad843d7ec4759ce0f0ced0474bd58a",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        90.0,
+        55.0,
+        10.0
+      ],
+      "actual_volume_mm3": 47960.61959974097,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 90.00 x 55.00 x 10.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.00 +/- 0.05 mm\nH1 COUNT = 3\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "a39852331ef2f966553105b9a038f38525cfc3284e205e70a8f5475961c2a0a3",
+        "drawing.pdf": "3786fc9ea1b5ef7049d725ce40f5ca4ab55ebddc9fa962a149a078519eb21c30",
+        "drawing.png": "48efdd791fa1310ee8442ed0a57bde23a263d5cb5448c00096c3c919f3439977"
+      }
+    },
+    {
+      "case_id": "pk-9fac6cb15b90",
+      "packet_sha256": "d85eb11f1d3f3b76206fd060876dede40503a8d98ff12374563f013051c7dc2d",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 7075-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "6880ed6d1bece740492d4cdf9e029be9f8cf57a19c125f9c0c0fa6cd96c456ca",
+        "drawing.pdf": "3b82f45382dcf17e7298534d6f766496d9eeaaf434ecedc8bc5f9e664306cafd",
+        "drawing.png": "1be1362866b81827e45a50e539d16fdeac0c611df68d094bdec292b2bc156086"
+      }
+    },
+    {
+      "case_id": "pk-a0908edab51b",
+      "packet_sha256": "bf3f62e02f70c83232c4679746ea307775853662976dcbbc93834733003ef978",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        21.0
+      ],
+      "actual_volume_mm3": 34038.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = Unspecified alloy\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 21.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 52.00 mm\nP1 LENGTH = 31.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "678790b7238633962712b398afd1958b5367081319a1e16bf084fcef9c9938b6",
+        "drawing.pdf": "a3a22a38b9b11377e2aa8b3797d1919937d32ddc95b770d09272f7e0006ccc18",
+        "drawing.png": "83c71eb4cb67c35956afb1ca37d27e447b0e55e3bb1c7800474314412dac4f9c"
+      }
+    },
+    {
+      "case_id": "pk-a2ce7c810316",
+      "packet_sha256": "e577ab28fb4493fefb6e88f85b6ad792d7823ff934035e789b4ab927ce3b1a09",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "f2e9caff5428312eb9c05f76f046b93809da54403074e50e21448f4bce729476",
+        "drawing.pdf": "c56f14a5423780f7f52a15b3db0ee6f7a91d2e8ba8b8591f6614c2bd98c9aaf2",
+        "drawing.png": "08498e19d3d431cc2d485dbb947f26bbc71b3fbc960bb7a7aae93b4f33a5fd6b"
+      }
+    },
+    {
+      "case_id": "pk-a2e749c572d1",
+      "packet_sha256": "91f884b793d78bf475d2f01cab542e09e16721e90771e6d49fc7f31c0e336c07",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "7f826d800121a8fa3dbc2cb0e12687562627f958014eb843d19705aaa8d4e92f",
+        "drawing.pdf": "c36431b5fa62eacda73d846c5dfc66ba0f5361128d2d0937fd57ca3e00afd9d0",
+        "drawing.png": "e87d8cd8a3481dfb8ad37f013f44f830393d392bbd732f56e34de2c927402443"
+      }
+    },
+    {
+      "case_id": "pk-a65549446201",
+      "packet_sha256": "0b1b760cdef6e092d68e4666e1571b54355b186142a6350decd257d57ced5d8e",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "2b95ebf5f2394919d3152be13d6a0c42ae89676c3f3ba59187c9dd030ca241ad",
+        "drawing.pdf": "25a7674b36bf93f2cc8ec40315080774305fb01d9a5c3719d916e49ad13ff9f3",
+        "drawing.png": "e76023ddfd21c4b0c9d344c70a25b09e91a71274e2b699f3cd4cb6fd2c67ec83"
+      }
+    },
+    {
+      "case_id": "pk-a84517c2ef3f",
+      "packet_sha256": "421a463ab29e3336d241caf0d9007e6146e51904dac9d97536f371de92cc55cb",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        84.0,
+        52.0,
+        8.8
+      ],
+      "actual_volume_mm3": 37306.01921119886,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 84.00 x 52.00 x 8.80 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.40 +/- 0.05 mm\nH1 COUNT = 3\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "af3b90508b3f52a3dabcfb1972b92667412df137ad5b5a0445949757d7a26c6f",
+        "drawing.pdf": "8e334180bc0745a46db8f5c751d5ad086f9b7c585bc1a10a4daad2c15fc2476e",
+        "drawing.png": "8b8fa2d80f921000c5281e25816beca374ed0ab4138228932b19e0c415c34e07"
+      }
+    },
+    {
+      "case_id": "pk-aa84ebbe430a",
+      "packet_sha256": "1354d29751d5b4f9d3a5c169ccc81fcbf101ad43dbe822d7ad51c35528e875ef",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = paint\nTOLERANCE STAGE = UNSPECIFIED\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "cab3531448e42a1b300c5231b541106e70bbd8ee201939190e2e1db51e764bca",
+        "drawing.pdf": "7605b98f21e5c754bb08ece366a5859266a206130878523f1a2e46e1b590c042",
+        "drawing.png": "e54278aa1d81124ba338e1281fcfbad516f8147444d608361dcc390cc4101ac0"
+      }
+    },
+    {
+      "case_id": "pk-aaed92d9afce",
+      "packet_sha256": "79124c66559bf8e6c408ee64830fba903c487430f003bdfa4560556845f97767",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "579cbd8562f72bba7a3a4ff8165f4c10dfcb66f209ce47083da1eaba75e66dbe",
+        "drawing.pdf": "7a3e78910362c5d2264a37bb484accf963ae0fe80779998770ebc1128ec8e1fa",
+        "drawing.png": "128eb95c897cbdf3eb7d954efac0bfad2eca5baab3733299a33ec01a0f50ec59"
+      }
+    },
+    {
+      "case_id": "pk-ac6ae47c7b15",
+      "packet_sha256": "1e8b63e703865fe71dd23cdfb0cd217c86385146cdee77de2d38803308048d3f",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 3.1496 x 1.9685 x 0.3150 in\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 0.2362 +/- 0.0020 in\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "e9a63385a98db6e2d1530bdaa8dd4cd996cc5d98f350b2d9f7071459a6776fe9",
+        "drawing.pdf": "0cb959e10adac860b8e5c26641af8e9b5d3f655e36c859fa43cdde3a3dce17d3",
+        "drawing.png": "bb4b0ebb14d6e24501fd1c87b1c84817893e29b48cb5d55e890541f9f8b5d95c"
+      }
+    },
+    {
+      "case_id": "pk-ae17e03ed1be",
+      "packet_sha256": "3ff4eea88f16ccf36ba7fb3fb67948cb410ead3839295449c200f8f26cc39491",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "1e3915dc429bd84bda40b9df7a3619a3edb8eb272902d349173815aeadb8c9b3",
+        "drawing.pdf": "25a7674b36bf93f2cc8ec40315080774305fb01d9a5c3719d916e49ad13ff9f3",
+        "drawing.png": "e76023ddfd21c4b0c9d344c70a25b09e91a71274e2b699f3cd4cb6fd2c67ec83"
+      }
+    },
+    {
+      "case_id": "pk-ae86e2b10c71",
+      "packet_sha256": "9dfb9f444d2fc3577f62805b7a6788f83a7f1517a0256caebed5864644501631",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        120.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 176024.43867709895,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 120.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "82f3725c2a49edba0ab33a4bfb19e7b5d5dff1a1bc74704c737eeffbb678146a",
+        "drawing.pdf": "64ff9721e882e79f575fc4b4a923ed071204db23f777eeb482215cbf1cf2609d",
+        "drawing.png": "50d70c4b058fbd0b2cb1de24282f65fc52a9d073df79e89cb36f0b3d0e456f61"
+      }
+    },
+    {
+      "case_id": "pk-af95f3073f88",
+      "packet_sha256": "4f33fa6d3e566dcb35f02350c0c1f9499dc1a86807a89d77b4caa18f09f6a85a",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = intermediate\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nTRANSITION = ream H1 to drawing stage\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "2beaa634b63807c9598e435cd1b0c6b9aca92f15605df42e9b48977616528a1b",
+        "drawing.pdf": "79fe3c7845beb8c7f9785e20ea370895805f953f6c2d0381508e0fe1f710ab00",
+        "drawing.png": "7fb461279dafe9094cdae132e684bcaaa6041460af868189c6353cd362b51461"
+      }
+    },
+    {
+      "case_id": "pk-b2457e8286c4",
+      "packet_sha256": "99122f94799fc11d64b86e899fd08c930a6bc54bb1554a29dfcb481d632e1f49",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 68.00 x 44.00 x 39.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 27.20 mm\nC1 DIAMETER = 12.80 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "c42f9ca998b74746ed6bd43218e76489c11f1195255a841c1dd7bacbce054f2e",
+        "drawing.pdf": "945c0263e75918160f0aace473026b49823da9f8d5d9243b13f2b2defea12c0f",
+        "drawing.png": "d308c6750d2275937301389c8eec161d64d84e33814544a40cd79d65bac36a23"
+      }
+    },
+    {
+      "case_id": "pk-b3be66f098be",
+      "packet_sha256": "dfe4c57ff16c978f1b7aef26054d2cc6f6c8b9d65ffd2e25b4ce916750b3505d",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.0000 x 45.0000 x 25.0000 in\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 60.0000 in\nP1 LENGTH = 35.0000 in\nP1 DEPTH = 12.0000 in\nW1 THICKNESS = 5.0000 in\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "820d57ccbd7096d33cf62a85ceebb257177e535bac7f2daeaa8f4f04ccd92a12",
+        "drawing.pdf": "2c6e6d8c1a1bfb0e2fb79e00ccdee0cf34fa005057d5a7008703a6fc91060d7e",
+        "drawing.png": "ea5d0a550248a4bac4418dc3f183981aedaa4fc7e8634e20cfb434db21c116d3"
+      }
+    },
+    {
+      "case_id": "pk-b3d5d6dda112",
+      "packet_sha256": "107d4c833862b41c2fb62782962bcda33ad4c064f897f51dfce223e388210dde",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.00 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "3cc10028ce86b463e7941cf4de554a73084e3ae6cccc14d1e5f8d2f428f71928",
+        "drawing.pdf": "a9799f231a1052ef0b4a4318e2d7a4093cbf230fc48528d4490de88b2fb0943b",
+        "drawing.png": "00388df88db794ff406f396f744f9f87cf2f53684fe44cbe21a19433930d07fb"
+      }
+    },
+    {
+      "case_id": "pk-b50ac48e1e40",
+      "packet_sha256": "24a5face9066eaeb9081c1be6acd2c01d97da8e2094e2eceb44a16c8d3a1d787",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        84.0,
+        52.0,
+        8.8
+      ],
+      "actual_volume_mm3": 37306.01921119886,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = intermediate\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 84.00 x 52.00 x 8.80 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.20 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "23d390942f0490dc6654f2eea2d3fd6860ec764daeeb679f97659f8c1af9b5d8",
+        "drawing.pdf": "ae25ace02f58c0d3c7f703881e5afaacbaeeb5e7b1281c4c17d5d308637276e5",
+        "drawing.png": "1cc4e62dbb7949eff04814e587f5ec4f028d082c0b3016063228c48debc30921"
+      }
+    },
+    {
+      "case_id": "pk-b6a6a258d0ac",
+      "packet_sha256": "dd239d2326c20cdd4b4b7e5d8f7a218cf83983899bbcc68adeb7338215c05d7e",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 68.00 x 44.00 x 39.00 mm\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 27.20 mm\nC1 DIAMETER = 12.80 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "bc5e42d683e028b61b6fc2c38d2174bc73126ac6548aa51df230a80ce6c6d6d5",
+        "drawing.pdf": "97ae501747d0615cd7e33230256cb41457479ae7df25ae0c3ca91ec6ab5498f2",
+        "drawing.png": "4bc4a3a484958498aabd3f46af0733ab92944065c2b0e20fe2b870f4c8660e0a"
+      }
+    },
+    {
+      "case_id": "pk-bbe64c53f7e1",
+      "packet_sha256": "71c669bf0483b488141631e0e16e4f0a668adbb7f140e89c5d939db91580dcd5",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        82.0,
+        51.0,
+        8.4
+      ],
+      "actual_volume_mm3": 34114.39229852645,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 82.00 x 51.00 x 8.40 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "06a1e8cdae332ac8427e5cd6fc753b2379bbbb89f16eafba7ddba9e99c7b20e6",
+        "drawing.pdf": "5d8388a28e3e69a780b1cca821f73c9fa752a42ec60417b60240c2ad3e9b7356",
+        "drawing.png": "5317d953356913dea442283accf25a8529f31a8d7bfcabe67c8079050cab89a4"
+      }
+    },
+    {
+      "case_id": "pk-bdab113da0ae",
+      "packet_sha256": "c04aa395056c2f62eda2e35ed7130a56f3421db158b15328a9c6d87d5c811365",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "b620f68d60aa39d72841c54bd0f0b83e62d9e972e7319d757e931d975c4f8957",
+        "drawing.pdf": "d9ed4bfb9655ba57a84b095f0b028a1e54fb88caf6537b48387a7c558d349c3f",
+        "drawing.png": "aa1f814c7a63876e669b78752140e1deffa1c7c2bf0fa570bcc23a5bc8e93635"
+      }
+    },
+    {
+      "case_id": "pk-bec188ae1e18",
+      "packet_sha256": "824f3e94a07b9e46ebe0bc1a9d3ef63803cf65aa92660ad51db59d184d45ff87",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "e4ec7e694c420501093e6d0e46f8ebabb4c97d1be91d7c17add9742d84255244",
+        "drawing.pdf": "2e73ebcd580be6a8c38a129084bb4118618a524616066872df8d88203efbcf58",
+        "drawing.png": "e09411600146c5aba9a7dd4bf78ceb6e5fb7504fddaa9e66102997aedb6d8e57"
+      }
+    },
+    {
+      "case_id": "pk-c07e0122782a",
+      "packet_sha256": "dfd63350c6b4cea0c684db2a01b761a88a972428a0a5f4a543ea17ddf2130a26",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = anodize\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "337108bac18caeb95d2efc38bc991194fbc49ca11285a0e7a7e1d00dd8e5dbe7",
+        "drawing.pdf": "17ed25c91679ef12fb15ac186c70e5a32c63c6b41b38671cb716d5e5268732d9",
+        "drawing.png": "2088a4df51fd36831c552e64486b792cebba40fe59a627b67344b82f3496a628"
+      }
+    },
+    {
+      "case_id": "pk-c2c6971361e9",
+      "packet_sha256": "bf13aefb96aa6f81b0555db72801c8e58f46ba577e031782ab544ccb7ac0b807",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 25.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 60.00 mm\nP1 LENGTH = 35.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "86bc83d2b38a380e5f8c8c1e057a12f376097cda5baea01a5b874225a487c88d",
+        "drawing.pdf": "8bc3d56633661e8d54ee087c08a53eb66bb48c527c52ecae86c45c7f66c8bb02",
+        "drawing.png": "a0dbcdd3c1f0ac55603204233817f67d35569d5e64e961ae9ae24db18b80fef1"
+      }
+    },
+    {
+      "case_id": "pk-c6060a86b3df",
+      "packet_sha256": "a060a9c3ced8361cb75fe94121739b720ce8437c1b1b682a03aaa237f94400e2",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "e4ec7e694c420501093e6d0e46f8ebabb4c97d1be91d7c17add9742d84255244",
+        "drawing.pdf": "3709889ac43bc14b5216033a743582e53b2ec42136f8425655a1993aac647f3b",
+        "drawing.png": "fb5621ea07b8f675796c93ef3a08f134503162661954e02b3ba540e53d50acf8"
+      }
+    },
+    {
+      "case_id": "pk-c7d12f6408b7",
+      "packet_sha256": "eaf6226f156fd44e8f148bdf796218003346298cfc7889a7d31325fe022191ba",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "3cc10028ce86b463e7941cf4de554a73084e3ae6cccc14d1e5f8d2f428f71928",
+        "drawing.pdf": "d9ed4bfb9655ba57a84b095f0b028a1e54fb88caf6537b48387a7c558d349c3f",
+        "drawing.png": "aa1f814c7a63876e669b78752140e1deffa1c7c2bf0fa570bcc23a5bc8e93635"
+      }
+    },
+    {
+      "case_id": "pk-cad60dcf2668",
+      "packet_sha256": "01330f2ee53ce5e08914435283a6941339852442e57fd594c6f72b9f573588d6",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = intermediate\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "f2e9caff5428312eb9c05f76f046b93809da54403074e50e21448f4bce729476",
+        "drawing.pdf": "9403cf28be2adbe0dea0619377e94efcced9d26641b630003e87eba0711d5a81",
+        "drawing.png": "dd3f4632ce6e0643e4cb158bc8d1cbc4c024b30fa898e0d2cedd803a483db09d"
+      }
+    },
+    {
+      "case_id": "pk-cb029c8ef46c",
+      "packet_sha256": "21904a7c886cb4c64e5f8ee260d26b388b3ce79f6b754b7a47d3b485bd64e25e",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        37.0
+      ],
+      "actual_volume_mm3": 98278.0786840924,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = anodize\nTOLERANCE STAGE = UNSPECIFIED\nENVELOPE = 64.00 x 42.00 x 37.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.40 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 25.60 mm\nC1 DIAMETER = 12.40 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "b087f0500e199db06ad98857d8b137f8578cc3649076d367fa49ceb15d5118bd",
+        "drawing.pdf": "5ef2da15895f2693903db7e1b5f16b6560375b122eba6f56c7d613fc9e2e8499",
+        "drawing.png": "f2b61704b4acfeb277a3774ab19f29e40c41233d63856db9f5460a40be4b6f87"
+      }
+    },
+    {
+      "case_id": "pk-cb187801db59",
+      "packet_sha256": "ebd6f520491cbb4ed480a502943e32f01884fd2074ebce14d8181290415e14bf",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        84.0,
+        52.0,
+        8.8
+      ],
+      "actual_volume_mm3": 37306.01921119886,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = intermediate\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 84.00 x 52.00 x 8.80 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.20 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nTRANSITION = ream H1 to drawing stage\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "bc2d2d8fb17af6df5b1f946142ee83fa9686888f26c78f7695252d9ddc7e31fd",
+        "drawing.pdf": "716222d5dedc299f2a322d6fe65db2b661d4991f20c0f05f9b29b79918bf3d45",
+        "drawing.png": "7e0a774684acbabfba99d1a8e7ba08e621e39c49d18d20dff3ef645026a3198a"
+      }
+    },
+    {
+      "case_id": "pk-cd309cbd4421",
+      "packet_sha256": "1479f7ff7b063520e7a527747c0fd1b49b46ac4b31fccf5b0e01df13cedb9db4",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 25.00 mm\nP1 WIDTH = 60.00 mm\nP1 LENGTH = 35.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "3edebe29ede216144406a6f6040fb75a1aa7d6dc4a99b2b21aca1b0b90c4e783",
+        "drawing.pdf": "ecfb83661e0bd8003efaada0c7686db0e90efadeecb1e70f0d0d408018d8f5e5",
+        "drawing.png": "c969fd72d22b2e41b5ef96013d3ee11718324ba4f33bf1cfc3af698cf95c76a7"
+      }
+    },
+    {
+      "case_id": "pk-d0f406e22f58",
+      "packet_sha256": "f66470be7064137c2f312e89b91e4c5d647ffc470e959662a459641558c9a001",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 3\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "7a4b1b092b5cfd624090876517b6d49dd126460da2f626334c4a9875f57e6751",
+        "drawing.pdf": "71fba445103fde4019635d2d392b9c7002a0b31b258b1597fbe1effed654fed5",
+        "drawing.png": "96ca4ba744fdb000a7d48e7edc6539bd707e4d61cafb0d63bd75db27771994ac"
+      }
+    },
+    {
+      "case_id": "pk-d13b84a82f87",
+      "packet_sha256": "f5f52045858ad760aba03f93b58d8abebdb7abc292a684a61b7c8745af597716",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        60.0,
+        40.0,
+        20.0
+      ],
+      "actual_volume_mm3": 30000.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 60.00 x 40.00 x 20.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 50.00 mm\nP1 LENGTH = 30.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 0.60 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "f0578a7a04e6124ca4eae42efd36e8d294a87cf1c04c06c5aacaabc0217b2350",
+        "drawing.pdf": "85e527fe7d108343aa143dc1a64c49627ac28bce51ee3cd4f2543daa96eca0c9",
+        "drawing.png": "e5706324d9525b9f81c24bf5ee5595b1ded7674b92ba7cc23864b6037d024329"
+      }
+    },
+    {
+      "case_id": "pk-d40f399b9d16",
+      "packet_sha256": "d37e76419f8fac34aee99d93ba68962573f420947265724cb32a8c86463833a4",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "60d935f44922104baee1971fc3c2b1accaa24e74657b74c8cf8a334f42545f76",
+        "drawing.pdf": "92285c6f77fd3a2755a59c71f04a9b9ba29bd33d5de527ba4e652fdb6b239273",
+        "drawing.png": "83b48215181a6d8bbbdabe10a876278285f79404083439ce35b2e672eba9bbc6"
+      }
+    },
+    {
+      "case_id": "pk-d5d25caf0cee",
+      "packet_sha256": "f45508352d9ccc34b8aff3e002c91dcc8b0be1202003e0d12d796e8379a6358a",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        125.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 49095.22131576611,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 125.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "03ed74bd55e106146e301de4637fbab6849b39e53aaa4916dab5720ac88da878",
+        "drawing.pdf": "5e976f58a560d941a4415c39a30be05198bbd807a1ea1fa74990197d07749dfd",
+        "drawing.png": "0732b9429253caa7e9f5410f81676e5962d0307d0dd084ad2270977ee0eb4221"
+      }
+    },
+    {
+      "case_id": "pk-d7880855745b",
+      "packet_sha256": "084f9af8103e5f088ef53fcc99bf20cc2bbd92f5e4147f853fece6be699da0c5",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        88.0,
+        54.0,
+        9.6
+      ],
+      "actual_volume_mm3": 44224.63445470085,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 88.00 x 54.00 x 9.60 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 3\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "73f6b9b0db5957d90e0ae99fd6673343baec59afd3d7d891bf8041f0975cb66b",
+        "drawing.pdf": "ed7de83c8ab444890f4727c3ecbce718333ba56fa77cf398c991df7078929de2",
+        "drawing.png": "e01c76d996706cd96ad2cc5e9c51b983e77a88b89c2655b08624c3264f749a7c"
+      }
+    },
+    {
+      "case_id": "pk-d963a109d42e",
+      "packet_sha256": "070455db06f0b25de536cadb9150f7b611129c53a35a9d4c0da71dc9f145dadd",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        36.0
+      ],
+      "actual_volume_mm3": 90416.43867709891,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = anodize\nTOLERANCE STAGE = UNSPECIFIED\nENVELOPE = 62.00 x 41.00 x 36.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.20 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 24.80 mm\nC1 DIAMETER = 12.20 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "e71e4b707a28108e461d0f8826036e3ee46acd39b5f1a8e78ab34c6019d7bb0d",
+        "drawing.pdf": "7f71b7d41452165336929384ecb8766bbb0712d19a1c823520bf586c1cd791ab",
+        "drawing.png": "2849d09544c0ed96f17f0e9bed1639ec73524195028d6164a84e0bdbca544d23"
+      }
+    },
+    {
+      "case_id": "pk-da5f9b93e7b3",
+      "packet_sha256": "6fd4798c01852713319ecf4430aebe5b87f168e77c540ee8a7455a6862362994",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        37.0
+      ],
+      "actual_volume_mm3": 98237.81603264401,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 37.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 30.00 mm\nC1 DIAMETER = 12.40 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\n Declared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "b179bbde2b0835475ed1fb7ed62d9aa43aeff43bb427671942a36663fbaf250c",
+        "drawing.pdf": "f3ca7bbf887e49cd75e1878ecc532f7998824ac58e0d2834d242da035c8c3822",
+        "drawing.png": "19df9163a3957ebe2e8ee6f01ed0188a9e99982a4186589e2aadf5dae4891aec"
+      }
+    },
+    {
+      "case_id": "pk-dc1db9b59138",
+      "packet_sha256": "58f52e2c467b7dd8ef94304cd1acebafe56209f857e566f6ad9d46cab6f263c4",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        82.0,
+        51.0,
+        8.4
+      ],
+      "actual_volume_mm3": 34114.39229852645,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 82.00 x 51.00 x 8.40 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "1f6e301e23a175a9925e1a8c371629786b0594234b25e44366758c589c1315fb",
+        "drawing.pdf": "2d5ea001c28ab5c65a03960d516ca1dccdd57b92623216dbf41e9a5e781d3789",
+        "drawing.png": "5b5a3c6edb43614c1b373d43203c816da71d2728d7ca1726dfd334342a3ed911"
+      }
+    },
+    {
+      "case_id": "pk-ddbfe734644a",
+      "packet_sha256": "13afb6f5a328d42a4a3f3cf81fe6dc2f188bc98870a269d13497a6850109ad0b",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "e9a63385a98db6e2d1530bdaa8dd4cd996cc5d98f350b2d9f7071459a6776fe9",
+        "drawing.pdf": "2e73ebcd580be6a8c38a129084bb4118618a524616066872df8d88203efbcf58",
+        "drawing.png": "e09411600146c5aba9a7dd4bf78ceb6e5fb7504fddaa9e66102997aedb6d8e57"
+      }
+    },
+    {
+      "case_id": "pk-e0dcab3a0313",
+      "packet_sha256": "159685490b112da0fa1e3096583f29d779a43ebc9e91fc1675c3fdd5f979e5c6",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 7075-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 25.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 60.00 mm\nP1 LENGTH = 35.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "09af22977c1109e4d496762536fcdd62fde3d45bce94face60086e866cc29e00",
+        "drawing.pdf": "2613f748544f0f839a01dc340aa7dd40b1355ccd07a93c2d0f193d62e3cf6a75",
+        "drawing.png": "6802ce959d8c4309e14c7af3271e67f23b9e6dc019f9d6be0131bfb823e70640"
+      }
+    },
+    {
+      "case_id": "pk-e0e3e08aa374",
+      "packet_sha256": "24ce9b2428c3d4e9ae33915012c2b55fce20d3b32391644db99e7ae974b78637",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.0000 x 53.0000 x 9.2000 in\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.6000 +/- 0.0500 in\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "a4f04f45289baff31a00e0a66e78e7a5c2b2f65fb090c732fa25b368ddb6e422",
+        "drawing.pdf": "8268bc16dc50648acaa8f983b61f5acc575a781d98c668fff4754bed1214a1f5",
+        "drawing.png": "56697c885c5562bb51a3f610810ef7c583536a1dd5b9e3af45834a29c812b542"
+      }
+    },
+    {
+      "case_id": "pk-e129f338e86c",
+      "packet_sha256": "e6480209dd191b28dcc8c052085dbdf98653a801d231b47936e98fa39b850ac3",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = anodize\nTOLERANCE STAGE = UNSPECIFIED\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "07fa7648bc2d90f8747b7917e750af75b2482dad751d9df3ed37c3c0464d7eb9",
+        "drawing.pdf": "46dc26fa8b67844b90899f2cecbbe4539d6d5728b7bcca5f135993ed4e967e78",
+        "drawing.png": "671cca6f97821c07c4171cb0332ea3c7cd42f9a85be1b32b61be0c88bfcbb33b"
+      }
+    },
+    {
+      "case_id": "pk-e2178443f0a2",
+      "packet_sha256": "a6ab4e0c3ecaf50a1d908ecf613077fb18da6ced9a212abbad085d496338a9fa",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 0.79 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "e1de6282378cfd75068850b7ecf4a9e240c58bf1ff5fbc5b5941ec997dadde72",
+        "drawing.pdf": "3a06b6ba5268e19ea0ac836c3d5af23a1b2451117a3e3a96799b74695dffc119",
+        "drawing.png": "ec639241effae8564b3c76b470257694d41a004ab89c7908fab78ab1321cdd67"
+      }
+    },
+    {
+      "case_id": "pk-ea25ed5b4499",
+      "packet_sha256": "6cf6f61d15d054cdfafc3c3e08d5846c2c16a7cb3f353cd569c44ccafdda672a",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        82.0,
+        51.0,
+        8.4
+      ],
+      "actual_volume_mm3": 34114.39229852645,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = intermediate\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 82.00 x 51.00 x 8.40 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "7eac804d92445f6f65127214a5eec6578d22e552a87e938b0be1211837e8fa5e",
+        "drawing.pdf": "fcede802febefcb9aab64d504f277e205d4a250c49c68bc836835c72b12188ec",
+        "drawing.png": "9f4e766a21a1515bdaeb9d2430d2da60d7cc912b4422d832f26caac844fe2652"
+      }
+    },
+    {
+      "case_id": "pk-ea2b26186f34",
+      "packet_sha256": "daa4878906c1b4ee265b0d8b1535467ba509b52ff492f578666ea2aee4e9442a",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        37.0
+      ],
+      "actual_volume_mm3": 98237.81603264401,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 37.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 30.00 mm\nC1 DIAMETER = 12.40 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\n Declared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "7f6cdfc0c2d1a00014f09636a66d68ce9bf46d1c6a746989006a93105e33377f",
+        "drawing.pdf": "f3ca7bbf887e49cd75e1878ecc532f7998824ac58e0d2834d242da035c8c3822",
+        "drawing.png": "19df9163a3957ebe2e8ee6f01ed0188a9e99982a4186589e2aadf5dae4891aec"
+      }
+    },
+    {
+      "case_id": "pk-ea41974dcf01",
+      "packet_sha256": "7ea8ef5cfc62812c097f136633e1bac712863e4217bf7879819c28127c631e4b",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        84.0,
+        52.0,
+        8.8
+      ],
+      "actual_volume_mm3": 37306.01921119886,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 84.00 x 52.00 x 8.80 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.40 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "ab3bcac9ff3b920e74988b4fac42cdef926f0b4991ce03f4d35e3c7cf75d1982",
+        "drawing.pdf": "50352b4d0496904aba206d38dcc28fa2f1c278440ab526e6f663e59283cf4b01",
+        "drawing.png": "ec9c59a6efabe5b6e179dab74a04388387114659c6126efc49cdbe3de5123d46"
+      }
+    },
+    {
+      "case_id": "pk-ebce73bd13ab",
+      "packet_sha256": "8b9a5c5d34132140e845df8f385ec85c50593de20abcb10fb2895ded05c4200b",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        90.0,
+        55.0,
+        10.0
+      ],
+      "actual_volume_mm3": 47960.61959974097,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 90.00 x 55.00 x 10.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.00 +/- 0.05 mm\nH1 COUNT = 2\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nOTHER\nOTHER\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "1cb99f108ffb12fa096131f7f9f1ccfe0fdc0243c359534e58ecb58155994a0d",
+        "drawing.pdf": "daa549def25281e2f81c2553d48d317b0b99f9e31d1f2c02873566e4aa3fcae6",
+        "drawing.png": "a4919380fe3f6f85e3d896590aa264a4f57cecce1282fedcaf91ed7df7d8baec"
+      }
+    },
+    {
+      "case_id": "pk-ee19649c4ca9",
+      "packet_sha256": "0bda5051150272f3ae60d8cf5b733d1dbae5d6d3c7d4cb008a6c2cab0ecdbb70",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = B\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "44e7eeab4820c3d5d596ae11a19b90d7cf50d51b9c371f736395ea487137ad0e",
+        "drawing.pdf": "f99af4fe4d49251e3ed65b2d43782ebfe5dcad479a2cd84c9b17e25eb7f7f42d",
+        "drawing.png": "976dcf01616f3b6b22ffc284339e4449d4fddb6c78a6cb26a354ae4d48bfa402"
+      }
+    },
+    {
+      "case_id": "pk-ef5ed9ba1962",
+      "packet_sha256": "d033a98cbabce61f1ca26ae864f4f9f9b91196cd91b8f66e79b27fe1431c3235",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = in\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 2.6772 x 1.7323 x 1.5354 in\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 0.2677 +/- 0.0020 in\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 1.0709 in\nC1 DIAMETER = 0.5039 in\nC1 DEPTH = 0.1575 in\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "9d6d5450daee023f98ef035ca1385b1a068728042856b7c8a0bdbf71cbbd476a",
+        "drawing.pdf": "960bbc267ad11b184395894635ee10efeec8ba1b1cb6dd8590f0eba4474cca96",
+        "drawing.png": "3d7de650251b595e6f7407ab3606c5cd9ccf3e8ec3e401ffac59017dfb3ae6ae"
+      }
+    },
+    {
+      "case_id": "pk-ef68097ce858",
+      "packet_sha256": "cca90b0066d142885255d8eab54d78228cab44f7f56222304ca5a57590aa2dd4",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        60.0,
+        40.0,
+        35.0
+      ],
+      "actual_volume_mm3": 82925.57531247225,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 60.00 x 40.00 x 35.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 26.00 mm\nC1 DIAMETER = 12.00 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\n Declared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "b96f18c3a30af4fd09cd477d89cdb3cdd3c1b85321dcabcf4b5ee628fb7c9773",
+        "drawing.pdf": "3a31b6ae43a37f40781da6714880bb5227f4ea5069f1f33515ca15812966c94e",
+        "drawing.png": "96a78aaf160d4de726b7ca2a5cfa4260451a4f82ce038a33980a3339b3a2b02d"
+      }
+    },
+    {
+      "case_id": "pk-f1d2eb842ded",
+      "packet_sha256": "ef350406cd456a64bbebd29948e974cfab5b7caeeba4be8a25909ee653cd04bc",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = AL6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 68.00 x 44.00 x 39.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 27.20 mm\nC1 DIAMETER = 12.80 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "c11c339e39ff6855f6e259a46617148ddd5e9cd534868a0428c353f7a847e95b",
+        "drawing.pdf": "cf392d120df3284197bc945f0fed4ed205a2c73816b25ed87c22ec5d54d0285c",
+        "drawing.png": "e0417a497bb83e7b25fcd3459f8745bfdb85a6f85d79907e6ae32fdf01569ca2"
+      }
+    },
+    {
+      "case_id": "pk-f203882a9c83",
+      "packet_sha256": "9af4538cffd14f7018076db58dd80dbdd95ff7e4c69f23a3bc633bd6d926a9f8",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        64.0,
+        42.0,
+        22.0
+      ],
+      "actual_volume_mm3": 38400.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 64.00 x 42.00 x 22.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 54.00 mm\nP1 LENGTH = 32.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 0.80 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "e201acd691e97699bf36f31dc3c51d7074fee8676d2ffcd46ffaabcd9d358b86",
+        "drawing.pdf": "205af19e598432c5ca96a5d18ccfda31daf22be3d89438fa5f12f7a0b454a852",
+        "drawing.png": "9943df68c5fe815422e950be5148f08b3ee83cf7da0955e0ae1acca8f698c56b"
+      }
+    },
+    {
+      "case_id": "pk-f2cbd97790cd",
+      "packet_sha256": "136317fdd51173686094096559690ef83c08fa2ebbb9d399830dc76587de2d42",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        40.0
+      ],
+      "actual_volume_mm3": 124545.44260138787,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 40.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.80 +/- 0.05 mm REF\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 28.00 mm\nC1 DIAMETER = 13.00 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "80177cb8beb00f4b1923805939af0c930378237c3871037c8ced1340f9ff82ef",
+        "drawing.pdf": "11836db1d47e4cabf2372062a78dc2513d80b5f63ea79239a5a8a09868c16643",
+        "drawing.png": "bf69119e40b8fb54b8ca466853618e641a763dd9ae3dea67143a4e6643ff82f4"
+      }
+    },
+    {
+      "case_id": "pk-f361f64ba6e8",
+      "packet_sha256": "bb5ad7fef23a4c363fb1ef6645b99f501f633f09ab3c43d9961b8cba321c6f53",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        68.0,
+        44.0,
+        39.0
+      ],
+      "actual_volume_mm3": 115330.73144268425,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 68.00 x 44.00 x 39.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 27.20 mm\nC1 DIAMETER = 12.80 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "cf0bf1f287c09cb033c8894d148169ba62a40beff7d631a9e4b1b9a7ae55a9a4",
+        "drawing.pdf": "73a3cbf14ad10890f33b129df0b81557a46e1f75930d423dfe83e1320899c1e5",
+        "drawing.png": "b54310ba657f7cf9cd81afd633be46947b84936655f8839eb7a423bc93e48d01"
+      }
+    },
+    {
+      "case_id": "pk-f3e4177952b0",
+      "packet_sha256": "1e6716d814077cb70d36dcf7f71fabfb4682644e31571bb804df1eaea13e9346",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "44e7eeab4820c3d5d596ae11a19b90d7cf50d51b9c371f736395ea487137ad0e",
+        "drawing.pdf": "2e73ebcd580be6a8c38a129084bb4118618a524616066872df8d88203efbcf58",
+        "drawing.png": "e09411600146c5aba9a7dd4bf78ceb6e5fb7504fddaa9e66102997aedb6d8e57"
+      }
+    },
+    {
+      "case_id": "pk-f81cd70ad839",
+      "packet_sha256": "e90e356fef022fcf778ec3053ad35f2a291be2b84026ffff9f0d6b39f9567cc4",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        70.0,
+        45.0,
+        25.0
+      ],
+      "actual_volume_mm3": 53550.0,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 70.00 x 45.00 x 25.00 mm\nP1 WIDTH = 60.00 mm\nP1 LENGTH = 35.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 5.00 mm\nSURFACE FINISH = Ra 3.20 um\nPLAN (+Z)\n P1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "86bc83d2b38a380e5f8c8c1e057a12f376097cda5baea01a5b874225a487c88d",
+        "drawing.pdf": "afff59c27c5035f7006cfd2c2ba8db2e731e3652896c1a978efa70dbe15bf8da",
+        "drawing.png": "56bcf0b1b0498e49cbd22ccc8399ff6ccc7b6e0e0297ad39c0022a4800ebf928"
+      }
+    },
+    {
+      "case_id": "pk-f854eec0583a",
+      "packet_sha256": "302b014dcf5db669a5e78dab58c9704952777345bde83854467c7ff67f9c0f13",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        66.0,
+        43.0,
+        38.0
+      ],
+      "actual_volume_mm3": 106578.89320476998,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 66.00 x 43.00 x 38.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 7.40 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 26.40 mm\nC1 DIAMETER = 12.60 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "e6a3a28190c6e46fdaecef8e0f64cd670dc1106549c1fb37046de3e8404a1ab1",
+        "drawing.pdf": "7435eade9c3e740deb6e1723d5a25aa2b84bd158e4741107c88980924e712c21",
+        "drawing.png": "76afb23571f0f7a200075c26b7fdb7fdd0830a9ec921b1645a19aa43fcdf6505"
+      }
+    },
+    {
+      "case_id": "pk-f90b53dc07f2",
+      "packet_sha256": "bb9686817104eb957f25eeff33c698ec36c4148e39036d7af138d5069fa5a528",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        88.0,
+        54.0,
+        9.6
+      ],
+      "actual_volume_mm3": 44224.63445470085,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 88.00 x 54.00 x 9.60 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 2\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nOTHER\nOTHER\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "0c52214c085ef6009a42da4c860d923a840ee459a2a8844b7766c7598210930d",
+        "drawing.pdf": "b6222368375cf2dda76762ae9fd83d3b5552f1b52dc8ef4c088ac602a3d24a8d",
+        "drawing.png": "562125c511527e6df333287db211392331e32f6476c1ddaaf7a62ac9581a1590"
+      }
+    },
+    {
+      "case_id": "pk-f9d022297329",
+      "packet_sha256": "cfb84be86c966843b086cecb9c6114ba3ea2be1da1f6c3c76c6dd74bb995c4ac",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        86.0,
+        53.0,
+        9.2
+      ],
+      "actual_volume_mm3": 40674.60046088856,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 7075-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 86.00 x 53.00 x 9.20 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "cf5366dd21427a838bf1a266275c808240b9db1f91ea8f31a1ed813332feabee",
+        "drawing.pdf": "23a7fb42821ec2ab4be924a7f678b4f0be2f33c7b5a1ae03e2072d40218f296d",
+        "drawing.png": "85f240ac1f8d389fc5dc3b42c33eb3d874563e93f3831982537bfe52d8ec6608"
+      }
+    },
+    {
+      "case_id": "pk-fa3eb88bee25",
+      "packet_sha256": "a1e38dd0fd50ee0afbe16f7092d0868c639c73f2c9be8c9025ff5173df3232a7",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        62.0,
+        41.0,
+        21.0
+      ],
+      "actual_volume_mm3": 34037.99999999999,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = ABS\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 62.00 x 41.00 x 21.00 mm\nSURFACE ROUGHNESS = 3.20 um\nP1 WIDTH = 52.00 mm\nP1 LENGTH = 31.00 mm\nP1 DEPTH = 12.00 mm\nW1 THICKNESS = 1.20 mm\nPLAN (+Z)\nP1\nW1 +X\nA\nA\nSECTION A-A (X-Z)\nP1 open pocket\nW1\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "c5fb6ae6dbbe39f92dd24e96125e98cb187c66fb2c45f5fdfb984e184d45ada3",
+        "drawing.pdf": "cb966a24486cf2d886839a1d71b384a63b9c536ba95affb615b3a2940aa43067",
+        "drawing.png": "0887a213aa2e3eb77a101304122d42f288393dfb2b996173039732ad6d39883e"
+      }
+    },
+    {
+      "case_id": "pk-fb1be88ded7a",
+      "packet_sha256": "e66019eac810661e45dcc0f81244f7a88dd776124cb175e61dc1463131bb4954",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        66.0,
+        43.0,
+        38.0
+      ],
+      "actual_volume_mm3": 106578.89320476998,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 66.00 x 43.00 x 38.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.60 +/- 0.05 mm\nH1 COUNT = 1\nH1 TYPE = BLIND\nH1 DEPTH = 26.40 mm\nC1 DIAMETER = 12.60 mm\nC1 DEPTH = 4.00 mm\nPLAN (+Z)\nC1 / H1\nA\nA\nSECTION A-A (X-Z)\nC1\nH1 blind floor\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "08ee0784ad5c0cfff4bd21e4b3af8c6589400bd21c33d4189cff010ad802ee69",
+        "drawing.pdf": "7f53131a8673760b846db4b10eb6a4a0646b71edb81bd0ecf2be9f630fbc737d",
+        "drawing.png": "9f6417f6745d62ba45be8d77782012c9240e1c0126bb6fef2b66d8f872bfad3c"
+      }
+    },
+    {
+      "case_id": "pk-fcd0a8c46a24",
+      "packet_sha256": "cb9e5e2095dac5af659830d372dbae08953c0a66d027dd287137e43fc46bb214",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 80.00 x 50.00 x 8.00 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.00 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "60d935f44922104baee1971fc3c2b1accaa24e74657b74c8cf8a334f42545f76",
+        "drawing.pdf": "2e73ebcd580be6a8c38a129084bb4118618a524616066872df8d88203efbcf58",
+        "drawing.png": "e09411600146c5aba9a7dd4bf78ceb6e5fb7504fddaa9e66102997aedb6d8e57"
+      }
+    },
+    {
+      "case_id": "pk-ffbdcd9fa949",
+      "packet_sha256": "a83679ef7b1a98c26ce6a4c6e8b67e46cb63696d3a80de82b6fcff921afb7d03",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        88.0,
+        54.0,
+        9.6
+      ],
+      "actual_volume_mm3": 44224.63445470085,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nENVELOPE = 88.00 x 54.00 x 9.60 mm\nSURFACE ROUGHNESS = 3.20 um\nH1 DIAMETER = 6.80 +/- 0.05 mm\nH1 COUNT = 4\nH1 TYPE = THROUGH\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "0c52214c085ef6009a42da4c860d923a840ee459a2a8844b7766c7598210930d",
+        "drawing.pdf": "83ac8e77e61bf46c44c354049e675ad48da1142d3411149d26eccbef9f4b7a23",
+        "drawing.png": "717f78176dc201a201b699288abeda9857dc68d82392ea1033f6563b4a8efe7e"
+      }
+    },
+    {
+      "case_id": "pk-61e732a788ae",
+      "packet_sha256": "6b541818ee4daccb3d79daef1f863d86da98fe029dc80baa5098335e29312067",
+      "solid_count": 1,
+      "is_valid": true,
+      "actual_envelope_mm": [
+        80.0,
+        50.0,
+        8.0
+      ],
+      "actual_volume_mm3": 31095.22131576612,
+      "actual_pdf_pages": 1,
+      "actual_pdf_text": "PART DRAWING\nSCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.\nViews depict supplied STEP at model stage. Depths measured from top (+Z).\nDRAWING ID = PT-001\nDRAWING REV = A\nUNITS = mm\nMATERIAL = 6061-T6\nMODEL STAGE = finished\nDRAWING STAGE = finished\nFINISH = none\nTOLERANCE STAGE = after_finish\nSURFACE ROUGHNESS = 3.20 um\nPLAN (+Z)\nH1.1\nH1.2\nH1.3\nH1.4\nA\nA\nSECTION A-A (X-Z)\nH1 through all thickness; plan maps every group member.\nSection Y=0 does not intersect off-axis H1 pattern bores.\nDeclared finite requirements and setup/profile are in packet.json.\n",
+      "actual_hashes": {
+        "part.step": "377065dcef85d064fea710579a8a1d9467a594f7fc0ac5b31621de6363f1a359",
+        "drawing.pdf": "be586552b5eba3e417e0248d0635d9af83fe918e7820074e462e8fe6edf15c01",
+        "drawing.png": "1abbdc893f109d6aadd316fd6f4bb09d51c286eaf42254588f3c0a8cee108ace"
+      }
+    }
+  ]
+}

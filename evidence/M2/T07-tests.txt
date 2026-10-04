@@ -1,0 +1,20 @@
+.............                                                            [100%]
+============================== warnings summary ===============================
+..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1353
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1353: DeprecationWarning: The 'PointArcTangentLine' object is deprecated and will be removed in a future version.
+    class PointArcTangentLine(BaseEdgeObject):
+
+..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1432
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1432: DeprecationWarning: The 'PointArcTangentArc' object is deprecated and will be removed in a future version.
+    class PointArcTangentArc(BaseEdgeObject):
+
+..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1586
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1586: DeprecationWarning: The 'ArcArcTangentLine' object is deprecated and will be removed in a future version.
+    class ArcArcTangentLine(BaseEdgeObject):
+
+..\..\.venv\Lib\site-packages\build123d\objects_curve.py:1682
+  C:\Users\Walt\Documents\Codex\2026-10-03\g\outputs\projects\rfq-fuzz\.venv\Lib\site-packages\build123d\objects_curve.py:1682: DeprecationWarning: The 'ArcArcTangentArc' object is deprecated and will be removed in a future version.
+    class ArcArcTangentArc(BaseEdgeObject):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+13 passed, 4 warnings in 9.79s
