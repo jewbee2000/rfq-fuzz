@@ -1,0 +1,311 @@
+{
+  "schema_version": "1.0",
+  "project": "RFQFuzz",
+  "execution_authority": "tasks.json until explicitly migrated to Beads",
+  "notes": "Task verification commands are proposed interfaces and do not run before implementation. Adjust test paths to the implementation and record actual commands/evidence. M0 gate must pass before T04 or later.",
+  "tasks": [
+    {
+      "id": "T00",
+      "milestone": "M0",
+      "title": "Recheck differentiation and engineering contract",
+      "depends_on": [],
+      "requirements": [
+        "R21"
+      ],
+      "scope": "Read closest prior art and freeze the specific reviewer-testing question; stop or propose contribution if an equivalent exists.",
+      "acceptance": "Updated research decision with source/date, bounded novelty statement and first consumer question.",
+      "evidence": "evidence/M0/decision.md",
+      "verification": "Document/source inspection",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T01",
+      "milestone": "M0",
+      "title": "Pin the minimal export stack",
+      "depends_on": [
+        "T00"
+      ],
+      "requirements": [
+        "R22"
+      ],
+      "scope": "Create isolated Python environment; prove CAD/drawing imports; select compatible dependencies and license direction.",
+      "acceptance": "A basic STEP/PDF/PNG exports on the initial host and can be inspected; lockfile and license record exist.",
+      "evidence": "evidence/M0/environment.md",
+      "verification": "Dependency smoke check and rendered artifact inspection",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T02",
+      "milestone": "M0",
+      "title": "Build and independently validate one challenge",
+      "depends_on": [
+        "T01"
+      ],
+      "requirements": [
+        "R03",
+        "R04",
+        "R08"
+      ],
+      "scope": "Implement the plate triplet and minimal public/private contracts; independent code reimports STEP and reads visible drawing evidence.",
+      "acceptance": "Defect, repair and valid alternative verified; forbidden incidental changes rejected.",
+      "evidence": "evidence/M0/artifact-proof.md",
+      "verification": "Focused prototype geometry and export checks",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T03",
+      "milestone": "M0",
+      "title": "Exercise an external reviewer and decide",
+      "depends_on": [
+        "T02"
+      ],
+      "requirements": [
+        "R11",
+        "R15"
+      ],
+      "scope": "Export the neutral public bundle; collect reference and genuine external review paths. The external path must examine the O01 drawing, STEP and manufacturing-stage evidence. Demonstrate a changed result; an injected regression is allowed only with explicit labeling and separately retained external observations.",
+      "acceptance": "Raw responses and artifact-localized report; explicit pass/revise/stop for M0. No expansion without pass.",
+      "evidence": "evidence/M0/gate.md",
+      "verification": "External review walkthrough and manual contract audit",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T04",
+      "milestone": "M1",
+      "title": "Version contracts and conclusion semantics",
+      "depends_on": [
+        "T03"
+      ],
+      "requirements": [
+        "R02",
+        "R10"
+      ],
+      "scope": "Define schemas, authority/precedence, explicit coverage/status and migrations; commit fixtures before parallel workers.",
+      "acceptance": "Positive/negative contract cases; no hidden premises or unknown-to-pass conversion.",
+      "evidence": "evidence/M1/contracts.md",
+      "verification": "python -m pytest tests/contracts",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T05",
+      "milestone": "M1",
+      "title": "Implement sourced conditional profiles",
+      "depends_on": [
+        "T04"
+      ],
+      "requirements": [
+        "R06",
+        "R09"
+      ],
+      "scope": "Create rule cards and synthetic/profile-specific thresholds, material applicability, finish stage and setup envelope semantics.",
+      "acceptance": "Boundary/counterfactual examples and versioned provenance; no universal machinability claims.",
+      "evidence": "evidence/M1/profiles.md",
+      "verification": "python -m pytest tests/contracts tests/profiles",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T06",
+      "milestone": "M2",
+      "title": "Implement three bounded artifact families",
+      "depends_on": [
+        "T04"
+      ],
+      "requirements": [
+        "R03",
+        "R04"
+      ],
+      "scope": "Reuse CAD/drafting backend for supported geometry; generate complete public artifacts and lineage.",
+      "acceptance": "Reimport and visual evidence for each family and boundary parameter set.",
+      "evidence": "evidence/M2/generators.md",
+      "verification": "python -m pytest tests/geometry tests/generation",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T07",
+      "milestone": "M2",
+      "title": "Implement objective and profile variants",
+      "depends_on": [
+        "T05",
+        "T06"
+      ],
+      "requirements": [
+        "R05",
+        "R06",
+        "R07"
+      ],
+      "scope": "Implement six objective operators and conditional advisory/profile variants with prerequisites and invariants.",
+      "acceptance": "Defect/repair/valid examples; missing context and negative controls; unsupported edits refuse.",
+      "evidence": "evidence/M2/mutations.md",
+      "verification": "python -m pytest tests/mutations",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T08",
+      "milestone": "M2",
+      "title": "Implement independent artifact validator",
+      "depends_on": [
+        "T05",
+        "T06"
+      ],
+      "requirements": [
+        "R04",
+        "R05",
+        "R06",
+        "R08"
+      ],
+      "scope": "Own separate final-artifact readers, analytic checks, mutation-isolation checks and quarantine; coordinate only through public schemas.",
+      "acceptance": "Export corruption and collateral defects detected; all scored assertions have independently measured/visible evidence.",
+      "evidence": "evidence/M2/oracles.md",
+      "verification": "python -m pytest tests/artifact_validation",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T09",
+      "milestone": "M3",
+      "title": "Implement reviewer adapters and run lifecycle",
+      "depends_on": [
+        "T04"
+      ],
+      "requirements": [
+        "R11",
+        "R12",
+        "R19"
+      ],
+      "scope": "Public-only export, structured import and bounded process protocol; explicit coverage, errors, timeouts and raw-result retention.",
+      "acceptance": "External/manual integration; malformed/partial/error results remain observable; no implicit hosted upload.",
+      "evidence": "evidence/M3/adapters.md",
+      "verification": "python -m pytest tests/adapters",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T10",
+      "milestone": "M3",
+      "title": "Implement matching, adjudication and regression",
+      "depends_on": [
+        "T04",
+        "T09"
+      ],
+      "requirements": [
+        "R10",
+        "R12",
+        "R13",
+        "R14",
+        "R15"
+      ],
+      "scope": "One-to-one evidence matching, grouped root causes, per-track counts, unresolved findings and compatible-run comparison.",
+      "acceptance": "Hand-calculated cases agree; wrong-location/duplicate findings fail correctly; oracle revisions invalidate comparisons.",
+      "evidence": "evidence/M3/scoring.md",
+      "verification": "python -m pytest tests/scoring",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T11",
+      "milestone": "M4",
+      "title": "Build corpus and attack the evaluator",
+      "depends_on": [
+        "T07",
+        "T08",
+        "T10"
+      ],
+      "requirements": [
+        "R07",
+        "R16",
+        "R17",
+        "S05"
+      ],
+      "scope": "Curate validated corpus, freeze lineage splits and semantic replay; inject evaluator faults and independently audit controls.",
+      "acceptance": "Counts and exclusions recorded; critical mutants caught; blinding and leakage audit; representative rendering reviews.",
+      "evidence": "evidence/M4/challenge-report.md",
+      "verification": "python -m pytest tests/metamorphic tests/artifact_validation tests/scoring",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T12",
+      "milestone": "M4",
+      "title": "Build offline report and resilient execution",
+      "depends_on": [
+        "T10"
+      ],
+      "requirements": [
+        "R12",
+        "R18",
+        "R19"
+      ],
+      "scope": "Implement escaped source-linked HTML, bounded parsers and recoverable run state.",
+      "acceptance": "A reader follows changed finding to exact evidence; unsafe text cannot execute; interruptions preserve results.",
+      "evidence": "evidence/M4/report-and-failures.md",
+      "verification": "python -m pytest tests/reporting tests/adapters",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T13",
+      "milestone": "M5",
+      "title": "Verify independent consumer and transfer",
+      "depends_on": [
+        "T11",
+        "T12"
+      ],
+      "requirements": [
+        "R01",
+        "R15",
+        "R20",
+        "R22",
+        "S01",
+        "S03",
+        "S07"
+      ],
+      "scope": "Clean-install Windows/Linux; external reviewer walkthrough; separately authored case and optional engineer/NIST/second-reader evidence.",
+      "acceptance": "Consumer reproduces a useful diagnosis; transfer limits and unavailable human evidence stated explicitly.",
+      "evidence": "evidence/M5/consumer.md",
+      "verification": "python -m pytest tests/consumer; documented end-to-end demo on both platforms",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    },
+    {
+      "id": "T14",
+      "milestone": "M5",
+      "title": "Finish traceability, docs and article draft",
+      "depends_on": [
+        "T13"
+      ],
+      "requirements": [
+        "R20",
+        "R21"
+      ],
+      "scope": "Review every Must acceptance, record Should deferrals, finalize license/provenance/docs and write evidence-grounded first-person draft.",
+      "acceptance": "Complete requirements/evidence matrix, reproducible demo and local unpublished article; no unsupported achievements.",
+      "evidence": "evidence/M5/release-review.md",
+      "verification": "Requirements/evidence audit and documentation walkthrough",
+      "verification_is_proposed": true,
+      "status": "not_started",
+      "completion_commit": null
+    }
+  ]
+}

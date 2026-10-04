@@ -1,0 +1,549 @@
+{
+  "schema_version": "1.0",
+  "project": "RFQFuzz",
+  "research_date": "2026-10-04",
+  "status": "plan_only",
+  "source_of_truth": true,
+  "requirements": [
+    {
+      "id": "R01",
+      "priority": "must",
+      "title": "Local review-regression workflow",
+      "requirement": "Provide a local CLI and Python API for generate, validate, export, import, compare and report; separate package-consistency from CNC advisory results.",
+      "rationale": "The useful product is a repeatable reviewer test, not another manufacturing-approval app.",
+      "acceptance": "A clean consumer runs the supplied complete workflow offline with imported results and sees both tracks independently.",
+      "milestone": "M5",
+      "tasks": [
+        "T13"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R02",
+      "priority": "must",
+      "title": "Sufficient public context and private answers",
+      "requirement": "Version PacketSpec, CapabilityProfile, MutationSpec, OracleRecord, ReviewResult and RunManifest. Every premise needed by a reviewer is public; answer keys and defect labels are private.",
+      "rationale": "Hidden intent makes an unfair benchmark; metadata leakage makes an easy but meaningless one.",
+      "acceptance": "Schema tests reject missing authority/units where required; an export audit finds no oracle fields or revealing labels; missing critical-callout and revision cases expose their governing contract.",
+      "milestone": "M1",
+      "tasks": [
+        "T04"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R03",
+      "priority": "must",
+      "title": "Bounded realistic part families",
+      "requirement": "Support one-solid plate/hole-pattern, blind-bore/counterbore block and open-pocket block families with explicit feature groups and setups.",
+      "rationale": "Simple analytic geometry supports independent measurement while still exercising hardware-review problems.",
+      "acceptance": "Each family exports/reimports correctly over documented parameter bounds; unsupported topology fails explicitly; representative drawings receive visual inspection.",
+      "milestone": "M2",
+      "tasks": [
+        "T06"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R04",
+      "priority": "must",
+      "title": "Actual STEP, PDF and PNG artifacts",
+      "requirement": "Produce ordinary STEP and visible vector PDF, with PNG rendered from that PDF. Record units, hash, view/feature associations and rendering provenance.",
+      "rationale": "Reviewers must consume real engineering artifacts, not privileged generator objects.",
+      "acceptance": "Independent STEP reader confirms relevant geometry; PDF text and raster checks agree on required visible labels; PNG remains readable; hidden/clipped text fails validation.",
+      "milestone": "M2",
+      "tasks": [
+        "T06",
+        "T08"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R05",
+      "priority": "must",
+      "title": "Six objective fault operators",
+      "requirement": "Implement O01 diameter/model mismatch, O02 scoped count mismatch, O03 units mismatch, O04 incompatible global material declarations, O05 removal of a declared requirement and O06 release-association mismatch.",
+      "rationale": "These are useful and checkable package errors without pretending to solve full drawing intent or CNC process planning.",
+      "acceptance": "Each operator has prerequisites, allowed deltas and invariant checks; unsupported/ambiguous applications are rejected; the final visible/exported defect is verified.",
+      "milestone": "M2",
+      "tasks": [
+        "T07",
+        "T08"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R06",
+      "priority": "must",
+      "title": "Conditional manufacturing track",
+      "requirement": "Implement A01 wall advisory, A02 hole depth/diameter advisory, A03 named setup envelope exclusion and A04 finish/tolerance-stage context; include material-dependent applicability.",
+      "rationale": "Supplier recommendations and process defaults are conditional. Conflating them with impossibility would create bad engineering advice.",
+      "acceptance": "Boundary and alternate-profile cases produce the specified conclusion class; unknown finish stage stays unknown unless a public default resolves it; stock/fixture allowances are explicit.",
+      "milestone": "M2",
+      "tasks": [
+        "T05",
+        "T07",
+        "T08"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R07",
+      "priority": "must",
+      "title": "Repairs, valid lookalikes and uncertainty controls",
+      "requirement": "Pair objective defects with repaired twins and legitimate alternatives; include underdetermined cases and sparse CAD-authoritative drawings.",
+      "rationale": "A useful reviewer catches errors without flagging every omission or pretending incomplete evidence is enough.",
+      "acceptance": "Always-flag, always-clear and always-abstain baselines each fail the relevant metrics; controls cover correct units, REF values, aliases, precedence and independent document revisions.",
+      "milestone": "M4",
+      "tasks": [
+        "T07",
+        "T11"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R08",
+      "priority": "must",
+      "title": "Independent oracle and fixture quarantine",
+      "requirement": "Validate re-imported STEP measurements, actual visible drawing content and mutation isolation using code separated from generation; quarantine uncertainty and collateral defects.",
+      "rationale": "Generator metadata alone proves only that the generator agrees with itself.",
+      "acceptance": "Analytic checks and final-artifact measurements agree within recorded tolerance; deliberate export corruption is caught; invalid fixtures and their reasons are retained and excluded transparently.",
+      "milestone": "M2",
+      "tasks": [
+        "T08"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R09",
+      "priority": "must",
+      "title": "Versioned rule provenance",
+      "requirement": "Store source/date, short paraphrase, applicability, units, threshold, comparison, severity, precedence and limits for each rule. Label synthetic profiles and project-selected values.",
+      "rationale": "Published guidance varies by supplier; reproducibility requires knowing which policy produced the expected answer.",
+      "acceptance": "Every scored advisory points to a profile/rule version; unknown material/profile combinations abstain; no unsupported universal manufacturing threshold appears in reports.",
+      "milestone": "M1",
+      "tasks": [
+        "T05"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R10",
+      "priority": "must",
+      "title": "Explicit conclusion semantics",
+      "requirement": "Distinguish contradiction, profile_exclusion, advisory, missing_information, supported_clear and unsupported; separate fixture invalidity and execution errors.",
+      "rationale": "A binary pass/fail label loses the important engineering distinction between contradiction, risk and absent evidence.",
+      "acceptance": "Contract and scorer tests cover every class; replacing unknown with clear or advisory with impossible causes acceptance failures.",
+      "milestone": "M1",
+      "tasks": [
+        "T04",
+        "T10"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R11",
+      "priority": "must",
+      "title": "Vendor-neutral review interface",
+      "requirement": "Support ordinary public bundle export, structured-result import and a bounded local-process adapter. Demonstrate one genuine external reviewer as well as the reference path.",
+      "rationale": "A harness usable only by its own checker is not enough. Offline use should not depend on a paid API.",
+      "acceptance": "The same bundle reaches two independent review paths. At M0 the external reviewer examines the O01 PDF/PNG drawing, STEP geometry and public manufacturing-stage context; its raw response/provenance is retained. STEP-only integrations are later advisory-track evidence and cannot substitute for this gate.",
+      "milestone": "M3",
+      "tasks": [
+        "T03",
+        "T09"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R12",
+      "priority": "must",
+      "title": "Coverage and failed-run accounting",
+      "requirement": "Record explicit completion, partial, unsupported, timeout and error states plus reviewed modalities/obligations; preserve raw outputs.",
+      "rationale": "Silence or a crash must not masquerade as a clean part or inflate accuracy.",
+      "acceptance": "Missing/malformed results, partial runs, empty findings and explicit clear responses produce distinct reports and denominators; interrupted runs can resume without overwriting history.",
+      "milestone": "M3",
+      "tasks": [
+        "T09",
+        "T10",
+        "T12"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R13",
+      "priority": "must",
+      "title": "Evidence-aware matching and adjudication",
+      "requirement": "Match category/conclusion/location or feature evidence one-to-one; deduplicate root-cause findings; keep unmatched findings unadjudicated until reviewed.",
+      "rationale": "Vague warnings are not detections, and an unexpected finding may reveal a real fixture defect.",
+      "acceptance": "A wrong-region warning does not match; duplicates cannot increase recall; unit-root-cause grouping works; answer-key corrections create a new version and invalidate stale comparisons.",
+      "milestone": "M3",
+      "tasks": [
+        "T10"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R14",
+      "priority": "must",
+      "title": "Honest per-track metrics",
+      "requirement": "Report operator recall, named-clean-obligation false-alert rate, explicit false-clear rate, abstention, coverage, invalid/error rates and counts; no composite intelligence score.",
+      "rationale": "The corpus proves only its finite obligations. A high detection rate alone can reward indiscriminate warnings.",
+      "acceptance": "Known synthetic result sets yield hand-calculated numerators/denominators; unadjudicated findings prevent finalized precision claims; misses and explicit false clears stay distinct.",
+      "milestone": "M3",
+      "tasks": [
+        "T10"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R15",
+      "priority": "must",
+      "title": "Actionable version regression",
+      "requirement": "Compare runs on identical suite/oracle/profile versions and show changed findings with artifact evidence; reject incompatible comparisons by default.",
+      "rationale": "The practical outcome is diagnosing a change in a review tool.",
+      "acceptance": "A consumer identifies a detected-to-missed case and a new false alert from the report; mismatched oracle/profile hashes are flagged. Deliberately injected reviewer regressions are labeled and kept separate from genuine external observations.",
+      "milestone": "M5",
+      "tasks": [
+        "T03",
+        "T10",
+        "T13"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R16",
+      "priority": "must",
+      "title": "Replay and leakage-resistant partitions",
+      "requirement": "Record versions, hashes, seeds, environment and raw results; split by source family/layout/ancestry; keep all twins in one partition.",
+      "rationale": "Random seeds do not guarantee reproducibility or prevent near-duplicate leakage.",
+      "acceptance": "Same configuration reproduces semantics within documented tolerances; split audit finds no ancestry overlap; exported packets omit mutation-revealing names/metadata.",
+      "milestone": "M4",
+      "tasks": [
+        "T11"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R17",
+      "priority": "must",
+      "title": "Challenge the validator and scorer",
+      "requirement": "Use independent review, analytic examples and deliberate evaluator faults in unit conversion, comparison, severity, deduplication, leakage and unknown handling.",
+      "rationale": "A passing self-generated corpus can conceal a broken evaluation system.",
+      "acceptance": "At least one relevant broken implementation in each category is detected by the acceptance suite; surviving mutants have an explicit limitation or block release.",
+      "milestone": "M4",
+      "tasks": [
+        "T11"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R18",
+      "priority": "must",
+      "title": "Inspectible offline report",
+      "requirement": "Create escaped local HTML containing source crop/page, geometric evidence where relevant, expected/actual conclusion, rule provenance and regression context.",
+      "rationale": "Engineers need to debug a concrete issue, not merely read a score.",
+      "acceptance": "An independent reader can trace an example from report to exact source artifact and expected contract; reports work without a server/network; embedded arbitrary text cannot execute scripts.",
+      "milestone": "M4",
+      "tasks": [
+        "T12"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R19",
+      "priority": "must",
+      "title": "Bounded and explicit data handling",
+      "requirement": "Validate schemas, file signatures, paths, size/pages/solids and process timeouts; do not execute packet text or send data to hosted services by default.",
+      "rationale": "Drawings are untrusted inputs and often private. Resource failures must be observable.",
+      "acceptance": "Malformed/path-traversal/oversized cases fail with retained reasons; adapter timeout terminates its work; no network access is needed for the offline consumer workflow.",
+      "milestone": "M4",
+      "tasks": [
+        "T09",
+        "T12"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R20",
+      "priority": "must",
+      "title": "Consumer evidence and truthful release claims",
+      "requirement": "Provide clean-install examples, an actual external-review walkthrough, known limits, source/dependency/license inventory and a factual unpublished blog draft.",
+      "rationale": "Portfolio evidence requires a working consumer experience and verifiable engineering decisions.",
+      "acceptance": "Independent consumer repeats the workflow; report and raw results are retained. Broad industry-usefulness claims require separately authored and engineer-reviewed evidence; otherwise label synthetic limitations.",
+      "milestone": "M5",
+      "tasks": [
+        "T13",
+        "T14"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R21",
+      "priority": "must",
+      "title": "Traceable agent implementation",
+      "requirement": "Tie tasks to requirements, prerequisites, acceptance commands, retained evidence and local commits. Separate generator, validator and evaluator ownership where useful.",
+      "rationale": "Modern agent work is credible when its outcomes can be checked and resumed.",
+      "acceptance": "Every Must ID has completion evidence; task graph has no cycles; milestone decisions and unresolved assumptions are recorded; no publication/push occurs.",
+      "milestone": "M5",
+      "tasks": [
+        "T00",
+        "T14"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "R22",
+      "priority": "must",
+      "title": "Reproducible supported environments",
+      "requirement": "Pin a compatible CAD/drawing stack; test the documented installation and core workflow on Windows and Linux; isolate project dependencies.",
+      "rationale": "An open-source tool is less useful if only its author environment can run it.",
+      "acceptance": "Fresh environments pass the core demo with semantic artifact checks; platform-specific limits are documented; no SolidWorks, GPU or paid model is a core requirement.",
+      "milestone": "M5",
+      "tasks": [
+        "T01",
+        "T13"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "S01",
+      "priority": "should",
+      "title": "Engineer-authored external cases",
+      "requirement": "Allow a user to register owned STEP/PDF packets with explicit feature mappings, finite obligations and manually reviewed expected answers.",
+      "rationale": "This is the most direct route from a synthetic toolkit to a team's actual regression suite.",
+      "acceptance": "At least one separately authored packet works without generator-private fields; unsupported mappings are rejected; provenance/license and review notes are retained.",
+      "milestone": "M5",
+      "tasks": [
+        "T13"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "S02",
+      "priority": "should",
+      "title": "Elementary tolerance and thread-depth operators",
+      "requirement": "Add contradictory numeric intervals/dimension chains and simple blind-bore engagement conflicts only with explicit modeling assumptions.",
+      "rationale": "These are useful next cases, but functional tolerance/GD&T interpretation and tap geometry can introduce ambiguity.",
+      "acceptance": "Independent arithmetic/geometry checks and valid REF/alternate-process controls establish each case; uncertain process assumptions prevent scoring.",
+      "milestone": "post-v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "S03",
+      "priority": "should",
+      "title": "External interoperability fixtures",
+      "requirement": "Use a small licensed NIST or separately authored STEP/PMI set for importer robustness, not as unquestioned good-drawing ground truth.",
+      "rationale": "External files exercise failure modes missed by generated examples.",
+      "acceptance": "Every case records provenance and intended check; NIST limitations are stated; unsupported PMI produces explicit unavailable data.",
+      "milestone": "M5",
+      "tasks": [
+        "T13"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "S04",
+      "priority": "should",
+      "title": "Interactive evidence navigation",
+      "requirement": "Add a local 3D highlight and linked page/feature navigation to the static report.",
+      "rationale": "This could reduce diagnostic effort once the report has demonstrated value.",
+      "acceptance": "A consumer locates the affected face and annotation without interpreting internal IDs; static report remains usable without the viewer.",
+      "milestone": "post-v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "S05",
+      "priority": "should",
+      "title": "Broader presentation metamorphisms",
+      "requirement": "Vary font/layout/view order and PNG resolution within known legibility bounds; preserve meaning.",
+      "rationale": "Review quality should not depend entirely on one drawing template.",
+      "acceptance": "Meaning-preserving variants retain expected conclusions; illegible or ambiguously associated cases are quarantined; transfer errors are separately reported.",
+      "milestone": "M4",
+      "tasks": [
+        "T11"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "S06",
+      "priority": "should",
+      "title": "Optional hosted reviewer integration",
+      "requirement": "Add a live model API adapter only after offline/manual integration works, with explicit opt-in data transfer and budget.",
+      "rationale": "This makes repeated model evaluation easier without burdening the basic tool.",
+      "acceptance": "Record model/prompt/cost where available; replay needs no API key; missing credentials and exceeded budget fail clearly.",
+      "milestone": "post-v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "S07",
+      "priority": "should",
+      "title": "Additional independent oracle signal",
+      "requirement": "Cross-check a representative subset with another CAD reader or separately authored geometry and human review.",
+      "rationale": "A shared OCCT kernel leaves common-mode risk even with independent modules.",
+      "acceptance": "Publish disagreement analysis; never select the preferred answer merely because it agrees with the generator.",
+      "milestone": "M5",
+      "tasks": [
+        "T13"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "C01",
+      "priority": "could",
+      "title": "Failure minimization",
+      "requirement": "Shrink a failing packet/parameter set while preserving the independently validated failure.",
+      "rationale": "Smaller reproductions could help reviewer maintainers debug.",
+      "acceptance": "Every shrink is revalidated and retains the same expected obligation; minimization never changes the conclusion without recording it.",
+      "milestone": "later",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "C02",
+      "priority": "could",
+      "title": "Semantic AP242 PMI",
+      "requirement": "Consume supported semantic PMI where present; never assume STEP includes material/tolerance intent.",
+      "rationale": "PMI could broaden valid alternate representations.",
+      "acceptance": "Explicitly supported entities round-trip with evidence; absent or unsupported PMI is unknown, not a parser success claim.",
+      "milestone": "later",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "C03",
+      "priority": "could",
+      "title": "Fixed-tool accessibility challenges",
+      "requirement": "Add simple reach/radius cases under a fully declared tool catalog, setup and alternate-process boundary.",
+      "rationale": "This adds geometric DFM depth but requires more careful process assumptions.",
+      "acceptance": "Independent geometric witness supports a named-profile exclusion; other machines/tools are not ruled out globally.",
+      "milestone": "later",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "C04",
+      "priority": "could",
+      "title": "Reviewer-output normalization assistance",
+      "requirement": "Use an optional model to propose mappings from free prose to Finding records, subject to review or calibrated validation.",
+      "rationale": "It can lower adapter effort, but an opaque judge must not control ground truth.",
+      "acceptance": "Raw text and proposed mapping are retained; disputed mappings remain unadjudicated; deterministic structured path stays available.",
+      "milestone": "later",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "W01",
+      "priority": "wont",
+      "title": "A new general DFM approval application",
+      "requirement": "Do not offer arbitrary upload-and-certify behavior or imply that a passing benchmark approves a part for manufacture.",
+      "rationale": "The original idea already exists and general feasibility requires more manufacturing context.",
+      "acceptance": "Docs/UI explicitly describe testing reviewers; no global machinable badge or certification claim.",
+      "milestone": "v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "W02",
+      "priority": "wont",
+      "title": "Arbitrary 2D-to-3D reconstruction",
+      "requirement": "Do not infer complete geometry from arbitrary PDF/PNG or measure manufacturing dimensions from drawing pixels.",
+      "rationale": "Projection ambiguity and image scaling make strong geometric claims unsafe.",
+      "acceptance": "Document-only review has explicit modality limits; model-dependent obligations require STEP and correspondence.",
+      "milestone": "v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "W03",
+      "priority": "wont",
+      "title": "Native proprietary CAD drawing support",
+      "requirement": "Do not parse .slddrw or require SolidWorks/Document Manager in the open-source core.",
+      "rationale": "Licensing, platform and format complexity add little to the central testing contribution.",
+      "acceptance": "Unsupported native files explain the PDF/STEP export route; no bundled proprietary keys or libraries.",
+      "milestone": "v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "W04",
+      "priority": "wont",
+      "title": "Complete GD&T or functional approval",
+      "requirement": "Do not certify ASME/ISO compliance, complete dimensioning, tolerance stack-ups or inferred design intent.",
+      "rationale": "This needs broader semantics, standards access and domain judgment; sparse drawings can be correct.",
+      "acceptance": "Only named finite obligations are scored; no proprietary standard tables copied into the project.",
+      "milestone": "v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "W05",
+      "priority": "wont",
+      "title": "General CAM and manufacturing simulation",
+      "requirement": "Exclude five-axis/turning process planning, fixture synthesis, cutting-force/tool-life simulation, cycle time and price.",
+      "rationale": "These are separate substantial products and defeat a small feasible scope.",
+      "acceptance": "No report suggests process simulation or physical manufacture was performed.",
+      "milestone": "v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "W06",
+      "priority": "wont",
+      "title": "Other manufacturing processes",
+      "requirement": "Exclude injection molding, die casting, stamping and sheet-metal bending.",
+      "rationale": "Each needs distinct geometry/rules/oracles, and adjacent benchmark work already exists.",
+      "acceptance": "CNC track boundaries remain explicit; architecture extensibility is not advertised as implemented support.",
+      "milestone": "v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "W07",
+      "priority": "wont",
+      "title": "Arbitrary imported artifact mutation",
+      "requirement": "Do not automatically edit unrestricted customer PDFs or arbitrary STEP topology.",
+      "rationale": "Proving semantic correspondence and mutation isolation is much harder outside controlled families.",
+      "acceptance": "External cases are manually registered and independently reviewed; unsupported mutations refuse clearly.",
+      "milestone": "v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "W08",
+      "priority": "wont",
+      "title": "Universal material/finish predictions",
+      "requirement": "Do not generate a general compatibility database, coating compensation or machining parameter recommendations.",
+      "rationale": "Published supplier guidance is conditional and insufficient for universal rules.",
+      "acceptance": "Use only explicit sourced/profile assumptions; missing applicability yields unknown.",
+      "milestone": "v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "W09",
+      "priority": "wont",
+      "title": "Hosted service or full Gas Town deployment",
+      "requirement": "Exclude accounts, billing, multi-tenant uploads, orchestration services and a large autonomous agent fleet.",
+      "rationale": "They add operational work before the engineering tool is useful.",
+      "acceptance": "The core runs locally; Beads stays optional development tooling.",
+      "milestone": "v1",
+      "tasks": [],
+      "status": "planned"
+    },
+    {
+      "id": "W10",
+      "priority": "wont",
+      "title": "Unapproved publication or invented experience",
+      "requirement": "Do not push, deploy, send supplier orders, publish blog content or claim personal shop-floor experience/results not evidenced.",
+      "rationale": "The user's standing constraint is local commits only, and a credible portfolio must remain factual.",
+      "acceptance": "All artifacts and article drafts stay local; reported results cite actual retained evidence.",
+      "milestone": "current",
+      "tasks": [],
+      "status": "planned"
+    }
+  ]
+}
