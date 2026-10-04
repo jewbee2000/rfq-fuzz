@@ -1,0 +1,16 @@
+{
+  "mutations": [
+    {
+      "case_id": "pk-0123456789ab",
+      "ancestry": "same-source",
+      "variant": "repaired",
+      "operator": "O01"
+    },
+    {
+      "case_id": "pk-0123456789ac",
+      "ancestry": "same-source",
+      "variant": "defective",
+      "operator": "O01"
+    }
+  ]
+}

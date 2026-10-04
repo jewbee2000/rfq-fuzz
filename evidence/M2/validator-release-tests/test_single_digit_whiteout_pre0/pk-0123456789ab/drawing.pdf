@@ -1,0 +1,214 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/PageMode /UseNone
+/Pages 2 0 R
+/Type /Catalog
+>>
+endobj
+2 0 obj
+<<
+/Count 1
+/Kids [ 3 0 R ]
+/Type /Pages
+>>
+endobj
+3 0 obj
+<<
+/Contents 4 0 R
+/MediaBox [ 0 0 842 595 ]
+/Parent 2 0 R
+/Resources <<
+/Font 5 0 R
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+>>
+endobj
+4 0 obj
+[ 10 0 R 11 0 R ]
+endobj
+5 0 obj
+<<
+/F1 6 0 R
+/F1-0 9 0 R
+/F2 7 0 R
+>>
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/Author (RFQ author)
+/CreationDate (D\07220000101000000\05300\04700\047)
+/Creator (RFQFuzz bounded vector drafting)
+/Keywords ()
+/ModDate (D\07220000101000000\05300\04700\047)
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Subject (Authored schematic engineering drawing)
+/Title (Part drawing)
+/Trapped /False
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/Length 2581
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+.7 w
+n 20 20 802 555 re S
+BT /F2 14 Tf 16.8 TL ET
+BT 1 0 0 1 35 552 Tm (PART DRAWING) Tj T* ET
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 35 534 Tm (SCHEMATIC VIEWS. NUMERIC ANNOTATIONS GOVERN; DO NOT MEASURE PIXELS.) Tj T* ET
+BT 1 0 0 1 35 518 Tm (Views depict supplied STEP at model stage. Depths measured from top \(+Z\).) Tj T* ET
+n 395 35 m 395 503 l S
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 408 486 Tm (DRAWING ID = PT-001) Tj T* ET
+BT 1 0 0 1 408 470 Tm (DRAWING REV = A) Tj T* ET
+BT 1 0 0 1 408 454 Tm (UNITS = mm) Tj T* ET
+BT 1 0 0 1 408 438 Tm (MATERIAL = 6061-T6) Tj T* ET
+BT 1 0 0 1 408 422 Tm (MODEL STAGE = finished) Tj T* ET
+BT 1 0 0 1 408 406 Tm (DRAWING STAGE = finished) Tj T* ET
+BT 1 0 0 1 408 390 Tm (FINISH = none) Tj T* ET
+BT 1 0 0 1 408 374 Tm (TOLERANCE STAGE = after_finish) Tj T* ET
+BT 1 0 0 1 408 358 Tm (ENVELOPE = 80.00 x 50.00 x 8.00 mm) Tj T* ET
+BT 1 0 0 1 408 342 Tm (SURFACE ROUGHNESS = 3.20 um) Tj T* ET
+BT 1 0 0 1 408 326 Tm (H1 DIAMETER = 6.00 +/- 0.05 mm) Tj T* ET
+BT 1 0 0 1 408 310 Tm (H1 COUNT = 4) Tj T* ET
+BT 1 0 0 1 408 294 Tm (H1 TYPE = THROUGH) Tj T* ET
+BT /F2 11 Tf 13.2 TL ET
+BT 1 0 0 1 48 492 Tm (PLAN \(+Z\)) Tj T* ET
+n 88 330 240 150 re S
+BT /F1 10 Tf 12 TL ET
+n
+142 360 m
+142 364.9706 137.9706 369 133 369 c
+128.0294 369 124 364.9706 124 360 c
+124 355.0294 128.0294 351 133 351 c
+137.9706 351 142 355.0294 142 360 c
+S
+BT 1 0 0 1 145 364 Tm (H1.1) Tj T* ET
+n
+142 450 m
+142 454.9706 137.9706 459 133 459 c
+128.0294 459 124 454.9706 124 450 c
+124 445.0294 128.0294 441 133 441 c
+137.9706 441 142 445.0294 142 450 c
+S
+BT 1 0 0 1 145 454 Tm (H1.2) Tj T* ET
+n
+292 360 m
+292 364.9706 287.9706 369 283 369 c
+278.0294 369 274 364.9706 274 360 c
+274 355.0294 278.0294 351 283 351 c
+287.9706 351 292 355.0294 292 360 c
+S
+BT 1 0 0 1 295 364 Tm (H1.3) Tj T* ET
+n
+292 450 m
+292 454.9706 287.9706 459 283 459 c
+278.0294 459 274 454.9706 274 450 c
+274 445.0294 278.0294 441 283 441 c
+287.9706 441 292 445.0294 292 450 c
+S
+BT 1 0 0 1 295 454 Tm (H1.4) Tj T* ET
+[3 2] 0 d
+n 78 405 m 338 405 l S
+[] 0 d
+BT 1 0 0 1 70 410 Tm (A) Tj T* ET
+BT 1 0 0 1 341 410 Tm (A) Tj T* ET
+BT /F2 11 Tf 13.2 TL ET
+BT 1 0 0 1 48 278 Tm (SECTION A-A \(X-Z\)) Tj T* ET
+n 58 173 300 30 re S
+1 1 1 rg
+BT /F1 9 Tf 10.8 TL ET
+0 0 0 rg
+BT 1 0 0 1 48 83 Tm (H1 through all thickness; plan maps every group member.) Tj T* ET
+BT 1 0 0 1 48 67 Tm (Section Y=0 does not intersect off-axis H1 pattern bores.) Tj T* ET
+0 0 0 rg
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 408 39 Tm (Declared finite requirements and setup/profile are in packet.json.) Tj T* ET
+ 
+
+Q
+
+endstream
+endobj
+11 0 obj
+<<
+/Length 117
+>>
+stream
+q
+0.0 0.0 842 595 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+486.81 325.69 5.120001 7.699988 re
+f*
+Q
+
+endstream
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000142 00000 n 
+0000000331 00000 n 
+0000000364 00000 n 
+0000000417 00000 n 
+0000000524 00000 n 
+0000000636 00000 n 
+0000000979 00000 n 
+0000001086 00000 n 
+0000003720 00000 n 
+trailer
+<<
+/Size 12
+/Root 1 0 R
+/Info 8 0 R
+/ID [ <f747732337cf0c292ddcb665b9f3db07> <f747732337cf0c292ddcb665b9f3db07> ]
+>>
+startxref
+3889
+%%EOF

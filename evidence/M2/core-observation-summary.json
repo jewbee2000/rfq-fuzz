@@ -1,0 +1,152 @@
+{
+  "cases": 145,
+  "counts": [
+    {
+      "track": "cnc_advisory",
+      "operator": "A01",
+      "conclusion": "advisory",
+      "count": 3
+    },
+    {
+      "track": "cnc_advisory",
+      "operator": "A01",
+      "conclusion": "missing_information",
+      "count": 3
+    },
+    {
+      "track": "cnc_advisory",
+      "operator": "A01",
+      "conclusion": "supported_clear",
+      "count": 31
+    },
+    {
+      "track": "cnc_advisory",
+      "operator": "A02",
+      "conclusion": "advisory",
+      "count": 3
+    },
+    {
+      "track": "cnc_advisory",
+      "operator": "A02",
+      "conclusion": "supported_clear",
+      "count": 43
+    },
+    {
+      "track": "cnc_advisory",
+      "operator": "A03",
+      "conclusion": "missing_information",
+      "count": 3
+    },
+    {
+      "track": "cnc_advisory",
+      "operator": "A03",
+      "conclusion": "profile_exclusion",
+      "count": 3
+    },
+    {
+      "track": "cnc_advisory",
+      "operator": "A03",
+      "conclusion": "supported_clear",
+      "count": 139
+    },
+    {
+      "track": "cnc_advisory",
+      "operator": "A04",
+      "conclusion": "missing_information",
+      "count": 9
+    },
+    {
+      "track": "cnc_advisory",
+      "operator": "A04",
+      "conclusion": "supported_clear",
+      "count": 136
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O01",
+      "conclusion": "contradiction",
+      "count": 6
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O01",
+      "conclusion": "missing_information",
+      "count": 6
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O01",
+      "conclusion": "supported_clear",
+      "count": 92
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O02",
+      "conclusion": "contradiction",
+      "count": 6
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O02",
+      "conclusion": "supported_clear",
+      "count": 102
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O03",
+      "conclusion": "contradiction",
+      "count": 6
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O03",
+      "conclusion": "supported_clear",
+      "count": 139
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O04",
+      "conclusion": "contradiction",
+      "count": 6
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O04",
+      "conclusion": "missing_information",
+      "count": 3
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O04",
+      "conclusion": "supported_clear",
+      "count": 136
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O05",
+      "conclusion": "contradiction",
+      "count": 6
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O05",
+      "conclusion": "supported_clear",
+      "count": 139
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O06",
+      "conclusion": "contradiction",
+      "count": 6
+    },
+    {
+      "track": "package_consistency",
+      "operator": "O06",
+      "conclusion": "supported_clear",
+      "count": 139
+    }
+  ],
+  "oracle_bytes": 7442717,
+  "status": "unverified",
+  "scope": "Diagnostic unverified observations; final frozen-code attestation/revalidation required"
+}

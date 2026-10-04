@@ -1,0 +1,10 @@
+{
+  "mutations": [
+    {
+      "case_id": "pk-0123456789ab",
+      "ancestry": "source",
+      "variant": "defective",
+      "operator": "O01"
+    }
+  ]
+}

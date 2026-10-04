@@ -1,0 +1,356 @@
+{
+  "schema_version": "1.0",
+  "case_id": "pk-0123456789ac",
+  "part_id": "PT-001",
+  "family": "plate",
+  "units": {
+    "model": "mm",
+    "drawing": "mm"
+  },
+  "release_association": {
+    "model_id": "PT-001",
+    "model_revision": "A",
+    "drawing_id": "PT-001",
+    "drawing_revision": "B",
+    "permitted_pairs": [
+      [
+        "A",
+        "B"
+      ]
+    ]
+  },
+  "authority": {
+    "geometry": "step",
+    "dimensions": "drawing",
+    "material_precedence": "equal",
+    "process": "Public manufacturing contract and visible notes apply at their named stages",
+    "release": "Only explicitly permitted model/drawing revision pairs are approved"
+  },
+  "manufacturing": {
+    "model_stage": "finished",
+    "drawing_stage": "finished",
+    "transition": null,
+    "material": "6061-T6",
+    "material_class": "metal",
+    "finish": "none",
+    "tolerance_stage": "after_finish"
+  },
+  "setup": {
+    "orientation": "XYZ",
+    "stock_allowance_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "fixture_allowance_mm": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "profile": {
+    "schema_version": "1.0",
+    "id": "synthetic-standard",
+    "version": "1.0.0",
+    "synthetic": true,
+    "scope": "RFQFuzz project-selected regression policy for one-solid plate, bore-block and open-pocket fixtures; fixed XYZ setup; no production certification",
+    "unsupported_operations": [
+      "CAM",
+      "toolpath collision",
+      "workholding synthesis",
+      "turning",
+      "five-axis machining",
+      "finish compatibility or thickness prediction"
+    ],
+    "rules": [
+      {
+        "id": "A01",
+        "version": "1.0.0",
+        "source": "Xometry, CNC design tips; https://www.xometry.com/resources/machining/10-tips-improve-cad-cnc-design/ ; Protolabs, CNC milling guidelines; https://www.protolabs.com/services/cnc-machining/cnc-milling/design-guidelines/",
+        "retrieved": "2026-10-04",
+        "paraphrase": "Published thin-feature recommendations differ; reduced stiffness can increase machining risk. RFQFuzz selects its own metal/plastic advisory values.",
+        "applicability": {
+          "materials": {
+            "6061-T6": "metal",
+            "aluminum 6061-T6": "metal",
+            "304": "metal",
+            "stainless steel 304": "metal",
+            "316": "metal",
+            "steel 1018": "metal",
+            "ABS": "plastic",
+            "acetal": "plastic",
+            "POM": "plastic",
+            "Nylon 6/6": "plastic"
+          },
+          "material_classes": [
+            "metal",
+            "plastic"
+          ]
+        },
+        "units": "mm",
+        "threshold": {
+          "metal": 0.8,
+          "plastic": 1.5
+        },
+        "comparison": "wall_mm < class threshold; equality is clear for this rule",
+        "severity": "advisory",
+        "precedence": "Selected public synthetic profile governs this advisory; an advisory never overrides an explicit engineering requirement.",
+        "limits": "Requires an independently measured minimum wall for the declared feature and known material/class. No tool, vibration or actual part feasibility proof.",
+        "synthetic_value": true
+      },
+      {
+        "id": "A02",
+        "version": "1.0.0",
+        "source": "Protolabs Network, How to design parts for CNC machining; https://www.hubs.com/knowledge-base/how-design-parts-cnc-machining/",
+        "retrieved": "2026-10-04",
+        "paraphrase": "The guide separates recommended, typical and special-tooling hole depths. RFQFuzz chooses a depth/diameter advisory without imposing a universal maximum.",
+        "applicability": {
+          "materials": {
+            "6061-T6": "metal",
+            "aluminum 6061-T6": "metal",
+            "304": "metal",
+            "stainless steel 304": "metal",
+            "316": "metal",
+            "steel 1018": "metal",
+            "ABS": "plastic",
+            "acetal": "plastic",
+            "POM": "plastic",
+            "Nylon 6/6": "plastic"
+          },
+          "material_classes": [
+            "metal",
+            "plastic"
+          ]
+        },
+        "units": "dimensionless depth/diameter",
+        "threshold": {
+          "metal": 4.0,
+          "plastic": 4.0
+        },
+        "comparison": "bore_depth_mm / bore_diameter_mm > class threshold; equality is clear for this rule",
+        "severity": "advisory",
+        "precedence": "Selected public synthetic profile governs; depth means the declared cylindrical bore depth, not drill-tip depth or counterbore depth.",
+        "limits": "Requires independent bore diameter and cylindrical depth. Non-standard tooling, drill-tip shape, machining process and chip evacuation are not solved.",
+        "synthetic_value": true
+      },
+      {
+        "id": "A03",
+        "version": "1.0.0",
+        "source": "Protolabs, CNC milling design guidelines; https://www.protolabs.com/services/cnc-machining/cnc-milling/design-guidelines/",
+        "retrieved": "2026-10-04",
+        "paraphrase": "Published service envelopes vary with setup and material. RFQFuzz selects a named synthetic XYZ capacity, with explicit stock and fixture occupied extents.",
+        "applicability": {
+          "materials": {
+            "6061-T6": "metal",
+            "aluminum 6061-T6": "metal",
+            "304": "metal",
+            "stainless steel 304": "metal",
+            "316": "metal",
+            "steel 1018": "metal",
+            "ABS": "plastic",
+            "acetal": "plastic",
+            "POM": "plastic",
+            "Nylon 6/6": "plastic"
+          },
+          "material_classes": [
+            "metal",
+            "plastic"
+          ]
+        },
+        "units": "mm XYZ total occupied extent",
+        "threshold": {
+          "setup_name": "synthetic-standard-XYZ",
+          "orientation": "XYZ",
+          "envelope_mm": [
+            120.0,
+            80.0,
+            50.0
+          ],
+          "allowance_convention": "total_added_extent_per_axis"
+        },
+        "comparison": "any envelope_mm + stock_allowance_mm + fixture_allowance_mm axis > capacity; equality is included",
+        "severity": "profile_exclusion",
+        "precedence": "Only the named selected profile and declared XYZ orientation govern; no automatic axis permutation or assumed zero allowance.",
+        "limits": "Exclusion is solely from this named setup. It does not exclude another machine, orientation, tool or fixture. Allowances are total additions, not per-side values.",
+        "synthetic_value": true
+      },
+      {
+        "id": "A04",
+        "version": "1.0.0",
+        "source": "Xometry, Manufacturing Standards; https://www.xometry.com/manufacturing-standards/ ; RFQFuzz project-selected synthetic stage policy (not a sourced vendor CNC default)",
+        "retrieved": "2026-10-04",
+        "paraphrase": "Service defaults and explicit requirements can differ. The retrieved CNC standards section does not establish a finish-stage default; RFQFuzz owns the synthetic default here.",
+        "applicability": {
+          "materials": {
+            "6061-T6": "metal",
+            "aluminum 6061-T6": "metal",
+            "304": "metal",
+            "stainless steel 304": "metal",
+            "316": "metal",
+            "steel 1018": "metal",
+            "ABS": "plastic",
+            "acetal": "plastic",
+            "POM": "plastic",
+            "Nylon 6/6": "plastic"
+          },
+          "material_classes": [
+            "metal",
+            "plastic"
+          ]
+        },
+        "units": "manufacturing stage",
+        "threshold": {
+          "default_tolerance_stage": "before_finish"
+        },
+        "comparison": "explicit before_finish/after_finish first; otherwise public profile default; otherwise missing_information",
+        "severity": "missing_information",
+        "precedence": "Explicit manufacturing.tolerance_stage overrides the selected public synthetic default. An invalid explicit stage never falls back to a default.",
+        "limits": "Establishes inspection-stage context only. It does not establish finish/material compatibility, compensate coating thickness or reconcile contradictory geometry stages.",
+        "synthetic_value": true
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "H1",
+      "type": "through_bore_group",
+      "centers_mm": [
+        [
+          -25.0,
+          -15.0,
+          0.0
+        ],
+        [
+          -25.0,
+          15.0,
+          0.0
+        ],
+        [
+          25.0,
+          -15.0,
+          0.0
+        ],
+        [
+          25.0,
+          15.0,
+          0.0
+        ]
+      ],
+      "drawing_association": "PLAN: all numbered H1 Z bores; H1 grouped diameter/count annotations"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "RQ1",
+      "representation": "drawing",
+      "description": "A visible SURFACE ROUGHNESS = 3.20 um note is required for release. STEP geometry alone does not represent this requirement."
+    }
+  ],
+  "obligations": [
+    {
+      "id": "obj-units",
+      "track": "package_consistency",
+      "category": "unit_consistency",
+      "feature_id": "document",
+      "required_modalities": [
+        "step",
+        "pdf",
+        "context"
+      ]
+    },
+    {
+      "id": "obj-material",
+      "track": "package_consistency",
+      "category": "material_consistency",
+      "feature_id": "document",
+      "required_modalities": [
+        "pdf",
+        "context"
+      ]
+    },
+    {
+      "id": "obj-requirement",
+      "track": "package_consistency",
+      "category": "required_representation",
+      "feature_id": "document",
+      "required_modalities": [
+        "pdf",
+        "context"
+      ]
+    },
+    {
+      "id": "obj-release",
+      "track": "package_consistency",
+      "category": "release_association",
+      "feature_id": "document",
+      "required_modalities": [
+        "step",
+        "pdf",
+        "context"
+      ]
+    },
+    {
+      "id": "cnc-envelope",
+      "track": "cnc_advisory",
+      "category": "setup_envelope",
+      "feature_id": "document",
+      "required_modalities": [
+        "step",
+        "context"
+      ]
+    },
+    {
+      "id": "cnc-stage",
+      "track": "cnc_advisory",
+      "category": "finish_stage",
+      "feature_id": "document",
+      "required_modalities": [
+        "pdf",
+        "context"
+      ]
+    },
+    {
+      "id": "obj-diameter",
+      "track": "package_consistency",
+      "category": "diameter_consistency",
+      "feature_id": "H1",
+      "required_modalities": [
+        "step",
+        "pdf",
+        "context"
+      ]
+    },
+    {
+      "id": "obj-count",
+      "track": "package_consistency",
+      "category": "count_consistency",
+      "feature_id": "H1",
+      "required_modalities": [
+        "step",
+        "pdf",
+        "context"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "part.step",
+      "sha256": "e648a111d1256efebeab044901774240f2467f4cfddfd829812e59802d7f0f89",
+      "media_type": "model/step"
+    },
+    {
+      "path": "drawing.pdf",
+      "sha256": "f99af4fe4d49251e3ed65b2d43782ebfe5dcad479a2cd84c9b17e25eb7f7f42d",
+      "media_type": "application/pdf"
+    },
+    {
+      "path": "drawing.png",
+      "sha256": "976dcf01616f3b6b22ffc284339e4449d4fddb6c78a6cb26a354ae4d48bfa402",
+      "media_type": "image/png"
+    }
+  ],
+  "render": {
+    "renderer": "ReportLab 5.0.1 bounded vector template; Poppler pdftoppm; pdftoppm version 26.07.0",
+    "dpi": 200
+  }
+}
