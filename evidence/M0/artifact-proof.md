@@ -13,3 +13,16 @@ Draftwright search text includes correctly decoded Unicode multiplication/diamet
 Retained first attempt: `attempt-01/`, excluded because its view-stage premise was not explicit enough for the legitimate alternative. Three initial presentations were quarantined as an authoring group. Adding the view-stage note caused Draftwright's completeness policy to select scale 1:2; final visible labels remained readable. Its missing-location lint is outside this finite CAD-authoritative drawing obligation: nominal positions are in the supplied model and the public group mapping. Diameter-declaration lint on the 6.8 cases is expected from the intentionally different annotation (or staged target) and is not used as an oracle. No incidental dimension/identity/material change is accepted.
 
 Actual acceptance commands/results and integration commit are appended after the independent validator runs on the combined checkout. The source/fixture content is retained under Git with `.gitattributes` prohibiting evidence newline transformations.
+
+## Combined-checkout acceptance (performed)
+
+```powershell
+./.venv/Scripts/python.exe tools/m0.py validate
+./.venv/Scripts/python.exe -m pytest tests/m0/test_validation.py tests/m0/test_public.py --basetemp evidence/M0/negative-tests -q
+```
+
+Actual results: **15 passed in 10.63s**, no warnings. Validator: all **3/3 valid**, **6/6 suite invariants true**, **0 fixture failures**. Diameter/stage observations yield exactly one contradiction and two supported-clear H1 obligations. All three PDFium-versus-Poppler comparisons have unmatched-ink ratio **0.0**, within the declared heuristic limit **0.015**. Coordinator additionally inspected all three independent PDFium callout crops, confirming count/diameter/plus-minus/tolerance/THRU text is readable.
+
+Retained evidence: `T02-tests.txt`, `T02-validation.txt`, `validation/oracle.json`, each `validation/*/inspection.json`, rendered page/crops, and `negative-tests/` containing 15 inspection records plus mutated inputs and test witnesses. Eleven independent-validator tests include hidden-callout/stage-note whiteouts, actual STEP metre units, missing third/fourth bore, truncated STEP, stale/no attestation, unsupported schema, hashes and white PNG; four public-interface tests challenge missing premises, sidecars and traversal. These are deliberate fixture corruption controls, excluded from the frozen scored suite. The three first-attempt presentations remain separately quarantined; the final suite's 0/3 invalid rate must not hide that authoring history.
+
+Generator and validator are separate modules/owners. Independent worker source commit `289a9a19bc03bedc313387b81d952a88461ff55e` integrated sequentially as `9857b23`. Task closure commit is in tasks.json. Assessment: finite exported-artifact oracle works for this challenge; proceed to T03 to test whether an independent reviewer can use it. No second part family or corpus expansion.

@@ -1,0 +1,9 @@
+{
+  "schema_version": "m0.1",
+  "case_id": "pk-7a1c",
+  "status": "invalid_fixture",
+  "failures": [
+    "ValueError: unsupported STEP length units: ['metre']"
+  ],
+  "packet_sha256": "0f81e0e7773fe43f0fdbfa0e980691c6b7eabf318cd1ee4624d667f726ce0770"
+}

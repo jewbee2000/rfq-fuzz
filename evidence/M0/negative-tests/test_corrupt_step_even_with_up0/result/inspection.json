@@ -1,0 +1,9 @@
+{
+  "schema_version": "m0.1",
+  "case_id": "pk-7a1c",
+  "status": "invalid_fixture",
+  "failures": [
+    "ValueError: truncated STEP"
+  ],
+  "packet_sha256": "4e1a0d43b698aad1f391a510a387af8d1dfef70cf54936d7c638441437c1f04c"
+}

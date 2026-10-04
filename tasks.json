@@ -53,9 +53,9 @@
       "scope": "Implement the plate triplet and minimal public/private contracts; independent code reimports STEP and reads visible drawing evidence.",
       "acceptance": "Defect, repair and valid alternative verified; forbidden incidental changes rejected.",
       "evidence": "evidence/M0/artifact-proof.md",
-      "verification": "Focused prototype geometry and export checks",
-      "verification_is_proposed": true,
-      "status": "in_progress",
+      "verification": ".venv/Scripts/python.exe tools/m0.py validate; .venv/Scripts/python.exe -m pytest tests/m0/test_validation.py tests/m0/test_public.py --basetemp evidence/M0/negative-tests -q (15 passed); shipped PNG and independent PDFium crop inspection",
+      "verification_is_proposed": false,
+      "status": "completed",
       "completion_commit": null
     },
     {

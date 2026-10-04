@@ -1,5 +1,6 @@
 import argparse
 import json
+import sys
 from pathlib import Path
 
 def main():
@@ -19,3 +20,5 @@ def main():
         from .validation import validate_suite
         result = validate_suite(Path(args.public), Path(args.out), Path(args.attestation))
     print(json.dumps(result, indent=2))
+    if args.command == "validate" and result.get("status") != "valid":
+        sys.exit(2)
