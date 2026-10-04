@@ -1,0 +1,83 @@
+# Blog claim and figure audit
+
+Artifact: `BLOG_DRAFT.md`, local and unpublished. Requirements: R20/R21 (T14
+drafting subtask). Scope: evidence-grounded first-person draft and supporting
+claim map only; no publication, outside messages, repository remote or deployment.
+The voice describes this project's recorded development decisions. It invents no
+personal job incident, supplier conversation, shop experience or manufactured part.
+
+Worker base: `4c98b5f158c5b563ad256184303165e60231c088`, isolated
+`.workers/blog-v1` on `codex/m5-blog`. Evidence read on 2026-10-04 in the user's
+America/Los_Angeles date. Root consumer work continues; this source snapshot is
+explicitly incomplete for final independent platform/demo acceptance.
+
+| Draft claim | Retained source | Practical limitation |
+|---|---|---|
+| Original general reviewer idea overlapped existing tools; bounded check did not find combined public workflow | [Research decision](RESEARCH_AND_GO_NO_GO.md), [pinned bounded recheck](../evidence/M0/decision.md) | Inspected advertised/source scope, not exhaustive novelty, demand or vendor-performance proof. |
+| Plate envelope/four 6 mm bores; same-stage 6.8 ±0.05 mismatch, repair and explicit later-stage alternative | [Independent original observations](../evidence/M0/review-handoff/review-output/observations.md), [M0 gate](../evidence/M0/gate.md) | Finite H1 package contract, no practical reaming or manufacturing approval. |
+| Independent M0 reviewer actually reopened STEP and visually inspected PNG/PDF | [Raw observations](../evidence/M0/review-handoff/review-output/observations.md), [review JSON](../evidence/M0/review-handoff/review-output/review.json) | Procedural same-machine blinding; common OCCT; exact model/runtime unavailable and not invented. |
+| Final artifacts, visible annotations and hash-bound inspections precede scoring | [Core final acceptance](../evidence/M2/core-final-acceptance.md), [final oracle](../evidence/M4/core-validated/oracle.json) | AI visual review of one finite core template, not general OCR or human engineering review. |
+| 0.6 mm metal wall under standard/relaxed project policies; named setup and unknown semantics | [Profile provenance](../evidence/M1/profiles.md) | Synthetic executable values. Standard before_finish default is explicitly project-selected, not an inferred Xometry CNC default. |
+| Core 145 accepted cases; family counts 62/46/37; all development and zero core holdout | [Corpus summary](../evidence/M4/corpus-summary.json), [lineage audit](../evidence/M4/challenge-tests/lineage-audit.json), [challenge report](../evidence/M4/challenge-report.md) | Final corpus only. Earlier authoring attempts, rejected transfer and corruption tests stay separate and retained. |
+| 36 package contradictions, six advisories, three exclusions, 40 unknown duties = nine package +31 CNC | [Corpus summary](../evidence/M4/corpus-summary.json) | Counts concern named finite obligations. No composite intelligence score or broad industrial performance claim. |
+| Template reference shares readers; changed material/dimension findings are deliberate injections | [Challenge report](../evidence/M4/challenge-report.md), [corpus changes](../evidence/M4/corpus-summary.json) | Reference agreement is not independent competence evidence. Injected changes are not external observations. |
+| Isolated agent work and explicit acceptance requirements | [Workflow](AGENT_WORKFLOW.md), [generator evidence](../evidence/M2/generators.md), [mutation evidence](../evidence/M2/mutations.md) | Organizational independence only; no Beads adoption claim. |
+| Unresolved material authority corrected conditional CNC uncertainty | [Core final acceptance](../evidence/M2/core-final-acceptance.md), [challenge report](../evidence/M4/challenge-report.md) | Superseded diagnostic remains; final counts use corrected frozen code. |
+| Harmless permutation label rejected and corrected | [Consumer preparation](../evidence/M5/consumer-preparation.md) | Whole-word label checks retain recursive forbidden-key rejection. Earlier actual failures retained. |
+| Count40 matched count4; exact witnesses now required; reports bind to raw/oracle/public inputs | [Independent fix record](../evidence/M5/independent-fixes.md), [numeric probe](../evidence/M5/independent-final-review/numeric-prefix-results.json), [review probes](../evidence/M5/independent-final-review/check-results.json) | Diagnostic deliberately corrupted inputs; no genuine external conclusion was changed. |
+| All six selected evaluator mutants detected by unchanged acceptance tests | [Challenge report](../evidence/M4/challenge-report.md), [mutant summary](../evidence/M4/challenge-tests/summary.json) | Six selected relevant bugs, not exhaustive mutation coverage. Mutated tests must fail semantically, not by syntax/import errors. |
+| Genuine external two-packet observation covers15 duties,14 grounded/one unadjudicated | [Scoped external summary](../evidence/M5/external-v1/summary.json), [raw public-only observation](../evidence/M5/external-v1/observations/raw-observation.json) | Raw response has14clear+oneadvisory; scored result has13grounded clears+onegrounded advisory+oneunadjudicated clear. Do not use broader `external-v1-summary.json` denominators: that import included143 unrequested cases and is an integration diagnostic. |
+| Separately agent-authored transfer dimensions and label compatibility revision | [Transfer provenance](../evidence/M5/transfer-v2/author/PROVENANCE.md), [independent transfer oracle](../evidence/M5/transfer-v2/oracle.json), [visual attestation](../evidence/M5/transfer-v2/attestation.json) | New author/layout diagnostic, not human engineer authorship, another CAD kernel, physical manufacture or held-out reviewer accuracy. |
+| Local replay workflow and dependency credit | [Demo instructions](DEMO.md), [consumer preparation](../evidence/M5/consumer-preparation.md), [licenses](LICENSES.md) | Coordinator replay is recorded; independent clean Windows/Linux final consumer verification remains editorial pending in this worker snapshot. |
+
+## Actual figures
+
+1. [Original generated M0 plate PNG](../evidence/M0/bundle/public/pk-7a1c/drawing.png)
+   was visually reopened at the actual retained 2339 x1654 source dimensions.
+   Visible 4×6.8±0.05 callout and finished-stage notes match the caption. No image
+   was created, retouched or cropped for the article. Its independently measured
+   6 mm STEP is linked through the original observation record.
+2. [Separate transfer v2 PNG](../evidence/M5/transfer-v2/author/pk-48bd731ca9e2/drawing.png)
+   was visually reopened at2500x1806 source dimensions. Plan/section,2.5 mm W1,
+   pocket/body dimensions and allowance context are legible and match caption.
+   Its own visible footer says agent-authored synthetic/no human engineer review.
+3. **Pending; not embedded:** coordinator will generate and inspect
+   `evidence/M5/browser/report-changed-evidence.png` from the actual local report.
+   The article has an HTML editorial comment where it may be inserted. A local
+   report source audit alone is insufficient to claim an actual screenshot or
+   browser acceptance. Two existing legible figures already meet the brief's
+   two-to-three figure range.
+
+## Editorial completion gate
+
+Before calling this the final article draft, the coordinator should replace the
+opening consumer-pending sentence and later platform-pending sentence only after
+actual clean-consumer evidence passes, retaining exact environments/commands and
+diagnosed changes. Add the report screenshot only after it exists and is visually
+checked. Remove the optional pending comment when deciding whether to include it.
+No repository URL, publication date, public demo URL or deployment is invented.
+The final article remains local/unpublished under the user's instructions.
+
+Acceptance for this worker: read the cited records, visually inspect both actual
+figures, count prose words against the800–1200 brief, and check all Markdown file
+targets exist. The exact executed results and local commit are handed to the
+coordinator after the draft is saved. No consumer test is claimed by this worker.
+
+Executed document audit with root Python3.12.2, inline source reading only:
+remove HTML editorial comments and image alt text, preserve Markdown link labels,
+and count prose using `\b[\w]+(?:['’-][\w]+)*\b`; resolve every Markdown file
+target relative to its containing document; require800–1200words, no missing
+target and exactly two embedded figures. First saved-draft result:1019prosewords,
+52/52local targets exist,0missing,2actual embedded figures. Final small wording
+correction uses “decisions” for the grounded external finding/assertion total;
+the final rerun measured1020prosewords,52/52targets and2actual figures. Staged
+`git diff --cached --check` passed before the local draft commit.
+This lightweight audit checks document integrity, not engineering or consumer
+workflow acceptance. The two actual image inspections are recorded above.
+
+Handoff: no failing draft acceptance command is intended; unresolved assumption
+is final independent consumer/browser evidence, explicitly pending. Next ready
+dependency is root's completed T13 acceptance, then final T14 evidence matrix and
+article claim update. Assessment: the retained development and external evidence
+supports this narrowly scoped account, while final consumer claims require the
+remaining actual runs.
