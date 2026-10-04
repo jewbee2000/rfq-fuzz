@@ -283,10 +283,10 @@
       "scope": "Clean-install Windows/Linux; external reviewer walkthrough; separately authored case and optional engineer/NIST/second-reader evidence.",
       "acceptance": "Consumer reproduces a useful diagnosis; transfer limits and unavailable human evidence stated explicitly.",
       "evidence": "evidence/M5/consumer.md",
-      "verification": "python -m pytest tests/consumer; documented end-to-end demo on both platforms",
-      "verification_is_proposed": true,
-      "status": "in_progress",
-      "completion_commit": null
+      "verification": "Independent Windows installed rfqfuzz demo (60/20s); Linux consumer_workflow.py (300/120s); own check_family_semantics.py and check_consumer_report.py; check_diagnosis_meaning.py; source_archive_provenance.py and archive equivalence; tools/audit_consumer_handoff.py (1694files, both15case demos and3fresh families pass)",
+      "verification_is_proposed": false,
+      "status": "completed",
+      "completion_commit": "7f72883523776a66c710683bb0d493d4602798ec"
     },
     {
       "id": "T14",
@@ -304,7 +304,7 @@
       "evidence": "evidence/M5/release-review.md",
       "verification": "Requirements/evidence audit and documentation walkthrough",
       "verification_is_proposed": true,
-      "status": "not_started",
+      "status": "in_progress",
       "completion_commit": null
     }
   ]

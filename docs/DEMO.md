@@ -1,6 +1,10 @@
 # Local v1 consumer demo
 
-Python3.12 is the tested interpreter family. Install in an isolated environment:
+Python3.12 is the tested interpreter family. Independent Windows11/Python3.12.2
+and Ubuntu24.04.5/Python3.12.3 consumers pass the complete workflow; the Linux
+software-emulated setup uses the explicit bounds documented below. Actual
+commands, failures and source/archive checks are in
+[consumer acceptance](../evidence/M5/consumer.md). Install in an isolated environment:
 
 ```powershell
 py -3.12 -m venv .venv
@@ -19,7 +23,8 @@ python3.12 -m venv .venv
 ```
 
 Generation additionally requires Poppler `pdftoppm` on PATH (Windows verified
-26.07; Linux environment record supplies its actual version). On Ubuntu, install
+26.07; Linux24.02). Windows testing reused the existing Poppler executable rather
+than a blank-OS installer. On Ubuntu, install
 `python3.12-venv poppler-utils libgl1 libglib2.0-0` before the isolated environment.
 Installation needs package downloads or a prepared wheel cache; the complete
 consumer replay needs no internet, API key, paid model, GPU or proprietary CAD.

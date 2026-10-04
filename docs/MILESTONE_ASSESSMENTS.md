@@ -31,6 +31,15 @@ and source-linked changed outcomes are retained. All145corecases are development
 there is no core holdout. T12's actual local Edge probe passes. The final consumer
 must follow the two deliberately injected changes back to their evidence.
 
-M5: pending dependencies. Clean Windows/Linux environments are being prepared;
-consumer/demo claims require actual final commands and outputs. No human engineer
-or physical manufacturing evidence is available or implied.
+M5: bounded local go. Independent Windows/Linux15case workflows pass, with two
+injected changes independently traced to actual material/dimension evidence.
+Three fresh families on each OS pass own-reader/analytic/PDF checks and visual
+inspection while remaining correctly unverified without attestation. Retained
+1694file handoff and source bindings pass coordinator audit. Software TCG's first
+60second timeout remains a failure; explicit300/120second named-setup bounds pass.
+Git-normalized packet bytes were independently caught and fixed without changing
+audited inputs. Final integrated Windows tests270pass with4upstream warnings.
+The remaining T14 work closes traceability/doc metadata. The next worthwhile
+experiment would require governed engineer-authored cases and independent oracle
+review; no new milestone starts. No human or physical manufacturing evidence is
+available or implied.

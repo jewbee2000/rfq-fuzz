@@ -1,0 +1,116 @@
+Independent consumer acceptance: exact executed command families and retained evidence
+Coordinator owns the requirement/task ledger and local evidence commit.
+
+SOURCE SNAPSHOTS
+Linux executed source implementation55b288a8df0d1b3ced607c8d97d23847b2f122ba,
+Windows-byte archive SHA256e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931.
+Final Windows installed the portable Git348c5f1ea5a6e99bc0acdb4f0d0af52f3a8146e0 kit,
+archive SHA256f048a54abef6ced29676c0270dbef968719662ea1013038e82b048d74a0e75b0.
+source-archive-equivalence.json + scripts/archive_equivalence_checker.py prove65audited
+demo files byte-identical and23Pythonmodules identical in archive bytes, normalized
+content and AST. The extra file is.gitattributes; no implementation change is
+accepted merely by assertion. source-freeze.json distinguishes40normaltext
+Git/core.autocrlf conversions from65exactprotectedGitblobs.
+
+CREATE THE SELECTED SOURCE KIT (executed on Windows core.autocrlf=true)
+git archive --format=tar.gz --output=work/consumer-env/portable-consumer-348c5f1.tar.gz 348c5f1ea5a6e99bc0acdb4f0d0af52f3a8146e0 LICENSE .gitattributes pyproject.toml requirements-m0.lock requirements-v1.lock requirements-build.lock src schemas examples/v1-demo docs/DEMO.md docs/REVIEWER_PROTOCOL.md tools/smoke.py
+Normal source text line endings can vary with Git text policy; protected audited
+input bytes must not. git-demo-bytes-348c5f1.json independently checks64manifest
+hashes directly from Git objects; all pass. Pre-fix19failures remain underfailures/.
+
+WINDOWS SETUP (new environment, not repository.venv)
+py -3.12 -m venv work/consumer-env/windows-venv
+work/consumer-env/windows-venv/Scripts/python.exe -m pip install pip==26.2.1
+work/consumer-env/windows-venv/Scripts/python.exe -m pip install -r requirements-m0.lock
+Then from the frozen kit:
+python -m pip install -r requirements-v1.lock -r requirements-build.lock
+python -m pip install --no-deps --no-build-isolation -e .
+python -m pip check
+Final portable reinstall from an isolated working directory:
+work/consumer-env/windows-venv/Scripts/python.exe -m pip install --no-index --no-deps --no-build-isolation -e ABSOLUTE_PORTABLE_SOURCE
+work/consumer-env/windows-venv/Scripts/python.exe -m pip check
+
+WINDOWS PRIMARY FINAL CORE COMMAND (outside source checkout, absolute input/output)
+work/consumer-env/windows-venv/Scripts/rfqfuzz.exe demo ABSOLUTE_PORTABLE_SOURCE/examples/v1-demo ABSOLUTE_WORK/windows-portable-demo
+Actual source path was work/consumer-env/windows-portable-348c5f1 and isolated cwd
+work/consumer-env/windows-consumer-cwd. Defaults60native/20auditseconds; exit0.
+windows/logs/windows-portable-install-and-demo.log contains exact absolute argv.
+windows/demo/demo-result.json:15validcases,twochanges; actualfullruns/report/rawdata
+are underwindows/demo. windows/report-inspection.json verifies their bindings.
+
+STRONGER WINDOWS OFFLINE OBSERVATION (same source implementation/data)
+scripts/verify-windows-python-offline.ps1 temporarily installed a startup guard only
+in this verifier's new venv; all31Pythoninterpreters loaded it, zero socket attempts
+were denied because none occurred, and loader/module were removed. It invoked the
+canonical python -m rfqfuzz.v1 demo on55b288a8/default60/20. Logs/events/report
+inspection are retained; the duplicate complete run is not copied again. Python
+socket calls are blocked; native direct sockets and host interfaces are not controlled.
+
+LINUX ENVIRONMENT
+Official Ubuntu24.04-minimal release-20261001 image; SHA256
+a8eb6570f87a941f3de2e000c046b9367f8ab1423756a94830d454fae8ad80ff.
+QEMU11.1.0/TCG4virtualCPUs/direct verified-image kernel/noapic. See setup provenance,
+checksums/license notices and qemu-final-launch.json. Installer was extracted only.
+Docker failure is retained; no container execution is claimed. Guest setup:
+sudo apt-get update
+sudo apt-get install -y python3.12-venv poppler-utils libgl1 libglu1-mesa libxrender1 libxext6 libsm6 libglib2.0-0 fonts-dejavu-core
+python3.12 -m venv /home/consumer/rfqfuzz-venv
+/home/consumer/rfqfuzz-venv/bin/python -m pip install pip==26.2.1
+/home/consumer/rfqfuzz-venv/bin/python -m pip install -r requirements-m0.lock
+Pinned portable runtime/build lock and no-deps/no-build-isolation editable package
+were then installed from frozen source. All inputs arrived from a localhost-only
+host HTTP server; an updated archive transfer used a temporary localhost SSH reverse
+forward, closed before replay. Setup scripts/install reports are underlinux/setup.
+
+LINUX PRIMARY ACTUAL OFFLINE CORE COMMAND
+/home/consumer/rfqfuzz-venv/bin/python -m rfqfuzz.v1 demo /home/consumer/frozen-bounded/examples/v1-demo /home/consumer/linux-bounded-workflow/demo --parser-timeout 300.0 --audit-timeout 120.0
+Actualelapsed610.3567seconds; exit0;15validcases/twochanges. Resource bounds appear
+in demo-result.json and oracle.isolation. QEMUrestrict=on, localhost SSH only;
+guest had no default route, external curl failed, no reverse-transfer listener
+remained. See linux/logs/linux-final-offline-network.log. The prior default60second
+timeout remains a failure. One-case bounded probe63.1793seconds was deliberately
+unverified without attestation and is underlinux/bounded-probe.
+
+FRESH GENERATION ON BOTH ACTUAL OS ENVIRONMENTS
+Installed CLI generate-case DEST_SUITE/public/pk-780fa2354eea --case-id pk-780fa2354eea --family plate
+Installed CLI generate-case DEST_SUITE/public/pk-c02891e82f64 --case-id pk-c02891e82f64 --family bore_block
+Installed CLI generate-case DEST_SUITE/public/pk-d66a90fd926a --case-id pk-d66a90fd926a --family pocket_block
+Installed CLI validate DEST_SUITE DEST_OBSERVATIONS
+Linux additionally used --parser-timeout300.0; Windows used default60.
+Both returned statusunverified/3,exit2,emptyexpectations—noterrororpass.
+Exact per-OS argv/elapsed/exit records: windows/families/workflow/commands.json
+and linux/families/workflow/commands.json. Failed descriptiveID and individual
+packet-folder validation are separate retained errors; currentdocs explain layout.
+
+INDEPENDENT ARTIFACT CHECKS (not toolkit conclusion logic)
+python measure_public_review.py ACTUAL_PACKET_FOLDER INSPECTION_OUTPUT
+python check_family_semantics.py INSPECTION_PARENT
+These were run by the fresh Windows interpreter and actual guest interpreter.
+They open STEP/PDF/PNG, check public hashes, measure geometry, compare visible
+annotations/analyticvolume, and independently rerender at200dpi. Allthree families
+passed onboth. Same-OS PDF/PNG pixels are identical; cross-Poppler byte identity is
+not claimed. visual-inspection.json records full-raster views. Shared OCCT is a limit.
+
+CHECK COPIED REPORTS (observed at original paths, exportedLinuxprefix explicit)
+python scripts/check_consumer_report.py windows/demo WINDOWS_CHECK.json --archive ORIGINAL_PORTABLE_ARCHIVE --archive-sha256 f048a54abef6ced29676c0270dbef968719662ea1013038e82b048d74a0e75b0 --declared-commit348c5f1ea5a6e99bc0acdb4f0d0af52f3a8146e0 --linux-prefix ORIGINAL_WINDOWS_DEMO_PREFIX_WITH_FORWARD_SLASHES
+python scripts/check_consumer_report.py linux/demo LINUX_CHECK.json --archive ORIGINAL_LINUX_ARCHIVE --archive-sha256 e859283037daac28e2664b3939ed3846a3b602d511610f0d6362705436719931 --declared-commit55b288a8df0d1b3ced607c8d97d23847b2f122ba --linux-prefix /home/consumer/linux-bounded-workflow/demo
+Copied reports use original producer paths in metadata; explicit prefix mapping
+does not rewrite any actual report bytes. Relative local links remain valid.
+Reports:121rows/run,242embeddedrows,80localfilelinks+2anchors,source/rawbindings,
+63publicbundlefiles,60sourcepacketfilesidentical. No browser visual QA is claimed.
+
+ENGINEERING DIAGNOSIS
+changed-duty-engineering-meaning.json and ownpublicartifactmeasurements trace
+visible7075-T6 vs public6061-T6/equalauthority (omittedcontradiction→silentmiss),
+and actual6.2mm H1 vs visible6.20±0.05mm at samefinishedstage (injectedalert→falsealert).
+The second packet's distinct release contradiction remains; diameter only is clear.
+Deliberate retained-response injection is not a natural external reviewer failure.
+
+SCOPE/RETENTION
+README.md records observer identity, separate public-only review, versions,
+licenses/common-mode/platform limits. COMPLETE.json plus retained-file-manifest.json
+identify completedcopy. One finalfullrun perOS; duplicates summarized; failures
+retained. No SSHkeys, seedcontents, guestdisks or provisioningexecutables are included.
+helper-shutdown.json records actual task-owned helper cleanup. No source/status,
+hostsettings/remotes/outsidercommunications/publication changes by this verifier.
+These are syntheticdevelopment observations, not industrial/manufacturing approval.

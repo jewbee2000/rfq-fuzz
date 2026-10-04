@@ -34,6 +34,11 @@ runtime records are retained with M5 consumer evidence; coordinator inventory is
 `evidence/M5/environment-windows-coordinator.json`. Runtime installations retain
 their wheel-provided notices. No proprietary standards tables are reproduced.
 
+The independent full inventories/notices are under
+`evidence/M5/consumer-environments/windows` (71distributions/212notices) and
+`linux` (73distributions/214notices plus system notices). Installation/download
+reports and the retained handoff README identify actual paths and environments.
+
 Separately authored synthetic transfer assets retain author provenance and
 AGPL-compatible license at `evidence/M5/transfer-v2/author`. Their independent
 source/measurement check is evidence about finite interoperability, not manufacture.

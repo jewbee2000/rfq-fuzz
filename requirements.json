@@ -16,12 +16,14 @@
       "tasks": [
         "T13"
       ],
-      "status": "in_progress",
+      "status": "verified",
       "completion_evidence": [
         "docs/DEMO.md",
         "evidence/M5/consumer.md"
       ],
-      "acceptance_commands": []
+      "acceptance_commands": [
+        "Independent Windows installed rfqfuzz demo (60/20s); Linux consumer_workflow.py (300/120s); own check_family_semantics.py and check_consumer_report.py; check_diagnosis_meaning.py; source_archive_provenance.py and archive equivalence; tools/audit_consumer_handoff.py (1694files, both15case demos and3fresh families pass)"
+      ]
     },
     {
       "id": "R02",
@@ -319,7 +321,7 @@
         "T10",
         "T13"
       ],
-      "status": "in_progress",
+      "status": "verified",
       "completion_evidence": [
         "evidence/M5/consumer.md",
         "evidence/M5/independent-fixes.md",
@@ -327,7 +329,8 @@
       ],
       "acceptance_commands": [
         "Isolated reviewer fork_turns=none actual STEP/PDF/PNG/context inspection; reference and raw/adjudicated imports; report; pytest tests/m0 --basetemp evidence/M0/final-tests -q (33 passed,4 upstream warnings); relevant report checks18 passed; tools/replay_m0.py (8 commands); tools/audit_m0.py (34 links)",
-        ".venv/Scripts/python.exe -m pytest tests/contracts tests/scoring tests/adapters -q (51 passed)"
+        ".venv/Scripts/python.exe -m pytest tests/contracts tests/scoring tests/adapters -q (51 passed)",
+        "Independent Windows installed rfqfuzz demo (60/20s); Linux consumer_workflow.py (300/120s); own check_family_semantics.py and check_consumer_report.py; check_diagnosis_meaning.py; source_archive_provenance.py and archive equivalence; tools/audit_consumer_handoff.py (1694files, both15case demos and3fresh families pass)"
       ]
     },
     {
@@ -435,7 +438,9 @@
         "docs/LICENSES.md",
         "docs/SHOULD_DEFERRALS.md"
       ],
-      "acceptance_commands": []
+      "acceptance_commands": [
+        "Independent Windows installed rfqfuzz demo (60/20s); Linux consumer_workflow.py (300/120s); own check_family_semantics.py and check_consumer_report.py; check_diagnosis_meaning.py; source_archive_provenance.py and archive equivalence; tools/audit_consumer_handoff.py (1694files, both15case demos and3fresh families pass)"
+      ]
     },
     {
       "id": "R21",
@@ -472,7 +477,7 @@
         "T01",
         "T13"
       ],
-      "status": "in_progress",
+      "status": "verified",
       "completion_evidence": [
         "docs/DEMO.md",
         "requirements-v1.lock",
@@ -480,7 +485,8 @@
         "evidence/M5/environment-windows-coordinator.json"
       ],
       "acceptance_commands": [
-        ".venv/Scripts/python.exe -m pip check; .venv/Scripts/python.exe tools/smoke.py; .venv/Scripts/python.exe tools/record_environment.py; actual PNG visual inspection"
+        ".venv/Scripts/python.exe -m pip check; .venv/Scripts/python.exe tools/smoke.py; .venv/Scripts/python.exe tools/record_environment.py; actual PNG visual inspection",
+        "Independent Windows installed rfqfuzz demo (60/20s); Linux consumer_workflow.py (300/120s); own check_family_semantics.py and check_consumer_report.py; check_diagnosis_meaning.py; source_archive_provenance.py and archive equivalence; tools/audit_consumer_handoff.py (1694files, both15case demos and3fresh families pass)"
       ]
     },
     {

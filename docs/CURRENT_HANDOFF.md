@@ -1,58 +1,41 @@
-# Active implementation handoff
+# Local completion handoff
 
-2026-10-04, America/Los_Angeles. Implementation freeze `55b288a`, portable Git-byte
-fix `348c5f1` preserving audited demo inputs; use
-`git rev-parse HEAD` for latest metadata/source commit. Coordinator owns tasks.json
-and STATUS.json; Beads was not adopted. All work remains local.
+2026-10-04, America/Los_Angeles. Current completed evidence commit:
+`7f72883523776a66c710683bb0d493d4602798ec` (T13). Implementation freeze `55b288a`,
+portable audited-input correction `348c5f1`. T14 documentation/metadata acceptance
+is active; its immutable completion commit will be recorded in `tasks.json`.
+Metadata commits follow content commits; `git rev-parse HEAD` gives the current
+checkout. Coordinator alone owns the fallback ledger; Beads was not adopted.
 
-Environment: Windows 11, repository Python 3.12.2 `.venv`, pinned
-`requirements-m0.lock`, Poppler 26.07.0. Installed Edge renders authored v1 offline
-HTML via bundled Playwright. Docker started and briefly answered Linux, but now
-returns HTTP500 and was abandoned after repeated setup failures. A workspace-local
-portable QEMU/Ubuntu guest now passes isolated dependency installation, imports and
-smoke; final offline consumer acceptance is active. The first single-CPU TCG replay
-exceeded the 60 second native bound and remains timeout. Explicit bounded resource
-controls (maximum 300 seconds) now support a named slower setup; reader checks and
-visual/hash requirements are unchanged. No host installation or privileged
-settings changed. Final Linux workflow is not yet claimed. Its intermediate
-inspections remain unverified until all cases finish and the final attestation
-loop runs. No intermediate status has been counted as accepted.
+Environment: coordinator Windows11/Python3.12.2/.venv, Poppler26.07, integrated
+tests270passed/4upstream warnings. Independent Windows consumer uses its own
+Python3.12.2 environment; Ubuntu24.04.5/Python3.12.3/Poppler24.02 software QEMU TCG
+consumer uses300/120second parser/audit bounds. Both complete15case replays,
+three-family own-reader/PDF/PNG checks and report data/hash/link audits pass.
+The actual v1 Edge rendering has no errors/remotes/overflow. M0's original browser
+rejection remains unverified while its bytes/33tests remain preserved.
 
-Completed: T04 contracts `3ca31ed`, T05 profiles integrated `1a817d9`, T06 bounded
-families integrated `1fd4803`, T09 adapters `4e17f8e`, T10 scoring `efbf3d3`, T12
-report/recovery `070788d`. Ledger contains requirement IDs, commands, evidence and
-commits. M0 source/evidence are preserved; 33 historical tests remain intact.
+Task: close T14 content audit and metadata. T00–T13 completed in dependency order,
+with actual commands, evidence and local commits. Failing command: none active.
+Retained failures include Linux60second native timeouts, Docker setup, initial
+consumer command misuse, evaluator mutants, artifact corruption and original
+Git-normalized hashes. None is relabeled a pass. Task-owned helper stop state is
+recorded under `evidence/M5/consumer-environments/helper-shutdown.json` when complete.
 
-Completed additionally: T07 mutations, T08 independent artifact/isolation
-validation (145valid), T11 challenge (6/6source mutants caught). Actual public
-template response and clearly injected regressions are retained. Independent
-read-only final review corrected report binding/escaping, CLI failure status and
-numeric-prefix grounding; all fixes separately rechecked. Current failure command:
-none; intentional corruption/mutant failures remain evidence. Final integration
-and two-platform consumer runs are active. Final integrated tests:270passed,
-4upstream warnings. Independent consumer found Git-normalized demo JSON; original
-audited bytes are now preserved in Git, and actual Git archive audit checks64hashes.
-Independent source equivalence and final platform results remain active.
+Evidence: `evidence/M5/consumer.md`, full independent `consumer-environments`
+handoff, `consumer-handoff-audit.json` (1694manifest files), native core/visual
+records under M2/M4, genuine external-v1 observations, separate transfer-v2,
+`evidence/M5-final-release-tests.txt`, and final requirements/document audits.
+`docs/REQUIREMENTS.md`/`REQUIREMENTS_EVIDENCE.md` are generated from the source JSON.
 
-Active: independent consumer worker owns ignored work/consumer-env; separately
-authored transfer-v2 is independently validated, original importer rejection
-retained. Blog worker `.workers/blog-v1` owns only draft/evidence notes. Coordinator
-owns requirements matrix, final acceptance, ledger and handoff metadata.
+Unresolved assumptions: shared OCCT; finite grammar/aliases and one core layout;
+all145corecases development, zero core holdout; one genuine units assertion
+unadjudicated for missing envelope evidence; no second kernel, human engineer,
+manufactured part or industrial accuracy evidence. Should portions and reasons
+are in `docs/SHOULD_DEFERRALS.md`. Broader template invariance is deferred.
 
-Evidence: `evidence/M1/contracts.md`, `profiles.md`, `profile-integration.txt`;
-`evidence/M2/generators.md`, `generator-artifacts-v2`, `generation-integration.txt`;
-`evidence/M3/adapters.md`, `scoring.md` and acceptance/failure logs;
-`evidence/M4/report-and-failures.md`, actual report probe/browser screenshot and
-failure/recovery test inputs. All earlier failed examples remain retained.
-
-Unresolved limits: shared OCCT kernel; finite annotation/alias vocabulary;
-conservative exact canonical evidence matching (one genuine external units finding
-remains unadjudicated); all145corecasesdevelopment, no core holdout; final Linux
-consumer acceptance; no human engineer or physical manufacturing evidence.
-Broader industry-usefulness claims remain excluded.
-
-Next dependency-ready task: finish T13 independent Windows/Linux offline demo and
-source diagnosis; then T14 complete requirements matrix, Should deferrals and
-factual unpublished blog. Raw expanded external review is already independently
-observed, imported without changed conclusions and retained under evidence/M5.
-Do not mark unfinished Must requirements complete or manufacture missing evidence.
+Next dependency-ready task: finalize T14, then none in the authorized M0–M5 graph.
+Assessment: bounded local regression scope remains worthwhile. Further engineering
+claims need separately governed engineer-owned packets and oracle review; no
+additional milestone is started. All changes remain local: no push, PR, deployment,
+publication, outside message or manufacturing order.

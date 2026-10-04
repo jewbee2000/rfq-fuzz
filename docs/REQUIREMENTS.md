@@ -12,7 +12,7 @@ Provide a local CLI and Python API for generate, validate, export, import, compa
 
 **Acceptance:** A clean consumer runs the supplied complete workflow offline with imported results and sees both tracks independently.
 
-**Delivery/status:** M5; T13; in_progress.
+**Delivery/status:** M5; T13; verified.
 
 ### R02 — Sufficient public context and private answers
 
@@ -152,7 +152,7 @@ Compare runs on identical suite/oracle/profile versions and show changed finding
 
 **Acceptance:** A consumer identifies a detected-to-missed case and a new false alert from the report; mismatched oracle/profile hashes are flagged. Deliberately injected reviewer regressions are labeled and kept separate from genuine external observations.
 
-**Delivery/status:** M5; T03, T10, T13; in_progress.
+**Delivery/status:** M5; T03, T10, T13; verified.
 
 ### R16 — Replay and leakage-resistant partitions
 
@@ -222,7 +222,7 @@ Pin a compatible CAD/drawing stack; test the documented installation and core wo
 
 **Acceptance:** Fresh environments pass the core demo with semantic artifact checks; platform-specific limits are documented; no SolidWorks, GPU or paid model is a core requirement.
 
-**Delivery/status:** M5; T01, T13; in_progress.
+**Delivery/status:** M5; T01, T13; verified.
 
 ## Should
 
