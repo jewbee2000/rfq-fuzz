@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CapabilityProfile",
+  "description": "Transport boundary; semantic nested and evidence checks require rfqfuzz.v1.contracts.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "version",
+    "synthetic",
+    "rules",
+    "scope",
+    "unsupported_operations"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {},
+    "version": {},
+    "synthetic": {},
+    "rules": {},
+    "scope": {},
+    "unsupported_operations": {}
+  }
+}

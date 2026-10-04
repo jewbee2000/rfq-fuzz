@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MutationSpec",
+  "description": "Transport boundary; semantic nested and evidence checks require rfqfuzz.v1.contracts.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "case_id",
+    "operator",
+    "variant",
+    "ancestry",
+    "partition",
+    "seed",
+    "prerequisites",
+    "allowed_deltas",
+    "invariants",
+    "source_parameters"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "case_id": {},
+    "operator": {},
+    "variant": {},
+    "ancestry": {},
+    "partition": {},
+    "seed": {},
+    "prerequisites": {},
+    "allowed_deltas": {},
+    "invariants": {},
+    "source_parameters": {}
+  }
+}

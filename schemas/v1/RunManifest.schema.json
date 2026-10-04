@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RunManifest",
+  "description": "Transport boundary; semantic nested and evidence checks require rfqfuzz.v1.contracts.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "suite_sha256",
+    "oracle_sha256",
+    "profile_sha256",
+    "adapter_version",
+    "seed",
+    "environment",
+    "raw_sha256",
+    "limitations",
+    "failures"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "suite_sha256": {},
+    "oracle_sha256": {},
+    "profile_sha256": {},
+    "adapter_version": {},
+    "seed": {},
+    "environment": {},
+    "raw_sha256": {},
+    "limitations": {},
+    "failures": {}
+  }
+}

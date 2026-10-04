@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OracleRecord",
+  "description": "Transport boundary; semantic nested and evidence checks require rfqfuzz.v1.contracts.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "oracle_version",
+    "case_id",
+    "packet_sha256",
+    "status",
+    "reasons",
+    "measurements",
+    "drawing",
+    "expectations",
+    "isolation"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "oracle_version": {},
+    "case_id": {},
+    "packet_sha256": {},
+    "status": {},
+    "reasons": {},
+    "measurements": {},
+    "drawing": {},
+    "expectations": {},
+    "isolation": {}
+  }
+}
