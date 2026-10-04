@@ -94,7 +94,10 @@ def import_response(path, public_root, out):
     require(not out.exists(), "import exists; raw results are immutable")
     out.mkdir(parents=True)
     source = Path(path)
-    require(source.stat().st_size <= 4_000_000, "review response size limit")
+    if source.stat().st_size > 4_000_000:
+        record={"status":"error","reason":"review response size limit","source":str(source),"size_bytes":source.stat().st_size,"raw_retention":"Original input retained at source; rejected before copying/parsing"}
+        write_json(out/"import.json",record)
+        return record
     shutil.copyfile(source, out / "raw-review.json")
     try:
         response = check_binding(load_json(source), public_root)
@@ -116,17 +119,18 @@ def run_local(command, public_root, out, timeout=30):
     write_json(out / "input-audit.json", audit)
     start = time.monotonic()
     try:
-        proc = subprocess.Popen(command, cwd=out, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False)
-        try:
-            stdout, stderr = proc.communicate(json.dumps(request).encode(), timeout=timeout)
-            state = "completed" if proc.returncode == 0 else "error"
-        except subprocess.TimeoutExpired:
-            terminate_tree(proc)
-            stdout, stderr = proc.communicate()
-            state = "timeout"
-        (out / "stdout.bin").write_bytes(stdout)
-        (out / "stderr.bin").write_bytes(stderr)
-        record = {"status":state,"command":command,"returncode":proc.returncode,"runtime_seconds":time.monotonic()-start,"reason":None}
+        with (out/"stdout.bin").open("wb") as stdout, (out/"stderr.bin").open("wb") as stderr:
+            proc = subprocess.Popen(command, cwd=out, stdin=subprocess.PIPE, stdout=stdout, stderr=stderr, shell=False)
+            proc.stdin.write(json.dumps(request).encode());proc.stdin.close()
+            reason=None
+            while proc.poll() is None:
+                if time.monotonic()-start > timeout:
+                    terminate_tree(proc);reason="configured adapter timeout";break
+                if any(path.stat().st_size>4_000_000 for path in (out/"stdout.bin",out/"stderr.bin",out/"response.json") if path.exists()):
+                    terminate_tree(proc);reason="adapter output size limit";break
+                time.sleep(.02)
+            state="timeout" if reason=="configured adapter timeout" else "error" if reason or proc.returncode else "completed"
+        record = {"status":state,"command":command,"returncode":proc.returncode,"runtime_seconds":time.monotonic()-start,"reason":reason}
         if state == "completed":
             try:
                 response = check_binding(load_json(out / "response.json"), public_root)

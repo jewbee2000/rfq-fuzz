@@ -47,3 +47,10 @@ def test_signatures_and_hashes(public):
     (folder/"drawing.pdf").write_bytes(b"not PDF")
     p["artifacts"][1]["sha256"]=sha256(folder/"drawing.pdf");write_json(folder/"packet.json",p)
     with pytest.raises(ValueError,match="signature"):a.audit_public(public)
+
+def test_oversized_import_and_process_output_retains_reason(public,tmp_path):
+    source=tmp_path/"huge.json";source.write_bytes(b"x"*4_000_001)
+    record=a.import_response(source,public,tmp_path/"oversized")
+    assert record["status"]=="error" and 'size limit' in (tmp_path/"oversized/import.json").read_text()
+    record=a.run_local([sys.executable,"-c","import sys,time;sys.stdout.write('x'*4_100_000);sys.stdout.flush();time.sleep(10)"],public,tmp_path/"output-limit")
+    assert record["status"]=="error" and record["reason"]=="adapter output size limit"
